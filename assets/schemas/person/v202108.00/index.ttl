@@ -1,0 +1,41 @@
+# Indexing data for person schema
+# associating an entry to a downloadable jsonschema
+# TODO define something consistent useful for search.
+
+
+@prefix jsonschema: <https://www.w3.org/2019/wot/json-schema#> .
+@prefix jsonld: <http://www.w3.org/ns/json-ld#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+@base <https://raw.githubusercontent.com/teamdigitale/api-ndc-semantic/master/schemas/person/> .
+@prefix ndc: <https://w3id.org/italia/schemas/> .
+@prefix self: <https://w3id.org/italia/schemas/person/> .
+# WHERE { ?schema a sdgr:EvidenceType; ?schema dcat:accessUrl ?url }
+
+
+
+self:202108.00?format=jsonschema
+    a jsonschema:DataSchema;
+    skos:hasTopConcept ndc:person;
+    owl:versionIRI self:202108.00;
+
+    # The actual downloadable schemas.
+    dcat:downloadURL <v202108.01/person.oas3.json>;
+    jsonld:Context <v202108.01/person.jsonld>
+.
+
+
+self:202108.00?format=ld+json
+    a jsonld:Context;
+
+    skos:hasTopConcept ndc:person;
+    owl:versionIRI self:202108.00;
+
+    # The actual downloadable files.
+    dcat:downloadURL <v202108.01/person.jsonld>
+.

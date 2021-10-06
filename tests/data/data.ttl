@@ -1,0 +1,91 @@
+@prefix res: <http://www.w3.org/2005/sparql-results#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+_:_ a res:ResultSet .
+_:_ res:resultVariable "class" , "onto" , "property" , "range" .
+@prefix ns0:	<https://w3id.org/italia/onto/CPV/> .
+@prefix ns1:	<https://w3id.org/italia/onto/> .
+@prefix ns2:	<https://w3id.org/italia/controlled-vocabulary/classifications-for-people/> .
+_:_ res:solution [
+      res:binding [ res:variable "class" ; res:value ns0:EducationLevel ] ;
+      res:binding [ res:variable "onto" ; res:value ns1:CPV ] ;
+      res:binding [ res:variable "property" ; res:value ns0:educationLevelDesc ] ;
+      res:binding [ res:variable "range" ; res:value ns2:education-level ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "class" ; res:value ns0:EducationLevel ] ;
+      res:binding [ res:variable "onto" ; res:value ns1:CPV ] ;
+      res:binding [ res:variable "property" ; res:value ns0:educationLevelID ] ;
+      res:binding [ res:variable "range" ; res:value ns2:education-level ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "class" ; res:value ns0:Sex ] ;
+      res:binding [ res:variable "onto" ; res:value ns1:CPV ] ;
+      res:binding [ res:variable "property" ; res:value ns0:sexDesc ] ;
+      res:binding [ res:variable "range" ; res:value ns2:sex ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "class" ; res:value ns0:Sex ] ;
+      res:binding [ res:variable "onto" ; res:value ns1:CPV ] ;
+      res:binding [ res:variable "property" ; res:value ns0:sexID ] ;
+      res:binding [ res:variable "range" ; res:value ns2:sex ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "class" ; res:value ns0:Alive ] ;
+      res:binding [ res:variable "onto" ; res:value ns1:CPV ] ;
+      res:binding [ res:variable "property" ; res:value ns0:hasLevelOfEducation ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "class" ; res:value ns0:Alive ] ;
+      res:binding [ res:variable "onto" ; res:value ns1:CPV ] ;
+      res:binding [ res:variable "property" ; res:value ns0:age ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "class" ; res:value ns0:Dead ] ;
+      res:binding [ res:variable "onto" ; res:value ns1:CPV ] ;
+      res:binding [ res:variable "property" ; res:value ns0:dateOfDeath ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "class" ; res:value ns0:Dead ] ;
+      res:binding [ res:variable "onto" ; res:value ns1:CPV ] ;
+      res:binding [ res:variable "property" ; res:value ns0:ageWhenDead ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "class" ; res:value ns0:Dead ] ;
+      res:binding [ res:variable "onto" ; res:value ns1:CPV ] ;
+      res:binding [ res:variable "property" ; res:value ns0:hasDeathPlace ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "class" ; res:value ns0:FamilySheetHolder ] ;
+      res:binding [ res:variable "onto" ; res:value ns1:CPV ] ;
+      res:binding [ res:variable "property" ; res:value ns0:isFamilySheetHolderOf ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "class" ; res:value ns0:ParentalRelationshipType ] ;
+      res:binding [ res:variable "onto" ; res:value ns1:CPV ] ;
+      res:binding [ res:variable "property" ; res:value ns0:inRegisteredFamily ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "class" ; res:value ns0:Person ] ;
+      res:binding [ res:variable "onto" ; res:value ns1:CPV ] ;
+      res:binding [ res:variable "property" ; res:value ns0:hasParentalRelationshipWith ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "class" ; res:value ns0:Person ] ;
+      res:binding [ res:variable "onto" ; res:value ns1:CPV ] ;
+      res:binding [ res:variable "property" ; res:value ns0:isGrandFatherOf ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "class" ; res:value ns0:Person ] ;
+      res:binding [ res:variable "onto" ; res:value ns1:CPV ] ;
+      res:binding [ res:variable "property" ; res:value ns0:knows ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "class" ; res:value ns0:Person ] ;
+      res:binding [ res:variable "onto" ; res:value ns1:CPV ] ;
+      res:binding [ res:variable "property" ; res:value ns0:hasSex ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "class" ; res:value ns0:Person ] ;
+      res:binding [ res:variable "onto" ; res:value ns1:CPV ] ;
+      res:binding [ res:variable "property" ; res:value ns0:familyName ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "class" ; res:value ns0:Person ] ;
+      res:binding [ res:variable "onto" ; res:value ns1:CPV ] ;
+      res:binding [ res:variable "property" ; res:value ns0:isParentOf ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "class" ; res:value ns0:Person ] ;
+      res:binding [ res:variable "onto" ; res:value ns1:CPV ] ;
+      res:binding [ res:variable "property" ; res:value ns0:hasRelationshipWith ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "class" ; res:value ns0:Person ] ;
+      res:binding [ res:variable "onto" ; res:value ns1:CPV ] ;
+      res:binding [ res:variable "property" ; res:value ns0:residentIn ] ] .
+_:_ res:solution [
+      res:binding [ res:variable "class" ; res:value ns0:Person ] ;
+      res:binding [ res:variable "onto" ; res:value ns1:CPV ] ;
+      res:binding [ res:variable "property" ; res:value ns0:hasBirthPlace ] ] .

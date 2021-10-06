@@ -1,0 +1,6 @@
+connexion[swagger-ui]
+connexion
+requests
+openapi_resolver
+pyyaml
+pytest

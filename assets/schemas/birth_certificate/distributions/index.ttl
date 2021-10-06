@@ -1,0 +1,68 @@
+# Indexing data for person schema
+# associating an entry to a downloadable jsonschema
+# TODO define something consistent useful for search.
+
+
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix jsonschema: <https://www.w3.org/2019/wot/json-schema#> .
+@prefix jsonld: <http://www.w3.org/ns/json-ld#> .
+
+@base <https://raw.githubusercontent.com/teamdigitale/api-ndc-semantic/master/schemas/birth_certificate/> .
+@prefix ndc:  <https://w3id.org/italia/schemas/> .
+@prefix self: <https://w3id.org/italia/schemas/birth_certificate/> .
+
+# WHERE { ?schema a sdgr:EvidenceType; ?schema dcat:accessUrl ?url }
+
+
+ndc:birth_certificate
+    rdf:type owl:Class ;
+    dct:identifier ndc:birth_certificate ;
+    owl:versionIRI self:v0.01 ;
+    dcat:accessUrl <latest> ;
+    dcat:keyword "SDGR"@it ,
+                 "birth"@it ,
+                 "certificate"@it ;
+
+.
+
+self:latest
+    owl:versionIRI self:v0.01 ;
+.
+
+self:v0.01?format=xsd
+    a xsd:schema;
+    skos:hasTopConcept ndc:birth_certificate;
+
+    owl:versionIRI self:v0.01;
+    dcat:downloadURL <distributions/birth_certificate_XSD_v0.01.xsd>
+.
+
+self:v0.01?format=jsonschema
+    a jsonschema:DataSchema;
+    skos:hasTopConcept ndc:birth_certificate;
+    owl:versionIRI self:v0.01;
+
+    # The actual downloadable schemas.
+    dcat:downloadURL <v0.01/birth_certificate.oas3.json>;
+    jsonld:Context <v0.01/birth_certificate.jsonld>
+
+.
+
+self:v0.01?format=ld+json
+    a jsonld:Context;
+    skos:hasTopConcept ndc:birth_certificate;
+    owl:versionIRI self:v0.01;
+
+    # The actual downloadable files.
+    dcat:downloadURL <v0.01/birth_certificate.jsonld>
+.

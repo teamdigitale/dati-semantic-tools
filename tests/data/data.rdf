@@ -1,0 +1,113 @@
+<rdf:RDF xmlns:res="http://www.w3.org/2005/sparql-results#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:nodeID="rset">
+<rdf:type rdf:resource="http://www.w3.org/2005/sparql-results#ResultSet" />
+    <res:resultVariable>class</res:resultVariable>
+    <res:resultVariable>onto</res:resultVariable>
+    <res:resultVariable>property</res:resultVariable>
+    <res:resultVariable>range</res:resultVariable>
+    <res:solution rdf:nodeID="r0">
+      <res:binding rdf:nodeID="r0c0"><res:variable>class</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/EducationLevel"/></res:binding>
+      <res:binding rdf:nodeID="r0c1"><res:variable>onto</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV"/></res:binding>
+      <res:binding rdf:nodeID="r0c2"><res:variable>property</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/educationLevelDesc"/></res:binding>
+      <res:binding rdf:nodeID="r0c3"><res:variable>range</res:variable><res:value rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/education-level"/></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r1">
+      <res:binding rdf:nodeID="r1c0"><res:variable>class</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/EducationLevel"/></res:binding>
+      <res:binding rdf:nodeID="r1c1"><res:variable>onto</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV"/></res:binding>
+      <res:binding rdf:nodeID="r1c2"><res:variable>property</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/educationLevelID"/></res:binding>
+      <res:binding rdf:nodeID="r1c3"><res:variable>range</res:variable><res:value rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/education-level"/></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r2">
+      <res:binding rdf:nodeID="r2c0"><res:variable>class</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/Sex"/></res:binding>
+      <res:binding rdf:nodeID="r2c1"><res:variable>onto</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV"/></res:binding>
+      <res:binding rdf:nodeID="r2c2"><res:variable>property</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/sexDesc"/></res:binding>
+      <res:binding rdf:nodeID="r2c3"><res:variable>range</res:variable><res:value rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/sex"/></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r3">
+      <res:binding rdf:nodeID="r3c0"><res:variable>class</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/Sex"/></res:binding>
+      <res:binding rdf:nodeID="r3c1"><res:variable>onto</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV"/></res:binding>
+      <res:binding rdf:nodeID="r3c2"><res:variable>property</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/sexID"/></res:binding>
+      <res:binding rdf:nodeID="r3c3"><res:variable>range</res:variable><res:value rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/sex"/></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r4">
+      <res:binding rdf:nodeID="r4c0"><res:variable>class</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/Alive"/></res:binding>
+      <res:binding rdf:nodeID="r4c1"><res:variable>onto</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV"/></res:binding>
+      <res:binding rdf:nodeID="r4c2"><res:variable>property</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/hasLevelOfEducation"/></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r5">
+      <res:binding rdf:nodeID="r5c0"><res:variable>class</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/Alive"/></res:binding>
+      <res:binding rdf:nodeID="r5c1"><res:variable>onto</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV"/></res:binding>
+      <res:binding rdf:nodeID="r5c2"><res:variable>property</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/age"/></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r6">
+      <res:binding rdf:nodeID="r6c0"><res:variable>class</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/Dead"/></res:binding>
+      <res:binding rdf:nodeID="r6c1"><res:variable>onto</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV"/></res:binding>
+      <res:binding rdf:nodeID="r6c2"><res:variable>property</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/dateOfDeath"/></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r7">
+      <res:binding rdf:nodeID="r7c0"><res:variable>class</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/Dead"/></res:binding>
+      <res:binding rdf:nodeID="r7c1"><res:variable>onto</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV"/></res:binding>
+      <res:binding rdf:nodeID="r7c2"><res:variable>property</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/ageWhenDead"/></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r8">
+      <res:binding rdf:nodeID="r8c0"><res:variable>class</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/Dead"/></res:binding>
+      <res:binding rdf:nodeID="r8c1"><res:variable>onto</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV"/></res:binding>
+      <res:binding rdf:nodeID="r8c2"><res:variable>property</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/hasDeathPlace"/></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r9">
+      <res:binding rdf:nodeID="r9c0"><res:variable>class</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/FamilySheetHolder"/></res:binding>
+      <res:binding rdf:nodeID="r9c1"><res:variable>onto</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV"/></res:binding>
+      <res:binding rdf:nodeID="r9c2"><res:variable>property</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/isFamilySheetHolderOf"/></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r10">
+      <res:binding rdf:nodeID="r10c0"><res:variable>class</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/ParentalRelationshipType"/></res:binding>
+      <res:binding rdf:nodeID="r10c1"><res:variable>onto</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV"/></res:binding>
+      <res:binding rdf:nodeID="r10c2"><res:variable>property</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/inRegisteredFamily"/></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r11">
+      <res:binding rdf:nodeID="r11c0"><res:variable>class</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/Person"/></res:binding>
+      <res:binding rdf:nodeID="r11c1"><res:variable>onto</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV"/></res:binding>
+      <res:binding rdf:nodeID="r11c2"><res:variable>property</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/hasParentalRelationshipWith"/></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r12">
+      <res:binding rdf:nodeID="r12c0"><res:variable>class</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/Person"/></res:binding>
+      <res:binding rdf:nodeID="r12c1"><res:variable>onto</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV"/></res:binding>
+      <res:binding rdf:nodeID="r12c2"><res:variable>property</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/isGrandFatherOf"/></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r13">
+      <res:binding rdf:nodeID="r13c0"><res:variable>class</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/Person"/></res:binding>
+      <res:binding rdf:nodeID="r13c1"><res:variable>onto</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV"/></res:binding>
+      <res:binding rdf:nodeID="r13c2"><res:variable>property</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/knows"/></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r14">
+      <res:binding rdf:nodeID="r14c0"><res:variable>class</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/Person"/></res:binding>
+      <res:binding rdf:nodeID="r14c1"><res:variable>onto</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV"/></res:binding>
+      <res:binding rdf:nodeID="r14c2"><res:variable>property</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/hasSex"/></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r15">
+      <res:binding rdf:nodeID="r15c0"><res:variable>class</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/Person"/></res:binding>
+      <res:binding rdf:nodeID="r15c1"><res:variable>onto</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV"/></res:binding>
+      <res:binding rdf:nodeID="r15c2"><res:variable>property</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/familyName"/></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r16">
+      <res:binding rdf:nodeID="r16c0"><res:variable>class</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/Person"/></res:binding>
+      <res:binding rdf:nodeID="r16c1"><res:variable>onto</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV"/></res:binding>
+      <res:binding rdf:nodeID="r16c2"><res:variable>property</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/isParentOf"/></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r17">
+      <res:binding rdf:nodeID="r17c0"><res:variable>class</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/Person"/></res:binding>
+      <res:binding rdf:nodeID="r17c1"><res:variable>onto</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV"/></res:binding>
+      <res:binding rdf:nodeID="r17c2"><res:variable>property</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/hasRelationshipWith"/></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r18">
+      <res:binding rdf:nodeID="r18c0"><res:variable>class</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/Person"/></res:binding>
+      <res:binding rdf:nodeID="r18c1"><res:variable>onto</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV"/></res:binding>
+      <res:binding rdf:nodeID="r18c2"><res:variable>property</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/residentIn"/></res:binding>
+    </res:solution>
+    <res:solution rdf:nodeID="r19">
+      <res:binding rdf:nodeID="r19c0"><res:variable>class</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/Person"/></res:binding>
+      <res:binding rdf:nodeID="r19c1"><res:variable>onto</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV"/></res:binding>
+      <res:binding rdf:nodeID="r19c2"><res:variable>property</res:variable><res:value rdf:resource="https://w3id.org/italia/onto/CPV/hasBirthPlace"/></res:binding>
+    </res:solution>
+  </rdf:Description>
+</rdf:RDF>

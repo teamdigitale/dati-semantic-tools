@@ -1,0 +1,72 @@
+---
+_meta:
+  label: short
+  description: |-
+    A framing context for a short version
+    of the table.
+  index: op_code
+  schema:
+    CountryShort:
+      type: object
+      required:
+      - valid_from
+      - country_code
+      - deprecated
+      - label_en
+      - label_it
+      properties:
+        valid_from:
+          type: string
+          format: date
+        valid_until:
+          type: string
+          format: date
+        country_code:
+          type: string
+          enum: []
+        deprecated:
+          type: boolean
+        label_en:
+          type: string
+        label_it:
+          type: string
+        op_code:
+          type: string
+          pattern: "[A-Z0-9]{3}"
+# Never embed external references.
+"@embed": "@always"
+# Matching on type works.
+# see
+"@type":
+- "skos:Concept"
+# - "skos:inScheme"
+
+# Matching on properties
+# doesn't work https://www.w3.org/TR/json-ld11-framing/#matching-on-properties
+
+# Use context.
+"@context":
+  # Namespaces.
+  "@vocab": http://publications.europa.eu/ontology/authority/
+  dct: http://purl.org/dc/elements/1.1/
+  skos: http://www.w3.org/2004/02/skos/core#
+  owl: 'http://www.w3.org/2002/07/owl#'
+
+
+  # Fields.
+  valid_from: start.use
+  valid_until: end.use
+  url: "@id"
+  op_code:
+    "@id": "op-code"
+  country_code:
+    "@id": dct:identifier
+  version_info: owl:versionInfo
+  deprecated: {}
+  # Localize labels. Order is relevant.
+  label_en:
+    "@id": skos:prefLabel
+    "@language": en
+  label_it:
+    "@id": skos:prefLabel
+    "@language": it

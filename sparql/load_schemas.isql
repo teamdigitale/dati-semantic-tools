@@ -1,0 +1,4 @@
+ld_dir_all('/usr/local/virtuoso-opensource/share/virtuoso/vad/schemas/', '*.ttl', 'schemas');
+rdf_loader_run();
+exec('checkpoint');
+WAIT_FOR_CHILDREN;

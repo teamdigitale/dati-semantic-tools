@@ -1,0 +1,61 @@
+# Indexing data for person schema
+# associating an entry to a downloadable jsonschema
+# TODO define something consistent useful for search.
+
+
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix jsonschema: <https://www.w3.org/2019/wot/json-schema#> .
+@prefix jsonld: <http://www.w3.org/ns/json-ld#> .
+
+@prefix cpv: <https://w3id.org/italia/onto/CPV/> .
+@prefix ndc: <https://w3id.org/italia/schemas/> .
+@prefix self: <https://w3id.org/italia/schemas/person/> .
+@base <https://raw.githubusercontent.com/teamdigitale/api-ndc-semantic/master/schemas/person/> .
+
+# WHERE { ?schema a sdgr:EvidenceType; ?schema dcat:accessUrl ?url }
+
+
+ndc:person
+  rdf:type owl:Class;
+  dct:identifier ndc:person ;
+  owl:versionIRI self:202108.01 ;
+  dcat:accessUrl <latest> ;
+  dcat:keyword "person"@it;
+  rdfs:domain cpv:Person ;
+  foaf:homepage  <https://w3id.org/italia/welcome>;
+
+.
+
+self:latest
+    owl:versionIRI self:202108.01 ;
+.
+
+self:202108.01?format=jsonschema
+    a jsonschema:DataSchema ;
+    skos:hasTopConcept ndc:person ;
+
+    # The actual downloadable schemas.
+    dcat:downloadURL <v202108.01/person.oas3.json>;
+    jsonld:Context <v202108.01/person.jsonld>
+.
+
+
+self:202108.01?format=ld+json
+    a jsonld:Context;
+
+    skos:hasTopConcept ndc:person;
+    owl:versionIRI self:202108.01;
+
+    # The actual downloadable files.
+    dcat:downloadURL <v202108.01/person.jsonld>
+.

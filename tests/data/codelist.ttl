@@ -1,0 +1,200 @@
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://publications.europa.eu/resource/authority/country/1A0> a skos:Concept ;
+    at:authority-code "1A0" ;
+    at:deprecated "false" ;
+    at:op-code "1A0" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:affected-table "FD_050" ;
+            at:legacy-code "KOSOVO" ;
+            dc:source "EurLex" ],
+        [ a at:MappedCode ;
+            at:legacy-code "1A" ;
+            dc:source "TED_SCHEMA" ],
+        [ a at:MappedCode ;
+            at:affected-table "FD_010" ;
+            at:legacy-code "1A0" ;
+            dc:source "EurLex" ],
+        [ a at:MappedCode ;
+            at:legacy-code "1A" ;
+            dc:source "TED" ] ;
+    at:start.use "2008-02-17" ;
+    atold:op-code "1A0" ;
+    dc:identifier "1A0" ;
+    skos:inScheme atold:country ;
+    skos:prefLabel "Косово"@bg,
+        "Kosovo"@cs,
+        "Kosovo"@da,
+        "Kosovo"@de,
+        "Κόσοβο"@el,
+        "Kosovo"@en,
+        "Kosovo"@es,
+        "Kosovo"@et,
+        "Kosovo"@fi,
+        "Kosovo"@fr,
+        "An Chosaiv"@ga,
+        "Kosovo"@hr,
+        "Koszovó"@hu,
+        "Kosovo"@it,
+        "Kosovas"@lt,
+        "Kosova"@lv,
+        "Il-Kosovo"@mt,
+        "Kosovo"@nl,
+        "Kosowo"@pl,
+        "Kosovo"@pt,
+        "Kosovo"@ro,
+        "Kosovo"@sk,
+        "Kosovo"@sl,
+        "Kosovo"@sv .
+
+<http://publications.europa.eu/resource/authority/country/ABW> a skos:Concept ;
+    at:authority-code "ABW" ;
+    at:deprecated "false" ;
+    at:op-code "ABW" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "AW" ;
+            dc:source "TED" ],
+        [ a at:MappedCode ;
+            at:legacy-code "AW" ;
+            dc:source "TED_SCHEMA" ],
+        [ a at:MappedCode ;
+            at:affected-table "FD_140" ;
+            at:legacy-code "AW" ;
+            dc:source "EurLex" ] ;
+    at:start.use "1986-01-01" ;
+    atold:op-code "ABW" ;
+    dc:identifier "ABW" ;
+    skos:broader <http://publications.europa.eu/resource/authority/country/COU0042> ;
+    skos:inScheme atold:country ;
+    skos:prefLabel "Аруба"@bg,
+        "Aruba"@cs,
+        "Aruba"@da,
+        "Aruba"@de,
+        "Αρούμπα"@el,
+        "Aruba"@en,
+        "Aruba"@es,
+        "Aruba"@et,
+        "Aruba"@fi,
+        "Aruba"@fr,
+        "Aruba"@ga,
+        "Aruba"@hr,
+        "Aruba"@hu,
+        "Aruba"@it,
+        "Aruba"@lt,
+        "Aruba"@lv,
+        "Aruba"@mt,
+        "Aruba"@nl,
+        "Aruba"@pl,
+        "Aruba"@pt,
+        "Aruba"@ro,
+        "Aruba"@sk,
+        "Aruba"@sl,
+        "Aruba"@sv .
+
+
+<http://publications.europa.eu/resource/authority/country/ZR0> a skos:Concept ;
+    at:authority-code "ZR0" ;
+    at:deprecated "true" ;
+    at:end.use "1997-05-17" ;
+    at:op-code "ZR0" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:affected-table "FD_010" ;
+            at:legacy-code "ZR" ;
+            dc:source "EurLex" ],
+        [ a at:MappedCode ;
+            at:affected-table "FD_400" ;
+            at:legacy-code "ZR" ;
+            dc:source "EurLex" ] ;
+    at:start.use "1960-06-30" ;
+    atold:op-code "ZR0" ;
+    dc:identifier "ZR0" ;
+    skos:altLabel "République du Zaïre"@fr ;
+    skos:inScheme atold:country ;
+    skos:prefLabel "Zaire"@de,
+        "Zaire"@en,
+        "Zaire"@et,
+        "Zaïre"@fr .
+
+<http://publications.europa.eu/resource/authority/country/ZWE> a skos:Concept ;
+    at:authority-code "ZWE" ;
+    at:deprecated "false" ;
+    at:op-code "ZWE" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "ZW" ;
+            dc:source "TED" ],
+        [ a at:MappedCode ;
+            at:affected-table "FD_010" ;
+            at:legacy-code "RSR" ;
+            dc:source "EurLex" ],
+        [ a at:MappedCode ;
+            at:legacy-code "ZW" ;
+            dc:source "TED_SCHEMA" ],
+        [ a at:MappedCode ;
+            at:affected-table "FD_400" ;
+            at:legacy-code "RSR" ;
+            dc:source "EurLex" ] ;
+    at:start.use "1980-04-18" ;
+    atold:op-code "ZWE" ;
+    dc:identifier "ZWE" ;
+    skos:altLabel "Република Зимбабве"@bg,
+        "Republika Zimbabwe"@cs,
+        "Republikken Zimbabwe"@da,
+        "Republik Simbabwe"@de,
+        "Δημοκρατία της Ζιμπάμπουε"@el,
+        "Republic of Zimbabwe"@en,
+        "República de Zimbabue"@es,
+        "Zimbabwe Vabariik"@et,
+        "Zimbabwen tasavalta"@fi,
+        "République du Zimbabwe"@fr,
+        "Poblacht na Siombáibe"@ga,
+        "Republika Zimbabve"@hr,
+        "Zimbabwei Köztársaság"@hu,
+        "Repubblica dello Zimbabwe"@it,
+        "Zimbabvės Respublika"@lt,
+        "Zimbabves Republika"@lv,
+        "Ir-Repubblika taż-Żimbabwe"@mt,
+        "Republiek Zimbabwe"@nl,
+        "Republika Zimbabwe"@pl,
+        "República do Zimbabué"@pt,
+        "Republica Zimbabwe"@ro,
+        "Zimbabwianska republika"@sk,
+        "Republika Zimbabve"@sl,
+        "Republiken Zimbabwe"@sv ;
+    skos:inScheme atold:country ;
+    skos:prefLabel "Зимбабве"@bg,
+        "Zimbabwe"@cs,
+        "Zimbabwe"@da,
+        "Simbabwe"@de,
+        "Ζιμπάμπουε"@el,
+        "Zimbabwe"@en,
+        "Zimbabue"@es,
+        "Zimbabwe"@et,
+        "Zimbabwe"@fi,
+        "Zimbabwe"@fr,
+        "An tSiombáib"@ga,
+        "Zimbabve"@hr,
+        "Zimbabwe"@hu,
+        "Zimbabwe"@it,
+        "Zimbabvė"@lt,
+        "Zimbabve"@lv,
+        "Iż-Żimbabwe"@mt,
+        "Zimbabwe"@nl,
+        "Zimbabwe"@pl,
+        "Zimbabué"@pt,
+        "Zimbabwe"@ro,
+        "Zimbabwe"@sk,
+        "Zimbabve"@sl,
+        "Zimbabwe"@sv .
+
+atold:country a skos:ConceptScheme ;
+    rdfs:label "Country"@en ;
+    at:prefLabel "Country"@en ;
+    at:table.id "country" ;
+    at:table.version.number "20210616-0" ;
+    owl:versionInfo "20210616-0" ;
+    skos:prefLabel "Country"@en .

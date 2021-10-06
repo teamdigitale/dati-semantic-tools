@@ -1,0 +1,41 @@
+
+
+---
+#
+# Create a couple of servers:
+# - virtuoso esposing a sparql endpoint
+# - lodview to visually render contained ontologies
+#
+version: '3'
+
+services:
+
+  lodview:
+    image: linkeddatacenter/lodview
+    depends_on:
+    - virtuoso
+    environment:
+      LODVIEW_SPARQLENDPOINT: "http://virtuoso:8890/sparql"
+      LODVIEW_URISPACE: "https://w3id.org/italia"
+      LODVIEW_PUBLICURLPREFIX: "http://localhost:9891/"
+    ports:
+    - 9891:8080/tcp
+
+  virtuoso:
+    #build:
+    #  context: ./
+    #  dockerfile: Dockerfile
+    image: teamdigitale/pdnd-ontopia-virtuoso
+    volumes:
+    - .:/code
+    - ./vocabularies:/usr/local/virtuoso-opensource/share/virtuoso/vad/vocabularies
+    - ./ontologies:/usr/local/virtuoso-opensource/share/virtuoso/vad/ontologies
+    - ./schemas:/usr/local/virtuoso-opensource/share/virtuoso/vad/schemas
+    - ./sparql/virtuoso.sh:/virtuoso.sh
+    environment:
+      SPARQL_UPDATE: "true"
+    stdin_open: true
+    tty: true
+    ports:
+      - 8890:8890/tcp
+      - 9111:1111/tcp

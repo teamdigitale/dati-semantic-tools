@@ -1,0 +1,8 @@
+rdflib
+jsonpath_ng
+requests
+pyyaml
+jsonschema
+pandas
+pyshacl
+pyld

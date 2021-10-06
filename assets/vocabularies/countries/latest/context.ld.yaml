@@ -1,0 +1,54 @@
+---
+_meta:
+  table: foo
+# Never embed external references.
+"@embed": "@always"
+# Matching on type works.
+# see
+"@type":
+- "skos:Concept"
+
+# Matching on properties
+# doesn't work https://www.w3.org/TR/json-ld11-framing/#matching-on-properties
+
+# Use context.
+"@context":
+
+  # Namespaces.
+  "@vocab": http://publications.europa.eu/ontology/authority/
+  dct: http://purl.org/dc/elements/1.1/
+  skos: http://www.w3.org/2004/02/skos/core#
+  owl: 'http://www.w3.org/2002/07/owl#'
+
+
+  # Fields.
+  valid_from: start.use
+  valid_until: end.use
+  op_code:
+    "@id": "op-code"
+  country_code:
+    "@id": dct:identifier
+  version_info: owl:versionInfo
+  deprecated: {}
+  # Localize labels. Order is relevant.
+  label_en:
+    "@id": skos:prefLabel
+    "@language": en
+  label_it:
+    "@id": skos:prefLabel
+    "@language": it
+  bar:
+    "@container": "@set"
+#  label:
+#    "@id": http://www.w3.org/2004/02/skos/core#prefLabel
+#    "@container": "@language"
+
+  alt_label_en:
+    "@id": http://www.w3.org/2004/02/skos/core#altLabel
+    "@language": en
+  alt_label_it:
+    "@id": http://www.w3.org/2004/02/skos/core#altLabel
+    "@language": it
+  alt_label_all:
+    "@id": http://www.w3.org/2004/02/skos/core#altLabel
+    "@container": "@language"

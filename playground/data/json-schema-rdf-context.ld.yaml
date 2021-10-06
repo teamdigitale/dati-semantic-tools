@@ -1,0 +1,53 @@
+'@context':
+  '@version': 1.1
+  '@vocab': https://www.w3.org/2019/wot/json-schema#
+  allOf:
+    '@container': '@set'
+    '@type': '@vocab'
+  anyOf:
+    '@container': '@set'
+    '@type': '@vocab'
+  array: ArraySchema
+  boolean: BooleanSchema
+  description:
+    '@type': xsd:string
+  enum:
+    '@container': '@set'
+    '@type': '@json'
+  format:
+    '@type': xsd:string
+  "$id":
+    '@id': '@id'
+  integer: IntegerSchema
+  items:
+    '@type': '@vocab'
+  maxItems:
+    '@type': xsd:nonNegativeInteger
+  maximum:
+    '@type': xsd:decimal
+  minItems:
+    '@type': xsd:nonNegativeInteger
+  minimum:
+    '@type': xsd:decimal
+  'null': NullSchema
+  number: NumberSchema
+  object: ObjectSchema
+  oneOf:
+    '@container': '@set'
+    '@type': '@vocab'
+  properties:
+    '@container': '@index'
+    '@index': propertyName
+  readOnly:
+    '@type': xsd:boolean
+  required:
+    '@container': '@set'
+    '@type': xsd:string
+  string: StringSchema
+  title:
+    '@type': xsd:string
+  type:
+    '@id': '@type'
+  writeOnly:
+    '@type': xsd:boolean
+  xsd: http://www.w3.org/2001/XMLSchema#

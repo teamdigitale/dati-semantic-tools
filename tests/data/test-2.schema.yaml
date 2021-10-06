@@ -1,0 +1,13 @@
+Person:
+  $id: https://sche.ma/definitions.yaml#/Person
+  description: |-
+    A phisical person
+  type: object
+  additionalProperties: false
+  properties:
+    given_name:
+      type: string
+      maxLength: 64
+    family_name:
+      type: string
+      maxLength: 64
