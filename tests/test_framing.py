@@ -1,19 +1,17 @@
 from pathlib import Path
 
 import pandas as pd
-import yaml
 
 from playground.framing import frame_components, frame_vocabulary
 from playground.utils import yaml_load
 
-SCHEMA_CERTIFICATE = yaml.safe_load(Path("schemas/certificato.yaml").read_text())
 BASEPATH = Path(__file__).absolute().parent.parent
 
 
 def test_frame_vocabulary():
     fpath = BASEPATH / "tests" / "data"
     vpath = fpath / "codelist.ttl"
-    cpath = fpath / "context-short.ld.yaml"
+    cpath = fpath / "codelist.context.ld.yaml"
     context = yaml_load(cpath)
     ret = frame_vocabulary(vpath, context)
     item = ret["@graph"][0]
@@ -42,7 +40,7 @@ def test_vocabulary_csv():
 
 
 def test_context_ns():
-    fpath = BASEPATH / "vocabularies" / "countries" / "latest"
+    fpath = BASEPATH / "assets" / "vocabularies" / "countries" / "latest"
     cpath = fpath / "context.ld.yaml"
     context = yaml_load(cpath)
     namespaces, fields, index = frame_components(context)

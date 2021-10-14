@@ -7,7 +7,6 @@ from rdflib import Graph
 from playground.tools import generate_asset, jsonschema_to_rdf
 from playground.utils import MIME_JSONLD, yaml_load, yaml_to_json
 
-SCHEMA_CERTIFICATE = yaml.safe_load(Path("schemas/certificato.yaml").read_text())
 BASEPATH = Path(__file__).absolute().parent / "data"
 
 

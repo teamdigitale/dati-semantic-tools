@@ -26,7 +26,10 @@ def jsonschema_to_rdf(schema: Dict, format=MIME_TURTLE):
     if "@context" in schema:
         raise NotImplementedError("Multiple contexts are not supported")
     schema = dict(schema, **JSON_SCHEMA_CONTEXT)
-    schema_jsonld = jsonld.flatten(schema)
+
+    # Use jsonld.compact to simplify the RDF output
+    #   retaining all properties and increase readability.
+    schema_jsonld = jsonld.compact(schema, ctx=JSON_SCHEMA_CONTEXT)
     g = Graph()
     g.parse(data=json.dumps(schema_jsonld), format=MIME_JSONLD)
     return g.serialize(format=format)

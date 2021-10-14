@@ -7,8 +7,8 @@ from rdflib import Graph
 
 from playground.utils import yaml_load
 
-SCHEMA_CERTIFICATE = yaml_load("schemas/certificato.yaml")
 BASEPATH = Path(__file__).absolute().parent.parent
+SCHEMA_CERTIFICATE = yaml_load(BASEPATH / "assets/schemas/certificato.yaml")
 
 
 def test_query_rdf():
