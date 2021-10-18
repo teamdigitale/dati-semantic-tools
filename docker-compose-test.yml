@@ -1,0 +1,37 @@
+version: '3.9'
+services:
+  checkout: &baseline
+    image: alpine/git
+    volumes:
+    - ./deleteme:/code
+    working_dir: /code
+    entrypoint: ["git"]
+    command: >-
+      clone https://github.com/ioggstream/json-semantic-playground.git .
+  zero:
+    build:
+      context: ./
+      dockerfile: Dockerfile.precommit
+    volumes:
+    - ./deleteme:/code
+    working_dir: /code
+    entrypoint: ['pre-commit']
+    command: ['run', '-a']
+  one:
+    <<: *baseline
+    image: busybox
+    command: ['sh', '-c', 'exit 0']
+    depends_on:
+    - zero
+  two:
+    <<: *baseline
+    image: busybox
+    command: ['sh', '-c', 'exit 0']
+    depends_on:
+    - one
+  three:
+    <<: *baseline
+    image: busybox
+    command: ['sh', '-c', 'exit 0']
+    depends_on:
+    - two

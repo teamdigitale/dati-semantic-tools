@@ -1,0 +1,196 @@
+#
+# Questo e' un progetto d'esempio in formato OpenAPI 3.0 API Starter Kit.
+#
+# Stai per sviluppare un API? Segui attentamente questo template e
+#   potrai integrarla facilmente in Developers Italia.
+#
+# Se usi componenti in modo ricorrente, yaml
+#   permette di definirle e riusarle.
+#   Puoi metterle nell'oggetto x-commons e rimuoverlo
+#   prima di pubblicarle.
+x-commons:
+  ratelimit-headers: &ratelimit-headers
+    X-RateLimit-Limit:
+      $ref: '#/components/headers/X-RateLimit-Limit'
+    X-RateLimit-Remaining:
+      $ref: '#/components/headers/X-RateLimit-Remaining'
+    X-RateLimit-Reset:
+      $ref: '#/components/headers/X-RateLimit-Reset'
+  common-responses: &common-responses
+    '400':
+      $ref: '#/components/responses/400BadRequest'
+    '429':
+      $ref: '#/components/responses/429TooManyRequests'
+    '503':
+      $ref: '#/components/responses/503ServiceUnavailable'
+    default:
+      $ref: '#/components/responses/default'
+
+openapi: 3.0.0
+info:
+  version: "1.0.0"
+  title: |-
+    Informazioni su una persona.
+  x-summary: >-
+    Questo servizio ritorna le informazioni su una persona a partire dal suo codice fiscale.
+  description: |
+    #### Documentazione
+    Il servizio ritorna le informazioni su una persona
+     a partire dal suo codice fiscale.
+
+    E' possibile utilizzarla per verificare i dati prima di emettere una fattura,
+    per compilare i dati anagrafici in fase di accettazione di un cittadino ad un
+    servizio pubblico o verificare quelli contenuti in una dichiarazione.
+
+  termsOfService: 'http://swagger.io/terms/'
+  # Chi posso contattare per informazioni sul servizio e sul suo stato?
+  contact:
+    email: robipolli@gmail.com
+    name: Roberto Polli
+    url: https://twitter.com/ioggstream
+  x-audience:
+    - public
+  x-api-id: 00000000-0000-0000-0000-000000000000
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+
+  # Per dare indicazioni sul ciclo di vita dell'API
+  # si puo' usare un parametro come:
+  x-lifecycle:
+    published: 1970-01-01
+    deprecated: 2050-01-01
+    retired: 2050-06-01
+    maturity: published
+
+tags:
+  - name: public
+    description: Retrieve informations
+    externalDocs:
+      url: http://docs.my-api.com/pet-operations.htm
+servers:
+  - description: Development server
+    url: /tax-code/v1
+    x-sandbox: true
+  - description: Test server
+    url: https://api.example.com/datetime/v1
+    # Questo parametro permette di indicare l'URL come uno
+    # di sandbox, disabilitando il controllo sull'https.
+    x-sandbox: true
+    # Questo parametro indica come testare il servizio.
+    x-healthCheck:
+      url: https://api.example.com/datetime/v1/status
+      interval: 300
+      timeout: 15
+paths:
+  /person/{tax_code}:
+    get:
+      summary: Ritorna le informazioni su una persona.
+      description: |
+        Ritorna le informazioni su una persona
+        prendendola dal server attuale.
+      operationId: api.get_person
+      parameters:
+      - name: tax_code
+        in: path
+        required: true
+        example: RSSMRA75L01H501A
+        schema:
+          type: string
+       #   $ref: '#/components/schemas/TaxCode'
+      tags:
+        - public
+      responses:
+        <<: *common-responses
+        '200':
+          description: |
+            Il server ha ritornato le informazioni.
+          headers:
+            <<: *ratelimit-headers
+            Link:
+              description: |-
+                Ritorna il `@context` json-ld della response, disponibile
+                a https://raw.githubusercontent.com/ioggstream/json-semantic-playground/master/schemas/person/context.yaml
+              schema:
+                type: string
+                maxLength: 500
+                minLength: 100
+                example: >-
+                  <https://schemas.ndc.gov.it/italia/simple-person.jsonld>; rel="http://www.w3.org/ns/json-ld#context"; type="application/ld+json
+
+          content:
+            application/ld+json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/Person'
+                - type: object
+                  properties:
+                    "@context":
+                      type: object
+
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Person'
+              example:
+                "tax_code": "RSSMRA75L01H501A"
+                "date_of_birth": "2021-08-12"
+                "family_name": "Rossi"
+                "given_name": "Mario"
+
+  /status:
+    get:
+      summary: Ritorna lo stato dell'applicazione.
+      description: |
+        Ritorna lo stato dell'applicazione. A scopo
+        di test, su base randomica puo' ritornare
+        un errore.
+      operationId: api.get_status
+      tags:
+        - public
+      responses:
+        <<: *common-responses
+        '200':
+          description: |
+            Il server ha ritornato lo status. In caso di problemi
+            ritorna sempre un problem+json.
+          # Questi header di throttling sono obbligatori e definiti
+          #   nel Nuovo modello di interoperabilità.
+          headers:
+            <<: *ratelimit-headers
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+
+components:
+
+  headers:
+    X-RateLimit-Limit:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/X-RateLimit-Limit'
+    X-RateLimit-Remaining:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/X-RateLimit-Remaining'
+    X-RateLimit-Reset:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/X-RateLimit-Reset'
+    Retry-After:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/Retry-After'
+
+  responses:
+    # Predefined error codes for this API
+    400BadRequest:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/responses/400BadRequest'
+    404NotFound:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/responses/404NotFound'
+    429TooManyRequests:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/responses/429TooManyRequests'
+    503ServiceUnavailable:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/responses/503ServiceUnavailable'
+    default:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/responses/default'
+
+  schemas:
+    Problem:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/schemas/Problem'
+    Person:
+      $ref: 'https://raw.githubusercontent.com/ioggstream/json-semantic-playground/master/assets/schemas/person/v202108.01/person.oas3.yaml#/components/schemas/Person'
+    TaxCode:
+      $ref: 'https://raw.githubusercontent.com/ioggstream/json-semantic-playground/master/assets/schemas/person/v202108.01/person.oas3.yaml#/components/schemas/TaxCode'

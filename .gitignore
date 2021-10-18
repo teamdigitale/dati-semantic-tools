@@ -1,0 +1,20 @@
+# Insert here the files/folders/extensions you would like to exclude from git tracking
+*.py[co]
+.*
+__pycache__
+*.log
+
+# Generated.
+*.out.rdf
+*.out.jsonld
+*.out.nt
+*.out.ttl
+*.out
+*.out.csv
+*.out.*
+*.db
+
+*.schema.json
+*.oas3.json
+
+deleteme
