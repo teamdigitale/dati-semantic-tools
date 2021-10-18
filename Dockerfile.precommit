@@ -1,0 +1,3 @@
+FROM python:3.9
+RUN pip3 install pre-commit
+ENTRYPOINT ["pre-commit", "run", "-a"]

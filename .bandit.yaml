@@ -13,3 +13,4 @@ exclude_dirs:
  - .github
  - venv
  - tests
+ - openapi

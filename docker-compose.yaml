@@ -39,3 +39,12 @@ services:
     ports:
       - 8890:8890/tcp
       - 9111:1111/tcp
+
+  test-1:
+    build:
+      context: ./
+      dockerfile: Dockerfile.precommit
+    volumes:
+    - .:/code
+    working_dir: /code
+    entrypoint: 'pre-commit run -a'

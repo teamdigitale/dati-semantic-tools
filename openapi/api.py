@@ -1,7 +1,18 @@
 import connexion
 import pandas as pd
+from sqlalchemy import create_engine
 
 vocabularies = {"countries": pd.read_csv("countries.csv", index_col="op_code")}
+
+
+def initdb(table_name):
+    df = pd.read_csv(f"{table_name}.csv", index_col="op_code")
+    engine = create_engine("sqlite:///datastore.db", echo=False)
+    df.to_sql(f"{table_name}", con=engine, if_exists="replace")
+
+
+initdb("countries")
+db = create_engine("sqlite:///datastore.db", echo=True)
 
 
 def get_status():
@@ -9,7 +20,16 @@ def get_status():
 
 
 def list_vocabularies():
-    return {"href": "countries"}
+    cur = db.execute(
+        """SELECT name FROM sqlite_schema WHERE type ='table' AND name NOT LIKE 'sqlite_%';"""
+    )
+    ret = {"entries": [{"href": table_name} for (table_name,) in cur.fetchall()]}
+
+    return ret
+
+
+def test_list_vocabularies():
+    assert "entries" in list_vocabularies()
 
 
 def list_entries(vocabulary_id):
