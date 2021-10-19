@@ -1,8 +1,10 @@
+import sqlite3
+from functools import lru_cache
+
 import connexion
 import pandas as pd
 from sqlalchemy import create_engine
-
-vocabularies = {"countries": pd.read_csv("countries.csv", index_col="op_code")}
+from werkzeug.exceptions import NotFound
 
 
 def initdb(table_name):
@@ -19,11 +21,16 @@ def get_status():
     return 200
 
 
-def list_vocabularies():
+@lru_cache(maxsize=128)
+def list_tables():
     cur = db.execute(
         """SELECT name FROM sqlite_schema WHERE type ='table' AND name NOT LIKE 'sqlite_%';"""
     )
-    ret = {"entries": [{"href": table_name} for (table_name,) in cur.fetchall()]}
+    return [x for (x,) in cur.fetchall()]
+
+
+def list_vocabularies():
+    ret = {"entries": [{"href": table_name} for table_name in list_tables()]}
 
     return ret
 
@@ -32,27 +39,53 @@ def test_list_vocabularies():
     assert "entries" in list_vocabularies()
 
 
-def list_entries(vocabulary_id):
-    v = vocabularies.get(vocabulary_id)
-    if v is None:
-        return 404
+def list_entries(vocabulary_id, limit=100, cursor="", **params):
+    if vocabulary_id not in list_tables():
+        raise NotFound(f"Vocabulary: {vocabulary_id}")
 
-    return {"entries": v.to_dict("records")}
+    entries = db.execute(
+        f"""SELECT * FROM {vocabulary_id}
+        WHERE op_code >= ?
+        LIMIT {limit}""",
+        (cursor,),
+    )
+    # Format entries as dictionaries.
+    entries.cursor.row_factory = sqlite3.Row
+    ret = entries.cursor.fetchall()
+    ret = [dict(x) for x in ret] if ret else []
+    return {
+        "entries": ret,
+        "count": len(ret),
+        "last": next(iter(ret[-1].values())) if ret else "",
+    }
+
+
+def test_list_entries():
+    ret = list_entries("countries", 10)
+    assert len(ret["entries"]) == 10
 
 
 def get_entry(vocabulary_id, entry_id):
-    v = vocabularies.get(vocabulary_id)
-    if v is None:
-        return 404
+    if vocabulary_id not in list_tables():
+        raise NotFound(f"Vocabulary: {vocabulary_id}")
 
-    record = v[v.index == entry_id]
+    entries = db.execute(
+        f"""SELECT * FROM {vocabulary_id} WHERE op_code = ?""", (entry_id,)
+    )
 
-    if record.empty:
-        return 404
+    entries.cursor.row_factory = sqlite3.Row
+    ret = entries.cursor.fetchone()
+    if not ret:
+        raise NotFound
+    return dict(ret)
 
-    return record.to_dict("records")[0]
+
+def test_get_entry():
+    ret = get_entry("countries", "ITA")
+    assert ret.get("label_en") == "Italy"
 
 
-app = connexion.FlaskApp(__name__)
-app.add_api("vocabularies.yaml")
-app.run(port=8080)
+if __name__ == "__main__":
+    app = connexion.FlaskApp(__name__)
+    app.add_api("vocabularies.yaml", validate_responses=True)
+    app.run(port=8080)
