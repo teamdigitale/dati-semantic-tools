@@ -11,5 +11,5 @@ def yaml_load(fpath):
     return yaml.safe_load(Path(fpath).read_text())
 
 
-def yaml_to_json(data):
-    return json.dumps(yaml.safe_load(data), indent=2)
+def yaml_to_json(s: str):
+    return json.dumps(yaml.safe_load(s), indent=2)

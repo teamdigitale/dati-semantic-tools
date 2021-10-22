@@ -1,6 +1,7 @@
 from pathlib import Path
 from urllib.parse import urlencode
 
+import pytest
 import requests
 from jsonpath_ng import parse
 from rdflib import Graph
@@ -8,9 +9,10 @@ from rdflib import Graph
 from playground.utils import yaml_load
 
 BASEPATH = Path(__file__).absolute().parent.parent
-SCHEMA_CERTIFICATE = yaml_load(BASEPATH / "assets/schemas/certificato.yaml")
+SCHEMA_CERTIFICATE = yaml_load(BASEPATH / "assets/schemas/certificato.schema.yaml")
 
 
+@pytest.mark.skip(reason="Missing in Ontopia")
 def test_query_rdf():
     g = Graph()
     ret = g.query(
@@ -42,6 +44,7 @@ SELECT DISTINCT * WHERE {
 
 def sparql_get(id_):
     sparql_endpoint = "http://localhost:8890/sparql/"
+    sparql_endpoint = "https://ontopia-virtuoso.agid.gov.it/sparql"
     qp = {
         "query": [
             f"""
@@ -78,6 +81,7 @@ VALUES ?subject {{ <{id_}> }}
     return data.json()
 
 
+@pytest.mark.skip(reason="Missing in Ontopia")
 def test_find_semantics():
     """
     Returns a list of semantics objects
@@ -111,6 +115,7 @@ def test_find_semantics():
     raise NotImplementedError
 
 
+@pytest.mark.skip(reason="Missing in Ontopia")
 def test_parse_schema():
     jsonpath_expr = parse("*..x-refersTo")
     ret = []

@@ -19,8 +19,10 @@ services:
     command: ['run', '-a']
   one:
     <<: *baseline
-    image: busybox
-    command: ['sh', '-c', 'exit 0']
+    build:
+      context: ./
+      dockerfile: Dockerfile.tox
+    command: ['tox', '-e', 'jsonld']
     depends_on:
     - zero
   two:

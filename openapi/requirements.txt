@@ -1,2 +1,3 @@
 pandas
 connexion
+openapi-spec-validator
