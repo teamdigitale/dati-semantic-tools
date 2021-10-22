@@ -20,6 +20,9 @@ _meta:
   skos: http://www.w3.org/2004/02/skos/core#
   owl: 'http://www.w3.org/2002/07/owl#'
 
+  # Indexed key.
+  key:
+    "@id": "op-code"
 
   # Fields.
   valid_from: start.use

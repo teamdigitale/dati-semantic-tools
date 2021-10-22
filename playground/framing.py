@@ -7,6 +7,7 @@ from pyld import jsonld
 from rdflib import Graph
 
 from .utils import MIME_JSONLD, MIME_TURTLE, yaml_load
+from .validators import is_framing_context
 
 
 def frame_vocabulary(vpath_ttl: Path, context: Dict) -> Dict:
@@ -26,7 +27,6 @@ def frame_vocabulary(vpath_ttl: Path, context: Dict) -> Dict:
 
     # Strip unmentioned fields
     p = [{k: v for k, v in e.items() if k in context["@context"]} for e in p]
-
     return {"@graph": p, "@context": context["@context"]}
 
 
@@ -53,24 +53,30 @@ def frame_components(frame):
     return namespaces, fields, index
 
 
-def generate_frame(vpath):
+def generate_frame(vpath: Path, dest_dir: Path = Path(".")):
     """JSON-LD framing is a specification to extract information from
-       a json-ld described resource.
+    a json-ld described resource.
 
-       This function extracts information from a given resource
-       using a set of context files.
+    This function extracts information from a given resource
+    using a set of context files.
     """
 
     for frame_context in vpath.parent.glob("context-*.ld.yaml"):
         context_prefix = "." + frame_context.stem[8:]
         context = yaml_load(frame_context)
+
+        if not is_framing_context(yaml.safe_dump(context)):
+            raise ValueError(
+                f"Missing required field `key` in framing context: {frame_context}"
+            )
         namespaces, fields, index = frame_components(context)
 
         framed_data = frame_vocabulary(vpath, context)
-        dpath = vpath.with_suffix(context_prefix + ".out.yaml")
+        dpath = (dest_dir / vpath).with_suffix(context_prefix + ".yaml")
         dpath.write_text(yaml.dump(framed_data))
 
         df = pd.DataFrame(framed_data["@graph"])
-        if index:
-            df.set_index([index], inplace=True)
-        df.to_csv(vpath.with_suffix(".csv").as_posix())
+        if not index:
+            raise ValueError("Missing index.")
+        df.set_index([index], inplace=True)
+        df.to_csv(dpath.with_suffix(".csv").as_posix())

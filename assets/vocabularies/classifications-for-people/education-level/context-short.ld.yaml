@@ -6,31 +6,22 @@ _meta:
     of the table.
   index: key
   schema:
-    CountryShort:
+    EducationLevelShort:
       type: object
       required:
-      - valid_from
-      - country_code
-      - deprecated
+      - key
       - label_en
       - label_it
       properties:
-        valid_from:
+        description_en:
           type: string
-          format: date
-        valid_until:
+        description_it:
           type: string
-          format: date
-        country_code:
-          type: string
-          enum: []
-        deprecated:
-          type: boolean
         label_en:
           type: string
         label_it:
           type: string
-        op_code:
+        key:
           type: string
           pattern: "[A-Z0-9]{3}"
 # Never embed external references.
@@ -47,25 +38,25 @@ _meta:
 "@context":
 
   # Namespaces.
-  "@vocab": http://publications.europa.eu/ontology/authority/
-  dct: http://purl.org/dc/elements/1.1/
+  "@vocab": https://w3id.org/italia/onto/CPV/
+  dct: http://purl.org/dc/terms/
   skos: http://www.w3.org/2004/02/skos/core#
   owl: 'http://www.w3.org/2002/07/owl#'
 
   # Indexed key.
   key:
-    "@id": "op-code"
+    "@id": "dct:identifier"  # description: {"@id": dct:identifier}
 
   # Fields.
-  valid_from: start.use
-  valid_until: end.use
   url: "@id"
-  op_code:
-    "@id": "op-code"
-  country_code:
-    "@id": dct:identifier
   version_info: owl:versionInfo
-  deprecated: {}
+  description_en:
+    "@id": "educationLevelDesc"
+    "@language": en
+  description_it:
+    "@id": "educationLevelDesc"
+    "@language": it
+
   # Localize labels. Order is relevant.
   label_en:
     "@id": skos:prefLabel

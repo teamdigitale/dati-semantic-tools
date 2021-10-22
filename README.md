@@ -12,6 +12,7 @@ For readability:
 
 Repo contains the following files.
 
+```
 ├── assets                     # Semantic assets
 │   ├── ontologies
 │   ├── schemas
@@ -28,6 +29,7 @@ Repo contains the following files.
 ├── Dockerfile
 ├── sparql
 └── scripts                    # Syntax checks & co
+```
 
 ## Tests
 

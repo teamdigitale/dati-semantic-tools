@@ -39,13 +39,35 @@ def test_vocabulary_csv():
     )
 
 
+import os
+
+import pytest
+
+
+def walk_path(base: Path, pattern: str):
+    for root, dir, files in os.walk(base):
+        for f in files:
+            fpath = Path(root) / f
+            if fpath.match(pattern):
+                yield fpath
+
+
+@pytest.mark.parametrize(
+    "fpath", walk_path(BASEPATH / "assets" / "vocabularies", "*l.ttl")
+)
+def test_frame_vocabulary_all(fpath):
+    contexts = fpath.parent.glob("context-*.ld.yaml")
+    print(fpath)
+    for context in contexts:
+        context = yaml_load(context)
+        frame_vocabulary(fpath, context)
+        namespaces, fields, index = frame_components(context)
+    raise NotImplementedError
+
+
 def test_context_ns():
     fpath = BASEPATH / "assets" / "vocabularies" / "countries" / "latest"
     cpath = fpath / "context.ld.yaml"
     context = yaml_load(cpath)
     namespaces, fields, index = frame_components(context)
     assert not index
-    cpath = fpath / "context-short.ld.yaml"
-    context = yaml_load(cpath)
-    namespaces, fields, index = frame_components(context)
-    assert index

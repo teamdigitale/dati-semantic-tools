@@ -36,3 +36,28 @@ def is_turtle(content: str):
     g = Graph()
     g.parse(data=content, format=MIME_TURTLE)
     return True
+
+
+def is_framing_context(content: str):
+    is_jsonld(content)
+    return True
+    data = yaml.safe_load(content)
+
+    framing_context_schema = {
+        "type": "object",
+        "required": ["@context", "_meta"],
+        "properties": {
+            "@context": {
+                "type": "object",
+                "required": ["key"],
+                "properties": {"key": {"type": "object"}},
+            },
+            "_meta": {
+                "type": "object",
+                "required": ["index"],
+                "properties": {"index": {"type": "string"}},
+            },
+        },
+    }
+    jsonschema.validate(data, framing_context_schema)
+    return True
