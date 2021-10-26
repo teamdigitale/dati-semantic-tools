@@ -22,7 +22,7 @@ valid_suffixes = {
     "context-*.ld.yaml": validators.is_framing_context,
 }
 
-skip_suffixes = (".md", ".csv", ".png", ".xml", ".xsd")
+skip_suffixes = (".md", ".csv", ".png", ".xml", ".xsd", ".html")
 
 
 def validate_file(f: str):
@@ -88,3 +88,28 @@ if __name__ == "__main__":
     )
 
     workers.close()
+
+    template = """
+            <html>
+            <body>
+                <script>
+                (async () => {
+                    const response = await fetch('https://api.github.com/repos/ioggstream/json-semantic-playground/contents?ref=gh-pages');
+                    const data = await response.json();
+                    let htmlString = '<ul>';
+                    for (let file of data) {
+                    htmlString += `<li><a href="${file.path}">${file.name}</a></li>`;
+                    }
+                    htmlString += '</ul>';
+                    document.getElementsByTagName('body')[0].innerHTML = htmlString;
+                })()
+                </script>
+            <body>
+            """
+    for root, dirs, _ in os.walk(buildpath):
+        for d in dirs:
+            index_html = Path(os.path.join(root, d, "index.html"))
+            parent_path = index_html.relative_to(buildpath).parent
+            log.warning(f"Creating index file: {index_html}")
+            index_html.write_text(template)
+    Path(buildpath / "index.html").write_text(template)

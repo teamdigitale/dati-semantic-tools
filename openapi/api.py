@@ -44,7 +44,7 @@ def sql_execute(*args):
 # @lru_cache(maxsize=128)
 def list_tables():
     cur = sql_execute(
-        """SELECT name FROM sqlite_schema WHERE
+        """SELECT name FROM sqlite_master WHERE
            (type = 'table' OR type= 'view')
            AND name NOT LIKE 'sqlite_%'
            AND name LIKE '%#meta';"""
@@ -57,7 +57,7 @@ def list_tables():
 
 def last_version(vocabulary_id):
     vocabularies = sql_execute(
-        f"""SELECT name FROM sqlite_schema WHERE
+        f"""SELECT name FROM sqlite_master WHERE
            (type = 'table' OR type= 'view')
            AND name NOT LIKE 'sqlite_%'
            AND name LIKE '{vocabulary_id}#%#meta'
@@ -146,9 +146,10 @@ def list_entries(vocabulary_id, limit=100, cursor="", **params):
         "version": vocabulary["version"],
     }
 
+    headers = {"Content-Type": "application/json", "cache-control": "max-age=36000"}
     if request.headers.get("Accept") == "application/ld+json":
-        ret["@context"] = yaml.load(vocabulary["context"])["@context"]
-        headers = {"Content-Type": "application/ld+json"}
+        ret["@context"] = yaml.load(vocabulary["context"])
+        headers.update({"Content-Type": "application/ld+json"})
 
     return ret, 200, headers
 
@@ -176,8 +177,8 @@ def get_entry(vocabulary_id, entry_id):
     res = dict(ret)
     headers = {"Content-Type": "application/json", "cache-control": "max-age=36000"}
     if request.headers.get("Accept") == "application/ld+json":
-        res["@context"] = yaml.load(vocabulary["context"])["@context"]
-        headers = {"Content-Type": "application/ld+json"}
+        res["@context"] = yaml.load(vocabulary["context"])
+        headers.update({"Content-Type": "application/ld+json"})
     # import pdb; pdb.set_trace()
     return res, 200, headers
 
@@ -189,21 +190,26 @@ def test_get_entry():
 
 @click.command()
 @click.option("--dbpath", default="datastore", help="Path to sqlite datafile")
-@click.option("--dburl", help="Url to sqlite datafile", required=True)
+@click.option(
+    "--dburl",
+    help="Url to sqlite datafile",
+    default=os.environ.get("NDC_RESTAPI_DATASTORE_URL"),
+)
 @click.option("--port", default=8080, help="The port.")
-def main(dburl, port, dbpath):
+def main(dbpath, dburl, port):
+    zapp = connexion.FlaskApp(__name__, server="tornado")
+
     if dburl:
-        Path("{dbpath}.db").write_bytes(requests.get(dburl).content)
+        zapp.app.logger.info(f"Downloading database from {dburl}.")
+        Path(f"/tmp/{dbpath}.db").write_bytes(requests.get(dburl).content)
+        zapp.app.logger.warning(f"Database downloaded successfully from {dburl}.")
 
+    # validate_db or die.
 
-def main(csv, metadata, port, dbpath):
-    # initdb(csv)
-
-    # validate_db
-
-    zapp = connexion.FlaskApp(__name__)
     zapp.add_api("vocabularies.yaml", validate_responses=False)
-    zapp.app.config.update({"db": create_engine(f"sqlite:///{dbpath}.db", echo=True)})
+    zapp.app.config.update(
+        {"db": create_engine(f"sqlite:////tmp/{dbpath}.db", echo=True)}
+    )
 
     zapp.run(port=port)
 
