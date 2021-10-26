@@ -1,11 +1,40 @@
 ---
 _meta:
+  title: Country  # Must match skos:prefLabel
+  version: ... # Must match vocabulary_version
   label: short
   description: |-
     A framing context for a short version
     of the table.
-  index: key
-  schema:
+  index: key  # Required: the primary field to index.
+  inScheme: >-  # Required: the scheme referenced by the vocabulary.
+    http://publications.europa.eu/resource/authority/country
+
+  _context:
+    "@embed": "@once"
+    "@type":
+    - "skos:ConceptScheme"
+    "@context":
+      "@vocab": 'http://www.w3.org/2004/02/skos/core#'
+      owl: 'http://www.w3.org/2002/07/owl#'
+      skos: 'http://www.w3.org/2004/02/skos/core#'
+      adms: 'http://www.w3.org/ns/adms#'
+      dcatapit: 'http://dati.gov.it/onto/dcatapit#'
+      dct: 'http://purl.org/dc/terms/'
+
+      # API Metadata
+      title:
+        "@id": dct:title
+        "@language": en
+      description:
+        "@id": dct:description
+        "@language": en
+      version:
+        "@id": dct:modified  # The predicate containing the version info to be used when converting the vocabulary to CSV.
+        '@type': 'http://www.w3.org/2001/XMLSchema#date'
+      url: "@id"
+      hasTopConcept: null
+  schemas:
     EducationLevelShort:
       type: object
       required:
@@ -13,6 +42,9 @@ _meta:
       - label_en
       - label_it
       properties:
+        key:
+          type: string
+          pattern: "[A-Z0-9]{3}"
         description_en:
           type: string
         description_it:
@@ -21,9 +53,7 @@ _meta:
           type: string
         label_it:
           type: string
-        key:
-          type: string
-          pattern: "[A-Z0-9]{3}"
+
 # Never embed external references.
 "@embed": "@always"
 # Matching on type works.
@@ -49,7 +79,6 @@ _meta:
 
   # Fields.
   url: "@id"
-  version_info: owl:versionInfo
   description_en:
     "@id": "educationLevelDesc"
     "@language": en

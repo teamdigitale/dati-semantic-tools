@@ -5,6 +5,7 @@ import json
 import logging
 import os
 from pathlib import Path
+from shutil import copy
 
 from playground import validators
 from playground.tools import build_asset, yaml_load
@@ -51,8 +52,11 @@ def build_yaml_asset(fpath: Path, buildpath: Path = Path(".")):
         dsuffix = ".jsonld"
         dpath_name = fpath.with_suffix("").name
     dpath = (buildpath / fpath.parent / dpath_name).with_suffix(dsuffix)
+    dpath.parent.mkdir(parents=True, exist_ok=True)
     data = yaml_load(fpath.as_posix())
     dpath.write_text(json.dumps(data, indent=2))
+
+    copy(fpath, buildpath / fpath.parent / fpath.name)
 
 
 def list_files(basepath):
@@ -79,6 +83,8 @@ if __name__ == "__main__":
     workers.starmap(
         build_asset, ((f, buildpath) for f in file_list if f.suffix == ".ttl")
     )
-    # workers.starmap(build_yaml_asset, ((f, buildpath) for f in file_list if f.suffix == ".yaml"))
+    workers.starmap(
+        build_yaml_asset, ((f, buildpath) for f in file_list if f.suffix == ".yaml")
+    )
 
     workers.close()

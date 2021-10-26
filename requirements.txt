@@ -6,3 +6,4 @@ jsonschema
 pandas
 pyshacl
 pyld
+sqlalchemy

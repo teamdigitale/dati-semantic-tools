@@ -7,7 +7,7 @@ import jsonschema
 from pyld import jsonld
 from rdflib import Graph
 
-from .framing import generate_frame
+from .framing import frame_vocabulary_to_csv
 from .utils import MIME_JSONLD, MIME_TURTLE, yaml_load
 
 log = logging.getLogger(__name__)
@@ -48,6 +48,7 @@ def generate_asset(asset_path_ttl: Path):
 
 
 def build_asset(asset_path: Path, dest_dir: Path = Path(".")):
+    log.warning(f"Building {asset_path} in {dest_dir}")
     if "out" in asset_path.suffixes:
         return
 
@@ -60,4 +61,5 @@ def build_asset(asset_path: Path, dest_dir: Path = Path(".")):
 
         g.serialize(format=fmt, destination=dpath.as_posix())
 
-    generate_frame(asset_path, dest_dir)
+    for frame_context in asset_path.parent.glob("context-*.ld.yaml"):
+        frame_vocabulary_to_csv(asset_path, frame_context, dest_dir)

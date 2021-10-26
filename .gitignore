@@ -18,3 +18,4 @@ __pycache__
 *.oas3.json
 
 deleteme
+_*

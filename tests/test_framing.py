@@ -1,8 +1,14 @@
+import os
 from pathlib import Path
 
 import pandas as pd
+import pytest
 
-from playground.framing import frame_components, frame_vocabulary
+from playground.framing import (
+    frame_components,
+    frame_vocabulary,
+    frame_vocabulary_to_csv,
+)
 from playground.utils import yaml_load
 
 BASEPATH = Path(__file__).absolute().parent.parent
@@ -25,7 +31,7 @@ def test_vocabulary_csv():
     cpath = fpath / "codelist.context.ld.yaml"
     context = yaml_load(cpath)
     vocab_jsonld = frame_vocabulary(vpath, context)
-    namespaces, fields, index = frame_components(context)
+    namespaces, fields, index, metadata_context = frame_components(context)
 
     df = pd.DataFrame(vocab_jsonld["@graph"])
     if index:
@@ -39,11 +45,6 @@ def test_vocabulary_csv():
     )
 
 
-import os
-
-import pytest
-
-
 def walk_path(base: Path, pattern: str):
     for root, dir, files in os.walk(base):
         for f in files:
@@ -53,21 +54,26 @@ def walk_path(base: Path, pattern: str):
 
 
 @pytest.mark.parametrize(
-    "fpath", walk_path(BASEPATH / "assets" / "vocabularies", "*l.ttl")
+    "fpath", walk_path(BASEPATH / "assets" / "vocabularies", "*.ttl")
 )
 def test_frame_vocabulary_all(fpath):
     contexts = fpath.parent.glob("context-*.ld.yaml")
     print(fpath)
-    for context in contexts:
-        context = yaml_load(context)
-        frame_vocabulary(fpath, context)
-        namespaces, fields, index = frame_components(context)
-    raise NotImplementedError
+    dest_dir = Path("out/")
+    for context_path in contexts:
+
+        framed_data, framed_metadata = frame_vocabulary_to_csv(
+            fpath, context_path, dest_dir
+        )
+        metadata = framed_metadata["@graph"][0]
+        assert metadata["title"]
+        assert metadata["description"]
+        assert metadata["version"]
 
 
 def test_context_ns():
     fpath = BASEPATH / "assets" / "vocabularies" / "countries" / "latest"
-    cpath = fpath / "context.ld.yaml"
+    cpath = fpath / "context-short.ld.yaml"
     context = yaml_load(cpath)
-    namespaces, fields, index = frame_components(context)
-    assert not index
+    namespaces, fields, index, metadata_context = frame_components(context)
+    assert index

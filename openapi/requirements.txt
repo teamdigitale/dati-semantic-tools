@@ -1,3 +1,6 @@
-pandas
+# pandas
 connexion
+connexion[swagger-ui]
 openapi-spec-validator
+click
+sqlalchemy

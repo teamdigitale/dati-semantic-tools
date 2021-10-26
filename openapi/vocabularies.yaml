@@ -26,69 +26,49 @@ x-commons:
     default:
       $ref: '#/components/responses/default'
 
-openapi: 3.0.0
+openapi: 3.0.2
 info:
-  version: "1.0.0"
-  # Il `title` e' il nome del tuo prodotto/servizio!
-  # E' la prima cosa ad apparire in pagine web e cataloghi.
-  # Dev'essere chiaro e conciso.
+  version: "0.0.1"
   title: |-
-    Ora esatta.
+    Controlled Vocabularies.
   x-summary: >-
-    Questo servizio ritorna la data e l'ora attuali in UTC.
+    Access controlled vocabularies via a REST interface.
   description: |
-    #### Documentazione
-    Il servizio Ora esatta ritorna l'ora del server in formato RFC5424 (syslog).
+    #### Documentation
+    This API exposes via a REST interface, dataset contained in RDF controlled vocabularies
+    such as the list of foreign countries or the education levels.
 
-    `2018-12-30T12:23:32Z`
+    This API helps:
 
-    Qui va' inserita la documentazione principale del servizio.
-    Il testo dev'essere diviso in piu' parti, tutte scritte in Markdown.
+      * to uniform syntax and semantic of data used to create public services;
+      * both public and private service providers in improving the interoperability of their services.
 
-    Questa sezione e' informativa. Ricordati di inserire:
+    Every API references the source of its data.
 
-      * cosa fanno queste API?
-      * chi puo' beneficiarne?
-      * perche' sono utili?
+    #### Notes
 
-    ##### Sottosezioni
-    E' possibile utilizzare - con criterio - delle sottosezioni.
+    This API do not requires authentication or authorization,
+    but must be used according the referenced terms of services, including
+    the throttling and caching information.
 
-    #### Note
+    #### Examples
 
-    Il servizio non richiede autenticazione, ma va' usato rispettando gli
-    header di throttling esposti in conformita' alle Linee Guida del Modello di interoperabilita'.
-
-    Usa questa sezione per annotazioni specifiche, riferimenti normativi e/o
-    per manleve ed esclusioni di responsabilita' eventualmente non incluse in `termsOfService`.
-
-    #### Informazioni tecniche ed esempi
-
-    Esempio:
+    Retrieve the list of exposed vocabularies via
 
     ```
-    http http://localhost:8443/vocabularies/v1/echo
+    http https://localhost:8443/vocabularies/v1/vocabularies
     {
-      'vocabularies': '2018-12-30T12:23:32Z'
+      'entries': [
+        {"href": "https://"}
+      ]
     }
     ```
 
-    Qui e' possibile introdurre brevi informazioni tecniche ed esempi.
-    Attenzione: la `description` non sostituisce la documentazione di progetto,
-    deve pero' facilitare l'esecuzione delle prime richieste.
-
-
-  # I termini del servizio contengono un riferimento
-  #   a tutte le indicazioni e le note legali per l'utilizzo
-  #   del servizio, inclusi gli eventuali riferimenti utili al GDPR.
   termsOfService: 'http://swagger.io/terms/'
-  # Chi posso contattare per informazioni sul servizio e sul suo stato?
   contact:
     email: robipolli@gmail.com
     name: Roberto Polli
     url: https://twitter.com/ioggstream
-  # L'audience delle API. Attualmente e' definito solamente
-  #   la tipologia `public`.
   x-audience:
     - public
   # Ogni API deve avere un UUID, invariante nel tempo e
@@ -106,19 +86,11 @@ info:
     retired: 2050-06-01
     maturity: published
 
-# Una lista di `tag` utili a raggruppare le varie operazioni
-#   eseguite dalle API. Ogni `tag` puo' referenziare un link
-#   alla sua descrizione.
 tags:
   - name: public
     description: Retrieve informations
     externalDocs:
       url: http://docs.my-api.com/pet-operations.htm
-# Uno o piu' server di erogazione.
-#   Puo' essere utile indicare gli indirizzi di collaudo,
-#   sviluppo e test.
-#   Di seguito mostriamo come indicare se il server
-#   e' una sandbox o meno con dei tag custom.
 servers:
   - description: Development server
     url: /vocabularies/v1
@@ -131,14 +103,11 @@ servers:
       interval: 300
       timeout: 15
 
-#
-# Qui vanno tutti i path.
-#
 paths:
   /vocabularies:
     get:
-      summary: a list of vocabularies
-      description: a list of vocabularies
+      summary: List vocabularies
+      description: List vocabularies and their metadata.
       operationId: api.list_vocabularies
       tags:
       - public
@@ -146,7 +115,10 @@ paths:
         <<: *common-responses
         '200':
           description: |
-            Il server ha ritornato il timestamp.
+            Returned a list of vocabularies with their Metadata
+            and the URL.
+
+            TODO: A way of returing versioned resources must be identified.
           headers:
             <<: *ratelimit-headers
           content:
@@ -158,7 +130,7 @@ paths:
     get:
       summary: Return a given entry from a vocabulary
       description: |-
-        A single entry from the vocabulary.
+        A single entry from the selected vocabulary.
       operationId: api.get_entry
       tags:
       - public
@@ -167,6 +139,8 @@ paths:
           schema:
             type: string
             maxLength: 64
+            pattern: >-
+              [a-zA-Z0-9\-]{0,64}
           in: path
           required: true
         - name: entry_id
@@ -175,22 +149,40 @@ paths:
             maxLength: 64
           in: path
           required: true
+        - name: format
+          schema:
+            type: string
+            enum:
+            - 'jsonld'
+            - 'json'
+          in: query
       responses:
         <<: *common-responses
         '200':
           description: |
-            Il server ha ritornato il timestamp.
-          # Questi header di throttling sono obbligatori e definiti
-          #   nel Nuovo modello di interoperabilità.
+            Il server ha ritornato il codepoint del vocabolario.
           headers:
             <<: *ratelimit-headers
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Entry'
-
+                allOf:
+                - $ref: '#/components/schemas/Entry'
+                - type: object
+                  properties:
+                    "@context":
+                      type: object
+                      maxProperties: 50
   /vocabularies/{vocabulary_id}:
     get:
+      summary: Return one or more entries from a vocabulary.
+      description: |
+        Query data from the dataset using available fields.
+
+        Invalid parameters result in a `400` response.
+      operationId: api.list_entries
+      tags:
+        - public
       parameters:
         - name: limit
           schema:
@@ -215,19 +207,22 @@ paths:
             maxLength: 64
           in: path
           required: true
-      summary: Return one or more entries from a vocabulary.
-      description: |
-        Query data from the dataset using available fields.
-      operationId: api.list_entries
-      tags:
-        - public
+        - name: label_it
+          description: |-
+            A string to be matched in the label_it of the vocabulary.
+          allowReserved: false
+          schema:
+            type: string
+            maxLength: 64
+            pattern: >-
+              %?[a-zA-Z0-9]{,62}%?
+          in: query
+          required: false
       responses:
         <<: *common-responses
         '200':
           description: |
-            Il server ha ritornato il timestamp.
-          # Questi header di throttling sono obbligatori e definiti
-          #   nel Nuovo modello di interoperabilità.
+            A list of the matching entries.
           headers:
             <<: *ratelimit-headers
           content:
@@ -248,10 +243,7 @@ paths:
         <<: *common-responses
         '200':
           description: |
-            Il server ha ritornato lo status. In caso di problemi
-            ritorna sempre un problem+json.
-          # Questi header di throttling sono obbligatori e definiti
-          #   nel Nuovo modello di interoperabilità.
+            Server returned correctly its status.
           headers:
             <<: *ratelimit-headers
           content:

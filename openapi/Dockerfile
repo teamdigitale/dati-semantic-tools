@@ -1,4 +1,4 @@
-FROM amancevice/pandas
+FROM python:alpine
 
 RUN mkdir -p /app
 WORKDIR /app

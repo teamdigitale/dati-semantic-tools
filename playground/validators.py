@@ -1,3 +1,6 @@
+from pathlib import Path
+from typing import Dict
+
 import jsonschema
 import yaml
 from openapi_spec_validator import validate_spec
@@ -61,3 +64,10 @@ def is_framing_context(content: str):
     }
     jsonschema.validate(data, framing_context_schema)
     return True
+
+
+def is_valid_sqlite(datafile: Path, schema: Dict) -> bool:
+    """Load a sqlite datafile and verify that all entries are
+        compliant with the given schemas.
+    """
+    raise NotImplementedError
