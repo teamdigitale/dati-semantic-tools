@@ -1,0 +1,96 @@
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://publications.europa.eu/resource/authority/subdivision-position/AFTER> a skos:Concept ;
+    at:authority-code "AFTER" ;
+    at:deprecated "false" ;
+    at:op-code "AFTER" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "{(AF)}" ;
+            dc:source "FORMEX" ] ;
+    at:start.use "2004-05-01" ;
+    atold:op-code "AFTER" ;
+    dc:identifier "AFTER" ;
+    skos:inScheme atold:subdivision-position ;
+    skos:prefLabel "after"@en .
+
+<http://publications.europa.eu/resource/authority/subdivision-position/BEFORE> a skos:Concept ;
+    at:authority-code "BEFORE" ;
+    at:deprecated "false" ;
+    at:op-code "BEFORE" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "{(BE)}" ;
+            dc:source "FORMEX" ] ;
+    at:start.use "2004-05-01" ;
+    atold:op-code "BEFORE" ;
+    dc:identifier "BEFORE" ;
+    skos:inScheme atold:subdivision-position ;
+    skos:prefLabel "before"@en .
+
+<http://publications.europa.eu/resource/authority/subdivision-position/BEGIN> a skos:Concept ;
+    at:authority-code "BEGIN" ;
+    at:deprecated "false" ;
+    at:op-code "BEGIN" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "{(AB)}" ;
+            dc:source "FORMEX" ] ;
+    at:start.use "2004-05-01" ;
+    atold:op-code "BEGIN" ;
+    dc:identifier "BEGIN" ;
+    skos:inScheme atold:subdivision-position ;
+    skos:prefLabel "at the beginning"@en .
+
+<http://publications.europa.eu/resource/authority/subdivision-position/END> a skos:Concept ;
+    at:authority-code "END" ;
+    at:deprecated "false" ;
+    at:op-code "END" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "{(EN)}" ;
+            dc:source "FORMEX" ] ;
+    at:start.use "2004-05-01" ;
+    atold:op-code "END" ;
+    dc:identifier "END" ;
+    skos:inScheme atold:subdivision-position ;
+    skos:prefLabel "at the end"@en .
+
+<http://publications.europa.eu/resource/authority/subdivision-position/OP_DATPRO> a skos:Concept ;
+    at:op-code "OP_DATPRO" ;
+    atold:op-code "OP_DATPRO" ;
+    dc:identifier "OP_DATPRO" ;
+    skos:inScheme atold:subdivision-position ;
+    skos:prefLabel "НЕОКОНЧАТЕЛНИ ДАННИ"@bg,
+        "Předběžné údaje"@cs,
+        "Midlertidige data"@da,
+        "Vorläufige Daten"@de,
+        "Προσωρινά δεδομένα"@el,
+        "Provisional data"@en,
+        "Datos provisionales"@es,
+        "Esialgsed andmed"@et,
+        "Alustavat tiedot"@fi,
+        "Données provisoires"@fr,
+        "Sonraí sealadacha"@ga,
+        "Privremeni podaci"@hr,
+        "Ideiglenes adatok"@hu,
+        "Dati provvisori"@it,
+        "Laikinieji duomenys"@lt,
+        "Provizoriski dati"@lv,
+        "Dejta provviżorja"@mt,
+        "Voorlopige gegevens"@nl,
+        "Dane tymczasowe"@pl,
+        "Dados provisórios"@pt,
+        "Date provizorii"@ro,
+        "Predbežné údaje"@sk,
+        "Začasni podatki"@sl,
+        "Tillfälliga uppgifter"@sv .
+
+atold:subdivision-position a skos:ConceptScheme ;
+    rdfs:label "Subdivision position"@en ;
+    at:prefLabel "Subdivision position"@en ;
+    at:table.id "subdivision-position" ;
+    at:table.version.number "20190918-0" ;
+    owl:versionInfo "20190918-0" ;
+    skos:prefLabel "Subdivision position"@en .

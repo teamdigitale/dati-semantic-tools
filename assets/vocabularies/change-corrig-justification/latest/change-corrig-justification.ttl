@@ -1,0 +1,443 @@
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://publications.europa.eu/resource/authority/change-corrig-justification/OP_DATPRO> a skos:Concept ;
+    at:op-code "OP_DATPRO" ;
+    atold:op-code "OP_DATPRO" ;
+    dc:identifier "OP_DATPRO" ;
+    skos:inScheme atold:change-corrig-justification ;
+    skos:prefLabel "НЕОКОНЧАТЕЛНИ ДАННИ"@bg,
+        "Předběžné údaje"@cs,
+        "Midlertidige data"@da,
+        "Vorläufige Daten"@de,
+        "Προσωρινά δεδομένα"@el,
+        "Provisional data"@en,
+        "Datos provisionales"@es,
+        "Esialgsed andmed"@et,
+        "Alustavat tiedot"@fi,
+        "Données provisoires"@fr,
+        "Sonraí sealadacha"@ga,
+        "Privremeni podaci"@hr,
+        "Ideiglenes adatok"@hu,
+        "Dati provvisori"@it,
+        "Laikinieji duomenys"@lt,
+        "Provizoriski dati"@lv,
+        "Dejta provviżorja"@mt,
+        "Voorlopige gegevens"@nl,
+        "Dane tymczasowe"@pl,
+        "Dados provisórios"@pt,
+        "Date provizorii"@ro,
+        "Predbežné údaje"@sk,
+        "Začasni podatki"@sl,
+        "Tillfälliga uppgifter"@sv .
+
+<http://publications.europa.eu/resource/authority/change-corrig-justification/cancel> a skos:Concept ;
+    at:authority-code "cancel" ;
+    at:deprecated "false" ;
+    at:op-code "cancel" ;
+    at:start.use "2019-09-18" ;
+    atold:op-code "cancel" ;
+    dc:identifier "cancel" ;
+    skos:altLabel "Обявлението (или обособена позиция, или част от него) е отменено."@bg,
+        "Oznámení (nebo jeho konkrétní část) je zrušeno."@cs,
+        "Meddelelsen (eller den specifikke delkontrakt eller del heraf) er blevet annulleret."@da,
+        "Die Bekanntmachung (bzw. spezifisches Los oder spezifischer Abschnitt) wird annulliert."@de,
+        "Η σύμβαση (ή το συγκεκριμένο τμήμα ή μέρος της) ματαιώνεται."@el,
+        "The notice (or its specific lot or part) is cancelled."@en,
+        "El anuncio (o un lote o una parte determinados de él) ha sido cancelado."@es,
+        "Hanketeade (või selle konkreetne osa) on tühistatud."@et,
+        "Ilmoitus (tai sen erä tai osa) peruutetaan."@fi,
+        "L’avis (ou un lot ou une partie spécifique) est annulé."@fr,
+        "Tá an fógra (nó luchtóg shonrach nó cuid shonrach de) curtha ar ceal."@ga,
+        "Obavijest (ili njezina određena grupa ili dio) je otkazana."@hr,
+        "A hirdetményt (vagy annak adott tételét vagy részét) törölték."@hu,
+        "Il bando (o un suo lotto specifico o una sua parte specifica) è annullato."@it,
+        "Skelbimas (jo dalis arba jame skelbiamo pirkimo dalis) atšaukiamas."@lt,
+        "Paziņojums (vai tajā norādītā konkrētā daļa vai sadaļa) ir atcelts."@lv,
+        "L-avviż (jew il-lott speċifiku jew il-parti speċifika tiegħu) ġie kkanċellat."@mt,
+        "De aankondiging (of het specifieke perceel of onderdeel ervan) wordt geannuleerd."@nl,
+        "Ogłoszenie (lub określona część zamówienia lub część ogłoszenia) zostaje anulowane(-a)."@pl,
+        "O anúncio (ou um lote ou parte específico do mesmo) é cancelado."@pt,
+        "Anunțul [sau lotul ori partea sa specifică] este anulat."@ro,
+        "Obstarávanie (alebo jeho konkrétna časť) sa ruší."@sk,
+        "Obvestilo (ali njegov poseben sklop ali del) je preklicano."@sl,
+        "Meddelandet (eller dess särskilda delupphandlingsområde eller del av det) dras in."@sv ;
+    skos:inScheme atold:change-corrig-justification ;
+    skos:prefLabel "Отмяна"@bg,
+        "Zrušení"@cs,
+        "Annullering"@da,
+        "Annullierung"@de,
+        "Ακύρωση"@el,
+        "Cancellation"@en,
+        "Cancelación"@es,
+        "Tühistamine"@et,
+        "Peruutus"@fi,
+        "Annulation"@fr,
+        "Cur ar ceal"@ga,
+        "Poništenje"@hr,
+        "Törlés"@hu,
+        "Annullamento"@it,
+        "Atšaukimas"@lt,
+        "Atcelšana"@lv,
+        "Kanċellazzjoni"@mt,
+        "Geannuleerd"@nl,
+        "Anulowanie"@pl,
+        "Cancelamento"@pt,
+        "Anulare"@ro,
+        "Zrušenie"@sk,
+        "Preklic"@sl,
+        "Inställt"@sv .
+
+<http://publications.europa.eu/resource/authority/change-corrig-justification/cancel-intent> a skos:Concept ;
+    at:authority-code "cancel-intent" ;
+    at:deprecated "false" ;
+    at:op-code "cancel-intent" ;
+    at:start.use "2019-09-18" ;
+    atold:op-code "cancel-intent" ;
+    dc:identifier "cancel-intent" ;
+    skos:altLabel "Купувачът възнамерява да отмени поръчката."@bg,
+        "Kupující zamýšlí zadávací řízení zrušit."@cs,
+        "Køber har til hensigt at annullere udbuddet."@da,
+        "Der Beschaffer beabsichtigt, die Auftragsvergabe zu annullieren."@de,
+        "Ο αγοραστής προτίθεται να ακυρώσει τη σύμβαση."@el,
+        "The buyer intends to cancel the procurement."@en,
+        "El comprador tiene la intención de cancelar la contratación."@es,
+        "Hankija kavatseb hanke tühistada."@et,
+        "Ostaja aikoo peruuttaa hankinnan."@fi,
+        "L’acheteur a l’intention d’annuler le marché."@fr,
+        "Tá sé beartaithe ag an gceannaitheoir an soláthar a chur ar ceal."@ga,
+        "Kupac namjerava poništiti postupak javne nabave."@hr,
+        "A vevő törölni kívánja a közbeszerzést."@hu,
+        "Il committente intende annullare l'appalto."@it,
+        "Pirkėjas ketina nutraukti pirkimo procedūrą."@lt,
+        "Pircējs plāno atcelt iepirkumu."@lv,
+        "Ix-xerrej biħsiebu jikkanċella l-akkwist."@mt,
+        "De koper is voornemens de opdracht te annuleren."@nl,
+        "Nabywca zamierza unieważnić postępowanie."@pl,
+        "O adquirente tenciona cancelar o contrato."@pt,
+        "Cumpărătorul intenționează să anuleze achiziția."@ro,
+        "Kupujúci má v úmysle toto obstarávanie zrušiť."@sk,
+        "Kupec namerava preklicati javno naročilo."@sl,
+        "Upphandlaren har för avsikt att ställa in upphandlingen."@sv ;
+    skos:inScheme atold:change-corrig-justification ;
+    skos:prefLabel "Намерение за отмяна"@bg,
+        "Zamýšlené zrušení"@cs,
+        "Hensigt om annullering"@da,
+        "Annullierung beabsichtigt"@de,
+        "Πρόθεση ακύρωσης"@el,
+        "Cancellation intention"@en,
+        "Intención de cancelación"@es,
+        "Tühistamiskatse"@et,
+        "Peruutusaikomus"@fi,
+        "Intention d’annuler"@fr,
+        "Cur ar ceal beartaithe"@ga,
+        "Planirano poništenje"@hr,
+        "Törlési szándék"@hu,
+        "Previsto annullamento"@it,
+        "Ketinimas atšaukti pirkimą"@lt,
+        "Atcelšanas nodoms"@lv,
+        "Intenzjoni tal-kanċellazzjoni"@mt,
+        "Annulering voorgenomen"@nl,
+        "Zamiar unieważnienia"@pl,
+        "Intenção de cancelamento"@pt,
+        "Intenție de anulare"@ro,
+        "Úmysel zrušiť"@sk,
+        "Nameravan preklic"@sl,
+        "Avsikt att ställa in"@sv .
+
+<http://publications.europa.eu/resource/authority/change-corrig-justification/cor-buy> a skos:Concept ;
+    at:authority-code "cor-buy" ;
+    at:deprecated "false" ;
+    at:op-code "cor-buy" ;
+    at:start.use "2019-09-18" ;
+    atold:op-code "cor-buy" ;
+    dc:identifier "cor-buy" ;
+    skos:altLabel "Поправка на една или повече грешки, допуснати първоначално от купувача."@bg,
+        "Oprava jedné či více chyb, které učinil kupující."@cs,
+        "Berigtigelse af én eller flere fejl, der oprindeligt blev lavet af køber."@da,
+        "Korrektur eines Fehlers oder mehrerer Fehler seitens des Beschaffers."@de,
+        "Διόρθωση ενός ή περισσοτέρων σφαλμάτων που είχαν γίνει αρχικά από τον αγοραστή."@el,
+        "Correction of one or more mistakes originally made by the buyer."@en,
+        "Corrección de uno o varios errores inicialmente cometidos por el comprador."@es,
+        "Hankija algselt tehtud ühe või mitme vea parandamine."@et,
+        "Ostajan alun perin tekemän yhden tai useamman virheen korjaaminen."@fi,
+        "Correction d’une ou de plusieurs erreurs commises à l’origine par l’acheteur."@fr,
+        "Ceartú botúin amháin nó níos mó a rinne an ceannaitheoir féin."@ga,
+        "Ispravak jedne ili više pogrešaka kupca."@hr,
+        "A vevő által eredetileg elkövetett egy vagy több hiba kijavítása."@hu,
+        "Rettifica di uno o più errori commessi originariamente dal committente."@it,
+        "Vienos ar daugiau klaidų, kurias pirmiau padarė pirkėjas, taisymas."@lt,
+        "Pircēja sākotnēji pieļautas kļūdas vai kļūdu labošana."@lv,
+        "Korrezzjoni ta’ żball wieħed jew iktar li sar(u) oriġinarjament mix-xerrej."@mt,
+        "Correctie van een of meer oorspronkelijk door de koper gemaakte fouten."@nl,
+        "Korekta pomyłki lub pomyłek, które pierwotnie popełnił nabywca."@pl,
+        "Correção de um ou mais erros cometidos inicialmente pelo adquirente."@pt,
+        "Corectarea uneia sau a mai multor erori făcute inițial de către cumpărător."@ro,
+        "Oprava jednej alebo viacerých chýb, ktoré pôvodne urobil kupujúci."@sk,
+        "Popravljanje napak, ki jih je prvotno naredil kupec."@sl,
+        "Rättelse av ett eller flera misstag som upphandlaren ursprungligen gjorde."@sv ;
+    skos:inScheme atold:change-corrig-justification ;
+    skos:prefLabel "Поправка на грешки, допуснати от купувача"@bg,
+        "Oprava chyb kupujícího"@cs,
+        "Berigtigelse – køber"@da,
+        "Korrektur – Beschaffer"@de,
+        "Διόρθωση λαθών αγοραστή"@el,
+        "Buyer correction"@en,
+        "Corrección comprador"@es,
+        "Hankija vea parandamine"@et,
+        "Ostajan virheen korjaaminen"@fi,
+        "Correction par l’acheteur"@fr,
+        "Ceartúchán - ceannaitheoir"@ga,
+        "Ispravak pogreške kupca"@hr,
+        "Ajánlatkérő szervezet általi hiba javítása"@hu,
+        "Rettifica errore committente"@it,
+        "Pirkėjo klaidų ištaisymas"@lt,
+        "Pircēja kļūdas izlabošana"@lv,
+        "Korrezzjoni tax-xerrej"@mt,
+        "Correctie koper"@nl,
+        "Korekta nabywcy"@pl,
+        "Correção pelo adquirente"@pt,
+        "Corectare cumpărător"@ro,
+        "Oprava chyby kupujúceho"@sk,
+        "Popravek kupca"@sl,
+        "Rättelse av upphandlare"@sv .
+
+<http://publications.europa.eu/resource/authority/change-corrig-justification/cor-esen> a skos:Concept ;
+    at:authority-code "cor-esen" ;
+    at:deprecated "false" ;
+    at:op-code "cor-esen" ;
+    at:start.use "2019-09-18" ;
+    atold:op-code "cor-esen" ;
+    dc:identifier "cor-esen" ;
+    skos:altLabel "Поправка на една или повече грешки, допуснати първоначално от платформата eSender."@bg,
+        "Oprava jedné či více chyb, které učinil eSender."@cs,
+        "Berigtigelse af én eller flere fejl, der oprindeligt blev lavet af eSender."@da,
+        "Korrektur eines Fehlers oder mehrerer Fehler im eSender-System."@de,
+        "Διόρθωση ενός ή περισσοτέρων σφαλμάτων που είχαν γίνει αρχικά από το σύστημα eSender."@el,
+        "Correction of one or more mistakes originally made by the eSender."@en,
+        "Corrección de uno o varios errores inicialmente cometidos por el eSender."@es,
+        "Süsteemi eSender algselt tehtud ühe või mitme vea parandamine."@et,
+        "eSender-lähestyspalvelun alun perin tekemän yhden tai useamman virheen korjaaminen."@fi,
+        "Correction d’une ou de plusieurs erreurs commises à l’origine par l’eSender."@fr,
+        "Ceartú botúin amháin nó níos mó a rinne an eSender féin."@ga,
+        "Ispravak jedne ili više pogrešaka u okviru sustava eSender (ePošiljatelj)."@hr,
+        "Az eSender által eredetileg elkövetett egy vagy több hiba kijavítása."@hu,
+        "Rettifica di uno o più errori commessi originariamente dall'eSender."@it,
+        "Vienos ar daugiau klaidų, kurias pirmiau padarė elektroninių formų siuntėjas, taisymas."@lt,
+        "E-sūtītāja sākotnēji pieļautas kļūdas vai kļūdu labošana."@lv,
+        "Korrezzjoni ta’ żball wieħed jew iktar li sar(u) oriġinarjament mill-mezz li bih jintbagħtu l-avviżi b’mod elettroniku."@mt,
+        "Correctie van een of meer oorspronkelijk door het eSender-platform gemaakte fouten."@nl,
+        "Korekta pomyłki lub pomyłek, które pierwotnie popełnił eSender."@pl,
+        "Correção de um ou mais erros cometidos inicialmente pelo eSender."@pt,
+        "Corectarea uneia sau a mai multor erori făcute inițial de către eSender."@ro,
+        "Oprava jednej alebo viacerých chýb, ktoré pôvodne urobil eSender."@sk,
+        "Popravljanje napak, ki jih je prvotno naredil sistem eSender."@sl,
+        "Rättelse av ett eller flera misstag som eSender ursprungligen gjorde."@sv ;
+    skos:inScheme atold:change-corrig-justification ;
+    skos:prefLabel "Поправка на грешки, допуснати от платформата eSender"@bg,
+        "Oprava chyb eSendera"@cs,
+        "Berigtigelse – eSender"@da,
+        "Korrektur – eSender"@de,
+        "Διόρθωση λαθών του συστήματος eSender"@el,
+        "eSender correction"@en,
+        "Corrección eSender"@es,
+        "Süsteemi eSender vea parandamine"@et,
+        "eSender-virheen korjaaminen"@fi,
+        "Correction par l’eSender"@fr,
+        "Ceartúchán - eSender"@ga,
+        "Ispravak pogreške sustava eSender"@hr,
+        "eSender hiba javítása"@hu,
+        "Rettifica errore eSender"@it,
+        "E. formų siuntėjo klaidų ištaisymas"@lt,
+        "E-sūtītāja kļūdas izlabošana"@lv,
+        "Korrezzjoni tal-mezz li bih jintbagħtu l-avviżi b’mod elettroniku"@mt,
+        "Correctie eSender"@nl,
+        "Korekta eSendera"@pl,
+        "Correção pelo eSender"@pt,
+        "Corectare eSender"@ro,
+        "Oprava chyby eSendera"@sk,
+        "Popravek sistema eSender"@sl,
+        "eSender-rättelse"@sv .
+
+<http://publications.europa.eu/resource/authority/change-corrig-justification/cor-pub> a skos:Concept ;
+    at:authority-code "cor-pub" ;
+    at:deprecated "false" ;
+    at:op-code "cor-pub" ;
+    at:start.use "2019-09-18" ;
+    atold:op-code "cor-pub" ;
+    dc:identifier "cor-pub" ;
+    skos:altLabel "Поправка на една или повече грешки, допуснати първоначално от издателя."@bg,
+        "Oprava jedné či více chyb, které učinil vydavatel."@cs,
+        "Berigtigelse af én eller flere fejl, der oprindeligt blev lavet af udgiver."@da,
+        "Korrektur eines Fehlers oder mehrerer Fehler bei der Veröffentlichung."@de,
+        "Διόρθωση ενός ή περισσοτέρων σφαλμάτων που είχαν γίνει αρχικά από τον υπεύθυνο δημοσίευσης."@el,
+        "Correction of one or more mistakes originally made by the publisher."@en,
+        "Corrección de uno o varios errores inicialmente cometidos por el encargado de la publicación."@es,
+        "Avaldaja algselt tehtud ühe või mitme vea parandamine."@et,
+        "Julkaisijan alun perin tekemän yhden tai useamman virheen korjaaminen."@fi,
+        "Correction d’une ou de plusieurs erreurs commises à l’origine par l’éditeur."@fr,
+        "Ceartú botúin amháin nó níos mó a rinne an foilsitheoir féin."@ga,
+        "Ispravak jedne ili više pogrešaka izdavača."@hr,
+        "A közzétevő által eredetileg elkövetett egy vagy több hiba kijavítása."@hu,
+        "Rettifica di uno o più errori commessi originariamente dall'editore."@it,
+        "Vienos ar daugiau klaidų, kurias pirmiau padarė leidėjas, taisymas."@lt,
+        "Publicētāja sākotnēji pieļautas kļūdas vai kļūdu labošana."@lv,
+        "Korrezzjoni ta’ żball wieħed jew iktar li sar(u) oriġinarjament mill-pubblikatur."@mt,
+        "Correctie van een of meer oorspronkelijk door het platform voor bekendmaking gemaakte fouten."@nl,
+        "Korekta pomyłki lub pomyłek, które pierwotnie popełnił publikujący."@pl,
+        "Correção de um ou mais erros cometidos inicialmente pelo editor."@pt,
+        "Corectarea uneia sau a mai multor erori făcute inițial de către editor."@ro,
+        "Oprava jednej alebo viacerých chýb, ktoré pôvodne urobil vydavateľ."@sk,
+        "Popravljanje napak, ki jih je prvotno naredil objavitelj."@sl,
+        "Rättelse av ett eller flera misstag som utgivaren ursprungligen gjorde."@sv ;
+    skos:inScheme atold:change-corrig-justification ;
+    skos:prefLabel "Поправка на грешки, допуснати от издателя"@bg,
+        "Oprava chyb vydavatele"@cs,
+        "Berigtigelse – udgiver"@da,
+        "Korrektur – Veröffentlichung"@de,
+        "Διόρθωση λαθών εκδότη"@el,
+        "Publisher correction"@en,
+        "Corrección encargado publicación"@es,
+        "Avaldaja vea parandamine"@et,
+        "Julkaisijan virheen korjaaminen"@fi,
+        "Correction par l’éditeur"@fr,
+        "Ceartúchán - foilsitheoir"@ga,
+        "Ispravak pogreške izdavača"@hr,
+        "Közzétevői hiba javítása"@hu,
+        "Rettifica errore editore"@it,
+        "Skelbėjo klaidų ištaisymas"@lt,
+        "Publicētāja kļūdas izlabošana"@lv,
+        "Korrezzjoni tal-pubblikatur"@mt,
+        "Correctie platform voor bekendmaking"@nl,
+        "Korekta publikującego"@pl,
+        "Correção pelo editor"@pt,
+        "Corectare editor"@ro,
+        "Oprava chyby vydavateľa"@sk,
+        "Popravek objavitelja"@sl,
+        "Rättelse av utgivare"@sv .
+
+<http://publications.europa.eu/resource/authority/change-corrig-justification/info-release> a skos:Concept ;
+    at:authority-code "info-release" ;
+    at:deprecated "false" ;
+    at:op-code "info-release" ;
+    at:start.use "2019-09-18" ;
+    atold:op-code "info-release" ;
+    dc:identifier "info-release" ;
+    skos:altLabel "Публикуване на информация, което първоначално е било отложено по причини, свързани с принудителни мерки, търговски интереси на икономически оператор, лоялна конкуренция или друг обществен интерес."@bg,
+        "Uveřejnění informací, které bylo dříve odloženo z důvodů vymahatelnosti práva, obchodních zájmů hospodářského subjektu, poctivé hospodářské soutěže nebo jiného veřejného zájmu."@cs,
+        "Offentliggørelse af oplysninger, som oprindeligt blev udsat af hensyn til retshåndhævelsen, en økonomisk aktørs forretningsmæssige interesser, fair konkurrence eller andre almene hensyn."@da,
+        "Veröffentlichung von Informationen, die ursprünglich aus Gründen der Strafverfolgung, der geschäftlichen Interessen eines Wirtschaftsteilnehmers, des lauteren Wettbewerbs oder des sonstigen öffentlichen Interesses verschoben worden war."@de,
+        "Δημοσίευση πληροφοριών που είχε αρχικά αναβληθεί για λόγους επιβολής του νόμου, εμπορικού συμφέροντος οικονομικού φορέα, θεμιτού ανταγωνισμού ή άλλου δημόσιου συμφέροντος."@el,
+        "Publication of information which was originally postponed for reasons of law enforcement, commercial interests of an economic operator, fair competition or other public interest."@en,
+        "Publicación de información que se pospuso inicialmente por motivos de aplicación de la legislación, intereses comerciales de un operador económico, competencia leal u otro interés público."@es,
+        "Algselt õiguskaitse, ettevõtja ärihuvide, ausa konkurentsi või muu avaliku huvi tõttu avaldamata jäänud teabe avaldamine."@et,
+        "Alun perin lainvalvonnan, talouden toimijan kaupallisten etujen, tasapuolisen kilpailun tai muun yleisen edun vuoksi julkaisematta jätettyjen tietojen julkaiseminen."@fi,
+        "Publication d’informations dont la publication avait été initialement reportée pour des raisons d’application de la législation, d’intérêts commerciaux d’un opérateur économique, de concurrence loyale ou d’autres raisons d’intérêt public."@fr,
+        "Foilsiú faisnéise a cuireadh ar athló ar dtús ar chúiseanna a bhaineann le forfheidhmiú an dlí, leasanna tráchtála oibreora eacnamaíoch, iomaíocht chóir nó leas poiblí eile."@ga,
+        "Objava informacija koja je prvotno odgođena zbog izvršavanja zakonodavstva, komercijalnih interesa gospodarskog subjekta, poštenog tržišnog natjecanja ili nekog drugog javnog interesa."@hr,
+        "Az eredetileg bűnüldözési célokból, a gazdasági szereplő kereskedelmi érdekei, a tisztességes verseny vagy egyéb közérdek miatt későbbre halasztott információ közzététele."@hu,
+        "Pubblicazione di informazioni, originariamente rinviata per ostacoli all'applicazione della legge, interessi commerciali di un operatore economico, considerazioni di concorrenza leale o altro motivo di interesse pubblico."@it,
+        "Skelbiama informacija, kurios skelbimas buvo atidėtas dėl su teisėsauga, ekonominės veiklos vykdytojo komerciniais interesais, sąžininga konkurencija ar kitu viešuoju interesu susijusių priežasčių."@lt,
+        "Tādas informācijas publicēšana, kura sākotnēji netika publicēta tiesībaizsardzības, ekonomikas dalībnieka komercinterešu, godīgas konkurences vai citu sabiedrības interešu dēļ."@lv,
+        "Pubblikazzjoni ta’ informazzjoni li oriġinarjament kienet ġiet posposta għal raġunijiet ta’ infurzar tal-liġi, interessi kummerċjali ta’ operatur ekonomiku, kompetizzjoni ġusta jew interess pubbliku Ieħor."@mt,
+        "Bekendmaking van informatie die oorspronkelijk was uitgesteld om redenen van rechtshandhaving, commerciële belangen van een ondernemer, eerlijke mededinging of een ander openbaar belang."@nl,
+        "Publikacja informacji, która została pierwotnie odroczona ze względu na kwestie egzekwowania prawa, interesów handlowych podmiotu gospodarczego, uczciwej konkurencji lub innego interesu publicznego."@pl,
+        "Publicação de informações que foi inicialmente adiada por razões relacionadas com a aplicação da lei, interesses comerciais de um operador económico, concorrência leal ou outro interesse público."@pt,
+        "Publicarea unor informații care au fost inițial amânate din motive legate de asigurarea respectării legii, de interesele comerciale ale unui operator economic, de concurența loială sau de alte interese publice."@ro,
+        "Uverejnenie informácií, ktoré bolo pôvodne odložené z dôvodu presadzovania práva, obchodných záujmov hospodárskeho subjektu, spravodlivej súťaže alebo iného verejného záujmu."@sk,
+        "Objava informacij, ki je bila prvotno odložena zaradi preprečevanja, odkrivanja in preiskovanja kaznivih dejanj, poslovnih interesov gospodarskega subjekta, poštene konkurence ali drugega javnega interesa."@sl,
+        "Offentliggörande av information som ursprungligen senarelagts av skäl som rör brottsbekämpning, en ekonomisk aktörs kommersiella intressen, rättvis konkurrens eller annat av allmänt intresse."@sv ;
+    skos:inScheme atold:change-corrig-justification ;
+    skos:prefLabel "Наличие на информация"@bg,
+        "Dostupnost informací"@cs,
+        "Oplysningernes tilgængelighed"@da,
+        "Verfügbarkeit von Informationen"@de,
+        "Διαθεσιμότητα πληροφοριών"@el,
+        "Availability information"@en,
+        "Disponibilidad de información"@es,
+        "Teabe kättesaadavus"@et,
+        "Tietojen saatavuus"@fi,
+        "Disponibilité d’informations"@fr,
+        "Infhaighteacht faisnéise"@ga,
+        "Dostupnost informacija"@hr,
+        "Az információ elérhetősége"@hu,
+        "Disponibilità di informazioni"@it,
+        "Informacijos paskelbimas"@lt,
+        "Informācijas pieejamība"@lv,
+        "Disponibbiltà tal-informazzjoni"@mt,
+        "Beschikbaarheid van informatie"@nl,
+        "Dostępność informacji"@pl,
+        "Disponibilidade de informações"@pt,
+        "Disponibilitatea informațiilor"@ro,
+        "Dostupnosť informácií"@sk,
+        "Razpoložljivost informacij"@sl,
+        "Tillgång till information"@sv .
+
+<http://publications.europa.eu/resource/authority/change-corrig-justification/update-add> a skos:Concept ;
+    at:authority-code "update-add" ;
+    at:deprecated "false" ;
+    at:op-code "update-add" ;
+    at:start.use "2019-09-18" ;
+    atold:op-code "update-add" ;
+    dc:identifier "update-add" ;
+    skos:altLabel "Актуализирана или допълнителна информация."@bg,
+        "Aktualizované nebo dodatečné informace."@cs,
+        "Ajourførte supplerende oplysninger."@da,
+        "Aktualisierte oder zusätzliche Informationen."@de,
+        "Επικαιροποιημένες ή συμπληρωματικές πληροφορίες."@el,
+        "Updated or additional information."@en,
+        "Información actualizada o adicional."@es,
+        "Ajakohastatud või täiendav teave."@et,
+        "Ajantasaiset tai täydentävät tiedot."@fi,
+        "Mise à jour ou ajout d’informations."@fr,
+        "Faisnéis nuashonraithe nó bhreise."@ga,
+        "Ažurirane ili dodatne informacije."@hr,
+        "Frissített vagy további információ."@hu,
+        "Informazioni supplementari o aggiornate."@it,
+        "Atnaujinta arba papildoma informacija."@lt,
+        "Informācijas atjaunināšana vai papildu informācijas sniegšana."@lv,
+        "Informazzjoni aġġornata jew addizzjonali."@mt,
+        "Bijgewerkte of aanvullende informatie."@nl,
+        "Aktualizacja lub uzupełnienie informacji."@pl,
+        "Informações atualizadas ou adicionais."@pt,
+        "Informații actualizate sau suplimentare."@ro,
+        "Aktualizované alebo doplňujúce informácie."@sk,
+        "Posodobitev podatkov ali dodatni podatki."@sl,
+        "Uppdaterad eller kompletterande information."@sv ;
+    skos:inScheme atold:change-corrig-justification ;
+    skos:prefLabel "Актуализирана информация"@bg,
+        "Informace aktualizovány"@cs,
+        "Ajourførte oplysninger"@da,
+        "Aktualisierte Informationen"@de,
+        "Ενημερωμένες πληροφορίες"@el,
+        "Information updated"@en,
+        "Información actualizada"@es,
+        "Teave ajakohastatud"@et,
+        "Ajantasaiset tiedot"@fi,
+        "Mise à jour d’informations"@fr,
+        "Faisnéis nuashonraithe"@ga,
+        "Ažurirane informacije"@hr,
+        "Frissített információ"@hu,
+        "Aggiornamento informazioni"@it,
+        "Atnaujinta informacija"@lt,
+        "Informācija atjaunināta"@lv,
+        "Informazzjoni aġġornata"@mt,
+        "Informatie bijgewerkt"@nl,
+        "Aktualizacja informacji"@pl,
+        "Informações atualizadas"@pt,
+        "Informații actualizate"@ro,
+        "Aktualizované informácie"@sk,
+        "Posodobitev informacij"@sl,
+        "Information uppdaterad"@sv .
+
+atold:change-corrig-justification a skos:ConceptScheme ;
+    rdfs:label "Change corrig justification"@en ;
+    at:prefLabel "Change corrig justification"@en ;
+    at:table.id "change-corrig-justification" ;
+    at:table.version.number "20200923-0" ;
+    owl:versionInfo "20200923-0" ;
+    skos:prefLabel "Change corrig justification"@en .

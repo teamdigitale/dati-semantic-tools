@@ -1,0 +1,341 @@
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://publications.europa.eu/resource/authority/transport-service/OP_DATPRO> a skos:Concept ;
+    at:op-code "OP_DATPRO" ;
+    atold:op-code "OP_DATPRO" ;
+    dc:identifier "OP_DATPRO" ;
+    skos:inScheme atold:transport-service ;
+    skos:prefLabel "НЕОКОНЧАТЕЛНИ ДАННИ"@bg,
+        "Předběžné údaje"@cs,
+        "Midlertidige data"@da,
+        "Vorläufige Daten"@de,
+        "Προσωρινά δεδομένα"@el,
+        "Provisional data"@en,
+        "Datos provisionales"@es,
+        "Esialgsed andmed"@et,
+        "Alustavat tiedot"@fi,
+        "Données provisoires"@fr,
+        "Sonraí sealadacha"@ga,
+        "Privremeni podaci"@hr,
+        "Ideiglenes adatok"@hu,
+        "Dati provvisori"@it,
+        "Laikinieji duomenys"@lt,
+        "Provizoriski dati"@lv,
+        "Dejta provviżorja"@mt,
+        "Voorlopige gegevens"@nl,
+        "Dane tymczasowe"@pl,
+        "Dados provisórios"@pt,
+        "Date provizorii"@ro,
+        "Predbežné údaje"@sk,
+        "Začasni podatki"@sl,
+        "Tillfälliga uppgifter"@sv .
+
+<http://publications.europa.eu/resource/authority/transport-service/bus-s> a skos:Concept ;
+    at:authority-code "bus-s" ;
+    at:deprecated "false" ;
+    at:op-code "bus-s" ;
+    at:start.use "2021-06-16" ;
+    atold:op-code "bus-s" ;
+    dc:identifier "bus-s" ;
+    skos:inScheme atold:transport-service ;
+    skos:prefLabel "Услуги по превоз с автобус (градски/регионален)"@bg,
+        "Služby autobusové dopravy (městské/regionální)"@cs,
+        "Tjenesteydelser vedrørende trafikbetjening med bus (i byområder/på regionalplan)"@da,
+        "Busverkehr (innerstädtisch/regional)"@de,
+        "Υπηρεσίες μεταφορών με λεωφορεία (αστικά/περιφερειακά)"@el,
+        "Bus transport services (urban/regional)"@en,
+        "Servicios de transporte en autobús (urbano/regional)"@es,
+        "Bussitranspordi teenused (linnas / piirkondlik)"@et,
+        "Linja-autoliikenteen palvelut (kaupunkiliikenne/alueliikenne)"@fi,
+        "Services de transport par autobus (urbain/régional)"@fr,
+        "Seirbhísí iompair bus (uirbeacha/réigiúnacha)"@ga,
+        "Autobusni prijevoz (gradski/regionalni)"@hr,
+        "Busszal végzett szállítási szolgáltatások (városi/regionális)"@hu,
+        "Servizi di trasporto mediante autobus (urbano/regionale)"@it,
+        "Autobusų transporto paslaugos (miestų / regionų)"@lt,
+        "Autobusu transporta pakalpojumi (pilsētas/reģionālie)"@lv,
+        "Servizzi tat-trasport bix-xarabank (urbani/reġjonali)"@mt,
+        "Diensten inzake busvervoer (stedelijk/regionaal)"@nl,
+        "Usługi transportu autobusowego (miejskie/regionalne)"@pl,
+        "Serviços de transporte por autocarro (urbano/regional)"@pt,
+        "Servicii de transport cu autobuzul (urban/regional)"@ro,
+        "Služby autobusovej dopravy (mestská/regionálna)"@sk,
+        "Storitve avtobusnega prevoza (mestnega/regionalnega)"@sl,
+        "Tjänster avseende busstransport (stadsbuss/regionalbuss)"@sv .
+
+<http://publications.europa.eu/resource/authority/transport-service/coach-s> a skos:Concept ;
+    at:authority-code "coach-s" ;
+    at:deprecated "false" ;
+    at:op-code "coach-s" ;
+    at:start.use "2021-06-16" ;
+    atold:op-code "coach-s" ;
+    dc:identifier "coach-s" ;
+    skos:inScheme atold:transport-service ;
+    skos:prefLabel "Услуги по туристически превози (на дълги разстояния)"@bg,
+        "Služby autobusové dopravy (dálkové)"@cs,
+        "Tjenesteydelser vedrørende trafikbetjening med rutebil (langdistance)"@da,
+        "Reisebusverkehr (Fernverkehr)"@de,
+        "Υπηρεσίες μεταφορών με πούλμαν (μεγάλες αποστάσεις)"@el,
+        "Coach transport services (long-distance)"@en,
+        "Servicios de transporte en autocar (larga distancia)"@es,
+        "Kaugbussitranspordi teenused (pikad vahemaad)"@et,
+        "Linja-autoliikenteen palvelut (kaukoliikenne)"@fi,
+        "Services de transport par autocar (longue distance)"@fr,
+        "Seirbhísí iompair cóiste (fadraoin)"@ga,
+        "Autobusni prijevoz (međugradski)"@hr,
+        "Távolsági busszal végzett szállítási szolgáltatások (távolsági)"@hu,
+        "Servizi di trasporto mediante autobus (lunga distanza)"@it,
+        "Miesto ir tolimojo susisiekimo autobusų transporto paslaugos"@lt,
+        "Autobusu transporta pakalpojumi (tālsatiksmes)"@lv,
+        "Servizzi tat-trasport bil-kowċ (fuq distanza twila)"@mt,
+        "Diensten inzake touringcarvervoer (lange afstand)"@nl,
+        "Usługi transportu autokarowego (długodystansowe)"@pl,
+        "Serviços de transporte por autocarro de turismo (longa distância)"@pt,
+        "Servicii de transport cu autocarul (pe distanţă lungă)"@ro,
+        "Služby autokarovej dopravy (diaľková)"@sk,
+        "Storitve avtobusnega prevoza (dolge proge)"@sl,
+        "Tjänster avseende personvagnstransport (långdistans)"@sv .
+
+<http://publications.europa.eu/resource/authority/transport-service/lrail-s> a skos:Concept ;
+    at:authority-code "lrail-s" ;
+    at:deprecated "false" ;
+    at:op-code "lrail-s" ;
+    at:start.use "2021-06-16" ;
+    atold:op-code "lrail-s" ;
+    dc:identifier "lrail-s" ;
+    skos:inScheme atold:transport-service ;
+    skos:prefLabel "Услуги по превози по теснолинейни железопътни линии"@bg,
+        "Dopravní služby nadzemní dráhy"@cs,
+        "Tjenesteydelser vedrørende trafikbetjening med letbane"@da,
+        "Stadt- und Regionalbahnsysteme"@de,
+        "Υπηρεσίες μεταφορών με ελαφρύ σιδηρόδρομο"@el,
+        "Light rail transport services"@en,
+        "Servicios de transporte en ferrocarril ligero"@es,
+        "Kergraudteeranspordi teenused"@et,
+        "Kevyen raideliikenteen palvelut"@fi,
+        "Services de transport par système de rail léger"@fr,
+        "Seirbhísí iompair iarnród éadrom"@ga,
+        "Usluge prijevoza gradskom željeznicom"@hr,
+        "Helyiérdekű vasúttal végzett szállítási szolgáltatások"@hu,
+        "Servizi di trasporto mediante metropolitana leggera"@it,
+        "Lengvojo geležinkelio transporto paslaugos"@lt,
+        "Vieglā dzelzceļa transporta pakalpojumi"@lv,
+        "Servizzi tat-trasport bil-ferrovija ħafifa"@mt,
+        "Diensten inzake lightrailvervoer"@nl,
+        "Usługi transportu koleją lekką"@pl,
+        "Serviços de transporte por caminho-de-ferro ligeiro"@pt,
+        "Servicii de transport cu metroul uşor"@ro,
+        "Služby ľahkej koľajovej dopravy"@sk,
+        "Storitve prevoza z lahko železnico"@sl,
+        "Tjänster avseende transport snabbspårvägstransport"@sv .
+
+<http://publications.europa.eu/resource/authority/transport-service/metro-s> a skos:Concept ;
+    at:authority-code "metro-s" ;
+    at:deprecated "false" ;
+    at:op-code "metro-s" ;
+    at:start.use "2021-06-16" ;
+    atold:op-code "metro-s" ;
+    dc:identifier "metro-s" ;
+    skos:inScheme atold:transport-service ;
+    skos:prefLabel "Услуги по превоз с метро"@bg,
+        "Dopravní služby metra"@cs,
+        "Tjenesteydelser vedrørende trafikbetjening med metro"@da,
+        "U-Bahnverkehr"@de,
+        "Υπηρεσίες μεταφορών με μετρό"@el,
+        "Metro transport services"@en,
+        "Servicios de transporte en metro"@es,
+        "Metrootranspordi teenused"@et,
+        "Metroliikenteen palvelut"@fi,
+        "Services de transport par métro"@fr,
+        "Seirbhísí iompair meitreo"@ga,
+        "Usluge prijevoza podzemnom željeznicom"@hr,
+        "Metróval végzett szállítási szolgáltatások"@hu,
+        "Servizi di trasporto mediante metropolitana"@it,
+        "Metro transporto paslaugos"@lt,
+        "Metro transporta pakalpojumi"@lv,
+        "Servizzi tat-trasport bil-metro"@mt,
+        "Diensten inzake metrovervoer"@nl,
+        "Usługi transportu metrem"@pl,
+        "Serviços de transporte por metro"@pt,
+        "Servicii de transport cu metroul"@ro,
+        "Služby metro dopravy"@sk,
+        "Storitve prevoza s podzemno železnico"@sl,
+        "Tjänster avseende tunnelbanetransport"@sv .
+
+<http://publications.europa.eu/resource/authority/transport-service/other> a skos:Concept ;
+    at:authority-code "other" ;
+    at:deprecated "false" ;
+    at:op-code "other" ;
+    at:start.use "2021-06-16" ;
+    atold:op-code "other" ;
+    dc:identifier "other" ;
+    skos:inScheme atold:transport-service ;
+    skos:prefLabel "Други"@bg,
+        "Jiný"@cs,
+        "Anden"@da,
+        "Sonstiges"@de,
+        "Άλλη"@el,
+        "Other"@en,
+        "Otros"@es,
+        "Muu"@et,
+        "Muut"@fi,
+        "Autre"@fr,
+        "Eile"@ga,
+        "Ostalo"@hr,
+        "Egyéb"@hu,
+        "Altri"@it,
+        "Kito"@lt,
+        "Cits"@lv,
+        "Oħrajn"@mt,
+        "Andere"@nl,
+        "Inne"@pl,
+        "Outros"@pt,
+        "Alte"@ro,
+        "Iné"@sk,
+        "Drugo"@sl,
+        "Annat"@sv .
+
+<http://publications.europa.eu/resource/authority/transport-service/port-s> a skos:Concept ;
+    at:authority-code "port-s" ;
+    at:deprecated "false" ;
+    at:op-code "port-s" ;
+    at:start.use "2021-06-16" ;
+    atold:op-code "port-s" ;
+    dc:identifier "port-s" ;
+    skos:inScheme atold:transport-service ;
+    skos:prefLabel "Услуги по превоз по вътрешни водни пътища и морски пътища"@bg,
+        "Dopravní služby na námořních a vnitrozemských vodních cestách"@cs,
+        "Tjenesteydelser i forbindelse med transport ad indre vandveje og søtransport"@da,
+        "Binnenschifffahrtswege und Seeverkehr"@de,
+        "Υπηρεσίες εσωτερικών πλωτών και θαλάσσιων μεταφορών"@el,
+        "Inland waterway and maritime transport services"@en,
+        "Servicios de transporte marítimo y por vías navegables interiores"@es,
+        "Sise- ja mereveeteede transpordi teenused"@et,
+        "Sisävesi- ja meriliikenteen palvelut"@fi,
+        "Services de transport maritime et par voie navigable"@fr,
+        "Seirbhísí iompair uiscebhealaí intíre agus muirí"@ga,
+        "Usluge pomorskog prijevoza i prijevoza unutarnjim plovnim putevima"@hr,
+        "Belvízi és tengeri szállítási szolgáltatások"@hu,
+        "Servizi di trasporto marittimo e per via navigabile"@it,
+        "Vidaus vandenų ir jūrų transporto paslaugos"@lt,
+        "Iekšējo ūdensceļu un jūras transporta pakalpojumi"@lv,
+        "Servizzi tat-trasport fuq passaġġ tal-ilma intern u marittimi"@mt,
+        "Diensten inzake vervoer over zee en binnenwateren"@nl,
+        "Usługi transportu wodnego śródlądowego oraz morskiego"@pl,
+        "Serviços de transporte marítimo e por via navegável interior"@pt,
+        "Servicii de transport maritim şi pe căi navigabile interioare"@ro,
+        "Služby vnútrozemskej a námornej vodnej dopravy"@sk,
+        "Storitve prevoza po celinskih vodnih poteh in morju"@sl,
+        "Tjänster avseende sjötransport och transport på inre vattenvägar"@sv .
+
+<http://publications.europa.eu/resource/authority/transport-service/rail-s> a skos:Concept ;
+    at:authority-code "rail-s" ;
+    at:deprecated "false" ;
+    at:op-code "rail-s" ;
+    at:start.use "2021-06-16" ;
+    atold:op-code "rail-s" ;
+    dc:identifier "rail-s" ;
+    skos:inScheme atold:transport-service ;
+    skos:prefLabel "Услуги на железопътния транспорт"@bg,
+        "Služby železniční dopravy"@cs,
+        "Jernbanetransport"@da,
+        "Eisenbahnverkehr"@de,
+        "Υπηρεσίες σιδηροδρομικών μεταφορών"@el,
+        "Rail transport services"@en,
+        "Servicios de transporte por ferrocarril"@es,
+        "Raudteetransporditeenused"@et,
+        "Rautatiekuljetuspalvelut"@fi,
+        "Services de transports ferroviaires"@fr,
+        "Seirbhísí iompar ar iarnród"@ga,
+        "Usluge željezničkog prijevoza"@hr,
+        "Vasúti szállítási szolgáltatások"@hu,
+        "Servizi di trasporto per ferrovia"@it,
+        "Geležinkelio transporto paslaugos"@lt,
+        "Dzelzceļa transporta pakalpojumi"@lv,
+        "Servizzi ta’ trasport ferrovjarju"@mt,
+        "Spoorwegvervoerdiensten"@nl,
+        "Usługi transportu kolejowego"@pl,
+        "Serviços de transporte ferroviário"@pt,
+        "Servicii de transport feroviar"@ro,
+        "Služby železničnej dopravy"@sk,
+        "Storitve železniškega prevoza"@sl,
+        "Järnvägstransport"@sv .
+
+<http://publications.europa.eu/resource/authority/transport-service/tram-s> a skos:Concept ;
+    at:authority-code "tram-s" ;
+    at:deprecated "false" ;
+    at:op-code "tram-s" ;
+    at:start.use "2021-06-16" ;
+    atold:op-code "tram-s" ;
+    dc:identifier "tram-s" ;
+    skos:inScheme atold:transport-service ;
+    skos:prefLabel "Услуги по превоз с трамвай"@bg,
+        "Tramvajové dopravní služby"@cs,
+        "Tjenesteydelser vedrørende trafikbetjening med sporvogn"@da,
+        "Straßenbahnverkehr"@de,
+        "Υπηρεσίες μεταφορών με τραμ"@el,
+        "Tram transport services"@en,
+        "Servicios de transporte en tranvía"@es,
+        "Trammitranspordi teenused"@et,
+        "Raitiotieliikenteen palvelut"@fi,
+        "Services de transport par tramway"@fr,
+        "Seirbhísí iompair tramanna"@ga,
+        "Usluge tramvajskog prijevoza"@hr,
+        "Villamossal végzett szállítási szolgáltatások"@hu,
+        "Servizi di trasporto mediante tram"@it,
+        "Tramvajų transporto paslaugos"@lt,
+        "Tramvaju transporta pakalpojumi"@lv,
+        "Servizzi tat-trasport bit-tramm"@mt,
+        "Diensten inzake tramvervoer"@nl,
+        "Usługi transportu tramwajowego"@pl,
+        "Serviços de transporte por eléctrico"@pt,
+        "Servicii de transport cu tramvaiul"@ro,
+        "Služby električkovej dopravy"@sk,
+        "Storitve prevoza s tramvaji"@sl,
+        "Tjänster avseende spårvagnstransport"@sv .
+
+<http://publications.europa.eu/resource/authority/transport-service/trolley-s> a skos:Concept ;
+    at:authority-code "trolley-s" ;
+    at:deprecated "false" ;
+    at:op-code "trolley-s" ;
+    at:start.use "2021-06-16" ;
+    atold:op-code "trolley-s" ;
+    dc:identifier "trolley-s" ;
+    skos:inScheme atold:transport-service ;
+    skos:prefLabel "Услуги по превоз с тролейбус"@bg,
+        "Trolejbusové dopravní služby"@cs,
+        "Tjenesteydelser vedrørende trafikbetjening med trolleybus"@da,
+        "Oberleitungsbusverkehr"@de,
+        "Υπηρεσίες μεταφορών με λεωφορεία τρόλεϊ"@el,
+        "Trolleybus transport services"@en,
+        "Servicios de transporte en trolebús"@es,
+        "Trollitranspordi teenused"@et,
+        "Johdinautoliikenteen palvelut"@fi,
+        "Services de transport par trolleybus"@fr,
+        "Seirbhísí iompair busanna tralaí"@ga,
+        "Usluge prijevoza trolejbusom"@hr,
+        "Trolibusszal végzett szállítási szolgáltatások"@hu,
+        "Servizi di trasporto mediante filobus"@it,
+        "Troleibusų transporto paslaugos"@lt,
+        "Trolejbusu transporta pakalpojumi"@lv,
+        "Servizzi tat-trasport bix-xarabank li taħdem bl-elettriku"@mt,
+        "Diensten inzake trolleybusvervoer"@nl,
+        "Usługi transportu trolejbusowego"@pl,
+        "Serviços de transporte por troleicarro"@pt,
+        "Servicii de transport cu troleibuzul"@ro,
+        "Služby trolejbusovej dopravy"@sk,
+        "Storitve prevoza s trolejbusi"@sl,
+        "Tjänster avseende trådbusstransport"@sv .
+
+atold:transport-service a skos:ConceptScheme ;
+    rdfs:label "Transport service"@en ;
+    at:prefLabel "Transport service"@en ;
+    at:table.id "transport-service" ;
+    at:table.version.number "20210929-0" ;
+    owl:versionInfo "20210929-0" ;
+    skos:prefLabel "Transport service"@en .

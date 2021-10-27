@@ -1,0 +1,140 @@
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://publications.europa.eu/resource/authority/case-status/CLOSED> a skos:Concept ;
+    at:authority-code "CLOSED" ;
+    at:deprecated "false" ;
+    at:op-code "CLOSED" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "CLOT" ;
+            dc:source "LITIGE" ] ;
+    at:start.use "1952-07-24" ;
+    atold:op-code "CLOSED" ;
+    dc:identifier "CLOSED" ;
+    skos:inScheme atold:case-status ;
+    skos:prefLabel "Приключено дело"@bg,
+        "Ukončená věc"@cs,
+        "Afsluttet sag"@da,
+        "Erledigte Rechtssache"@de,
+        "Περατωθείσα υπόθεση"@el,
+        "Case closed"@en,
+        "Asunto concluido"@es,
+        "Lõpetatud kohtuasi"@et,
+        "Ratkaistu asia"@fi,
+        "Affaire clôturée"@fr,
+        "Predmet riješen"@hr,
+        "Befejezett ügy"@hu,
+        "Causa conclusa"@it,
+        "Baigta byla"@lt,
+        "Lieta, kurā ir pabeigta tiesvedība"@lv,
+        "Kawża magħluqa"@mt,
+        "Afgesloten zaak"@nl,
+        "Sprawa zakończona"@pl,
+        "Processo concluído"@pt,
+        "Cauză finalizată"@ro,
+        "Ukončená vec"@sk,
+        "Končana zadeva"@sl,
+        "Målet är avslutat"@sv .
+
+<http://publications.europa.eu/resource/authority/case-status/OP_DATPRO> a skos:Concept ;
+    at:op-code "OP_DATPRO" ;
+    atold:op-code "OP_DATPRO" ;
+    dc:identifier "OP_DATPRO" ;
+    skos:inScheme atold:case-status ;
+    skos:prefLabel "НЕОКОНЧАТЕЛНИ ДАННИ"@bg,
+        "Předběžné údaje"@cs,
+        "Midlertidige data"@da,
+        "Vorläufige Daten"@de,
+        "Προσωρινά δεδομένα"@el,
+        "Provisional data"@en,
+        "Datos provisionales"@es,
+        "Esialgsed andmed"@et,
+        "Alustavat tiedot"@fi,
+        "Données provisoires"@fr,
+        "Sonraí sealadacha"@ga,
+        "Privremeni podaci"@hr,
+        "Ideiglenes adatok"@hu,
+        "Dati provvisori"@it,
+        "Laikinieji duomenys"@lt,
+        "Provizoriski dati"@lv,
+        "Dejta provviżorja"@mt,
+        "Voorlopige gegevens"@nl,
+        "Dane tymczasowe"@pl,
+        "Dados provisórios"@pt,
+        "Date provizorii"@ro,
+        "Predbežné údaje"@sk,
+        "Začasni podatki"@sl,
+        "Tillfälliga uppgifter"@sv .
+
+<http://publications.europa.eu/resource/authority/case-status/PROGRESS> a skos:Concept ;
+    at:authority-code "PROGRESS" ;
+    at:deprecated "false" ;
+    at:op-code "PROGRESS" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "ENC" ;
+            dc:source "LITIGE" ] ;
+    at:start.use "1952-07-24" ;
+    atold:op-code "PROGRESS" ;
+    dc:identifier "PROGRESS" ;
+    skos:inScheme atold:case-status ;
+    skos:prefLabel "Висящо дело"@bg,
+        "Projednávaná věc"@cs,
+        "Verserende sag"@da,
+        "Laufende Rechtssache"@de,
+        "Υπόθεση εν εξελίξει"@el,
+        "Case in progress"@en,
+        "Asunto pendiente"@es,
+        "Menetluses olev kohtuasi"@et,
+        "Vireillä oleva asia"@fi,
+        "Affaire en cours"@fr,
+        "Postupak u tijeku"@hr,
+        "Folyamatban lévő ügy"@hu,
+        "Causa pendente"@it,
+        "Dar neišnagrinėta byla"@lt,
+        "Lieta iztiesāšanas stadijā"@lv,
+        "Kawża pendenti"@mt,
+        "Aanhangige zaak"@nl,
+        "Sprawa w toku"@pl,
+        "Processo pendente"@pt,
+        "Cauză pendinte"@ro,
+        "Prejednávaná vec"@sk,
+        "Tekoča zadeva"@sl,
+        "Målet pågår"@sv .
+
+<http://publications.europa.eu/resource/authority/case-status/STAY> a skos:Concept ;
+    at:authority-code "STAY" ;
+    at:deprecated "false" ;
+    at:op-code "STAY" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "SUSP" ;
+            dc:source "LITIGE" ] ;
+    at:start.use "1952-07-24" ;
+    atold:op-code "STAY" ;
+    dc:identifier "STAY" ;
+    skos:inScheme atold:case-status ;
+    skos:prefLabel "Affaire suspendue"@fr .
+
+<http://publications.europa.eu/resource/authority/case-status/WITHDRAW> a skos:Concept ;
+    at:authority-code "WITHDRAW" ;
+    at:deprecated "false" ;
+    at:op-code "WITHDRAW" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "DESIST" ;
+            dc:source "LITIGE" ] ;
+    at:start.use "1952-07-24" ;
+    atold:op-code "WITHDRAW" ;
+    dc:identifier "WITHDRAW" ;
+    skos:inScheme atold:case-status ;
+    skos:prefLabel "Désistement"@fr .
+
+atold:case-status a skos:ConceptScheme ;
+    rdfs:label "Case status"@en ;
+    at:prefLabel "Case status"@en ;
+    at:table.id "case-status" ;
+    at:table.version.number "20160921-0" ;
+    owl:versionInfo "20160921-0" ;
+    skos:prefLabel "Case status"@en .

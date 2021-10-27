@@ -1,0 +1,253 @@
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://publications.europa.eu/resource/authority/treaty-classification/ACCESS> a skos:Concept ;
+    at:authority-code "ACCESS" ;
+    at:deprecated "false" ;
+    at:op-code "ACCESS" ;
+    at:start.use "1972-01-22" ;
+    atold:op-code "ACCESS" ;
+    dc:identifier "ACCESS" ;
+    skos:inScheme atold:treaty-classification ;
+    skos:prefLabel "Договор за присъединяване"@bg,
+        "Přístupové smlouvy"@cs,
+        "Traktat om tiltrædelse"@da,
+        "Beitrittsvertrag"@de,
+        "Συνθήκης προσχώρησης"@el,
+        "Accession treaty"@en,
+        "Tratado de adhesión"@es,
+        "Ühinemisleping"@et,
+        "Liittymissopimus"@fi,
+        "Traité d'adhésion"@fr,
+        "Conradh Aontachais"@ga,
+        "Ugovor o pristupanju"@hr,
+        "Csatlakozási szerződés"@hu,
+        "Trattato di adesione"@it,
+        "Stojimo sutartis"@lt,
+        "Pievienošanās līgums"@lv,
+        "Trattat tal-Adeżjoni"@mt,
+        "Toetredingsverdrag"@nl,
+        "Traktat akcesyjny"@pl,
+        "Tratado de Adesão"@pt,
+        "Tratat de aderare"@ro,
+        "Prístupová zmluva"@sk,
+        "Pristopna pogodba"@sl,
+        "Anslutningsfördraget"@sv .
+
+<http://publications.europa.eu/resource/authority/treaty-classification/AMEND> a skos:Concept ;
+    at:authority-code "AMEND" ;
+    at:deprecated "false" ;
+    at:op-code "AMEND" ;
+    at:start.use "1965-04-08" ;
+    atold:op-code "AMEND" ;
+    dc:identifier "AMEND" ;
+    skos:inScheme atold:treaty-classification ;
+    skos:prefLabel "Договор за реформа"@bg,
+        "Pozměňující smlouva"@cs,
+        "Ændring af traktaten"@da,
+        "Änderungsvertrag"@de,
+        "Τροποποιητική συνθήκη"@el,
+        "Amending treaty"@en,
+        "Tratado de modificación"@es,
+        "Muutmisleping"@et,
+        "Muutossopimus"@fi,
+        "Traité modificatif"@fr,
+        "Conradh leasaitheach"@ga,
+        "Ugovor o modifikaciji"@hr,
+        "Módosító szerződés"@hu,
+        "Trattato modificato"@it,
+        "Keičiančioji sutartis"@lt,
+        "Līgums par grozījumiem"@lv,
+        "Trattat emendatorju"@mt,
+        "Wijzigingsverdrag"@nl,
+        "Traktat zmieniający"@pl,
+        "Tratado modificativo"@pt,
+        "Tratat de modificare"@ro,
+        "Pozmeňujúca zmluva"@sk,
+        "Pogodba o spremembah"@sl,
+        "Ändringsfördrag"@sv .
+
+<http://publications.europa.eu/resource/authority/treaty-classification/CONS> a skos:Concept ;
+    at:authority-code "CONS" ;
+    at:deprecated "false" ;
+    at:op-code "CONS" ;
+    at:start.use "1992-02-07" ;
+    atold:op-code "CONS" ;
+    dc:identifier "CONS" ;
+    skos:inScheme atold:treaty-classification ;
+    skos:prefLabel "Консолидиран текст"@bg,
+        "Konsolidované znění"@cs,
+        "Konsolideret udgave"@da,
+        "Konsolidierte Fassung"@de,
+        "Ενοποιημένη έκδοση"@el,
+        "Consolidated version"@en,
+        "Versión consolidada"@es,
+        "Konsolideeritud versioon"@et,
+        "Konsolidoitu toisinto"@fi,
+        "Version consolidée"@fr,
+        "Leagan comhdhlúite"@ga,
+        "Pročišćena inačica"@hr,
+        "Egységes szerkezetbe foglalt változat"@hu,
+        "Versione consolidata"@it,
+        "Suvestinė redakcija"@lt,
+        "Konsolidētā versija"@lv,
+        "Verżjoni konsolidata"@mt,
+        "Geconsolideerde versie"@nl,
+        "Wersja skonsolidowana"@pl,
+        "Versão consolidada"@pt,
+        "Versiune consolidată"@ro,
+        "Konsolidované znenie"@sk,
+        "Prečiščeno besedilo"@sl,
+        "Konsoliderad version"@sv .
+
+<http://publications.europa.eu/resource/authority/treaty-classification/FOUND> a skos:Concept ;
+    at:authority-code "FOUND" ;
+    at:deprecated "false" ;
+    at:op-code "FOUND" ;
+    at:start.use "1951-04-18" ;
+    atold:op-code "FOUND" ;
+    dc:identifier "FOUND" ;
+    skos:inScheme atold:treaty-classification ;
+    skos:prefLabel "Учредителен договор"@bg,
+        "Zakládající smlouva"@cs,
+        "Traktat om oprettelse"@da,
+        "Gründungsvertrag"@de,
+        "Ιδρυτική συνθήκη"@el,
+        "Founding treaty"@en,
+        "Tratado constitutivo"@es,
+        "Alusleping"@et,
+        "Perustamissopimus"@fi,
+        "Traité constitutif"@fr,
+        "Conradh bunaidh"@ga,
+        "Ugovor o osnivanju"@hr,
+        "Alapító szerződés"@hu,
+        "Trattato costitutivo"@it,
+        "Steigiamoji sutartis"@lt,
+        "Dibināšanas līgums"@lv,
+        "Trattat fundatur"@mt,
+        "Oprichtingsverdrag"@nl,
+        "Traktat założycielski"@pl,
+        "Tratado constitutivo"@pt,
+        "Tratat fondator"@ro,
+        "Zakladajúca zmluva"@sk,
+        "Ustanovna pogodba"@sl,
+        "Grundfördraget"@sv .
+
+<http://publications.europa.eu/resource/authority/treaty-classification/OP_DATPRO> a skos:Concept ;
+    at:op-code "OP_DATPRO" ;
+    atold:op-code "OP_DATPRO" ;
+    dc:identifier "OP_DATPRO" ;
+    skos:inScheme atold:treaty-classification ;
+    skos:prefLabel "НЕОКОНЧАТЕЛНИ ДАННИ"@bg,
+        "Předběžné údaje"@cs,
+        "Midlertidige data"@da,
+        "Vorläufige Daten"@de,
+        "Προσωρινά δεδομένα"@el,
+        "Provisional data"@en,
+        "Datos provisionales"@es,
+        "Esialgsed andmed"@et,
+        "Alustavat tiedot"@fi,
+        "Données provisoires"@fr,
+        "Sonraí sealadacha"@ga,
+        "Privremeni podaci"@hr,
+        "Ideiglenes adatok"@hu,
+        "Dati provvisori"@it,
+        "Laikinieji duomenys"@lt,
+        "Provizoriski dati"@lv,
+        "Dejta provviżorja"@mt,
+        "Voorlopige gegevens"@nl,
+        "Dane tymczasowe"@pl,
+        "Dados provisórios"@pt,
+        "Date provizorii"@ro,
+        "Predbežné údaje"@sk,
+        "Začasni podatki"@sl,
+        "Tillfälliga uppgifter"@sv .
+
+<http://publications.europa.eu/resource/authority/treaty-classification/OTHER> a skos:Concept ;
+    at:authority-code "OTHER" ;
+    at:deprecated "false" ;
+    at:op-code "OTHER" ;
+    at:start.use "1962-11-13" ;
+    atold:op-code "OTHER" ;
+    dc:identifier "OTHER" ;
+    skos:inScheme atold:treaty-classification ;
+    skos:prefLabel "Друг"@bg,
+        "Ostatní"@cs,
+        "Andre"@da,
+        "Andere"@de,
+        "Άλλο"@el,
+        "Other"@en,
+        "Otro"@es,
+        "Muu"@et,
+        "Muut"@fi,
+        "Autre"@fr,
+        "Eile"@ga,
+        "Drugi"@hr,
+        "Egyéb szerződés"@hu,
+        "Altro"@it,
+        "Kita"@lt,
+        "Citi"@lv,
+        "Oħra"@mt,
+        "Overige"@nl,
+        "Inne"@pl,
+        "Outro"@pt,
+        "Altele"@ro,
+        "Ostatné"@sk,
+        "Drugo"@sl,
+        "Andra"@sv .
+
+<http://publications.europa.eu/resource/authority/treaty-classification/SUBPART> a skos:Concept ;
+    at:authority-code "SUBPART" ;
+    at:deprecated "false" ;
+    at:op-code "SUBPART" ;
+    at:start.use "1951-04-18" ;
+    atold:op-code "SUBPART" ;
+    dc:identifier "SUBPART" ;
+    skos:inScheme atold:treaty-classification ;
+    skos:prefLabel "Subpart"@en,
+        "Sous-partie"@fr .
+
+<http://publications.europa.eu/resource/authority/treaty-classification/WITHDRAWAL> a skos:Concept ;
+    at:authority-code "WITHDRAWAL" ;
+    at:deprecated "false" ;
+    at:op-code "WITHDRAWAL" ;
+    at:start.use "2007-12-13" ;
+    atold:op-code "WITHDRAWAL" ;
+    dc:identifier "WITHDRAWAL" ;
+    skos:inScheme atold:treaty-classification ;
+    skos:prefLabel "Cпоразумение за оттегляне"@bg,
+        "Dohoda o vystoupení"@cs,
+        "Udtrædelsesaftale"@da,
+        "Austrittsabkommen"@de,
+        "Συμφωνία αποχώρησης"@el,
+        "Withdrawal agreement"@en,
+        "Acuerdo de retirada"@es,
+        "Väljaastumisleping"@et,
+        "Erosopimus"@fi,
+        "Accord de retrait"@fr,
+        "Comhaontú um tharraingt siar"@ga,
+        "Sporazum o povlačenju"@hr,
+        "Kilépési megállapodás"@hu,
+        "Accordo di recesso"@it,
+        "Susitarimas dėl išstojimo"@lt,
+        "Izstāšanās līgums"@lv,
+        "Ftehim dwar il-ħruġ"@mt,
+        "Terugtrekkingsakkoord"@nl,
+        "Umowa o wystąpieniu"@pl,
+        "Acordo de saída"@pt,
+        "Acord de retragere"@ro,
+        "Dohoda o vystúpení"@sk,
+        "Sporazum o izstopu"@sl,
+        "Avtal om utträde"@sv .
+
+atold:treaty-classification a skos:ConceptScheme ;
+    rdfs:label "Treaty classification"@en ;
+    at:prefLabel "Treaty classification"@en ;
+    at:table.id "treaty-classification" ;
+    at:table.version.number "20190220-0" ;
+    owl:versionInfo "20190220-0" ;
+    skos:prefLabel "Treaty classification"@en .

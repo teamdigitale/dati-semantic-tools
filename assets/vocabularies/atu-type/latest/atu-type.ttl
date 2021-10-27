@@ -1,0 +1,4284 @@
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://publications.europa.eu/resource/authority/atu-type/AUT_BLD> a skos:Concept ;
+    at:authority-code "AUT_BLD" ;
+    at:deprecated "false" ;
+    at:op-code "AUT_BLD" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "AUT_BLD" ;
+    dc:identifier "AUT_BLD" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/AUT_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "федерална провинция"@bg,
+        "spolková země"@cs,
+        "delstat"@da,
+        "Bundesland"@de,
+        "ομόσπονδο κρατίδιο"@el,
+        "federal province"@en,
+        "Estado federado"@es,
+        "liidumaa"@et,
+        "osavaltio"@fi,
+        "état fédéral"@fr,
+        "savezna zemlja"@hr,
+        "tartomány"@hu,
+        "Stato federato"@it,
+        "federacinė žemė"@lt,
+        "federālā zeme"@lv,
+        "provinċja federali"@mt,
+        "deelstaat"@nl,
+        "kraj związkowy"@pl,
+        "estado federado"@pt,
+        "land"@ro,
+        "spolková krajina"@sk,
+        "zvezna dežela"@sl,
+        "delstat"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/AUT_BZK> a skos:Concept ;
+    at:authority-code "AUT_BZK" ;
+    at:deprecated "false" ;
+    at:op-code "AUT_BZK" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "AUT_BZK" ;
+    dc:identifier "AUT_BZK" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/AUT_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "окръг"@bg,
+        "okres"@cs,
+        "distrikt"@da,
+        "Bezirk"@de,
+        "διαμέρισμα"@el,
+        "district"@en,
+        "distrito"@es,
+        "ringkond"@et,
+        "piirikunta"@fi,
+        "district"@fr,
+        "okrug"@hr,
+        "járás"@hu,
+        "distretto"@it,
+        "apskritis"@lt,
+        "rajons"@lv,
+        "distrett"@mt,
+        "district"@nl,
+        "powiat"@pl,
+        "distrito"@pt,
+        "district"@ro,
+        "okres"@sk,
+        "okraj"@sl,
+        "förvaltningsdistrikt"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/AUT_GBK> a skos:Concept ;
+    at:authority-code "AUT_GBK" ;
+    at:deprecated "false" ;
+    at:op-code "AUT_GBK" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "AUT_GBK" ;
+    dc:identifier "AUT_GBK" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/AUT_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "Gemeindebezirk"@de,
+        "municipal district"@en,
+        "arrondissement"@fr .
+
+<http://publications.europa.eu/resource/authority/atu-type/AUT_GEM> a skos:Concept ;
+    at:authority-code "AUT_GEM" ;
+    at:deprecated "false" ;
+    at:op-code "AUT_GEM" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "AUT_GEM" ;
+    dc:identifier "AUT_GEM" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/AUT_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "община"@bg,
+        "obec"@cs,
+        "kommune"@da,
+        "Gemeinde"@de,
+        "κοινότητα"@el,
+        "municipality"@en,
+        "municipio"@es,
+        "vald"@et,
+        "kunta"@fi,
+        "commune"@fr,
+        "općina"@hr,
+        "település"@hu,
+        "comune"@it,
+        "savivaldybė"@lt,
+        "komūna"@lv,
+        "muniċipalità"@mt,
+        "gemeente"@nl,
+        "gmina"@pl,
+        "município"@pt,
+        "comună"@ro,
+        "obec"@sk,
+        "občina"@sl,
+        "kommun"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/AUT_STTS> a skos:Concept ;
+    at:authority-code "AUT_STTS" ;
+    at:deprecated "false" ;
+    at:op-code "AUT_STTS" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "AUT_STTS" ;
+    dc:identifier "AUT_STTS" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/AUT_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "Statutarstadt"@de,
+        "statutory city"@en,
+        "önálló tartományi város"@hu .
+
+<http://publications.europa.eu/resource/authority/atu-type/BEL_CGG> a skos:Concept ;
+    at:authority-code "BEL_CGG" ;
+    at:deprecated "false" ;
+    at:op-code "BEL_CGG" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "BEL_CGG" ;
+    dc:identifier "BEL_CGG" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/BEL_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "общност"@bg,
+        "společenství"@cs,
+        "fællesskab"@da,
+        "Gemeinschaft"@de,
+        "κοινότητα"@el,
+        "community"@en,
+        "comunidad"@es,
+        "kogukond"@et,
+        "kieliyhteisö"@fi,
+        "communauté"@fr,
+        "zajednica"@hr,
+        "közösség"@hu,
+        "comunità"@it,
+        "bendruomenė"@lt,
+        "kopiena"@lv,
+        "komunità"@mt,
+        "gemeenschap"@nl,
+        "wspólnota"@pl,
+        "comunidade"@pt,
+        "comunitate"@ro,
+        "spoločenstvo"@sk,
+        "skupnost"@sl,
+        "gemenskap"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/BEL_MUN> a skos:Concept ;
+    at:authority-code "BEL_MUN" ;
+    at:deprecated "false" ;
+    at:op-code "BEL_MUN" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "BEL_MUN" ;
+    dc:identifier "BEL_MUN" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/BEL_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "община"@bg,
+        "obec"@cs,
+        "kommune"@da,
+        "Gemeinde"@de,
+        "δήμος"@el,
+        "municipality"@en,
+        "municipio"@es,
+        "kommuun"@et,
+        "kunta"@fi,
+        "commune"@fr,
+        "općina"@hr,
+        "település"@hu,
+        "comune"@it,
+        "komuna"@lt,
+        "komūna"@lv,
+        "komun"@mt,
+        "gemeente"@nl,
+        "gmina"@pl,
+        "município"@pt,
+        "comună"@ro,
+        "obec"@sk,
+        "občina"@sl,
+        "kommun"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/BEL_PR> a skos:Concept ;
+    at:authority-code "BEL_PR" ;
+    at:deprecated "false" ;
+    at:op-code "BEL_PR" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "BEL_PR" ;
+    dc:identifier "BEL_PR" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/BEL_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "провинция"@bg,
+        "provincie"@cs,
+        "provins"@da,
+        "Provinz"@de,
+        "επαρχία"@el,
+        "province"@en,
+        "provincia"@es,
+        "provints"@et,
+        "lääni"@fi,
+        "province"@fr,
+        "pokrajina"@hr,
+        "tartomány"@hu,
+        "provincia"@it,
+        "provinċja"@lt,
+        "province"@lv,
+        "provinċja"@mt,
+        "provincie"@nl,
+        "prowincja"@pl,
+        "provincia"@pt,
+        "provincie"@ro,
+        "provincia"@sk,
+        "pokrajina"@sl,
+        "provins"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/BEL_RG> a skos:Concept ;
+    at:authority-code "BEL_RG" ;
+    at:deprecated "false" ;
+    at:op-code "BEL_RG" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "BEL_RG" ;
+    dc:identifier "BEL_RG" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/BEL_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "регион"@bg,
+        "region"@cs,
+        "region"@da,
+        "Region"@de,
+        "περιφέρεια"@el,
+        "region"@en,
+        "región"@es,
+        "piirkond"@et,
+        "alue"@fi,
+        "région"@fr,
+        "réigiún"@ga,
+        "regija"@hr,
+        "régió"@hu,
+        "regione"@it,
+        "regionas"@lt,
+        "reģions"@lv,
+        "reġjun"@mt,
+        "gewest"@nl,
+        "region"@pl,
+        "região"@pt,
+        "regiune"@ro,
+        "región"@sk,
+        "regija"@sl,
+        "region"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/BGR_OBL> a skos:Concept ;
+    at:authority-code "BGR_OBL" ;
+    at:deprecated "false" ;
+    at:op-code "BGR_OBL" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "BGR_OBL" ;
+    dc:identifier "BGR_OBL" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/BGR_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "област"@bg,
+        "oblast"@cs,
+        "region"@da,
+        "Bezirk"@de,
+        "επαρχία"@el,
+        "region"@en,
+        "región administrativa"@es,
+        "piirkond"@et,
+        "alue"@fi,
+        "région"@fr,
+        "réigiún"@ga,
+        "oblast"@hr,
+        "megye"@hu,
+        "regione"@it,
+        "sritis"@lt,
+        "apgabals"@lv,
+        "reġjun"@mt,
+        "regio"@nl,
+        "obwód"@pl,
+        "distrito"@pt,
+        "district"@ro,
+        "oblasť"@sk,
+        "okrožje"@sl,
+        "förvaltningsdistrikt"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/BGR_OBS> a skos:Concept ;
+    at:authority-code "BGR_OBS" ;
+    at:deprecated "false" ;
+    at:op-code "BGR_OBS" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "BGR_OBS" ;
+    dc:identifier "BGR_OBS" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/BGR_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "община"@bg,
+        "obec"@cs,
+        "kommune"@da,
+        "Gemeinde"@de,
+        "δήμος"@el,
+        "municipality"@en,
+        "municipio"@es,
+        "vald"@et,
+        "kunta"@fi,
+        "commune"@fr,
+        "općina"@hr,
+        "település"@hu,
+        "comune"@it,
+        "savivaldybė"@lt,
+        "komūna"@lv,
+        "muniċipalità"@mt,
+        "gemeente"@nl,
+        "gmina"@pl,
+        "município"@pt,
+        "comună"@ro,
+        "obec"@sk,
+        "občina"@sl,
+        "kommun"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/CYM_CMTY> a skos:Concept ;
+    at:authority-code "CYM_CMTY" ;
+    at:deprecated "false" ;
+    at:op-code "CYM_CMTY" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "CYM_CMTY" ;
+    dc:identifier "CYM_CMTY" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/GBR_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "община"@bg,
+        "obec"@cs,
+        "community"@da,
+        "Gemeinde"@de,
+        "κοινότητα"@el,
+        "community"@en,
+        "municipio"@es,
+        "vald"@et,
+        "yhteisö"@fi,
+        "communauté"@fr,
+        "općina"@hr,
+        "település"@hu,
+        "communità"@it,
+        "savivaldybė"@lt,
+        "komūna"@lv,
+        "komunità"@mt,
+        "gemeente"@nl,
+        "wspólnota"@pl,
+        "freguesia"@pt,
+        "comunitate"@ro,
+        "obec"@sk,
+        "krajevna skupnost"@sl,
+        "community"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/CYM_UA> a skos:Concept ;
+    at:authority-code "CYM_UA" ;
+    at:deprecated "false" ;
+    at:op-code "CYM_UA" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "CYM_UA" ;
+    dc:identifier "CYM_UA" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/GBR_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "унитарна администрация"@bg,
+        "správní oblast"@cs,
+        "unitary authority"@da,
+        "Unitary Authority"@de,
+        "ενιαία αρχή"@el,
+        "unitary authority"@en,
+        "autoridad unitaria"@es,
+        "tervikomavalitsus"@et,
+        "yhtenäishallintopiiri"@fi,
+        "autorité unitaire"@fr,
+        "objedinjena uprava"@hr,
+        "egységes hatóság"@hu,
+        "amministrazione locale unica"@it,
+        "unitarinė taryba"@lt,
+        "vienotā pašvaldība"@lv,
+        "awtorità unitarja"@mt,
+        "district"@nl,
+        "jednolita jednostka administracyjna"@pl,
+        "autoridade unitária"@pt,
+        "autoritate unitară"@ro,
+        "unitárny samosprávny orgán"@sk,
+        "enotna uprava"@sl,
+        "unitary authority"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/CYP_DIM> a skos:Concept ;
+    at:authority-code "CYP_DIM" ;
+    at:deprecated "false" ;
+    at:op-code "CYP_DIM" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "CYP_DIM" ;
+    dc:identifier "CYP_DIM" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/CYP_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "голяма община"@bg,
+        "město"@cs,
+        "bykommune"@da,
+        "Stadtgemeinde"@de,
+        "δήμος"@el,
+        "municipality"@en,
+        "municipio"@es,
+        "vald"@et,
+        "kunta"@fi,
+        "municipalité"@fr,
+        "općina"@hr,
+        "város"@hu,
+        "comune"@it,
+        "savivaldybė"@lt,
+        "municipalitāte"@lv,
+        "muniċipalità"@mt,
+        "gemeente"@nl,
+        "gmina miejska"@pl,
+        "município"@pt,
+        "oraș"@ro,
+        "mesto"@sk,
+        "občina"@sl,
+        "kommun"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/CYP_EP> a skos:Concept ;
+    at:authority-code "CYP_EP" ;
+    at:deprecated "false" ;
+    at:op-code "CYP_EP" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "CYP_EP" ;
+    dc:identifier "CYP_EP" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/CYP_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "окръг"@bg,
+        "okres"@cs,
+        "distrikt"@da,
+        "Kreis"@de,
+        "επαρχία"@el,
+        "district"@en,
+        "provincia"@es,
+        "ringkond"@et,
+        "hallintopiiri"@fi,
+        "district"@fr,
+        "okrug"@hr,
+        "kerület"@hu,
+        "provincia"@it,
+        "apygarda"@lt,
+        "apgabals"@lv,
+        "distrett"@mt,
+        "district"@nl,
+        "dystrykt"@pl,
+        "distrito"@pt,
+        "district"@ro,
+        "okres"@sk,
+        "okrožje"@sl,
+        "förvaltningsdistrikt"@sv,
+        "ilçe"@tr .
+
+<http://publications.europa.eu/resource/authority/atu-type/CZE_KRJ> a skos:Concept ;
+    at:authority-code "CZE_KRJ" ;
+    at:deprecated "false" ;
+    at:op-code "CZE_KRJ" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "CZE_KRJ" ;
+    dc:identifier "CZE_KRJ" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/CZE_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "регион"@bg,
+        "kraj"@cs,
+        "region"@da,
+        "Bezirk"@de,
+        "περιφέρεια"@el,
+        "region"@en,
+        "región"@es,
+        "maakond"@et,
+        "alue"@fi,
+        "région"@fr,
+        "réigiún"@ga,
+        "pokrajina"@hr,
+        "megye"@hu,
+        "regione"@it,
+        "kraštas"@lt,
+        "apgabals"@lv,
+        "reġjun"@mt,
+        "regio"@nl,
+        "kraj"@pl,
+        "região"@pt,
+        "regiune"@ro,
+        "kraj"@sk,
+        "pokrajina"@sl,
+        "region"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/CZE_OBS> a skos:Concept ;
+    at:authority-code "CZE_OBS" ;
+    at:deprecated "false" ;
+    at:op-code "CZE_OBS" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "CZE_OBS" ;
+    dc:identifier "CZE_OBS" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/CZE_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "община"@bg,
+        "obec"@cs,
+        "kommune"@da,
+        "Gemeinde"@de,
+        "δήμος"@el,
+        "municipality"@en,
+        "municipio"@es,
+        "ringkond"@et,
+        "kunta"@fi,
+        "commune"@fr,
+        "općina"@hr,
+        "település"@hu,
+        "comune"@it,
+        "savivaldybė"@lt,
+        "komūna"@lv,
+        "muniċipalità"@mt,
+        "gemeente"@nl,
+        "gmina"@pl,
+        "município"@pt,
+        "comună"@ro,
+        "obec"@sk,
+        "občina"@sl,
+        "kommun"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/CZE_OKR> a skos:Concept ;
+    at:authority-code "CZE_OKR" ;
+    at:deprecated "true" ;
+    at:end.use "2007-12-31" ;
+    at:op-code "CZE_OKR" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "CZE_OKR" ;
+    dc:identifier "CZE_OKR" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/CZE_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "окръг"@bg,
+        "okres"@cs,
+        "distrikt"@da,
+        "Kreis"@de,
+        "επαρχία"@el,
+        "district"@en,
+        "provincia"@es,
+        "ringkond"@et,
+        "hallintopiiri"@fi,
+        "district"@fr,
+        "okrug"@hr,
+        "kerület"@hu,
+        "provincia"@it,
+        "apygarda"@lt,
+        "apgabals"@lv,
+        "distrett"@mt,
+        "district"@nl,
+        "dystrykt"@pl,
+        "distrito"@pt,
+        "district"@ro,
+        "okres"@sk,
+        "okrožje"@sl,
+        "förvaltningsdistrikt"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/DEU_GEM> a skos:Concept ;
+    at:authority-code "DEU_GEM" ;
+    at:deprecated "false" ;
+    at:op-code "DEU_GEM" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "DEU_GEM" ;
+    dc:identifier "DEU_GEM" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/DEU_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "община"@bg,
+        "obec"@cs,
+        "kommune"@da,
+        "Gemeinde"@de,
+        "κοινότητα"@el,
+        "municipality"@en,
+        "municipio"@es,
+        "vald"@et,
+        "kunta"@fi,
+        "commune"@fr,
+        "općina"@hr,
+        "település"@hu,
+        "comune"@it,
+        "savivaldybė"@lt,
+        "pagasts"@lv,
+        "muniċipalità"@mt,
+        "gemeente"@nl,
+        "gmina"@pl,
+        "município"@pt,
+        "comună"@ro,
+        "obec"@sk,
+        "občina"@sl,
+        "kommun"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/DEU_KRFS> a skos:Concept ;
+    at:authority-code "DEU_KRFS" ;
+    at:deprecated "false" ;
+    at:op-code "DEU_KRFS" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "DEU_KRFS" ;
+    dc:identifier "DEU_KRFS" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/DEU_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "град с правомощия на окръг"@bg,
+        "městský okres"@cs,
+        "kredsfri by"@da,
+        "Kreisfreiestadt"@de,
+        "δήμος-διαμέρισμα"@el,
+        "urban disctrict"@en,
+        "ciudad-distrito"@es,
+        "maakonna õigustega linn"@et,
+        "piirikuntaan kuulumaton kaupunki"@fi,
+        "ville-arrondissement"@fr,
+        "grad okrug"@hr,
+        "járási jogú város"@hu,
+        "città extracircondariale"@it,
+        "apskrities lygmens miestas"@lt,
+        "pilsēta ar apriņķa tiesībām"@lv,
+        "belt b'kompetenzi ta' distrett"@mt,
+        "stadsdistrict"@nl,
+        "miasto wyłączone z powiatu"@pl,
+        "cidade extradistrital"@pt,
+        "district urban"@ro,
+        "mesto s kompetenciou kraja"@sk,
+        "mesto s pristojnostmi okrožja"@sl,
+        "stad med distriktsrättigheter"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/DEU_LD> a skos:Concept ;
+    at:authority-code "DEU_LD" ;
+    at:deprecated "false" ;
+    at:op-code "DEU_LD" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "DEU_LD" ;
+    dc:identifier "DEU_LD" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/DEU_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "федерална провинция"@bg,
+        "spolková země"@cs,
+        "delstat"@da,
+        "Land"@de,
+        "ομόσπονδο κρατίδιο"@el,
+        "Land"@en,
+        "Estado federado"@es,
+        "liidumaa"@et,
+        "osavaltio"@fi,
+        "Land"@fr,
+        "savezna zemlja"@hr,
+        "tartomány"@hu,
+        "Land"@it,
+        "žemė"@lt,
+        "federālā zeme"@lv,
+        "Land"@mt,
+        "deelstaat"@nl,
+        "kraj związkowy"@pl,
+        "estado"@pt,
+        "land"@ro,
+        "spolková krajina"@sk,
+        "zvezna dežela"@sl,
+        "delstat"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/DEU_LKR> a skos:Concept ;
+    at:authority-code "DEU_LKR" ;
+    at:deprecated "false" ;
+    at:op-code "DEU_LKR" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "DEU_LKR" ;
+    dc:identifier "DEU_LKR" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/DEU_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "административен окръг"@bg,
+        "okres"@cs,
+        "Landkreis"@da,
+        "Landkreis"@de,
+        "διαμέρισμα"@el,
+        "administrative district"@en,
+        "distrito"@es,
+        "maakond"@et,
+        "piirikunta"@fi,
+        "arrondissement"@fr,
+        "okrug"@hr,
+        "járás"@hu,
+        "circondario"@it,
+        "apskritis"@lt,
+        "apriņķis"@lv,
+        "distrett amministrattiv"@mt,
+        "district"@nl,
+        "powiat"@pl,
+        "distrito"@pt,
+        "district"@ro,
+        "kraj"@sk,
+        "deželno okrožje"@sl,
+        "distrikt"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/DEU_RB> a skos:Concept ;
+    at:authority-code "DEU_RB" ;
+    at:deprecated "false" ;
+    at:op-code "DEU_RB" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "DEU_RB" ;
+    dc:identifier "DEU_RB" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/DEU_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "Regierungsbezirk"@de,
+        "administrative division"@en,
+        "région administrative"@fr,
+        "região administrativa"@pt .
+
+<http://publications.europa.eu/resource/authority/atu-type/DEU_STBZK> a skos:Concept ;
+    at:authority-code "DEU_STBZK" ;
+    at:deprecated "false" ;
+    at:op-code "DEU_STBZK" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "DEU_STBZK" ;
+    dc:identifier "DEU_STBZK" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/DEU_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "столичен район"@bg,
+        "bydistrikt"@da,
+        "Stadtbezirk"@de,
+        "δημοτικό διαμέρισμα"@el,
+        "municipal district"@en,
+        "arrondissement"@fr .
+
+<http://publications.europa.eu/resource/authority/atu-type/DEU_STS> a skos:Concept ;
+    at:authority-code "DEU_STS" ;
+    at:deprecated "false" ;
+    at:op-code "DEU_STS" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "DEU_STS" ;
+    dc:identifier "DEU_STS" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/DEU_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "град със статут на федерална провинция"@bg,
+        "městský stát"@cs,
+        "bystat"@da,
+        "Stadtstaat"@de,
+        "δήμος-κρατίδιο"@el,
+        "city state"@en,
+        "ciudad-estado"@es,
+        "linn-liidumaa"@et,
+        "kaupunkiosavaltio"@fi,
+        "ville-État"@fr,
+        "grad država"@hr,
+        "városállam"@hu,
+        "città-Land"@it,
+        "didmiestis"@lt,
+        "pilsētvalsts"@lv,
+        "Stat-Belt"@mt,
+        "stadstaat"@nl,
+        "miasto-kraj"@pl,
+        "cidade-Estado"@pt,
+        "oraș-stat"@ro,
+        "mestský štát"@sk,
+        "mestna dežela"@sl,
+        "stadtstat"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/DNK_KOM> a skos:Concept ;
+    at:authority-code "DNK_KOM" ;
+    at:deprecated "false" ;
+    at:op-code "DNK_KOM" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "DNK_KOM" ;
+    dc:identifier "DNK_KOM" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/DNK_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "община"@bg,
+        "obec"@cs,
+        "kommune"@da,
+        "Gemeinde"@de,
+        "δήμος"@el,
+        "municipality"@en,
+        "municipio"@es,
+        "kommuun"@et,
+        "kunta"@fi,
+        "commune"@fr,
+        "općina"@hr,
+        "település"@hu,
+        "comune"@it,
+        "savivaldybė"@lt,
+        "komūna"@lv,
+        "muniċipalità"@mt,
+        "gemeente"@nl,
+        "gmina"@pl,
+        "município"@pt,
+        "comună"@ro,
+        "obec"@sk,
+        "občina"@sl,
+        "kommun"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/DNK_RG> a skos:Concept ;
+    at:authority-code "DNK_RG" ;
+    at:deprecated "false" ;
+    at:op-code "DNK_RG" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "DNK_RG" ;
+    dc:identifier "DNK_RG" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/DNK_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "регион"@bg,
+        "region"@cs,
+        "region"@da,
+        "Region"@de,
+        "περιφέρεια"@el,
+        "region"@en,
+        "región"@es,
+        "piirkond"@et,
+        "alue"@fi,
+        "région"@fr,
+        "réigiún"@ga,
+        "regija"@hr,
+        "régió"@hu,
+        "regione"@it,
+        "regionas"@lt,
+        "reģions"@lv,
+        "reġjun"@mt,
+        "regio"@nl,
+        "region"@pl,
+        "região"@pt,
+        "regiune"@ro,
+        "región"@sk,
+        "regija"@sl,
+        "region"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/ENG_BRG_LND> a skos:Concept ;
+    at:authority-code "ENG_BRG_LND" ;
+    at:deprecated "false" ;
+    at:op-code "ENG_BRG_LND" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "ENG_BRG_LND" ;
+    dc:identifier "ENG_BRG_LND" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/GBR_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "общински район на Лондон"@bg,
+        "londýnský městský obvod"@cs,
+        "London Borough"@da,
+        "London Borough"@de,
+        "δημοτικό διαμέρισμα Λονδίνου"@el,
+        "London Borough"@en,
+        "distrito londinense"@es,
+        "Londoni linnaosa"@et,
+        "Lontoon kaupunkipiiri"@fi,
+        "arrondissement"@fr,
+        "londonska općina"@hr,
+        "londoni önkormányzat"@hu,
+        "distretto londinese"@it,
+        "Londono rajonas"@lt,
+        "Londonas rajons"@lv,
+        "borough ta' Londra"@mt,
+        "Londense deelgemeente"@nl,
+        "dzielnica Londynu"@pl,
+        "município londrino"@pt,
+        "burg londonez"@ro,
+        "londýnsky mestský obvod"@sk,
+        "londonska občina"@sl,
+        "London Borough"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/ENG_CO> a skos:Concept ;
+    at:authority-code "ENG_CO" ;
+    at:deprecated "false" ;
+    at:op-code "ENG_CO" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "ENG_CO" ;
+    dc:identifier "ENG_CO" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/GBR_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "графство"@bg,
+        "hrabství"@cs,
+        "county"@da,
+        "Grafschaft"@de,
+        "κομητεία"@el,
+        "county"@en,
+        "condado"@es,
+        "krahvkond"@et,
+        "kreivikunta"@fi,
+        "comté"@fr,
+        "grofovija"@hr,
+        "megye"@hu,
+        "contea"@it,
+        "grafystė"@lt,
+        "grāfiste"@lv,
+        "kontea"@mt,
+        "graafschap"@nl,
+        "hrabstwo"@pl,
+        "condado"@pt,
+        "comitat"@ro,
+        "grófstvo"@sk,
+        "grofija"@sl,
+        "county"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/ENG_CP> a skos:Concept ;
+    at:authority-code "ENG_CP" ;
+    at:deprecated "false" ;
+    at:op-code "ENG_CP" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "ENG_CP" ;
+    dc:identifier "ENG_CP" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/GBR_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "гражданска енория"@bg,
+        "obec"@cs,
+        "civil parish"@da,
+        "Gemeinde [Parish]"@de,
+        "πολιτική ενορία"@el,
+        "civil parish"@en,
+        "municipio"@es,
+        "vald"@et,
+        "kunta"@fi,
+        "paroisse civile"@fr,
+        "upravna župa"@hr,
+        "település"@hu,
+        "comune [parrochia civile]"@it,
+        "parapija"@lt,
+        "pagasts"@lv,
+        "parroċċa ċivili"@mt,
+        "gemeente"@nl,
+        "parafia cywilna"@pl,
+        "freguesia"@pt,
+        "parohie civilă"@ro,
+        "civilná farnosť (obec)"@sk,
+        "krajevna skupnost"@sl,
+        "civil parish"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/ENG_DS> a skos:Concept ;
+    at:authority-code "ENG_DS" ;
+    at:deprecated "false" ;
+    at:op-code "ENG_DS" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "ENG_DS" ;
+    dc:identifier "ENG_DS" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/GBR_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "окръг"@bg,
+        "distrikt"@cs,
+        "district"@da,
+        "Distrikt"@de,
+        "διαμέρισμα"@el,
+        "district"@en,
+        "distrito"@es,
+        "ringkond"@et,
+        "hallintopiiri"@fi,
+        "district"@fr,
+        "okrug"@hr,
+        "kerület"@hu,
+        "distretto"@it,
+        "rajonas"@lt,
+        "rajons"@lv,
+        "distrett"@mt,
+        "district"@nl,
+        "dystrykt"@pl,
+        "distrito"@pt,
+        "district"@ro,
+        "okres"@sk,
+        "občina"@sl,
+        "distrikt"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/ENG_GR_LND> a skos:Concept ;
+    at:authority-code "ENG_GR_LND" ;
+    at:deprecated "false" ;
+    at:op-code "ENG_GR_LND" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "ENG_GR_LND" ;
+    dc:identifier "ENG_GR_LND" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/GBR_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "Голям Лондон"@bg,
+        "Velký Londýn"@cs,
+        "Greater London"@da,
+        "Greater London"@de,
+        "Μείζον Λονδίνο"@el,
+        "Greater London"@en,
+        "Gran Londres"@es,
+        "Suur-London"@et,
+        "Suur-Lontoo"@fi,
+        "comté"@fr,
+        "Širi London"@hr,
+        "Nagy-London"@hu,
+        "Grande Londra"@it,
+        "Didysis Londonas"@lt,
+        "Lielā Londona"@lv,
+        "Greater London"@mt,
+        "Groot-Londen"@nl,
+        "Wielki Londyn"@pl,
+        "Grande Londres"@pt,
+        "Londra Mare"@ro,
+        "Velký Londýn"@sk,
+        "Širši London"@sl,
+        "Greater London"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/ENG_RG> a skos:Concept ;
+    at:authority-code "ENG_RG" ;
+    at:deprecated "false" ;
+    at:op-code "ENG_RG" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "ENG_RG" ;
+    dc:identifier "ENG_RG" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/GBR_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "регион"@bg,
+        "region"@cs,
+        "region"@da,
+        "Region"@de,
+        "περιφέρεια"@el,
+        "region"@en,
+        "región"@es,
+        "piirkond"@et,
+        "alue"@fi,
+        "région"@fr,
+        "réigiún"@ga,
+        "regija"@hr,
+        "régió"@hu,
+        "regione"@it,
+        "regionas"@lt,
+        "reģions"@lv,
+        "reġjun"@mt,
+        "regio"@nl,
+        "region"@pl,
+        "região"@pt,
+        "regiune"@ro,
+        "región"@sk,
+        "regija"@sl,
+        "region"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/ENG_UA> a skos:Concept ;
+    at:authority-code "ENG_UA" ;
+    at:deprecated "false" ;
+    at:op-code "ENG_UA" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "ENG_UA" ;
+    dc:identifier "ENG_UA" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/GBR_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "унитарна администрация"@bg,
+        "správní oblast"@cs,
+        "unitary authority"@da,
+        "Unitary Authority"@de,
+        "ενιαία αρχή"@el,
+        "unitary authority"@en,
+        "autoridad unitaria"@es,
+        "tervikomavalitsus"@et,
+        "yhtenäishallintopiiri"@fi,
+        "autorité unitaire"@fr,
+        "objedinjena uprava"@hr,
+        "egységes hatóság"@hu,
+        "amministrazione locale unica"@it,
+        "unitarinė taryba"@lt,
+        "vienotā pašvaldība"@lv,
+        "awtorità unitarja"@mt,
+        "district"@nl,
+        "jednolita jednostka administracyjna"@pl,
+        "autoridade unitária"@pt,
+        "autoritate unitară"@ro,
+        "unitárny samosprávny orgán"@sk,
+        "enotna uprava"@sl,
+        "unitary authority"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/ESP_CIA> a skos:Concept ;
+    at:authority-code "ESP_CIA" ;
+    at:deprecated "false" ;
+    at:op-code "ESP_CIA" ;
+    at:start.use "2005-07-30" ;
+    atold:op-code "ESP_CIA" ;
+    dc:identifier "ESP_CIA" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/ESP_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "град"@bg,
+        "město"@cs,
+        "by"@da,
+        "Stadt"@de,
+        "πόλη"@el,
+        "city"@en,
+        "ciudad"@es,
+        "linn"@et,
+        "erillisalue"@fi,
+        "ville"@fr,
+        "cathair"@ga,
+        "grad"@hr,
+        "város"@hu,
+        "città"@it,
+        "miestas"@lt,
+        "pilsēta"@lv,
+        "belt"@mt,
+        "stad"@nl,
+        "miasto"@pl,
+        "cidade"@pt,
+        "oraș"@ro,
+        "mesto"@sk,
+        "mesto"@sl,
+        "stad"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/ESP_CMA> a skos:Concept ;
+    at:authority-code "ESP_CMA" ;
+    at:deprecated "false" ;
+    at:op-code "ESP_CMA" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "ESP_CMA" ;
+    dc:identifier "ESP_CMA" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/ESP_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "автономна област"@bg,
+        "comunitat autònoma"@ca,
+        "autonomní oblast"@cs,
+        "selvstyrende region"@da,
+        "Autonome Gemeinschaft"@de,
+        "αυτόνομη περιφέρεια"@el,
+        "autonomous community"@en,
+        "comunidad autónoma"@es,
+        "autonoomne piirkond"@et,
+        "itsehallintoalue"@fi,
+        "communauté autonome"@fr,
+        "comunidade autónoma"@gl,
+        "autonomna zajednica"@hr,
+        "autonóm közösség"@hu,
+        "regione"@it,
+        "autonominė sritis"@lt,
+        "autonomais apgabals"@lv,
+        "komunità awtonoma"@mt,
+        "autonome regio"@nl,
+        "wspólnota autonomiczna"@pl,
+        "comunidade autónoma"@pt,
+        "comunitate autonomă"@ro,
+        "autonómna oblasť"@sk,
+        "avtonomna skupnost"@sl,
+        "autonom region"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/ESP_MUN> a skos:Concept ;
+    at:authority-code "ESP_MUN" ;
+    at:deprecated "false" ;
+    at:op-code "ESP_MUN" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "ESP_MUN" ;
+    dc:identifier "ESP_MUN" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/ESP_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "община"@bg,
+        "obec"@cs,
+        "kommune"@da,
+        "Gemeinde"@de,
+        "δήμος"@el,
+        "municipality"@en,
+        "municipio"@es,
+        "vald"@et,
+        "kunta"@fi,
+        "commune"@fr,
+        "općina"@hr,
+        "település"@hu,
+        "comune"@it,
+        "savivaldybė"@lt,
+        "municipalitāte"@lv,
+        "muniċipalità"@mt,
+        "gemeente"@nl,
+        "gmina"@pl,
+        "município"@pt,
+        "comună"@ro,
+        "obec"@sk,
+        "občina"@sl,
+        "kommun"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/ESP_PR> a skos:Concept ;
+    at:authority-code "ESP_PR" ;
+    at:deprecated "false" ;
+    at:op-code "ESP_PR" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "ESP_PR" ;
+    dc:identifier "ESP_PR" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/ESP_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "провинция"@bg,
+        "provincie"@cs,
+        "provins"@da,
+        "Provinz"@de,
+        "επαρχία"@el,
+        "province"@en,
+        "provincia"@es,
+        "provints"@et,
+        "probintzia"@eu,
+        "maakunta"@fi,
+        "province"@fr,
+        "pokrajina"@hr,
+        "tartomány"@hu,
+        "provincia"@it,
+        "provincija"@lt,
+        "province"@lv,
+        "provinċja"@mt,
+        "provincie"@nl,
+        "prowincja"@pl,
+        "provincia"@pt,
+        "provincie"@ro,
+        "provincia"@sk,
+        "pokrajina"@sl,
+        "provins"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/EST_LIN> a skos:Concept ;
+    at:authority-code "EST_LIN" ;
+    at:deprecated "false" ;
+    at:op-code "EST_LIN" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "EST_LIN" ;
+    dc:identifier "EST_LIN" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/EST_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "град"@bg,
+        "město"@cs,
+        "by"@da,
+        "Stadt"@de,
+        "αστικός δήμος"@el,
+        "city"@en,
+        "municipio urbano"@es,
+        "linn"@et,
+        "kaupunki"@fi,
+        "ville"@fr,
+        "cathair"@ga,
+        "grad"@hr,
+        "város"@hu,
+        "comune urbano"@it,
+        "miesto savivaldybė"@lt,
+        "pilsēta"@lv,
+        "belt"@mt,
+        "stedelijke gemeente"@nl,
+        "miasto"@pl,
+        "cidade"@pt,
+        "oraș"@ro,
+        "mesto"@sk,
+        "mestna občina"@sl,
+        "stad"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/EST_MKD> a skos:Concept ;
+    at:authority-code "EST_MKD" ;
+    at:deprecated "false" ;
+    at:op-code "EST_MKD" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "EST_MKD" ;
+    dc:identifier "EST_MKD" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/EST_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "област"@bg,
+        "kraj"@cs,
+        "distrikt"@da,
+        "Landkreis"@de,
+        "επαρχία"@el,
+        "county"@en,
+        "provincia"@es,
+        "maakond"@et,
+        "maakunta"@fi,
+        "région"@fr,
+        "réigiún"@ga,
+        "pokrajina"@hr,
+        "megye"@hu,
+        "provincia"@it,
+        "apskritis"@lt,
+        "apriņķis"@lv,
+        "kontea"@mt,
+        "provincie"@nl,
+        "prowincja"@pl,
+        "distrito"@pt,
+        "regiune"@ro,
+        "kraj"@sk,
+        "okrožje"@sl,
+        "förvaltningsdistrikt"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/EST_VLD> a skos:Concept ;
+    at:authority-code "EST_VLD" ;
+    at:deprecated "false" ;
+    at:op-code "EST_VLD" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "EST_VLD" ;
+    dc:identifier "EST_VLD" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/EST_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "селска община"@bg,
+        "obec"@cs,
+        "landkommune"@da,
+        "Gemeinde"@de,
+        "αγροτικός δήμος"@el,
+        "rural municipality"@en,
+        "municipio"@es,
+        "vald"@et,
+        "kunta"@fi,
+        "commune rurale"@fr,
+        "seoska općina"@hr,
+        "község"@hu,
+        "comune rurale"@it,
+        "kaimo savivaldybė"@lt,
+        "pagasts"@lv,
+        "muniċipalità rurali"@mt,
+        "plattelandsgemeente"@nl,
+        "gmina wiejska"@pl,
+        "município rural"@pt,
+        "comună"@ro,
+        "vidiecka obec"@sk,
+        "občina"@sl,
+        "landskommun"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/FIN_KUN> a skos:Concept ;
+    at:authority-code "FIN_KUN" ;
+    at:deprecated "false" ;
+    at:op-code "FIN_KUN" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "FIN_KUN" ;
+    dc:identifier "FIN_KUN" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/FIN_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "община"@bg,
+        "obec"@cs,
+        "kommune"@da,
+        "Gemeinde"@de,
+        "δήμος"@el,
+        "municipality"@en,
+        "municipio"@es,
+        "vald"@et,
+        "kunta"@fi,
+        "commune"@fr,
+        "općina"@hr,
+        "település"@hu,
+        "comune"@it,
+        "savivaldybė"@lt,
+        "komūna"@lv,
+        "muniċipalità"@mt,
+        "gemeente"@nl,
+        "gmina"@pl,
+        "município"@pt,
+        "comună"@ro,
+        "obec"@sk,
+        "občina"@sl,
+        "kommun"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/FIN_MKT> a skos:Concept ;
+    at:authority-code "FIN_MKT" ;
+    at:deprecated "false" ;
+    at:op-code "FIN_MKT" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "FIN_MKT" ;
+    dc:identifier "FIN_MKT" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/FIN_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "регион"@bg,
+        "provincie"@cs,
+        "region"@da,
+        "Region"@de,
+        "περιφέρεια"@el,
+        "region"@en,
+        "región"@es,
+        "maakond"@et,
+        "maakunta"@fi,
+        "région"@fr,
+        "réigiún"@ga,
+        "regija"@hr,
+        "régió"@hu,
+        "regione"@it,
+        "regionas"@lt,
+        "reģions"@lv,
+        "reġjun"@mt,
+        "regio"@nl,
+        "region"@pl,
+        "região"@pt,
+        "regiune"@ro,
+        "región"@sk,
+        "regija"@sl,
+        "landskap"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/FRA_AR> a skos:Concept ;
+    at:authority-code "FRA_AR" ;
+    at:deprecated "false" ;
+    at:op-code "FRA_AR" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "FRA_AR" ;
+    dc:identifier "FRA_AR" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/FRA_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "municipal district"@en,
+        "arrondissement"@fr .
+
+<http://publications.europa.eu/resource/authority/atu-type/FRA_COM> a skos:Concept ;
+    at:authority-code "FRA_COM" ;
+    at:deprecated "false" ;
+    at:op-code "FRA_COM" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "FRA_COM" ;
+    dc:identifier "FRA_COM" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/FRA_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "община"@bg,
+        "obec"@cs,
+        "kommune"@da,
+        "Gemeinde"@de,
+        "κοινότητα"@el,
+        "municipality"@en,
+        "municipio"@es,
+        "kommuun"@et,
+        "kunta"@fi,
+        "commune"@fr,
+        "općina"@hr,
+        "település"@hu,
+        "comune"@it,
+        "komuna"@lt,
+        "komūna"@lv,
+        "komun"@mt,
+        "gemeente"@nl,
+        "gmina"@pl,
+        "município"@pt,
+        "comună"@ro,
+        "obec"@sk,
+        "občina"@sl,
+        "kommun"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/FRA_CSP> a skos:Concept ;
+    at:authority-code "FRA_CSP" ;
+    at:deprecated "false" ;
+    at:op-code "FRA_CSP" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "FRA_CSP" ;
+    dc:identifier "FRA_CSP" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/FRA_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "териториална единица със специален статут"@bg,
+        "místní a regionální orgány se zvláštním statusem"@cs,
+        "forvaltningsenhed med særlig status"@da,
+        "Körperschaft mit besonderer Rechtsstellung"@de,
+        "τοπική αρχή με ειδικό καθεστώς"@el,
+        "local or regional body with special status"@en,
+        "ente territorial con estatuto particular"@es,
+        "eristaatusega territoriaalüksus"@et,
+        "alueellinen yhteisö, jolla on eritysasema"@fi,
+        "collectivité à statut particulier"@fr,
+        "jedinica s posebnim statusom"@hr,
+        "különleges státuszú önkormányzat"@hu,
+        "ente territoriale a regime speciale"@it,
+        "ypatingą statusą turinti teritorija"@lt,
+        "īpašā statusa pašvaldība"@lv,
+        "awtorità bi status partikolari"@mt,
+        "decentraal overheidslichaam met bijzondere status"@nl,
+        "wspólnota samorządowa o statusie szczególnym"@pl,
+        "autarquia com estatuto especial"@pt,
+        "colectivitate cu statut special"@ro,
+        "miestne a regionálne orgány s osobitným postavením"@sk,
+        "skupnost s posebnim statusom"@sl,
+        "territorium med särskild status"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/FRA_DPT> a skos:Concept ;
+    at:authority-code "FRA_DPT" ;
+    at:deprecated "false" ;
+    at:op-code "FRA_DPT" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "FRA_DPT" ;
+    dc:identifier "FRA_DPT" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/FRA_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "департамент"@bg,
+        "departement"@cs,
+        "department"@da,
+        "Department"@de,
+        "διαμέρισμα"@el,
+        "department"@en,
+        "departamento"@es,
+        "departemang"@et,
+        "departementti"@fi,
+        "département"@fr,
+        "departman"@hr,
+        "megye"@hu,
+        "dipartimento"@it,
+        "departamentas"@lt,
+        "departaments"@lv,
+        "dipartiment"@mt,
+        "departement"@nl,
+        "departament"@pl,
+        "departamento"@pt,
+        "departament"@ro,
+        "departement"@sk,
+        "departma"@sl,
+        "departement"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/FRA_RG> a skos:Concept ;
+    at:authority-code "FRA_RG" ;
+    at:deprecated "false" ;
+    at:op-code "FRA_RG" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "FRA_RG" ;
+    dc:identifier "FRA_RG" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/FRA_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "регион"@bg,
+        "region"@cs,
+        "region"@da,
+        "Region"@de,
+        "περιφέρεια"@el,
+        "region"@en,
+        "región"@es,
+        "piirkond"@et,
+        "alue"@fi,
+        "région"@fr,
+        "réigiún"@ga,
+        "regija"@hr,
+        "régió"@hu,
+        "regione"@it,
+        "regionas"@lt,
+        "reģions"@lv,
+        "reġjun"@mt,
+        "regio"@nl,
+        "region"@pl,
+        "região"@pt,
+        "regiune"@ro,
+        "región"@sk,
+        "regija"@sl,
+        "region"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/GRB_COU> a skos:Concept ;
+    at:authority-code "GRB_COU" ;
+    at:deprecated "true" ;
+    at:end.use "2016-02-08" ;
+    at:op-code "GRB_COU" ;
+    at:start.use "2016-02-07" ;
+    atold:op-code "GRB_COU" ;
+    dc:identifier "GRB_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/SVT> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/GRC_AD> a skos:Concept ;
+    at:authority-code "GRC_AD" ;
+    at:deprecated "false" ;
+    at:op-code "GRC_AD" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "GRC_AD" ;
+    dc:identifier "GRC_AD" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/GRC_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "децентрализирана администрация"@bg,
+        "decentralizovaný administrativní celek"@cs,
+        "decentral forvaltning"@da,
+        "Dezentrale Behörde"@de,
+        "αποκεντρωμένη διοίκηση"@el,
+        "decentralised administration"@en,
+        "administración descentralizada"@es,
+        "detsentraliseeritud administratsioon"@et,
+        "hajautetun hallinnon alue"@fi,
+        "administration décentralisée"@fr,
+        "područje decentralizirane uprave"@hr,
+        "decentralizált közigazgatási egység"@hu,
+        "diocesi statale"@it,
+        "decentralizuotas administracinis vienetas"@lt,
+        "decentralizētā administrācija"@lv,
+        "amministrazzjoni deċentralizzata"@mt,
+        "decentraal bestuursgebied"@nl,
+        "zdecentralizowana jednostka administracyjna"@pl,
+        "administração descentralizada"@pt,
+        "administrație descentralizată"@ro,
+        "decentralizovaná samospráva"@sk,
+        "decentralizirana uprava"@sl,
+        "förvaltningsdistrikt"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/GRC_DIM> a skos:Concept ;
+    at:authority-code "GRC_DIM" ;
+    at:deprecated "false" ;
+    at:op-code "GRC_DIM" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "GRC_DIM" ;
+    dc:identifier "GRC_DIM" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/GRC_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "община"@bg,
+        "obec"@cs,
+        "kommune"@da,
+        "Gemeinde"@de,
+        "δήμος"@el,
+        "municipality"@en,
+        "municipio"@es,
+        "vald"@et,
+        "kunta"@fi,
+        "commune"@fr,
+        "općina"@hr,
+        "település"@hu,
+        "comune"@it,
+        "savivaldybė"@lt,
+        "komūna"@lv,
+        "muniċipalità"@mt,
+        "gemeente"@nl,
+        "gmina"@pl,
+        "município"@pt,
+        "comună"@ro,
+        "obec"@sk,
+        "občina"@sl,
+        "kommun"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/GRC_PE> a skos:Concept ;
+    at:authority-code "GRC_PE" ;
+    at:deprecated "false" ;
+    at:op-code "GRC_PE" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "GRC_PE" ;
+    dc:identifier "GRC_PE" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/GRC_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "Regionale Einheit"@de,
+        "περιφερειακή ενότητα"@el,
+        "regional unit"@en,
+        "unidad regional"@es,
+        "unité régionale"@fr,
+        "unità regionale"@it .
+
+<http://publications.europa.eu/resource/authority/atu-type/GRC_PRF> a skos:Concept ;
+    at:authority-code "GRC_PRF" ;
+    at:deprecated "false" ;
+    at:op-code "GRC_PRF" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "GRC_PRF" ;
+    dc:identifier "GRC_PRF" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/GRC_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "регион"@bg,
+        "region"@cs,
+        "region"@da,
+        "Region"@de,
+        "περιφέρεια"@el,
+        "region"@en,
+        "región"@es,
+        "piirkond"@et,
+        "alue"@fi,
+        "région"@fr,
+        "réigiún"@ga,
+        "regija"@hr,
+        "régió"@hu,
+        "regione"@it,
+        "regionas"@lt,
+        "reģions"@lv,
+        "reġjun"@mt,
+        "regio"@nl,
+        "region"@pl,
+        "região"@pt,
+        "regiune"@ro,
+        "región"@sk,
+        "regija"@sl,
+        "region"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/HRV_GR> a skos:Concept ;
+    at:authority-code "HRV_GR" ;
+    at:deprecated "false" ;
+    at:op-code "HRV_GR" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "HRV_GR" ;
+    dc:identifier "HRV_GR" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/HRV_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "град"@bg,
+        "město"@cs,
+        "by"@da,
+        "Stadt"@de,
+        "πόλη"@el,
+        "city"@en,
+        "ciudad"@es,
+        "linn"@et,
+        "kaupunki"@fi,
+        "ville"@fr,
+        "cathair"@ga,
+        "grad"@hr,
+        "város"@hu,
+        "città"@it,
+        "miestas"@lt,
+        "pilsēta"@lv,
+        "belt żgħira"@mt,
+        "stad"@nl,
+        "miasto"@pl,
+        "cidade"@pt,
+        "oraș"@ro,
+        "město"@sk,
+        "mestna občina"@sl,
+        "stad"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/HRV_OPC> a skos:Concept ;
+    at:authority-code "HRV_OPC" ;
+    at:deprecated "false" ;
+    at:op-code "HRV_OPC" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "HRV_OPC" ;
+    dc:identifier "HRV_OPC" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/HRV_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "община"@bg,
+        "občina"@cs,
+        "kommune"@da,
+        "Gemeinde"@de,
+        "δήμος"@el,
+        "municipality"@en,
+        "municipio"@es,
+        "vald"@et,
+        "kunta"@fi,
+        "commune"@fr,
+        "općina"@hr,
+        "község"@hu,
+        "comune"@it,
+        "savivaldybė"@lt,
+        "komūna"@lv,
+        "muniċipalità"@mt,
+        "gemeente"@nl,
+        "gmina"@pl,
+        "município"@pt,
+        "comună"@ro,
+        "obec"@sk,
+        "občina"@sl,
+        "kommun"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/HRV_ZP> a skos:Concept ;
+    at:authority-code "HRV_ZP" ;
+    at:deprecated "false" ;
+    at:op-code "HRV_ZP" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "HRV_ZP" ;
+    dc:identifier "HRV_ZP" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/HRV_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "жупания"@bg,
+        "župa"@cs,
+        "distrikt"@da,
+        "Gespanschaft"@de,
+        "επαρχία"@el,
+        "county"@en,
+        "provincia"@es,
+        "maakond"@et,
+        "maakunta"@fi,
+        "comitat"@fr,
+        "županija"@hr,
+        "megye"@hu,
+        "contea"@it,
+        "apskritis"@lt,
+        "županija"@lv,
+        "kontea"@mt,
+        "provincie"@nl,
+        "żupania"@pl,
+        "distrito"@pt,
+        "județ"@ro,
+        "župa"@sk,
+        "županija"@sl,
+        "distrikt"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/HUN_FV> a skos:Concept ;
+    at:authority-code "HUN_FV" ;
+    at:deprecated "false" ;
+    at:op-code "HUN_FV" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "HUN_FV" ;
+    dc:identifier "HUN_FV" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/HUN_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "столица"@bg,
+        "hlavní město"@cs,
+        "hovestad"@da,
+        "Hauptstadt"@de,
+        "πρωτεύουσα"@el,
+        "capital city"@en,
+        "capital"@es,
+        "pealinn"@et,
+        "pääkaupunki"@fi,
+        "capitale"@fr,
+        "príomhchathair"@ga,
+        "főváros"@hu,
+        "città capitale"@it,
+        "sostinė"@lt,
+        "galvaspilsēta"@lv,
+        "hoofdstad"@nl,
+        "stolica"@pl,
+        "capital"@pt,
+        "capitală"@ro,
+        "havné mesto"@sk,
+        "glavno mesto"@sl,
+        "huvudstad"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/HUN_MG> a skos:Concept ;
+    at:authority-code "HUN_MG" ;
+    at:deprecated "false" ;
+    at:op-code "HUN_MG" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "HUN_MG" ;
+    dc:identifier "HUN_MG" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/HUN_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "област"@bg,
+        "župa"@cs,
+        "amt"@da,
+        "Komitat"@de,
+        "κομητεία"@el,
+        "county"@en,
+        "provincia"@es,
+        "komitaat"@et,
+        "lääni"@fi,
+        "comté"@fr,
+        "županija"@hr,
+        "megye"@hu,
+        "provincia"@it,
+        "apygarda"@lt,
+        "meģe"@lv,
+        "kontea"@mt,
+        "comitaat"@nl,
+        "komitat"@pl,
+        "distrito"@pt,
+        "județ"@ro,
+        "župa"@sk,
+        "županija"@sl,
+        "distrikt"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/HUN_MJV> a skos:Concept ;
+    at:authority-code "HUN_MJV" ;
+    at:deprecated "false" ;
+    at:op-code "HUN_MJV" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "HUN_MJV" ;
+    dc:identifier "HUN_MJV" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/HUN_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "град с правомощия на окръг"@bg,
+        "město s župními pravomocemi"@cs,
+        "by med amtsstatus"@da,
+        "Stadt mit Komitatsstatus"@de,
+        "πόλη-κομητεία"@el,
+        "town with county status"@en,
+        "ciudad con rango de provincia"@es,
+        "komitaadi õigustega linn"@et,
+        "kaupunki, jolla on läänin asema"@fi,
+        "ville ayant statut de comté"@fr,
+        "grad županija"@hr,
+        "megyei jogú város"@hu,
+        "città metropolitana"@it,
+        "apygardos statusą turintis miestas"@lt,
+        "pilsēta ar meģes tiesībām"@lv,
+        "belt bi status ta' kontea"@mt,
+        "stad met comitaatrechten"@nl,
+        "miasto na prawach komitatu"@pl,
+        "cidade com competências distritais"@pt,
+        "municipiu"@ro,
+        "mesto so župnou správou"@sk,
+        "mestna občina s pristojnostmi županije"@sl,
+        "stad med distriktsrättigheter"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/IRL_CCO> a skos:Concept ;
+    at:authority-code "IRL_CCO" ;
+    at:deprecated "false" ;
+    at:op-code "IRL_CCO" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "IRL_CCO" ;
+    dc:identifier "IRL_CCO" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/IRL_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "град и графство"@bg,
+        "velkoměsto a hrabství"@cs,
+        "city and county"@da,
+        "Stadt und Grafschaft"@de,
+        "μητροπολιτικός δήμος-κομητεία"@el,
+        "city and county"@en,
+        "ciudad y condado"@es,
+        "suurlinn ja krahvkond"@et,
+        "kreivikunta-kaupunki"@fi,
+        "cité-comté"@fr,
+        "cathair agus contae"@ga,
+        "grad i grofovija"@hr,
+        "város és megye"@hu,
+        "città-contea"@it,
+        "miestas grafystė"@lt,
+        "pilsētgrāfiste"@lv,
+        "belt u kontea"@mt,
+        "stad en graafschap"@nl,
+        "miasto i hrabstwo"@pl,
+        "cidade e condado"@pt,
+        "municipiu-comitat"@ro,
+        "veľkomesto a grófstvo"@sk,
+        "mesto in grofija"@sl,
+        "city and county"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/IRL_CO> a skos:Concept ;
+    at:authority-code "IRL_CO" ;
+    at:deprecated "false" ;
+    at:op-code "IRL_CO" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "IRL_CO" ;
+    dc:identifier "IRL_CO" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/IRL_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "графство"@bg,
+        "hrabství"@cs,
+        "county"@da,
+        "Grafschaft"@de,
+        "κομητεία"@el,
+        "county"@en,
+        "condado"@es,
+        "krahvkond"@et,
+        "kreivikunta"@fi,
+        "comté"@fr,
+        "contae"@ga,
+        "grofovija"@hr,
+        "megye"@hu,
+        "contea"@it,
+        "grafystė"@lt,
+        "grāfiste"@lv,
+        "kontea"@mt,
+        "graafschap"@nl,
+        "hrabstwo"@pl,
+        "condado"@pt,
+        "comitat"@ro,
+        "grófstvo"@sk,
+        "grofija"@sl,
+        "county"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/IRL_CTH> a skos:Concept ;
+    at:authority-code "IRL_CTH" ;
+    at:deprecated "false" ;
+    at:op-code "IRL_CTH" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "IRL_CTH" ;
+    dc:identifier "IRL_CTH" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/IRL_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "град"@bg,
+        "velkoměsto"@cs,
+        "city"@da,
+        "Stadt"@de,
+        "μητροπολιτικός δήμος"@el,
+        "city"@en,
+        "ciudad-condado"@es,
+        "suurlinn"@et,
+        "kaupunki"@fi,
+        "cité"@fr,
+        "cathair"@ga,
+        "grad"@hr,
+        "megyei jogú város"@hu,
+        "città"@it,
+        "miestas"@lt,
+        "pilsēta"@lv,
+        "belt"@mt,
+        "stadsdistrict"@nl,
+        "miasto"@pl,
+        "cidade"@pt,
+        "municipiu"@ro,
+        "velkoměsto"@sk,
+        "mesto"@sl,
+        "city"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/ITA_CM> a skos:Concept ;
+    at:authority-code "ITA_CM" ;
+    at:deprecated "false" ;
+    at:op-code "ITA_CM" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "ITA_CM" ;
+    dc:identifier "ITA_CM" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/ITA_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "метрополен град"@bg,
+        "metropolitní město"@cs,
+        "storby"@da,
+        "Großstadt mit besonderem Status"@de,
+        "μητροπολιτικός δήμος"@el,
+        "metropolitan city"@en,
+        "ciudad metropolitana"@es,
+        "suurlinn"@et,
+        "metropolikaupunki"@fi,
+        "ville métropolitaine"@fr,
+        "veliki grad"@hr,
+        "nagyváros"@hu,
+        "città metropolitana"@it,
+        "metropolinė zona"@lt,
+        "metropoles pilsēta"@lv,
+        "belt metropolitana"@mt,
+        "grootstad"@nl,
+        "miasto metropolitalne"@pl,
+        "cidade metropolitana"@pt,
+        "oraș metropolitan"@ro,
+        "metropolitná oblasť"@sk,
+        "metropolitansko mesto"@sl,
+        "storstad"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/ITA_COM> a skos:Concept ;
+    at:authority-code "ITA_COM" ;
+    at:deprecated "false" ;
+    at:op-code "ITA_COM" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "ITA_COM" ;
+    dc:identifier "ITA_COM" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/ITA_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "община"@bg,
+        "obec"@cs,
+        "kommune"@da,
+        "Gemeinde"@de,
+        "δήμος"@el,
+        "municipality"@en,
+        "municipio"@es,
+        "kommuun"@et,
+        "kunta"@fi,
+        "commune"@fr,
+        "općina"@hr,
+        "település"@hu,
+        "comune"@it,
+        "komuna"@lt,
+        "komūna"@lv,
+        "komun"@mt,
+        "gemeente"@nl,
+        "gmina"@pl,
+        "município"@pt,
+        "comună"@ro,
+        "obec"@sk,
+        "občina"@sl,
+        "kommun"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/ITA_PR> a skos:Concept ;
+    at:authority-code "ITA_PR" ;
+    at:deprecated "false" ;
+    at:op-code "ITA_PR" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "ITA_PR" ;
+    dc:identifier "ITA_PR" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/ITA_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "провинция"@bg,
+        "provincie"@cs,
+        "provins"@da,
+        "Provinz"@de,
+        "επαρχία"@el,
+        "province"@en,
+        "provincia"@es,
+        "provints"@et,
+        "maakunta"@fi,
+        "province"@fr,
+        "pokrajina"@hr,
+        "megye"@hu,
+        "provincia"@it,
+        "provinċja"@lt,
+        "province"@lv,
+        "provinċja"@mt,
+        "provincie"@nl,
+        "prowincja"@pl,
+        "prowincja"@pt,
+        "provincie"@ro,
+        "provincia"@sk,
+        "pokrajina"@sl,
+        "provins"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/ITA_PRA> a skos:Concept ;
+    at:authority-code "ITA_PRA" ;
+    at:deprecated "false" ;
+    at:op-code "ITA_PRA" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "ITA_PRA" ;
+    dc:identifier "ITA_PRA" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/ITA_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "автономна провинция"@bg,
+        "autonomní provincie"@cs,
+        "selvstyrende provins"@da,
+        "Autonome Provinz"@de,
+        "αυτόνομη επαρχία"@el,
+        "autonomous province"@en,
+        "provincia autónoma"@es,
+        "autonoomne provints"@et,
+        "autonominen maakunta"@fi,
+        "province autonome"@fr,
+        "autonomna pokrajina"@hr,
+        "autonóm megye"@hu,
+        "provincia autonoma"@it,
+        "autonominė provincija"@lt,
+        "autonomā province"@lv,
+        "provinċja awtonoma"@mt,
+        "autonome provincie"@nl,
+        "prowincja autonomiczna"@pl,
+        "província autónoma"@pt,
+        "provincie autonomă"@ro,
+        "autonómna provincia"@sk,
+        "avtonomna pokrajina"@sl,
+        "autonom provins"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/ITA_RG> a skos:Concept ;
+    at:authority-code "ITA_RG" ;
+    at:deprecated "false" ;
+    at:op-code "ITA_RG" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "ITA_RG" ;
+    dc:identifier "ITA_RG" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/ITA_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "област"@bg,
+        "region"@cs,
+        "region"@da,
+        "Region"@de,
+        "περιφέρεια"@el,
+        "region"@en,
+        "región"@es,
+        "maakond"@et,
+        "alue"@fi,
+        "région"@fr,
+        "réigiún"@ga,
+        "regija"@hr,
+        "régió"@hu,
+        "regione"@it,
+        "regionas"@lt,
+        "reģions"@lv,
+        "reġjun"@mt,
+        "regio"@nl,
+        "region"@pl,
+        "região"@pt,
+        "regiune"@ro,
+        "región"@sk,
+        "dežela"@sl,
+        "region"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/ITA_RGA> a skos:Concept ;
+    at:authority-code "ITA_RGA" ;
+    at:deprecated "false" ;
+    at:op-code "ITA_RGA" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "ITA_RGA" ;
+    dc:identifier "ITA_RGA" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/ITA_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "autonomous region with special status"@en,
+        "région autonome à statut spécial"@fr,
+        "regione autonoma a statuto speciale"@it .
+
+<http://publications.europa.eu/resource/authority/atu-type/LTU_APS> a skos:Concept ;
+    at:authority-code "LTU_APS" ;
+    at:deprecated "false" ;
+    at:op-code "LTU_APS" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "LTU_APS" ;
+    dc:identifier "LTU_APS" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/LTU_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "област"@bg,
+        "kraj"@cs,
+        "distrikt"@da,
+        "Bezirk"@de,
+        "επαρχία"@el,
+        "county"@en,
+        "provincia"@es,
+        "maakond"@et,
+        "lääni"@fi,
+        "province"@fr,
+        "okrug"@hr,
+        "megye"@hu,
+        "provincia"@it,
+        "apskritis"@lt,
+        "apriņķis"@lv,
+        "kontea"@mt,
+        "district"@nl,
+        "okręg"@pl,
+        "distrito"@pt,
+        "județ"@ro,
+        "kraj"@sk,
+        "okrožje"@sl,
+        "förvaltningsdistrikt"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/LTU_MSV> a skos:Concept ;
+    at:authority-code "LTU_MSV" ;
+    at:deprecated "false" ;
+    at:op-code "LTU_MSV" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "LTU_MSV" ;
+    dc:identifier "LTU_MSV" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/LTU_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "miesto savivaldybė"@lt .
+
+<http://publications.europa.eu/resource/authority/atu-type/LTU_RSV> a skos:Concept ;
+    at:authority-code "LTU_RSV" ;
+    at:deprecated "false" ;
+    at:op-code "LTU_RSV" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "LTU_RSV" ;
+    dc:identifier "LTU_RSV" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/LTU_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "Rajongemeinde"@de,
+        "district municipality"@en,
+        "municipalité de district"@fr,
+        "rajono savivaldybė"@lt,
+        "rajona pašvaldība"@lv,
+        "districtsgemeente"@nl,
+        "samorząd rejonu"@pl .
+
+<http://publications.europa.eu/resource/authority/atu-type/LTU_SEN> a skos:Concept ;
+    at:authority-code "LTU_SEN" ;
+    at:deprecated "false" ;
+    at:op-code "LTU_SEN" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "LTU_SEN" ;
+    dc:identifier "LTU_SEN" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/LTU_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "старейшинство"@bg,
+        "okrsek"@cs,
+        "delkommune"@da,
+        "Teilgemeinde"@de,
+        "κοινότητα"@el,
+        "eldership"@en,
+        "distrito"@es,
+        "vald"@et,
+        "piiri"@fi,
+        "conseil des seniors"@fr,
+        "mjesna zajednica"@hr,
+        "körzet"@hu,
+        "distretto"@it,
+        "seniūnija"@lt,
+        "seņūnija"@lv,
+        "distrett"@mt,
+        "deelgemeente"@nl,
+        "gmina"@pl,
+        "freguesia"@pt,
+        "comună"@ro,
+        "obvod"@sk,
+        "krajevna skupnost"@sl,
+        "kommundel"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/LTU_SV> a skos:Concept ;
+    at:authority-code "LTU_SV" ;
+    at:deprecated "false" ;
+    at:op-code "LTU_SV" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "LTU_SV" ;
+    dc:identifier "LTU_SV" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/LTU_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "община"@bg,
+        "obec"@cs,
+        "kommune"@da,
+        "Gemeinde"@de,
+        "δήμος"@el,
+        "municipality"@en,
+        "municipio"@es,
+        "munitsipaliteet"@et,
+        "kunta"@fi,
+        "commune"@fr,
+        "općina"@hr,
+        "önkormányzat"@hu,
+        "comune"@it,
+        "savivaldybė"@lt,
+        "pašvaldība"@lv,
+        "muniċipalità"@mt,
+        "gemeente"@nl,
+        "rejon"@pl,
+        "município"@pt,
+        "municipalitate"@ro,
+        "obec"@sk,
+        "občina"@sl,
+        "kommun"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/LUX_COM> a skos:Concept ;
+    at:authority-code "LUX_COM" ;
+    at:deprecated "false" ;
+    at:op-code "LUX_COM" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "LUX_COM" ;
+    dc:identifier "LUX_COM" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/LUX_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "община"@bg,
+        "obec"@cs,
+        "kommune"@da,
+        "Gemeinde"@de,
+        "κοινότητα"@el,
+        "municipality"@en,
+        "municipio"@es,
+        "kommuun"@et,
+        "kunta"@fi,
+        "commune"@fr,
+        "općina"@hr,
+        "település"@hu,
+        "comune"@it,
+        "komuna"@lt,
+        "komūna"@lv,
+        "komun"@mt,
+        "gemeente"@nl,
+        "gmina"@pl,
+        "município"@pt,
+        "comună"@ro,
+        "obec"@sk,
+        "občina"@sl,
+        "kommun"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/LUX_DS> a skos:Concept ;
+    at:authority-code "LUX_DS" ;
+    at:deprecated "true" ;
+    at:end.use "2015-10-02" ;
+    at:op-code "LUX_DS" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "LUX_DS" ;
+    dc:identifier "LUX_DS" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/LUX_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "Bezirk"@de,
+        "district"@en,
+        "district"@fr .
+
+<http://publications.europa.eu/resource/authority/atu-type/LVA_APR> a skos:Concept ;
+    at:authority-code "LVA_APR" ;
+    at:deprecated "true" ;
+    at:end.use "1949-12-31" ;
+    at:op-code "LVA_APR" ;
+    at:start.use "1918-11-18" ;
+    atold:op-code "LVA_APR" ;
+    dc:identifier "LVA_APR" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/LVA_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "област"@bg,
+        "kraj"@cs,
+        "distrikt"@da,
+        "Bezirk"@de,
+        "επαρχία"@el,
+        "county"@en,
+        "provincia"@es,
+        "maakond"@et,
+        "lääni"@fi,
+        "province"@fr,
+        "okrug"@hr,
+        "megye"@hu,
+        "provincia"@it,
+        "apskritis"@lt,
+        "apriņķis"@lv,
+        "kontea"@mt,
+        "district"@nl,
+        "okręg"@pl,
+        "distrito"@pt,
+        "județ"@ro,
+        "kraj"@sk,
+        "okrožje"@sl,
+        "förvaltningsdistrikt"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/LVA_NV> a skos:Concept ;
+    at:authority-code "LVA_NV" ;
+    at:deprecated "false" ;
+    at:op-code "LVA_NV" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "LVA_NV" ;
+    dc:identifier "LVA_NV" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/LVA_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "община"@bg,
+        "obec"@cs,
+        "kommune"@da,
+        "Gemeinde"@de,
+        "δήμος"@el,
+        "municipality"@en,
+        "municipio"@es,
+        "piirkond"@et,
+        "kunta"@fi,
+        "municipalité"@fr,
+        "općina"@hr,
+        "körzet"@hu,
+        "comune"@it,
+        "savivaldybė"@lt,
+        "novads"@lv,
+        "muniċipalità"@mt,
+        "gemeente"@nl,
+        "powiat"@pl,
+        "município"@pt,
+        "comună"@ro,
+        "obec"@sk,
+        "občina"@sl,
+        "kommun"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/LVA_RP> a skos:Concept ;
+    at:authority-code "LVA_RP" ;
+    at:deprecated "false" ;
+    at:op-code "LVA_RP" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "LVA_RP" ;
+    dc:identifier "LVA_RP" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/LVA_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "републикански град"@bg,
+        "statutární město"@cs,
+        "republikby"@da,
+        "Stadt (Statuarstadt ?)"@de,
+        "αστικός δήμος"@el,
+        "republic city"@en,
+        "ciudad de la república"@es,
+        "vabariigilinn"@et,
+        "tasavallan kaupunki"@fi,
+        "ville républicaine"@fr,
+        "grad"@hr,
+        "köztársasági jelentőségű város"@hu,
+        "città extracomunale"@it,
+        "respublikinio pavaldumo miestas"@lt,
+        "republikas pilsēta"@lv,
+        "belt repubblikana"@mt,
+        "republiekstad"@nl,
+        "miasto wydzielone"@pl,
+        "cidade da República"@pt,
+        "oraș republican"@ro,
+        "republikové mesto"@sk,
+        "mestna občina"@sl,
+        "republikstad"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/MLT_KMT> a skos:Concept ;
+    at:authority-code "MLT_KMT" ;
+    at:deprecated "false" ;
+    at:op-code "MLT_KMT" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "MLT_KMT" ;
+    dc:identifier "MLT_KMT" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/MLT_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "районна община"@bg,
+        "obec"@cs,
+        "delkommune"@da,
+        "Gemeinschaft"@de,
+        "κοινότητα"@el,
+        "community"@en,
+        "comunidad"@es,
+        "kommuun"@et,
+        "yhteisö"@fi,
+        "communauté"@fr,
+        "podopćina"@hr,
+        "kerület"@hu,
+        "comunità"@it,
+        "komuna"@lt,
+        "komūna"@lv,
+        "komunità"@mt,
+        "deelgemeente"@nl,
+        "wspólnota"@pl,
+        "comunidade"@pt,
+        "comunitate"@ro,
+        "komunita"@sk,
+        "skupnost"@sl,
+        "kommundel"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/MLT_LOK> a skos:Concept ;
+    at:authority-code "MLT_LOK" ;
+    at:deprecated "false" ;
+    at:op-code "MLT_LOK" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "MLT_LOK" ;
+    dc:identifier "MLT_LOK" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/MLT_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "община"@bg,
+        "lokalita"@cs,
+        "kommune"@da,
+        "Gemeinde"@de,
+        "δήμος"@el,
+        "locality"@en,
+        "municipio"@es,
+        "ringkond"@et,
+        "kunta"@fi,
+        "localité"@fr,
+        "općina"@hr,
+        "település"@hu,
+        "comune"@it,
+        "savivaldybė"@lt,
+        "apvidus"@lv,
+        "lokalità"@mt,
+        "gemeente"@nl,
+        "lokalitet"@pl,
+        "município"@pt,
+        "lokalitate"@ro,
+        "lokalita"@sk,
+        "občina"@sl,
+        "kommun"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/MLT_RG> a skos:Concept ;
+    at:authority-code "MLT_RG" ;
+    at:deprecated "false" ;
+    at:op-code "MLT_RG" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "MLT_RG" ;
+    dc:identifier "MLT_RG" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/MLT_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "регион"@bg,
+        "region"@cs,
+        "region"@da,
+        "Region"@de,
+        "περιφέρεια"@el,
+        "region"@en,
+        "región"@es,
+        "piirkond"@et,
+        "alue"@fi,
+        "région"@fr,
+        "réigiún"@ga,
+        "regija"@hr,
+        "régió"@hu,
+        "regione"@it,
+        "regionas"@lt,
+        "reģions"@lv,
+        "reġjun"@mt,
+        "regio"@nl,
+        "region"@pl,
+        "região"@pt,
+        "regiune"@ro,
+        "región"@sk,
+        "regija"@sl,
+        "region"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/NIR_DCA> a skos:Concept ;
+    at:authority-code "NIR_DCA" ;
+    at:deprecated "false" ;
+    at:op-code "NIR_DCA" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "NIR_DCA" ;
+    dc:identifier "NIR_DCA" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/GBR_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "окръг"@bg,
+        "okres"@cs,
+        "district council area"@da,
+        "Bezirk"@de,
+        "διαμέρισμα"@el,
+        "district council area"@en,
+        "municipio"@es,
+        "ringkond"@et,
+        "kunta"@fi,
+        "zone de conseil de district"@fr,
+        "okrug"@hr,
+        "kerület"@hu,
+        "distretto"@it,
+        "apygarda"@lt,
+        "rajons"@lv,
+        "żona distrettwali amministrattiva"@mt,
+        "district"@nl,
+        "dystrykt"@pl,
+        "município"@pt,
+        "district"@ro,
+        "okres"@sk,
+        "občina"@sl,
+        "district council area"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/NLD_BG> a skos:Concept ;
+    at:authority-code "NLD_BG" ;
+    at:deprecated "false" ;
+    at:op-code "NLD_BG" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "NLD_BG" ;
+    dc:identifier "NLD_BG" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/NLD_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "special municipality"@en,
+        "commune à statut particulier"@fr,
+        "bijzondere gemeente"@nl .
+
+<http://publications.europa.eu/resource/authority/atu-type/NLD_GEM> a skos:Concept ;
+    at:authority-code "NLD_GEM" ;
+    at:deprecated "false" ;
+    at:op-code "NLD_GEM" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "NLD_GEM" ;
+    dc:identifier "NLD_GEM" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/NLD_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "община"@bg,
+        "obec"@cs,
+        "kommune"@da,
+        "Gemeinde"@de,
+        "δήμος"@el,
+        "municipality"@en,
+        "municipio"@es,
+        "vald"@et,
+        "kunta"@fi,
+        "commune"@fr,
+        "općina"@hr,
+        "település"@hu,
+        "comune"@it,
+        "savivaldybė"@lt,
+        "komūna"@lv,
+        "muniċipalità"@mt,
+        "gemeente"@nl,
+        "gmina"@pl,
+        "município"@pt,
+        "comună"@ro,
+        "obec"@sk,
+        "občina"@sl,
+        "kommun"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/NLD_PR> a skos:Concept ;
+    at:authority-code "NLD_PR" ;
+    at:deprecated "false" ;
+    at:op-code "NLD_PR" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "NLD_PR" ;
+    dc:identifier "NLD_PR" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/NLD_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "провинция"@bg,
+        "provincie"@cs,
+        "provins"@da,
+        "Provinz"@de,
+        "επαρχία"@el,
+        "province"@en,
+        "provincia"@es,
+        "provints"@et,
+        "lääni"@fi,
+        "province"@fr,
+        "pokrajina"@hr,
+        "tartomány"@hu,
+        "provincia"@it,
+        "provinċja"@lt,
+        "province"@lv,
+        "provinċja"@mt,
+        "provincie"@nl,
+        "prowincja"@pl,
+        "provincia"@pt,
+        "provincie"@ro,
+        "provincia"@sk,
+        "pokrajina"@sl,
+        "provins"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/OP_DATPRO> a skos:Concept ;
+    at:op-code "OP_DATPRO" ;
+    atold:op-code "OP_DATPRO" ;
+    dc:identifier "OP_DATPRO" ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "НЕОКОНЧАТЕЛНИ ДАННИ"@bg,
+        "Předběžné údaje"@cs,
+        "Midlertidige data"@da,
+        "Vorläufige Daten"@de,
+        "Προσωρινά δεδομένα"@el,
+        "Provisional data"@en,
+        "Datos provisionales"@es,
+        "Esialgsed andmed"@et,
+        "Alustavat tiedot"@fi,
+        "Données provisoires"@fr,
+        "Sonraí sealadacha"@ga,
+        "Privremeni podaci"@hr,
+        "Ideiglenes adatok"@hu,
+        "Dati provvisori"@it,
+        "Laikinieji duomenys"@lt,
+        "Provizoriski dati"@lv,
+        "Dejta provviżorja"@mt,
+        "Voorlopige gegevens"@nl,
+        "Dane tymczasowe"@pl,
+        "Dados provisórios"@pt,
+        "Date provizorii"@ro,
+        "Predbežné údaje"@sk,
+        "Začasni podatki"@sl,
+        "Tillfälliga uppgifter"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/POL_GM> a skos:Concept ;
+    at:authority-code "POL_GM" ;
+    at:deprecated "false" ;
+    at:op-code "POL_GM" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "POL_GM" ;
+    dc:identifier "POL_GM" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/POL_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "община"@bg,
+        "obec"@cs,
+        "kommune"@da,
+        "Gemeinde"@de,
+        "δήμος"@el,
+        "municipality"@en,
+        "municipio"@es,
+        "vald"@et,
+        "kunta"@fi,
+        "commune"@fr,
+        "općina"@hr,
+        "település"@hu,
+        "comune"@it,
+        "savivaldybė"@lt,
+        "gmina"@lv,
+        "muniċipalità"@mt,
+        "gemeente"@nl,
+        "gmina"@pl,
+        "município"@pt,
+        "comună"@ro,
+        "obec"@sk,
+        "občina"@sl,
+        "kommun"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/POL_MPP> a skos:Concept ;
+    at:authority-code "POL_MPP" ;
+    at:deprecated "false" ;
+    at:op-code "POL_MPP" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "POL_MPP" ;
+    dc:identifier "POL_MPP" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/POL_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "city county"@en,
+        "miasto na prawach powiatu"@pl .
+
+<http://publications.europa.eu/resource/authority/atu-type/POL_POW> a skos:Concept ;
+    at:authority-code "POL_POW" ;
+    at:deprecated "false" ;
+    at:op-code "POL_POW" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "POL_POW" ;
+    dc:identifier "POL_POW" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/POL_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "окръг"@bg,
+        "okres"@cs,
+        "distrikt"@da,
+        "Kreis"@de,
+        "διοικητικό διαμέρισμα"@el,
+        "county"@en,
+        "provincia"@es,
+        "ringkond"@et,
+        "hallintopiiri"@fi,
+        "district"@fr,
+        "kotar"@hr,
+        "járás"@hu,
+        "distretto"@it,
+        "apskritis"@lt,
+        "apriņķis"@lv,
+        "kontea"@mt,
+        "district"@nl,
+        "powiat"@pl,
+        "distrito"@pt,
+        "district"@ro,
+        "okres"@sk,
+        "okrožje"@sl,
+        "distrikt"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/POL_WOJ> a skos:Concept ;
+    at:authority-code "POL_WOJ" ;
+    at:deprecated "false" ;
+    at:op-code "POL_WOJ" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "POL_WOJ" ;
+    dc:identifier "POL_WOJ" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/POL_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "воеводство"@bg,
+        "vojvodství"@cs,
+        "region"@da,
+        "Woiwodschaft"@de,
+        "βοεβοδάτο"@el,
+        "voivodeship"@en,
+        "región"@es,
+        "vojevoodkond"@et,
+        "voivodikunta"@fi,
+        "voïvodie"@fr,
+        "vojvodstvo"@hr,
+        "vajdaság"@hu,
+        "regione"@it,
+        "vaivadija"@lt,
+        "vojevodiste"@lv,
+        "provinċja"@mt,
+        "provincie"@nl,
+        "województwo"@pl,
+        "voivodato"@pt,
+        "voievodat"@ro,
+        "vojvodstvo"@sk,
+        "vojvodstvo"@sl,
+        "region"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/PRT_DS> a skos:Concept ;
+    at:authority-code "PRT_DS" ;
+    at:deprecated "false" ;
+    at:op-code "PRT_DS" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "PRT_DS" ;
+    dc:identifier "PRT_DS" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/PRT_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "окръг"@bg,
+        "okres"@cs,
+        "distrikt"@da,
+        "Distrikt"@de,
+        "διαμέρισμα"@el,
+        "district"@en,
+        "provincia"@es,
+        "ringkond"@et,
+        "lääni"@fi,
+        "district"@fr,
+        "okrug"@hr,
+        "megye"@hu,
+        "distretto"@it,
+        "apygarda"@lt,
+        "apgabals"@lv,
+        "distrett"@mt,
+        "district"@nl,
+        "dystrykt"@pl,
+        "distrito"@pt,
+        "district"@ro,
+        "okres"@sk,
+        "okrožje"@sl,
+        "förvaltningsdistrikt"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/PRT_FRG> a skos:Concept ;
+    at:authority-code "PRT_FRG" ;
+    at:deprecated "false" ;
+    at:op-code "PRT_FRG" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "PRT_FRG" ;
+    dc:identifier "PRT_FRG" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/PRT_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "кметство"@bg,
+        "komuna"@cs,
+        "delkommune"@da,
+        "Teilgemeinde"@de,
+        "πολιτική ενορία"@el,
+        "civil parish"@en,
+        "parroquia"@es,
+        "vald"@et,
+        "piiri"@fi,
+        "paroisse civile"@fr,
+        "upravna župa"@hr,
+        "község"@hu,
+        "borgata [parrochia civile]"@it,
+        "parapija"@lt,
+        "pagasts"@lv,
+        "parroċċa ċivili"@mt,
+        "dorp"@nl,
+        "parafia [cywilna]"@pl,
+        "freguesia"@pt,
+        "parohie civilă"@ro,
+        "civilná farnosť"@sk,
+        "krajevna skupnost"@sl,
+        "församling [civil parish]"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/PRT_MUN> a skos:Concept ;
+    at:authority-code "PRT_MUN" ;
+    at:deprecated "false" ;
+    at:op-code "PRT_MUN" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "PRT_MUN" ;
+    dc:identifier "PRT_MUN" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/PRT_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "община"@bg,
+        "obec"@cs,
+        "kommune"@da,
+        "Gemeinde"@de,
+        "δήμος"@el,
+        "municipality"@en,
+        "municipio"@es,
+        "munitsipaliteet"@et,
+        "kunta"@fi,
+        "commune"@fr,
+        "općina"@hr,
+        "körzet"@hu,
+        "comune"@it,
+        "savivaldybė"@lt,
+        "municipalitāte"@lv,
+        "muniċipalità"@mt,
+        "gemeente"@nl,
+        "gmina"@pl,
+        "município"@pt,
+        "municipalitate"@ro,
+        "obec"@sk,
+        "občina"@sl,
+        "kommun"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/PRT_RGA> a skos:Concept ;
+    at:authority-code "PRT_RGA" ;
+    at:deprecated "false" ;
+    at:op-code "PRT_RGA" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "PRT_RGA" ;
+    dc:identifier "PRT_RGA" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/PRT_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "автономна област"@bg,
+        "autonomní oblast"@cs,
+        "selvstyrende region"@da,
+        "Autonome Region"@de,
+        "αυτόνομη περιφέρεια"@el,
+        "autonomous region"@en,
+        "región autónoma"@es,
+        "autonoomne piirkond"@et,
+        "autonominen alue"@fi,
+        "région autonome"@fr,
+        "autonomna regija"@hr,
+        "autonóm régió"@hu,
+        "regione autonoma"@it,
+        "autonominis regionas"@lt,
+        "autonomais reģions"@lv,
+        "reġjun awtonomu"@mt,
+        "autonome regio"@nl,
+        "region autonomiczny"@pl,
+        "região autónoma"@pt,
+        "regiune autonomă"@ro,
+        "autonómny región"@sk,
+        "avtonomna regija"@sl,
+        "autonom region"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/ROU_JUD> a skos:Concept ;
+    at:authority-code "ROU_JUD" ;
+    at:deprecated "false" ;
+    at:op-code "ROU_JUD" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "ROU_JUD" ;
+    dc:identifier "ROU_JUD" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/ROU_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "oкръг"@bg,
+        "župa"@cs,
+        "distrikt"@da,
+        "Kreis"@de,
+        "νομός"@el,
+        "county"@en,
+        "provincia"@es,
+        "maakond"@et,
+        "lääni"@fi,
+        "judet"@fr,
+        "okrug"@hr,
+        "megye"@hu,
+        "distretto"@it,
+        "apskritis"@lt,
+        "žudecs"@lv,
+        "kontea"@mt,
+        "district"@nl,
+        "okręg"@pl,
+        "distrito"@pt,
+        "judeţ"@ro,
+        "župa"@sk,
+        "okrožje"@sl,
+        "distrikt"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/ROU_MUN> a skos:Concept ;
+    at:authority-code "ROU_MUN" ;
+    at:deprecated "false" ;
+    at:op-code "ROU_MUN" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "ROU_MUN" ;
+    dc:identifier "ROU_MUN" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/ROU_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "голям град"@bg,
+        "velkoměsto"@cs,
+        "storbykommune"@da,
+        "Munizipium"@de,
+        "δήμος"@el,
+        "city"@en,
+        "ciudad"@es,
+        "suurlinn"@et,
+        "suurkunta"@fi,
+        "municipe"@fr,
+        "grad"@hr,
+        "nagyváros"@hu,
+        "città"@it,
+        "municipalitetas"@lt,
+        "municipija"@lv,
+        "belt"@mt,
+        "grote stad"@nl,
+        "gmina miejska"@pl,
+        "município"@pt,
+        "municipiu"@ro,
+        "veľké mesto"@sk,
+        "večja mestna občina"@sl,
+        "stadskommun"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/SCT_COA> a skos:Concept ;
+    at:authority-code "SCT_COA" ;
+    at:deprecated "false" ;
+    at:op-code "SCT_COA" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "SCT_COA" ;
+    dc:identifier "SCT_COA" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/GBR_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "област"@bg,
+        "správní oblast"@cs,
+        "council area"@da,
+        "Council Area"@de,
+        "διαμέρισμα"@el,
+        "council area"@en,
+        "municipio"@es,
+        "omavalitsus"@et,
+        "kunta"@fi,
+        "zone de conseil"@fr,
+        "okrug"@hr,
+        "kerület"@hu,
+        "provincia"@it,
+        "sritis"@lt,
+        "municipālais apgabals"@lv,
+        "żona amministrattiva"@mt,
+        "raadsgebied"@nl,
+        "jednostka administracyjna"@pl,
+        "concelho"@pt,
+        "zonă de consiliu"@ro,
+        "oblasť v správe rady"@sk,
+        "občina"@sl,
+        "council area"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/SVK_KRJ> a skos:Concept ;
+    at:authority-code "SVK_KRJ" ;
+    at:deprecated "false" ;
+    at:op-code "SVK_KRJ" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "SVK_KRJ" ;
+    dc:identifier "SVK_KRJ" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/SVK_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "регион"@bg,
+        "samosprávny kraj"@cs,
+        "region"@da,
+        "Bezirk"@de,
+        "περιφέρεια"@el,
+        "region"@en,
+        "región"@es,
+        "maakond"@et,
+        "alue"@fi,
+        "région"@fr,
+        "pokrajina"@hr,
+        "megye"@hu,
+        "regione"@it,
+        "regionas"@lt,
+        "apgabals"@lv,
+        "reġjun"@mt,
+        "regio"@nl,
+        "kraj samorządowy"@pl,
+        "região"@pt,
+        "regiune"@ro,
+        "samosprávny kraj"@sk,
+        "pokrajina"@sl,
+        "region"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/SVK_OB> a skos:Concept ;
+    at:authority-code "SVK_OB" ;
+    at:deprecated "false" ;
+    at:op-code "SVK_OB" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "SVK_OB" ;
+    dc:identifier "SVK_OB" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/SVK_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "община"@bg,
+        "obec"@cs,
+        "kommune"@da,
+        "Gemeinde"@de,
+        "δήμος"@el,
+        "municipality"@en,
+        "municipio"@es,
+        "vald"@et,
+        "kunta"@fi,
+        "commune"@fr,
+        "općina"@hr,
+        "település"@hu,
+        "comune"@it,
+        "savivaldybė"@lt,
+        "pagasts"@lv,
+        "muniċipalità"@mt,
+        "gemeente"@nl,
+        "gmina"@pl,
+        "município"@pt,
+        "comună"@ro,
+        "obec"@sk,
+        "občina"@sl,
+        "kommun"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/SVK_OKR> a skos:Concept ;
+    at:authority-code "SVK_OKR" ;
+    at:deprecated "false" ;
+    at:op-code "SVK_OKR" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "SVK_OKR" ;
+    dc:identifier "SVK_OKR" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/SVK_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "окръг"@bg,
+        "okres"@cs,
+        "distrikt"@da,
+        "Kreis"@de,
+        "επαρχία"@el,
+        "district"@en,
+        "provincia"@es,
+        "ringkond"@et,
+        "hallintopiiri"@fi,
+        "district"@fr,
+        "okrug"@hr,
+        "kerület"@hu,
+        "provincia"@it,
+        "apygarda"@lt,
+        "apgabals"@lv,
+        "distrett"@mt,
+        "district"@nl,
+        "dystrykt"@pl,
+        "distrito"@pt,
+        "district"@ro,
+        "okres"@sk,
+        "okrožje"@sl,
+        "förvaltningsdistrikt"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/SVN_OBC> a skos:Concept ;
+    at:authority-code "SVN_OBC" ;
+    at:deprecated "false" ;
+    at:op-code "SVN_OBC" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "SVN_OBC" ;
+    dc:identifier "SVN_OBC" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/SVN_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "община"@bg,
+        "obec"@cs,
+        "kommune"@da,
+        "Gemeinde"@de,
+        "δήμος"@el,
+        "municipality"@en,
+        "municipio"@es,
+        "vald"@et,
+        "kunta"@fi,
+        "commune"@fr,
+        "općina"@hr,
+        "település"@hu,
+        "comune"@it,
+        "savivaldybė"@lt,
+        "komūna"@lv,
+        "muniċipalità"@mt,
+        "gemeente"@nl,
+        "gmina"@pl,
+        "município"@pt,
+        "comună"@ro,
+        "obec"@sk,
+        "občina"@sl,
+        "kommun"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/SWE_KOM> a skos:Concept ;
+    at:authority-code "SWE_KOM" ;
+    at:deprecated "false" ;
+    at:op-code "SWE_KOM" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "SWE_KOM" ;
+    dc:identifier "SWE_KOM" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/SWE_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "община"@bg,
+        "obec"@cs,
+        "kommune"@da,
+        "Gemeinde"@de,
+        "δήμος"@el,
+        "municipality"@en,
+        "municipio"@es,
+        "vald"@et,
+        "kunta"@fi,
+        "commune"@fr,
+        "općina"@hr,
+        "helyi önkormányzat"@hu,
+        "comune"@it,
+        "komuna"@lt,
+        "komūna"@lv,
+        "muniċipalità"@mt,
+        "gemeente"@nl,
+        "gmina"@pl,
+        "município"@pt,
+        "comună"@ro,
+        "obec"@sk,
+        "občina"@sl,
+        "kommun"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/SWE_LAN> a skos:Concept ;
+    at:authority-code "SWE_LAN" ;
+    at:deprecated "false" ;
+    at:op-code "SWE_LAN" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "SWE_LAN" ;
+    dc:identifier "SWE_LAN" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/SWE_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "регион"@bg,
+        "region"@cs,
+        "region"@da,
+        "Region"@de,
+        "περιφέρεια"@el,
+        "county"@en,
+        "región"@es,
+        "piirkond"@et,
+        "alue"@fi,
+        "département"@fr,
+        "réigiún"@ga,
+        "regija"@hr,
+        "régió"@hu,
+        "regione"@it,
+        "regionas"@lt,
+        "reģions"@lv,
+        "reġjun"@mt,
+        "regio"@nl,
+        "region"@pl,
+        "região"@pt,
+        "regiune"@ro,
+        "región"@sk,
+        "regija"@sl,
+        "län"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/SWE_LL> a skos:Concept ;
+    at:authority-code "SWE_LL" ;
+    at:deprecated "false" ;
+    at:op-code "SWE_LL" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "SWE_LL" ;
+    dc:identifier "SWE_LL" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/SWE_COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "областен съвет"@bg,
+        "zemská rada"@cs,
+        "landsting"@da,
+        "Provinziallandtag"@de,
+        "επαρχιακό συμβούλιο"@el,
+        "county concil"@en,
+        "diputación provincial"@es,
+        "läänivolikogu"@et,
+        "maakäräjäkunta"@fi,
+        "conseil de comté"@fr,
+        "pokrajinska uprava"@hr,
+        "megyei önkormányzat"@hu,
+        "contea"@it,
+        "leno taryba"@lt,
+        "landstings"@lv,
+        "kunsill tal-kontea"@mt,
+        "provincieraad"@nl,
+        "okręg"@pl,
+        "conselho provincial"@pt,
+        "consiliul comitatului"@ro,
+        "krajská rada"@sk,
+        "okrožni svet"@sl,
+        "landsting"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/SVN_COU> a skos:Concept ;
+    at:authority-code "SVN_COU" ;
+    at:deprecated "false" ;
+    at:op-code "SVN_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "SVN_COU" ;
+    dc:identifier "SVN_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/BGR_COU> a skos:Concept ;
+    at:authority-code "BGR_COU" ;
+    at:deprecated "false" ;
+    at:op-code "BGR_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "BGR_COU" ;
+    dc:identifier "BGR_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/CYP_COU> a skos:Concept ;
+    at:authority-code "CYP_COU" ;
+    at:deprecated "false" ;
+    at:op-code "CYP_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "CYP_COU" ;
+    dc:identifier "CYP_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/DNK_COU> a skos:Concept ;
+    at:authority-code "DNK_COU" ;
+    at:deprecated "false" ;
+    at:op-code "DNK_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "DNK_COU" ;
+    dc:identifier "DNK_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/EUR> a skos:Concept ;
+    at:authority-code "EUR" ;
+    at:deprecated "false" ;
+    at:op-code "EUR" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "EUR" ;
+    dc:identifier "EUR" ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "Европейски съюз"@bg,
+        "Evropská unie"@cs,
+        "Den Europæiske Union"@da,
+        "Europäische Union"@de,
+        "Ευρωπαϊκή Ένωση"@el,
+        "European Union"@en,
+        "Unión Europea"@es,
+        "Euroopa Liit"@et,
+        "Euroopan unioni"@fi,
+        "Union européenne"@fr,
+        "An tAontas Eorpach"@ga,
+        "Europska unija"@hr,
+        "Európai Unió"@hu,
+        "Unione europea"@it,
+        "Europos Sąjunga"@lt,
+        "Eiropas Savienība"@lv,
+        "Unjoni Ewropea"@mt,
+        "Europese Unie"@nl,
+        "Unia Europejska"@pl,
+        "União Europeia"@pt,
+        "Uniunea Europeană"@ro,
+        "Európska únia"@sk,
+        "Evropska unija"@sl,
+        "Europeiska unionen"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/FIN_COU> a skos:Concept ;
+    at:authority-code "FIN_COU" ;
+    at:deprecated "false" ;
+    at:op-code "FIN_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "FIN_COU" ;
+    dc:identifier "FIN_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/LUX_COU> a skos:Concept ;
+    at:authority-code "LUX_COU" ;
+    at:deprecated "false" ;
+    at:op-code "LUX_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "LUX_COU" ;
+    dc:identifier "LUX_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/ROU_COU> a skos:Concept ;
+    at:authority-code "ROU_COU" ;
+    at:deprecated "false" ;
+    at:op-code "ROU_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "ROU_COU" ;
+    dc:identifier "ROU_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/SVT> a skos:Concept ;
+    at:authority-code "SVT" ;
+    at:deprecated "false" ;
+    at:op-code "SVT" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "SVT" ;
+    dc:identifier "SVT" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/EUR> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "суверенна държава"@bg,
+        "suverénní stát"@cs,
+        "suveræn stat"@da,
+        "Souveräner Staat"@de,
+        "κυρίαρχο κράτος"@el,
+        "sovereign state"@en,
+        "estado soberano"@es,
+        "suveräänne riik"@et,
+        "itsenäisen valtion"@fi,
+        "état souverain"@fr,
+        "suverena država"@hr,
+        "szuverén állam"@hu,
+        "stato sovrano"@it,
+        "suvereni valstybė"@lt,
+        "suverēna valsts"@lv,
+        "soevereine staat"@nl,
+        "suwerenne państwo"@pl,
+        "estado soberano"@pt,
+        "suverän stat"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/CZE_COU> a skos:Concept ;
+    at:authority-code "CZE_COU" ;
+    at:deprecated "false" ;
+    at:op-code "CZE_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "CZE_COU" ;
+    dc:identifier "CZE_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/EST_COU> a skos:Concept ;
+    at:authority-code "EST_COU" ;
+    at:deprecated "false" ;
+    at:op-code "EST_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "EST_COU" ;
+    dc:identifier "EST_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/HRV_COU> a skos:Concept ;
+    at:authority-code "HRV_COU" ;
+    at:deprecated "false" ;
+    at:op-code "HRV_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "HRV_COU" ;
+    dc:identifier "HRV_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/HUN_COU> a skos:Concept ;
+    at:authority-code "HUN_COU" ;
+    at:deprecated "false" ;
+    at:op-code "HUN_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "HUN_COU" ;
+    dc:identifier "HUN_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/IRL_COU> a skos:Concept ;
+    at:authority-code "IRL_COU" ;
+    at:deprecated "false" ;
+    at:op-code "IRL_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "IRL_COU" ;
+    dc:identifier "IRL_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/LVA_COU> a skos:Concept ;
+    at:authority-code "LVA_COU" ;
+    at:deprecated "false" ;
+    at:op-code "LVA_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "LVA_COU" ;
+    dc:identifier "LVA_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/MLT_COU> a skos:Concept ;
+    at:authority-code "MLT_COU" ;
+    at:deprecated "false" ;
+    at:op-code "MLT_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "MLT_COU" ;
+    dc:identifier "MLT_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/NLD_COU> a skos:Concept ;
+    at:authority-code "NLD_COU" ;
+    at:deprecated "false" ;
+    at:op-code "NLD_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "NLD_COU" ;
+    dc:identifier "NLD_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/SVK_COU> a skos:Concept ;
+    at:authority-code "SVK_COU" ;
+    at:deprecated "false" ;
+    at:op-code "SVK_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "SVK_COU" ;
+    dc:identifier "SVK_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/SWE_COU> a skos:Concept ;
+    at:authority-code "SWE_COU" ;
+    at:deprecated "false" ;
+    at:op-code "SWE_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "SWE_COU" ;
+    dc:identifier "SWE_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/BEL_COU> a skos:Concept ;
+    at:authority-code "BEL_COU" ;
+    at:deprecated "false" ;
+    at:op-code "BEL_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "BEL_COU" ;
+    dc:identifier "BEL_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/ESP_COU> a skos:Concept ;
+    at:authority-code "ESP_COU" ;
+    at:deprecated "false" ;
+    at:op-code "ESP_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "ESP_COU" ;
+    dc:identifier "ESP_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/GRC_COU> a skos:Concept ;
+    at:authority-code "GRC_COU" ;
+    at:deprecated "false" ;
+    at:op-code "GRC_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "GRC_COU" ;
+    dc:identifier "GRC_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/POL_COU> a skos:Concept ;
+    at:authority-code "POL_COU" ;
+    at:deprecated "false" ;
+    at:op-code "POL_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "POL_COU" ;
+    dc:identifier "POL_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/PRT_COU> a skos:Concept ;
+    at:authority-code "PRT_COU" ;
+    at:deprecated "false" ;
+    at:op-code "PRT_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "PRT_COU" ;
+    dc:identifier "PRT_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/AUT_COU> a skos:Concept ;
+    at:authority-code "AUT_COU" ;
+    at:deprecated "false" ;
+    at:op-code "AUT_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "AUT_COU" ;
+    dc:identifier "AUT_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/FRA_COU> a skos:Concept ;
+    at:authority-code "FRA_COU" ;
+    at:deprecated "false" ;
+    at:op-code "FRA_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "FRA_COU" ;
+    dc:identifier "FRA_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/LTU_COU> a skos:Concept ;
+    at:authority-code "LTU_COU" ;
+    at:deprecated "false" ;
+    at:op-code "LTU_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "LTU_COU" ;
+    dc:identifier "LTU_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/ITA_COU> a skos:Concept ;
+    at:authority-code "ITA_COU" ;
+    at:deprecated "false" ;
+    at:op-code "ITA_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "ITA_COU" ;
+    dc:identifier "ITA_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/DEU_COU> a skos:Concept ;
+    at:authority-code "DEU_COU" ;
+    at:deprecated "false" ;
+    at:op-code "DEU_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "DEU_COU" ;
+    dc:identifier "DEU_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/COU> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/GBR_COU> a skos:Concept ;
+    at:authority-code "GBR_COU" ;
+    at:deprecated "false" ;
+    at:op-code "GBR_COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "GBR_COU" ;
+    dc:identifier "GBR_COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/SVT> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+<http://publications.europa.eu/resource/authority/atu-type/COU> a skos:Concept ;
+    at:authority-code "COU" ;
+    at:deprecated "false" ;
+    at:op-code "COU" ;
+    at:start.use "1990-01-01" ;
+    atold:op-code "COU" ;
+    dc:identifier "COU" ;
+    skos:broader <http://publications.europa.eu/resource/authority/atu-type/EUR> ;
+    skos:inScheme atold:atu-type ;
+    skos:prefLabel "страна"@bg,
+        "země"@cs,
+        "land"@da,
+        "Land"@de,
+        "χώρα"@el,
+        "country"@en,
+        "país"@es,
+        "riik"@et,
+        "maa"@fi,
+        "pays"@fr,
+        "tír"@ga,
+        "zemlja"@hr,
+        "ország"@hu,
+        "paese"@it,
+        "šalis"@lt,
+        "valsts"@lv,
+        "pajjiż"@mt,
+        "land"@nl,
+        "kraj"@pl,
+        "país"@pt,
+        "țară"@ro,
+        "krajiny"@sk,
+        "zemlja"@sl,
+        "land"@sv .
+
+atold:atu-type a skos:ConceptScheme ;
+    rdfs:label "Administrative territorial unit type"@en ;
+    at:prefLabel "Administrative territorial unit type"@en ;
+    at:table.id "atu-type" ;
+    at:table.version.number "20191211-0" ;
+    owl:versionInfo "20191211-0" ;
+    skos:prefLabel "Administrative territorial unit type"@en .

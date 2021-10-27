@@ -1,0 +1,224 @@
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://publications.europa.eu/resource/authority/address-type/ADR_OFFICE> a skos:Concept ;
+    at:authority-code "ADR_OFFICE" ;
+    at:deprecated "false" ;
+    at:op-code "ADR_OFFICE" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "OFFICEADDRESS" ;
+            dc:source "WHOISWHO" ] ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "ADR_OFFICE" ;
+    dc:identifier "ADR_OFFICE" ;
+    skos:inScheme atold:address-type ;
+    skos:prefLabel "Büroanschrift"@de,
+        "Office address"@en,
+        "Adresse"@fr,
+        "Biroja adrese"@lv .
+
+<http://publications.europa.eu/resource/authority/address-type/ADR_POSTAL> a skos:Concept ;
+    at:authority-code "ADR_POSTAL" ;
+    at:deprecated "false" ;
+    at:op-code "ADR_POSTAL" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "POSTALADDRESS" ;
+            dc:source "WHOISWHO" ] ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "ADR_POSTAL" ;
+    dc:identifier "ADR_POSTAL" ;
+    skos:inScheme atold:address-type ;
+    skos:prefLabel "Anschrift"@de,
+        "Postal address"@en,
+        "Adresse postale"@fr,
+        "Pasta adrese"@lv .
+
+<http://publications.europa.eu/resource/authority/address-type/EMAIL> a skos:Concept ;
+    at:authority-code "EMAIL" ;
+    at:deprecated "false" ;
+    at:op-code "EMAIL" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "EMAIL" ;
+    dc:identifier "EMAIL" ;
+    skos:inScheme atold:address-type ;
+    skos:prefLabel "E-mail"@en,
+        "Correo electrónico"@es,
+        "Courrier électronique"@fr,
+        "Correio eletrónico"@pt .
+
+<http://publications.europa.eu/resource/authority/address-type/FAX> a skos:Concept ;
+    at:authority-code "FAX" ;
+    at:deprecated "false" ;
+    at:op-code "FAX" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "FAX" ;
+            dc:source "WHOISWHO" ] ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "FAX" ;
+    dc:identifier "FAX" ;
+    skos:inScheme atold:address-type ;
+    skos:prefLabel "Факс"@bg,
+        "Fax"@cs,
+        "Fax"@da,
+        "Fax"@de,
+        "φαξ"@el,
+        "Fax"@en,
+        "Fax"@es,
+        "Faks"@et,
+        "Faksi"@fi,
+        "Fax"@fr,
+        "Fax"@ga,
+        "Faks"@hr,
+        "Fax"@hu,
+        "Fax"@it,
+        "Fakso"@lt,
+        "Fakss"@lv,
+        "Faks"@mt,
+        "Fax"@nl,
+        "Faks"@pl,
+        "Fax"@pt,
+        "Fax"@ro,
+        "Fax"@sk,
+        "Fax"@sl,
+        "Fax"@sv .
+
+<http://publications.europa.eu/resource/authority/address-type/MAIN> a skos:Concept ;
+    at:authority-code "MAIN" ;
+    at:deprecated "false" ;
+    at:op-code "MAIN" ;
+    at:start.use "2018-05-30" ;
+    atold:op-code "MAIN" ;
+    dc:identifier "MAIN" ;
+    skos:inScheme atold:address-type ;
+    skos:prefLabel "Main address"@en .
+
+<http://publications.europa.eu/resource/authority/address-type/OFFICE_NO> a skos:Concept ;
+    at:authority-code "OFFICE_NO" ;
+    at:deprecated "false" ;
+    at:op-code "OFFICE_NO" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "OFFICE" ;
+            dc:source "WHOISWHO" ] ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "OFFICE_NO" ;
+    dc:identifier "OFFICE_NO" ;
+    skos:inScheme atold:address-type ;
+    skos:prefLabel "Büro"@de,
+        "Office"@en,
+        "Bureau"@fr,
+        "Birojs"@lv .
+
+<http://publications.europa.eu/resource/authority/address-type/OP_DATPRO> a skos:Concept ;
+    at:op-code "OP_DATPRO" ;
+    atold:op-code "OP_DATPRO" ;
+    dc:identifier "OP_DATPRO" ;
+    skos:inScheme atold:address-type ;
+    skos:prefLabel "НЕОКОНЧАТЕЛНИ ДАННИ"@bg,
+        "Předběžné údaje"@cs,
+        "Midlertidige data"@da,
+        "Vorläufige Daten"@de,
+        "Προσωρινά δεδομένα"@el,
+        "Provisional data"@en,
+        "Datos provisionales"@es,
+        "Esialgsed andmed"@et,
+        "Alustavat tiedot"@fi,
+        "Données provisoires"@fr,
+        "Sonraí sealadacha"@ga,
+        "Privremeni podaci"@hr,
+        "Ideiglenes adatok"@hu,
+        "Dati provvisori"@it,
+        "Laikinieji duomenys"@lt,
+        "Provizoriski dati"@lv,
+        "Dejta provviżorja"@mt,
+        "Voorlopige gegevens"@nl,
+        "Dane tymczasowe"@pl,
+        "Dados provisórios"@pt,
+        "Date provizorii"@ro,
+        "Predbežné údaje"@sk,
+        "Začasni podatki"@sl,
+        "Tillfälliga uppgifter"@sv .
+
+<http://publications.europa.eu/resource/authority/address-type/TEL> a skos:Concept ;
+    at:authority-code "TEL" ;
+    at:deprecated "false" ;
+    at:op-code "TEL" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "TEL" ;
+            dc:source "WHOISWHO" ] ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "TEL" ;
+    dc:identifier "TEL" ;
+    skos:inScheme atold:address-type ;
+    skos:prefLabel "телефон"@bg,
+        "Telefon"@cs,
+        "Telefon"@da,
+        "Telefon"@de,
+        "τηλεφώνου"@el,
+        "Telephone"@en,
+        "Teléfono"@es,
+        "Telefon"@et,
+        "Puhelin"@fi,
+        "Téléphone"@fr,
+        "Guthán"@ga,
+        "Telefon"@hr,
+        "Telefon"@hu,
+        "Telefono"@it,
+        "Telefono"@lt,
+        "Tālrunis"@lv,
+        "Telefon"@mt,
+        "Telefoon"@nl,
+        "Telefon"@pl,
+        "Telefone"@pt,
+        "Telefon"@ro,
+        "Telefón"@sk,
+        "Telefon"@sl,
+        "Telefon"@sv .
+
+<http://publications.europa.eu/resource/authority/address-type/TEL_EXT> a skos:Concept ;
+    at:authority-code "TEL_EXT" ;
+    at:deprecated "false" ;
+    at:op-code "TEL_EXT" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "POSTE" ;
+            dc:source "WHOISWHO" ] ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "TEL_EXT" ;
+    dc:identifier "TEL_EXT" ;
+    skos:inScheme atold:address-type ;
+    skos:prefLabel "Durchwahl"@de,
+        "Extension"@en,
+        "Numéro de poste"@fr,
+        "Iekšējais numurs"@lv,
+        "Doorverbinding"@nl .
+
+<http://publications.europa.eu/resource/authority/address-type/TEL_SWI> a skos:Concept ;
+    at:authority-code "TEL_SWI" ;
+    at:deprecated "false" ;
+    at:op-code "TEL_SWI" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "CENTRAL" ;
+            dc:source "WHOISWHO" ] ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "TEL_SWI" ;
+    dc:identifier "TEL_SWI" ;
+    skos:inScheme atold:address-type ;
+    skos:prefLabel "Omstillingsbord"@da,
+        "Zentrale"@de,
+        "Switchboard"@en,
+        "Centralita"@es,
+        "Standard"@fr,
+        "Standard"@it,
+        "Centrālais tālrunis"@lv,
+        "Schakelbord"@nl .
+
+atold:address-type a skos:ConceptScheme ;
+    rdfs:label "Address type"@en ;
+    at:prefLabel "Address type"@en ;
+    at:table.id "address-type" ;
+    at:table.version.number "20180620-0" ;
+    owl:versionInfo "20180620-0" ;
+    skos:prefLabel "Address type"@en .

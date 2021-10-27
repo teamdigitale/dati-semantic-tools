@@ -1,6 +1,5 @@
 import json
 import logging
-from functools import lru_cache
 from pathlib import Path
 from typing import Dict
 
@@ -8,20 +7,11 @@ import pandas as pd
 import yaml
 from pandas.core.frame import DataFrame
 from pyld import jsonld
-from rdflib import Graph
 
-from .utils import MIME_JSONLD, MIME_TURTLE, yaml_load
+from .utils import MIME_JSONLD, MIME_TURTLE, is_recent_than, parse_graph, yaml_load
 from .validators import is_framing_context
 
 log = logging.getLogger(__name__)
-
-
-@lru_cache(maxsize=128)
-def parse_graph(vpath_ttl, format):
-    log.warning(f"Parsing file: {vpath_ttl}")
-    g = Graph()
-    g.parse(vpath_ttl, format=MIME_TURTLE)
-    return g
 
 
 def frame_vocabulary(vpath_ttl: Path, context: Dict) -> Dict:
@@ -36,8 +26,12 @@ def frame_vocabulary(vpath_ttl: Path, context: Dict) -> Dict:
     # g = Graph()
     # vocab = g.parse(vpath_ttl.as_posix(), format=MIME_TURTLE)
     g = parse_graph(vpath_ttl.as_posix(), format=MIME_TURTLE)
-    vocab = yaml.safe_load(g.serialize(format=MIME_JSONLD))
+    vocab_jsonld = g.serialize(format=MIME_JSONLD)
+    log.warning(f"Serialized to json: {vpath_ttl}")
+    vocab = json.loads(vocab_jsonld)
+    log.warning(f"Loaded from json: {vpath_ttl}")
     data_projection = jsonld.frame(vocab, frame=context)
+    log.warning(f"Projected: {vpath_ttl}.")
 
     if "@graph" in data_projection:
         p = data_projection["@graph"]
@@ -110,7 +104,8 @@ def frame_vocabulary_to_csv(
 
     # Save json-ld version.
     dpath = (dest_dir / vpath).with_suffix(context_prefix + ".yaml")
-    dpath.write_text(yaml.dump(framed_data))
+    if is_recent_than(vpath, dpath):
+        dpath.write_text(yaml.safe_dump(framed_data))
 
     # Generate CSV.
     df = pd.DataFrame(framed_data["@graph"])
@@ -128,8 +123,8 @@ def frame_vocabulary_to_csv(
         # Dump actual data.
         df.to_csv(fh)
 
+    datastore = dest_dir / "datastore.db"
     if dump_sqlite:
-        datastore = dest_dir / "datastore.db"
         df_to_sqlite(
             df,
             datastore,
@@ -155,8 +150,9 @@ def df_to_sqlite(
     from sqlalchemy import create_engine
 
     table_name = f"{name}#{version}"
-
+    dpath.parent.mkdir(exist_ok=True, parents=True)
     datastore_path = "sqlite:///" + dpath.absolute().as_posix()
+    log.warning(f"Dumping csv to {datastore_path}")
     engine = create_engine(datastore_path, echo=False)
     df.to_sql(f"{table_name}", con=engine, if_exists="replace")
     DataFrame(

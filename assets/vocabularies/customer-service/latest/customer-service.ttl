@@ -1,0 +1,134 @@
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://publications.europa.eu/resource/authority/customer-service/OP_DATPRO> a skos:Concept ;
+    at:op-code "OP_DATPRO" ;
+    atold:op-code "OP_DATPRO" ;
+    dc:identifier "OP_DATPRO" ;
+    skos:inScheme atold:customer-service ;
+    skos:prefLabel "НЕОКОНЧАТЕЛНИ ДАННИ"@bg,
+        "Předběžné údaje"@cs,
+        "Midlertidige data"@da,
+        "Vorläufige Daten"@de,
+        "Προσωρινά δεδομένα"@el,
+        "Provisional data"@en,
+        "Datos provisionales"@es,
+        "Esialgsed andmed"@et,
+        "Alustavat tiedot"@fi,
+        "Données provisoires"@fr,
+        "Sonraí sealadacha"@ga,
+        "Privremeni podaci"@hr,
+        "Ideiglenes adatok"@hu,
+        "Dati provvisori"@it,
+        "Laikinieji duomenys"@lt,
+        "Provizoriski dati"@lv,
+        "Dejta provviżorja"@mt,
+        "Voorlopige gegevens"@nl,
+        "Dane tymczasowe"@pl,
+        "Dados provisórios"@pt,
+        "Date provizorii"@ro,
+        "Predbežné údaje"@sk,
+        "Začasni podatki"@sl,
+        "Tillfälliga uppgifter"@sv .
+
+<http://publications.europa.eu/resource/authority/customer-service/assistance> a skos:Concept ;
+    at:authority-code "assistance" ;
+    at:deprecated "false" ;
+    at:op-code "assistance" ;
+    at:start.use "2021-06-16" ;
+    atold:op-code "assistance" ;
+    dc:identifier "assistance" ;
+    skos:inScheme atold:customer-service ;
+    skos:prefLabel "Assistance for persons with reduced mobility"@en .
+
+<http://publications.europa.eu/resource/authority/customer-service/cancel> a skos:Concept ;
+    at:authority-code "cancel" ;
+    at:deprecated "false" ;
+    at:op-code "cancel" ;
+    at:start.use "2021-06-16" ;
+    atold:op-code "cancel" ;
+    dc:identifier "cancel" ;
+    skos:inScheme atold:customer-service ;
+    skos:prefLabel "Cancellations"@en .
+
+<http://publications.europa.eu/resource/authority/customer-service/clean> a skos:Concept ;
+    at:authority-code "clean" ;
+    at:deprecated "false" ;
+    at:op-code "clean" ;
+    at:start.use "2021-06-16" ;
+    atold:op-code "clean" ;
+    dc:identifier "clean" ;
+    skos:inScheme atold:customer-service ;
+    skos:prefLabel "Cleanliness of rolling stock and station facilities"@en .
+
+<http://publications.europa.eu/resource/authority/customer-service/complaint> a skos:Concept ;
+    at:authority-code "complaint" ;
+    at:deprecated "false" ;
+    at:op-code "complaint" ;
+    at:start.use "2021-06-16" ;
+    atold:op-code "complaint" ;
+    dc:identifier "complaint" ;
+    skos:inScheme atold:customer-service ;
+    skos:prefLabel "Complaint handling"@en .
+
+<http://publications.europa.eu/resource/authority/customer-service/info> a skos:Concept ;
+    at:authority-code "info" ;
+    at:deprecated "false" ;
+    at:op-code "info" ;
+    at:start.use "2021-06-16" ;
+    atold:op-code "info" ;
+    dc:identifier "info" ;
+    skos:inScheme atold:customer-service ;
+    skos:prefLabel "Information"@en .
+
+<http://publications.europa.eu/resource/authority/customer-service/other> a skos:Concept ;
+    at:authority-code "other" ;
+    at:deprecated "false" ;
+    at:op-code "other" ;
+    at:start.use "2021-06-16" ;
+    atold:op-code "other" ;
+    dc:identifier "other" ;
+    skos:inScheme atold:customer-service ;
+    skos:prefLabel "Other"@en .
+
+<http://publications.europa.eu/resource/authority/customer-service/reliability> a skos:Concept ;
+    at:authority-code "reliability" ;
+    at:deprecated "false" ;
+    at:op-code "reliability" ;
+    at:start.use "2021-06-16" ;
+    atold:op-code "reliability" ;
+    dc:identifier "reliability" ;
+    skos:inScheme atold:customer-service ;
+    skos:prefLabel "Punctuality and reliability"@en .
+
+<http://publications.europa.eu/resource/authority/customer-service/sat-surv> a skos:Concept ;
+    at:authority-code "sat-surv" ;
+    at:deprecated "false" ;
+    at:op-code "sat-surv" ;
+    at:start.use "2021-06-16" ;
+    atold:op-code "sat-surv" ;
+    dc:identifier "sat-surv" ;
+    skos:inScheme atold:customer-service ;
+    skos:prefLabel "Customer satisfaction survey"@en .
+
+<http://publications.europa.eu/resource/authority/customer-service/ticket> a skos:Concept ;
+    at:authority-code "ticket" ;
+    at:deprecated "false" ;
+    at:op-code "ticket" ;
+    at:start.use "2021-06-16" ;
+    atold:op-code "ticket" ;
+    dc:identifier "ticket" ;
+    skos:inScheme atold:customer-service ;
+    skos:prefLabel "Ticketing"@en .
+
+atold:customer-service a skos:ConceptScheme ;
+    rdfs:label "Customer service"@en ;
+    at:prefLabel "Customer service"@en ;
+    at:table.id "customer-service" ;
+    at:table.version.number "20210616-0" ;
+    owl:versionInfo "20210616-0" ;
+    skos:prefLabel "Customer service"@en .

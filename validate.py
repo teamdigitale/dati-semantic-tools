@@ -8,7 +8,7 @@ from pathlib import Path
 from shutil import copy
 
 from playground import validators
-from playground.tools import build_asset, yaml_load
+from playground.tools import build_semantic_asset, build_vocabularies, yaml_load
 
 logging.basicConfig(level=logging.DEBUG)
 log = logging.getLogger(__name__)
@@ -22,14 +22,14 @@ valid_suffixes = {
     "context-*.ld.yaml": validators.is_framing_context,
 }
 
-skip_suffixes = (".md", ".csv", ".png", ".xml", ".xsd", ".html")
+skip_suffixes = (".md", ".csv", ".png", ".xml", ".xsd", ".html", ".gitignore", ".git")
 
 
 def validate_file(f: str):
     f = Path(f).absolute()
-
-    if f.stat().st_size > 1 << 20:
-        raise ValueError(f"File too big: {f.size}")
+    f_size = f.stat().st_size
+    if f_size > 4 << 20:
+        raise ValueError(f"File too big: {f_size}")
 
     for file_pattern, is_valid in valid_suffixes.items():
         if Path(f.name).match(file_pattern):
@@ -70,22 +70,50 @@ def list_files(basepath):
             yield Path(os.path.join(root, f))
 
 
-if __name__ == "__main__":
+import click
+
+
+@click.command()
+@click.option("--validate", default=False)
+@click.option("--build-semantic", default=False)
+@click.option("--build-json", default=False)
+@click.option("--build-csv", default=False)
+@click.option("--pattern", default="")
+@click.option("--exclude", default=["NoneString"], type=str, multiple=True)
+def main(validate, build_semantic, build_json, build_csv, pattern, exclude):
     basepath = Path("assets")
     buildpath = Path("_build")
-
+    buildpath.mkdir(exist_ok=True, parents=True)
     from multiprocessing import Pool
 
-    file_list = list(list_files(basepath))
+    file_list = [
+        x
+        for x in list(list_files(basepath))
+        if (pattern in x.name)
+        and all(exclude_item not in x.name for exclude_item in exclude)
+    ]
+
+    log.warning(f"Examining {file_list} with {exclude}")
     workers = Pool(processes=4)
 
-    workers.map(validate_file, file_list)
-    workers.starmap(
-        build_asset, ((f, buildpath) for f in file_list if f.suffix == ".ttl")
-    )
-    workers.starmap(
-        build_yaml_asset, ((f, buildpath) for f in file_list if f.suffix == ".yaml")
-    )
+    if validate:
+        workers.map(validate_file, file_list)
+
+    if build_semantic:
+        workers.starmap(
+            build_semantic_asset,
+            ((f, buildpath) for f in file_list if f.suffix == ".ttl"),
+        )
+    if build_csv:
+        workers.starmap(
+            build_vocabularies,
+            ((f, buildpath) for f in file_list if f.suffix == ".ttl"),
+        )
+
+    if build_json:
+        workers.starmap(
+            build_yaml_asset, ((f, buildpath) for f in file_list if f.suffix == ".yaml")
+        )
 
     workers.close()
 
@@ -109,7 +137,11 @@ if __name__ == "__main__":
     for root, dirs, _ in os.walk(buildpath):
         for d in dirs:
             index_html = Path(os.path.join(root, d, "index.html"))
-            parent_path = index_html.relative_to(buildpath).parent
+            index_html.relative_to(buildpath).parent
             log.warning(f"Creating index file: {index_html}")
             index_html.write_text(template)
     Path(buildpath / "index.html").write_text(template)
+
+
+if __name__ == "__main__":
+    main()

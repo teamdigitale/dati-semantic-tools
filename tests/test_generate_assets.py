@@ -1,13 +1,21 @@
-import json
+import logging
+import os
 from pathlib import Path
 
+import pytest
 import yaml
 from rdflib import Graph
 
-from playground.tools import generate_asset, jsonschema_to_rdf
-from playground.utils import MIME_JSONLD, yaml_load, yaml_to_json
+from playground.tools import build_semantic_asset, build_vocabularies, jsonschema_to_rdf
+from playground.utils import MIME_JSONLD, yaml_to_json
+from validate import build_yaml_asset
 
+ASSETPATH = Path(__file__).absolute().parent.parent / "assets"
 BASEPATH = Path(__file__).absolute().parent / "data"
+testout = BASEPATH / "out"
+
+
+log = logging.getLogger(__name__)
 
 
 def test_generate_assets():
@@ -22,14 +30,31 @@ def test_generate_assets():
     g.serialize(format="ntriples", destination="data.nt.out")
 
 
-def test_generate_ontologies():
-    basepath = BASEPATH.parent
-    generate_asset(basepath / "ontologies")
+def walk_path(base: Path, pattern: str):
+    for root, dir, files in os.walk(base):
+        for f in files:
+            fpath = Path(root) / f
+            if fpath.match(pattern):
+                yield fpath
 
 
-def test_generate_vocabularies():
-    basepath = BASEPATH.parent
-    generate_asset(basepath / "vocabularies")
+@pytest.mark.parametrize("fpath", walk_path(ASSETPATH / "ontologies", "*.ttl"))
+def test_generate_ontologies(fpath):
+    log.warning(fpath)
+    build_semantic_asset(fpath, dest_dir=testout)
+
+
+@pytest.mark.parametrize(
+    "fpath", walk_path(ASSETPATH / "vocabularies", "latest/count*.ttl")
+)
+def test_generate_vocabularies(fpath):
+    build_vocabularies(fpath, dest_dir=testout)
+    assert fpath.parent.glob("*.csv")
+
+
+@pytest.mark.parametrize("fpath", walk_path(ASSETPATH / "schemas", "*.yaml"))
+def test_generate_json(fpath):
+    build_yaml_asset(fpath, dest_dir=testout)
 
 
 def test_context_to_rdf():
@@ -48,16 +73,6 @@ def test_context_to_rdf():
         ]:
             dpath = f.with_suffix(ext).as_posix()
             g.serialize(format=fmt, destination=dpath)
-
-
-def test_generate_json():
-    schema_path = BASEPATH.parent / "schemas"
-
-    for f in schema_path.glob("*/*/*.yaml"):
-        dsuffix = ".jsonld" if f.as_posix().endswith(".ld.yaml") else ".json"
-        dpath = f.with_suffix(dsuffix)
-        data = yaml_load(f)
-        dpath.write_text(json.dumps(data, indent=2))
 
 
 def test_create_schemas_json():

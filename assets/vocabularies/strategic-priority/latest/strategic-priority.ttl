@@ -1,0 +1,305 @@
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://publications.europa.eu/resource/authority/strategic-priority/OP_DATPRO> a skos:Concept ;
+    at:authority-code "OP_DATPRO" ;
+    at:deprecated "false" ;
+    at:op-code "OP_DATPRO" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "OP_DATPRO" ;
+    dc:identifier "OP_DATPRO" ;
+    skos:inScheme atold:strategic-priority ;
+    skos:prefLabel "НЕОКОНЧАТЕЛНИ ДАННИ"@bg,
+        "Předběžné údaje"@cs,
+        "Midlertidige data"@da,
+        "Vorläufige Daten"@de,
+        "Προσωρινά δεδομένα"@el,
+        "Provisional data"@en,
+        "Datos provisionales"@es,
+        "Esialgsed andmed"@et,
+        "Alustavat tiedot"@fi,
+        "Données provisoires"@fr,
+        "Sonraí sealadacha"@ga,
+        "Privremeni podaci"@hr,
+        "Ideiglenes adatok"@hu,
+        "Dati provvisori"@it,
+        "Laikinieji duomenys"@lt,
+        "Provizoriski dati"@lv,
+        "Dejta provviżorja"@mt,
+        "Voorlopige gegevens"@nl,
+        "Dane tymczasowe"@pl,
+        "Dados provisórios"@pt,
+        "Date provizorii"@ro,
+        "Predbežné údaje"@sk,
+        "Začasni podatki"@sl,
+        "Tillfälliga uppgifter"@sv ;
+    skos:topConceptOf atold:strategic-priority .
+
+<http://publications.europa.eu/resource/authority/strategic-priority/05c79cb9ee> a skos:Concept ;
+    at:authority-code "05c79cb9ee" ;
+    at:deprecated "false" ;
+    at:end.use "2024-11-30" ;
+    at:op-code "05c79cb9ee" ;
+    at:start.use "2019-12-01" ;
+    atold:op-code "05c79cb9ee" ;
+    dc:identifier "05c79cb9ee" ;
+    skos:broader <http://publications.europa.eu/resource/authority/strategic-priority/c_d20941d9> ;
+    skos:definition "A new push for European democracy is one of the Commission priorities 2019–2024 encompassing nurturing, protecting and strengthening our democracy."@en ;
+    skos:inScheme atold:strategic-priority ;
+    skos:prefLabel "Нов тласък за европейската демокрация"@bg,
+        "Nový impuls pro evropskou demokracii"@cs,
+        "Nyt skub i det europæiske demokrati"@da,
+        "Neuer Schwung für die Demokratie in Europa"@de,
+        "Μια νέα ώθηση για την ευρωπαϊκή δημοκρατία"@el,
+        "A new push for European democracy"@en,
+        "Un nuevo impulso a la democracia europea"@es,
+        "Uue hoo andmine Euroopa demokraatiale"@et,
+        "Uutta vauhtia eurooppalaiselle demokratialle"@fi,
+        "Un nouvel élan pour la démocratie européenne"@fr,
+        "Ugach nua do dhaonlathas na hEorpa"@ga,
+        "Novi poticaj europskoj demokraciji"@hr,
+        "Új lendület az európai demokrácia számára"@hu,
+        "Un nuovo slancio per la democrazia europea"@it,
+        "Naujas Europos demokratijos postūmis"@lt,
+        "Jauns impulss Eiropas demokrātijai"@lv,
+        "Spinta ġdida għad-demokrazija Ewropea"@mt,
+        "Een nieuwe impuls voor Europese democratie"@nl,
+        "Nowy impuls dla demokracji europejskiej"@pl,
+        "Um novo impulso para a democracia europeia"@pt,
+        "Un nou elan pentru democrația europeană"@ro,
+        "Nový impulz pre európsku demokraciu"@sk,
+        "Nova spodbuda za evropsko demokracijo"@sl,
+        "En ny satsning på demokrati i Europa"@sv .
+
+<http://publications.europa.eu/resource/authority/strategic-priority/33a612644a> a skos:Concept ;
+    at:authority-code "33a612644a" ;
+    at:deprecated "false" ;
+    at:end.use "2024-11-30" ;
+    at:op-code "33a612644a" ;
+    at:start.use "2019-12-01" ;
+    atold:op-code "33a612644a" ;
+    dc:identifier "33a612644a" ;
+    skos:broader <http://publications.europa.eu/resource/authority/strategic-priority/c_d20941d9> ;
+    skos:definition "An economy that works for people is one of the Commission priorities 2019–2024 with a focus on working for social fairness and prosperity."@en ;
+    skos:inScheme atold:strategic-priority ;
+    skos:prefLabel "Икономика в интерес на хората"@bg,
+        "Hospodářství, které pracuje ve prospěch lidí"@cs,
+        "En økonomi, der tjener alle"@da,
+        "Eine Wirtschaft im Dienste der Menschen"@de,
+        "Μια οικονομία στην υπηρεσία των ανθρώπων"@el,
+        "An economy that works for people"@en,
+        "Una economía que funcione en pro de las personas"@es,
+        "Inimeste teenistuses olev majandus"@et,
+        "Ihmisten hyväksi toimiva talous"@fi,
+        "Une économie au service des personnes"@fr,
+        "Geilleagar a Fhóireann do Dhaoine"@ga,
+        "Gospodarstvo u interesu građana"@hr,
+        "Emberközpontú gazdaság"@hu,
+        "Un'economia al servizio delle persone"@it,
+        "Žmonėms tarnaujanti ekonomika"@lt,
+        "Ekonomika cilvēku labā"@lv,
+        "Ekonomija li Taħdem għan-Nies"@mt,
+        "Een economie die werkt voor de mensen"@nl,
+        "Gospodarka, która służy ludziom"@pl,
+        "Uma economia ao serviço dos cidadãos"@pt,
+        "O economie în serviciul cetățenilor"@ro,
+        "Hospodárstvo, ktoré pracuje pre ľudí"@sk,
+        "Gospodarstvo za ljudi"@sl,
+        "En ekonomi för människor"@sv .
+
+<http://publications.europa.eu/resource/authority/strategic-priority/3c3c547b96> a skos:Concept ;
+    at:authority-code "3c3c547b96" ;
+    at:deprecated "false" ;
+    at:end.use "2024-11-30" ;
+    at:op-code "3c3c547b96" ;
+    at:start.use "2019-12-01" ;
+    atold:op-code "3c3c547b96" ;
+    dc:identifier "3c3c547b96" ;
+    skos:broader <http://publications.europa.eu/resource/authority/strategic-priority/c_d20941d9> ;
+    skos:definition "A European Green Deal is one of the Commission priorities 2019–2024 striving for Europe to be the first climate-neutral continent."@en ;
+    skos:inScheme atold:strategic-priority ;
+    skos:prefLabel "Европейски зелен пакт"@bg,
+        "Zelená dohoda pro Evropu"@cs,
+        "En europæisk grøn pagt"@da,
+        "Ein europäischer Green Deal"@de,
+        "Ευρωπαϊκή Πράσινη συμφωνία"@el,
+        "A European Green Deal"@en,
+        "Pacto Verde Europeo"@es,
+        "Euroopa roheline kokkulepe"@et,
+        "Euroopan vihreän kehityksen ohjelma"@fi,
+        "Un Green Deal européen"@fr,
+        "Comhaontú Glas don Eoraip"@ga,
+        "Europski zeleni plan"@hr,
+        "Európai zöld megállapodás"@hu,
+        "Green Deal europeo"@it,
+        "Europos žaliasis kursas"@lt,
+        "Zaļais kurss Eiropai"@lv,
+        "Il-Patt Ekoloġiku Ewropew"@mt,
+        "Europese Green Deal"@nl,
+        "Europejski Zielony Ład"@pl,
+        "Pacto Ecológico Europeu"@pt,
+        "Pactul ecologic european"@ro,
+        "Európsky ekologický dohovor"@sk,
+        "Evropski zeleni dogovor"@sl,
+        "En europeisk grön giv"@sv .
+
+<http://publications.europa.eu/resource/authority/strategic-priority/3da7cd2056> a skos:Concept ;
+    at:authority-code "3da7cd2056" ;
+    at:deprecated "false" ;
+    at:end.use "2024-11-30" ;
+    at:op-code "3da7cd2056" ;
+    at:start.use "2019-12-01" ;
+    atold:op-code "3da7cd2056" ;
+    dc:identifier "3da7cd2056" ;
+    skos:broader <http://publications.europa.eu/resource/authority/strategic-priority/c_d20941d9> ;
+    skos:definition "A stronger Europe in the world is one of the Commission priorities 2019–2024 positioning Europe to strive for more by strengthening our unique brand of responsible global leadership."@en ;
+    skos:inScheme atold:strategic-priority ;
+    skos:prefLabel "По-силна Европа на световната сцена"@bg,
+        "Silnější Evropa ve světě"@cs,
+        "Et stærkere Europa i verden"@da,
+        "Ein stärkeres Europa in der Welt"@de,
+        "Μια ισχυρότερη Ευρώπη στον κόσμο"@el,
+        "A stronger Europe in the world"@en,
+        "Una Europa más fuerte en el mundo"@es,
+        "Euroopa positsiooni tugevdamine maailmas"@et,
+        "Vahvempi EU maailmannäyttämöllä"@fi,
+        "Une Europe plus forte sur la scène internationale"@fr,
+        "Eoraip níos láidre sa Domhan"@ga,
+        "Snažnija Europa u svijetu"@hr,
+        "Európa globális szerepének erősítése"@hu,
+        "Un'Europa più forte nel mondo"@it,
+        "Pasaulyje stipresnė Europa"@lt,
+        "Spēcīgāka Eiropa pasaulē"@lv,
+        "Ewropa Iktar b’Saħħitha fid-Dinja"@mt,
+        "Een sterker Europa in de wereld"@nl,
+        "Silniejsza pozycja Europy na świecie"@pl,
+        "Uma Europa mais forte na cena mundial"@pt,
+        "O Europă mai puternică pe plan internațional"@ro,
+        "Silnejšia Európa vo svete"@sk,
+        "Močnejša Evropa v svetu"@sl,
+        "Ett starkare Europa i världen"@sv .
+
+<http://publications.europa.eu/resource/authority/strategic-priority/6002f017ad> a skos:Concept ;
+    at:authority-code "6002f017ad" ;
+    at:deprecated "false" ;
+    at:end.use "2024-11-30" ;
+    at:op-code "6002f017ad" ;
+    at:start.use "2019-12-01" ;
+    atold:op-code "6002f017ad" ;
+    dc:identifier "6002f017ad" ;
+    skos:broader <http://publications.europa.eu/resource/authority/strategic-priority/c_d20941d9> ;
+    skos:definition "A Europe fit for the digital age is one of the Commission priorities 2019–2024 aiming at empowering people with a new generation of technologies."@en ;
+    skos:inScheme atold:strategic-priority ;
+    skos:prefLabel "Европа, пригодна за цифровата ера"@bg,
+        "Evropa připravená na digitální věk"@cs,
+        "Et Europa klar til den digitale tidsalder"@da,
+        "Ein Europa für das digitale Zeitalter"@de,
+        "Ευρώπη έτοιμη για την ψηφιακή εποχή"@el,
+        "A Europe fit for the digital age"@en,
+        "Una Europa adaptada a la era digital"@es,
+        "Digiajastule vastav Euroopa"@et,
+        "Euroopan digitaalinen valmius"@fi,
+        "Une Europe adaptée à l’ère du numérique"@fr,
+        "Eoraip atá oiriúnach don Aois Dhigiteach"@ga,
+        "Europa spremna za digitalno doba"@hr,
+        "A digitális korra felkészült Európa"@hu,
+        "Un'Europa pronta per l'era digitale"@it,
+        "Prie skaitmeninio amžiaus prisitaikiusi Europa"@lt,
+        "Eiropa, kas sagatavota digitālajam laikmetam"@lv,
+        "Ewropa Lesta għall-Era Diġitali"@mt,
+        "Een Europa dat klaar is voor het digitale tijdperk"@nl,
+        "Europa na miarę ery cyfrowej"@pl,
+        "Preparar a Europa para a era digital"@pt,
+        "O Europă pregătită pentru era digitală"@ro,
+        "Európa pripravená na digitálny vek"@sk,
+        "Evropa, pripravljena na digitalno dobo"@sl,
+        "Ett Europa rustat för den digitala tidsåldern"@sv .
+
+<http://publications.europa.eu/resource/authority/strategic-priority/ad7bdb3bbd> a skos:Concept ;
+    at:authority-code "ad7bdb3bbd" ;
+    at:deprecated "false" ;
+    at:end.use "2024-11-30" ;
+    at:op-code "ad7bdb3bbd" ;
+    at:start.use "2019-12-01" ;
+    atold:op-code "ad7bdb3bbd" ;
+    dc:identifier "ad7bdb3bbd" ;
+    skos:broader <http://publications.europa.eu/resource/authority/strategic-priority/c_d20941d9> ;
+    skos:definition "Promoting our European way of life is one of the Commission priorities 2019–2024 pointing toward building a Union of equality in which we all have the same access to opportunities."@en ;
+    skos:inScheme atold:strategic-priority ;
+    skos:prefLabel "Утвърждаване на европейския начин на живот"@bg,
+        "Podpora evropského způsobu života"@cs,
+        "Fremme af vores europæiske levevis"@da,
+        "Förderung unserer europäischen Lebensweise"@de,
+        "Προώθηση του ευρωπαϊκού τρόπου ζωής μας"@el,
+        "Promoting our European way of life"@en,
+        "Promoción de nuestro Modo de Vida Europeo"@es,
+        "Euroopaliku eluviisi edendamine"@et,
+        "Eurooppalaisen elämäntavan edistäminen"@fi,
+        "Promouvoir notre mode de vie européen"@fr,
+        "Ár nDóigh Bheatha Eorpach a chur chun cinn"@ga,
+        "Promicanje našeg europskog načina života"@hr,
+        "Az európai életmód előmozdítása"@hu,
+        "Promozione del nostro stile di vita europeo"@it,
+        "Europinės gyvensenos propagavimas"@lt,
+        "Mūsu eiropeiskā dzīvesziņa"@lv,
+        "Promozzjoni tal-Istil ta’ Ħajja Ewropew"@mt,
+        "Bevordering van onze Europese levenswijze"@nl,
+        "Promowanie naszego europejskiego stylu życia"@pl,
+        "Promoção do nosso modo de vida europeu"@pt,
+        "Promovarea modului nostru de viață european"@ro,
+        "Podpora európskeho spôsobu života"@sk,
+        "Spodbujanje našega evropskega načina življenja"@sl,
+        "Främjande av vår europeiska livsstil"@sv .
+
+<http://publications.europa.eu/resource/authority/strategic-priority/c_d20941d9> a skos:Concept ;
+    at:authority-code "c_d20941d9" ;
+    at:deprecated "false" ;
+    at:end.use "2024-11-30" ;
+    at:op-code "c_d20941d9" ;
+    at:start.use "2019-12-01" ;
+    atold:op-code "c_d20941d9" ;
+    dc:identifier "c_d20941d9" ;
+    skos:inScheme atold:strategic-priority ;
+    skos:narrower <http://publications.europa.eu/resource/authority/strategic-priority/05c79cb9ee>,
+        <http://publications.europa.eu/resource/authority/strategic-priority/33a612644a>,
+        <http://publications.europa.eu/resource/authority/strategic-priority/3c3c547b96>,
+        <http://publications.europa.eu/resource/authority/strategic-priority/3da7cd2056>,
+        <http://publications.europa.eu/resource/authority/strategic-priority/6002f017ad>,
+        <http://publications.europa.eu/resource/authority/strategic-priority/ad7bdb3bbd> ;
+    skos:prefLabel "Приоритети на Комисията за 2019 — 2024 г."@bg,
+        "Priority Komise na období 2019-2024"@cs,
+        "Kommissionens topprioriteter for 2019-2024"@da,
+        "Prioritäten der Kommission für 2019-2024"@de,
+        "Οι προτεραιότητες της Επιτροπής για το 2019-2024"@el,
+        "Commission priorities for 2019–2024"@en,
+        "Las prioridades de la Comisión para 2019-2024"@es,
+        "Komisjoni prioriteedid aastateks 2019–2024"@et,
+        "Komission painopisteet kaudella 2019–2024"@fi,
+        "Les priorités de la Commission pour 2019-2024"@fr,
+        "Thosaíocht an Choimisiúin do 2019-2024"@ga,
+        "Prioriteti Komisije za razdoblje 2019. – 2024."@hr,
+        "A Bizottság prioritásai 2019–2024"@hu,
+        "Le priorità della Commissione per il 2019-2024"@it,
+        "Komisijos 2019–2024 m. prioritetai"@lt,
+        "Komisijas prioritātes 2019.–2024. g."@lv,
+        "Il-prijoritajiet tal-Kummissjoni 2019-2024"@mt,
+        "Prioriteiten van de Commissie voor 2019-2024"@nl,
+        "Priorytety Komisji na lata 2019-2024"@pl,
+        "As prioridades da Comissão para 2019-2024"@pt,
+        "Prioritățile ale Comisiei pentru 2019-2024"@ro,
+        "Priority Komisie na roky 2019 – 2024"@sk,
+        "Prednostne naloge Komisije v obdobju 2019–2024"@sl,
+        "Kommissionens prioriteringar för 2019–2024"@sv ;
+    skos:topConceptOf atold:strategic-priority .
+
+atold:strategic-priority a skos:ConceptScheme ;
+    rdfs:label "Strategic priority"@en ;
+    at:prefLabel "Strategic priority"@en ;
+    at:table.id "strategic-priority" ;
+    at:table.version.number "20210929-0" ;
+    owl:versionInfo "20210929-0" ;
+    skos:prefLabel "Strategic priority"@en .

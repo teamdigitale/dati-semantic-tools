@@ -1,0 +1,223 @@
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://publications.europa.eu/resource/authority/concept-status/CANDIDATE> a skos:Concept ;
+    at:authority-code "CANDIDATE" ;
+    at:deprecated "false" ;
+    at:op-code "CANDIDATE" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "CANDIDATE" ;
+    dc:identifier "CANDIDATE" ;
+    skos:inScheme atold:concept-status ;
+    skos:prefLabel "candidate"@en .
+
+<http://publications.europa.eu/resource/authority/concept-status/CANDIDATE_DEPRECATED> a skos:Concept ;
+    at:authority-code "CANDIDATE_DEPRECATED" ;
+    at:deprecated "false" ;
+    at:op-code "CANDIDATE_DEPRECATED" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "CANDIDATE_DEPRECATED" ;
+    dc:identifier "CANDIDATE_DEPRECATED" ;
+    skos:inScheme atold:concept-status ;
+    skos:prefLabel "candidate.deprecated"@en .
+
+<http://publications.europa.eu/resource/authority/concept-status/CURRENT> a skos:Concept ;
+    at:authority-code "CURRENT" ;
+    at:deprecated "false" ;
+    at:op-code "CURRENT" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "CURRENT" ;
+    dc:identifier "CURRENT" ;
+    skos:inScheme atold:concept-status ;
+    skos:prefLabel "актуално"@bg,
+        "stávájící"@cs,
+        "gældende"@da,
+        "aktuell"@de,
+        "ισχύει"@el,
+        "current"@en,
+        "actual"@es,
+        "praegune"@et,
+        "nykyinen"@fi,
+        "en vigueur"@fr,
+        "i bhfeidhm"@ga,
+        "trenutačni"@hr,
+        "aktuális"@hu,
+        "attuale"@it,
+        "dabartinis"@lt,
+        "pašreizējs"@lv,
+        "attwali"@mt,
+        "actueel"@nl,
+        "obecny"@pl,
+        "comum"@pt,
+        "actual"@ro,
+        "súčasný"@sk,
+        "sedanje"@sl,
+        "gällande"@sv .
+
+<http://publications.europa.eu/resource/authority/concept-status/DEPRECATED> a skos:Concept ;
+    at:authority-code "DEPRECATED" ;
+    at:deprecated "false" ;
+    at:op-code "DEPRECATED" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "DEPRECATED" ;
+    dc:identifier "DEPRECATED" ;
+    skos:inScheme atold:concept-status ;
+    skos:prefLabel "неактуално"@bg,
+        "zastaralé"@cs,
+        "frarådet"@da,
+        "veraltet"@de,
+        "δεν ισχύει πλέον"@el,
+        "deprecated"@en,
+        "desaconsejado"@es,
+        "vananenud"@et,
+        "hylätty"@fi,
+        "obsolète"@fr,
+        "dímholta"@ga,
+        "smijenjeni"@hr,
+        "elavult"@hu,
+        "sconsigliato"@it,
+        "nerekomenduojamas"@lt,
+        "novecojis"@lv,
+        "deprekat"@mt,
+        "verouderd"@nl,
+        "nieaktualny"@pl,
+        "utilização desaconselhada"@pt,
+        "nerecomandat"@ro,
+        "zastaraný"@sk,
+        "zastarano"@sl,
+        "föråldrad"@sv .
+
+<http://publications.europa.eu/resource/authority/concept-status/DRAFT> a skos:Concept ;
+    at:authority-code "DRAFT" ;
+    at:deprecated "false" ;
+    at:op-code "DRAFT" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "DRAFT" ;
+    dc:identifier "DRAFT" ;
+    skos:inScheme atold:concept-status ;
+    skos:prefLabel "draft"@en .
+
+<http://publications.europa.eu/resource/authority/concept-status/DRAFT_DEPRECATED> a skos:Concept ;
+    at:authority-code "DRAFT_DEPRECATED" ;
+    at:deprecated "false" ;
+    at:op-code "DRAFT_DEPRECATED" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "DRAFT_DEPRECATED" ;
+    dc:identifier "DRAFT_DEPRECATED" ;
+    skos:inScheme atold:concept-status ;
+    skos:prefLabel "draft.deprecated"@en .
+
+<http://publications.europa.eu/resource/authority/concept-status/OP_DATPRO> a skos:Concept ;
+    at:op-code "OP_DATPRO" ;
+    atold:op-code "OP_DATPRO" ;
+    dc:identifier "OP_DATPRO" ;
+    skos:inScheme atold:concept-status ;
+    skos:prefLabel "НЕОКОНЧАТЕЛНИ ДАННИ"@bg,
+        "Předběžné údaje"@cs,
+        "Midlertidige data"@da,
+        "Vorläufige Daten"@de,
+        "Προσωρινά δεδομένα"@el,
+        "Provisional data"@en,
+        "Datos provisionales"@es,
+        "Esialgsed andmed"@et,
+        "Alustavat tiedot"@fi,
+        "Données provisoires"@fr,
+        "Sonraí sealadacha"@ga,
+        "Privremeni podaci"@hr,
+        "Ideiglenes adatok"@hu,
+        "Dati provvisori"@it,
+        "Laikinieji duomenys"@lt,
+        "Provizoriski dati"@lv,
+        "Dejta provviżorja"@mt,
+        "Voorlopige gegevens"@nl,
+        "Dane tymczasowe"@pl,
+        "Dados provisórios"@pt,
+        "Date provizorii"@ro,
+        "Predbežné údaje"@sk,
+        "Začasni podatki"@sl,
+        "Tillfälliga uppgifter"@sv .
+
+<http://publications.europa.eu/resource/authority/concept-status/RETIRED> a skos:Concept ;
+    at:authority-code "RETIRED" ;
+    at:deprecated "false" ;
+    at:op-code "RETIRED" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "RETIRED" ;
+    dc:identifier "RETIRED" ;
+    skos:inScheme atold:concept-status ;
+    skos:prefLabel "отменено"@bg,
+        "již nepoužívané"@cs,
+        "forældet"@da,
+        "nicht mehr in Gebrauch"@de,
+        "έχει καταργηθεί"@el,
+        "retired"@en,
+        "retirado"@es,
+        "kehtetu"@et,
+        "poistettu käytöstä"@fi,
+        "supprimé"@fr,
+        "as feidhm"@ga,
+        "umirovljeni"@hr,
+        "visszavonva"@hu,
+        "ritirato"@it,
+        "panaikintas"@lt,
+        "atcelts"@lv,
+        "irtirat"@mt,
+        "niet meer in gebruik"@nl,
+        "wycofany"@pl,
+        "reformado"@pt,
+        "retras"@ro,
+        "nepoužíva sa"@sk,
+        "umaknjeno"@sl,
+        "borttagen"@sv .
+
+<http://publications.europa.eu/resource/authority/concept-status/REVISED> a skos:Concept ;
+    at:authority-code "REVISED" ;
+    at:deprecated "false" ;
+    at:op-code "REVISED" ;
+    at:start.use "2018-02-20" ;
+    atold:op-code "REVISED" ;
+    dc:identifier "REVISED" ;
+    skos:inScheme atold:concept-status ;
+    skos:prefLabel "revised"@en .
+
+<http://publications.europa.eu/resource/authority/concept-status/REVISED_DEPRECATED> a skos:Concept ;
+    at:authority-code "REVISED_DEPRECATED" ;
+    at:deprecated "false" ;
+    at:op-code "REVISED_DEPRECATED" ;
+    at:start.use "2018-02-20" ;
+    atold:op-code "REVISED_DEPRECATED" ;
+    dc:identifier "REVISED_DEPRECATED" ;
+    skos:inScheme atold:concept-status ;
+    skos:prefLabel "revised.deprecated"@en .
+
+<http://publications.europa.eu/resource/authority/concept-status/WAITING> a skos:Concept ;
+    at:authority-code "WAITING" ;
+    at:deprecated "false" ;
+    at:op-code "WAITING" ;
+    at:start.use "2015-07-01" ;
+    atold:op-code "WAITING" ;
+    dc:identifier "WAITING" ;
+    skos:inScheme atold:concept-status ;
+    skos:prefLabel "waiting"@en .
+
+<http://publications.europa.eu/resource/authority/concept-status/WAITING_DEPRECATED> a skos:Concept ;
+    at:authority-code "WAITING_DEPRECATED" ;
+    at:deprecated "false" ;
+    at:op-code "WAITING_DEPRECATED" ;
+    at:start.use "2015-07-03" ;
+    atold:op-code "WAITING_DEPRECATED" ;
+    dc:identifier "WAITING_DEPRECATED" ;
+    skos:inScheme atold:concept-status ;
+    skos:prefLabel "waiting.deprecated"@en .
+
+atold:concept-status a skos:ConceptScheme ;
+    rdfs:label "Concept status"@en ;
+    at:prefLabel "Concept status"@en ;
+    at:table.id "concept-status" ;
+    at:table.version.number "20181212-0" ;
+    owl:versionInfo "20181212-0" ;
+    skos:prefLabel "Concept status"@en .

@@ -1,0 +1,540 @@
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://publications.europa.eu/resource/authority/script/ARABIC> a skos:Concept ;
+    at:authority-code "ARABIC" ;
+    at:deprecated "false" ;
+    at:op-code "ARABIC" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "160" ;
+            dc:source "iso-15924-num" ],
+        [ a at:MappedCode ;
+            at:legacy-code "Arab" ;
+            dc:source "iso-15924-alpha-4" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "ARABIC" ;
+    dc:identifier "ARABIC" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Arabic script"@en .
+
+<http://publications.europa.eu/resource/authority/script/ARMENIAN> a skos:Concept ;
+    at:authority-code "ARMENIAN" ;
+    at:deprecated "false" ;
+    at:op-code "ARMENIAN" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "Armn" ;
+            dc:source "iso-15924-alpha-4" ],
+        [ a at:MappedCode ;
+            at:legacy-code "230" ;
+            dc:source "iso-15924-num" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "ARMENIAN" ;
+    dc:identifier "ARMENIAN" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Armenian script"@en .
+
+<http://publications.europa.eu/resource/authority/script/BENGALI> a skos:Concept ;
+    at:authority-code "BENGALI" ;
+    at:deprecated "false" ;
+    at:op-code "BENGALI" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "Beng" ;
+            dc:source "iso-15924-alpha-4" ],
+        [ a at:MappedCode ;
+            at:legacy-code "325" ;
+            dc:source "iso-15924-num" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "BENGALI" ;
+    dc:identifier "BENGALI" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Bengali script"@en .
+
+<http://publications.europa.eu/resource/authority/script/BRAILLE> a skos:Concept ;
+    at:authority-code "BRAILLE" ;
+    at:deprecated "false" ;
+    at:op-code "BRAILLE" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "Brai" ;
+            dc:source "iso-15924-alpha-4" ],
+        [ a at:MappedCode ;
+            at:legacy-code "570" ;
+            dc:source "iso-15924-num" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "BRAILLE" ;
+    dc:identifier "BRAILLE" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Braille script"@en .
+
+<http://publications.europa.eu/resource/authority/script/CYRILLIC> a skos:Concept ;
+    at:authority-code "CYRILLIC" ;
+    at:deprecated "false" ;
+    at:op-code "CYRILLIC" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "220" ;
+            dc:source "iso-15924-num" ],
+        [ a at:MappedCode ;
+            at:legacy-code "Cyrl" ;
+            dc:source "iso-15924-alpha-4" ] ;
+    at:start.use "2007-01-01" ;
+    atold:op-code "CYRILLIC" ;
+    dc:identifier "CYRILLIC" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Cyrillic script"@en .
+
+<http://publications.europa.eu/resource/authority/script/DEVANAGARI> a skos:Concept ;
+    at:authority-code "DEVANAGARI" ;
+    at:deprecated "false" ;
+    at:op-code "DEVANAGARI" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "Deva" ;
+            dc:source "iso-15924-alpha-4" ],
+        [ a at:MappedCode ;
+            at:legacy-code "315" ;
+            dc:source "iso-15924-num" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "DEVANAGARI" ;
+    dc:identifier "DEVANAGARI" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Devanagari script"@en .
+
+<http://publications.europa.eu/resource/authority/script/ETHIOPIC> a skos:Concept ;
+    at:authority-code "ETHIOPIC" ;
+    at:deprecated "false" ;
+    at:op-code "ETHIOPIC" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "430" ;
+            dc:source "iso-15924-num" ],
+        [ a at:MappedCode ;
+            at:legacy-code "Ethi" ;
+            dc:source "iso-15924-alpha-4" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "ETHIOPIC" ;
+    dc:identifier "ETHIOPIC" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Ethiopic script"@en .
+
+<http://publications.europa.eu/resource/authority/script/GEORGIAN> a skos:Concept ;
+    at:authority-code "GEORGIAN" ;
+    at:deprecated "false" ;
+    at:op-code "GEORGIAN" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "240" ;
+            dc:source "iso-15924-num" ],
+        [ a at:MappedCode ;
+            at:legacy-code "Geor" ;
+            dc:source "iso-15924-alpha-4" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "GEORGIAN" ;
+    dc:identifier "GEORGIAN" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Georgian script"@en .
+
+<http://publications.europa.eu/resource/authority/script/GREEK> a skos:Concept ;
+    at:authority-code "GREEK" ;
+    at:deprecated "false" ;
+    at:op-code "GREEK" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "Grek" ;
+            dc:source "iso-15924-alpha-4" ],
+        [ a at:MappedCode ;
+            at:legacy-code "200" ;
+            dc:source "iso-15924-num" ] ;
+    at:start.use "1981-01-01" ;
+    atold:op-code "GREEK" ;
+    dc:identifier "GREEK" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Greek script"@en .
+
+<http://publications.europa.eu/resource/authority/script/GUJARATI> a skos:Concept ;
+    at:authority-code "GUJARATI" ;
+    at:deprecated "false" ;
+    at:op-code "GUJARATI" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "Gujr" ;
+            dc:source "iso-15924-alpha-4" ],
+        [ a at:MappedCode ;
+            at:legacy-code "320" ;
+            dc:source "iso-15924-num" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "GUJARATI" ;
+    dc:identifier "GUJARATI" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Gujarati script"@en .
+
+<http://publications.europa.eu/resource/authority/script/GURMUKHI> a skos:Concept ;
+    at:authority-code "GURMUKHI" ;
+    at:deprecated "false" ;
+    at:op-code "GURMUKHI" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "Guru" ;
+            dc:source "iso-15924-alpha-4" ],
+        [ a at:MappedCode ;
+            at:legacy-code "310" ;
+            dc:source "iso-15924-num" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "GURMUKHI" ;
+    dc:identifier "GURMUKHI" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Gurmukhi script"@en .
+
+<http://publications.europa.eu/resource/authority/script/HAN> a skos:Concept ;
+    at:authority-code "HAN" ;
+    at:deprecated "false" ;
+    at:op-code "HAN" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "500" ;
+            dc:source "iso-15924-num" ],
+        [ a at:MappedCode ;
+            at:legacy-code "Hani" ;
+            dc:source "iso-15924-alpha-4" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "HAN" ;
+    dc:identifier "HAN" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Han script"@en .
+
+<http://publications.europa.eu/resource/authority/script/HANGUL> a skos:Concept ;
+    at:authority-code "HANGUL" ;
+    at:deprecated "false" ;
+    at:op-code "HANGUL" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "Hang" ;
+            dc:source "iso-15924-alpha-4" ],
+        [ a at:MappedCode ;
+            at:legacy-code "286" ;
+            dc:source "iso-15924-num" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "HANGUL" ;
+    dc:identifier "HANGUL" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Hangul script"@en .
+
+<http://publications.europa.eu/resource/authority/script/HEBREW> a skos:Concept ;
+    at:authority-code "HEBREW" ;
+    at:deprecated "false" ;
+    at:op-code "HEBREW" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "125" ;
+            dc:source "iso-15924-num" ],
+        [ a at:MappedCode ;
+            at:legacy-code "Hebr" ;
+            dc:source "iso-15924-alpha-4" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "HEBREW" ;
+    dc:identifier "HEBREW" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Hebrew script"@en .
+
+<http://publications.europa.eu/resource/authority/script/HIRAGANA> a skos:Concept ;
+    at:authority-code "HIRAGANA" ;
+    at:deprecated "false" ;
+    at:op-code "HIRAGANA" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "Hira" ;
+            dc:source "iso-15924-alpha-4" ],
+        [ a at:MappedCode ;
+            at:legacy-code "410" ;
+            dc:source "iso-15924-num" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "HIRAGANA" ;
+    dc:identifier "HIRAGANA" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Hiragana script"@en .
+
+<http://publications.europa.eu/resource/authority/script/KANNADA> a skos:Concept ;
+    at:authority-code "KANNADA" ;
+    at:deprecated "false" ;
+    at:op-code "KANNADA" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "345" ;
+            dc:source "iso-15924-num" ],
+        [ a at:MappedCode ;
+            at:legacy-code "Knda" ;
+            dc:source "iso-15924-alpha-4" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "KANNADA" ;
+    dc:identifier "KANNADA" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Kannada script"@en .
+
+<http://publications.europa.eu/resource/authority/script/KATAKANA> a skos:Concept ;
+    at:authority-code "KATAKANA" ;
+    at:deprecated "false" ;
+    at:op-code "KATAKANA" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "Kana" ;
+            dc:source "iso-15924-alpha-4" ],
+        [ a at:MappedCode ;
+            at:legacy-code "411" ;
+            dc:source "iso-15924-num" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "KATAKANA" ;
+    dc:identifier "KATAKANA" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Katakana script"@en .
+
+<http://publications.europa.eu/resource/authority/script/KHMER> a skos:Concept ;
+    at:authority-code "KHMER" ;
+    at:deprecated "false" ;
+    at:op-code "KHMER" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "Khmr" ;
+            dc:source "iso-15924-alpha-4" ],
+        [ a at:MappedCode ;
+            at:legacy-code "355" ;
+            dc:source "iso-15924-num" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "KHMER" ;
+    dc:identifier "KHMER" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Khmer script"@en .
+
+<http://publications.europa.eu/resource/authority/script/LAO> a skos:Concept ;
+    at:authority-code "LAO" ;
+    at:deprecated "false" ;
+    at:op-code "LAO" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "356" ;
+            dc:source "iso-15924-num" ],
+        [ a at:MappedCode ;
+            at:legacy-code "Laoo" ;
+            dc:source "iso-15924-alpha-4" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "LAO" ;
+    dc:identifier "LAO" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Lao script"@en .
+
+<http://publications.europa.eu/resource/authority/script/LATIN> a skos:Concept ;
+    at:authority-code "LATIN" ;
+    at:deprecated "false" ;
+    at:op-code "LATIN" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "Latn" ;
+            dc:source "iso-15924-alpha-4" ],
+        [ a at:MappedCode ;
+            at:legacy-code "215" ;
+            dc:source "iso-15924-num" ] ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "LATIN" ;
+    dc:identifier "LATIN" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Latin script"@en .
+
+<http://publications.europa.eu/resource/authority/script/MALAYALAM> a skos:Concept ;
+    at:authority-code "MALAYALAM" ;
+    at:deprecated "false" ;
+    at:op-code "MALAYALAM" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "347" ;
+            dc:source "iso-15924-num" ],
+        [ a at:MappedCode ;
+            at:legacy-code "Mlym" ;
+            dc:source "iso-15924-alpha-4" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "MALAYALAM" ;
+    dc:identifier "MALAYALAM" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Malayalam script"@en .
+
+<http://publications.europa.eu/resource/authority/script/MONGOLIAN> a skos:Concept ;
+    at:authority-code "MONGOLIAN" ;
+    at:deprecated "false" ;
+    at:op-code "MONGOLIAN" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "145" ;
+            dc:source "iso-15924-num" ],
+        [ a at:MappedCode ;
+            at:legacy-code "Mong" ;
+            dc:source "iso-15924-alpha-4" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "MONGOLIAN" ;
+    dc:identifier "MONGOLIAN" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Mongolian script"@en .
+
+<http://publications.europa.eu/resource/authority/script/MYANMAR> a skos:Concept ;
+    at:authority-code "MYANMAR" ;
+    at:deprecated "false" ;
+    at:op-code "MYANMAR" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "350" ;
+            dc:source "iso-15924-num" ],
+        [ a at:MappedCode ;
+            at:legacy-code "Mymr" ;
+            dc:source "iso-15924-alpha-4" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "MYANMAR" ;
+    dc:identifier "MYANMAR" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Myanmar script"@en .
+
+<http://publications.europa.eu/resource/authority/script/OP_DATPRO> a skos:Concept ;
+    at:op-code "OP_DATPRO" ;
+    atold:op-code "OP_DATPRO" ;
+    dc:identifier "OP_DATPRO" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "НЕОКОНЧАТЕЛНИ ДАННИ"@bg,
+        "Předběžné údaje"@cs,
+        "Midlertidige data"@da,
+        "Vorläufige Daten"@de,
+        "Προσωρινά δεδομένα"@el,
+        "Provisional data"@en,
+        "Datos provisionales"@es,
+        "Esialgsed andmed"@et,
+        "Alustavat tiedot"@fi,
+        "Données provisoires"@fr,
+        "Sonraí sealadacha"@ga,
+        "Privremeni podaci"@hr,
+        "Ideiglenes adatok"@hu,
+        "Dati provvisori"@it,
+        "Laikinieji duomenys"@lt,
+        "Provizoriski dati"@lv,
+        "Dejta provviżorja"@mt,
+        "Voorlopige gegevens"@nl,
+        "Dane tymczasowe"@pl,
+        "Dados provisórios"@pt,
+        "Date provizorii"@ro,
+        "Predbežné údaje"@sk,
+        "Začasni podatki"@sl,
+        "Tillfälliga uppgifter"@sv .
+
+<http://publications.europa.eu/resource/authority/script/SINHALA> a skos:Concept ;
+    at:authority-code "SINHALA" ;
+    at:deprecated "false" ;
+    at:op-code "SINHALA" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "348" ;
+            dc:source "iso-15924-num" ],
+        [ a at:MappedCode ;
+            at:legacy-code "Sinh" ;
+            dc:source "iso-15924-alpha-4" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "SINHALA" ;
+    dc:identifier "SINHALA" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Sinhala script"@en .
+
+<http://publications.europa.eu/resource/authority/script/TAGALOG> a skos:Concept ;
+    at:authority-code "TAGALOG" ;
+    at:deprecated "false" ;
+    at:op-code "TAGALOG" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "370" ;
+            dc:source "iso-15924-num" ],
+        [ a at:MappedCode ;
+            at:legacy-code "Tglg" ;
+            dc:source "iso-15924-alpha-4" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "TAGALOG" ;
+    dc:identifier "TAGALOG" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Tagalog script"@en .
+
+<http://publications.europa.eu/resource/authority/script/TAMIL> a skos:Concept ;
+    at:authority-code "TAMIL" ;
+    at:deprecated "false" ;
+    at:op-code "TAMIL" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "346" ;
+            dc:source "iso-15924-num" ],
+        [ a at:MappedCode ;
+            at:legacy-code "Taml" ;
+            dc:source "iso-15924-alpha-4" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "TAMIL" ;
+    dc:identifier "TAMIL" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Tamil script"@en .
+
+<http://publications.europa.eu/resource/authority/script/TELUGU> a skos:Concept ;
+    at:authority-code "TELUGU" ;
+    at:deprecated "false" ;
+    at:op-code "TELUGU" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "340" ;
+            dc:source "iso-15924-num" ],
+        [ a at:MappedCode ;
+            at:legacy-code "Telu" ;
+            dc:source "iso-15924-alpha-4" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "TELUGU" ;
+    dc:identifier "TELUGU" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Telugu script"@en .
+
+<http://publications.europa.eu/resource/authority/script/THAANA> a skos:Concept ;
+    at:authority-code "THAANA" ;
+    at:deprecated "false" ;
+    at:op-code "THAANA" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "Thaa" ;
+            dc:source "iso-15924-alpha-4" ],
+        [ a at:MappedCode ;
+            at:legacy-code "170" ;
+            dc:source "iso-15924-num" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "THAANA" ;
+    dc:identifier "THAANA" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Thaana script"@en .
+
+<http://publications.europa.eu/resource/authority/script/THAI> a skos:Concept ;
+    at:authority-code "THAI" ;
+    at:deprecated "false" ;
+    at:op-code "THAI" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "352" ;
+            dc:source "iso-15924-num" ],
+        [ a at:MappedCode ;
+            at:legacy-code "Thai" ;
+            dc:source "iso-15924-alpha-4" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "THAI" ;
+    dc:identifier "THAI" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Thai script"@en .
+
+<http://publications.europa.eu/resource/authority/script/TIBETAN> a skos:Concept ;
+    at:authority-code "TIBETAN" ;
+    at:deprecated "false" ;
+    at:op-code "TIBETAN" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "Tibt" ;
+            dc:source "iso-15924-alpha-4" ],
+        [ a at:MappedCode ;
+            at:legacy-code "330" ;
+            dc:source "iso-15924-num" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "TIBETAN" ;
+    dc:identifier "TIBETAN" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Tibetan script"@en .
+
+<http://publications.europa.eu/resource/authority/script/TIFINAGH> a skos:Concept ;
+    at:authority-code "TIFINAGH" ;
+    at:deprecated "false" ;
+    at:op-code "TIFINAGH" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "Tfng" ;
+            dc:source "iso-15924-alpha-4" ],
+        [ a at:MappedCode ;
+            at:legacy-code "120" ;
+            dc:source "iso-15924-num" ] ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "TIFINAGH" ;
+    dc:identifier "TIFINAGH" ;
+    skos:inScheme atold:script ;
+    skos:prefLabel "Tifinagh script"@en .
+
+atold:script a skos:ConceptScheme ;
+    rdfs:label "Script"@en ;
+    at:prefLabel "Script"@en ;
+    at:table.id "script" ;
+    at:table.version.number "20200624-0" ;
+    owl:versionInfo "20200624-0" ;
+    skos:prefLabel "Script"@en .

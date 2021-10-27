@@ -25,6 +25,19 @@ x-commons:
       $ref: '#/components/responses/503ServiceUnavailable'
     default:
       $ref: '#/components/responses/default'
+  caching-fields: &caching-fields
+    Cache-Control:
+      description: |-
+        Since responses are public, they should be cached
+        for at least 10 hours (eg. for max-age=36000, public).
+      schema:
+        type: string
+        format: string
+        pattern: >-
+          [a-zA-Z0-9\-_= ]{1,128}
+        default: public, max-age=36000
+        maxLength: 128
+        minLength: 6
 
 openapi: 3.0.2
 info:
@@ -94,18 +107,19 @@ tags:
 servers:
   - description: Development server
     url: /vocabularies/v1
+    x-sandbox: true
   - description: Test server
     url: https://api.example.com/vocabularies/v1
     x-sandbox: true
     # Questo parametro indica come testare il servizio.
     x-healthCheck:
-      url: https://api.example.com/vocabularies/v1/status
+      url: https://ndc.gov.it/ade/vocabularies/v1/status
       interval: 300
       timeout: 15
-
 paths:
   /vocabularies:
     get:
+      security: []
       summary: List vocabularies
       description: List vocabularies and their metadata.
       operationId: api.list_vocabularies
@@ -120,7 +134,7 @@ paths:
 
             TODO: A way of returing versioned resources must be identified.
           headers:
-            <<: *ratelimit-headers
+            <<: [*ratelimit-headers, *caching-fields]
           content:
             application/json:
               schema:
@@ -128,6 +142,7 @@ paths:
 
   /vocabularies/{vocabulary_id}/{entry_id}:
     get:
+      security: []
       summary: Return a given entry from a vocabulary
       description: |-
         A single entry from the selected vocabulary.
@@ -162,7 +177,7 @@ paths:
           description: |
             Il server ha ritornato il codepoint del vocabolario.
           headers:
-            <<: *ratelimit-headers
+            <<: [*ratelimit-headers, *caching-fields]
           content:
             application/json:
               schema:
@@ -175,6 +190,7 @@ paths:
                       maxProperties: 50
   /vocabularies/{vocabulary_id}:
     get:
+      security: []
       summary: Return one or more entries from a vocabulary.
       description: |
         Query data from the dataset using available fields.
@@ -205,6 +221,8 @@ paths:
           schema:
             type: string
             maxLength: 64
+            pattern: >-
+              [a-zA-Z0-9-_]+
           in: path
           required: true
         - name: label_it
@@ -224,13 +242,14 @@ paths:
           description: |
             A list of the matching entries.
           headers:
-            <<: *ratelimit-headers
+            <<: [*ratelimit-headers, *caching-fields]
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Entries'
   /status:
     get:
+      security: []
       summary: Ritorna lo stato dell'applicazione.
       description: |
         Ritorna lo stato dell'applicazione. A scopo
@@ -246,6 +265,14 @@ paths:
             Server returned correctly its status.
           headers:
             <<: *ratelimit-headers
+            Cache-Control:
+              description: |-
+                Application status should not be cached,
+                so no-store.
+              schema:
+                type: string
+                enum:
+                - max-age=0, no-cache, no-store
           content:
             application/problem+json:
               schema:
@@ -279,20 +306,50 @@ components:
   schemas:
     Problem:
       $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/schemas/Problem'
+    EntryId:
+      type: string
+      example: '42134fa'
+      pattern: >-
+        [a-zA-Z0-9]+
+      maxLength: 255
+      minLength: 2
     Entry:
       type: object
-      description: Un Timestamp in RFC5424
-      additionalProperties: true
+      description: An entry from a vocabulary.
+      additionalProperties: false
       properties:
         entry_id:
-          type: string
-          example: '42134fa'
+          $ref: '#/components/schemas/EntryId'
     Entries:
       type: object
-      description: a list of entries
+      description: A list of entries
+      additionalProperties: false
       properties:
+        count:
+          type: integer
+          example: 42
+          minimum: 1
+          maximum: 100
+          format: int32
+        url:
+          type: string
+          example: 'https://example.com/api/vocabularies/42134fa'
+          maxLength: 255
+          minLength: 16
+          pattern: >-
+            ^https://[a-zA-Z0-9-_.]+/api/vocabularies/[a-zA-Z0-9-_]+$
+        last:
+          $ref: '#/components/schemas/EntryId'
+        version:
+          type: string
+          example: '1.0.0'
+          maxLength: 255
+          minLength: 1
+          pattern: >-
+            [a-zA-Z0-9-_.]+
         entries:
           type: array
           items:
             $ref:  "#/components/schemas/Entry"
           maxItems: 100
+          minItems: 0

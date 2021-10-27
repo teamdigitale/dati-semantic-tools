@@ -1,0 +1,200 @@
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://publications.europa.eu/resource/authority/grammatical-gender/F> a skos:Concept ;
+    at:authority-code "F" ;
+    at:deprecated "false" ;
+    at:op-code "F" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "F" ;
+    dc:identifier "F" ;
+    skos:exactMatch <http://www.lexvo.org/page/term/eng/feminine> ;
+    skos:inScheme atold:grammatical-gender ;
+    skos:prefLabel "Женски род"@bg,
+        "Ženský rod"@cs,
+        "Hunkøn"@da,
+        "Femininum"@de,
+        "Θηλυκό"@el,
+        "Feminine"@en,
+        "Femenino"@es,
+        "Naissoost"@et,
+        "Feminiini"@fi,
+        "Féminin"@fr,
+        "Baineann"@ga,
+        "Ženski rod"@hr,
+        "Nőnem"@hu,
+        "Femminile"@it,
+        "Moteriškoji"@lt,
+        "Sieviešu"@lv,
+        "Femminil"@mt,
+        "Vrouwelijk"@nl,
+        "Rodzaj żeński"@pl,
+        "Feminino"@pt,
+        "Feminin"@ro,
+        "Ženský rod"@sk,
+        "Ženski spol"@sl,
+        "Femininum"@sv .
+
+<http://publications.europa.eu/resource/authority/grammatical-gender/G> a skos:Concept ;
+    at:authority-code "G" ;
+    at:deprecated "false" ;
+    at:op-code "G" ;
+    at:start.use "2021-02-18" ;
+    atold:op-code "G" ;
+    dc:identifier "G" ;
+    skos:inScheme atold:grammatical-gender ;
+    skos:prefLabel "Generic"@en .
+
+<http://publications.europa.eu/resource/authority/grammatical-gender/M> a skos:Concept ;
+    at:authority-code "M" ;
+    at:deprecated "false" ;
+    at:op-code "M" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "M" ;
+    dc:identifier "M" ;
+    skos:exactMatch <http://www.lexvo.org/page/term/eng/masculine> ;
+    skos:inScheme atold:grammatical-gender ;
+    skos:prefLabel "Мъжки род"@bg,
+        "Mužský rod"@cs,
+        "Hankøn"@da,
+        "Maskulinum"@de,
+        "Αρσενικό"@el,
+        "Masculine"@en,
+        "Masculino"@es,
+        "Meessoost"@et,
+        "Maskuliini"@fi,
+        "Masculin"@fr,
+        "Fireann"@ga,
+        "Muški rod"@hr,
+        "Hímnem"@hu,
+        "Maschile"@it,
+        "Vyriškoji"@lt,
+        "Vīriešu"@lv,
+        "Maskil"@mt,
+        "Mannelijk"@nl,
+        "Rodzaj męski"@pl,
+        "Masculino"@pt,
+        "Masculin"@ro,
+        "Mužský rod"@sk,
+        "Moški spol"@sl,
+        "Maskulinum"@sv .
+
+<http://publications.europa.eu/resource/authority/grammatical-gender/N> a skos:Concept ;
+    at:authority-code "N" ;
+    at:deprecated "false" ;
+    at:op-code "N" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "N" ;
+    dc:identifier "N" ;
+    skos:exactMatch <http://www.lexvo.org/page/term/eng/neuter> ;
+    skos:inScheme atold:grammatical-gender ;
+    skos:prefLabel "Среден род"@bg,
+        "Střední rod"@cs,
+        "Intetkøn"@da,
+        "Neutrum"@de,
+        "Ουδέτερο"@el,
+        "Neuter"@en,
+        "Neutro"@es,
+        "Kesksoost"@et,
+        "Neutri"@fi,
+        "Neutre"@fr,
+        "Neodrach"@ga,
+        "Srednji rod"@hr,
+        "Semlegesnem"@hu,
+        "Neutro"@it,
+        "Bevardė"@lt,
+        "Neitrāls"@lv,
+        "Newtru"@mt,
+        "Onzijdig"@nl,
+        "Rodzaj nijaki"@pl,
+        "Neutro"@pt,
+        "Neutru"@ro,
+        "Stredný rod"@sk,
+        "Srednji spol"@sl,
+        "Neutrum"@sv .
+
+<http://publications.europa.eu/resource/authority/grammatical-gender/OP_DATPRO> a skos:Concept ;
+    at:op-code "OP_DATPRO" ;
+    atold:op-code "OP_DATPRO" ;
+    dc:identifier "OP_DATPRO" ;
+    skos:inScheme atold:grammatical-gender ;
+    skos:prefLabel "НЕОКОНЧАТЕЛНИ ДАННИ"@bg,
+        "Předběžné údaje"@cs,
+        "Midlertidige data"@da,
+        "Vorläufige Daten"@de,
+        "Προσωρινά δεδομένα"@el,
+        "Provisional data"@en,
+        "Datos provisionales"@es,
+        "Esialgsed andmed"@et,
+        "Alustavat tiedot"@fi,
+        "Données provisoires"@fr,
+        "Sonraí sealadacha"@ga,
+        "Privremeni podaci"@hr,
+        "Ideiglenes adatok"@hu,
+        "Dati provvisori"@it,
+        "Laikinieji duomenys"@lt,
+        "Provizoriski dati"@lv,
+        "Dejta provviżorja"@mt,
+        "Voorlopige gegevens"@nl,
+        "Dane tymczasowe"@pl,
+        "Dados provisórios"@pt,
+        "Date provizorii"@ro,
+        "Predbežné údaje"@sk,
+        "Začasni podatki"@sl,
+        "Tillfälliga uppgifter"@sv .
+
+<http://publications.europa.eu/resource/authority/grammatical-gender/U> a skos:Concept ;
+    at:authority-code "U" ;
+    at:deprecated "false" ;
+    at:op-code "U" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "U" ;
+    dc:identifier "U" ;
+    skos:exactMatch <http://www.lexvo.org/page/term/eng/utrum> ;
+    skos:inScheme atold:grammatical-gender ;
+    skos:prefLabel "Utrum"@bg,
+        "Společný rod"@cs,
+        "Fælleskøn"@da,
+        "Utrum"@de,
+        "Utrum"@el,
+        "Utrum"@en,
+        "Común"@es,
+        "Ühissoost"@et,
+        "Utrum"@fi,
+        "Utrum"@fr,
+        "Utrum"@ga,
+        "Zajednički rod"@hr,
+        "Utrum"@hu,
+        "Comune"@it,
+        "Bendroji"@lt,
+        "Utrum"@lv,
+        "Utrum"@mt,
+        "Gemeenschappelijk"@nl,
+        "Utrum"@pl,
+        "Comum"@pt,
+        "Comun (utrum)"@ro,
+        "Spoločný rod"@sk,
+        "Splošni spol"@sl,
+        "Utrum"@sv .
+
+<http://publications.europa.eu/resource/authority/grammatical-gender/Z> a skos:Concept ;
+    at:authority-code "Z" ;
+    at:deprecated "false" ;
+    at:op-code "Z" ;
+    at:start.use "2021-02-18" ;
+    atold:op-code "Z" ;
+    dc:identifier "Z" ;
+    skos:inScheme atold:grammatical-gender ;
+    skos:prefLabel "No gender"@en .
+
+atold:grammatical-gender a skos:ConceptScheme ;
+    rdfs:label "Grammatical gender"@en ;
+    at:prefLabel "Grammatical gender"@en ;
+    at:table.id "grammatical-gender" ;
+    at:table.version.number "20210317-0" ;
+    owl:versionInfo "20210317-0" ;
+    skos:prefLabel "Grammatical gender"@en .

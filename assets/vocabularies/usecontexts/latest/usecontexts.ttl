@@ -1,0 +1,609 @@
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://publications.europa.eu/resource/authority/use-context/AKN4EU> a skos:Concept ;
+    at:authority-code "AKN4EU" ;
+    at:deprecated "false" ;
+    at:op-code "AKN4EU" ;
+    at:start.use "2020-03-18" ;
+    atold:op-code "AKN4EU" ;
+    dc:identifier "AKN4EU" ;
+    skos:definition "Use context in several authority tables for the Akoma Ntoso for European Union specification (AKN4EU) for the exchange of legal documents."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "AKN4EU"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/CELLAR> a skos:Concept ;
+    at:authority-code "CELLAR" ;
+    at:deprecated "false" ;
+    at:op-code "CELLAR" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "CELLAR" ;
+    dc:identifier "CELLAR" ;
+    skos:definition "Use context in several authority tables for filtering concepts used by CELLAR, the common content and metadata repository of the Publications Office."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "CELLAR"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/CJ> a skos:Concept ;
+    at:authority-code "CJ" ;
+    at:deprecated "false" ;
+    at:op-code "CJ" ;
+    at:start.use "2015-06-10" ;
+    atold:op-code "CJ" ;
+    dc:identifier "CJ" ;
+    skos:definition "Use context in the Subdivision authority table for filtering concepts used by the Court of Justice."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "CJ"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/CODIF_DATA> a skos:Concept ;
+    at:authority-code "CODIF_DATA" ;
+    at:deprecated "false" ;
+    at:op-code "CODIF_DATA" ;
+    at:start.use "2019-06-19" ;
+    atold:op-code "CODIF_DATA" ;
+    dc:identifier "CODIF_DATA" ;
+    skos:definition "Use context in several authority tables for codifying concepts in TED portal expert search and used in TED Schema (CODIF_DATA)."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "Codification Data"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/COMREF> a skos:Concept ;
+    at:authority-code "COMREF" ;
+    at:deprecated "false" ;
+    at:op-code "COMREF" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "COMREF" ;
+    dc:identifier "COMREF" ;
+    skos:definition "Use context in several authority tables for filtering concepts used by COMREF, the European Commission's Human Resources Database."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "COMREF"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/COM_NEWS> a skos:Concept ;
+    at:authority-code "COM_NEWS" ;
+    at:deprecated "false" ;
+    at:op-code "COM_NEWS" ;
+    at:start.use "2020-06-24" ;
+    atold:op-code "COM_NEWS" ;
+    dc:identifier "COM_NEWS" ;
+    skos:definition "Use context in the Resource type authority table for identifying resource types specific to 'news' content among the web resources of the directorates-general of the European Commission."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "COM_NEWS"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/COM_WEB> a skos:Concept ;
+    at:authority-code "COM_WEB" ;
+    at:deprecated "false" ;
+    at:op-code "COM_WEB" ;
+    at:start.use "2020-02-20" ;
+    atold:op-code "COM_WEB" ;
+    dc:identifier "COM_WEB" ;
+    skos:definition "Use context in the authority tables for identifying concepts used across the websites of different directorates-general of the European Commission."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "COM_WEB"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/COUNTRY> a skos:Concept ;
+    at:authority-code "COUNTRY" ;
+    at:deprecated "false" ;
+    at:op-code "COUNTRY" ;
+    at:start.use "2020-12-16" ;
+    atold:op-code "COUNTRY" ;
+    dc:identifier "COUNTRY" ;
+    skos:definition "Use context in the Country authority table for identifying the current entities that have a formal status of a country."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "Country"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/DCAT_AP> a skos:Concept ;
+    at:authority-code "DCAT_AP" ;
+    at:deprecated "false" ;
+    at:op-code "DCAT_AP" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "DCAT_AP" ;
+    dc:identifier "DCAT_AP" ;
+    skos:definition "Use context in several authority tables for filtering concepts used by DCAT-AP, an application profile based on the Data Catalogue vocabulary designed to facilitate interoperability between EU and European data catalogues published on the Web."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "DCAT_AP"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/DEMED> a skos:Concept ;
+    at:authority-code "DEMED" ;
+    at:deprecated "false" ;
+    at:op-code "DEMED" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "DEMED" ;
+    dc:identifier "DEMED" ;
+    skos:definition "Use context in the Corporate body authority table for filtering concepts used by DEMED, the Demande Edition application."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "DEMED"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/DEMPUB> a skos:Concept ;
+    at:authority-code "DEMPUB" ;
+    at:deprecated "false" ;
+    at:op-code "DEMPUB" ;
+    at:start.use "2018-09-26" ;
+    atold:op-code "DEMPUB" ;
+    dc:identifier "DEMPUB" ;
+    skos:definition "Use context in the Corporate body authority table for filtering concepts used by services of the Publications Office."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "Publication request"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/DG_NEAR> a skos:Concept ;
+    at:authority-code "DG_NEAR" ;
+    at:deprecated "false" ;
+    at:op-code "DG_NEAR" ;
+    at:start.use "2020-02-20" ;
+    atold:op-code "DG_NEAR" ;
+    dc:identifier "DG_NEAR" ;
+    skos:definition "Use context in the Country authority table for identifying concepts relevant for the Directorate-General for Neighbourhood and Enlargement Negotiations of the European Commission (DG NEAR)."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "DG_NEAR"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/EFORMS> a skos:Concept ;
+    at:authority-code "EFORMS" ;
+    at:deprecated "false" ;
+    at:op-code "EFORMS" ;
+    at:start.use "2019-02-20" ;
+    atold:op-code "EFORMS" ;
+    dc:identifier "EFORMS" ;
+    skos:definition "Use context in several authority tables for identifying concepts used in eForms."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "eForms"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/ELI> a skos:Concept ;
+    at:authority-code "ELI" ;
+    at:deprecated "false" ;
+    at:op-code "ELI" ;
+    at:start.use "2019-02-20" ;
+    atold:op-code "ELI" ;
+    dc:identifier "ELI" ;
+    skos:definition "Use context in several authority tables for identifying concepts relevant for ELI, European Legislation Identifier."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "ELI"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/EP> a skos:Concept ;
+    at:authority-code "EP" ;
+    at:deprecated "false" ;
+    at:op-code "EP" ;
+    at:start.use "2021-09-29" ;
+    atold:op-code "EP" ;
+    dc:identifier "EP" ;
+    skos:definition "Use context in several authority tables for filtering concepts relevant for the European Parliament."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "EP"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/ESPD> a skos:Concept ;
+    at:authority-code "ESPD" ;
+    at:deprecated "false" ;
+    at:op-code "ESPD" ;
+    at:start.use "2020-02-20" ;
+    atold:op-code "ESPD" ;
+    dc:identifier "ESPD" ;
+    skos:definition "Use context in several authority tables for identifying concepts used in the European single procurement document (ESPD)."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "ESPD"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/EUBOOKSHOP> a skos:Concept ;
+    at:authority-code "EUBOOKSHOP" ;
+    at:deprecated "false" ;
+    at:op-code "EUBOOKSHOP" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "EUBOOKSHOP" ;
+    dc:identifier "EUBOOKSHOP" ;
+    skos:definition "Use context in several authority tables for filtering concepts used by EU Bookshop."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "EU Bookshop"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/EUDOR> a skos:Concept ;
+    at:authority-code "EUDOR" ;
+    at:deprecated "false" ;
+    at:op-code "EUDOR" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "EUDOR" ;
+    dc:identifier "EUDOR" ;
+    skos:definition "Use context in the Language authority table for filtering concepts used by EUDOR, the European Union Document Repository which is the long-term digital archive of the EU institutions managed by the Publications Office."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "EUDOR"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/EURLEX> a skos:Concept ;
+    at:authority-code "EURLEX" ;
+    at:deprecated "false" ;
+    at:op-code "EURLEX" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "EURLEX" ;
+    dc:identifier "EURLEX" ;
+    skos:changeNote "EUDOR covers also \"ARCHIVE\", this concept has been deleted, 21/01/2015"@en ;
+    skos:definition "Use context in several authority tables for filtering concepts used by EurLex domain in ATTO (Atelier des Tables de Traductions de l’Office des publications)."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "EurLex"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/EU_EFTA_UK> a skos:Concept ;
+    at:authority-code "EU_EFTA_UK" ;
+    at:deprecated "false" ;
+    at:op-code "EU_EFTA_UK" ;
+    at:start.use "2020-12-16" ;
+    atold:op-code "EU_EFTA_UK" ;
+    dc:identifier "EU_EFTA_UK" ;
+    skos:definition "Use context in the Country authority table for identifying the following group of entities: the current member states of the European Union, the current member states of the European Free Trade Association, the United Kingdom."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "EU_EFTA_UK"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/EU_OMR_OCT> a skos:Concept ;
+    at:authority-code "EU_OMR_OCT" ;
+    at:deprecated "false" ;
+    at:op-code "EU_OMR_OCT" ;
+    at:start.use "2018-03-21" ;
+    atold:op-code "EU_OMR_OCT" ;
+    dc:identifier "EU_OMR_OCT" ;
+    skos:definition "Use context in the Country authority table for filtering outermost regions (OMR) and overseas countries and territories (OCT) associated to the European Union."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "EU_OMR_OCT"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/EU_REC> a skos:Concept ;
+    at:authority-code "EU_REC" ;
+    at:deprecated "false" ;
+    at:op-code "EU_REC" ;
+    at:start.use "2016-05-25" ;
+    atold:op-code "EU_REC" ;
+    dc:identifier "EU_REC" ;
+    skos:definition "Use context used in the Country authority table to distinguish countries which exist and are recognized by EU Member States from territories or from countries which do not exist any more."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "EU_REC"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/FORMEX> a skos:Concept ;
+    at:authority-code "FORMEX" ;
+    at:deprecated "false" ;
+    at:op-code "FORMEX" ;
+    at:start.use "2015-06-10" ;
+    atold:op-code "FORMEX" ;
+    dc:identifier "FORMEX" ;
+    skos:definition "Use context in the Subdivision authority table for filtering concepts used by FORMEX, the Formalized Exchange of Electronic Publications."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "FORMEX"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/ID_ENTITY> a skos:Concept ;
+    at:authority-code "ID_ENTITY" ;
+    at:deprecated "false" ;
+    at:op-code "ID_ENTITY" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "ID_ENTITY" ;
+    dc:identifier "ID_ENTITY" ;
+    skos:altLabel "WHOISWHO_entity_id"@en ;
+    skos:changeNote "requested by Jean Delahousse on 05/05/2015"@en ;
+    skos:definition "Identifier used for organisational entities by EU Whoiswho, the electronic directory of managers and services in the EU institutions, bodies and agencies."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "Organisational entity ID"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/ID_INSTITUTION> a skos:Concept ;
+    at:authority-code "ID_INSTITUTION" ;
+    at:deprecated "true" ;
+    at:end.use "2018-04-05" ;
+    at:op-code "ID_INSTITUTION" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "ID_INSTITUTION" ;
+    dc:identifier "ID_INSTITUTION" ;
+    skos:changeNote "requested by Jean Delahousse on 05/05/2015"@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "WHOISWHO_institution_id"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/IMMC> a skos:Concept ;
+    at:authority-code "IMMC" ;
+    at:deprecated "false" ;
+    at:op-code "IMMC" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "IMMC" ;
+    dc:identifier "IMMC" ;
+    skos:definition "Use context in several authority tables for filtering concepts used by IMMC, the Interinstitutional Metadata Maintenance Committee."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "IMMC"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/IMMC_COM> a skos:Concept ;
+    at:authority-code "IMMC_COM" ;
+    at:deprecated "false" ;
+    at:op-code "IMMC_COM" ;
+    at:start.use "2019-02-20" ;
+    atold:op-code "IMMC_COM" ;
+    dc:identifier "IMMC_COM" ;
+    skos:definition "Use context in several authority tables for filtering concepts used by IMMC, the Interinstitutional Metadata Maintenance Committee, and relevant for the European Commission."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "IMMC_COM"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/IMMC_CONSIL> a skos:Concept ;
+    at:authority-code "IMMC_CONSIL" ;
+    at:deprecated "false" ;
+    at:op-code "IMMC_CONSIL" ;
+    at:start.use "2019-02-20" ;
+    atold:op-code "IMMC_CONSIL" ;
+    dc:identifier "IMMC_CONSIL" ;
+    skos:definition "Use context in several authority tables for filtering concepts used by IMMC, the Interinstitutional Metadata Maintenance Committee, and relevant for the Council of the European Union."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "IMMC_CONSIL"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/IMMC_COR> a skos:Concept ;
+    at:authority-code "IMMC_COR" ;
+    at:deprecated "false" ;
+    at:op-code "IMMC_COR" ;
+    at:start.use "2019-02-20" ;
+    atold:op-code "IMMC_COR" ;
+    dc:identifier "IMMC_COR" ;
+    skos:definition "Use context in several authority tables for filtering concepts used by IMMC, the Interinstitutional Metadata Maintenance Committee, and relevant for the European Committee of the Regions."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "IMMC_COR"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/IMMC_CURIA> a skos:Concept ;
+    at:authority-code "IMMC_CURIA" ;
+    at:deprecated "false" ;
+    at:op-code "IMMC_CURIA" ;
+    at:start.use "2019-02-20" ;
+    atold:op-code "IMMC_CURIA" ;
+    dc:identifier "IMMC_CURIA" ;
+    skos:definition "Use context in several authority tables for filtering concepts used by IMMC, the Interinstitutional Metadata Maintenance Committee, and relevant for the Court of Justice of the European Union."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "IMMC_CURIA"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/IMMC_ECA> a skos:Concept ;
+    at:authority-code "IMMC_ECA" ;
+    at:deprecated "false" ;
+    at:op-code "IMMC_ECA" ;
+    at:start.use "2019-02-20" ;
+    atold:op-code "IMMC_ECA" ;
+    dc:identifier "IMMC_ECA" ;
+    skos:definition "Use context in several authority tables for filtering concepts used by IMMC, the Interinstitutional Metadata Maintenance Committee, and relevant for the European Court of Auditors."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "IMMC_ECA"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/IMMC_EESC> a skos:Concept ;
+    at:authority-code "IMMC_EESC" ;
+    at:deprecated "false" ;
+    at:op-code "IMMC_EESC" ;
+    at:start.use "2019-02-20" ;
+    atold:op-code "IMMC_EESC" ;
+    dc:identifier "IMMC_EESC" ;
+    skos:definition "Use context in several authority tables for filtering concepts used by IMMC, the Interinstitutional Metadata Maintenance Committee, and relevant for the European Economic and Social Committee."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "IMMC_EESC"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/IMMC_EP> a skos:Concept ;
+    at:authority-code "IMMC_EP" ;
+    at:deprecated "false" ;
+    at:op-code "IMMC_EP" ;
+    at:start.use "2019-02-20" ;
+    atold:op-code "IMMC_EP" ;
+    dc:identifier "IMMC_EP" ;
+    skos:definition "Use context in several authority tables for filtering concepts used by IMMC, the Interinstitutional Metadata Maintenance Committee, and relevant for the European Parliament."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "IMMC_EP"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/INSTITUTION> a skos:Concept ;
+    at:authority-code "INSTITUTION" ;
+    at:deprecated "false" ;
+    at:op-code "INSTITUTION" ;
+    at:start.use "2018-04-06" ;
+    atold:op-code "INSTITUTION" ;
+    dc:identifier "INSTITUTION" ;
+    skos:definition "Uniform resource identifier (URI) used for institutions by EU Whoiswho, the electronic directory of managers and services in the EU institutions, bodies and agencies."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "Institution URI"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/MNEMONIC> a skos:Concept ;
+    at:authority-code "MNEMONIC" ;
+    at:deprecated "false" ;
+    at:op-code "MNEMONIC" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "MNEMONIC" ;
+    dc:identifier "MNEMONIC" ;
+    skos:altLabel "WHOISWHO_mnemonic"@en ;
+    skos:changeNote "requested by Jean Delahousse on 05/05/2015"@en ;
+    skos:definition "Mnemonic code used for organisational entities by EU Whoiswho, the electronic directory of managers and services in the EU institutions, bodies and agencies."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "Organisational entity mnemonic code"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/NOTICE_VIEWER> a skos:Concept ;
+    at:authority-code "NOTICE_VIEWER" ;
+    at:deprecated "false" ;
+    at:op-code "NOTICE_VIEWER" ;
+    at:start.use "2019-06-19" ;
+    atold:op-code "NOTICE_VIEWER" ;
+    dc:identifier "NOTICE_VIEWER" ;
+    skos:definition "Use context in several authority tables for viewing concepts in eProcurement Notices."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "Notice Viewer"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/ODP> a skos:Concept ;
+    at:authority-code "ODP" ;
+    at:deprecated "false" ;
+    at:op-code "ODP" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "ODP" ;
+    dc:identifier "ODP" ;
+    skos:definition "Use context in several authority tables for filtering concepts used by ODP, the European Union Open Data Portal."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "ODP"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/OJ> a skos:Concept ;
+    at:authority-code "OJ" ;
+    at:deprecated "false" ;
+    at:op-code "OJ" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "OJ" ;
+    dc:identifier "OJ" ;
+    skos:definition "Use context in several authority tables for filtering concepts used by the Official Journal of the European Union."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "OJ"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/OJEEP> a skos:Concept ;
+    at:authority-code "OJEEP" ;
+    at:deprecated "false" ;
+    at:op-code "OJEEP" ;
+    at:start.use "2012-12-12" ;
+    atold:op-code "OJEEP" ;
+    dc:identifier "OJEEP" ;
+    skos:definition "Use context in the File type authority table for filtering concepts used by OJEEP, the Official Journal Electronic Exchange Protocol which is a protocol used for exchange of information between the contractors and the Publications Office. The protocol is based on an XML schema and defines naming conventions and content of the packages exchanged between the systems."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "OJEEP"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/PLANPUBLI> a skos:Concept ;
+    at:authority-code "PLANPUBLI" ;
+    at:deprecated "false" ;
+    at:op-code "PLANPUBLI" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "PLANPUBLI" ;
+    dc:identifier "PLANPUBLI" ;
+    skos:changeNote "OJ covers also \"OJEEP\", this concept has been deleted, 21/01/2015"@en ;
+    skos:definition "Use context in the Multilingual authority table for filtering concepts used by PlanPubli, the workflow application of general publications at the Publications Office."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "PlanPubli"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/PUB> a skos:Concept ;
+    at:authority-code "PUB" ;
+    at:deprecated "false" ;
+    at:op-code "PUB" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "PUB" ;
+    dc:identifier "PUB" ;
+    skos:definition "Use context in several authority tables for filtering concepts used by Publications domain in ATTO (Atelier des Tables de Traductions de l’Office des publications)."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "PUB"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/PUB_CORP> a skos:Concept ;
+    at:authority-code "PUB_CORP" ;
+    at:deprecated "false" ;
+    at:op-code "PUB_CORP" ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "PUB_CORP" ;
+    dc:identifier "PUB_CORP" ;
+    skos:definition "Use context in the Corporate body authority table for filtering concepts used by PUB_CORP table of Publications domain in ATTO (Atelier des Tables de Traductions de l’Office des publications)."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "PUB_CORP"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/SIGN_LANGUAGE> a skos:Concept ;
+    at:authority-code "SIGN_LANGUAGE" ;
+    at:deprecated "false" ;
+    at:op-code "SIGN_LANGUAGE" ;
+    at:start.use "2020-06-24" ;
+    atold:op-code "SIGN_LANGUAGE" ;
+    dc:identifier "SIGN_LANGUAGE" ;
+    skos:definition "Use context in the Language authority table for identifying sign languages."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "Sign language"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/TED> a skos:Concept ;
+    at:authority-code "TED" ;
+    at:deprecated "false" ;
+    at:op-code "TED" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "TED" ;
+    dc:identifier "TED" ;
+    skos:changeNote "PUB covers also \"PUB_CORP\", this concept has been deleted, 21/01/2015"@en ;
+    skos:definition "Use context in several authority tables for displaying concepts on the TED (tenders electronic daily) portal search mask."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "TED"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/TED_SCHEMA> a skos:Concept ;
+    at:authority-code "TED_SCHEMA" ;
+    at:deprecated "false" ;
+    at:op-code "TED_SCHEMA" ;
+    at:start.use "2018-09-26" ;
+    atold:op-code "TED_SCHEMA" ;
+    dc:identifier "TED_SCHEMA" ;
+    skos:definition "Use context in several authority tables for identifying concepts used in TED Schema (FORM_SECTION)."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "TED Schema"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/use-context/WHOISWHO> a skos:Concept ;
+    at:authority-code "WHOISWHO" ;
+    at:deprecated "false" ;
+    at:op-code "WHOISWHO" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "WHOISWHO" ;
+    dc:identifier "WHOISWHO" ;
+    skos:changeNote "WHOISWHO covers also \"ANNINTER\"', this concept has been deleted after confirmation from Xavier Desurmont, 21/01/2015"@en ;
+    skos:definition "Use context in several authority tables for filtering concepts used in EU Whoiswho, the electronic directory of managers and services in the EU institutions, bodies and agencies."@en ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "WHOISWHO"@en ;
+    skos:topConceptOf atold:use-context .
+
+<http://publications.europa.eu/resource/authority/usecontexts/OP_DATPRO> a skos:Concept ;
+    at:authority-code "OP_DATPRO" ;
+    at:deprecated "false" ;
+    at:op-code "OP_DATPRO" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "OP_DATPRO" ;
+    dc:identifier "OP_DATPRO" ;
+    skos:inScheme atold:use-context ;
+    skos:prefLabel "НЕОКОНЧАТЕЛНИ ДАННИ"@bg,
+        "Předběžné údaje"@cs,
+        "Midlertidige data"@da,
+        "Vorläufige Daten"@de,
+        "Προσωρινά δεδομένα"@el,
+        "Provisional data"@en,
+        "Datos provisionales"@es,
+        "Esialgsed andmed"@et,
+        "Alustavat tiedot"@fi,
+        "Données provisoires"@fr,
+        "Sonraí sealadacha"@ga,
+        "Privremeni podaci"@hr,
+        "Ideiglenes adatok"@hu,
+        "Dati provvisori"@it,
+        "Laikinieji duomenys"@lt,
+        "Provizoriski dati"@lv,
+        "Dejta provviżorja"@mt,
+        "Voorlopige gegevens"@nl,
+        "Dane tymczasowe"@pl,
+        "Dados provisórios"@pt,
+        "Date provizorii"@ro,
+        "Predbežné údaje"@sk,
+        "Začasni podatki"@sl,
+        "Tillfälliga uppgifter"@sv ;
+    skos:topConceptOf atold:use-context .
+
+atold:use-context a skos:ConceptScheme ;
+    rdfs:label "Use context"@en ;
+    at:prefLabel "Use context"@en ;
+    at:table.id "use-context" ;
+    at:table.version.number "20210929-0" ;
+    owl:versionInfo "20210929-0" ;
+    skos:prefLabel "Use context"@en .

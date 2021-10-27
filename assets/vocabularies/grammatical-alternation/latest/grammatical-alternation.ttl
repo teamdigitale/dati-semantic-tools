@@ -1,0 +1,66 @@
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://publications.europa.eu/resource/authority/grammatical-alternation/C> a skos:Concept ;
+    at:authority-code "C" ;
+    at:deprecated "false" ;
+    at:op-code "C" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "C" ;
+    dc:identifier "C" ;
+    skos:inScheme atold:grammatical-alternation ;
+    skos:prefLabel "Consonant"@en,
+        "Consonne"@fr .
+
+<http://publications.europa.eu/resource/authority/grammatical-alternation/OP_DATPRO> a skos:Concept ;
+    at:op-code "OP_DATPRO" ;
+    atold:op-code "OP_DATPRO" ;
+    dc:identifier "OP_DATPRO" ;
+    skos:inScheme atold:grammatical-alternation ;
+    skos:prefLabel "НЕОКОНЧАТЕЛНИ ДАННИ"@bg,
+        "Předběžné údaje"@cs,
+        "Midlertidige data"@da,
+        "Vorläufige Daten"@de,
+        "Προσωρινά δεδομένα"@el,
+        "Provisional data"@en,
+        "Datos provisionales"@es,
+        "Esialgsed andmed"@et,
+        "Alustavat tiedot"@fi,
+        "Données provisoires"@fr,
+        "Sonraí sealadacha"@ga,
+        "Privremeni podaci"@hr,
+        "Ideiglenes adatok"@hu,
+        "Dati provvisori"@it,
+        "Laikinieji duomenys"@lt,
+        "Provizoriski dati"@lv,
+        "Dejta provviżorja"@mt,
+        "Voorlopige gegevens"@nl,
+        "Dane tymczasowe"@pl,
+        "Dados provisórios"@pt,
+        "Date provizorii"@ro,
+        "Predbežné údaje"@sk,
+        "Začasni podatki"@sl,
+        "Tillfälliga uppgifter"@sv .
+
+<http://publications.europa.eu/resource/authority/grammatical-alternation/V> a skos:Concept ;
+    at:authority-code "V" ;
+    at:deprecated "false" ;
+    at:op-code "V" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "V" ;
+    dc:identifier "V" ;
+    skos:inScheme atold:grammatical-alternation ;
+    skos:prefLabel "Vowel"@en,
+        "Voyelle"@fr .
+
+atold:grammatical-alternation a skos:ConceptScheme ;
+    rdfs:label "Grammatical alternation"@en ;
+    at:prefLabel "Grammatical alternation"@en ;
+    at:table.id "grammatical-alternation" ;
+    at:table.version.number "20180620-0" ;
+    owl:versionInfo "20180620-0" ;
+    skos:prefLabel "Grammatical alternation"@en .

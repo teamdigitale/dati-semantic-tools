@@ -1,0 +1,66 @@
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://publications.europa.eu/resource/authority/grammatical-consciousness/H> a skos:Concept ;
+    at:authority-code "H" ;
+    at:deprecated "false" ;
+    at:op-code "H" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "H" ;
+    dc:identifier "H" ;
+    skos:inScheme atold:grammatical-consciousness ;
+    skos:prefLabel "Human being"@en,
+        "Être humain"@fr .
+
+<http://publications.europa.eu/resource/authority/grammatical-consciousness/OP_DATPRO> a skos:Concept ;
+    at:op-code "OP_DATPRO" ;
+    atold:op-code "OP_DATPRO" ;
+    dc:identifier "OP_DATPRO" ;
+    skos:inScheme atold:grammatical-consciousness ;
+    skos:prefLabel "НЕОКОНЧАТЕЛНИ ДАННИ"@bg,
+        "Předběžné údaje"@cs,
+        "Midlertidige data"@da,
+        "Vorläufige Daten"@de,
+        "Προσωρινά δεδομένα"@el,
+        "Provisional data"@en,
+        "Datos provisionales"@es,
+        "Esialgsed andmed"@et,
+        "Alustavat tiedot"@fi,
+        "Données provisoires"@fr,
+        "Sonraí sealadacha"@ga,
+        "Privremeni podaci"@hr,
+        "Ideiglenes adatok"@hu,
+        "Dati provvisori"@it,
+        "Laikinieji duomenys"@lt,
+        "Provizoriski dati"@lv,
+        "Dejta provviżorja"@mt,
+        "Voorlopige gegevens"@nl,
+        "Dane tymczasowe"@pl,
+        "Dados provisórios"@pt,
+        "Date provizorii"@ro,
+        "Predbežné údaje"@sk,
+        "Začasni podatki"@sl,
+        "Tillfälliga uppgifter"@sv .
+
+<http://publications.europa.eu/resource/authority/grammatical-consciousness/T> a skos:Concept ;
+    at:authority-code "T" ;
+    at:deprecated "false" ;
+    at:op-code "T" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "T" ;
+    dc:identifier "T" ;
+    skos:inScheme atold:grammatical-consciousness ;
+    skos:prefLabel "Thing and animal"@en,
+        "Chose et animale"@fr .
+
+atold:grammatical-consciousness a skos:ConceptScheme ;
+    rdfs:label "Grammatical consciousness"@en ;
+    at:prefLabel "Grammatical consciousness"@en ;
+    at:table.id "grammatical-consciousness" ;
+    at:table.version.number "20160831-0" ;
+    owl:versionInfo "20160831-0" ;
+    skos:prefLabel "Grammatical consciousness"@en .

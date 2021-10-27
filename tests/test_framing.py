@@ -1,15 +1,19 @@
+import json
+import logging
 import os
 from pathlib import Path
 
 import pandas as pd
 import pytest
+from pyld import jsonld
+from rdflib.graph import Graph
 
 from playground.framing import (
     frame_components,
     frame_vocabulary,
     frame_vocabulary_to_csv,
 )
-from playground.utils import yaml_load
+from playground.utils import MIME_JSONLD, MIME_TURTLE, yaml_load
 
 BASEPATH = Path(__file__).absolute().parent.parent
 
@@ -54,7 +58,7 @@ def walk_path(base: Path, pattern: str):
 
 
 @pytest.mark.parametrize(
-    "fpath", walk_path(BASEPATH / "assets" / "vocabularies", "*.ttl")
+    "fpath", walk_path(BASEPATH / "assets" / "vocabularies", "*/latest/curr*.ttl")
 )
 def test_frame_vocabulary_all(fpath):
     contexts = fpath.parent.glob("context-*.ld.yaml")
@@ -77,3 +81,23 @@ def test_context_ns():
     context = yaml_load(cpath)
     namespaces, fields, index, metadata_context = frame_components(context)
     assert index
+
+
+log = logging.getLogger(__name__)
+
+
+@pytest.mark.skip(msg="To be done")
+def test_frame_big():
+    fpath = (
+        BASEPATH / "tests" / "data" / "class-sum-leg" / "latest" / "class-sum-leg.ttl"
+    )
+    context = yaml_load(fpath.parent / "context-short.ld.yaml")
+    g = Graph()
+    g.parse(fpath.as_posix(), format=MIME_TURTLE)
+    vocab_jsonld = g.serialize(format=MIME_JSONLD)
+    log.warning("Serialized to json.")
+    vocab = json.loads(vocab_jsonld)
+    log.warning("Loaded from json.")
+    data_projection = jsonld.frame(vocab, frame=context)
+    log.warning("Projected.")
+    assert data_projection

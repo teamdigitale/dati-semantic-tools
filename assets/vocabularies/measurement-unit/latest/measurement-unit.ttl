@@ -1,0 +1,1661 @@
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/2N> a skos:Concept ;
+    at:authority-code "2N" ;
+    at:deprecated "false" ;
+    at:op-code "2N" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "2N" ;
+    dc:identifier "2N" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "децибел"@bg,
+        "decibel"@cs,
+        "decibel"@da,
+        "Dezibel"@de,
+        "ντεσιμπέλ"@el,
+        "decibel"@en,
+        "decibelio"@es,
+        "detsibell"@et,
+        "desibeli"@fi,
+        "décibel"@fr,
+        "deicibeil"@ga,
+        "decibel"@hr,
+        "decibel"@hu,
+        "decibel"@it,
+        "decibelas"@lt,
+        "decibeli"@lv,
+        "decibel"@mt,
+        "decibel"@nl,
+        "decybel"@pl,
+        "decibel"@pt,
+        "decibel"@ro,
+        "decibel"@sk,
+        "decibel"@sl,
+        "decibel"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/3C> a skos:Concept ;
+    at:authority-code "3C" ;
+    at:deprecated "false" ;
+    at:op-code "3C" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "3C" ;
+    dc:identifier "3C" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "човекомесец"@bg,
+        "člověkoměsíc"@cs,
+        "mandmåned"@da,
+        "Mannmonat"@de,
+        "ανθρωπομήνας"@el,
+        "manmonth"@en,
+        "hombre-mes"@es,
+        "inimkuu"@et,
+        "henkilötyökuukausi"@fi,
+        "mois-homme"@fr,
+        "daonmhí"@ga,
+        "čovjek-mjesec"@hr,
+        "emberhónap"@hu,
+        "uomo-mese"@it,
+        "asmens darbo mė́nuo"@lt,
+        "cilvēkmēneši"@lv,
+        "xhur ta’ xogħol"@mt,
+        "manmaand"@nl,
+        "osobomiesiąc"@pl,
+        "homem-mês"@pt,
+        "luni-om"@ro,
+        "človekomesiac"@sk,
+        "človek-mesec"@sl,
+        "manmånad"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/AD> a skos:Concept ;
+    at:authority-code "AD" ;
+    at:deprecated "false" ;
+    at:op-code "AD" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "AD" ;
+    dc:identifier "AD" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "байт"@bg,
+        "bajt"@cs,
+        "byte"@da,
+        "Byte"@de,
+        "μπάιτ"@el,
+        "byte"@en,
+        "byte"@es,
+        "bait"@et,
+        "tavu"@fi,
+        "byte"@fr,
+        "beart"@ga,
+        "bajt"@hr,
+        "byte"@hu,
+        "byte"@it,
+        "baitas"@lt,
+        "baiti"@lv,
+        "byte"@mt,
+        "byte"@nl,
+        "bajt"@pl,
+        "byte"@pt,
+        "byte"@ro,
+        "bajt"@sk,
+        "bajt"@sl,
+        "byte"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/AMP> a skos:Concept ;
+    at:authority-code "AMP" ;
+    at:deprecated "false" ;
+    at:op-code "AMP" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "AMP" ;
+    dc:identifier "AMP" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "ампер"@bg,
+        "ampér"@cs,
+        "ampere"@da,
+        "Ampere"@de,
+        "αμπέρ"@el,
+        "ampere"@en,
+        "amperio"@es,
+        "amper"@et,
+        "ampeeri"@fi,
+        "ampère"@fr,
+        "aimpéar"@ga,
+        "amper"@hr,
+        "amper"@hu,
+        "ampère"@it,
+        "amperas"@lt,
+        "ampēri"@lv,
+        "ampere"@mt,
+        "ampère"@nl,
+        "amper"@pl,
+        "ampere"@pt,
+        "amper"@ro,
+        "ampér"@sk,
+        "amper"@sl,
+        "ampere"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/BAR> a skos:Concept ;
+    at:authority-code "BAR" ;
+    at:deprecated "false" ;
+    at:op-code "BAR" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "BAR" ;
+    dc:identifier "BAR" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "бар"@bg,
+        "bar"@cs,
+        "bar"@da,
+        "Bar"@de,
+        "μπαρ"@el,
+        "bar"@en,
+        "bar"@es,
+        "baar"@et,
+        "baari"@fi,
+        "bar"@fr,
+        "bar"@ga,
+        "bar"@hr,
+        "bar"@hu,
+        "bar"@it,
+        "baras"@lt,
+        "bāri"@lv,
+        "bar"@mt,
+        "bar"@nl,
+        "bar"@pl,
+        "bar"@pt,
+        "bar"@ro,
+        "bar"@sk,
+        "bar"@sl,
+        "bar"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/BIT> a skos:Concept ;
+    at:authority-code "BIT" ;
+    at:deprecated "false" ;
+    at:op-code "BIT" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "BIT" ;
+    dc:identifier "BIT" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "бит"@bg,
+        "bit"@cs,
+        "bit"@da,
+        "Bit"@de,
+        "μπιτ"@el,
+        "bit"@en,
+        "bit"@es,
+        "bitt"@et,
+        "bitti"@fi,
+        "bit"@fr,
+        "giotán"@ga,
+        "bit"@hr,
+        "bit"@hu,
+        "bit"@it,
+        "bitas"@lt,
+        "biti"@lv,
+        "bit"@mt,
+        "bit"@nl,
+        "bit"@pl,
+        "bit"@pt,
+        "bit"@ro,
+        "bit"@sk,
+        "bit"@sl,
+        "bit"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/BQL> a skos:Concept ;
+    at:authority-code "BQL" ;
+    at:deprecated "false" ;
+    at:op-code "BQL" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "BQL" ;
+    dc:identifier "BQL" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "бекерел"@bg,
+        "becquerel"@cs,
+        "becquerel"@da,
+        "Becquerel"@de,
+        "μπεκερέλ"@el,
+        "becquerel"@en,
+        "becquerel"@es,
+        "bekrell"@et,
+        "becquerel"@fi,
+        "becquerel"@fr,
+        "beicireil"@ga,
+        "bekerel"@hr,
+        "becquerel"@hu,
+        "becquerel"@it,
+        "bekerelis"@lt,
+        "bekereli"@lv,
+        "becquerel"@mt,
+        "becquerel"@nl,
+        "bekerel"@pl,
+        "becquerel"@pt,
+        "becquerel"@ro,
+        "becquerel"@sk,
+        "bekerel"@sl,
+        "becquerel"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/C34> a skos:Concept ;
+    at:authority-code "C34" ;
+    at:deprecated "false" ;
+    at:op-code "C34" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "C34" ;
+    dc:identifier "C34" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "мол"@bg,
+        "mol"@cs,
+        "mol"@da,
+        "Mol"@de,
+        "μολ"@el,
+        "mole"@en,
+        "mol"@es,
+        "mool"@et,
+        "mooli"@fi,
+        "mole"@fr,
+        "mól"@ga,
+        "mol"@hr,
+        "mól"@hu,
+        "mole"@it,
+        "molis"@lt,
+        "moli"@lv,
+        "mol"@mt,
+        "mol"@nl,
+        "mol"@pl,
+        "mole"@pt,
+        "mol"@ro,
+        "mol"@sk,
+        "mol"@sl,
+        "mol"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/C45> a skos:Concept ;
+    at:authority-code "C45" ;
+    at:deprecated "false" ;
+    at:op-code "C45" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "C45" ;
+    dc:identifier "C45" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "нанометър"@bg,
+        "nanometr"@cs,
+        "nanometer"@da,
+        "Nanometer"@de,
+        "νανόμετρο"@el,
+        "nanometre"@en,
+        "nanómetro"@es,
+        "nanomeeter"@et,
+        "nanometri"@fi,
+        "nanomètre"@fr,
+        "nanaiméadar"@ga,
+        "nanometar"@hr,
+        "nanométer"@hu,
+        "nanometro"@it,
+        "nanometras"@lt,
+        "nanometri"@lv,
+        "nanometru"@mt,
+        "nanometer"@nl,
+        "nanometr"@pl,
+        "nanometro"@pt,
+        "nanometru"@ro,
+        "nanometer"@sk,
+        "nanometer"@sl,
+        "nanometer"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/CDL> a skos:Concept ;
+    at:authority-code "CDL" ;
+    at:deprecated "false" ;
+    at:op-code "CDL" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "CDL" ;
+    dc:identifier "CDL" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "кандела"@bg,
+        "kandela"@cs,
+        "candela"@da,
+        "Candela"@de,
+        "καντέλα"@el,
+        "candela"@en,
+        "candela"@es,
+        "kandela"@et,
+        "kandela"@fi,
+        "candela"@fr,
+        "caindéile"@ga,
+        "kandela"@hr,
+        "kandela"@hu,
+        "candela"@it,
+        "kandela"@lt,
+        "kandelas"@lv,
+        "candela"@mt,
+        "candela"@nl,
+        "kandela"@pl,
+        "candela"@pt,
+        "candela"@ro,
+        "kandela"@sk,
+        "kandela"@sl,
+        "candela"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/CEL> a skos:Concept ;
+    at:authority-code "CEL" ;
+    at:deprecated "false" ;
+    at:op-code "CEL" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "CEL" ;
+    dc:identifier "CEL" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "градус по Целзий"@bg,
+        "stupeň Celsia"@cs,
+        "grad celsius"@da,
+        "Grad Celsius"@de,
+        "βαθμός Κελσίου"@el,
+        "degree Celsius"@en,
+        "grado Celsius"@es,
+        "Celsiuse kraad"@et,
+        "celsiusaste"@fi,
+        "degré Celsius"@fr,
+        "céim Celsius"@ga,
+        "Celzijev stupanj"@hr,
+        "Celsius-fok"@hu,
+        "grado centigrado"@it,
+        "Celsijaus laipsnis"@lt,
+        "Celsija grādi"@lv,
+        "grad Celsius"@mt,
+        "graad Celsius"@nl,
+        "stopień Celsjusza"@pl,
+        "graus centígrados"@pt,
+        "grad Celsius"@ro,
+        "stupeň Celzia"@sk,
+        "stopinja Celzija"@sl,
+        "grad Celsius"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/CMK> a skos:Concept ;
+    at:authority-code "CMK" ;
+    at:deprecated "false" ;
+    at:op-code "CMK" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "CMK" ;
+    dc:identifier "CMK" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "квадратен сантиметър"@bg,
+        "centimetr čtvereční"@cs,
+        "kvadratcentimeter"@da,
+        "Quadratzentimeter"@de,
+        "τετραγωνικό εκατοστό"@el,
+        "square centimetre"@en,
+        "centímetro cuadrado"@es,
+        "ruutsentimeeter"@et,
+        "neliösenttimetri"@fi,
+        "centimètre carré"@fr,
+        "ceintiméadar cearnach"@ga,
+        "kvadratni centimetar"@hr,
+        "négyzetcentiméter"@hu,
+        "centimetro quadrato"@it,
+        "kvadratinis centimetras"@lt,
+        "kvadrātcentimetri"@lv,
+        "ċentimetru kwadru"@mt,
+        "vierkante centimeter"@nl,
+        "centymetr kwadratowy"@pl,
+        "centímetro quadrado"@pt,
+        "centimetru pătrat"@ro,
+        "centimeter štvorcový"@sk,
+        "kvadratni centimeter"@sl,
+        "kvadratcentimeter"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/CMQ> a skos:Concept ;
+    at:authority-code "CMQ" ;
+    at:deprecated "false" ;
+    at:op-code "CMQ" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "CMQ" ;
+    dc:identifier "CMQ" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "кубичен сантиметър"@bg,
+        "centimetr krychlový"@cs,
+        "kubikcentimeter"@da,
+        "Kubikzentimeter"@de,
+        "κυβικό εκατοστό"@el,
+        "cubic centimetre"@en,
+        "centímetro cúbico"@es,
+        "kuupsentimeeter"@et,
+        "kuutiosenttimetri"@fi,
+        "centimètre cube"@fr,
+        "ceintiméadar ciúbach"@ga,
+        "kubični centimetar"@hr,
+        "köbcentiméter"@hu,
+        "centimetro cubo"@it,
+        "kubinis centimetras"@lt,
+        "kubikcentimetri"@lv,
+        "ċentimetru kubu"@mt,
+        "kubieke centimeter"@nl,
+        "centymetr sześcienny"@pl,
+        "centímetro cúbico"@pt,
+        "centimetru cub"@ro,
+        "centimeter kubický"@sk,
+        "kubični centimeter"@sl,
+        "kubikcentimeter"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/CMT> a skos:Concept ;
+    at:authority-code "CMT" ;
+    at:deprecated "false" ;
+    at:op-code "CMT" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "CMT" ;
+    dc:identifier "CMT" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "сантиметър"@bg,
+        "centimetr"@cs,
+        "centimeter"@da,
+        "Zentimeter"@de,
+        "εκατοστόμετρο"@el,
+        "centimetre"@en,
+        "centímetro"@es,
+        "sentimeeter"@et,
+        "senttimetri"@fi,
+        "centimètre"@fr,
+        "ceintiméadar"@ga,
+        "centimetar"@hr,
+        "centiméter"@hu,
+        "centimetro"@it,
+        "centimetras"@lt,
+        "centimetri"@lv,
+        "ċentimetru"@mt,
+        "centimeter"@nl,
+        "centymetr"@pl,
+        "centímetro"@pt,
+        "centimetru"@ro,
+        "centimeter"@sk,
+        "centimeter"@sl,
+        "centimeter"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/D30> a skos:Concept ;
+    at:authority-code "D30" ;
+    at:deprecated "false" ;
+    at:op-code "D30" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "D30" ;
+    dc:identifier "D30" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "тераджаул"@bg,
+        "terajoule"@cs,
+        "terajoule"@da,
+        "Terajoule"@de,
+        "τερατζάουλ"@el,
+        "terajoule"@en,
+        "terajulio"@es,
+        "teradžaul"@et,
+        "terajoule"@fi,
+        "térajoule"@fr,
+        "teirigiúl"@ga,
+        "teradžul"@hr,
+        "terajoule"@hu,
+        "terajoule"@it,
+        "teradžaulis"@lt,
+        "teradžouli"@lv,
+        "terajoule"@mt,
+        "terajoule"@nl,
+        "teradżul"@pl,
+        "terajoule"@pt,
+        "terajoule"@ro,
+        "terajoule"@sk,
+        "terajoule"@sl,
+        "terajoule"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/E34> a skos:Concept ;
+    at:authority-code "E34" ;
+    at:deprecated "false" ;
+    at:op-code "E34" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "E34" ;
+    dc:identifier "E34" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "гигабайт"@bg,
+        "gigabajt"@cs,
+        "gigabyte"@da,
+        "Gigabyte"@de,
+        "γιγαμπάιτ"@el,
+        "gigabyte"@en,
+        "gigabyte"@es,
+        "gigabait"@et,
+        "gigatavu"@fi,
+        "gigabyte"@fr,
+        "gigibheart"@ga,
+        "gigabajt"@hr,
+        "gigabyte"@hu,
+        "gigabyte"@it,
+        "gigabaitas"@lt,
+        "gigabaiti"@lv,
+        "gigabyte"@mt,
+        "gigabyte"@nl,
+        "gigabajt"@pl,
+        "gigabyte"@pt,
+        "gigabyte"@ro,
+        "gigabajt"@sk,
+        "gigabajt"@sl,
+        "gigabyte"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/GRM> a skos:Concept ;
+    at:authority-code "GRM" ;
+    at:deprecated "false" ;
+    at:op-code "GRM" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "GRM" ;
+    dc:identifier "GRM" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "грам"@bg,
+        "gram"@cs,
+        "gram"@da,
+        "Gramm"@de,
+        "γραμμάριο"@el,
+        "gram"@en,
+        "gramo"@es,
+        "gramm"@et,
+        "gramma"@fi,
+        "gramme"@fr,
+        "gram"@ga,
+        "gram"@hr,
+        "gramm"@hu,
+        "grammo"@it,
+        "gramas"@lt,
+        "grami"@lv,
+        "gramm"@mt,
+        "gram"@nl,
+        "gram"@pl,
+        "grama"@pt,
+        "gram"@ro,
+        "gram"@sk,
+        "gram"@sl,
+        "gram"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/GTE> a skos:Concept ;
+    at:authority-code "GTE" ;
+    at:deprecated "false" ;
+    at:op-code "GTE" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "GTE" ;
+    dc:identifier "GTE" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "брутна товароносимост"@bg,
+        "hrubá prostornost"@cs,
+        "bruttotonnage"@da,
+        "Bruttoraumzahl"@de,
+        "ολική χωρητικότητα"@el,
+        "gross tonnage"@en,
+        "arqueo bruto"@es,
+        "kogumahutavus"@et,
+        "bruttovetoisuus"@fi,
+        "jauge brute"@fr,
+        "olltonnáiste"@ga,
+        "bruto tonaža"@hr,
+        "bruttó űrtartalom"@hu,
+        "stazza lorda"@it,
+        "bendroji talpa"@lt,
+        "bruto tilpība"@lv,
+        "tunnellaġġ gross"@mt,
+        "brutotonnage"@nl,
+        "pojemność brutto"@pl,
+        "arqueação bruta"@pt,
+        "tonaj brut"@ro,
+        "hrubá tonáž"@sk,
+        "bruto tonaža"@sl,
+        "bruttodräktighet"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/GWH> a skos:Concept ;
+    at:authority-code "GWH" ;
+    at:deprecated "false" ;
+    at:op-code "GWH" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "GWH" ;
+    dc:identifier "GWH" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "гигаватчас"@bg,
+        "gigawatthodina"@cs,
+        "gigawatt-time"@da,
+        "Gigawattstunde"@de,
+        "γιγαβατώρα"@el,
+        "gigawatt-hour"@en,
+        "gigavatio-hora"@es,
+        "gigavatt-tund"@et,
+        "gigawattitunti"@fi,
+        "gigawattheure"@fr,
+        "gigeavatuair"@ga,
+        "gigavatsat"@hr,
+        "gigawattóra"@hu,
+        "gigawattora"@it,
+        "gigavatvalandė"@lt,
+        "gigavatstundas"@lv,
+        "gigawatt is-siegħa"@mt,
+        "gigawattuur"@nl,
+        "gigawatogodzina"@pl,
+        "gigawatt‑hora"@pt,
+        "gigawatt‑oră"@ro,
+        "gigawatthodina"@sk,
+        "gigavatna ura"@sl,
+        "gigawattimme"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/HAR> a skos:Concept ;
+    at:authority-code "HAR" ;
+    at:deprecated "false" ;
+    at:op-code "HAR" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "HAR" ;
+    dc:identifier "HAR" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "хектар"@bg,
+        "hektar"@cs,
+        "hektar"@da,
+        "Hektar"@de,
+        "εκτάριο"@el,
+        "hectare"@en,
+        "hectárea"@es,
+        "hektar"@et,
+        "hehtaari"@fi,
+        "hectare"@fr,
+        "heicteár"@ga,
+        "hektar"@hr,
+        "hektár"@hu,
+        "ettaro"@it,
+        "hektaras"@lt,
+        "hektāri"@lv,
+        "ettaru"@mt,
+        "hectare"@nl,
+        "hektar"@pl,
+        "hectare"@pt,
+        "hectar"@ro,
+        "hektár"@sk,
+        "hektar"@sl,
+        "hektar"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/HLT> a skos:Concept ;
+    at:authority-code "HLT" ;
+    at:deprecated "false" ;
+    at:op-code "HLT" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "HLT" ;
+    dc:identifier "HLT" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "хектолитър"@bg,
+        "hektolitr"@cs,
+        "hektoliter"@da,
+        "Hektoliter"@de,
+        "εκατόλιτρο"@el,
+        "hectolitre"@en,
+        "hectolitro"@es,
+        "hektoliiter"@et,
+        "hehtolitra"@fi,
+        "hectolitre"@fr,
+        "heictilítear"@ga,
+        "hektolitar"@hr,
+        "hektoliter"@hu,
+        "ettolitro"@it,
+        "hektolitras"@lt,
+        "hektolitri"@lv,
+        "ettolitru"@mt,
+        "hectoliter"@nl,
+        "hektolitr"@pl,
+        "hectolitro"@pt,
+        "hectolitru"@ro,
+        "hektoliter"@sk,
+        "hektoliter"@sl,
+        "hektoliter"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/HTZ> a skos:Concept ;
+    at:authority-code "HTZ" ;
+    at:deprecated "false" ;
+    at:op-code "HTZ" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "HTZ" ;
+    dc:identifier "HTZ" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "херц"@bg,
+        "hertz"@cs,
+        "hertz"@da,
+        "Hertz"@de,
+        "χερτζ"@el,
+        "hertz"@en,
+        "hertzio"@es,
+        "herts"@et,
+        "hertsi"@fi,
+        "hertz"@fr,
+        "hertz"@ga,
+        "herc"@hr,
+        "hertz"@hu,
+        "hertz"@it,
+        "hercas"@lt,
+        "herci"@lv,
+        "hertz"@mt,
+        "hertz"@nl,
+        "herc"@pl,
+        "hertz"@pt,
+        "hertz"@ro,
+        "hertz"@sk,
+        "hertz"@sl,
+        "hertz"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/HUR> a skos:Concept ;
+    at:authority-code "HUR" ;
+    at:deprecated "false" ;
+    at:op-code "HUR" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "HUR" ;
+    dc:identifier "HUR" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "час"@bg,
+        "hodina"@cs,
+        "time"@da,
+        "Stunde"@de,
+        "ώρα"@el,
+        "hour"@en,
+        "hora"@es,
+        "tund"@et,
+        "tunti"@fi,
+        "heure"@fr,
+        "uair"@ga,
+        "sat"@hr,
+        "óra"@hu,
+        "ora"@it,
+        "valanda"@lt,
+        "stundas"@lv,
+        "siegħa"@mt,
+        "uur"@nl,
+        "godzina"@pl,
+        "hora"@pt,
+        "oră"@ro,
+        "hodina"@sk,
+        "ura"@sl,
+        "timme"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/JOU> a skos:Concept ;
+    at:authority-code "JOU" ;
+    at:deprecated "false" ;
+    at:op-code "JOU" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "JOU" ;
+    dc:identifier "JOU" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "джаул"@bg,
+        "joule"@cs,
+        "joule"@da,
+        "Joule"@de,
+        "τζάουλ"@el,
+        "joule"@en,
+        "julio"@es,
+        "džaul"@et,
+        "joule"@fi,
+        "joule"@fr,
+        "giúl"@ga,
+        "džul"@hr,
+        "joule"@hu,
+        "joule"@it,
+        "džaulis"@lt,
+        "džouli"@lv,
+        "joule"@mt,
+        "joule"@nl,
+        "dżul"@pl,
+        "joule"@pt,
+        "joule"@ro,
+        "joule"@sk,
+        "joule"@sl,
+        "joule"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/KEL> a skos:Concept ;
+    at:authority-code "KEL" ;
+    at:deprecated "false" ;
+    at:op-code "KEL" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "KEL" ;
+    dc:identifier "KEL" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "градус Келвин"@bg,
+        "kelvin"@cs,
+        "kelvin"@da,
+        "Kelvin"@de,
+        "κέλβιν"@el,
+        "kelvin"@en,
+        "kelvin"@es,
+        "kelvin"@et,
+        "kelvin"@fi,
+        "kelvin"@fr,
+        "ceilvin"@ga,
+        "kelvin"@hr,
+        "kelvin"@hu,
+        "kelvin"@it,
+        "kelvinas"@lt,
+        "kelvini"@lv,
+        "kelvin"@mt,
+        "kelvin"@nl,
+        "kelwin"@pl,
+        "kelvin"@pt,
+        "kelvin"@ro,
+        "kelvin"@sk,
+        "kelvin"@sl,
+        "kelvin"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/KGM> a skos:Concept ;
+    at:authority-code "KGM" ;
+    at:deprecated "false" ;
+    at:op-code "KGM" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "KGM" ;
+    dc:identifier "KGM" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "килограм"@bg,
+        "kilogram"@cs,
+        "kilogram"@da,
+        "Kilogramm"@de,
+        "χιλιόγραμμο"@el,
+        "kilogram"@en,
+        "kilogramo"@es,
+        "kilogramm"@et,
+        "kilogramma"@fi,
+        "kilogramme"@fr,
+        "cileagram"@ga,
+        "kilogram"@hr,
+        "kilogramm"@hu,
+        "chilogrammo"@it,
+        "kilogramas"@lt,
+        "kilogrami"@lv,
+        "kilogramm"@mt,
+        "kilogram"@nl,
+        "kilogram"@pl,
+        "quilograma"@pt,
+        "kilogram"@ro,
+        "kilogram"@sk,
+        "kilogram"@sl,
+        "kilogram"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/KMH> a skos:Concept ;
+    at:authority-code "KMH" ;
+    at:deprecated "false" ;
+    at:op-code "KMH" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "KMH" ;
+    dc:identifier "KMH" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "километър в час"@bg,
+        "kilometr za hodinu"@cs,
+        "kilometer pr. time"@da,
+        "Kilometer pro Stunde"@de,
+        "χιλιόμετρο ανά ώρα"@el,
+        "kilometre per hour"@en,
+        "kilómetro por hora"@es,
+        "kilomeeter tunnis"@et,
+        "kilometri tunnissa"@fi,
+        "kilomètre par heure"@fr,
+        "ciliméadar san uair"@ga,
+        "kilometar na sat"@hr,
+        "kilométer/óra"@hu,
+        "chilometro orario"@it,
+        "kilometras per valandą"@lt,
+        "kilometri stundā"@lv,
+        "kilometru fis-siegħa"@mt,
+        "kilometer per uur"@nl,
+        "kilometr na godzinę"@pl,
+        "quilómetro por hora"@pt,
+        "kilometru pe oră"@ro,
+        "kilometer za hodinu"@sk,
+        "kilometer na uro"@sl,
+        "kilometer per timme"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/KMK> a skos:Concept ;
+    at:authority-code "KMK" ;
+    at:deprecated "false" ;
+    at:op-code "KMK" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "KMK" ;
+    dc:identifier "KMK" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "квадратен километър"@bg,
+        "kilometr čtvereční"@cs,
+        "kvadratkilometer"@da,
+        "Quadratkilometer"@de,
+        "τετραγωνικό χιλιόμετρο"@el,
+        "square kilometre"@en,
+        "kilómetro cuadrado"@es,
+        "ruutkilomeeter"@et,
+        "neliökilometri"@fi,
+        "kilomètre carré"@fr,
+        "ciliméadar cearnach"@ga,
+        "kvadratni kilometar"@hr,
+        "négyzetkilométer"@hu,
+        "chilometro quadrato"@it,
+        "kvadratinis kilometras"@lt,
+        "kvadrātkilometri"@lv,
+        "kilometru kwadru"@mt,
+        "vierkante kilometer"@nl,
+        "kilometr kwadratowy"@pl,
+        "quilómetro quadrado"@pt,
+        "kilometru pătrat"@ro,
+        "kilometer štvorcový"@sk,
+        "kvadratni kilometer"@sl,
+        "kvadratkilometer"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/KTM> a skos:Concept ;
+    at:authority-code "KTM" ;
+    at:deprecated "false" ;
+    at:op-code "KTM" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "KTM" ;
+    dc:identifier "KTM" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "километър"@bg,
+        "kilometr"@cs,
+        "kilometer"@da,
+        "Kilometer"@de,
+        "χιλιόμετρο"@el,
+        "kilometre"@en,
+        "kilómetro"@es,
+        "kilomeeter"@et,
+        "kilometri"@fi,
+        "kilomètre"@fr,
+        "ciliméadar"@ga,
+        "kilometar"@hr,
+        "kilométer"@hu,
+        "chilometro"@it,
+        "kilometras"@lt,
+        "kilometri"@lv,
+        "kilometru"@mt,
+        "kilometer"@nl,
+        "kilometr"@pl,
+        "quilómetro"@pt,
+        "kilometru"@ro,
+        "kilometer"@sk,
+        "kilometer"@sl,
+        "kilometer"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/KWH> a skos:Concept ;
+    at:authority-code "KWH" ;
+    at:deprecated "false" ;
+    at:op-code "KWH" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "KWH" ;
+    dc:identifier "KWH" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "киловатчас"@bg,
+        "kilowatthodina"@cs,
+        "kilowatt-time"@da,
+        "Kilowattstunde"@de,
+        "κιλοβατώρα"@el,
+        "kilowatt-hour"@en,
+        "kilovatio-hora"@es,
+        "kilovatt-tund"@et,
+        "kilowattitunti"@fi,
+        "kilowattheure"@fr,
+        "cileavatuair"@ga,
+        "kilovatsat"@hr,
+        "kilowattóra"@hu,
+        "chilowattora"@it,
+        "kilovatvalandė"@lt,
+        "kilovatstundas"@lv,
+        "kilowatt is-siegħa"@mt,
+        "kilowattuur"@nl,
+        "kilowatogodzina"@pl,
+        "quilowatt-hora"@pt,
+        "kilowatt-oră"@ro,
+        "kilowatthodina"@sk,
+        "kilovatna ura"@sl,
+        "kilowattimme"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/KWT> a skos:Concept ;
+    at:authority-code "KWT" ;
+    at:deprecated "false" ;
+    at:op-code "KWT" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "KWT" ;
+    dc:identifier "KWT" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "киловат"@bg,
+        "kilowatt"@cs,
+        "kilowatt"@da,
+        "Kilowatt"@de,
+        "κιλοβάτ"@el,
+        "kilowatt"@en,
+        "kilovatio"@es,
+        "kilovatt"@et,
+        "kilowatti"@fi,
+        "kilowatt"@fr,
+        "cileavata"@ga,
+        "kilovat"@hr,
+        "kilowatt"@hu,
+        "chilowatt"@it,
+        "kilovatas"@lt,
+        "kilovati"@lv,
+        "kilowatt"@mt,
+        "kilowatt"@nl,
+        "kilowat"@pl,
+        "quilowatt"@pt,
+        "kilowatt"@ro,
+        "kilowatt"@sk,
+        "kilovat"@sl,
+        "kilowatt"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/LH> a skos:Concept ;
+    at:authority-code "LH" ;
+    at:deprecated "false" ;
+    at:op-code "LH" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "LH" ;
+    dc:identifier "LH" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "работен час"@bg,
+        "pracovní hodina"@cs,
+        "arbejdstime"@da,
+        "Arbeitsstunde"@de,
+        "εργατοώρα"@el,
+        "labour hour"@en,
+        "hora de trabajo"@es,
+        "töötund"@et,
+        "työtunti"@fi,
+        "heure de travail"@fr,
+        "uair an tsaothair"@ga,
+        "radni sat"@hr,
+        "munkaóra"@hu,
+        "ora lavorativa"@it,
+        "dirbta valanda"@lt,
+        "darba stundas"@lv,
+        "sigħat ta’ xogħol"@mt,
+        "arbeidsuur"@nl,
+        "godzina pracy"@pl,
+        "hora de trabalho"@pt,
+        "oră de muncă"@ro,
+        "hodina práce"@sk,
+        "delovna ura"@sl,
+        "arbetstimme"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/LTR> a skos:Concept ;
+    at:authority-code "LTR" ;
+    at:deprecated "false" ;
+    at:op-code "LTR" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "LTR" ;
+    dc:identifier "LTR" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "литър"@bg,
+        "litr"@cs,
+        "liter"@da,
+        "Liter"@de,
+        "λίτρο"@el,
+        "litre"@en,
+        "litro"@es,
+        "liiter"@et,
+        "litra"@fi,
+        "litre"@fr,
+        "lítear"@ga,
+        "litra"@hr,
+        "liter"@hu,
+        "litro"@it,
+        "litras"@lt,
+        "litri"@lv,
+        "litru"@mt,
+        "liter"@nl,
+        "litr"@pl,
+        "litro"@pt,
+        "litru"@ro,
+        "liter"@sk,
+        "liter"@sl,
+        "liter"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/MAW> a skos:Concept ;
+    at:authority-code "MAW" ;
+    at:deprecated "false" ;
+    at:op-code "MAW" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "MAW" ;
+    dc:identifier "MAW" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "мегават"@bg,
+        "megawatt"@cs,
+        "megawatt"@da,
+        "Megawatt"@de,
+        "μεγαβάτ"@el,
+        "megawatt"@en,
+        "megavatio"@es,
+        "megavatt"@et,
+        "megawatti"@fi,
+        "mégawatt"@fr,
+        "meigeavata"@ga,
+        "megavat"@hr,
+        "megawatt"@hu,
+        "megawatt"@it,
+        "megavatas"@lt,
+        "megavati"@lv,
+        "megawatt"@mt,
+        "megawatt"@nl,
+        "megawat"@pl,
+        "megawatt"@pt,
+        "megawatt"@ro,
+        "megawatt"@sk,
+        "megavat"@sl,
+        "megawatt"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/MGM> a skos:Concept ;
+    at:authority-code "MGM" ;
+    at:deprecated "false" ;
+    at:op-code "MGM" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "MGM" ;
+    dc:identifier "MGM" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "милиграм"@bg,
+        "miligram"@cs,
+        "milligram"@da,
+        "Milligramm"@de,
+        "χιλιοστόγραμμο"@el,
+        "milligram"@en,
+        "miligramo"@es,
+        "milligramm"@et,
+        "milligramma"@fi,
+        "milligramme"@fr,
+        "milleagram"@ga,
+        "miligram"@hr,
+        "milligramm"@hu,
+        "milligrammo"@it,
+        "miligramas"@lt,
+        "miligrami"@lv,
+        "milligramm"@mt,
+        "milligram"@nl,
+        "miligram"@pl,
+        "miligrama"@pt,
+        "miligram"@ro,
+        "miligram"@sk,
+        "miligram"@sl,
+        "milligram"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/MIN> a skos:Concept ;
+    at:authority-code "MIN" ;
+    at:deprecated "false" ;
+    at:op-code "MIN" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "MIN" ;
+    dc:identifier "MIN" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "минута"@bg,
+        "minuta"@cs,
+        "minut"@da,
+        "Minute"@de,
+        "λεπτό"@el,
+        "minute"@en,
+        "minuto"@es,
+        "minut"@et,
+        "minuutti"@fi,
+        "minute"@fr,
+        "nóiméad"@ga,
+        "minuta"@hr,
+        "perc"@hu,
+        "minuto"@it,
+        "minutė"@lt,
+        "minūtes"@lv,
+        "minuta"@mt,
+        "minuut"@nl,
+        "minuta"@pl,
+        "minuto"@pt,
+        "minut"@ro,
+        "minúta"@sk,
+        "minuta"@sl,
+        "minut"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/MLT> a skos:Concept ;
+    at:authority-code "MLT" ;
+    at:deprecated "false" ;
+    at:op-code "MLT" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "MLT" ;
+    dc:identifier "MLT" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "милилитър"@bg,
+        "mililitr"@cs,
+        "milliliter"@da,
+        "Milliliter"@de,
+        "χιλιοστόλιτρο"@el,
+        "millilitre"@en,
+        "mililitro"@es,
+        "milliliiter"@et,
+        "millilitra"@fi,
+        "millilitre"@fr,
+        "millilítear"@ga,
+        "mililitar"@hr,
+        "milliliter"@hu,
+        "millilitro"@it,
+        "mililitras"@lt,
+        "mililitri"@lv,
+        "millilitru"@mt,
+        "milliliter"@nl,
+        "mililitr"@pl,
+        "mililitro"@pt,
+        "mililitru"@ro,
+        "mililiter"@sk,
+        "mililiter"@sl,
+        "milliliter"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/MMT> a skos:Concept ;
+    at:authority-code "MMT" ;
+    at:deprecated "false" ;
+    at:op-code "MMT" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "MMT" ;
+    dc:identifier "MMT" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "милиметър"@bg,
+        "milimetr"@cs,
+        "millimeter"@da,
+        "Millimeter"@de,
+        "χιλιοστόμετρο"@el,
+        "millimetre"@en,
+        "milímetro"@es,
+        "millimeeter"@et,
+        "millimetri"@fi,
+        "millimètre"@fr,
+        "milliméadar"@ga,
+        "milimetar"@hr,
+        "milliméter"@hu,
+        "millimetro"@it,
+        "milimetras"@lt,
+        "milimetri"@lv,
+        "millimetru"@mt,
+        "millimeter"@nl,
+        "milimetr"@pl,
+        "milímetro"@pt,
+        "milimetru"@ro,
+        "milimeter"@sk,
+        "milimeter"@sl,
+        "millimeter"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/MTK> a skos:Concept ;
+    at:authority-code "MTK" ;
+    at:deprecated "false" ;
+    at:op-code "MTK" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "MTK" ;
+    dc:identifier "MTK" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "квадратен метър"@bg,
+        "metr čtvereční"@cs,
+        "kvadratmeter"@da,
+        "Quadratmeter"@de,
+        "τετραγωνικό μέτρο"@el,
+        "square metre"@en,
+        "metro cuadrado"@es,
+        "ruutmeeter"@et,
+        "neliömetri"@fi,
+        "mètre carré"@fr,
+        "méadar cearnach"@ga,
+        "kvadratni metar"@hr,
+        "négyzetméter"@hu,
+        "metro quadrato"@it,
+        "kvadratinis metras"@lt,
+        "kvadrātmetri"@lv,
+        "metru kwadru"@mt,
+        "vierkante meter"@nl,
+        "metr kwadratowy"@pl,
+        "metro quadrado"@pt,
+        "metru pătrat"@ro,
+        "meter štvorcový"@sk,
+        "kvadratni meter"@sl,
+        "kvadratmeter"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/MTR> a skos:Concept ;
+    at:authority-code "MTR" ;
+    at:deprecated "false" ;
+    at:op-code "MTR" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "MTR" ;
+    dc:identifier "MTR" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "метър"@bg,
+        "metr"@cs,
+        "meter"@da,
+        "Meter"@de,
+        "μέτρο"@el,
+        "metre"@en,
+        "metro"@es,
+        "meeter"@et,
+        "metri"@fi,
+        "mètre"@fr,
+        "méadar"@ga,
+        "metar"@hr,
+        "méter"@hu,
+        "metro"@it,
+        "metras"@lt,
+        "metri"@lv,
+        "metru"@mt,
+        "meter"@nl,
+        "metr"@pl,
+        "metro"@pt,
+        "metru"@ro,
+        "meter"@sk,
+        "meter"@sl,
+        "meter"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/MTS> a skos:Concept ;
+    at:authority-code "MTS" ;
+    at:deprecated "false" ;
+    at:op-code "MTS" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "MTS" ;
+    dc:identifier "MTS" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "метър в секунда"@bg,
+        "metr za sekundu"@cs,
+        "meter pr. sekund"@da,
+        "Meter pro Sekunde"@de,
+        "μέτρο ανά δευτερόλεπτο"@el,
+        "metre per second"@en,
+        "metro por segundo"@es,
+        "meeter sekundis"@et,
+        "metri sekunnissa"@fi,
+        "mètre par seconde"@fr,
+        "méadar sa soicind"@ga,
+        "metar u sekundi"@hr,
+        "méter/szekundum"@hu,
+        "metro al secondo"@it,
+        "metras per sekundę"@lt,
+        "metri sekundē"@lv,
+        "metru fis-sekonda"@mt,
+        "meter per seconde"@nl,
+        "metr na sekundę"@pl,
+        "metro por segundo"@pt,
+        "metru pe secundă"@ro,
+        "meter za sekundu"@sk,
+        "meter na sekundo"@sl,
+        "meter per sekund"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/NEW> a skos:Concept ;
+    at:authority-code "NEW" ;
+    at:deprecated "false" ;
+    at:op-code "NEW" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "NEW" ;
+    dc:identifier "NEW" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "нютон"@bg,
+        "newton"@cs,
+        "newton"@da,
+        "Newton"@de,
+        "νιούτον"@el,
+        "newton"@en,
+        "newton"@es,
+        "njuuton"@et,
+        "newton"@fi,
+        "newton"@fr,
+        "niútan"@ga,
+        "njutn"@hr,
+        "newton"@hu,
+        "newton"@it,
+        "niutonas"@lt,
+        "ņūtoni"@lv,
+        "newton"@mt,
+        "newton"@nl,
+        "niuton"@pl,
+        "newton"@pt,
+        "newton"@ro,
+        "newton"@sk,
+        "newton"@sl,
+        "newton"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/OP_DATPRO> a skos:Concept ;
+    at:op-code "OP_DATPRO" ;
+    atold:op-code "OP_DATPRO" ;
+    dc:identifier "OP_DATPRO" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "НЕОКОНЧАТЕЛНИ ДАННИ"@bg,
+        "Předběžné údaje"@cs,
+        "Midlertidige data"@da,
+        "Vorläufige Daten"@de,
+        "Προσωρινά δεδομένα"@el,
+        "Provisional data"@en,
+        "Datos provisionales"@es,
+        "Esialgsed andmed"@et,
+        "Alustavat tiedot"@fi,
+        "Données provisoires"@fr,
+        "Sonraí sealadacha"@ga,
+        "Privremeni podaci"@hr,
+        "Ideiglenes adatok"@hu,
+        "Dati provvisori"@it,
+        "Laikinieji duomenys"@lt,
+        "Provizoriski dati"@lv,
+        "Dejta provviżorja"@mt,
+        "Voorlopige gegevens"@nl,
+        "Dane tymczasowe"@pl,
+        "Dados provisórios"@pt,
+        "Date provizorii"@ro,
+        "Predbežné údaje"@sk,
+        "Začasni podatki"@sl,
+        "Tillfälliga uppgifter"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/PAL> a skos:Concept ;
+    at:authority-code "PAL" ;
+    at:deprecated "false" ;
+    at:op-code "PAL" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "PAL" ;
+    dc:identifier "PAL" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "паскал"@bg,
+        "pascal"@cs,
+        "Pascal"@da,
+        "Pascal"@de,
+        "πασκάλ"@el,
+        "pascal"@en,
+        "pascal"@es,
+        "paskal"@et,
+        "pascal"@fi,
+        "pascal"@fr,
+        "pascal"@ga,
+        "paskal"@hr,
+        "pascal"@hu,
+        "pascal"@it,
+        "paskalis"@lt,
+        "paskāli"@lv,
+        "pascal"@mt,
+        "pascal"@nl,
+        "paskal"@pl,
+        "pascal"@pt,
+        "pascal"@ro,
+        "pascal"@sk,
+        "pascal"@sl,
+        "pascal"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/SEC> a skos:Concept ;
+    at:authority-code "SEC" ;
+    at:deprecated "false" ;
+    at:op-code "SEC" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "SEC" ;
+    dc:identifier "SEC" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "секунда"@bg,
+        "sekunda"@cs,
+        "sekund"@da,
+        "Sekunde"@de,
+        "δευτερόλεπτο"@el,
+        "second"@en,
+        "segundo"@es,
+        "sekund"@et,
+        "sekunti"@fi,
+        "seconde"@fr,
+        "soicind"@ga,
+        "sekunda"@hr,
+        "másodperc"@hu,
+        "secondo"@it,
+        "sekundė"@lt,
+        "sekundes"@lv,
+        "sekonda"@mt,
+        "seconde"@nl,
+        "sekunda"@pl,
+        "segundo"@pt,
+        "secundă"@ro,
+        "sekunda"@sk,
+        "sekunda"@sl,
+        "sekund"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/TKM> a skos:Concept ;
+    at:authority-code "TKM" ;
+    at:deprecated "false" ;
+    at:op-code "TKM" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "TKM" ;
+    dc:identifier "TKM" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "тон-километър"@bg,
+        "tunokilometr"@cs,
+        "tonkilometer"@da,
+        "Tonnenkilometer"@de,
+        "τoνοχιλιόμετρο"@el,
+        "tonne-kilometre"@en,
+        "tonelada-kilómetro"@es,
+        "tonnkilomeeter"@et,
+        "tonnikilometri"@fi,
+        "tonne-kilomètre"@fr,
+        "tona-chiliméadar"@ga,
+        "tonski kilometar"@hr,
+        "tonnakilométer"@hu,
+        "tonnellata-chilometro"@it,
+        "tonkilometris"@lt,
+        "tonnkilometri"@lv,
+        "tunnellata-kilometru"@mt,
+        "tonkilometer"@nl,
+        "tonokilometr"@pl,
+        "tonelada-quilómetro"@pt,
+        "tonă-kilometru"@ro,
+        "tonokilometer"@sk,
+        "tonski kilometer"@sl,
+        "tonkilometer"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/TNE> a skos:Concept ;
+    at:authority-code "TNE" ;
+    at:deprecated "false" ;
+    at:op-code "TNE" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "TNE" ;
+    dc:identifier "TNE" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "тон"@bg,
+        "tuna"@cs,
+        "ton"@da,
+        "Tonne"@de,
+        "τόνος"@el,
+        "tonne"@en,
+        "tonelada"@es,
+        "tonn"@et,
+        "tonni"@fi,
+        "tonne"@fr,
+        "tona"@ga,
+        "tona"@hr,
+        "tonna"@hu,
+        "tonnellata"@it,
+        "tona"@lt,
+        "tonnas"@lv,
+        "tunnellata metrika"@mt,
+        "ton"@nl,
+        "tona"@pl,
+        "tonelada"@pt,
+        "tonă"@ro,
+        "tona"@sk,
+        "tona"@sl,
+        "ton"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/TOE> a skos:Concept ;
+    at:authority-code "TOE" ;
+    at:deprecated "false" ;
+    at:op-code "TOE" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "TOE" ;
+    dc:identifier "TOE" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "тон нефтен еквивалент"@bg,
+        "tuna ropného ekvivalentu"@cs,
+        "ton mineralolieækvivalent"@da,
+        "Tonne Rohöleinheiten"@de,
+        "τόνος ισοδύναμου πετρελαίου"@el,
+        "tonne of oil equivalent"@en,
+        "tonelada equivalente de petróleo"@es,
+        "naftaekvivalenttonn"@et,
+        "öljyekvivalenttitonni"@fi,
+        "tonne d’équivalent pétrole"@fr,
+        "coibhéis tona ola"@ga,
+        "ekvivalent tone nafte"@hr,
+        "tonnában számított olajegyenérték"@hu,
+        "tonnellata equivalente petrolio"@it,
+        "tona naftos ekvivalento"@lt,
+        "naftas ekvivalenta tonnas"@lv,
+        "tunnellata tal-ekwivalenti taż-żejt"@mt,
+        "eenheid ton olie-equivalent"@nl,
+        "tona oleju ekwiwalentnego"@pl,
+        "tonelada de equivalente de petróleo"@pt,
+        "tonă echivalent petrol"@ro,
+        "tona ropného ekvivalentu"@sk,
+        "tona ekvivalenta nafte"@sl,
+        "ton oljeekvivalenter"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/VLT> a skos:Concept ;
+    at:authority-code "VLT" ;
+    at:deprecated "false" ;
+    at:op-code "VLT" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "VLT" ;
+    dc:identifier "VLT" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "волт"@bg,
+        "volt"@cs,
+        "volt"@da,
+        "Volt"@de,
+        "βολτ"@el,
+        "volt"@en,
+        "voltio"@es,
+        "volt"@et,
+        "voltti"@fi,
+        "volt"@fr,
+        "volta"@ga,
+        "volt"@hr,
+        "volt"@hu,
+        "volt"@it,
+        "voltas"@lt,
+        "volti"@lv,
+        "volt"@mt,
+        "volt"@nl,
+        "wolt"@pl,
+        "volt"@pt,
+        "volt"@ro,
+        "volt"@sk,
+        "volt"@sl,
+        "volt"@sv .
+
+<http://publications.europa.eu/resource/authority/measurement-unit/WTT> a skos:Concept ;
+    at:authority-code "WTT" ;
+    at:deprecated "false" ;
+    at:op-code "WTT" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "WTT" ;
+    dc:identifier "WTT" ;
+    skos:inScheme atold:measurement-unit ;
+    skos:prefLabel "ват"@bg,
+        "watt"@cs,
+        "watt"@da,
+        "Watt"@de,
+        "βατ"@el,
+        "watt"@en,
+        "vatio"@es,
+        "vatt"@et,
+        "watti"@fi,
+        "watt"@fr,
+        "vata"@ga,
+        "vat"@hr,
+        "watt"@hu,
+        "watt"@it,
+        "vatas"@lt,
+        "vati"@lv,
+        "watt"@mt,
+        "watt"@nl,
+        "wat"@pl,
+        "watt"@pt,
+        "watt"@ro,
+        "watt"@sk,
+        "vat"@sl,
+        "watt"@sv .
+
+atold:measurement-unit a skos:ConceptScheme ;
+    rdfs:label "Measurement unit"@en ;
+    at:prefLabel "Measurement unit"@en ;
+    at:table.id "measurement-unit" ;
+    at:table.version.number "20201216-0" ;
+    owl:versionInfo "20201216-0" ;
+    skos:prefLabel "Measurement unit"@en .

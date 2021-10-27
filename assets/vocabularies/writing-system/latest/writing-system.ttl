@@ -1,0 +1,242 @@
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://publications.europa.eu/resource/authority/writing-system/ABJAD> a skos:Concept ;
+    at:authority-code "ABJAD" ;
+    at:deprecated "false" ;
+    at:op-code "ABJAD" ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "ABJAD" ;
+    dc:identifier "ABJAD" ;
+    skos:inScheme atold:writing-system ;
+    skos:prefLabel "Абджад"@bg,
+        "Abdžád"@cs,
+        "Abjad"@da,
+        "Abjad"@de,
+        "Αμπτζάντ"@el,
+        "Abjad"@en,
+        "Abyad"@es,
+        "Konsonantkiri"@et,
+        "Abjad"@fi,
+        "Abjad"@fr,
+        "Abjad"@ga,
+        "Abjad"@hr,
+        "Abjad"@hu,
+        "Abjad"@it,
+        "Priebalsinė"@lt,
+        "Abdžads"@lv,
+        "Abjad"@mt,
+        "Abjad"@nl,
+        "Abdżad"@pl,
+        "Consonântico"@pt,
+        "Abjad"@ro,
+        "Abdžad"@sk,
+        "Abdžad"@sl,
+        "Abjad"@sv .
+
+<http://publications.europa.eu/resource/authority/writing-system/ABUGIDA> a skos:Concept ;
+    at:authority-code "ABUGIDA" ;
+    at:deprecated "false" ;
+    at:op-code "ABUGIDA" ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "ABUGIDA" ;
+    dc:identifier "ABUGIDA" ;
+    skos:inScheme atold:writing-system ;
+    skos:prefLabel "Абугида"@bg,
+        "Abugida"@cs,
+        "Abugida"@da,
+        "Abugida"@de,
+        "Αμπουγκίντα"@el,
+        "Abugida"@en,
+        "Abugida"@es,
+        "Konsonant-vokaalne kiri"@et,
+        "Abugida"@fi,
+        "Alphasyllabaire"@fr,
+        "Abugida"@ga,
+        "Abugidsko"@hr,
+        "Abugida"@hu,
+        "Abugida"@it,
+        "Pusiau skiemeninė"@lt,
+        "Abugida"@lv,
+        "Abugida"@mt,
+        "Abugida"@nl,
+        "Abugida"@pl,
+        "Alfassilábico"@pt,
+        "Abugida"@ro,
+        "Abugida"@sk,
+        "Abugida"@sl,
+        "Abugida"@sv .
+
+<http://publications.europa.eu/resource/authority/writing-system/ALPHABETIC> a skos:Concept ;
+    at:authority-code "ALPHABETIC" ;
+    at:deprecated "false" ;
+    at:op-code "ALPHABETIC" ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "ALPHABETIC" ;
+    dc:identifier "ALPHABETIC" ;
+    skos:inScheme atold:writing-system ;
+    skos:prefLabel "Азбучна система"@bg,
+        "Abeceda"@cs,
+        "Alfabetisk"@da,
+        "Alphabetisch"@de,
+        "Αλφαβητικό"@el,
+        "Alphabetic"@en,
+        "Alfabético"@es,
+        "Häälikkiri"@et,
+        "Aakkosellinen"@fi,
+        "Alphabétique"@fr,
+        "Aibítreach"@ga,
+        "Alfabetsko"@hr,
+        "Alfabetikus"@hu,
+        "Alfabetico"@it,
+        "Abėcėlinė"@lt,
+        "Alfabētiskā"@lv,
+        "Alfabetiku"@mt,
+        "Alfabetisch"@nl,
+        "Alfabetyczne"@pl,
+        "Alfabético"@pt,
+        "Alfabetic"@ro,
+        "Alfabetické písmo"@sk,
+        "Abecedno"@sl,
+        "Alfabetiskt"@sv .
+
+<http://publications.europa.eu/resource/authority/writing-system/FEATURAL> a skos:Concept ;
+    at:authority-code "FEATURAL" ;
+    at:deprecated "false" ;
+    at:op-code "FEATURAL" ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "FEATURAL" ;
+    dc:identifier "FEATURAL" ;
+    skos:inScheme atold:writing-system ;
+    skos:prefLabel "Признакова система"@bg,
+        "Písmo reflektující fonetické rysy jazyka"@cs,
+        "Fonologisk"@da,
+        "Alphabetosyllabisch"@de,
+        "Φθογγογραφικό"@el,
+        "Featural"@en,
+        "Rasgal"@es,
+        "Foneetiliste omaduste põhine"@et,
+        "Foneettisiin ominaisuuksiin perustuva"@fi,
+        "Featural"@fr,
+        "Gnéitheach"@ga,
+        "Posebno glasovno"@hr,
+        "Megjelenítő"@hu,
+        "Distintivo"@it,
+        "Fonetinė"@lt,
+        "Fonēmiskā"@lv,
+        "Distintiv"@mt,
+        "Featural"@nl,
+        "Funkcyjne"@pl,
+        "Trácico"@pt,
+        "Subfonologic"@ro,
+        "Fonetický prepis"@sk,
+        "Posebno fonetsko"@sl,
+        "Fonematiskt"@sv .
+
+<http://publications.europa.eu/resource/authority/writing-system/LOGOGRAPHIC> a skos:Concept ;
+    at:authority-code "LOGOGRAPHIC" ;
+    at:deprecated "false" ;
+    at:op-code "LOGOGRAPHIC" ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "LOGOGRAPHIC" ;
+    dc:identifier "LOGOGRAPHIC" ;
+    skos:inScheme atold:writing-system ;
+    skos:prefLabel "Логографическа система"@bg,
+        "Logogram"@cs,
+        "Logografisk"@da,
+        "Logografisch"@de,
+        "Λογογραφικό"@el,
+        "Logographic"@en,
+        "Logográfico"@es,
+        "Logograafiline kiri"@et,
+        "Logografinen"@fi,
+        "Logographique"@fr,
+        "Logagrafach"@ga,
+        "Logografsko"@hr,
+        "Logografikus"@hu,
+        "Logografico"@it,
+        "Logografinė"@lt,
+        "Logogrāfiskā"@lv,
+        "Logografiku"@mt,
+        "Logografisch"@nl,
+        "Logograficzne"@pl,
+        "Logográfico"@pt,
+        "Logografic"@ro,
+        "Logografické písmo"@sk,
+        "Logografsko"@sl,
+        "Logografiskt"@sv .
+
+<http://publications.europa.eu/resource/authority/writing-system/OP_DATPRO> a skos:Concept ;
+    at:op-code "OP_DATPRO" ;
+    atold:op-code "OP_DATPRO" ;
+    dc:identifier "OP_DATPRO" ;
+    skos:inScheme atold:writing-system ;
+    skos:prefLabel "НЕОКОНЧАТЕЛНИ ДАННИ"@bg,
+        "Předběžné údaje"@cs,
+        "Midlertidige data"@da,
+        "Vorläufige Daten"@de,
+        "Προσωρινά δεδομένα"@el,
+        "Provisional data"@en,
+        "Datos provisionales"@es,
+        "Esialgsed andmed"@et,
+        "Alustavat tiedot"@fi,
+        "Données provisoires"@fr,
+        "Sonraí sealadacha"@ga,
+        "Privremeni podaci"@hr,
+        "Ideiglenes adatok"@hu,
+        "Dati provvisori"@it,
+        "Laikinieji duomenys"@lt,
+        "Provizoriski dati"@lv,
+        "Dejta provviżorja"@mt,
+        "Voorlopige gegevens"@nl,
+        "Dane tymczasowe"@pl,
+        "Dados provisórios"@pt,
+        "Date provizorii"@ro,
+        "Predbežné údaje"@sk,
+        "Začasni podatki"@sl,
+        "Tillfälliga uppgifter"@sv .
+
+<http://publications.europa.eu/resource/authority/writing-system/SYLLABIC> a skos:Concept ;
+    at:authority-code "SYLLABIC" ;
+    at:deprecated "false" ;
+    at:op-code "SYLLABIC" ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "SYLLABIC" ;
+    dc:identifier "SYLLABIC" ;
+    skos:inScheme atold:writing-system ;
+    skos:prefLabel "Сричкова система"@bg,
+        "Slabičné písmo"@cs,
+        "Syllabisk"@da,
+        "Syllabisch"@de,
+        "Συλλαβικό"@el,
+        "Syllabic"@en,
+        "Silábico"@es,
+        "Silpkiri"@et,
+        "Syllabinen"@fi,
+        "Syllabique"@fr,
+        "Siollach"@ga,
+        "Slogovno"@hr,
+        "Szillabikus"@hu,
+        "Sillabico"@it,
+        "Skiemeninė"@lt,
+        "Zilbju"@lv,
+        "Sillabiku"@mt,
+        "Syllabisch"@nl,
+        "Sylabariusz"@pl,
+        "Silábico"@pt,
+        "Silabic"@ro,
+        "Slabičné písmo"@sk,
+        "Zlogovno"@sl,
+        "Stavelseskrift"@sv .
+
+atold:writing-system a skos:ConceptScheme ;
+    rdfs:label "Writing system"@en ;
+    at:prefLabel "Writing system"@en ;
+    at:table.id "writing-system" ;
+    at:table.version.number "20200923-0" ;
+    owl:versionInfo "20200923-0" ;
+    skos:prefLabel "Writing system"@en .

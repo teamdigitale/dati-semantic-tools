@@ -1,0 +1,100 @@
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://publications.europa.eu/resource/authority/access-right/CONFIDENTIAL> a skos:Concept ;
+    at:authority-code "CONFIDENTIAL" ;
+    at:deprecated "false" ;
+    at:op-code "CONFIDENTIAL" ;
+    at:start.use "2021-03-17" ;
+    atold:op-code "CONFIDENTIAL" ;
+    dc:identifier "CONFIDENTIAL" ;
+    skos:inScheme atold:access-right ;
+    skos:prefLabel "confidential"@en,
+        "Konfidentsiaalne"@et .
+
+<http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC> a skos:Concept ;
+    at:authority-code "NON_PUBLIC" ;
+    at:deprecated "false" ;
+    at:op-code "NON_PUBLIC" ;
+    at:start.use "2013-01-01" ;
+    atold:op-code "NON_PUBLIC" ;
+    dc:identifier "NON_PUBLIC" ;
+    skos:inScheme atold:access-right ;
+    skos:prefLabel "non-public"@en,
+        "Mitteavalik"@et .
+
+<http://publications.europa.eu/resource/authority/access-right/OP_DATPRO> a skos:Concept ;
+    at:op-code "OP_DATPRO" ;
+    atold:op-code "OP_DATPRO" ;
+    dc:identifier "OP_DATPRO" ;
+    skos:inScheme atold:access-right ;
+    skos:prefLabel "НЕОКОНЧАТЕЛНИ ДАННИ"@bg,
+        "Předběžné údaje"@cs,
+        "Midlertidige data"@da,
+        "Vorläufige Daten"@de,
+        "Προσωρινά δεδομένα"@el,
+        "Provisional data"@en,
+        "Datos provisionales"@es,
+        "Esialgsed andmed"@et,
+        "Alustavat tiedot"@fi,
+        "Données provisoires"@fr,
+        "Sonraí sealadacha"@ga,
+        "Privremeni podaci"@hr,
+        "Ideiglenes adatok"@hu,
+        "Dati provvisori"@it,
+        "Laikinieji duomenys"@lt,
+        "Provizoriski dati"@lv,
+        "Dejta provviżorja"@mt,
+        "Voorlopige gegevens"@nl,
+        "Dane tymczasowe"@pl,
+        "Dados provisórios"@pt,
+        "Date provizorii"@ro,
+        "Predbežné údaje"@sk,
+        "Začasni podatki"@sl,
+        "Tillfälliga uppgifter"@sv .
+
+<http://publications.europa.eu/resource/authority/access-right/PUBLIC> a skos:Concept ;
+    at:authority-code "PUBLIC" ;
+    at:deprecated "false" ;
+    at:op-code "PUBLIC" ;
+    at:start.use "2013-01-01" ;
+    atold:op-code "PUBLIC" ;
+    dc:identifier "PUBLIC" ;
+    skos:inScheme atold:access-right ;
+    skos:prefLabel "public"@en,
+        "Avalik"@et .
+
+<http://publications.europa.eu/resource/authority/access-right/RESTRICTED> a skos:Concept ;
+    at:authority-code "RESTRICTED" ;
+    at:deprecated "false" ;
+    at:op-code "RESTRICTED" ;
+    at:start.use "2013-01-01" ;
+    atold:op-code "RESTRICTED" ;
+    dc:identifier "RESTRICTED" ;
+    skos:inScheme atold:access-right ;
+    skos:prefLabel "restricted"@en,
+        "Piiratud"@et .
+
+<http://publications.europa.eu/resource/authority/access-right/SENSITIVE> a skos:Concept ;
+    at:authority-code "SENSITIVE" ;
+    at:deprecated "false" ;
+    at:op-code "SENSITIVE" ;
+    at:start.use "2020-03-18" ;
+    atold:op-code "SENSITIVE" ;
+    dc:identifier "SENSITIVE" ;
+    skos:inScheme atold:access-right ;
+    skos:prefLabel "sensitive"@en,
+        "Tundlik"@et,
+        "sensible"@fr .
+
+atold:access-right a skos:ConceptScheme ;
+    rdfs:label "Access right"@en ;
+    at:prefLabel "Access right"@en ;
+    at:table.id "access-right" ;
+    at:table.version.number "20210317-0" ;
+    owl:versionInfo "20210317-0" ;
+    skos:prefLabel "Access right"@en .

@@ -1,0 +1,1340 @@
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/OP_DATPRO> a skos:Concept ;
+    at:op-code "OP_DATPRO" ;
+    atold:op-code "OP_DATPRO" ;
+    dc:identifier "OP_DATPRO" ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "НЕОКОНЧАТЕЛНИ ДАННИ"@bg,
+        "Předběžné údaje"@cs,
+        "Midlertidige data"@da,
+        "Vorläufige Daten"@de,
+        "Προσωρινά δεδομένα"@el,
+        "Provisional data"@en,
+        "Datos provisionales"@es,
+        "Esialgsed andmed"@et,
+        "Alustavat tiedot"@fi,
+        "Données provisoires"@fr,
+        "Sonraí sealadacha"@ga,
+        "Privremeni podaci"@hr,
+        "Ideiglenes adatok"@hu,
+        "Dati provvisori"@it,
+        "Laikinieji duomenys"@lt,
+        "Provizoriski dati"@lv,
+        "Dejta provviżorja"@mt,
+        "Voorlopige gegevens"@nl,
+        "Dane tymczasowe"@pl,
+        "Dados provisórios"@pt,
+        "Date provizorii"@ro,
+        "Predbežné údaje"@sk,
+        "Začasni podatki"@sl,
+        "Tillfälliga uppgifter"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/AGENCY_CFSP> a skos:Concept ;
+    at:authority-code "AGENCY_CFSP" ;
+    at:deprecated "false" ;
+    at:op-code "AGENCY_CFSP" ;
+    at:start.use "2002-01-01" ;
+    atold:op-code "AGENCY_CFSP" ;
+    dc:identifier "AGENCY_CFSP" ;
+    skos:altLabel "Common foreign and security policy agencies"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/AGENCY_DEC> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Агенции на общата външна политика и политика на сигурност"@bg,
+        "Agentura společné zahraniční a bezpečnostní politiky"@cs,
+        "Agentur af den fælles udenrigs- og sikkerhedspolitik"@da,
+        "Agentur der Gemeinsamen Außen- und Sicherheitspolitik"@de,
+        "Οργανισμός της κοινής εξωτερικής πολιτικής και πολιτικής ασφάλειας"@el,
+        "Common foreign and security policy agency"@en,
+        "Agencia de política exterior y de seguridad común"@es,
+        "Ühise välis- ja julgeolekupoliitika amet"@et,
+        "Yhteisen ulko- ja turvallisuuspolitiikan virasto"@fi,
+        "Agence de la politique étrangère et de sécurité commune"@fr,
+        "Ghníomhaireacht an chomhbheartais eachtraigh agus slándála"@ga,
+        "Agencija za zajedničku vanjsku i sigurnosnu politiku"@hr,
+        "Közös kül- és biztonságpolitikai ügynökség"@hu,
+        "Agenzia per la politica estera e di sicurezza comune"@it,
+        "Bendra užsienio ir saugumo politika agentūra"@lt,
+        "Kopējās ārpolitikas un drošības politikas aģentūra"@lv,
+        "Aġenzija tal-politika estera u ta' sigurtà komuni"@mt,
+        "Agentschap van het gemeenschappelijk buitenlands en veiligheidsbeleid"@nl,
+        "Agencja wspólnej polityki zagranicznej i bezpieczeństwa"@pl,
+        "Agência da política externa e de segurança comum"@pt,
+        "Agenția de politică externă și de securitate comune"@ro,
+        "Agentúra spoločnej zahraničnej a bezpečnostnej politiky"@sk,
+        "Agencija za skupno zunanjo in varnostno politiko"@sl,
+        "Byrån för gemensam utrikes- och säkerhetspolitik"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/AGENCY_EURATOM> a skos:Concept ;
+    at:authority-code "AGENCY_EURATOM" ;
+    at:deprecated "false" ;
+    at:op-code "AGENCY_EURATOM" ;
+    at:start.use "1958-12-06" ;
+    atold:op-code "AGENCY_EURATOM" ;
+    dc:identifier "AGENCY_EURATOM" ;
+    skos:altLabel "Euratom agencies"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/EU_AGENCY> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Агенция към Евратом"@bg,
+        "Agentura Euratomu"@cs,
+        "Euratoms agentur"@da,
+        "Euratom-Agentur"@de,
+        "Οργανισμός της Ευρατόμ"@el,
+        "Euratom agency"@en,
+        "Agencia de Euratom"@es,
+        "Euratomi agentuur"@et,
+        "Euratomin virasto"@fi,
+        "Agence d’Euratom"@fr,
+        "Gníomhaireacht Euratom"@ga,
+        "Agencija Euratoma"@hr,
+        "Euratom-ügynökség"@hu,
+        "Agenzia dell’Euratom"@it,
+        "Euratomo agentūra"@lt,
+        "Euratom aģentūra"@lv,
+        "Aġenzija Euratom"@mt,
+        "Euratom-agentschap"@nl,
+        "Agencja Euratomu"@pl,
+        "Agência da Euratom"@pt,
+        "Agenția Euratom"@ro,
+        "Agentúra Euratomu"@sk,
+        "Agencija Euratom"@sl,
+        "Euratoms byrå"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/AGENCY_EXEC> a skos:Concept ;
+    at:authority-code "AGENCY_EXEC" ;
+    at:deprecated "false" ;
+    at:op-code "AGENCY_EXEC" ;
+    at:start.use "2014-12-17" ;
+    atold:op-code "AGENCY_EXEC" ;
+    dc:identifier "AGENCY_EXEC" ;
+    skos:altLabel "Executive agencies"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/EU_AGENCY> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Изпълнителна агенция"@bg,
+        "Výkonná agentura"@cs,
+        "Forvaltningsorgan"@da,
+        "Exekutivagentur"@de,
+        "Εκτελεστικός οργανισμός"@el,
+        "Executive agency"@en,
+        "Agencia ejecutiva"@es,
+        "Rakendusamet"@et,
+        "Toimeenpanovirasto"@fi,
+        "Agence exécutive"@fr,
+        "Gníomhaireacht feidhmiúcháin"@ga,
+        "Izvršna agencija"@hr,
+        "Végrehajtó ügynökség"@hu,
+        "Agenzia esecutiva"@it,
+        "Vykdomoji įstaiga"@lt,
+        "Izpildaģentūra"@lv,
+        "Aġenzija eżekuttiva"@mt,
+        "Uitvoerend agentschap"@nl,
+        "Agencja wykonawcza"@pl,
+        "Agência de execução"@pt,
+        "Agenție executivă"@ro,
+        "Výkonná agentúra"@sk,
+        "Izvajalska agencija"@sl,
+        "Genomförandeorgan"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/AGENCY_OTHER> a skos:Concept ;
+    at:authority-code "AGENCY_OTHER" ;
+    at:deprecated "false" ;
+    at:op-code "AGENCY_OTHER" ;
+    at:start.use "2007-01-01" ;
+    atold:op-code "AGENCY_OTHER" ;
+    dc:identifier "AGENCY_OTHER" ;
+    skos:altLabel "Other agencies"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/EU_AGENCY> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Друга агенция"@bg,
+        "Jiná agentura"@cs,
+        "Andet agentur"@da,
+        "Andere Agentur"@de,
+        "Άλλος οργανισμός"@el,
+        "Other agency"@en,
+        "Otro organismo"@es,
+        "Muu asutus"@et,
+        "Muu virasto"@fi,
+        "Autre organisme"@fr,
+        "Gníomhaireacht eile"@ga,
+        "Druga agencija"@hr,
+        "Egyéb ügynökség"@hu,
+        "Altra agenzia"@it,
+        "Kita agentūra"@lt,
+        "Cita aģentūra"@lv,
+        "Aġenzija oħra"@mt,
+        "Ander agentschap"@nl,
+        "Inna agencja"@pl,
+        "Outra agência"@pt,
+        "Altă agenție"@ro,
+        "Iná agentúra"@sk,
+        "Druga agencija"@sl,
+        "Annan byrå"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/CB_INT> a skos:Concept ;
+    at:authority-code "CB_INT" ;
+    at:deprecated "false" ;
+    at:op-code "CB_INT" ;
+    at:start.use "1900-01-01" ;
+    atold:op-code "CB_INT" ;
+    dc:identifier "CB_INT" ;
+    skos:altLabel "International organisations"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Международна организация"@bg,
+        "Mezinárodní organizace"@cs,
+        "International organisation"@da,
+        "Internationale Organisation"@de,
+        "Διεθνής οργανισμός"@el,
+        "International organisation"@en,
+        "Organización internacional"@es,
+        "Rahvusvaheline organisatsioon"@et,
+        "Kansainvälinen järjestö"@fi,
+        "Organisation internationale"@fr,
+        "Eagraíocht idirnáisiúnta"@ga,
+        "Međunarodna organizacija"@hr,
+        "Nemzetközi szervezet"@hu,
+        "Organizzazione internazionale"@it,
+        "Tarptautinė organizacija"@lt,
+        "Starptautiska organizācija"@lv,
+        "Organizzazzjoni internazzjonali"@mt,
+        "Internationale organisatie"@nl,
+        "Organizacja międzynarodowa"@pl,
+        "Organização internacional"@pt,
+        "Organizație internațională"@ro,
+        "Medzinárodná organizácia"@sk,
+        "Mednarodna organizacija"@sl,
+        "Internationell organisation"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/CB_OTHER> a skos:Concept ;
+    at:authority-code "CB_OTHER" ;
+    at:deprecated "false" ;
+    at:op-code "CB_OTHER" ;
+    at:start.use "2012-08-30" ;
+    atold:op-code "CB_OTHER" ;
+    dc:identifier "CB_OTHER" ;
+    skos:altLabel "Other organisations"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Друга организация"@bg,
+        "Jiná organizace"@cs,
+        "Anden organisation"@da,
+        "Andere Organisation"@de,
+        "Άλλος οργανισμός"@el,
+        "Other organisation"@en,
+        "Otra organización"@es,
+        "Muu organisatsioon"@et,
+        "Muu järjestö"@fi,
+        "Autre organisation"@fr,
+        "Eagraíocht eile"@ga,
+        "Druga organizacija"@hr,
+        "Egyéb szervezet"@hu,
+        "Altra organizzazione"@it,
+        "Kita organizacija"@lt,
+        "Cita organizācija"@lv,
+        "Organizzazzjoni oħra"@mt,
+        "Andere organisatie"@nl,
+        "Inna organizacja"@pl,
+        "Outra organização"@pt,
+        "Altă organizație"@ro,
+        "Iná organizácia"@sk,
+        "Druga organizacija"@sl,
+        "Annan organisation"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/CMT_MIX> a skos:Concept ;
+    at:authority-code "CMT_MIX" ;
+    at:deprecated "false" ;
+    at:op-code "CMT_MIX" ;
+    at:start.use "1957-03-25" ;
+    atold:op-code "CMT_MIX" ;
+    dc:identifier "CMT_MIX" ;
+    skos:altLabel "Joint committees"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Смесен комитет"@bg,
+        "Smíšený výbor"@cs,
+        "Det blandede udvalg"@da,
+        "Gemischter Ausschuss"@de,
+        "Μεικτή επιτροπή"@el,
+        "Joint committee"@en,
+        "Comité mixto"@es,
+        "Ühiskomitee"@et,
+        "Sekakomitea"@fi,
+        "Comité mixte"@fr,
+        "An comhchoiste"@ga,
+        "Zajednički odbor"@hr,
+        "Vegyes bizottság"@hu,
+        "Comitato misto"@it,
+        "Jungtinis komitetas"@lt,
+        "Apvienotā komiteja"@lv,
+        "Il-kumitat konġunt"@mt,
+        "Gemengd comité"@nl,
+        "Wspólny komitet"@pl,
+        "Comité misto"@pt,
+        "Comitetul mixt"@ro,
+        "Spoločný výbor"@sk,
+        "Mešani odbor"@sl,
+        "Gemensam kommitté"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/COR_COM> a skos:Concept ;
+    at:authority-code "COR_COM" ;
+    at:deprecated "false" ;
+    at:op-code "COR_COM" ;
+    at:start.use "1994-03-09" ;
+    atold:op-code "COR_COM" ;
+    dc:identifier "COR_COM" ;
+    skos:altLabel "COR commissions"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Комисия на КР"@bg,
+        "Komise VR"@cs,
+        "Underudvalg i Regionsudvalget"@da,
+        "AdR-Kommission"@de,
+        "Επιτροπή της ΕτΠ"@el,
+        "COR commission"@en,
+        "Comisión del CDR"@es,
+        "Regioonide Komitee komisjon"@et,
+        "Alueiden komitean valiokunta"@fi,
+        "Commission du CdR"@fr,
+        "Coimisiún CnR"@ga,
+        "Komisija OR-a"@hr,
+        "A Régiók Bizottságának szakbizottsága"@hu,
+        "Commissione CdR"@it,
+        "RK komisija"@lt,
+        "Reģionu komitejas komisija"@lv,
+        "Kummissjoni tal-KtR"@mt,
+        "Commissie CvdR"@nl,
+        "Komisja KR"@pl,
+        "Comissão do CR"@pt,
+        "Comisie (CoR)"@ro,
+        "Komisia VR"@sk,
+        "Komisija Odbora regij"@sl,
+        "Utskott i Regionkommittén"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/COR_DIR> a skos:Concept ;
+    at:authority-code "COR_DIR" ;
+    at:deprecated "false" ;
+    at:op-code "COR_DIR" ;
+    at:start.use "2012-01-01" ;
+    atold:op-code "COR_DIR" ;
+    dc:identifier "COR_DIR" ;
+    skos:altLabel "COR directorates"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Дирекция на КР"@bg,
+        "Ředitelství VR"@cs,
+        "Direktorat i Regionsudvalget"@da,
+        "AdR-Direktion"@de,
+        "Διεύθυνση της ΕτΠ"@el,
+        "COR directorate"@en,
+        "Dirección del CDR"@es,
+        "Regioonide Komitee direktoraat"@et,
+        "Alueiden komitean osasto"@fi,
+        "Direction du CdR"@fr,
+        "Stiúrthóireacht CnR"@ga,
+        "Uprava OR-a"@hr,
+        "A Régiók Bizottságának igazgatósága"@hu,
+        "Direzione CdR"@it,
+        "RK direktoratas"@lt,
+        "Reģionu komitejas direktorāts"@lv,
+        "Direttorat tal-KtR"@mt,
+        "Directoraat CvdR"@nl,
+        "Dyrekcja KR"@pl,
+        "Direção do CR"@pt,
+        "Direcție (CoR)"@ro,
+        "Riaditeľstvo VR"@sk,
+        "Direktorat Odbora regij"@sl,
+        "Direktorat vid Regionkommittén"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/COR_GROUP> a skos:Concept ;
+    at:authority-code "COR_GROUP" ;
+    at:deprecated "false" ;
+    at:op-code "COR_GROUP" ;
+    at:start.use "1994-03-09" ;
+    atold:op-code "COR_GROUP" ;
+    dc:identifier "COR_GROUP" ;
+    skos:altLabel "COR groups"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Група на КР"@bg,
+        "Skupina VR"@cs,
+        "Gruppe i Regionsudvalget"@da,
+        "AdR-Fachkommission"@de,
+        "Ομάδα της ΕτΠ"@el,
+        "COR group"@en,
+        "Grupo del CDR"@es,
+        "Regioonide Komitee rühm"@et,
+        "Alueiden komitean ryhmä"@fi,
+        "Groupe du CdR"@fr,
+        "Grúpa CnR"@ga,
+        "Skupina OR-a"@hr,
+        "A Régiók Bizottságának politikai csoportja"@hu,
+        "Gruppo CdR"@it,
+        "RK frakcija"@lt,
+        "Reģionu komitejas politiskā grupa"@lv,
+        "Grupp tal-KtR"@mt,
+        "Groep CvdR"@nl,
+        "Grupa KR"@pl,
+        "Grupo do CR"@pt,
+        "Grup (CoR)"@ro,
+        "Skupina VR"@sk,
+        "Skupina Odbora regij"@sl,
+        "Grupp i Regionkommittén"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/COUN_ASS> a skos:Concept ;
+    at:authority-code "COUN_ASS" ;
+    at:deprecated "false" ;
+    at:op-code "COUN_ASS" ;
+    at:start.use "1957-03-25" ;
+    atold:op-code "COUN_ASS" ;
+    dc:identifier "COUN_ASS" ;
+    skos:altLabel "Association councils"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Съвет за асоцииране"@bg,
+        "Rada přidružení"@cs,
+        "Associeringsrådet"@da,
+        "Assoziationsrat"@de,
+        "Συμβούλιο σύνδεσης"@el,
+        "Association council"@en,
+        "Consejo de asociación"@es,
+        "Assotsiatsiooninõukogu"@et,
+        "Assosiaationeuvosto"@fi,
+        "Conseil d’association"@fr,
+        "Comhairle comhlachais"@ga,
+        "Vijeće za pridruživanje"@hr,
+        "Társulási tanács"@hu,
+        "Consiglio di associazione"@it,
+        "Asociacijos taryba"@lt,
+        "Asociācijas padome"@lv,
+        "Il-kunsill ta' assoċjazzjoni"@mt,
+        "Associatieraad"@nl,
+        "Rada stowarzyszenia"@pl,
+        "Conselho de associação"@pt,
+        "Consiliul de asociere"@ro,
+        "Rada pre pridruženie"@sk,
+        "Pridružitveni svet"@sl,
+        "Associeringsråd"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/COUN_COOP> a skos:Concept ;
+    at:authority-code "COUN_COOP" ;
+    at:deprecated "false" ;
+    at:op-code "COUN_COOP" ;
+    at:start.use "1958-01-01" ;
+    atold:op-code "COUN_COOP" ;
+    dc:identifier "COUN_COOP" ;
+    skos:altLabel "Cooperation councils"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Съвет за сътрудничество"@bg,
+        "Rada pro spolupráci"@cs,
+        "Samarbejdsrådet"@da,
+        "Kooperationsrat"@de,
+        "Συμβούλιο συνεργασίας"@el,
+        "Cooperation council"@en,
+        "Consejo de cooperación"@es,
+        "Koostöönõukogu"@et,
+        "Yhteistyöneuvosto"@fi,
+        "Conseil de coopération"@fr,
+        "Comhar comhairle"@ga,
+        "Vijeće za suradnju"@hr,
+        "Együttműködési tanács"@hu,
+        "Consiglio di cooperazione"@it,
+        "Bendradarbiavimo taryba"@lt,
+        "Sadarbības padome"@lv,
+        "Il-kunsill ta' kooperazzjoni"@mt,
+        "Samenwerkingsraad"@nl,
+        "Rada współpracy"@pl,
+        "Conselho de cooperação"@pt,
+        "Consiliul de cooperare"@ro,
+        "Rada pre spoluprácu"@sk,
+        "Svet za sodelovanje"@sl,
+        "Samarbetsråd"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/COUN_STAB_ASS> a skos:Concept ;
+    at:authority-code "COUN_STAB_ASS" ;
+    at:deprecated "false" ;
+    at:op-code "COUN_STAB_ASS" ;
+    at:start.use "2009-12-01" ;
+    atold:op-code "COUN_STAB_ASS" ;
+    dc:identifier "COUN_STAB_ASS" ;
+    skos:altLabel "Stabilisation and association councils"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Съвет за стабилизиране и асоцииране"@bg,
+        "Rada stabilizace a přidružení"@cs,
+        "Stabiliserings- og associeringsråd"@da,
+        "Stabilitäts- und Assoziationsrat"@de,
+        "Συμβούλιο σταθεροποίησης και σύνδεσης"@el,
+        "Stabilisation and association council"@en,
+        "Consejo de estabilización y asociación"@es,
+        "Stabiliseerimis- ja assotsiatsiooninõukogu"@et,
+        "Vakautus- ja assosiaationeuvosto"@fi,
+        "Conseil de stabilisation et d’association"@fr,
+        "Comhairle cobhsaíochta agus comhlachais"@ga,
+        "Vijeće za stabilizaciju i pridruživanje"@hr,
+        "Stabilizációs és társulási tanács"@hu,
+        "Consiglio di stabilizzazione e di associazione"@it,
+        "Stabilizacijos ir asociacijos taryba"@lt,
+        "Stabilizācijas un asociācijas padome"@lv,
+        "Il-kunsill ta' stabbilizzazzjoni u ta' assoċjazzjoni"@mt,
+        "Stabilisatie- en associatieraad"@nl,
+        "Rada stabilizacji i stowarzyszenia"@pl,
+        "Conselho de estabilização e de associação"@pt,
+        "Consiliul de stabilizare și de asociere"@ro,
+        "Rada pre stabilizáciu a pridruženie"@sk,
+        "Stabilizacijsko-pridružitveni svet"@sl,
+        "Stabiliserings- och associeringsråd"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/DEL> a skos:Concept ;
+    at:authority-code "DEL" ;
+    at:deprecated "false" ;
+    at:op-code "DEL" ;
+    at:start.use "1960-01-01" ;
+    atold:op-code "DEL" ;
+    dc:identifier "DEL" ;
+    skos:altLabel "Delegations"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Делегация"@bg,
+        "Delegace"@cs,
+        "Delegationen"@da,
+        "Delegation"@de,
+        "Αντιπροσωπεία"@el,
+        "Delegation"@en,
+        "Delegación"@es,
+        "Delegatsioon"@et,
+        "Edustusto"@fi,
+        "Délégation"@fr,
+        "An toscaireacht"@ga,
+        "Izaslanstvo"@hr,
+        "Küldöttség"@hu,
+        "Delegazione"@it,
+        "Delegacija"@lt,
+        "Delegācija"@lv,
+        "Id-delegazzjoni"@mt,
+        "Delegatie"@nl,
+        "Delegacja"@pl,
+        "Delegação"@pt,
+        "Delegație"@ro,
+        "Delegácia"@sk,
+        "Delegacija"@sl,
+        "Delegation"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/DIR> a skos:Concept ;
+    at:authority-code "DIR" ;
+    at:deprecated "false" ;
+    at:op-code "DIR" ;
+    at:start.use "1958-01-01" ;
+    atold:op-code "DIR" ;
+    dc:identifier "DIR" ;
+    skos:altLabel "Directorates"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Дирекция"@bg,
+        "Ředitelství"@cs,
+        "Direktorat"@da,
+        "Direktion"@de,
+        "Διεύθυνση"@el,
+        "Directorate"@en,
+        "Dirección"@es,
+        "Direktoraat"@et,
+        "Osasto"@fi,
+        "Direction"@fr,
+        "Stiúrthóireacht"@ga,
+        "Uprava"@hr,
+        "Igazgatóság"@hu,
+        "Direzione"@it,
+        "Direktoratas"@lt,
+        "Direktorāts"@lv,
+        "Direttorat"@mt,
+        "Directoraat"@nl,
+        "Dyrekcja"@pl,
+        "Direção"@pt,
+        "Direcție"@ro,
+        "Riaditeľstvo"@sk,
+        "Direktorat"@sl,
+        "Direktorat"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/DIR_GEN> a skos:Concept ;
+    at:authority-code "DIR_GEN" ;
+    at:deprecated "false" ;
+    at:op-code "DIR_GEN" ;
+    at:start.use "1958-01-01" ;
+    atold:op-code "DIR_GEN" ;
+    dc:identifier "DIR_GEN" ;
+    skos:altLabel "Directorates-general"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Генерална дирекция"@bg,
+        "Generální ředitelství"@cs,
+        "Generaldirektorat"@da,
+        "Generaldirektion"@de,
+        "Γενική διεύθυνση"@el,
+        "Directorate-general"@en,
+        "Dirección general"@es,
+        "Peadirektoraat"@et,
+        "Pääosasto"@fi,
+        "Direction générale"@fr,
+        "Ard-stiúrthóireacht"@ga,
+        "Glavna uprava"@hr,
+        "Főigazgatóság"@hu,
+        "Direzione generale"@it,
+        "Generalinis direktoratas"@lt,
+        "Ģenerāldirektorāts"@lv,
+        "Direttorat ġenerali"@mt,
+        "Directoraat-generaal"@nl,
+        "Dyrekcja generalna"@pl,
+        "Direção-geral"@pt,
+        "Direcție generală"@ro,
+        "Generálne riaditeľstvo"@sk,
+        "Generalni direktorat"@sl,
+        "Generaldirektorat"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/EP_AP> a skos:Concept ;
+    at:authority-code "EP_AP" ;
+    at:deprecated "false" ;
+    at:op-code "EP_AP" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "AP" ;
+            dc:source "EP" ] ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "EP_AP" ;
+    dc:identifier "EP_AP" ;
+    skos:altLabel "Delegations to parliamentary assemblies"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/EP_DEL> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Delegation to a parliamentary assembly"@en .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/EP_CE> a skos:Concept ;
+    at:authority-code "EP_CE" ;
+    at:deprecated "false" ;
+    at:op-code "EP_CE" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "CE" ;
+            dc:source "EP" ] ;
+    at:start.use "1958-03-19" ;
+    atold:op-code "EP_CE" ;
+    dc:identifier "EP_CE" ;
+    skos:altLabel "EP committees of inquiry"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/EP_CMT> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "EP committee of inquiry"@en .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/EP_CJ> a skos:Concept ;
+    at:authority-code "EP_CJ" ;
+    at:deprecated "false" ;
+    at:op-code "EP_CJ" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "CJ" ;
+            dc:source "EP" ] ;
+    at:start.use "1958-03-19" ;
+    atold:op-code "EP_CJ" ;
+    dc:identifier "EP_CJ" ;
+    skos:altLabel "EP joint committees"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/EP_CMT> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "EP joint committee"@en .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/EP_CT> a skos:Concept ;
+    at:authority-code "EP_CT" ;
+    at:deprecated "false" ;
+    at:op-code "EP_CT" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "CT" ;
+            dc:source "EP" ] ;
+    at:start.use "1958-03-19" ;
+    atold:op-code "EP_CT" ;
+    dc:identifier "EP_CT" ;
+    skos:altLabel "EP special committees"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/EP_CMT> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "EP special committee"@en .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/EP_DE> a skos:Concept ;
+    at:authority-code "EP_DE" ;
+    at:deprecated "false" ;
+    at:op-code "EP_DE" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "DE" ;
+            dc:source "EP" ] ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "EP_DE" ;
+    dc:identifier "EP_DE" ;
+    skos:altLabel "Interparliamentary delegations"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/EP_DEL> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Interparliamentary delegation"@en .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/EP_DIR_GEN> a skos:Concept ;
+    at:authority-code "EP_DIR_GEN" ;
+    at:deprecated "false" ;
+    at:op-code "EP_DIR_GEN" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "EP_DIR_GEN" ;
+    dc:identifier "EP_DIR_GEN" ;
+    skos:altLabel "EP directorates-general"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Генерална дирекция на ЕП"@bg,
+        "Generální ředitelství Evropského parlamentu"@cs,
+        "Generaldirektorat i Europa-Parlamentet"@da,
+        "Generaldirektion des Europäischen Parlaments"@de,
+        "Γενική διεύθυνση του ΕΚ"@el,
+        "EP directorate-general"@en,
+        "Dirección general del PE"@es,
+        "Euroopa Parlamendi peadirektoraat"@et,
+        "Euroopan parlamentin pääosasto"@fi,
+        "Direction générale du PE"@fr,
+        "Ard-stiúrthóireacht PE"@ga,
+        "Glavna uprava EP-a"@hr,
+        "Európai parlamenti főigazgatóság"@hu,
+        "Direzione generale PE"@it,
+        "EP generalinis direktoratas"@lt,
+        "EP ģenerāldirektorāts"@lv,
+        "Direttorat ġenerali tal-PE"@mt,
+        "Directoraat-generaal EP"@nl,
+        "Dyrekcja generalna PE"@pl,
+        "Direção‑geral do PE"@pt,
+        "Direcție generală (PE)"@ro,
+        "Generálne riaditeľstvo EP"@sk,
+        "Generalni direktorat Evropskega parlamenta"@sl,
+        "Generaldirektorat vid Europaparlamentet"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/EP_DM> a skos:Concept ;
+    at:authority-code "EP_DM" ;
+    at:deprecated "false" ;
+    at:op-code "EP_DM" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "DM" ;
+            dc:source "EP" ] ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "EP_DM" ;
+    dc:identifier "EP_DM" ;
+    skos:altLabel "Delegations to joint committees"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/EP_DEL> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Delegation to a joint committee"@en .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/EP_GROUP> a skos:Concept ;
+    at:authority-code "EP_GROUP" ;
+    at:deprecated "false" ;
+    at:op-code "EP_GROUP" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "GP" ;
+            dc:source "EP" ] ;
+    at:start.use "1958-01-01" ;
+    atold:op-code "EP_GROUP" ;
+    dc:identifier "EP_GROUP" ;
+    skos:altLabel "EP political groups"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Политическа група на ЕП"@bg,
+        "Politická skupina Evropského parlamentu"@cs,
+        "Politisk gruppe i Europa-Parlamentet"@da,
+        "Fraktion des Europäischen Parlaments"@de,
+        "Πολιτική ομάδα του ΕΚ"@el,
+        "EP political group"@en,
+        "Grupo político del PE"@es,
+        "Euroopa Parlamendi fraktsioon"@et,
+        "Euroopan parlamentin poliittinen ryhmä"@fi,
+        "Groupe politique du PE"@fr,
+        "Grúpa polaitiúil PE"@ga,
+        "Klubovi zastupnika EP-a"@hr,
+        "Európai parlamenti képviselőcsoport"@hu,
+        "Gruppo politico PE"@it,
+        "EP frakcija"@lt,
+        "EP politiskā grupa"@lv,
+        "Grupp politiku tal-PE"@mt,
+        "Politieke fractie EP"@nl,
+        "Grupa polityczna PE"@pl,
+        "Grupo político do PE"@pt,
+        "Grupuri politice (PE)"@ro,
+        "Politická skupina EP"@sk,
+        "Politična skupina Evropskega parlamenta"@sl,
+        "Politisk grupp i Europaparlamentet"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/EP_IG> a skos:Concept ;
+    at:authority-code "EP_IG" ;
+    at:deprecated "false" ;
+    at:op-code "EP_IG" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "IG" ;
+            dc:source "EP" ] ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "EP_IG" ;
+    dc:identifier "EP_IG" ;
+    skos:altLabel "Intergroups"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Intergroup"@en .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/EP_POLBODY> a skos:Concept ;
+    at:authority-code "EP_POLBODY" ;
+    at:deprecated "false" ;
+    at:op-code "EP_POLBODY" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "POLBODY" ;
+            dc:source "EP" ] ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "EP_POLBODY" ;
+    dc:identifier "EP_POLBODY" ;
+    skos:altLabel "EP political bodies"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "EP political body"@en .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/EP_SC> a skos:Concept ;
+    at:authority-code "EP_SC" ;
+    at:deprecated "false" ;
+    at:op-code "EP_SC" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "SC" ;
+            dc:source "EP" ] ;
+    at:start.use "1958-03-19" ;
+    atold:op-code "EP_SC" ;
+    dc:identifier "EP_SC" ;
+    skos:altLabel "EP subcommittees"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/EP_CMT> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "EP subcommittee"@en .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/EU_BODY> a skos:Concept ;
+    at:authority-code "EU_BODY" ;
+    at:deprecated "false" ;
+    at:op-code "EU_BODY" ;
+    at:start.use "1951-01-01" ;
+    atold:op-code "EU_BODY" ;
+    dc:identifier "EU_BODY" ;
+    skos:altLabel "EU bodies"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Орган на ЕС"@bg,
+        "Orgán EU"@cs,
+        "EU-organ"@da,
+        "EU-Einrichtung"@de,
+        "Όργανο της ΕΕ"@el,
+        "EU body"@en,
+        "Órgano de la UE"@es,
+        "ELi asutus"@et,
+        "EU:n elin"@fi,
+        "Organe de l’UE"@fr,
+        "Comhlacht de chuid an AE"@ga,
+        "Tijelo EU-a"@hr,
+        "EU-szerv"@hu,
+        "Organo dell’UE"@it,
+        "ES organas"@lt,
+        "ES struktūra"@lv,
+        "Korp tal-UE"@mt,
+        "EU-orgaan"@nl,
+        "Organ UE"@pl,
+        "Órgão da UE"@pt,
+        "Organ al UE"@ro,
+        "Orgán EÚ"@sk,
+        "Organ EU"@sl,
+        "EU-organ"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/EU_INST> a skos:Concept ;
+    at:authority-code "EU_INST" ;
+    at:deprecated "false" ;
+    at:op-code "EU_INST" ;
+    at:start.use "1951-01-01" ;
+    atold:op-code "EU_INST" ;
+    dc:identifier "EU_INST" ;
+    skos:altLabel "EU institutions"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Институция на ЕС"@bg,
+        "Instituce EU"@cs,
+        "EU-institution"@da,
+        "EU-Institution"@de,
+        "Θεσμικό όργανο της ΕΕ"@el,
+        "EU institution"@en,
+        "Institución de la UE"@es,
+        "ELi institutsioon"@et,
+        "EU:n toimielin"@fi,
+        "Institution de l’UE"@fr,
+        "Institiúid de chuid an AE"@ga,
+        "Institucija EU-a"@hr,
+        "EU-intézmény"@hu,
+        "Istituzione dell’UE"@it,
+        "ES institucija"@lt,
+        "ES iestāde"@lv,
+        "Istituzzjoni tal-UE"@mt,
+        "EU-instelling"@nl,
+        "Instytucja UE"@pl,
+        "Instituição da UE"@pt,
+        "Instituție a UE"@ro,
+        "Inštitúcia EÚ"@sk,
+        "Institucija EU"@sl,
+        "EU-institution"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/EU_INTERINSTSERV> a skos:Concept ;
+    at:authority-code "EU_INTERINSTSERV" ;
+    at:deprecated "false" ;
+    at:op-code "EU_INTERINSTSERV" ;
+    at:start.use "1968-12-31" ;
+    atold:op-code "EU_INTERINSTSERV" ;
+    dc:identifier "EU_INTERINSTSERV" ;
+    skos:altLabel "EU interinstitutional services"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Междуинституционална служба на ЕС"@bg,
+        "Interinstitucionální služby EU"@cs,
+        "EU's interinstitutionelle tjeneste"@da,
+        "Interinstitutioneller Dienst der EU"@de,
+        "Διοργανική υπηρεσία της ΕΕ"@el,
+        "EU interinstitutional service"@en,
+        "Servicio interinstitucional de la UE"@es,
+        "ELi institutsioonidevaheline talitus"@et,
+        "EU:n toimielinten välinen"@fi,
+        "Service interinstitutionnel de l’UE"@fr,
+        "Seirbhís idirinstitiúideach AE"@ga,
+        "Međuinstitucijska služba EU-a"@hr,
+        "EU intézményközi szolgálat"@hu,
+        "Servizio interistituzionale dell’UE"@it,
+        "ES tarpinstitucinė tarnyba"@lt,
+        "ES iestāžu dienests"@lv,
+        "Servizz interistituzzjonali tal-UE"@mt,
+        "Interinstitutionele dienst van de EU"@nl,
+        "Służba międzyinstytucjonalna UE"@pl,
+        "Serviço interinstitucional da UE"@pt,
+        "Serviciu interinstituțional al UE"@ro,
+        "Medziinštitucionálna služba EÚ"@sk,
+        "Medinstitucionalna služba EU"@sl,
+        "EU:s interinstitutionella tjänster"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/EU_JU> a skos:Concept ;
+    at:authority-code "EU_JU" ;
+    at:deprecated "false" ;
+    at:op-code "EU_JU" ;
+    at:start.use "2007-02-27" ;
+    atold:op-code "EU_JU" ;
+    dc:identifier "EU_JU" ;
+    skos:altLabel "EU joint undertakings"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Съвместно предприятие на ЕС"@bg,
+        "Společný podnik EU"@cs,
+        "EU's fællesforetagende"@da,
+        "Gemeinsames Unternehmen der EU"@de,
+        "Κοινή επιχείρηση της ΕΕ"@el,
+        "EU joint undertaking"@en,
+        "Empresa común de la UE"@es,
+        "ELi ühisettevõte"@et,
+        "EU:n yhteisyritys"@fi,
+        "Entreprise commune de l’UE"@fr,
+        "Comhghnóthas an AE"@ga,
+        "Zajedničko poduzeće EU-a"@hr,
+        "EU közös vállalkozás"@hu,
+        "Impresa comune dell’UE"@it,
+        "ES bendroji įmonė"@lt,
+        "ES kopuzņēmums"@lv,
+        "Impriża konġunta tal-UE"@mt,
+        "Gemeenschappelijke onderneming van de EU"@nl,
+        "Wspólne przedsięwzięcie UE"@pl,
+        "Empresa comum da UE"@pt,
+        "Întreprinderea comună a UE"@ro,
+        "Spoločný podnik EÚ"@sk,
+        "Skupno podjetje EU"@sl,
+        "Gemensamt företag under EU"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/INF_OFF> a skos:Concept ;
+    at:authority-code "INF_OFF" ;
+    at:deprecated "false" ;
+    at:op-code "INF_OFF" ;
+    at:start.use "1958-01-01" ;
+    atold:op-code "INF_OFF" ;
+    dc:identifier "INF_OFF" ;
+    skos:altLabel "Information offices"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Информационно бюро"@bg,
+        "Informační kancelář"@cs,
+        "Informationskontoret"@da,
+        "Informationsbüro"@de,
+        "Γραφείο πληροφοριών"@el,
+        "Information office"@en,
+        "Oficina de información"@es,
+        "Infobüroo"@et,
+        "Tiedotustoimisto"@fi,
+        "Bureau d’information"@fr,
+        "An oifig eolais"@ga,
+        "Informacijski ured"@hr,
+        "Tájékoztatási iroda"@hu,
+        "Ufficio d’informazione"@it,
+        "Informacijos biuras"@lt,
+        "Informācijas birojs"@lv,
+        "L-uffiċċju tal-informazzjoni"@mt,
+        "Voorlichtingsbureau"@nl,
+        "Biuro informacyjne"@pl,
+        "Gabinete de informação"@pt,
+        "Biroul de informare"@ro,
+        "Informačná kancelária"@sk,
+        "Informacijska pisarna"@sl,
+        "Informationskontor"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/LIA_OFF> a skos:Concept ;
+    at:authority-code "LIA_OFF" ;
+    at:deprecated "false" ;
+    at:op-code "LIA_OFF" ;
+    at:start.use "2018-07-01" ;
+    atold:op-code "LIA_OFF" ;
+    dc:identifier "LIA_OFF" ;
+    skos:altLabel "Liaison offices"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Бюро за връзка"@bg,
+        "Kontaktní kancelář"@cs,
+        "Forbindelseskontor"@da,
+        "Verbindungsbüro"@de,
+        "Γραφείο συνδέσμου"@el,
+        "Liaison office"@en,
+        "Oficina de enlace"@es,
+        "Büroo"@et,
+        "Yhteystoimisto"@fi,
+        "Bureau de liaison"@fr,
+        "Oifig idirchaidrimh"@ga,
+        "Ured za vezu"@hr,
+        "Kapcsolattartó iroda"@hu,
+        "Ufficio di collegamento"@it,
+        "Ryšių biuras"@lt,
+        "Birojs"@lv,
+        "Uffiċċju ta’ kollegament"@mt,
+        "Liaisonbureau"@nl,
+        "Biuro kontaktowe"@pl,
+        "Gabinete de ligação"@pt,
+        "Biroul de legătură"@ro,
+        "Styčná kancelária"@sk,
+        "Pisarna za stike"@sl,
+        "Förbindelsekontor"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/NP> a skos:Concept ;
+    at:authority-code "NP" ;
+    at:deprecated "false" ;
+    at:op-code "NP" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "PN" ;
+            dc:source "EP" ] ;
+    at:start.use "1900-01-01" ;
+    atold:op-code "NP" ;
+    dc:identifier "NP" ;
+    skos:altLabel "National parties"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "National party"@en .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/REPRES> a skos:Concept ;
+    at:authority-code "REPRES" ;
+    at:deprecated "false" ;
+    at:op-code "REPRES" ;
+    at:start.use "1958-01-01" ;
+    atold:op-code "REPRES" ;
+    dc:identifier "REPRES" ;
+    skos:altLabel "Representations"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Представителство"@bg,
+        "Zastoupení"@cs,
+        "Repræsentationen"@da,
+        "Vertretung"@de,
+        "Αντιπροσωπεία"@el,
+        "Representation"@en,
+        "Representación"@es,
+        "Esindus"@et,
+        "Edustusto"@fi,
+        "Représentation"@fr,
+        "An ionadaíocht"@ga,
+        "Predstavništvo"@hr,
+        "Képviselet"@hu,
+        "Rappresentanza"@it,
+        "Atstovybė"@lt,
+        "Pārstāvniecība"@lv,
+        "Ir-rappreżentazzjoni"@mt,
+        "Vertegenwoordiging"@nl,
+        "Przedstawicielstwo"@pl,
+        "Representação"@pt,
+        "Reprezentanță"@ro,
+        "Zastúpenie"@sk,
+        "Predstavništvo"@sl,
+        "Representation"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/SERV_DEP> a skos:Concept ;
+    at:authority-code "SERV_DEP" ;
+    at:deprecated "false" ;
+    at:op-code "SERV_DEP" ;
+    at:start.use "1983-02-01" ;
+    atold:op-code "SERV_DEP" ;
+    dc:identifier "SERV_DEP" ;
+    skos:altLabel "Services"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:prefLabel "Служба"@bg,
+        "Služba"@cs,
+        "Tjeneste"@da,
+        "Dienst"@de,
+        "Υπηρεσία"@el,
+        "Service"@en,
+        "Servicio"@es,
+        "Talitus"@et,
+        "Palveluyksikkö"@fi,
+        "Service"@fr,
+        "An tseirbhís"@ga,
+        "Služba"@hr,
+        "Szolgálat"@hu,
+        "Servizio"@it,
+        "Tarnyba"@lt,
+        "Dienests"@lv,
+        "Servizz"@mt,
+        "Dienst"@nl,
+        "Służba"@pl,
+        "Serviço"@pt,
+        "Serviciu"@ro,
+        "Služba"@sk,
+        "Služba"@sl,
+        "Tjänsten"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/AGENCY_DEC> a skos:Concept ;
+    at:authority-code "AGENCY_DEC" ;
+    at:deprecated "false" ;
+    at:op-code "AGENCY_DEC" ;
+    at:start.use "1994-09-01" ;
+    atold:op-code "AGENCY_DEC" ;
+    dc:identifier "AGENCY_DEC" ;
+    skos:altLabel "Decentralised agencies"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/EU_AGENCY> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:narrower <http://publications.europa.eu/resource/authority/corporate-body-classification/AGENCY_CFSP> ;
+    skos:prefLabel "Децентрализирана агенция"@bg,
+        "Decentralizovaná agentura"@cs,
+        "Decentralt agentur"@da,
+        "Dezentrale Agentur"@de,
+        "Αποκεντρωμένος οργανισμός"@el,
+        "Decentralised agency"@en,
+        "Agencia descentralizada"@es,
+        "Detsentraliseeritud asutus"@et,
+        "Hajautettu virasto"@fi,
+        "Agence décentralisée"@fr,
+        "Gníomhaireacht dhíláraithe"@ga,
+        "Decentralizirana agencija"@hr,
+        "Decentralizált ügynökség"@hu,
+        "Agenzia decentrata"@it,
+        "Decentralizuota agentūra"@lt,
+        "Decentralizēta aģentūra"@lv,
+        "Aġenzija deċentralizzata"@mt,
+        "Gedecentraliseerd agentschap"@nl,
+        "Agencja zdecentralizowana"@pl,
+        "Agência descentralizada"@pt,
+        "Agenție descentralizată"@ro,
+        "Decentralizovaná agentúra"@sk,
+        "Decentralizirana agencija"@sl,
+        "Decentraliserad byrå"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/CB> a skos:Concept ;
+    at:authority-code "CB" ;
+    at:deprecated "false" ;
+    at:op-code "CB" ;
+    at:start.use "1951-01-01" ;
+    atold:op-code "CB" ;
+    dc:identifier "CB" ;
+    skos:altLabel "Corporate bodies"@en ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:narrower <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_INT>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_OTHER>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/NP> ;
+    skos:prefLabel "Корпоративен орган"@bg,
+        "Právnická osoba"@cs,
+        "Juridisk person"@da,
+        "Körperschaft"@de,
+        "Νομικό πρόσωπο"@el,
+        "Corporate body"@en,
+        "Persona jurídica"@es,
+        "Juriidiline isik"@et,
+        "Oikeushenkilö"@fi,
+        "Entité légale"@fr,
+        "Comhlacht corparáideach"@ga,
+        "Pravna osoba"@hr,
+        "Jogi személy"@hu,
+        "Persona giuridica"@it,
+        "Juridinis asmuo"@lt,
+        "Juridiska persona"@lv,
+        "Korp korporattiv"@mt,
+        "Rechtspersoon"@nl,
+        "Osoba prawna"@pl,
+        "Organismo"@pt,
+        "Persoană juridică"@ro,
+        "Právnická osoba"@sk,
+        "Pravna oseba"@sl,
+        "Juridisk person"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/EP_DEL> a skos:Concept ;
+    at:authority-code "EP_DEL" ;
+    at:deprecated "false" ;
+    at:op-code "EP_DEL" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "DEL" ;
+            dc:source "EP" ] ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "EP_DEL" ;
+    dc:identifier "EP_DEL" ;
+    skos:altLabel "EP delegations"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:narrower <http://publications.europa.eu/resource/authority/corporate-body-classification/EP_AP>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/EP_DE>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/EP_DM> ;
+    skos:prefLabel "EP delegation"@en .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/EP_CMT> a skos:Concept ;
+    at:authority-code "EP_CMT" ;
+    at:deprecated "false" ;
+    at:op-code "EP_CMT" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "CMT" ;
+            dc:source "EP" ] ;
+    at:start.use "1958-03-19" ;
+    atold:op-code "EP_CMT" ;
+    dc:identifier "EP_CMT" ;
+    skos:altLabel "EP parliamentary committees"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:narrower <http://publications.europa.eu/resource/authority/corporate-body-classification/EP_CE>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/EP_CJ>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/EP_CT>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/EP_SC> ;
+    skos:prefLabel "Парламентарна комисия на ЕП"@bg,
+        "Parlamentní výbor Evropského parlamentu"@cs,
+        "Udvalg i Europa-Parlamentet"@da,
+        "Ausschuss des Europäischen Parlaments"@de,
+        "Κοινοβουλευτική επιτροπή του ΕΚ"@el,
+        "EP parliamentary committee"@en,
+        "Comisión parlamentaria del PE"@es,
+        "Euroopa Parlamendi komisjon"@et,
+        "Euroopan parlamentin valiokunta"@fi,
+        "Commission parlementaire du PE"@fr,
+        "Coiste parlaiminteach PE"@ga,
+        "Parlamentarni odbori EP-a"@hr,
+        "Európai parlamenti bizottság"@hu,
+        "Commissione parlamentare PE"@it,
+        "EP parlamentinis komitetas"@lt,
+        "EP parlamentārā komiteja"@lv,
+        "Kumitat parlamentari tal-PE"@mt,
+        "Parlementaire commissie EP"@nl,
+        "Komisja parlamentarna PE"@pl,
+        "Comissão parlamentar do PE"@pt,
+        "Comisii parlamentare (PE)"@ro,
+        "Parlamentný výbor EP"@sk,
+        "Parlamentarni odbor Evropskega parlamenta"@sl,
+        "Utskott i Europaparlamentet"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/EU_AGENCY> a skos:Concept ;
+    at:authority-code "EU_AGENCY" ;
+    at:deprecated "false" ;
+    at:op-code "EU_AGENCY" ;
+    at:start.use "1958-12-06" ;
+    atold:op-code "EU_AGENCY" ;
+    dc:identifier "EU_AGENCY" ;
+    skos:altLabel "EU agencies"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:narrower <http://publications.europa.eu/resource/authority/corporate-body-classification/AGENCY_DEC>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/AGENCY_EURATOM>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/AGENCY_EXEC>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/AGENCY_OTHER> ;
+    skos:prefLabel "Агенция на ЕС"@bg,
+        "Agentura EU"@cs,
+        "EU-agentur"@da,
+        "EU-Agentur"@de,
+        "Οργανισμός της ΕΕ"@el,
+        "EU agency"@en,
+        "Agencia de la UE"@es,
+        "ELi amet"@et,
+        "EU:n virasto"@fi,
+        "Agence de l’UE"@fr,
+        "Gníomhaireacht de chuid an AE"@ga,
+        "Agencija EU-a"@hr,
+        "EU-ügynökség"@hu,
+        "Agenzia dell’UE"@it,
+        "ES agentūra"@lt,
+        "ES aģentūra"@lv,
+        "Aġenzija tal-UE"@mt,
+        "EU-agentschap"@nl,
+        "Agencja UE"@pl,
+        "Agência da UE"@pt,
+        "Agenție a UE"@ro,
+        "Agentúra EÚ"@sk,
+        "Agencija EU"@sl,
+        "EU-byrå"@sv .
+
+<http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU> a skos:Concept ;
+    at:authority-code "CB_EU" ;
+    at:deprecated "false" ;
+    at:op-code "CB_EU" ;
+    at:start.use "1951-01-01" ;
+    atold:op-code "CB_EU" ;
+    dc:identifier "CB_EU" ;
+    skos:altLabel "European Union corporate bodies"@en ;
+    skos:broader <http://publications.europa.eu/resource/authority/corporate-body-classification/CB> ;
+    skos:inScheme atold:corporate-body-classification ;
+    skos:narrower <http://publications.europa.eu/resource/authority/corporate-body-classification/CMT_MIX>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/COR_COM>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/COR_DIR>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/COR_GROUP>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/COUN_ASS>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/COUN_COOP>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/COUN_STAB_ASS>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/DEL>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/DIR>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/DIR_GEN>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/EP_CMT>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/EP_DEL>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/EP_DIR_GEN>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/EP_GROUP>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/EP_IG>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/EP_POLBODY>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/EU_AGENCY>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/EU_BODY>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/EU_INST>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/EU_INTERINSTSERV>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/EU_JU>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/INF_OFF>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/LIA_OFF>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/REPRES>,
+        <http://publications.europa.eu/resource/authority/corporate-body-classification/SERV_DEP> ;
+    skos:prefLabel "Корпоративен орган на Европейския съюз"@bg,
+        "Právnická osoba Evropské unie"@cs,
+        "Juridisk person under EU"@da,
+        "Körperschaft der Europäischen Union"@de,
+        "Νομικό πρόσωπο της Ευρωπαϊκής Ένωσης"@el,
+        "European Union corporate body"@en,
+        "Persona jurídica de la Unión Europea"@es,
+        "Euroopa Liidu juriidiline isik"@et,
+        "Euroopan unionin oikeushenkilö"@fi,
+        "Entité légale de l’Union européenne"@fr,
+        "Comhlacht corparáideach de chuid an Aontais Eorpaigh"@ga,
+        "Pravna osoba Europske unije"@hr,
+        "Európai uniós jogi személy"@hu,
+        "Persona giuridica dell’Unione europea"@it,
+        "Europos Sąjungos juridinis asmuo"@lt,
+        "Eiropas Savienības juridiska persona"@lv,
+        "Korp korporattiv tal-Unjoni Ewropea"@mt,
+        "Rechtspersoon van de Europese Unie"@nl,
+        "Osoba prawna należąca do Unii Europejskiej"@pl,
+        "Organismo da União Europeia"@pt,
+        "Persoană juridică (Uniunea Europeană)"@ro,
+        "Právnická osoba Európskej únie"@sk,
+        "Pravna oseba Evropske unije"@sl,
+        "Juridisk person inom Europeiska unionen"@sv .
+
+atold:corporate-body-classification a skos:ConceptScheme ;
+    rdfs:label "Corporate body classification"@en ;
+    at:prefLabel "Corporate body classification"@en ;
+    at:table.id "corporate-body-classification" ;
+    at:table.version.number "20210929-0" ;
+    owl:versionInfo "20210929-0" ;
+    skos:prefLabel "Corporate body classification"@en .

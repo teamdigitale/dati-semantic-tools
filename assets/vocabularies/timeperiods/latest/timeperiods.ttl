@@ -1,0 +1,1689 @@
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://publications.europa.eu/resource/authority/timeperiod/APR> a skos:Concept ;
+    at:authority-code "APR" ;
+    at:deprecated "false" ;
+    at:op-code "APR" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:affected-table "PUB_FREQ" ;
+            at:legacy-code "APR" ;
+            dc:source "PUB" ] ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "APR" ;
+    dc:identifier "APR" ;
+    skos:altLabel "Апр"@bg,
+        "Dub"@cs,
+        "Apr"@da,
+        "Apr."@de,
+        "Απρ"@el,
+        "Apr"@en,
+        "Abr"@es,
+        "Apr"@et,
+        "Huh"@fi,
+        "Avr."@fr,
+        "Aib"@ga,
+        "Tr"@hr,
+        "Ápr."@hu,
+        "Apr"@it,
+        "Bal"@lt,
+        "Apr"@lv,
+        "Apr"@mt,
+        "Apr"@nl,
+        "Kwi"@pl,
+        "Abr."@pt,
+        "Apr"@ro,
+        "Apr"@sk,
+        "Apr"@sl,
+        "Apr"@sv ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Април"@bg,
+        "Duben"@cs,
+        "April"@da,
+        "April"@de,
+        "Απρίλιος"@el,
+        "April"@en,
+        "Abril"@es,
+        "Aprill"@et,
+        "Huhtikuu"@fi,
+        "Avril"@fr,
+        "Aibreán"@ga,
+        "Travanj"@hr,
+        "Április"@hu,
+        "Aprile"@it,
+        "Balandis"@lt,
+        "Aprīlis"@lv,
+        "April"@mt,
+        "April"@nl,
+        "Kwiecień"@pl,
+        "Abril"@pt,
+        "Aprilie"@ro,
+        "Apríl"@sk,
+        "April"@sl,
+        "April"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/AUG> a skos:Concept ;
+    at:authority-code "AUG" ;
+    at:deprecated "false" ;
+    at:op-code "AUG" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:affected-table "PUB_FREQ" ;
+            at:legacy-code "AUG" ;
+            dc:source "PUB" ] ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "AUG" ;
+    dc:identifier "AUG" ;
+    skos:altLabel "Авг"@bg,
+        "Srp"@cs,
+        "Aug"@da,
+        "Aug."@de,
+        "Αύγ"@el,
+        "Aug"@en,
+        "Ago"@es,
+        "Aug"@et,
+        "Elo"@fi,
+        "Lún"@ga,
+        "Kol"@hr,
+        "Aug."@hu,
+        "Ago"@it,
+        "Rugp"@lt,
+        "Aug"@lv,
+        "Aww"@mt,
+        "Aug"@nl,
+        "Sie"@pl,
+        "Ago."@pt,
+        "Aug"@ro,
+        "Aug"@sk,
+        "Avg"@sl,
+        "Aug"@sv ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Август"@bg,
+        "Srpen"@cs,
+        "August"@da,
+        "August"@de,
+        "Αύγουστος"@el,
+        "August"@en,
+        "Agosto"@es,
+        "August"@et,
+        "Elokuu"@fi,
+        "Août"@fr,
+        "Lúnasa"@ga,
+        "Kolovoz"@hr,
+        "Augusztus"@hu,
+        "Agosto"@it,
+        "Rugpjūtis"@lt,
+        "Augusts"@lv,
+        "Awwissu"@mt,
+        "Augustus"@nl,
+        "Sierpień"@pl,
+        "Agosto"@pt,
+        "August"@ro,
+        "August"@sk,
+        "Avgust"@sl,
+        "Augusti"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/AUTUMN> a skos:Concept ;
+    at:authority-code "AUTUMN" ;
+    at:deprecated "false" ;
+    at:op-code "AUTUMN" ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "AUTUMN" ;
+    dc:identifier "AUTUMN" ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Есен"@bg,
+        "Podzim"@cs,
+        "Efterår"@da,
+        "Herbst"@de,
+        "Φθινόπωρο"@el,
+        "Autumn"@en,
+        "Otoño"@es,
+        "Sügis"@et,
+        "Syksy"@fi,
+        "Automne"@fr,
+        "Fómhar"@ga,
+        "Jesen"@hr,
+        "Ősz"@hu,
+        "Autunno"@it,
+        "Ruduo"@lt,
+        "Rudens"@lv,
+        "Il-Ħarifa"@mt,
+        "Herfst"@nl,
+        "Jesień"@pl,
+        "Outuno"@pt,
+        "Toamnă"@ro,
+        "Jeseň"@sk,
+        "Jesen"@sl,
+        "Höst"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/CALENDAR_DAY> a skos:Concept ;
+    at:authority-code "CALENDAR_DAY" ;
+    at:deprecated "false" ;
+    at:op-code "CALENDAR_DAY" ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "CALENDAR_DAY" ;
+    dc:identifier "CALENDAR_DAY" ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Календарен ден"@bg,
+        "Kalendářního den"@cs,
+        "Kalendardag"@da,
+        "Kalendertag"@de,
+        "Ημερολογιακή ημέρα"@el,
+        "Calendar day"@en,
+        "Día natural"@es,
+        "Kalendripäev"@et,
+        "Kalenteripäivä"@fi,
+        "Jour civil"@fr,
+        "Lá féilire"@ga,
+        "Kalendarski dan"@hr,
+        "Naptári nap"@hu,
+        "Giorno del calendario"@it,
+        "Kalendoriaus diena"@lt,
+        "Kalendāra diena"@lv,
+        "Jum kalendarju"@mt,
+        "Kalenderdag"@nl,
+        "Dzień kalendarzowy"@pl,
+        "Dia do calendário"@pt,
+        "Zi calendaristică"@ro,
+        "Kalendárny deň"@sk,
+        "Koledarski dan"@sl,
+        "Kalenderdag"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/DAY> a skos:Concept ;
+    at:authority-code "DAY" ;
+    at:deprecated "false" ;
+    at:op-code "DAY" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "DAY" ;
+            dc:source "TED_SCHEMA" ] ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "DAY" ;
+    dc:identifier "DAY" ;
+    skos:altLabel "Дни"@bg,
+        "Dny"@cs,
+        "Tage"@de,
+        "Ημέρες"@el,
+        "Days"@en,
+        "Días"@es,
+        "Päevad"@et,
+        "Päivät"@fi,
+        "Jours"@fr,
+        "Laethanta"@ga,
+        "Dani"@hr,
+        "Napok"@hu,
+        "Giorni"@it,
+        "Dienos"@lt,
+        "Dienas"@lv,
+        "Jiem"@mt,
+        "Dagen"@nl,
+        "Dni"@pl,
+        "Dias"@pt,
+        "Zile"@ro,
+        "Dni"@sk,
+        "Dnevi"@sl,
+        "Dagar"@sv ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Ден"@bg,
+        "Den"@cs,
+        "Døgn"@da,
+        "Tag"@de,
+        "Ημέρα"@el,
+        "Day"@en,
+        "Día"@es,
+        "Päev"@et,
+        "Päivä"@fi,
+        "Jour"@fr,
+        "Lá"@ga,
+        "Dan"@hr,
+        "Nap"@hu,
+        "Giorno"@it,
+        "Diena"@lt,
+        "Diena"@lv,
+        "Jum"@mt,
+        "Dag"@nl,
+        "Dzień"@pl,
+        "Dia"@pt,
+        "Zi"@ro,
+        "Deň"@sk,
+        "Dan"@sl,
+        "Dag"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/DEC> a skos:Concept ;
+    at:authority-code "DEC" ;
+    at:deprecated "false" ;
+    at:op-code "DEC" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:affected-table "PUB_FREQ" ;
+            at:legacy-code "DEC" ;
+            dc:source "PUB" ] ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "DEC" ;
+    dc:identifier "DEC" ;
+    skos:altLabel "Дек"@bg,
+        "Pro"@cs,
+        "Dec"@da,
+        "Dez."@de,
+        "Δεκ"@el,
+        "Dec"@en,
+        "Dic"@es,
+        "Dets"@et,
+        "Jou"@fi,
+        "Déc."@fr,
+        "Nol"@ga,
+        "Pr"@hr,
+        "Dec."@hu,
+        "Dic"@it,
+        "Gru"@lt,
+        "Dec"@lv,
+        "Diċ"@mt,
+        "Dec"@nl,
+        "Gru"@pl,
+        "Dez."@pt,
+        "Dec"@ro,
+        "Dec"@sk,
+        "Dec"@sl,
+        "Dec"@sv ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Декември"@bg,
+        "Prosinec"@cs,
+        "December"@da,
+        "Dezember"@de,
+        "Δεκέμβριoς"@el,
+        "December"@en,
+        "Diciembre"@es,
+        "Detsember"@et,
+        "Joulukuu"@fi,
+        "Décembre"@fr,
+        "Nollaig"@ga,
+        "Prosinac"@hr,
+        "December"@hu,
+        "Dicembre"@it,
+        "Gruodis"@lt,
+        "Decembris"@lv,
+        "Diċembru"@mt,
+        "December"@nl,
+        "Grudzień"@pl,
+        "Dezembro"@pt,
+        "Decembrie"@ro,
+        "December"@sk,
+        "December"@sl,
+        "December"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/FEB> a skos:Concept ;
+    at:authority-code "FEB" ;
+    at:deprecated "false" ;
+    at:op-code "FEB" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:affected-table "PUB_FREQ" ;
+            at:legacy-code "FEB" ;
+            dc:source "PUB" ] ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "FEB" ;
+    dc:identifier "FEB" ;
+    skos:altLabel "Фев"@bg,
+        "Feb"@da,
+        "Febr."@de,
+        "Φεβ"@el,
+        "Feb"@en,
+        "Feb"@es,
+        "Veebr"@et,
+        "Hel"@fi,
+        "Fév."@fr,
+        "Fea"@ga,
+        "Vel"@hr,
+        "Feb."@hu,
+        "Feb"@it,
+        "Vas"@lt,
+        "Feb"@lv,
+        "Fra"@mt,
+        "Feb"@nl,
+        "Lut"@pl,
+        "Fev."@pt,
+        "Feb"@ro,
+        "Feb"@sk,
+        "Feb"@sl,
+        "Feb"@sv ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Февруари"@bg,
+        "Únor"@cs,
+        "Februar"@da,
+        "Februar"@de,
+        "Φεβρουάριος"@el,
+        "February"@en,
+        "Febrero"@es,
+        "Veebruar"@et,
+        "Helmikuu"@fi,
+        "Février"@fr,
+        "Feabhra"@ga,
+        "Veljača"@hr,
+        "Február"@hu,
+        "Febbraio"@it,
+        "Vasaris"@lt,
+        "Februāris"@lv,
+        "Frar"@mt,
+        "Februari"@nl,
+        "Luty"@pl,
+        "Fevereiro"@pt,
+        "Februarie"@ro,
+        "Február"@sk,
+        "Februar"@sl,
+        "Februari"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/FRI> a skos:Concept ;
+    at:authority-code "FRI" ;
+    at:deprecated "false" ;
+    at:op-code "FRI" ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "FRI" ;
+    dc:identifier "FRI" ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Петък"@bg,
+        "Pátek"@cs,
+        "Fredag"@da,
+        "Freitag"@de,
+        "Παρασκευή"@el,
+        "Friday"@en,
+        "Viernes"@es,
+        "Reede"@et,
+        "Perjantai"@fi,
+        "Vendredi"@fr,
+        "An Aoine"@ga,
+        "Petak"@hr,
+        "Péntek"@hu,
+        "Venerdì"@it,
+        "Penktadienis"@lt,
+        "Piektdiena"@lv,
+        "Il-ġimgħa"@mt,
+        "Vrijdag"@nl,
+        "Piątek"@pl,
+        "Sexta-feira"@pt,
+        "Vineri"@ro,
+        "Piatok"@sk,
+        "Petek"@sl,
+        "Fredag"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/HOUR> a skos:Concept ;
+    at:authority-code "HOUR" ;
+    at:deprecated "false" ;
+    at:op-code "HOUR" ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "HOUR" ;
+    dc:identifier "HOUR" ;
+    skos:altLabel "Часове"@bg,
+        "Hodiny"@cs,
+        "Timer"@da,
+        "Stunden"@de,
+        "Ώρες"@el,
+        "Hours"@en,
+        "Horas"@es,
+        "Tunnid"@et,
+        "Tunnit"@fi,
+        "Heures"@fr,
+        "Uaireanta"@ga,
+        "Sati"@hr,
+        "Órák"@hu,
+        "Ore"@it,
+        "Valandos"@lt,
+        "Stundas"@lv,
+        "Sigħat"@mt,
+        "Uren"@nl,
+        "Godziny"@pl,
+        "Horas"@pt,
+        "Ore"@ro,
+        "Hodiny"@sk,
+        "Ure"@sl,
+        "Uri"@sl,
+        "Timmar"@sv ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Час"@bg,
+        "Hodina"@cs,
+        "Time"@da,
+        "Stunde"@de,
+        "Ώρα"@el,
+        "Hour"@en,
+        "Hora"@es,
+        "Tund"@et,
+        "Tunti"@fi,
+        "Heure"@fr,
+        "Uair"@ga,
+        "Sat"@hr,
+        "Óra"@hu,
+        "Ora"@it,
+        "Valanda"@lt,
+        "Stunda"@lv,
+        "Siegħa"@mt,
+        "Uur"@nl,
+        "Godzina"@pl,
+        "Hora"@pt,
+        "Oră"@ro,
+        "Hodina"@sk,
+        "Ura"@sl,
+        "Timme"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/JAN> a skos:Concept ;
+    at:authority-code "JAN" ;
+    at:deprecated "false" ;
+    at:op-code "JAN" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:affected-table "PUB_FREQ" ;
+            at:legacy-code "JAN" ;
+            dc:source "PUB" ] ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "JAN" ;
+    dc:identifier "JAN" ;
+    skos:altLabel "Яну"@bg,
+        "Led"@cs,
+        "Jan"@da,
+        "Jan."@de,
+        "Ιαv"@el,
+        "Jan"@en,
+        "Ene"@es,
+        "Jaan"@et,
+        "Tam"@fi,
+        "Jan."@fr,
+        "Ean"@ga,
+        "Sij"@hr,
+        "Jan."@hu,
+        "Gen"@it,
+        "Sau"@lt,
+        "Jan"@lv,
+        "Jan"@mt,
+        "Jan"@nl,
+        "Sty"@pl,
+        "Jan."@pt,
+        "Ian"@ro,
+        "Jan"@sk,
+        "Jan"@sl,
+        "Jan"@sv ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Януари"@bg,
+        "Leden"@cs,
+        "Januar"@da,
+        "Januar"@de,
+        "Ιαvoυάριος"@el,
+        "January"@en,
+        "Enero"@es,
+        "Jaanuar"@et,
+        "Tammikuu"@fi,
+        "Janvier"@fr,
+        "Eanáir"@ga,
+        "Siječanj"@hr,
+        "Január"@hu,
+        "Gennaio"@it,
+        "Sausis"@lt,
+        "Janvāris"@lv,
+        "Jannar"@mt,
+        "Januari"@nl,
+        "Styczeń"@pl,
+        "Janeiro"@pt,
+        "Ianuarie"@ro,
+        "Január"@sk,
+        "Januar"@sl,
+        "Januari"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/JUL> a skos:Concept ;
+    at:authority-code "JUL" ;
+    at:deprecated "false" ;
+    at:op-code "JUL" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:affected-table "PUB_FREQ" ;
+            at:legacy-code "JUL" ;
+            dc:source "PUB" ] ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "JUL" ;
+    dc:identifier "JUL" ;
+    skos:altLabel "Črc"@cs,
+        "Jul"@da,
+        "Ιούλ"@el,
+        "Jul"@en,
+        "Jul"@es,
+        "Hei"@fi,
+        "Juil."@fr,
+        "Srp"@hr,
+        "Júl."@hu,
+        "Lug"@it,
+        "Lie"@lt,
+        "Jūl"@lv,
+        "Lul"@mt,
+        "Lip"@pl,
+        "Jul."@pt,
+        "Iul"@ro,
+        "Jul"@sl,
+        "Jul"@sv ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Юли"@bg,
+        "Červenec"@cs,
+        "Juli"@da,
+        "Juli"@de,
+        "Ιούλιος"@el,
+        "July"@en,
+        "Julio"@es,
+        "Juuli"@et,
+        "Heinäkuu"@fi,
+        "Juillet"@fr,
+        "Iúil"@ga,
+        "Srpanj"@hr,
+        "Július"@hu,
+        "Luglio"@it,
+        "Liepa"@lt,
+        "Jūlijs"@lv,
+        "Lulju"@mt,
+        "Juli"@nl,
+        "Lipiec"@pl,
+        "Julho"@pt,
+        "Iulie"@ro,
+        "Júl"@sk,
+        "Julij"@sl,
+        "Juli"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/JUN> a skos:Concept ;
+    at:authority-code "JUN" ;
+    at:deprecated "false" ;
+    at:op-code "JUN" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:affected-table "PUB_FREQ" ;
+            at:legacy-code "JUN" ;
+            dc:source "PUB" ] ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "JUN" ;
+    dc:identifier "JUN" ;
+    skos:altLabel "Čer"@cs,
+        "Jun"@da,
+        "Ιούν"@el,
+        "Jun"@en,
+        "Jun"@es,
+        "Kes"@fi,
+        "Mei"@ga,
+        "Lip"@hr,
+        "Jún."@hu,
+        "Giu"@it,
+        "Bir"@lt,
+        "Jūn"@lv,
+        "Ġun"@mt,
+        "Cze"@pl,
+        "Jun."@pt,
+        "Iun"@ro,
+        "Jun"@sl,
+        "Jun"@sv ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Юни"@bg,
+        "Červen"@cs,
+        "Juni"@da,
+        "Juni"@de,
+        "Ιούνιος"@el,
+        "June"@en,
+        "Junio"@es,
+        "Juuni"@et,
+        "Kesäkuu"@fi,
+        "Juin"@fr,
+        "Meitheamh"@ga,
+        "Lipanj"@hr,
+        "Június"@hu,
+        "Giugno"@it,
+        "Birželis"@lt,
+        "Jūnijs"@lv,
+        "Ġunju"@mt,
+        "Juni"@nl,
+        "Czerwiec"@pl,
+        "Junho"@pt,
+        "Iunie"@ro,
+        "Jún"@sk,
+        "Junij"@sl,
+        "Juni"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/MAR> a skos:Concept ;
+    at:authority-code "MAR" ;
+    at:deprecated "false" ;
+    at:op-code "MAR" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:affected-table "PUB_FREQ" ;
+            at:legacy-code "MAR" ;
+            dc:source "PUB" ] ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "MAR" ;
+    dc:identifier "MAR" ;
+    skos:altLabel "Bře"@cs,
+        "Mar"@da,
+        "Μάρ"@el,
+        "Mar"@en,
+        "Mar"@es,
+        "Maa"@fi,
+        "Már"@ga,
+        "Ož"@hr,
+        "Már."@hu,
+        "Mar"@it,
+        "Kov"@lt,
+        "Mar"@lv,
+        "Mar"@mt,
+        "Maa"@nl,
+        "Mar"@pl,
+        "Mar."@pt,
+        "Mar"@ro,
+        "Mar"@sk,
+        "Mar"@sl,
+        "Mar"@sv ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Март"@bg,
+        "Březen"@cs,
+        "Marts"@da,
+        "März"@de,
+        "Μάρτιος"@el,
+        "March"@en,
+        "Marzo"@es,
+        "Märts"@et,
+        "Maaliskuu"@fi,
+        "Mars"@fr,
+        "Márta"@ga,
+        "Ožujak"@hr,
+        "Március"@hu,
+        "Marzo"@it,
+        "Kovas"@lt,
+        "Marts"@lv,
+        "Marzu"@mt,
+        "Maart"@nl,
+        "Marzec"@pl,
+        "Março"@pt,
+        "Martie"@ro,
+        "Marec"@sk,
+        "Marec"@sl,
+        "Mars"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/MAY> a skos:Concept ;
+    at:authority-code "MAY" ;
+    at:deprecated "false" ;
+    at:op-code "MAY" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:affected-table "PUB_FREQ" ;
+            at:legacy-code "MAY" ;
+            dc:source "PUB" ] ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "MAY" ;
+    dc:identifier "MAY" ;
+    skos:altLabel "Kvě"@cs,
+        "Μάι"@el,
+        "May"@es,
+        "Tou"@fi,
+        "Bea"@ga,
+        "Sv"@hr,
+        "Máj."@hu,
+        "Mag"@it,
+        "Geg"@lt,
+        "Mai"@lv,
+        "Mej"@mt,
+        "Mai."@pt ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Май"@bg,
+        "Květen"@cs,
+        "Maj"@da,
+        "Mai"@de,
+        "Μάιος"@el,
+        "May"@en,
+        "Mayo"@es,
+        "Mai"@et,
+        "Toukokuu"@fi,
+        "Mai"@fr,
+        "Bealtaine"@ga,
+        "Svibanj"@hr,
+        "Május"@hu,
+        "Maggio"@it,
+        "Gegužė"@lt,
+        "Maijs"@lv,
+        "Mejju"@mt,
+        "Mei"@nl,
+        "Maj"@pl,
+        "Maio"@pt,
+        "Mai"@ro,
+        "Máj"@sk,
+        "Maj"@sl,
+        "Maj"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/MIN> a skos:Concept ;
+    at:authority-code "MIN" ;
+    at:deprecated "false" ;
+    at:op-code "MIN" ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "MIN" ;
+    dc:identifier "MIN" ;
+    skos:altLabel "Минути"@bg,
+        "Minuty"@cs,
+        "Minutter"@da,
+        "Minuten"@de,
+        "Λεπτά"@el,
+        "Minutes"@en,
+        "Minutos"@es,
+        "Minutid"@et,
+        "Minuutit"@fi,
+        "Minutes"@fr,
+        "Minute"@hr,
+        "Percek"@hu,
+        "Minuti"@it,
+        "Minutės"@lt,
+        "Minūtes"@lv,
+        "Minuti"@mt,
+        "Minuten"@nl,
+        "Minuty"@pl,
+        "Minutos"@pt,
+        "Minute"@ro,
+        "Minúty"@sk,
+        "Minute"@sl,
+        "Minuti"@sl,
+        "Minuter"@sv ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Минута"@bg,
+        "Minuta"@cs,
+        "Minut"@da,
+        "Minute"@de,
+        "Λεπτό"@el,
+        "Minute"@en,
+        "Minuto"@es,
+        "Minut"@et,
+        "Minuutti"@fi,
+        "Minute"@fr,
+        "Nóiméad"@ga,
+        "Minuta"@hr,
+        "Perc"@hu,
+        "Minuto"@it,
+        "Minutė"@lt,
+        "Minūte"@lv,
+        "Minuta"@mt,
+        "Minuut"@nl,
+        "Minuta"@pl,
+        "Minuto"@pt,
+        "Minut"@ro,
+        "Minúta"@sk,
+        "Minuta"@sl,
+        "Minut"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/MON> a skos:Concept ;
+    at:authority-code "MON" ;
+    at:deprecated "false" ;
+    at:op-code "MON" ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "MON" ;
+    dc:identifier "MON" ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Понеделник"@bg,
+        "Pondělí"@cs,
+        "Mandag"@da,
+        "Montag"@de,
+        "Δευτέρα"@el,
+        "Monday"@en,
+        "Lunes"@es,
+        "Esmaspäev"@et,
+        "Maanantai"@fi,
+        "Lundi"@fr,
+        "An Luan"@ga,
+        "Ponedjeljak"@hr,
+        "Hétfő"@hu,
+        "Lunedì"@it,
+        "Pirmadienis"@lt,
+        "Pirmdiena"@lv,
+        "It-tnejn"@mt,
+        "Maandag"@nl,
+        "Poniedziałek"@pl,
+        "Segunda-feira"@pt,
+        "Luni"@ro,
+        "Pondelok"@sk,
+        "Ponedeljek"@sl,
+        "Måndag"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/MONTH> a skos:Concept ;
+    at:authority-code "MONTH" ;
+    at:deprecated "false" ;
+    at:op-code "MONTH" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "MONTH" ;
+            dc:source "TED_SCHEMA" ] ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "MONTH" ;
+    dc:identifier "MONTH" ;
+    skos:altLabel "Месеци"@bg,
+        "Měsíce"@cs,
+        "Måneder"@da,
+        "Monate"@de,
+        "Μήνες"@el,
+        "Months"@en,
+        "Meses"@es,
+        "Kuud"@et,
+        "Kuukaudet"@fi,
+        "Míonna"@ga,
+        "Mjeseci"@hr,
+        "Hónapok"@hu,
+        "Mesi"@it,
+        "Mėnesiai"@lt,
+        "Mēneši"@lv,
+        "Xhur"@mt,
+        "Maanden"@nl,
+        "Miesiące"@pl,
+        "Meses"@pt,
+        "Luni"@ro,
+        "Mesiace"@sk,
+        "Meseci"@sl,
+        "Månader"@sv ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Месец"@bg,
+        "Měsíc"@cs,
+        "Måned"@da,
+        "Monat"@de,
+        "Μήνας"@el,
+        "Month"@en,
+        "Mes"@es,
+        "Kuu"@et,
+        "Kuukausi"@fi,
+        "Mois"@fr,
+        "Mí"@ga,
+        "Mjesec"@hr,
+        "Hónap"@hu,
+        "Mese"@it,
+        "Mėnuo"@lt,
+        "Mēnesis"@lv,
+        "Xahar"@mt,
+        "Maand"@nl,
+        "Miesiąc"@pl,
+        "Mês"@pt,
+        "Lună"@ro,
+        "Mesiac"@sk,
+        "Mesec"@sl,
+        "Månad"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/NOV> a skos:Concept ;
+    at:authority-code "NOV" ;
+    at:deprecated "false" ;
+    at:op-code "NOV" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:affected-table "PUB_FREQ" ;
+            at:legacy-code "NOV" ;
+            dc:source "PUB" ] ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "NOV" ;
+    dc:identifier "NOV" ;
+    skos:altLabel "Ное"@bg,
+        "Lis"@cs,
+        "Nov"@da,
+        "Nov."@de,
+        "Νοέ"@el,
+        "Nov"@en,
+        "Nov"@es,
+        "Nov"@et,
+        "Mar"@fi,
+        "Nov."@fr,
+        "Sam"@ga,
+        "St"@hr,
+        "Nov."@hu,
+        "Nov"@it,
+        "Lap"@lt,
+        "Nov"@lv,
+        "Nov"@mt,
+        "Nov"@nl,
+        "Lis"@pl,
+        "Nov."@pt,
+        "Noi"@ro,
+        "Nov"@sk,
+        "Nov"@sl,
+        "Nov"@sv ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Ноември"@bg,
+        "Listopad"@cs,
+        "November"@da,
+        "November"@de,
+        "Νοέμβριος"@el,
+        "November"@en,
+        "Noviembre"@es,
+        "November"@et,
+        "Marraskuu"@fi,
+        "Novembre"@fr,
+        "Samhain"@ga,
+        "Studeni"@hr,
+        "November"@hu,
+        "Novembre"@it,
+        "Lapkritis"@lt,
+        "Novembris"@lv,
+        "Novembru"@mt,
+        "November"@nl,
+        "Listopad"@pl,
+        "Novembro"@pt,
+        "Noiembrie"@ro,
+        "November"@sk,
+        "November"@sl,
+        "November"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/OCT> a skos:Concept ;
+    at:authority-code "OCT" ;
+    at:deprecated "false" ;
+    at:op-code "OCT" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:affected-table "PUB_FREQ" ;
+            at:legacy-code "OCT" ;
+            dc:source "PUB" ] ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "OCT" ;
+    dc:identifier "OCT" ;
+    skos:altLabel "Окт"@bg,
+        "Říj"@cs,
+        "Okt"@da,
+        "Okt."@de,
+        "Οκτ"@el,
+        "Oct"@en,
+        "Oct"@es,
+        "Okt"@et,
+        "Lok"@fi,
+        "Oct."@fr,
+        "Dei"@ga,
+        "Lis"@hr,
+        "Okt."@hu,
+        "Ott"@it,
+        "Spa"@lt,
+        "Okt"@lv,
+        "Ott"@mt,
+        "Okt"@nl,
+        "Paź"@pl,
+        "Out."@pt,
+        "Oct"@ro,
+        "Okt"@sk,
+        "Okt"@sl,
+        "Okt"@sv ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Октомври"@bg,
+        "Říjen"@cs,
+        "Oktober"@da,
+        "Oktober"@de,
+        "Οκτώβριος"@el,
+        "October"@en,
+        "Octubre"@es,
+        "Oktoober"@et,
+        "Lokakuu"@fi,
+        "Octobre"@fr,
+        "Deireadh Fómhair"@ga,
+        "Listopad"@hr,
+        "Október"@hu,
+        "Ottobre"@it,
+        "Spalis"@lt,
+        "Oktobris"@lv,
+        "Ottubru"@mt,
+        "Oktober"@nl,
+        "Październik"@pl,
+        "Outubro"@pt,
+        "Octombrie"@ro,
+        "Október"@sk,
+        "Oktober"@sl,
+        "Oktober"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/OP_DATPRO> a skos:Concept ;
+    at:op-code "OP_DATPRO" ;
+    atold:op-code "OP_DATPRO" ;
+    dc:identifier "OP_DATPRO" ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "НЕОКОНЧАТЕЛНИ ДАННИ"@bg,
+        "Předběžné údaje"@cs,
+        "Midlertidige data"@da,
+        "Vorläufige Daten"@de,
+        "Προσωρινά δεδομένα"@el,
+        "Provisional data"@en,
+        "Datos provisionales"@es,
+        "Esialgsed andmed"@et,
+        "Alustavat tiedot"@fi,
+        "Données provisoires"@fr,
+        "Sonraí sealadacha"@ga,
+        "Privremeni podaci"@hr,
+        "Ideiglenes adatok"@hu,
+        "Dati provvisori"@it,
+        "Laikinieji duomenys"@lt,
+        "Provizoriski dati"@lv,
+        "Dejta provviżorja"@mt,
+        "Voorlopige gegevens"@nl,
+        "Dane tymczasowe"@pl,
+        "Dados provisórios"@pt,
+        "Date provizorii"@ro,
+        "Predbežné údaje"@sk,
+        "Začasni podatki"@sl,
+        "Tillfälliga uppgifter"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/QUARTER> a skos:Concept ;
+    at:authority-code "QUARTER" ;
+    at:deprecated "false" ;
+    at:op-code "QUARTER" ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "QUARTER" ;
+    dc:identifier "QUARTER" ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Тримесечие"@bg,
+        "Čtvrtletí"@cs,
+        "Kvartal"@da,
+        "Vierteljahr"@de,
+        "Τρίμηνο"@el,
+        "Quarter"@en,
+        "Trimestre"@es,
+        "Kvartal"@et,
+        "Neljännesvuosi"@fi,
+        "Trimestre"@fr,
+        "Ráithe"@ga,
+        "Tromjesečje"@hr,
+        "Negyedév"@hu,
+        "Trimestre"@it,
+        "Ketvirtis"@lt,
+        "Ceturksnis"@lv,
+        "Kwart tas-sena"@mt,
+        "Kwartaal"@nl,
+        "Kwartał"@pl,
+        "Trimestre"@pt,
+        "Trimestru"@ro,
+        "Štvrťrok"@sk,
+        "Četrtletje"@sl,
+        "Kvartal"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/SAT> a skos:Concept ;
+    at:authority-code "SAT" ;
+    at:deprecated "false" ;
+    at:op-code "SAT" ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "SAT" ;
+    dc:identifier "SAT" ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Събота"@bg,
+        "Sobota"@cs,
+        "Lørdag"@da,
+        "Samstag"@de,
+        "Σάββατο"@el,
+        "Saturday"@en,
+        "Sábado"@es,
+        "Laupäev"@et,
+        "Lauantai"@fi,
+        "Samedi"@fr,
+        "An Satharn"@ga,
+        "Subota"@hr,
+        "Szombat"@hu,
+        "Sabato"@it,
+        "Šeštadienis"@lt,
+        "Sestdiena"@lv,
+        "Is-sibt"@mt,
+        "Zaterdag"@nl,
+        "Sobota"@pl,
+        "Sábado"@pt,
+        "Sămbătă"@ro,
+        "Sobota"@sk,
+        "Sobota"@sl,
+        "Lördag"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/SEC> a skos:Concept ;
+    at:authority-code "SEC" ;
+    at:deprecated "false" ;
+    at:op-code "SEC" ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "SEC" ;
+    dc:identifier "SEC" ;
+    skos:altLabel "Секунди"@bg,
+        "Sekundy"@cs,
+        "Sekunder"@da,
+        "Sekunden"@de,
+        "Δευτερόλεπτα"@el,
+        "Seconds"@en,
+        "Segundos"@es,
+        "Sekundid"@et,
+        "Sekunnit"@fi,
+        "Secondes"@fr,
+        "Sekunde"@hr,
+        "Másodpercek"@hu,
+        "Secondi"@it,
+        "Sekundės"@lt,
+        "Sekundes"@lv,
+        "Sekondi"@mt,
+        "Seconden"@nl,
+        "Sekundy"@pl,
+        "Segundos"@pt,
+        "Secunde"@ro,
+        "Sekundy"@sk,
+        "Sekunde"@sl,
+        "Sekundi"@sl,
+        "Sekunder"@sv ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Секунда"@bg,
+        "Sekunda"@cs,
+        "Sekund"@da,
+        "Sekunde"@de,
+        "Δευτερόλεπτο"@el,
+        "Second"@en,
+        "Segundo"@es,
+        "Sekund"@et,
+        "Sekunti"@fi,
+        "Seconde"@fr,
+        "Soicind"@ga,
+        "Sekunda"@hr,
+        "Másodperc"@hu,
+        "Secondo"@it,
+        "Sekundė"@lt,
+        "Sekunde"@lv,
+        "Sekonda"@mt,
+        "Seconde"@nl,
+        "Sekunda"@pl,
+        "Segundo"@pt,
+        "Secundă"@ro,
+        "Sekunda"@sk,
+        "Sekunda"@sl,
+        "Sekund"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/SEP> a skos:Concept ;
+    at:authority-code "SEP" ;
+    at:deprecated "false" ;
+    at:op-code "SEP" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:affected-table "PUB_FREQ" ;
+            at:legacy-code "SEP" ;
+            dc:source "PUB" ] ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "SEP" ;
+    dc:identifier "SEP" ;
+    skos:altLabel "Сеп"@bg,
+        "Sep"@da,
+        "Sept."@de,
+        "Σεπ"@el,
+        "Sep"@en,
+        "Sep"@es,
+        "Sept"@et,
+        "Syy"@fi,
+        "Sept."@fr,
+        "Meá"@ga,
+        "Ruj"@hr,
+        "Szept."@hu,
+        "Set"@it,
+        "Rugs"@lt,
+        "Sep"@lv,
+        "Set"@mt,
+        "Sep"@nl,
+        "Wrz"@pl,
+        "Set."@pt,
+        "Sep"@ro,
+        "Sep"@sk,
+        "Sep"@sl,
+        "Sep"@sv ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Септември"@bg,
+        "Září"@cs,
+        "September"@da,
+        "September"@de,
+        "Σεπτέμβριος"@el,
+        "September"@en,
+        "Septiembre"@es,
+        "September"@et,
+        "Syyskuu"@fi,
+        "Septembre"@fr,
+        "Meán Fómhair"@ga,
+        "Rujan"@hr,
+        "Szeptember"@hu,
+        "Settembre"@it,
+        "Rugsėjis"@lt,
+        "Septembris"@lv,
+        "Settembru"@mt,
+        "September"@nl,
+        "Wrzesień"@pl,
+        "Setembro"@pt,
+        "Septembrie"@ro,
+        "September"@sk,
+        "September"@sl,
+        "September"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/SPRING> a skos:Concept ;
+    at:authority-code "SPRING" ;
+    at:deprecated "false" ;
+    at:op-code "SPRING" ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "SPRING" ;
+    dc:identifier "SPRING" ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Пролет"@bg,
+        "Jaro"@cs,
+        "Forår"@da,
+        "Frühling"@de,
+        "Άνοιξη"@el,
+        "Spring"@en,
+        "Primavera"@es,
+        "Kevad"@et,
+        "Kevät"@fi,
+        "Printemps"@fr,
+        "Earrach"@ga,
+        "Proljeće"@hr,
+        "Tavasz"@hu,
+        "Primavera"@it,
+        "Pavasaris"@lt,
+        "Pavasaris"@lv,
+        "Ir-Rebbiegħa"@mt,
+        "Lente"@nl,
+        "Wiosna"@pl,
+        "Primavera"@pt,
+        "Primăvară"@ro,
+        "Jar"@sk,
+        "Pomlad"@sl,
+        "Vår"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/SUMMER> a skos:Concept ;
+    at:authority-code "SUMMER" ;
+    at:deprecated "false" ;
+    at:op-code "SUMMER" ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "SUMMER" ;
+    dc:identifier "SUMMER" ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Лято"@bg,
+        "Léto"@cs,
+        "Sommer"@da,
+        "Sommer"@de,
+        "Καλοκαίρι"@el,
+        "Summer"@en,
+        "Verano"@es,
+        "Suvi"@et,
+        "Kesä"@fi,
+        "Été"@fr,
+        "Samhradh"@ga,
+        "Ljeto"@hr,
+        "Nyár"@hu,
+        "Estate"@it,
+        "Vasara"@lt,
+        "Vasara"@lv,
+        "Is-Sajf"@mt,
+        "Zomer"@nl,
+        "Lato"@pl,
+        "Verão"@pt,
+        "Vară"@ro,
+        "Leto"@sk,
+        "Poletje"@sl,
+        "Sommar"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/SUN> a skos:Concept ;
+    at:authority-code "SUN" ;
+    at:deprecated "false" ;
+    at:op-code "SUN" ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "SUN" ;
+    dc:identifier "SUN" ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Неделя"@bg,
+        "Neděle"@cs,
+        "Søndag"@da,
+        "Sonntag"@de,
+        "Κυριακή"@el,
+        "Sunday"@en,
+        "Domingo"@es,
+        "Pühapäev"@et,
+        "Sunnuntai"@fi,
+        "Dimanche"@fr,
+        "An Domhnach"@ga,
+        "Nedjelja"@hr,
+        "Vasárnap"@hu,
+        "Domenica"@it,
+        "Sekmadienis"@lt,
+        "Svētdiena"@lv,
+        "Il-ħadd"@mt,
+        "Zondag"@nl,
+        "Niedziela"@pl,
+        "Domingo"@pt,
+        "Duminică"@ro,
+        "Nedeľa"@sk,
+        "Nedelja"@sl,
+        "Söndag"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/THU> a skos:Concept ;
+    at:authority-code "THU" ;
+    at:deprecated "false" ;
+    at:op-code "THU" ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "THU" ;
+    dc:identifier "THU" ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Четвъртък"@bg,
+        "Čtvrtek"@cs,
+        "Torsdag"@da,
+        "Donnerstag"@de,
+        "Πέμπτη"@el,
+        "Thursday"@en,
+        "Jueves"@es,
+        "Neljapäev"@et,
+        "Torstai"@fi,
+        "Jeudi"@fr,
+        "An Déardaoin"@ga,
+        "Četvrtak"@hr,
+        "Csütörtök"@hu,
+        "Giovedì"@it,
+        "Ketvirtadienis"@lt,
+        "Ceturtdiena"@lv,
+        "Il-ħamis"@mt,
+        "Donderdag"@nl,
+        "Czwartek"@pl,
+        "Quinta-feira"@pt,
+        "Joi"@ro,
+        "Štvrtok"@sk,
+        "Četrtek"@sl,
+        "Torsdag"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/TUE> a skos:Concept ;
+    at:authority-code "TUE" ;
+    at:deprecated "false" ;
+    at:op-code "TUE" ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "TUE" ;
+    dc:identifier "TUE" ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Вторник"@bg,
+        "Úterý"@cs,
+        "Tirsdag"@da,
+        "Dienstag"@de,
+        "Τρίτη"@el,
+        "Tuesday"@en,
+        "Martes"@es,
+        "Teisipäev"@et,
+        "Tiistai"@fi,
+        "Mardi"@fr,
+        "An Mháirt"@ga,
+        "Utorak"@hr,
+        "Kedd"@hu,
+        "Martedì"@it,
+        "Antradienis"@lt,
+        "Otrdiena"@lv,
+        "It-tlieta"@mt,
+        "Dinsdag"@nl,
+        "Wtorek"@pl,
+        "Terça-feira"@pt,
+        "Marţi"@ro,
+        "Utorok"@sk,
+        "Torek"@sl,
+        "Tisdag"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/UNKNOWN> a skos:Concept ;
+    at:authority-code "UNKNOWN" ;
+    at:deprecated "false" ;
+    at:op-code "UNKNOWN" ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "UNKNOWN" ;
+    dc:identifier "UNKNOWN" ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Hеизвестен"@bg,
+        "Neznámý"@cs,
+        "Ukendt"@da,
+        "Unbekannt"@de,
+        "Αγνωστος"@el,
+        "Unknown"@en,
+        "Desconocido"@es,
+        "Teadmata"@et,
+        "Tuntematon"@fi,
+        "Inconnu"@fr,
+        "Anaithnid"@ga,
+        "Nepoznat"@hr,
+        "Ismeretlen"@hu,
+        "Sconosciuto"@it,
+        "Nežinomas"@lt,
+        "Nezināms"@lv,
+        "Mhux magħruf"@mt,
+        "Onbekend"@nl,
+        "Nieznany"@pl,
+        "Desconhecido"@pt,
+        "Necunoscut"@ro,
+        "Nevedno"@sk,
+        "Neznano"@sl,
+        "Okänd"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/UNLIMITED> a skos:Concept ;
+    at:authority-code "UNLIMITED" ;
+    at:deprecated "false" ;
+    at:op-code "UNLIMITED" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "INDEFINITE_DURATION" ;
+            dc:source "TED_SCHEMA" ] ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "UNLIMITED" ;
+    dc:identifier "UNLIMITED" ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Hеограничен"@bg,
+        "Neomezený"@cs,
+        "Ubegrænset"@da,
+        "Unbegrenzt"@de,
+        "Απεριόριστος"@el,
+        "Unlimited"@en,
+        "Ilimitado"@es,
+        "Piiramatu"@et,
+        "Rajoittamaton"@fi,
+        "Illimité"@fr,
+        "Neamhtheoranta"@ga,
+        "Neograničen"@hr,
+        "Korlátlan"@hu,
+        "Illimitato"@it,
+        "Neribotas"@lt,
+        "Neierobežots"@lv,
+        "Illimitat"@mt,
+        "Onbeperkt"@nl,
+        "Nieograniczony"@pl,
+        "Ilimitado"@pt,
+        "Nelimitat"@ro,
+        "Neobmedzený"@sk,
+        "Neomejeno"@sl,
+        "Obegränsat"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/WED> a skos:Concept ;
+    at:authority-code "WED" ;
+    at:deprecated "false" ;
+    at:op-code "WED" ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "WED" ;
+    dc:identifier "WED" ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Сряда"@bg,
+        "Středa"@cs,
+        "Onsdag"@da,
+        "Mittwoch"@de,
+        "Τετάρτη"@el,
+        "Wednesday"@en,
+        "Miércoles"@es,
+        "Kolmapäev"@et,
+        "Keskiviikko"@fi,
+        "Mercredi"@fr,
+        "An Chéadaoin"@ga,
+        "Srijeda"@hr,
+        "Szerda"@hu,
+        "Mercoledì"@it,
+        "Trečiadienis"@lt,
+        "Trešdiena"@lv,
+        "L-erbgħa"@mt,
+        "Woensdag"@nl,
+        "Środa"@pl,
+        "Quarta-feira"@pt,
+        "Miercuri"@ro,
+        "Streda"@sk,
+        "Sreda"@sl,
+        "Onsdag"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/WEEK> a skos:Concept ;
+    at:authority-code "WEEK" ;
+    at:deprecated "false" ;
+    at:op-code "WEEK" ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "WEEK" ;
+    dc:identifier "WEEK" ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Седмица"@bg,
+        "Týden"@cs,
+        "Uge"@da,
+        "Woche"@de,
+        "Εβδομάδα"@el,
+        "Week"@en,
+        "Semana"@es,
+        "Nädalal"@et,
+        "Viikko"@fi,
+        "Semaine"@fr,
+        "Seachtain"@ga,
+        "Tjedan"@hr,
+        "Hét"@hu,
+        "Settimana"@it,
+        "Savaitė"@lt,
+        "Nedēļa"@lv,
+        "Ġimgħa"@mt,
+        "Week"@nl,
+        "Tydzień"@pl,
+        "Semana"@pt,
+        "Săptămână"@ro,
+        "Týždeň"@sk,
+        "Teden"@sl,
+        "Vecka"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/WINTER> a skos:Concept ;
+    at:authority-code "WINTER" ;
+    at:deprecated "false" ;
+    at:op-code "WINTER" ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "WINTER" ;
+    dc:identifier "WINTER" ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Зима"@bg,
+        "Zima"@cs,
+        "Vinter"@da,
+        "Winter"@de,
+        "Χειμώνας"@el,
+        "Winter"@en,
+        "Invierno"@es,
+        "Talv"@et,
+        "Talvi"@fi,
+        "Hiver"@fr,
+        "Geimhreadh"@ga,
+        "Zima"@hr,
+        "Tél"@hu,
+        "Inverno"@it,
+        "Žiema"@lt,
+        "Ziema"@lv,
+        "Ix-Xitwa"@mt,
+        "Winter"@nl,
+        "Zima"@pl,
+        "Inverno"@pt,
+        "Iarnă"@ro,
+        "Zima"@sk,
+        "Zima"@sl,
+        "Vinter"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/WORKING_DAY> a skos:Concept ;
+    at:authority-code "WORKING_DAY" ;
+    at:deprecated "false" ;
+    at:op-code "WORKING_DAY" ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "WORKING_DAY" ;
+    dc:identifier "WORKING_DAY" ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Работен ден"@bg,
+        "Pracovní den"@cs,
+        "Arbejdsdag"@da,
+        "Arbeitstag"@de,
+        "Εργάσιμη ημέρα"@el,
+        "Working day"@en,
+        "Día hábil"@es,
+        "Tööpäev"@et,
+        "Työpäivä"@fi,
+        "Jour ouvré"@fr,
+        "Lá oibre"@ga,
+        "Radni dan"@hr,
+        "Munkanap"@hu,
+        "Giorno lavorativo"@it,
+        "Darbo diena"@lt,
+        "Darba diena"@lv,
+        "Jum tax-xogħol"@mt,
+        "Werkdag"@nl,
+        "Dzień roboczy"@pl,
+        "Dia útil"@pt,
+        "Zi lucrătoare"@ro,
+        "Pracovný deň"@sk,
+        "Delovni dan"@sl,
+        "Arbetsdag"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/YEAR> a skos:Concept ;
+    at:authority-code "YEAR" ;
+    at:deprecated "false" ;
+    at:op-code "YEAR" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "YEAR" ;
+            dc:source "TED_SCHEMA" ] ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "YEAR" ;
+    dc:identifier "YEAR" ;
+    skos:altLabel "Години"@bg,
+        "Roky"@cs,
+        "Jahre"@de,
+        "Έτη"@el,
+        "Years"@en,
+        "Años"@es,
+        "Aastad"@et,
+        "Vuodet"@fi,
+        "Ans"@fr,
+        "Bliana"@ga,
+        "Godine"@hr,
+        "Évek"@hu,
+        "Anni"@it,
+        "Gadi"@lv,
+        "Snin"@mt,
+        "Jaren"@nl,
+        "Lata"@pl,
+        "Anos"@pt,
+        "Ani"@ro,
+        "Roky"@sk,
+        "Leta"@sl ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Година"@bg,
+        "Rok"@cs,
+        "År"@da,
+        "Jahr"@de,
+        "Έτος"@el,
+        "Year"@en,
+        "Año"@es,
+        "Aasta"@et,
+        "Vuosi"@fi,
+        "An"@fr,
+        "Bliain"@ga,
+        "Godina"@hr,
+        "Év"@hu,
+        "Anno"@it,
+        "Metai"@lt,
+        "Gads"@lv,
+        "Sena"@mt,
+        "Jaar"@nl,
+        "Rok"@pl,
+        "Ano"@pt,
+        "An"@ro,
+        "Rok"@sk,
+        "Leto"@sl,
+        "År"@sv .
+
+<http://publications.europa.eu/resource/authority/timeperiod/YEAR_HALF> a skos:Concept ;
+    at:authority-code "YEAR_HALF" ;
+    at:deprecated "false" ;
+    at:op-code "YEAR_HALF" ;
+    at:start.use "1952-07-25" ;
+    atold:op-code "YEAR_HALF" ;
+    dc:identifier "YEAR_HALF" ;
+    skos:inScheme atold:timeperiod ;
+    skos:prefLabel "Шестмесечие"@bg,
+        "Pololetí"@cs,
+        "Halvår"@da,
+        "Halbjahr"@de,
+        "Εξάμηνο"@el,
+        "Half year"@en,
+        "Semestre"@es,
+        "Poolaasta"@et,
+        "Vuosipuolisko"@fi,
+        "Semestre"@fr,
+        "Leathbliain"@ga,
+        "Polugodište"@hr,
+        "Fél év"@hu,
+        "Semestre"@it,
+        "Pusmetis"@lt,
+        "Pusgads"@lv,
+        "Nofs sena"@mt,
+        "Halfjaar"@nl,
+        "Pół roku"@pl,
+        "Semestre"@pt,
+        "Semestru"@ro,
+        "Polrok"@sk,
+        "Polletje"@sl,
+        "Halvår"@sv .
+
+atold:timeperiod a skos:ConceptScheme ;
+    rdfs:label "Time period"@en ;
+    at:prefLabel "Time period"@en ;
+    at:table.id "timeperiod" ;
+    at:table.version.number "20190918-0" ;
+    owl:versionInfo "20190918-0" ;
+    skos:prefLabel "Time period"@en .

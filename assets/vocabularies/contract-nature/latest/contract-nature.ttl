@@ -1,0 +1,185 @@
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://publications.europa.eu/resource/authority/contract-nature/OP_DATPRO> a skos:Concept ;
+    at:op-code "OP_DATPRO" ;
+    atold:op-code "OP_DATPRO" ;
+    dc:identifier "OP_DATPRO" ;
+    skos:inScheme atold:contract-nature ;
+    skos:prefLabel "НЕОКОНЧАТЕЛНИ ДАННИ"@bg,
+        "Předběžné údaje"@cs,
+        "Midlertidige data"@da,
+        "Vorläufige Daten"@de,
+        "Προσωρινά δεδομένα"@el,
+        "Provisional data"@en,
+        "Datos provisionales"@es,
+        "Esialgsed andmed"@et,
+        "Alustavat tiedot"@fi,
+        "Données provisoires"@fr,
+        "Sonraí sealadacha"@ga,
+        "Privremeni podaci"@hr,
+        "Ideiglenes adatok"@hu,
+        "Dati provvisori"@it,
+        "Laikinieji duomenys"@lt,
+        "Provizoriski dati"@lv,
+        "Dejta provviżorja"@mt,
+        "Voorlopige gegevens"@nl,
+        "Dane tymczasowe"@pl,
+        "Dados provisórios"@pt,
+        "Date provizorii"@ro,
+        "Predbežné údaje"@sk,
+        "Začasni podatki"@sl,
+        "Tillfälliga uppgifter"@sv .
+
+<http://publications.europa.eu/resource/authority/contract-nature/combined> a skos:Concept ;
+    at:authority-code "combined" ;
+    at:deprecated "false" ;
+    at:op-code "combined" ;
+    at:start.use "2021-03-17" ;
+    atold:op-code "combined" ;
+    dc:identifier "combined" ;
+    skos:inScheme atold:contract-nature ;
+    skos:prefLabel "Комбинирани договори"@bg,
+        "Kombinované smlouvy"@cs,
+        "Kombinerede kontrakter"@da,
+        "Kombiniert Verträge"@de,
+        "Σε συνδυασμό συμβάσεις"@el,
+        "Combined"@en,
+        "Contratos combinados"@es,
+        "Kombineeritud lepingud"@et,
+        "Yhdistetyt sopimukset"@fi,
+        "Contrats combinés"@fr,
+        "Conarthaí Chomhcheangailte"@ga,
+        "Kombinirani ugovori"@hr,
+        "Kombinált szerződések"@hu,
+        "Appalti misti"@it,
+        "Kombinuoti sutartys"@lt,
+        "Kombinētie līgumi"@lv,
+        "Kuntratti magħquda"@mt,
+        "Gecombineerd contracten"@nl,
+        "Połączone kontrakty"@pl,
+        "Contratos combinados"@pt,
+        "Contracte combinate"@ro,
+        "Kombinované zmluvy"@sk,
+        "Kombinirane pogodbe"@sl,
+        "Kombinerade kontrakt"@sv .
+
+<http://publications.europa.eu/resource/authority/contract-nature/services> a skos:Concept ;
+    at:authority-code "services" ;
+    at:deprecated "false" ;
+    at:op-code "services" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "4" ;
+            dc:source "CODIF_DATA" ] ;
+    at:start.use "2019-09-18" ;
+    atold:op-code "services" ;
+    dc:identifier "services" ;
+    skos:inScheme atold:contract-nature ;
+    skos:prefLabel "Услуги"@bg,
+        "Služby"@cs,
+        "Tjenesteydelser"@da,
+        "Dienstleistungen"@de,
+        "Υπηρεσίες"@el,
+        "Services"@en,
+        "Servicios"@es,
+        "Teenused"@et,
+        "Palvelut"@fi,
+        "Services"@fr,
+        "Seirbhísí"@ga,
+        "Usluge"@hr,
+        "Szolgáltatások"@hu,
+        "Servizi"@it,
+        "Paslaugos"@lt,
+        "Pakalpojumi"@lv,
+        "Servizzi"@mt,
+        "Diensten"@nl,
+        "Usługi"@pl,
+        "Serviços"@pt,
+        "Servicii"@ro,
+        "Služby"@sk,
+        "Storitve"@sl,
+        "Tjänster"@sv .
+
+<http://publications.europa.eu/resource/authority/contract-nature/supplies> a skos:Concept ;
+    at:authority-code "supplies" ;
+    at:deprecated "false" ;
+    at:op-code "supplies" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "2" ;
+            dc:source "CODIF_DATA" ] ;
+    at:start.use "2019-09-18" ;
+    atold:op-code "supplies" ;
+    dc:identifier "supplies" ;
+    skos:inScheme atold:contract-nature ;
+    skos:prefLabel "Доставки"@bg,
+        "Dodávky"@cs,
+        "Varer"@da,
+        "Lieferungen"@de,
+        "Προμήθειες"@el,
+        "Supplies"@en,
+        "Suministros"@es,
+        "Tarned"@et,
+        "Tavarat"@fi,
+        "Fournitures"@fr,
+        "Soláthairtí"@ga,
+        "Roba"@hr,
+        "Árubeszerzések"@hu,
+        "Forniture"@it,
+        "Prekės"@lt,
+        "Piegādes"@lv,
+        "Fornituri"@mt,
+        "Leveringen"@nl,
+        "Dostawy"@pl,
+        "Fornecimentos"@pt,
+        "Bunuri"@ro,
+        "Dodávky"@sk,
+        "Blago"@sl,
+        "Varor"@sv .
+
+<http://publications.europa.eu/resource/authority/contract-nature/works> a skos:Concept ;
+    at:authority-code "works" ;
+    at:deprecated "false" ;
+    at:op-code "works" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "1" ;
+            dc:source "CODIF_DATA" ] ;
+    at:start.use "2019-09-18" ;
+    atold:op-code "works" ;
+    dc:identifier "works" ;
+    skos:inScheme atold:contract-nature ;
+    skos:prefLabel "Строителство"@bg,
+        "Stavební práce"@cs,
+        "Bygge og anlæg"@da,
+        "Bauleistung"@de,
+        "Έργα"@el,
+        "Works"@en,
+        "Obras"@es,
+        "Ehitustööde hankelepingud"@et,
+        "Urakat"@fi,
+        "Marché de travaux"@fr,
+        "Oibreacha"@ga,
+        "Radovi"@hr,
+        "Építési beruházás"@hu,
+        "Lavori"@it,
+        "darbai"@lt,
+        "Būvdarbi"@lv,
+        "Xogħlijiet"@mt,
+        "Werken"@nl,
+        "Roboty budowlane"@pl,
+        "Obras"@pt,
+        "Lucrări"@ro,
+        "Práce"@sk,
+        "Gradnje"@sl,
+        "Byggentreprenader"@sv .
+
+atold:contract-nature a skos:ConceptScheme ;
+    rdfs:label "Contract nature"@en ;
+    at:prefLabel "Contract nature"@en ;
+    at:table.id "contract-nature" ;
+    at:table.version.number "20210317-0" ;
+    owl:versionInfo "20210317-0" ;
+    skos:prefLabel "Contract nature"@en .

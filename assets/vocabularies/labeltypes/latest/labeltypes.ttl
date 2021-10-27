@@ -1,0 +1,272 @@
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://publications.europa.eu/resource/authority/label-type/ABRIDGEDLABEL> a skos:Concept ;
+    at:authority-code "ABRIDGEDLABEL" ;
+    at:deprecated "false" ;
+    at:op-code "ABRIDGEDLABEL" ;
+    at:start.use "2014-11-26" ;
+    atold:op-code "ABRIDGEDLABEL" ;
+    dc:identifier "ABRIDGEDLABEL" ;
+    skos:definition "Abridged is a label type used in Time period authority table to mark a label form for abbreviated label versions."@en ;
+    skos:example "Example: ‘Apr’ is the abridged label for ‘April’, in English."@en ;
+    skos:inScheme atold:label-type ;
+    skos:prefLabel "abridged"@en ;
+    skos:topConceptOf atold:label-type .
+
+<http://publications.europa.eu/resource/authority/label-type/ACRONYM> a skos:Concept ;
+    at:authority-code "ACRONYM" ;
+    at:deprecated "false" ;
+    at:op-code "ACRONYM" ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "ACRONYM" ;
+    dc:identifier "ACRONYM" ;
+    skos:definition "Acronym is a label type used in several authority tables to mark label form composed of the initial letters of the complet form of a name or expression."@en ;
+    skos:example "Example: ‘OP’ is the acronym for ‘Publications Office’ (preferred label) in Corporate body table, in English."@en ;
+    skos:inScheme atold:label-type ;
+    skos:prefLabel "acronym"@en ;
+    skos:topConceptOf atold:label-type .
+
+<http://publications.europa.eu/resource/authority/label-type/ADJECTIVE> a skos:Concept ;
+    at:authority-code "ADJECTIVE" ;
+    at:deprecated "false" ;
+    at:op-code "ADJECTIVE" ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "ADJECTIVE" ;
+    dc:identifier "ADJECTIVE" ;
+    skos:definition "Adjectival is a label type used in Country authority table to mark the adjectival form related with a country."@en ;
+    skos:example "Example: ‘Luxembourgish’ is the adjectival form in relation with Luxembourg in Country authority table, in English."@en ;
+    skos:inScheme atold:label-type ;
+    skos:prefLabel "adjectival"@en ;
+    skos:topConceptOf atold:label-type .
+
+<http://publications.europa.eu/resource/authority/label-type/ALTERNATIVELABEL> a skos:Concept ;
+    at:authority-code "ALTERNATIVELABEL" ;
+    at:deprecated "false" ;
+    at:op-code "ALTERNATIVELABEL" ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "ALTERNATIVELABEL" ;
+    dc:identifier "ALTERNATIVELABEL" ;
+    skos:definition "Alternative is a label type used in several authority tables to mark a label form different from the preferred label, without specifying the type of difference. It is another, lesser used form to express the same concept."@en ;
+    skos:example "Example: ‘Sorani’ is an alternative label for ‘Central Kurdish’ in Language authority table, in English."@en ;
+    skos:inScheme atold:label-type ;
+    skos:prefLabel "alternative"@en ;
+    skos:topConceptOf atold:label-type .
+
+<http://publications.europa.eu/resource/authority/label-type/ATTOLABEL> a skos:Concept ;
+    at:authority-code "ATTOLABEL" ;
+    at:deprecated "true" ;
+    at:end.use "2019-09-17" ;
+    at:op-code "ATTOLABEL" ;
+    at:start.use "2018-02-28" ;
+    atold:op-code "ATTOLABEL" ;
+    dc:identifier "ATTOLABEL" ;
+    skos:definition "ATTO was a label type in eProcurement-related authority tables to separate a label used in ATTO tables from preferred labels. ATTO is the internal translation manager application of the Publications Office of the European Union."@en ;
+    skos:inScheme atold:label-type ;
+    skos:prefLabel "ATTO"@en ;
+    skos:topConceptOf atold:label-type .
+
+<http://publications.europa.eu/resource/authority/label-type/COUNTLABEL> a skos:Concept ;
+    at:authority-code "COUNTLABEL" ;
+    at:deprecated "false" ;
+    at:op-code "COUNTLABEL" ;
+    at:start.use "2014-11-26" ;
+    atold:op-code "COUNTLABEL" ;
+    dc:identifier "COUNTLABEL" ;
+    skos:definition "Count is a label type used in Number authority table to mark the label form used for counting, without alternative or gender-marked forms."@en ;
+    skos:example "Example: ‘un’ to count one in French, without mentioning the feminine form ‘une’ which also means one but is not used to count (un, deux, trois...)."@en ;
+    skos:inScheme atold:label-type ;
+    skos:prefLabel "count"@en ;
+    skos:topConceptOf atold:label-type .
+
+<http://publications.europa.eu/resource/authority/label-type/CURRENCYSUBUNIT> a skos:Concept ;
+    at:authority-code "CURRENCYSUBUNIT" ;
+    at:deprecated "false" ;
+    at:op-code "CURRENCYSUBUNIT" ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "CURRENCYSUBUNIT" ;
+    dc:identifier "CURRENCYSUBUNIT" ;
+    skos:definition "Subunit is a label type used in Currency authority table to mark the fractions of the main currency unit."@en ;
+    skos:example "Example: ‘cent’ (singular form), ‘cents’ (plural form) is the subunit for ‘euro’, in English."@en ;
+    skos:inScheme atold:label-type ;
+    skos:prefLabel "subunit"@en ;
+    skos:topConceptOf atold:label-type .
+
+<http://publications.europa.eu/resource/authority/label-type/DEMONYM> a skos:Concept ;
+    at:authority-code "DEMONYM" ;
+    at:deprecated "false" ;
+    at:op-code "DEMONYM" ;
+    at:start.use "2018-02-22" ;
+    atold:op-code "DEMONYM" ;
+    dc:identifier "DEMONYM" ;
+    skos:definition "Demonym is a label type to mark the citizenship and/or inhabitant form related with a country. This label type is not used yet."@en ;
+    skos:inScheme atold:label-type ;
+    skos:prefLabel "demonym"@en ;
+    skos:topConceptOf atold:label-type .
+
+<http://publications.europa.eu/resource/authority/label-type/FORMLABEL> a skos:Concept ;
+    at:authority-code "FORMLABEL" ;
+    at:deprecated "true" ;
+    at:end.use "2019-09-17" ;
+    at:op-code "FORMLABEL" ;
+    at:start.use "2018-02-28" ;
+    atold:op-code "FORMLABEL" ;
+    dc:identifier "FORMLABEL" ;
+    skos:definition "Form was a label type in eProcurement-related authority tables to separate a label used in forms from preferred labels."@en ;
+    skos:inScheme atold:label-type ;
+    skos:prefLabel "form"@en ;
+    skos:topConceptOf atold:label-type .
+
+<http://publications.europa.eu/resource/authority/label-type/GRAMMATICAL> a skos:Concept ;
+    at:authority-code "GRAMMATICAL" ;
+    at:deprecated "false" ;
+    at:op-code "GRAMMATICAL" ;
+    at:start.use "2021-06-16" ;
+    atold:op-code "GRAMMATICAL" ;
+    dc:identifier "GRAMMATICAL" ;
+    skos:definition "Grammatical is a special label type which can be combined with other label types. It aims to mark multiple gender markings within a term or other grammatical relations. This type is not used yet."@en ;
+    skos:example """Example: the French version of ‘Assistant to the President’ in Role qualifier authority table can have four forms as both the assistant and the president can be a man or a woman:
+Assistant du président (male/male)
+Assistante du président (female/male)
+Assistant de la présidente (male/female)
+Assistante de la présidente (female/female)"""@en ;
+    skos:inScheme atold:label-type ;
+    skos:prefLabel "grammatical"@en ;
+    skos:topConceptOf atold:label-type .
+
+<http://publications.europa.eu/resource/authority/label-type/LONGLABEL> a skos:Concept ;
+    at:authority-code "LONGLABEL" ;
+    at:deprecated "false" ;
+    at:op-code "LONGLABEL" ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "LONGLABEL" ;
+    dc:identifier "LONGLABEL" ;
+    skos:definition "Long is a label type used in several authority tables to mark a label form different from the preferred label. The long label is generally longer than the preferred one."@en ;
+    skos:example "Example: ‘Publications Office of the European Union’ is the long label for ‘Publications Office’ (preferred label) in Corporate body table, in English."@en ;
+    skos:inScheme atold:label-type ;
+    skos:prefLabel "long"@en ;
+    skos:topConceptOf atold:label-type .
+
+<http://publications.europa.eu/resource/authority/label-type/OFFICIALLABEL> a skos:Concept ;
+    at:authority-code "OFFICIALLABEL" ;
+    at:deprecated "false" ;
+    at:op-code "OFFICIALLABEL" ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "OFFICIALLABEL" ;
+    dc:identifier "OFFICIALLABEL" ;
+    skos:definition "Official is a label type used in Country authority table to mark the official state name of a country. In some cases this official label is the same as the preferred label which marks the geographical country name."@en ;
+    skos:example "Example: ‘Grand Duchy of Luxembourg’ is the official label for ‘Luxembourg’ (preferred label) in Country authority table, in English."@en ;
+    skos:inScheme atold:label-type ;
+    skos:prefLabel "official"@en ;
+    skos:topConceptOf atold:label-type .
+
+<http://publications.europa.eu/resource/authority/label-type/ORIGINALLABEL> a skos:Concept ;
+    at:authority-code "ORIGINALLABEL" ;
+    at:deprecated "false" ;
+    at:op-code "ORIGINALLABEL" ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "ORIGINALLABEL" ;
+    dc:identifier "ORIGINALLABEL" ;
+    skos:definition "Original is a label type used in several authority tables to mark a label written in the original language, eventually in more scripts used."@en ;
+    skos:example "Example: ‘црногорски језик’ and ‘crnogorski jezik’ are the original Montenegrin labels for Montenegrin in Language authority table."@en ;
+    skos:inScheme atold:label-type ;
+    skos:prefLabel "original"@en ;
+    skos:topConceptOf atold:label-type .
+
+<http://publications.europa.eu/resource/authority/label-type/ORTHOGRAPHICAL> a skos:Concept ;
+    at:authority-code "ORTHOGRAPHICAL" ;
+    at:deprecated "false" ;
+    at:op-code "ORTHOGRAPHICAL" ;
+    at:start.use "2021-06-16" ;
+    atold:op-code "ORTHOGRAPHICAL" ;
+    dc:identifier "ORTHOGRAPHICAL" ;
+    skos:definition "Orthographical is a special label type which can be combined with other label types. It can contain HTML tags. It aims to keep italic markings which have a meaning in some languages to separate foreign language elements in a term. This type is not used yet."@en ;
+    skos:example "Example: in the Latvian version of Euratom Supply Agency, ‘Euratom Apgādes aģentūra’ the first word, Euratom is written with italic to show that this word comes from another language without translation."@en ;
+    skos:inScheme atold:label-type ;
+    skos:prefLabel "orthographical"@en ;
+    skos:topConceptOf atold:label-type .
+
+<http://publications.europa.eu/resource/authority/label-type/SHORTLABEL> a skos:Concept ;
+    at:authority-code "SHORTLABEL" ;
+    at:deprecated "false" ;
+    at:op-code "SHORTLABEL" ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "SHORTLABEL" ;
+    dc:identifier "SHORTLABEL" ;
+    skos:definition "Short is a label type used in several authority tables to mark a label form different from the preferred label. The short label is generally shorter than the preferred one."@en ;
+    skos:example "Example: ‘Commission’ is the short label for ‘European Commission’ (preferred label) in Corporate body table, in English."@en ;
+    skos:inScheme atold:label-type ;
+    skos:prefLabel "short"@en ;
+    skos:topConceptOf atold:label-type .
+
+<http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL> a skos:Concept ;
+    at:authority-code "STANDARDLABEL" ;
+    at:deprecated "false" ;
+    at:op-code "STANDARDLABEL" ;
+    at:start.use "2012-07-05" ;
+    atold:op-code "STANDARDLABEL" ;
+    dc:identifier "STANDARDLABEL" ;
+    skos:definition "Preferred is a label type used in all authority tables to mark the mainly used label form."@en ;
+    skos:example "Example: ‘European Commission’ in Corporate body table, in English."@en ;
+    skos:inScheme atold:label-type ;
+    skos:prefLabel "preferred"@en ;
+    skos:topConceptOf atold:label-type .
+
+<http://publications.europa.eu/resource/authority/label-type/SYMBOL> a skos:Concept ;
+    at:authority-code "SYMBOL" ;
+    at:deprecated "false" ;
+    at:op-code "SYMBOL" ;
+    at:start.use "2019-02-20" ;
+    atold:op-code "SYMBOL" ;
+    dc:identifier "SYMBOL" ;
+    skos:definition "Symbol is a label type used in the Measurement unit authority table for displaying the symbols of different measurement units. These symbols and abbreviations can be different from SI (International System of Units) symbols in languages that use other than Latin alphabet."@en ;
+    skos:example "Example: ‘m’ is the symbol used for ‘metre’ in English."@en ;
+    skos:inScheme atold:label-type ;
+    skos:prefLabel "symbol"@en ;
+    skos:topConceptOf atold:label-type .
+
+<http://publications.europa.eu/resource/authority/labeltypes/OP_DATPRO> a skos:Concept ;
+    at:authority-code "OP_DATPRO" ;
+    at:deprecated "false" ;
+    at:op-code "OP_DATPRO" ;
+    at:start.use "1952-07-23" ;
+    atold:op-code "OP_DATPRO" ;
+    dc:identifier "OP_DATPRO" ;
+    skos:inScheme atold:label-type ;
+    skos:prefLabel "НЕОКОНЧАТЕЛНИ ДАННИ"@bg,
+        "Předběžné údaje"@cs,
+        "Midlertidige data"@da,
+        "Vorläufige Daten"@de,
+        "Προσωρινά δεδομένα"@el,
+        "Provisional data"@en,
+        "Datos provisionales"@es,
+        "Esialgsed andmed"@et,
+        "Alustavat tiedot"@fi,
+        "Données provisoires"@fr,
+        "Sonraí sealadacha"@ga,
+        "Privremeni podaci"@hr,
+        "Ideiglenes adatok"@hu,
+        "Dati provvisori"@it,
+        "Laikinieji duomenys"@lt,
+        "Provizoriski dati"@lv,
+        "Dejta provviżorja"@mt,
+        "Voorlopige gegevens"@nl,
+        "Dane tymczasowe"@pl,
+        "Dados provisórios"@pt,
+        "Date provizorii"@ro,
+        "Predbežné údaje"@sk,
+        "Začasni podatki"@sl,
+        "Tillfälliga uppgifter"@sv ;
+    skos:topConceptOf atold:label-type .
+
+atold:label-type a skos:ConceptScheme ;
+    rdfs:label "Label type"@en ;
+    at:prefLabel "Label type"@en ;
+    at:table.id "label-type" ;
+    at:table.version.number "20210616-0" ;
+    owl:versionInfo "20210616-0" ;
+    skos:prefLabel "Label type"@en .

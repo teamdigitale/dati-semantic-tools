@@ -1,0 +1,262 @@
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://publications.europa.eu/resource/authority/product-form/BOOKMARK> a skos:Concept ;
+    at:authority-code "BOOKMARK" ;
+    at:deprecated "false" ;
+    at:op-code "BOOKMARK" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "PT" ;
+            dc:source "ONIX" ] ;
+    at:start.use "1951-01-01" ;
+    atold:op-code "BOOKMARK" ;
+    dc:identifier "BOOKMARK" ;
+    skos:inScheme atold:product-form ;
+    skos:prefLabel "Bookmark"@en .
+
+<http://publications.europa.eu/resource/authority/product-form/CDROM> a skos:Concept ;
+    at:authority-code "CDROM" ;
+    at:deprecated "false" ;
+    at:op-code "CDROM" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "DB" ;
+            dc:source "ONIX" ] ;
+    at:start.use "1951-01-01" ;
+    atold:op-code "CDROM" ;
+    dc:identifier "CDROM" ;
+    skos:inScheme atold:product-form ;
+    skos:prefLabel "CD-ROM"@en .
+
+<http://publications.europa.eu/resource/authority/product-form/DVDROM> a skos:Concept ;
+    at:authority-code "DVDROM" ;
+    at:deprecated "false" ;
+    at:op-code "DVDROM" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "DI" ;
+            dc:source "ONIX" ] ;
+    at:start.use "1951-01-01" ;
+    atold:op-code "DVDROM" ;
+    dc:identifier "DVDROM" ;
+    skos:inScheme atold:product-form ;
+    skos:prefLabel "DVD-ROM"@en .
+
+<http://publications.europa.eu/resource/authority/product-form/FOLDER> a skos:Concept ;
+    at:authority-code "FOLDER" ;
+    at:deprecated "false" ;
+    at:op-code "FOLDER" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "PM" ;
+            dc:source "ONIX" ] ;
+    at:start.use "1951-01-01" ;
+    atold:op-code "FOLDER" ;
+    dc:identifier "FOLDER" ;
+    skos:inScheme atold:product-form ;
+    skos:prefLabel "Folder"@en .
+
+<http://publications.europa.eu/resource/authority/product-form/LEAFLET> a skos:Concept ;
+    at:authority-code "LEAFLET" ;
+    at:deprecated "false" ;
+    at:op-code "LEAFLET" ;
+    at:start.use "1951-01-01" ;
+    atold:op-code "LEAFLET" ;
+    dc:identifier "LEAFLET" ;
+    skos:inScheme atold:product-form ;
+    skos:prefLabel "Leaflet"@en .
+
+<http://publications.europa.eu/resource/authority/product-form/OP_DATPRO> a skos:Concept ;
+    at:op-code "OP_DATPRO" ;
+    atold:op-code "OP_DATPRO" ;
+    dc:identifier "OP_DATPRO" ;
+    skos:inScheme atold:product-form ;
+    skos:prefLabel "НЕОКОНЧАТЕЛНИ ДАННИ"@bg,
+        "Předběžné údaje"@cs,
+        "Midlertidige data"@da,
+        "Vorläufige Daten"@de,
+        "Προσωρινά δεδομένα"@el,
+        "Provisional data"@en,
+        "Datos provisionales"@es,
+        "Esialgsed andmed"@et,
+        "Alustavat tiedot"@fi,
+        "Données provisoires"@fr,
+        "Sonraí sealadacha"@ga,
+        "Privremeni podaci"@hr,
+        "Ideiglenes adatok"@hu,
+        "Dati provvisori"@it,
+        "Laikinieji duomenys"@lt,
+        "Provizoriski dati"@lv,
+        "Dejta provviżorja"@mt,
+        "Voorlopige gegevens"@nl,
+        "Dane tymczasowe"@pl,
+        "Dados provisórios"@pt,
+        "Date provizorii"@ro,
+        "Predbežné údaje"@sk,
+        "Začasni podatki"@sl,
+        "Tillfälliga uppgifter"@sv .
+
+<http://publications.europa.eu/resource/authority/product-form/POSTCARD> a skos:Concept ;
+    at:authority-code "POSTCARD" ;
+    at:deprecated "false" ;
+    at:op-code "POSTCARD" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "PJ" ;
+            dc:source "ONIX" ] ;
+    at:start.use "1951-01-01" ;
+    atold:op-code "POSTCARD" ;
+    dc:identifier "POSTCARD" ;
+    skos:inScheme atold:product-form ;
+    skos:prefLabel "Postcard"@en .
+
+<http://publications.europa.eu/resource/authority/product-form/POSTER> a skos:Concept ;
+    at:authority-code "POSTER" ;
+    at:deprecated "false" ;
+    at:op-code "POSTER" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "PK" ;
+            dc:source "ONIX" ] ;
+    at:start.use "1951-01-01" ;
+    atold:op-code "POSTER" ;
+    dc:identifier "POSTER" ;
+    skos:inScheme atold:product-form ;
+    skos:prefLabel "Poster"@en .
+
+<http://publications.europa.eu/resource/authority/product-form/POSTER_PROM> a skos:Concept ;
+    at:authority-code "POSTER_PROM" ;
+    at:deprecated "false" ;
+    at:op-code "POSTER_PROM" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "XF" ;
+            dc:source "ONIX" ] ;
+    at:start.use "1951-01-01" ;
+    atold:op-code "POSTER_PROM" ;
+    dc:identifier "POSTER_PROM" ;
+    skos:inScheme atold:product-form ;
+    skos:prefLabel "Poster, promotional"@en .
+
+<http://publications.europa.eu/resource/authority/product-form/PRINT> a skos:Concept ;
+    at:authority-code "PRINT" ;
+    at:deprecated "false" ;
+    at:op-code "PRINT" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "BA" ;
+            dc:source "ONIX" ] ;
+    at:start.use "1951-01-01" ;
+    atold:op-code "PRINT" ;
+    dc:identifier "PRINT" ;
+    skos:inScheme atold:product-form ;
+    skos:prefLabel "Print"@en .
+
+<http://publications.europa.eu/resource/authority/product-form/PRINT_HRDCV> a skos:Concept ;
+    at:authority-code "PRINT_HRDCV" ;
+    at:deprecated "false" ;
+    at:op-code "PRINT_HRDCV" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "BB" ;
+            dc:source "ONIX" ] ;
+    at:start.use "1951-01-01" ;
+    atold:op-code "PRINT_HRDCV" ;
+    dc:identifier "PRINT_HRDCV" ;
+    skos:inScheme atold:product-form ;
+    skos:prefLabel "Print (hardcover)"@en .
+
+<http://publications.europa.eu/resource/authority/product-form/PRINT_LOSL> a skos:Concept ;
+    at:authority-code "PRINT_LOSL" ;
+    at:deprecated "false" ;
+    at:op-code "PRINT_LOSL" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "BD" ;
+            dc:source "ONIX" ] ;
+    at:start.use "1951-01-01" ;
+    atold:op-code "PRINT_LOSL" ;
+    dc:identifier "PRINT_LOSL" ;
+    skos:inScheme atold:product-form ;
+    skos:prefLabel "Print (looseleaf)"@en .
+
+<http://publications.europa.eu/resource/authority/product-form/PRINT_RGBD> a skos:Concept ;
+    at:authority-code "PRINT_RGBD" ;
+    at:deprecated "false" ;
+    at:op-code "PRINT_RGBD" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "BE" ;
+            dc:source "ONIX" ] ;
+    at:start.use "1951-01-01" ;
+    atold:op-code "PRINT_RGBD" ;
+    dc:identifier "PRINT_RGBD" ;
+    skos:inScheme atold:product-form ;
+    skos:prefLabel "Print (ringbinder)"@en .
+
+<http://publications.europa.eu/resource/authority/product-form/PRINT_SFTCV> a skos:Concept ;
+    at:authority-code "PRINT_SFTCV" ;
+    at:deprecated "false" ;
+    at:op-code "PRINT_SFTCV" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "BC" ;
+            dc:source "ONIX" ] ;
+    at:start.use "1951-01-01" ;
+    atold:op-code "PRINT_SFTCV" ;
+    dc:identifier "PRINT_SFTCV" ;
+    skos:inScheme atold:product-form ;
+    skos:prefLabel "Print (softcover)"@en .
+
+<http://publications.europa.eu/resource/authority/product-form/PRINT_STPL> a skos:Concept ;
+    at:authority-code "PRINT_STPL" ;
+    at:deprecated "false" ;
+    at:op-code "PRINT_STPL" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "BF" ;
+            dc:source "ONIX" ] ;
+    at:start.use "1951-01-01" ;
+    atold:op-code "PRINT_STPL" ;
+    dc:identifier "PRINT_STPL" ;
+    skos:inScheme atold:product-form ;
+    skos:prefLabel "Print (stapled)"@en .
+
+<http://publications.europa.eu/resource/authority/product-form/SHEET_MAP> a skos:Concept ;
+    at:authority-code "SHEET_MAP" ;
+    at:deprecated "false" ;
+    at:op-code "SHEET_MAP" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "CA" ;
+            dc:source "ONIX" ] ;
+    at:start.use "1951-01-01" ;
+    atold:op-code "SHEET_MAP" ;
+    dc:identifier "SHEET_MAP" ;
+    skos:inScheme atold:product-form ;
+    skos:prefLabel "Sheet map"@en .
+
+<http://publications.europa.eu/resource/authority/product-form/USB_FD> a skos:Concept ;
+    at:authority-code "USB_FD" ;
+    at:deprecated "false" ;
+    at:op-code "USB_FD" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "DM" ;
+            dc:source "ONIX" ] ;
+    at:start.use "1951-01-01" ;
+    atold:op-code "USB_FD" ;
+    dc:identifier "USB_FD" ;
+    skos:inScheme atold:product-form ;
+    skos:prefLabel "USB flash drive"@en .
+
+<http://publications.europa.eu/resource/authority/product-form/VIDEO_VHS> a skos:Concept ;
+    at:authority-code "VIDEO_VHS" ;
+    at:deprecated "false" ;
+    at:op-code "VIDEO_VHS" ;
+    at:op-mapped-code [ a at:MappedCode ;
+            at:legacy-code "VJ" ;
+            dc:source "ONIX" ] ;
+    at:start.use "1951-01-01" ;
+    atold:op-code "VIDEO_VHS" ;
+    dc:identifier "VIDEO_VHS" ;
+    skos:inScheme atold:product-form ;
+    skos:prefLabel "VHS Video"@en .
+
+atold:product-form a skos:ConceptScheme ;
+    rdfs:label "Product form"@en ;
+    at:prefLabel "Product form"@en ;
+    at:table.id "product-form" ;
+    at:table.version.number "20160921-0" ;
+    owl:versionInfo "20160921-0" ;
+    skos:prefLabel "Product form"@en .

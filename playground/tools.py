@@ -8,7 +8,7 @@ from pyld import jsonld
 from rdflib import Graph
 
 from .framing import frame_vocabulary_to_csv
-from .utils import MIME_JSONLD, MIME_TURTLE, yaml_load
+from .utils import MIME_JSONLD, MIME_TURTLE, is_recent_than, parse_graph, yaml_load
 
 log = logging.getLogger(__name__)
 
@@ -41,25 +41,24 @@ def is_valid_jsonschema(f: Path):
     log.info(f"Valid json-schema in {f.absolute().as_posix()}")
 
 
-def generate_asset(asset_path_ttl: Path):
-    """Generate rdf, nt and jsonld files from a ttl files."""
-    for f in asset_path_ttl.glob("*/*/*.ttl"):
-        build_asset(f)
-
-
-def build_asset(asset_path: Path, dest_dir: Path = Path(".")):
+def build_semantic_asset(asset_path: Path, dest_dir: Path = Path(".")):
     log.warning(f"Building {asset_path} in {dest_dir}")
+
     if "out" in asset_path.suffixes:
         return
 
-    g = Graph()
-    g.parse(asset_path.as_posix())
+    g = parse_graph(asset_path.as_posix())
 
     for fmt, ext in [("xml", ".rdf"), (MIME_JSONLD, ".jsonld"), ("ntriples", ".nt")]:
         dpath = (dest_dir / asset_path).with_suffix(ext)
         dpath.parent.mkdir(exist_ok=True, parents=True)
-
+        if not is_recent_than(asset_path, dpath):
+            continue
         g.serialize(format=fmt, destination=dpath.as_posix())
+
+
+def build_vocabularies(asset_path: Path, dest_dir: Path = Path(".")):
+    log.warning(f"Building CSV dataset from {asset_path} in {dest_dir}")
 
     for frame_context in asset_path.parent.glob("context-*.ld.yaml"):
         frame_vocabulary_to_csv(asset_path, frame_context, dest_dir)

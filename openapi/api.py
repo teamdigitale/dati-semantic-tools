@@ -120,13 +120,15 @@ def list_entries(vocabulary_id, limit=100, cursor="", **params):
         (cursor,),
     )
 
-    if "label_it" in params:
+    label_param = list(set(params) & {"label_it", "label_en"})[0:1]
+    if label_param:
+        label_param = label_param[0]
         query = (
             f"""SELECT * FROM "{table_name}"
         WHERE key >= ?
-        AND label_it LIKE ?
+        AND {label_param} LIKE ?
         LIMIT {limit}""",
-            (cursor, params["label_it"]),
+            (cursor, params[label_param]),
         )
 
     entries = sql_execute(*query)
@@ -199,7 +201,7 @@ def test_get_entry():
 def main(dbpath, dburl, port):
     zapp = connexion.FlaskApp(__name__, server="tornado")
 
-    if dburl:
+    if not Path(f"/tmp/{dbpath}.db").exists() and dburl:
         zapp.app.logger.info(f"Downloading database from {dburl}.")
         Path(f"/tmp/{dbpath}.db").write_bytes(requests.get(dburl).content)
         zapp.app.logger.warning(f"Database downloaded successfully from {dburl}.")
