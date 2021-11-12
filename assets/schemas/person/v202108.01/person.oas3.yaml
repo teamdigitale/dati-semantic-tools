@@ -9,6 +9,8 @@ info:
   description: |-
     This Person schema is derived from the CPV/Person ontology.
 paths: {}
+servers: []
+tags: []
 components:
   schemas:
     TaxCode:
@@ -18,6 +20,20 @@ components:
       example: RSSMRA75L01H501A
       maxLength: 16
       minLength: 11
+    Parent:
+      type: string
+      x-refersTo: https://w3id.org/italia/onto/CPV/Person
+      description: |-
+        Uno schema semplificato per associare il solo URL
+        che identifica un genitore.
+      additionalProperties: false
+      required:
+        - href
+      properties:
+        href:
+          type: string
+          description: Il codice fiscale del genitore.
+          format: uri
     Person:
       type: object
       x-refersTo: https://w3id.org/italia/onto/CPV/Person
@@ -27,7 +43,6 @@ components:
       required:
       - given_name
       - family_name
-      - date_of_birth
       - tax_code
       properties:
         tax_code:
@@ -44,3 +59,17 @@ components:
           x-refersTo: https://w3id.org/italia/onto/CPV/givenName
           maxLength: 255
           type: string
+        children:
+          x-refersTo: https://w3id.org/italia/onto/CPV/hasChildren
+          type: array
+          items:
+            $ref: "#/components/schemas/Person"
+          minItems: 0
+          maxItems: 50
+        parents:
+          x-refersTo: https://w3id.org/italia/onto/CPV/hasParents
+          type: array
+          items:
+            $ref: "#/components/schemas/Parent"
+          maxItems: 2
+          minItems: 0

@@ -1,0 +1,15 @@
+#
+# This is the semantically correct version of the data
+#   in person.example.yaml.
+#
+@prefix : <https://w3id.org/italia/onto/CPV/> .
+
+<http://anpr/PLLCLL> :familyName  "Polli" .
+<http://anpr/PLLCLL> :givenName   "Camilla" .
+<http://anpr/PLLRCR> :givenName   "Riccardo" .
+<http://anpr/PLLRCR> :surname     "Polli" .
+<http://anpr/PLLRRT> :givenName   "Roberto" .
+<http://anpr/PLLRRT> :hasChildren <http://anpr/PLLCLL> .
+<http://anpr/PLLRRT> :hasChildren <http://anpr/PLLRCR> .
+<http://anpr/PLLRRT> :surname     "Polli" .
+<http://anpr/PLLRRT> :taxCode     "PLLRRT" .
