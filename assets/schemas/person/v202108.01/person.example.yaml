@@ -1,0 +1,34 @@
+#
+# An example json-ld file for a Person.
+#
+'@context':
+  '@version': 1.1
+  '@vocab': https://w3id.org/italia/onto/CPV/
+  '@type': Person
+  href: "@id"
+  tax_code: taxCode
+  given_name: givenName
+  family_name: familyName
+  children:
+    '@context':
+      href: '@id'
+    '@id': hasChildren
+    '@type': Person
+#
+# The actual Person data.
+#
+tax_code: PLLRRT-123
+given_name: Roberto
+family_name: Polli
+href: http://anpr/PLLRRT123
+children:
+- href: http://anpr/PLLRCR123
+  given_name: Riccardo
+  family_name: Polli
+  parents:
+  - href: http://anpr/PLLRRT123
+- href: http://anpr/PLLCLL123
+  given_name: Camilla
+  family_name: Polli
+  parents:
+  - href: http://anpr/PLLRRT123
