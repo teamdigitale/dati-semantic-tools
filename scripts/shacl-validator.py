@@ -57,6 +57,8 @@ if __name__ == "__main__":
         try:
             is_valid, graph, report_text = validate(file, shacl_graph=shacl_graph)
             log.info(f"Validation result: {is_valid}, {rule_file_path}, {report_text}")
+            if not is_valid:
+                exit(1)
         except Exception as e:
             log.error(f"Error validating {file}: {rule_file_path} {e}")
             raise
