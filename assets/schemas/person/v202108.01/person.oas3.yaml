@@ -6,8 +6,21 @@ openapi: 3.0.3
 info:
   title: The Person schema
   version: 202108.01.00
+  x-summary: A minimal Person schema compliant with CPV ontology.
+  license:
+    name: BSD3
+    url: https://opensource.org/licenses/BSD-3-Clause
+  termsOfService: https://opensource.org/licenses/BSD-3-Clause
+  contact:
+    name: Roberto Polli
+    email: robipolli@gmail.com
+    url: http://spcdata.digitpa.gov.it/Amministrazione/agid
   description: |-
-    This Person schema is derived from the CPV/Person ontology.
+    This Person schema is derived from the [CPV/Person](https://w3id.org/italia/onto/CPV/Person) ontology.
+
+    This description field can be rendered in markdown or in text-only in catalogues
+    and other interfaces.
+    .
 paths: {}
 servers: []
 tags: []
@@ -34,9 +47,23 @@ components:
           type: string
           description: Il codice fiscale del genitore.
           format: uri
+          maxLength: 256
     Person:
       type: object
       x-refersTo: https://w3id.org/italia/onto/CPV/Person
+      # This custom property defines the associated json-ld
+      #   context that can be used to semantically describe
+      #   the instances.
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/CPV/"
+        tax_code: taxCode
+        date_of_birth: dateOfBirth
+        given_name: givenName
+        family_name: familyName
+        children:
+          "@id": hasChildren
+        parents:
+          "@id": hasParents
       additionalProperties: false
       description: |-
           Questo schema rappresenta una persona fisica.
