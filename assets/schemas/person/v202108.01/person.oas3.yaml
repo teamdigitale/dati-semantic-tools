@@ -20,6 +20,8 @@ info:
 
     This description field can be rendered in markdown or in text-only in catalogues
     and other interfaces.
+
+
     .
 paths: {}
 servers: []
@@ -34,20 +36,20 @@ components:
       maxLength: 16
       minLength: 11
     Parent:
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/CPV/"
+        parent_id: taxCode
       type: string
       x-refersTo: https://w3id.org/italia/onto/CPV/Person
       description: |-
-        Uno schema semplificato per associare il solo URL
+        Uno schema semplificato per associare una sola chiave
         che identifica un genitore.
       additionalProperties: false
       required:
-        - href
+        - parent_id
       properties:
-        href:
-          type: string
-          description: Il codice fiscale del genitore.
-          format: uri
-          maxLength: 256
+        parent_id:
+          $ref: "#/components/schemas/TaxCode"
     Person:
       type: object
       x-refersTo: https://w3id.org/italia/onto/CPV/Person
