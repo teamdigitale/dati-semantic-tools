@@ -45,16 +45,8 @@ components:
       required:
         - parent_id
       properties:
-<<<<<<< HEAD
         parent_id:
           $ref: "#/components/schemas/TaxCode"
-=======
-        href:
-          type: string
-          description: Il codice fiscale del genitore.
-          format: uri
-          maxLength: 256
->>>>>>> 7f0d115... Add json-ld context.
     Person:
       type: object
       x-refersTo: https://w3id.org/italia/onto/CPV/Person
