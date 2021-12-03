@@ -20,6 +20,7 @@ info:
 
     This description field can be rendered in markdown or in text-only in catalogues
     and other interfaces.
+    .
 paths: {}
 servers: []
 tags: []
