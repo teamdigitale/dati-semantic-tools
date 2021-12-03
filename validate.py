@@ -77,10 +77,13 @@ import click
 @click.option("--validate", default=False)
 @click.option("--build-semantic", default=False)
 @click.option("--build-json", default=False)
+@click.option("--build-schema", default=False)
 @click.option("--build-csv", default=False)
 @click.option("--pattern", default="")
 @click.option("--exclude", default=["NoneString"], type=str, multiple=True)
-def main(validate, build_semantic, build_json, build_csv, pattern, exclude):
+def main(
+    validate, build_semantic, build_json, build_csv, pattern, exclude, build_schema
+):
     basepath = Path("assets")
     buildpath = Path("_build")
     buildpath.mkdir(exist_ok=True, parents=True)
@@ -113,6 +116,11 @@ def main(validate, build_semantic, build_json, build_csv, pattern, exclude):
     if build_json:
         workers.starmap(
             build_yaml_asset, ((f, buildpath) for f in file_list if f.suffix == ".yaml")
+        )
+
+    if build_schema:
+        workers.starmap(
+            build_schema, ((f, buildpath) for f in file_list if f.suffix == "oas3.yaml")
         )
 
     workers.close()

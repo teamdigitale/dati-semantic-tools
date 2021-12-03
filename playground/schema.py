@@ -11,6 +11,8 @@ from rdflib import DCAT, DCTERMS, OWL, RDF, RDFS, Graph, Literal, URIRef
 from rdflib.namespace import Namespace
 from requests import get, head
 
+from playground.utils import is_recent_than, yaml_load
+
 requests_cache.install_cache("oas3_to_turtle")
 
 log = logging.getLogger(__name__)
@@ -206,3 +208,26 @@ def oas3_to_turtle(
     ]
     log.warning("Generated distribution: %s", g.serialize(format="turtle"))
     return g
+
+
+def build_schema(fpath: Path, buildpath: Path = Path(".")):
+    if fpath.suffix != ".yaml":
+        raise ValueError(f"Not a yaml file: {fpath}")
+
+    log.info(f"Building yaml asset for: {fpath}")
+    oas_schema = yaml_load(fpath)
+    asset = Asset(fpath)
+
+    dpath = buildpath / fpath.parent / "index.ttl"
+    dpath.parent.mkdir(exist_ok=True, parents=True)
+    if not is_recent_than(fpath, dpath):
+        return
+
+    index_graph = oas3_to_turtle(
+        asset.uri,
+        oas_schema,
+        access_url=asset.access_url,
+        download_url=asset.download_url,
+    )
+
+    return index_graph.serialize(dpath.as_posix(), format="turtle")

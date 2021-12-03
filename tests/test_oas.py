@@ -5,7 +5,7 @@ import yaml
 from openapi_resolver.__main__ import main
 from rdflib.term import URIRef
 
-from playground.schema import Asset, oas3_to_turtle
+from playground.schema import Asset, build_schema, oas3_to_turtle
 
 BASEPATH = Path(__file__).parent / "data"
 
@@ -83,3 +83,10 @@ def test_turtlize_oas(oas_yaml, harvest_config):
     assert set(mandatory_properties) < set(g.predicates())
     assert URIRef("https://w3id.org/italia/onto/CPV") in g.objects()
     assert URIRef("https://w3id.org/italia/onto/CPV/Person") in g.objects()
+
+
+@pytest.mark.parametrize(
+    "oas_yaml", (BASEPATH.parent.parent / "assets").glob("**/*.oas3.yaml")
+)
+def test_build_schema(oas_yaml, harvest_config):
+    build_schema(oas_yaml, Path("/tmp"))
