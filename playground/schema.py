@@ -9,7 +9,7 @@ import requests_cache
 from pyld import jsonld
 from rdflib import DCAT, DCTERMS, OWL, RDF, RDFS, Graph, Literal, URIRef
 from rdflib.namespace import Namespace
-from requests import get, head
+from requests import get
 
 from playground.utils import is_recent_than, yaml_load
 
@@ -20,7 +20,8 @@ log = logging.getLogger(__name__)
 NS_ADMSAPT = Namespace("https://www.w3.org/italia/onto/ADMS/")
 NS_DCATAPT = Namespace("https://dati.gov.it/onto/dcatapt#")
 NS_LICENCES = Namespace("https://w3id.org/italia/controlled-vocabulary/licences/")
-
+NS_ITALIA = Namespace("https://w3id.org/italia/")
+NS_CPV = Namespace("https://w3id.org/italia/onto/CPV/")
 NS = (
     ("admsapt", NS_ADMSAPT),
     ("dcatapt", NS_DCATAPT),
@@ -30,6 +31,8 @@ NS = (
     ("rdf", RDF),
     ("licences", NS_LICENCES),
     ("dcat", DCAT),
+    ("it", NS_ITALIA),
+    ("cpv", NS_CPV),
 )
 
 
@@ -85,7 +88,10 @@ class Asset:
 
 @lru_cache(maxsize=100)
 def get_asset(uri):
-    netloc = head(uri, allow_redirects=True, headers={"Accept": "text/html"}).url
+    netloc = uri.replace(
+        "https://w3id.org/italia/", "https://ontopia-lodview.agid.gov.it/"
+    )
+    # netloc = head(uri, allow_redirects=True, headers={"Accept": "text/html"}).url
     asset = get(netloc, headers={"Accept": "text/turtle"})
     return asset.text
 
@@ -100,7 +106,7 @@ def get_semantic_references_from_oas3(schema: Dict):
     :rtype: str
     """
     jp_context = jsonpath_ng.parse("$..x-jsonld-context")
-    jp_refersTo = jsonpath_ng.parse("$..x-refersTo")
+    # jp_refersTo = jsonpath_ng.parse("$..x-refersTo")
     fields = {
         "$.info.title": DCTERMS.title,
         "$.info.description": DCTERMS.description,
@@ -121,7 +127,7 @@ def get_semantic_references_from_oas3(schema: Dict):
     domains = set()
     ontologies = set()
     g = Graph()
-    for asset in jp_refersTo.find(schema):
+    for asset in []:  # jp_refersTo.find(schema):
         g.parse(data=get_asset(asset.value), format="turtle")
 
         domains = domains.union(
@@ -132,20 +138,42 @@ def get_semantic_references_from_oas3(schema: Dict):
         )
 
     for ctx in jp_context.find(schema):
-        g.parse(
-            data=jsonld.normalize(
-                {"@context": ctx.value, **{"givenName": "foo"}},
-                {"algorithm": "URDNA2015", "format": "application/nquads"},
-            )
-        )
+        # Find all predicates related to NS_ITALIA.
+        semantic_assets = get_schema_assets(ctx.value)
+
         domains = domains.union(
-            {uri for _, _, uri in g.triples((None, RDFS.domain, None))}
+            {uri for _, _, uri in semantic_assets.triples((None, RDFS.domain, None))}
         )
         ontologies = ontologies.union(
-            {uri for _, _, uri in g.triples((None, RDFS.isDefinedBy, None))}
+            {
+                uri
+                for _, _, uri in semantic_assets.triples((None, RDFS.isDefinedBy, None))
+            }
         )
-
+    # raise NotImplementedError()
     return {"domains": list(domains), "ontologies": list(ontologies), **ret}
+
+
+def get_schema_assets(context: Dict) -> Graph:
+    g = Graph()
+    g.parse(
+        data=jsonld.normalize(
+            {"@context": context, **context},
+            {"algorithm": "URDNA2015", "format": "application/nquads"},
+        )
+    )
+    allowed_ns = (NS_ITALIA,)
+    semantic_assets = {p for p in g.predicates() if p.startswith(*allowed_ns)}
+
+    # Download all dependencies via IRI.
+    semantic_dependencies = Graph()
+    for p in semantic_assets:
+        data = get_asset(str(p))
+        semantic_dependencies.parse(data=data, format="turtle")
+
+    # TODO: retrieve all dependencies from the current git repo.
+
+    return semantic_dependencies
 
 
 def oas3_to_turtle(
