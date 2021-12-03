@@ -32,7 +32,7 @@ jobs:
       - name: Run a script
         run: |-
           pip install tox
-          tox -re validate -- --validate true  --build-semantic true --build-csv true --build-json true
+          tox -re validate -- --validate true  --build-semantic true --build-csv true --build-json true --build-schema true
           touch _build/.nojekyll
 
       - name: Deploy to GitHub Pages

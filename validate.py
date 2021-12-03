@@ -16,13 +16,24 @@ log = logging.getLogger(__name__)
 
 valid_suffixes = {
     "*.ttl": validators.is_turtle,
+    "*.shacl": validators.is_turtle,
     "*.ld.yaml": validators.is_jsonld,
     "*.oas3.yaml": validators.is_openapi,
     "*.schema.yaml": validators.is_jsonschema,
     "context-*.ld.yaml": validators.is_framing_context,
 }
 
-skip_suffixes = (".md", ".csv", ".png", ".xml", ".xsd", ".html", ".gitignore", ".git")
+skip_suffixes = (
+    ".md",
+    ".csv",
+    ".png",
+    ".xml",
+    ".xsd",
+    ".html",
+    ".gitignore",
+    ".git",
+    ".example.yaml",
+)
 
 
 def validate_file(f: str):
@@ -120,7 +131,8 @@ def main(
 
     if build_schema:
         workers.starmap(
-            build_schema, ((f, buildpath) for f in file_list if f.suffix == "oas3.yaml")
+            build_schema,
+            ((f, buildpath) for f in file_list if f.suffix.endswith((".oas3.yaml",))),
         )
 
     workers.close()
