@@ -7,3 +7,5 @@ pandas
 pyshacl
 pyld
 sqlalchemy
+requests_cache
+gitpython
