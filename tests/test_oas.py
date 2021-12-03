@@ -3,9 +3,16 @@ from pathlib import Path
 import pytest
 import yaml
 from openapi_resolver.__main__ import main
+from rdflib import DCAT, DCTERMS, OWL, RDFS
 from rdflib.term import URIRef
 
-from playground.schema import Asset, build_schema, oas3_to_turtle
+from playground.schema import (
+    NS_CPV,
+    Asset,
+    build_schema,
+    get_schema_assets,
+    oas3_to_turtle,
+)
 
 BASEPATH = Path(__file__).parent / "data"
 
@@ -17,9 +24,6 @@ def test_bundle_oas(oas_yaml):
         dst.unlink()
     main(oas_yaml, dst.absolute())
     assert dst.is_file()
-
-
-from rdflib import DCAT, DCTERMS, OWL
 
 
 @pytest.fixture
@@ -90,3 +94,14 @@ def test_turtlize_oas(oas_yaml, harvest_config):
 )
 def test_build_schema(oas_yaml, harvest_config):
     build_schema(oas_yaml, Path("/tmp"))
+
+
+def test_get_schema_assets():
+    assets = get_schema_assets(
+        {
+            "@vocab": "https://w3id.org/italia/onto/CPV/",
+            "given_name": "givenName",
+            "tax_code": "taxCode",
+        }
+    )
+    assert {a for _, _, a in assets.triples((None, RDFS.domain, NS_CPV.Person))}
