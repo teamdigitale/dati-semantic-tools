@@ -8,6 +8,7 @@ from pathlib import Path
 from shutil import copy
 
 from playground import validators
+from playground.schema import build_schema
 from playground.tools import build_semantic_asset, build_vocabularies, yaml_load
 
 logging.basicConfig(level=logging.DEBUG)
@@ -88,12 +89,18 @@ import click
 @click.option("--validate", default=False)
 @click.option("--build-semantic", default=False)
 @click.option("--build-json", default=False)
-@click.option("--build-schema", default=False)
+@click.option("--build-schema-index", default=False)
 @click.option("--build-csv", default=False)
 @click.option("--pattern", default="")
 @click.option("--exclude", default=["NoneString"], type=str, multiple=True)
 def main(
-    validate, build_semantic, build_json, build_csv, pattern, exclude, build_schema
+    validate,
+    build_semantic,
+    build_json,
+    build_csv,
+    pattern,
+    exclude,
+    build_schema_index,
 ):
     basepath = Path("assets")
     buildpath = Path("_build")
@@ -129,10 +136,14 @@ def main(
             build_yaml_asset, ((f, buildpath) for f in file_list if f.suffix == ".yaml")
         )
 
-    if build_schema:
+    if build_schema_index:
         workers.starmap(
             build_schema,
-            ((f, buildpath) for f in file_list if f.suffix.endswith((".oas3.yaml",))),
+            ((f, buildpath) for f in file_list if f.name.endswith((".oas3.yaml",))),
+        )
+        workers.starmap(
+            build_schema,
+            ((f, Path(".")) for f in file_list if f.name.endswith((".oas3.yaml",))),
         )
 
     workers.close()
@@ -158,7 +169,7 @@ def main(
         for d in dirs:
             index_html = Path(os.path.join(root, d, "index.html"))
             index_html.relative_to(buildpath).parent
-            log.warning(f"Creating index file: {index_html}")
+            log.debug(f"Creating index file: {index_html}")
             index_html.write_text(template)
     Path(buildpath / "index.html").write_text(template)
 
