@@ -18,14 +18,14 @@ requests_cache.install_cache("oas3_to_turtle")
 log = logging.getLogger(__name__)
 
 NS_ADMSAPT = Namespace("https://www.w3.org/italia/onto/ADMS/")
-NS_DCATAPT = Namespace("https://dati.gov.it/onto/dcatapt#")
+NS_DCATAPT = Namespace("https://dati.gov.it/onto/dcatapit#")
 NS_LICENCES = Namespace("https://w3id.org/italia/controlled-vocabulary/licences/")
 NS_ITALIA = Namespace("https://w3id.org/italia/")
 NS_CPV = Namespace("https://w3id.org/italia/onto/CPV/")
 NS = (
     ("admsapt", NS_ADMSAPT),
-    ("dcatapt", NS_DCATAPT),
-    ("dcterms", DCTERMS),
+    ("dcatapit", NS_DCATAPT),
+    ("dct", DCTERMS),
     ("owl", OWL),
     ("rdfs", RDFS),
     ("rdf", RDF),
