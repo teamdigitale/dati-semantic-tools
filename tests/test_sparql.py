@@ -6,7 +6,7 @@ import requests
 from jsonpath_ng import parse
 from rdflib import Graph
 
-from playground.utils import yaml_load
+from dati_playground.utils import yaml_load
 
 BASEPATH = Path(__file__).absolute().parent.parent
 SCHEMA_CERTIFICATE = yaml_load(BASEPATH / "assets/schemas/certificato.schema.yaml")

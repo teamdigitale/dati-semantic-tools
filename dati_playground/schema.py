@@ -11,7 +11,7 @@ from rdflib import DCAT, DCTERMS, OWL, RDF, RDFS, Graph, Literal, URIRef
 from rdflib.namespace import Namespace
 from requests import get
 
-from playground.utils import is_recent_than, yaml_load
+from .utils import is_recent_than, load_all_assets, yaml_load
 
 requests_cache.install_cache("oas3_to_turtle")
 
@@ -88,12 +88,23 @@ class Asset:
 
 @lru_cache(maxsize=100)
 def get_asset(uri):
+    log.debug(f"Loading asset for <{uri}>.")
+
+    # import pdb; pdb.set_trace()
+    g = Graph()
+    tstore = load_all_assets(Path("assets/ontologies"))
+    g += tstore.triples((URIRef(uri), None, None))
+    if next(g.subjects(), None):
+        log.debug(f"Returning graph: {g.serialize()}")
+        return g
+
+    log.info("Loading stuff from ontopia.")
     netloc = uri.replace(
         "https://w3id.org/italia/", "https://ontopia-lodview.agid.gov.it/"
     )
-    # netloc = head(uri, allow_redirects=True, headers={"Accept": "text/html"}).url
     asset = get(netloc, headers={"Accept": "text/turtle"})
-    return asset.text
+    g.parse(data=asset.text, format="text/turtle")
+    return g
 
 
 def get_semantic_references_from_oas3(schema: Dict):
@@ -106,7 +117,6 @@ def get_semantic_references_from_oas3(schema: Dict):
     :rtype: str
     """
     jp_context = jsonpath_ng.parse("$..x-jsonld-context")
-    # jp_refersTo = jsonpath_ng.parse("$..x-refersTo")
     fields = {
         "$.info.title": DCTERMS.title,
         "$.info.description": DCTERMS.description,
@@ -128,8 +138,7 @@ def get_semantic_references_from_oas3(schema: Dict):
     ontologies = set()
     g = Graph()
     for asset in []:  # jp_refersTo.find(schema):
-        g.parse(data=get_asset(asset.value), format="turtle")
-
+        g = get_asset(asset.value)
         domains = domains.union(
             {uri for _, _, uri in g.triples((None, RDFS.domain, None))}
         )
@@ -150,7 +159,6 @@ def get_semantic_references_from_oas3(schema: Dict):
                 for _, _, uri in semantic_assets.triples((None, RDFS.isDefinedBy, None))
             }
         )
-    # raise NotImplementedError()
     return {"domains": list(domains), "ontologies": list(ontologies), **ret}
 
 
@@ -169,7 +177,7 @@ def get_schema_assets(context: Dict) -> Graph:
     semantic_dependencies = Graph()
     for p in semantic_assets:
         data = get_asset(str(p))
-        semantic_dependencies.parse(data=data, format="turtle")
+        semantic_dependencies += data
 
     # TODO: retrieve all dependencies from the current git repo.
 

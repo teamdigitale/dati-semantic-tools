@@ -19,6 +19,21 @@ def is_recent_than(spath, dpath):
     return dpath.stat().st_mtime <= spath.stat().st_mtime
 
 
+def load_all_assets(assets_dir) -> Graph:
+    """
+    Load all assets from a directory.
+
+    :param assets_dir: directory to load assets from
+    :return: list of assets
+    """
+    g = Graph()
+    for f in assets_dir.glob("**/*.ttl"):
+        if "aligns" in f.name:
+            continue
+        g += parse_graph(f)
+    return g
+
+
 @lru_cache(maxsize=128)
 def parse_graph(vpath_ttl, format=MIME_TURTLE):
     log.info(f"Parsing file: {vpath_ttl}")

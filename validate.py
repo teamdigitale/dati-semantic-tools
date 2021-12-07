@@ -7,9 +7,9 @@ import os
 from pathlib import Path
 from shutil import copy
 
-from playground import validators
-from playground.schema import build_schema
-from playground.tools import build_semantic_asset, build_vocabularies, yaml_load
+from dati_playground import validators
+from dati_playground.schema import build_schema
+from dati_playground.tools import build_semantic_asset, build_vocabularies, yaml_load
 
 logging.basicConfig(level=logging.DEBUG)
 log = logging.getLogger(__name__)
@@ -147,31 +147,6 @@ def main(
         )
 
     workers.close()
-
-    template = """
-            <html>
-            <body>
-                <script>
-                (async () => {
-                    const response = await fetch('https://api.github.com/repos/ioggstream/json-semantic-playground/contents?ref=gh-pages');
-                    const data = await response.json();
-                    let htmlString = '<ul>';
-                    for (let file of data) {
-                    htmlString += `<li><a href="${file.path}">${file.name}</a></li>`;
-                    }
-                    htmlString += '</ul>';
-                    document.getElementsByTagName('body')[0].innerHTML = htmlString;
-                })()
-                </script>
-            <body>
-            """
-    for root, dirs, _ in os.walk(buildpath):
-        for d in dirs:
-            index_html = Path(os.path.join(root, d, "index.html"))
-            index_html.relative_to(buildpath).parent
-            log.debug(f"Creating index file: {index_html}")
-            index_html.write_text(template)
-    Path(buildpath / "index.html").write_text(template)
 
 
 if __name__ == "__main__":

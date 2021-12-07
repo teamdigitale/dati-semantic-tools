@@ -6,8 +6,12 @@ import pytest
 import yaml
 from rdflib import Graph
 
-from playground.tools import build_semantic_asset, build_vocabularies, jsonschema_to_rdf
-from playground.utils import MIME_JSONLD, yaml_to_json
+from dati_playground.tools import (
+    build_semantic_asset,
+    build_vocabularies,
+    jsonschema_to_rdf,
+)
+from dati_playground.utils import MIME_JSONLD, yaml_to_json
 from validate import build_yaml_asset
 
 ASSETPATH = Path(__file__).absolute().parent.parent / "assets"
@@ -54,7 +58,7 @@ def test_generate_vocabularies(fpath):
 
 @pytest.mark.parametrize("fpath", walk_path(ASSETPATH / "schemas", "*.yaml"))
 def test_generate_json(fpath):
-    build_yaml_asset(fpath, dest_dir=testout)
+    build_yaml_asset(fpath, buildpath=testout)
 
 
 def test_context_to_rdf():
