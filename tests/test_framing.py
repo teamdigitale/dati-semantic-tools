@@ -8,12 +8,12 @@ import pytest
 from pyld import jsonld
 from rdflib.graph import Graph
 
-from playground.framing import (
+from dati_playground.framing import (
     frame_components,
     frame_vocabulary,
     frame_vocabulary_to_csv,
 )
-from playground.utils import MIME_JSONLD, MIME_TURTLE, yaml_load
+from dati_playground.utils import MIME_JSONLD, MIME_TURTLE, yaml_load
 
 BASEPATH = Path(__file__).absolute().parent.parent
 

@@ -4,9 +4,10 @@ import pytest
 import yaml
 from openapi_resolver.__main__ import main
 from rdflib import DCAT, DCTERMS, OWL, RDFS
+from rdflib.namespace import Namespace
 from rdflib.term import URIRef
 
-from playground.schema import (
+from dati_playground.schema import (
     NS_CPV,
     Asset,
     build_schema,
@@ -97,11 +98,22 @@ def test_build_schema(oas_yaml, harvest_config):
 
 
 def test_get_schema_assets():
+    NS_Indicator = Namespace("https://w3id.org/italia/onto/Indicator/")
     assets = get_schema_assets(
         {
             "@vocab": "https://w3id.org/italia/onto/CPV/",
+            "indicator": "https://w3id.org/italia/onto/Indicator/",
+            "loc": "https://w3id.org/italia/onto/CLV/",
             "given_name": "givenName",
             "tax_code": "taxCode",
+            "ts": "indicator:computedAtTime",
+            "country": "clv:lat",
         }
     )
     assert {a for _, _, a in assets.triples((None, RDFS.domain, NS_CPV.Person))}
+    assert {
+        a
+        for _, _, a in assets.triples(
+            (None, RDFS.domain, NS_Indicator.IndicatorCalculation)
+        )
+    }

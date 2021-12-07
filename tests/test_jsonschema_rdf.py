@@ -9,8 +9,12 @@ import yaml
 from pyld import jsonld
 from rdflib.graph import Graph
 
-from playground.tools import JSON_SCHEMA_CONTEXT, is_valid_jsonschema, jsonschema_to_rdf
-from playground.utils import MIME_JSONLD, MIME_TURTLE, yaml_load
+from dati_playground.tools import (
+    JSON_SCHEMA_CONTEXT,
+    is_valid_jsonschema,
+    jsonschema_to_rdf,
+)
+from dati_playground.utils import MIME_JSONLD, MIME_TURTLE, yaml_load
 
 log = logging.getLogger(__name__)
 
