@@ -9,3 +9,5 @@ pyld
 sqlalchemy
 requests_cache
 gitpython
+openapi_spec_validator
+click
