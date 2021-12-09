@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 from typing import Dict
 
@@ -71,3 +72,52 @@ def is_valid_sqlite(datafile: Path, schema: Dict) -> bool:
         compliant with the given schemas.
     """
     raise NotImplementedError
+
+
+VALID_SUFFIXES = {
+    "*.ttl": is_turtle,
+    "*.shacl": is_turtle,
+    "*.ld.yaml": is_jsonld,
+    "*.oas3.yaml": is_openapi,
+    "*.schema.yaml": is_jsonschema,
+    "context-*.ld.yaml": is_framing_context,
+}
+
+SKIP_SUFFIXES = (
+    ".md",
+    ".csv",
+    ".png",
+    ".xml",
+    ".xsd",
+    ".html",
+    ".gitignore",
+    ".git",
+    ".example.yaml",
+)
+
+
+def validate_file(f: str):
+    f = Path(f).absolute()
+    f_size = f.stat().st_size
+    if f_size > 4 << 20:
+        raise ValueError(f"File too big: {f_size}")
+
+    for file_pattern, is_valid in VALID_SUFFIXES.items():
+        if Path(f.name).match(file_pattern):
+            print(f"Validating {f}")
+            if is_valid(f.read_text()):
+                return True
+            else:
+                raise ValueError(f"Invalid file: {f}")
+    raise ValueError(f"Unsupported file {f}")
+
+
+def list_files(basepath):
+    for root, dirs, files in os.walk(basepath):
+        for f in files:
+            if f.endswith(SKIP_SUFFIXES):
+                continue
+            if f == "index.ttl":
+                continue
+
+            yield Path(os.path.join(root, f))

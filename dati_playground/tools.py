@@ -1,6 +1,7 @@
 import json
 import logging
 from pathlib import Path
+from shutil import copy
 from typing import Dict
 
 import jsonschema
@@ -62,3 +63,21 @@ def build_vocabularies(asset_path: Path, dest_dir: Path = Path(".")):
 
     for frame_context in asset_path.parent.glob("context-*.ld.yaml"):
         frame_vocabulary_to_csv(asset_path, frame_context, dest_dir)
+
+
+def build_yaml_asset(fpath: Path, buildpath: Path = Path(".")):
+    if fpath.suffix != ".yaml":
+        raise ValueError(f"Not a yaml file: {fpath}")
+
+    log.info(f"Building yaml asset for: {fpath}")
+    dsuffix = ".json"
+    dpath_name = fpath.name
+    if fpath.name.endswith(".ld.yaml"):
+        dsuffix = ".jsonld"
+        dpath_name = fpath.with_suffix("").name
+    dpath = (buildpath / fpath.parent / dpath_name).with_suffix(dsuffix)
+    dpath.parent.mkdir(parents=True, exist_ok=True)
+    data = yaml_load(fpath.as_posix())
+    dpath.write_text(json.dumps(data, indent=2))
+
+    copy(fpath, buildpath / fpath.parent / fpath.name)

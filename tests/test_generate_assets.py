@@ -5,11 +5,11 @@ from pathlib import Path
 import pytest
 import yaml
 from rdflib import Graph
-from validate import build_yaml_asset
 
 from dati_playground.tools import (
     build_semantic_asset,
     build_vocabularies,
+    build_yaml_asset,
     jsonschema_to_rdf,
 )
 from dati_playground.utils import MIME_JSONLD, yaml_to_json
