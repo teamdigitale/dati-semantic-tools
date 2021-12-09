@@ -18,13 +18,14 @@ requests_cache.install_cache("oas3_to_turtle")
 log = logging.getLogger(__name__)
 
 NS_ADMSAPT = Namespace("https://www.w3.org/italia/onto/ADMS/")
-NS_DCATAPT = Namespace("https://dati.gov.it/onto/dcatapit#")
+NS_DCATAPIT = Namespace("http://dati.gov.it/onto/dcatapit#")
 NS_LICENCES = Namespace("https://w3id.org/italia/controlled-vocabulary/licences/")
 NS_ITALIA = Namespace("https://w3id.org/italia/")
 NS_CPV = Namespace("https://w3id.org/italia/onto/CPV/")
+NS_FOAF = Namespace("https://xmlns.com/foaf/0.1/")
 NS = (
     ("admsapt", NS_ADMSAPT),
-    ("dcatapit", NS_DCATAPT),
+    ("dcatapit", NS_DCATAPIT),
     ("dct", DCTERMS),
     ("owl", OWL),
     ("rdfs", RDFS),
@@ -33,6 +34,7 @@ NS = (
     ("dcat", DCAT),
     ("it", NS_ITALIA),
     ("cpv", NS_CPV),
+    ("foaf", NS_FOAF),
 )
 
 
@@ -122,6 +124,7 @@ def get_semantic_references_from_oas3(schema: Dict):
         "$.info.description": DCTERMS.description,
         "$.info.version": OWL.versionInfo,
         "$.info.contact.url": DCTERMS.rightsHolder,
+        "$.info.contact.name": NS_FOAF.name,
     }
     fields = [(jsonpath_ng.parse(k), v) for k, v in fields.items()]
     ret = {}
@@ -133,19 +136,15 @@ def get_semantic_references_from_oas3(schema: Dict):
     ret[DCTERMS.accrualPeriodicity] = URIRef(
         "http://publications.europa.eu/resource/authority/frequency/IRREG"
     )
-
+    ret[DCAT.theme] = URIRef(
+        "http://publications.europa.eu/resource/authority/data-theme/TECHNOLOGY"
+    )
     domains = set()
     ontologies = set()
-    g = Graph()
-    for asset in []:  # jp_refersTo.find(schema):
-        g = get_asset(asset.value)
-        domains = domains.union(
-            {uri for _, _, uri in g.triples((None, RDFS.domain, None))}
-        )
-        ontologies = ontologies.union(
-            {uri for _, _, uri in g.triples((None, RDFS.isDefinedBy, None))}
-        )
-
+    rightsholder = {
+        "@id": ret[DCTERMS.rightsHolder],
+        NS_FOAF.name: ret.pop(NS_FOAF.name),
+    }
     for ctx in jp_context.find(schema):
         # Find all predicates related to NS_ITALIA.
         semantic_assets = get_schema_assets(ctx.value)
@@ -159,7 +158,12 @@ def get_semantic_references_from_oas3(schema: Dict):
                 for _, _, uri in semantic_assets.triples((None, RDFS.isDefinedBy, None))
             }
         )
-    return {"domains": list(domains), "ontologies": list(ontologies), **ret}
+    return {
+        "domains": list(domains),
+        "ontologies": list(ontologies),
+        "rightsholder": rightsholder,
+        **ret,
+    }
 
 
 def get_schema_assets(context: Dict) -> Graph:
@@ -189,7 +193,7 @@ def oas3_to_turtle(
     schema: Dict,
     download_url: str,
     access_url: str = None,
-    rightsholder: str = None,
+    # rightsholder: Dict = None,
 ):
     """
     Convert an annotated OpenAPI 3 schema to a Turtle string.
@@ -209,6 +213,7 @@ def oas3_to_turtle(
 
     ontologies = semantic_references.pop("ontologies")
     domains = semantic_references.pop("domains")
+    rightsholder = semantic_references.pop("rightsholder")
 
     for k, v in semantic_references.items():
         g.add((dataset_uri, k, v))
@@ -217,10 +222,10 @@ def oas3_to_turtle(
     for cls in domains:
         g.add((dataset_uri, NS_ADMSAPT.hasKeyClass, cls))
 
-    if rightsholder:  # Pdataset_urio da ndc-catalog.yaml o publiccode.yaml
-        g.add((dataset_uri, DCTERMS.rightsHolder, URIRef(rightsholder)))
+    rh = URIRef(rightsholder["@id"])
+    g.add((dataset_uri, DCTERMS.rightsHolder, rh))
 
-    g.add((dataset_uri, RDF.type, NS_DCATAPT.Dataset))
+    g.add((dataset_uri, RDF.type, NS_DCATAPIT.Dataset))
     g.add((dataset_uri, DCTERMS.modified, Literal(date.today().isoformat())))
     g.add((dataset_uri, DCAT.distribution, distribution_url))
 
@@ -228,7 +233,7 @@ def oas3_to_turtle(
     [
         g.add(triple)
         for triple in [
-            (distribution_url, RDF.type, NS_DCATAPT.Distribution),
+            (distribution_url, RDF.type, NS_DCATAPIT.Distribution),
             (distribution_url, DCTERMS.license, NS_LICENCES.A21_CCBY40),
             (distribution_url, DCAT.accessURL, URIRef(access_url)),
             # (distribution_url, DCAT.downloadURL, download_url),
@@ -242,6 +247,15 @@ def oas3_to_turtle(
             ),
         ]
     ]
+
+    for triple in [
+        (rh, RDF.type, NS_FOAF.Agent),
+        (rh, RDF.type, NS_DCATAPIT.Agent),
+        (rh, NS_FOAF.name, Literal(rightsholder[NS_FOAF.name])),
+        (rh, DCTERMS.identifier, Literal(rightsholder["@id"].split("/")[-1])),
+    ]:
+        g.add(triple)
+
     log.warning("Generated distribution: %s", g.serialize(format="turtle"))
     return g
 

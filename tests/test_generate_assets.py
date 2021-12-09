@@ -5,6 +5,7 @@ from pathlib import Path
 import pytest
 import yaml
 from rdflib import Graph
+from validate import build_yaml_asset
 
 from dati_playground.tools import (
     build_semantic_asset,
@@ -12,7 +13,6 @@ from dati_playground.tools import (
     jsonschema_to_rdf,
 )
 from dati_playground.utils import MIME_JSONLD, yaml_to_json
-from validate import build_yaml_asset
 
 ASSETPATH = Path(__file__).absolute().parent.parent / "assets"
 BASEPATH = Path(__file__).absolute().parent / "data"
