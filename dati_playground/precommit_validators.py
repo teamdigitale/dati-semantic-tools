@@ -1,6 +1,9 @@
+import difflib
 import logging
+from distutils.version import LooseVersion
 from functools import lru_cache
 from pathlib import Path
+from typing import List
 
 from pyshacl import validate
 from rdflib import Graph
@@ -21,7 +24,7 @@ def get_shacl_graph(absolute_path: str) -> Graph:
     return shacl_graph
 
 
-def validate_shacl(file):
+def validate_shacl(file: str):
     log.info("Validating {}".format(file))
     shacl_graph = None
     rule_file_path = None
@@ -37,10 +40,42 @@ def validate_shacl(file):
             break
         rule_dir = rule_dir.parent
     try:
-        is_valid, graph, report_text = validate(file, shacl_graph=shacl_graph)
+        is_valid, graph, report_text = validate(
+            file.as_posix(), shacl_graph=shacl_graph
+        )
         log.info(f"Validation result: {is_valid}, {rule_file_path}, {report_text}")
         if not is_valid:
             exit(1)
     except Exception as e:
         log.error(f"Error validating {file}: {rule_file_path} {e}")
         raise
+
+
+def validate_directory(fpath: Path, errors: List):
+    if fpath.parent.name != "latest":
+        return
+    folders = [
+        x.name
+        for x in fpath.parent.parent.glob("*/")
+        if x.name != "latest" and x.is_dir() and x.name[:2] != "v."
+    ]
+    log.debug("Identified folders: ", folders)
+    last_version_dirname = sorted(LooseVersion(x) for x in folders)[-1]
+    log.debug("Version:", last_version_dirname)
+    cpath = fpath.parent.parent / last_version_dirname.vstring / fpath.name
+
+    with open(cpath) as f_latest, open(fpath) as f_version:
+        diffs = []
+        diff = difflib.unified_diff(
+            f_latest.readlines(),
+            f_version.readlines(),
+            fromfile=cpath.as_posix(),
+            tofile=fpath.as_posix(),
+        )
+        diffs = "".join(diff)
+        if diffs:
+            errstr = f"ERROR: files are different: {cpath} {fpath}"
+            errors.append(errstr)
+            log.error(diffs)
+        else:
+            print(f"File {cpath} is up to date with {fpath}")
