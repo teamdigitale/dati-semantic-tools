@@ -69,7 +69,7 @@ def is_framing_context(content: str):
 
 def is_valid_sqlite(datafile: Path, schema: Dict) -> bool:
     """Load a sqlite datafile and verify that all entries are
-        compliant with the given schemas.
+    compliant with the given schemas.
     """
     raise NotImplementedError
 
