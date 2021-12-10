@@ -8,7 +8,7 @@ with open("requirements.txt") as f:
 
 setuptools.setup(
     name="dati_playground",
-    version="0.0.1rc2",
+    version="0.0.1rc3",
     author="Roberto Polli",
     author_email="robipolli@gmail.com",
     description="Tools to manage and validate semantic assets.",
@@ -17,6 +17,8 @@ setuptools.setup(
     url="https://github.com/ioggstream/json-semantic-playground",
     packages=setuptools.find_packages(),
     install_requires=requirements,
+    include_package_data=True,
+    package_data={"": ["data/*.yaml"]},
     keywords=["openapi", "rest", "semantic", "ontology", "json-ld"],
     classifiers=[
         "Programming Language :: Python :: 3",

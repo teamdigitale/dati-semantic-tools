@@ -59,9 +59,9 @@ def validate_directory(fpath: Path, errors: List):
         for x in fpath.parent.parent.glob("*/")
         if x.name != "latest" and x.is_dir() and x.name[:2] != "v."
     ]
-    log.debug("Identified folders: ", folders)
+    log.debug("Identified folders: %r", (folders,))
     last_version_dirname = sorted(LooseVersion(x) for x in folders)[-1]
-    log.debug("Version:", last_version_dirname)
+    log.debug("Version: %r", (last_version_dirname,))
     cpath = fpath.parent.parent / last_version_dirname.vstring / fpath.name
 
     with open(cpath) as f_latest, open(fpath) as f_version:
@@ -78,4 +78,4 @@ def validate_directory(fpath: Path, errors: List):
             errors.append(errstr)
             log.error(diffs)
         else:
-            print(f"File {cpath} is up to date with {fpath}")
+            log.info(f"File {cpath} is up to date with {fpath}")

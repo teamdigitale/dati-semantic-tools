@@ -3,7 +3,7 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix foaf: <https://xmlns.com/foaf/0.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix licences: <https://w3id.org/italia/controlled-vocabulary/licences/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
