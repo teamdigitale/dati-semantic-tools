@@ -2,6 +2,7 @@
 Validation script for semantic assets.
 """
 import logging
+from multiprocessing import Pool
 from pathlib import Path
 
 from dati_playground import precommit_validators
@@ -55,18 +56,19 @@ def main(
     exclude,
     build_schema_index,
 ):
-    basepath = Path("assets")
-    buildpath = Path("_build")
-    buildpath.mkdir(exist_ok=True, parents=True)
-    from multiprocessing import Pool
-
-    file_list = [
-        x
-        for x in list(list_files(basepath))
-        if pattern in x.name
-        if all((exclude_item not in x.name for exclude_item in exclude))
-    ]
     if command == "build":
+
+        basepath = Path("assets") if not files else Path(files[0])
+        buildpath = Path("_build") if len(files) < 2 else Path(files[1])
+        buildpath.mkdir(exist_ok=True, parents=True)
+
+        file_list = [
+            x
+            for x in list(list_files(basepath))
+            if pattern in x.name
+            if all((exclude_item not in x.name for exclude_item in exclude))
+        ]
+
         log.warning(f"Examining {file_list} with {exclude}")
         workers = Pool(processes=4)
         if validate:

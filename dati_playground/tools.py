@@ -18,7 +18,7 @@ JSON_SCHEMA_CONTEXT = yaml_load(
 )
 
 
-def jsonschema_to_rdf(schema: Dict, format=MIME_TURTLE):
+def jsonschema_to_rdf(schema: Dict, format=MIME_TURTLE):  # DEPRECATED
     """Convert a jsonschema to RDF (turtle mime-type)
     using the @context defined in https://www.w3.org/2019/wot/json-schema.
     """
@@ -50,12 +50,18 @@ def build_semantic_asset(asset_path: Path, dest_dir: Path = Path(".")):
 
     g = parse_graph(asset_path.as_posix())
 
-    for fmt, ext in [("xml", ".rdf"), (MIME_JSONLD, ".jsonld"), ("ntriples", ".nt")]:
+    for args, ext in [
+        ({"format": "pretty-xml", "max_depth": 1}, ".rdf"),
+        (
+            {"format": MIME_JSONLD, "auto_compact": True, "context_data": True},
+            ".jsonld",
+        ),
+    ]:
         dpath = (dest_dir / asset_path).with_suffix(ext)
         dpath.parent.mkdir(exist_ok=True, parents=True)
         if not is_recent_than(asset_path, dpath):
             continue
-        g.serialize(format=fmt, destination=dpath.as_posix())
+        g.serialize(**args, destination=dpath.as_posix())
 
 
 def build_vocabularies(asset_path: Path, dest_dir: Path = Path(".")):
@@ -80,4 +86,6 @@ def build_yaml_asset(fpath: Path, buildpath: Path = Path(".")):
     data = yaml_load(fpath.as_posix())
     dpath.write_text(json.dumps(data, indent=2))
 
-    copy(fpath, buildpath / fpath.parent / fpath.name)
+    dfile = buildpath / fpath.parent / fpath.name
+    if not fpath.samefile(dfile):
+        copy(fpath, dfile)
