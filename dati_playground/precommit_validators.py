@@ -40,8 +40,9 @@ def validate_shacl(file: str):
             break
         rule_dir = rule_dir.parent
     try:
+        # Enable advanced shacl validation: https://www.w3.org/TR/shacl-af/
         is_valid, graph, report_text = validate(
-            file.as_posix(), shacl_graph=shacl_graph
+            file.as_posix(), shacl_graph=shacl_graph, advanced=True
         )
         log.info(f"Validation result: {is_valid}, {rule_file_path}, {report_text}")
         if not is_valid:

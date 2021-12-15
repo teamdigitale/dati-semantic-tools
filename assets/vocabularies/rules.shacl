@@ -9,6 +9,7 @@
 @prefix cpvapit: <https://w3id.org/italia/onto/CPV/> .
 @prefix xkos:    <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
 @prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -16,13 +17,36 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ex: <http://foo.example/ns#> .
 
+
+ex:
+ a owl:Ontology ;
+  sh:declare [
+    sh:prefix "skos" ;
+    sh:namespace "http://www.w3.org/2004/02/skos/core#"^^xsd:anyURI ;
+  ] ;
+
+  sh:declare [
+      sh:prefix "dcatapit" ;
+      sh:namespace "http://dati.gov.it/onto/dcatapit#"^^xsd:anyURI ;
+  ] ;
+.
+
 ex:VocabularyShape
   a sh:NodeShape ;
 
   # Rules defined in https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it
-  # sh:targetClass skos:ConceptScheme ;
-  sh:targetClass dcatapit:Dataset;
-  # sh:targetClass skos:ConceptScheme;
+  sh:target [
+    a sh:SPARQLTarget ;
+    sh:prefixes ex: ;
+    sh:select """
+      SELECT ?this
+      WHERE {
+        ?this a skos:ConceptScheme .
+        ?this a dcatapit:Dataset .
+      }
+      """ ;
+  ];
+
 
   # Required elements.
   sh:property [ sh:path dct:identifier ; sh:minCount 1 ; ] ;
@@ -36,4 +60,5 @@ ex:VocabularyShape
 
   # Optional elements, but required for publication in NDC.
   sh:property [ sh:path dcat:keyword; sh:minCount 1 ; ] ;
+  sh:property [ sh:path ndc:keyConcept; sh:minCount 1 ; ] ;
   .
