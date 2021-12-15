@@ -8,6 +8,7 @@
 @prefix cpvapit: <https://w3id.org/italia/onto/CPV/> .
 @prefix xkos:    <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
 @prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -174,6 +175,7 @@ vcard:hasEmail
       rdfs:comment "This is the Education Level controlled vocabulary."@en , "Questo è il vocabolario controllato sul grado di istruzione/titoli di studio delle persone."@it ;
       rdfs:label "Education Level Controlled Vocabulary"@en , "Vocabolario Controllato Grado di Istruzione/Titoli di Studio"@it ;
       dct:type <http://purl.org/adms/assettype/CodeList> ;
+      ndc:keyConcept "education-level" ;
       xkos:numberOfLevels "1";
       adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
       dct:identifier "ISTAT:D.2";
