@@ -8,7 +8,7 @@ with open("requirements.txt") as f:
 
 setuptools.setup(
     name="dati_playground",
-    version="0.0.1rc3",
+    version="0.0.1rc4",
     author="Roberto Polli",
     author_email="robipolli@gmail.com",
     description="Tools to manage and validate semantic assets.",
