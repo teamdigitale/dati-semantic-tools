@@ -134,7 +134,48 @@ def frame_vocabulary_to_csv(
             url=csv_metadata["url"],
             context=context["@context"],
         )
+    # Save json-schema version
+    dpath = (dest_dir / vpath).with_suffix(context_prefix + ".oas3.yaml")
+    dpath.write_text(yaml.safe_dump(df_to_schema(df), indent=2))
+
     return framed_data, framed_metadata
+
+
+def df_to_schema(df: DataFrame) -> Dict:
+    """
+    Converts a DataFrame to a schema.
+    """
+    import numpy as np
+
+    def _is_valid(entry):
+        try:
+            return entry.valid_until == np.nan
+        except Exception:
+            return True
+
+    items = [
+        {"const": e.url, "title": e.label_it} for _, e in df.iterrows() if _is_valid(e)
+    ]
+    return {
+        "openapi": "3.0.0",
+        "info": {
+            "title": "Vocabulary",
+            "version": "1.0.0",
+            "x-summary": "Vocabulary",
+            "contact": {
+                "name": "Vocabulary",
+                "url": "https://foo.bar",
+            },
+        },
+        "components": {
+            "schemas": {
+                "MyVocabulary": {
+                    "description": "A schema containing all the vocabulary terms.",
+                    "oneOf": items,
+                }
+            }
+        },
+    }
 
 
 def df_to_sqlite(

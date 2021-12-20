@@ -78,6 +78,8 @@ repos:
     entry: python -m dati_playground validate --validate-shacl=true
     files: >-
       ^assets\/ontologies\/.*\.ttl
+    exclude: >-
+      ^.*(-align|-DBGT|example).*\.ttl$
     types:
     - file
     language: python
@@ -87,6 +89,8 @@ repos:
     name: Ontologies latest validator
     entry: python -m dati_playground validate --validate-versioned-directory=true
     files: '^assets\/ontologies\/.*\.ttl'
+    exclude: >-
+      ^.*(-align|-DBGT|example).*\.ttl$
     language: python
     types:
     - file
