@@ -22,7 +22,7 @@ NS_DCATAPIT = Namespace("http://dati.gov.it/onto/dcatapit#")
 NS_LICENCES = Namespace("https://w3id.org/italia/controlled-vocabulary/licences/")
 NS_ITALIA = Namespace("https://w3id.org/italia/")
 NS_CPV = Namespace("https://w3id.org/italia/onto/CPV/")
-NS_FOAF = Namespace("https://xmlns.com/foaf/0.1/")
+NS_FOAF = Namespace("http://xmlns.com/foaf/0.1/")
 NS = (
     ("admsapt", NS_ADMSAPT),
     ("dcatapit", NS_DCATAPIT),
@@ -142,8 +142,8 @@ def get_semantic_references_from_oas3(schema: Dict):
     domains = set()
     ontologies = set()
     rightsholder = {
-        "@id": ret[DCTERMS.rightsHolder],
-        NS_FOAF.name: ret.pop(NS_FOAF.name),
+        "@id": ret.pop(DCTERMS.rightsHolder, "MISSING"),
+        NS_FOAF.name: ret.pop(NS_FOAF.name, "MISSING"),
     }
     for ctx in jp_context.find(schema):
         # Find all predicates related to NS_ITALIA.
@@ -281,3 +281,7 @@ def build_schema(fpath: Path, buildpath: Path = Path(".")):
     )
 
     return index_graph.serialize(dpath.as_posix(), format="turtle")
+
+
+def build_schema_vocabulary(fpath: Path, buildpath: Path = Path(".")):
+    raise NotImplementedError

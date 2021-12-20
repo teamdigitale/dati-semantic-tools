@@ -93,7 +93,6 @@ SKIP_SUFFIXES = (
     ".gitignore",
     ".git",
     ".example.yaml",
-    ".example.json",
 )
 
 

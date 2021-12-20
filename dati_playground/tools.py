@@ -87,5 +87,5 @@ def build_yaml_asset(fpath: Path, buildpath: Path = Path(".")):
     dpath.write_text(json.dumps(data, indent=2))
 
     dfile = buildpath / fpath.parent / fpath.name
-    if not fpath.samefile(dfile):
+    if not (dfile.exists() and fpath.samefile(dfile)):
         copy(fpath, dfile)

@@ -1,16 +1,27 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix dcatapit: <https://dati.gov.it/onto/dcatapit#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix licences: <https://w3id.org/italia/controlled-vocabulary/licences/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 <https://w3id.org/italia/schema/person/v202108.00/person.oas3.yaml> a dcatapit:Dataset ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-    dct:description "This Person schema is derived from the CPV/Person ontology." ;
-    dct:modified "2021-12-06" ;
+    dct:description """This Person schema is derived from the [CPV/Person](https://w3id.org/italia/onto/CPV/Person) ontology.
+
+This description field can be rendered in markdown or in text-only in catalogues
+and other interfaces.""" ;
+    dct:modified "2021-12-20" ;
+    dct:rightsHolder <http://spcdata.digitpa.gov.it/Amministrazione/agid> ;
     dct:title "The Person schema" ;
     owl:versionInfo "202108.01.00" ;
-    dcat:distribution <https://raw.githubusercontent.com/ioggstream/json-semantic-playground/master/assets/schemas/person/v202108.00/person.oas3.yaml> .
+    dcat:distribution <https://raw.githubusercontent.com/ioggstream/json-semantic-playground/master/assets/schemas/person/v202108.00/person.oas3.yaml> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TECHNOLOGY> .
+
+<http://spcdata.digitpa.gov.it/Amministrazione/agid> a dcatapit:Agent,
+        foaf:Agent ;
+    dct:identifier "agid" ;
+    foaf:name "Roberto Polli" .
 
 <https://raw.githubusercontent.com/ioggstream/json-semantic-playground/master/assets/schemas/person/v202108.00/person.oas3.yaml> a dcatapit:Distribution ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;

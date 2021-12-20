@@ -10,6 +10,7 @@ info:
      **versione beta.**
   termsOfService: 'https://apistore.regione.umbria.it/terms'
   contact:
+    name: Regione Umbria
     url: 'https://apistore.regione.umbria.it/home'
   x-api-id: 945ba997-a799-4e28-a3a6-60926c3316ea
 paths: {}
