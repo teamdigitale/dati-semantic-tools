@@ -11,6 +11,7 @@ import requests
 import yaml
 from connexion import problem
 from flask import current_app, request
+from flask_cors import CORS
 from sqlalchemy import create_engine
 from werkzeug.exceptions import NotFound
 
@@ -259,6 +260,7 @@ def test_get_entry():
 @click.option("--port", default=8080, help="The port.")
 def main(dbpath, dburl, port):
     zapp = connexion.FlaskApp(__name__, server="tornado")
+    CORS(zapp.app)
 
     if not Path(f"/tmp/{dbpath}.db").exists() and dburl:
         zapp.app.logger.info(f"Downloading database from {dburl}.")
