@@ -1,3 +1,4 @@
+import logging
 import os
 import sqlite3
 from pathlib import Path
@@ -12,6 +13,8 @@ from connexion import problem
 from flask import current_app, request
 from sqlalchemy import create_engine
 from werkzeug.exceptions import NotFound
+
+logging.basicConfig(level=logging.DEBUG)
 
 
 def initdb(table_name):
@@ -156,12 +159,66 @@ def list_entries(vocabulary_id, limit=100, cursor="", **params):
     return ret, 200, headers
 
 
+def schema_list_entries_oneof(vocabulary_id, **params):
+    limit, cursor = 1000, ""
+    vocabulary = last_version(vocabulary_id)
+    if not vocabulary:
+        raise NotFound(f"Vocabulary: {vocabulary_id}")
+    table_name = vocabulary["name"][:-5]
+
+    query = (
+        f"""SELECT * FROM "{table_name}"
+        WHERE key >= ?
+        LIMIT {limit}""",
+        (cursor,),
+    )
+
+    label_param = list(set(params) & {"label_it", "label_en"})[0:1]
+    if label_param:
+        label_param = label_param[0]
+        query = (
+            f"""SELECT * FROM "{table_name}"
+        WHERE key >= ?
+        AND {label_param} LIKE ?
+        LIMIT {limit}""",
+            (cursor, params[label_param]),
+        )
+
+    entries = sql_execute(*query)
+    # Format entries as dictionaries.
+    entries.cursor.row_factory = sqlite3.Row
+    ret = entries.cursor.fetchall()
+    ret = (dict(x) for x in ret) if ret else []
+    ret = [{"const": x["key"], "title": x["label_it"]} for x in ret]
+
+    last_cursor = next(iter(ret[-1].values())) if ret else ""
+
+    url_next = update_url(request.url, {"cursor": last_cursor})
+    vocabulary_schema_name = vocabulary_id.replace("-", "_")
+    ret = {
+        f"SchemaVocabulary_{vocabulary_schema_name}": {
+            "x-count": len(ret),
+            "x-last": last_cursor,
+            "x-url": url_next,
+            "oneOf": ret,
+            "x-version": vocabulary["version"],
+        }
+    }
+
+    headers = {"Content-Type": "application/json", "cache-control": "max-age=36000"}
+    if request.headers.get("Accept") == "application/ld+json":
+        ret["@context"] = yaml.load(vocabulary["context"])
+        headers.update({"Content-Type": "application/ld+json"})
+
+    return ret, 200, headers
+
+
 def test_list_entries():
     ret = list_entries("countries", 10)
     assert len(ret["entries"]) == 10
 
 
-def get_entry(vocabulary_id, entry_id):
+def get_entry(vocabulary_id, entry_id, format="json"):
     vocabulary = last_version(vocabulary_id)
     if not vocabulary:
         raise NotFound(f"Vocabulary: {vocabulary_id}")
@@ -178,8 +235,10 @@ def get_entry(vocabulary_id, entry_id):
 
     res = dict(ret)
     headers = {"Content-Type": "application/json", "cache-control": "max-age=36000"}
-    if request.headers.get("Accept") == "application/ld+json":
-        res["@context"] = yaml.load(vocabulary["context"])
+
+    if request.headers.get("Accept") == "application/ld+json" or format == "jsonld":
+        ctx = vocabulary.get("context", "{}")
+        res["@context"] = yaml.safe_load(ctx)
         headers.update({"Content-Type": "application/ld+json"})
     # import pdb; pdb.set_trace()
     return res, 200, headers

@@ -92,6 +92,13 @@ def frame_vocabulary_to_csv(
 
     try:
         csv_metadata = framed_metadata["@graph"][0]
+        version = csv_metadata["version"]
+        if "@value" in version:
+            version = csv_metadata["version"] = version.get("@value", version)
+        log.info(f"Version is now {version}")
+        if not isinstance(version, str):
+            raise ValueError(f"Bad version {version} for {vpath}")
+
     except (KeyError, IndexError):
         log.warning(
             f"Invalid metadata context: {metadata_context} resulting in {framed_metadata}"
@@ -196,13 +203,14 @@ def df_to_sqlite(
     log.warning(f"Dumping csv to {datastore_path}")
     engine = create_engine(datastore_path, echo=False)
     df.to_sql(f"{table_name}", con=engine, if_exists="replace")
+    log.info(f"Dumping context to meta table {context}")
     DataFrame(
         {
             "name": name,
             "title": title or name,
             "description": description or name,
             "version": version,
-            "context": context or {},
+            "context": json.dumps(context or {}),
             "url": url,
         },
         index=[0],
