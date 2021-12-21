@@ -1,0 +1,33 @@
+#
+# Define running hooks.
+#
+-   id: validate-turtle
+    name: Validate a turtle file
+    description: |-
+      This hook validate a turtle file using the rules.shacl files
+      in the closest parent tree.
+
+      By default, only `.ttl` files in `assets/` are processed,
+      but this can be tweaked using the `files` property.
+
+      Files containing the following strings are excluded by default:
+      -aligns, -DBGT, example.
+    entry: python -m dati_playground validate --validate-shacl=true
+    language: python
+    files: >-
+      ^assets/.*\.ttl$
+    exclude: >-
+      .*(-aligns|-DBGT|example).*
+    types:
+    - file
+
+-   id: validate-oas-schema
+    name: Validate schema
+    description: This hook validates a schema provided in yaml format
+    entry: python -m dati_playground validate --validate-jsonschema=true
+    language: python
+    files: '.*\.schema.yaml'
+    exclude: >-
+      .*example.*
+    types:
+    - file
