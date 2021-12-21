@@ -253,11 +253,35 @@ paths:
           in: query
           required: false
           schema:
+            description: |-
+              See https://github.com/zalando/connexion/issues/691#issuecomment-455774634
             type: string
-            enum:
-            - anyOf
-            - oneOf
-            - enum
+            maxLength: 10
+            oneOf:
+            - type: string
+              title: Return an oneOf jsonschema
+              enum:
+                - "oneOf"
+            - type: string
+              title: Return an oneOf OAS3 schema object
+              enum:
+                - "oneOfenum"
+            - type: string
+              title: Return an allOf jsonschema
+              enum:
+                - "anyOf"
+            - type: string
+              title: Return an oneOf OAS3 schema object
+              enum:
+              - "anyOfenum"
+            - type: string
+              title: Return a string+enum OAS3 schema object
+              enum:
+              - enum
+            - type: string
+              title: Return a string+enum OAS3 schema object
+              enum:
+              - enumUrl
 
       operationId: api.schema_list_entries_oneof
       description: |-
@@ -276,26 +300,33 @@ paths:
             application/json:
               schema:
                 type: object
-                maxProperties: 1
-                additionalProperties:
-                  type: object
+                oneOf:
+                - type: object
+                  additionalProperties: false
                   required:
-                  - oneOf
+                    - oneOf
                   properties:
                     oneOf:
+                      $ref: "#/components/schemas/ConstList"
+                - type: object
+                  additionalProperties: false
+                  required:
+                    - allOf
+                  properties:
+                    allOf:
+                      $ref: "#/components/schemas/ConstList"
+                - type: object
+                  additionalProperties: false
+                  required:
+                    - enum
+                  properties:
+                    enum:
                       type: array
                       maxItems: 1000
                       minItems: 0
                       items:
-                        type: object
-                        additionalProperties: false
-                        properties:
-                          const:
-                            type: string
-                            maxLength: 64
-                          title:
-                            type: string
-                            maxLength: 64
+                        type: string
+                        maxLength: 64
 
   /status:
     get:
@@ -376,6 +407,24 @@ components:
       $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/responses/default'
 
   schemas:
+    ConstList:
+      type: array
+      maxItems: 1000
+      minItems: 0
+      items:
+        $ref: "#/components/schemas/Const"
+
+    Const:
+      type: object
+      additionalProperties: false
+      properties:
+        const:
+          type: string
+          maxLength: 64
+        title:
+          type: string
+          maxLength: 64
+
     Problem:
       $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/schemas/Problem'
     EntryId:
