@@ -61,6 +61,9 @@ def validate_directory(fpath: Path, errors: List):
         if x.name != "latest" and x.is_dir() and x.name[:2] != "v."
     ]
     log.debug("Identified folders: %r", (folders,))
+    if not folders:
+        log.info(f"No versioned directories found for {fpath}")
+        return
     last_version_dirname = sorted(LooseVersion(x) for x in folders)[-1]
     log.debug("Version: %r", (last_version_dirname,))
     cpath = fpath.parent.parent / last_version_dirname.vstring / fpath.name
