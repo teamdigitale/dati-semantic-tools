@@ -6,6 +6,7 @@ import pytest
 import yaml
 from rdflib import Graph
 
+from dati_playground.asset import Asset
 from dati_playground.tools import (
     build_semantic_asset,
     build_vocabularies,
@@ -22,16 +23,19 @@ testout = BASEPATH / "out"
 log = logging.getLogger(__name__)
 
 
-def test_generate_assets():
+def test_generate_assets_graph():
     """
     Generate assets from a turtle source.
     """
 
-    g = Graph()
-    g.parse(BASEPATH / "data.ttl")
-    g.serialize(format="xml", destination="data.rdf.out")
-    g.serialize(format="application/ld+json", destination="data.jsonld.out")
-    g.serialize(format="ntriples", destination="data.nt.out")
+    asset = Asset(BASEPATH / "data.ttl")
+    asset.parse()
+    created_files = asset._build_graph(Path("tmp/"), preserve_tree=False)
+    assert created_files
+    for ext in (".rdf", ".jsonld"):
+        dpath = Path("tmp/data.ttl").with_suffix(ext)
+        assert dpath.exists()
+        dpath.unlink()
 
 
 def walk_path(base: Path, pattern: str):
@@ -79,6 +83,7 @@ def test_context_to_rdf():
             g.serialize(format=fmt, destination=dpath)
 
 
+@pytest.mark.skip(msg="deprecated")
 def test_create_schemas_json():
     schemas_path = Path("schemas/")
 
