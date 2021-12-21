@@ -2,7 +2,7 @@ import logging
 import os
 import sqlite3
 from pathlib import Path
-from typing import Dict
+from typing import Dict, Iterable, Tuple
 from urllib.parse import ParseResult, parse_qsl, urlencode, urlparse, urlunparse
 
 import click
@@ -58,7 +58,7 @@ def list_tables():
         yield dict(vocabulary.cursor.fetchone())
 
 
-def last_version(vocabulary_id):
+def last_version(vocabulary_id) -> Dict:
     vocabularies = sql_execute(
         f"""SELECT name FROM sqlite_master WHERE
            (type = 'table' OR type= 'view')
@@ -111,35 +111,12 @@ def update_url(start_url, query: Dict = None):
 
 # @lru_cache(maxsize=128)
 def list_entries(vocabulary_id, limit=100, cursor="", **params):
-    vocabulary = last_version(vocabulary_id)
-    if not vocabulary:
-        raise NotFound(f"Vocabulary: {vocabulary_id}")
-    table_name = vocabulary["name"][:-5]
-
-    query = (
-        f"""SELECT * FROM "{table_name}"
-        WHERE key >= ?
-        LIMIT {limit}""",
-        (cursor,),
+    vocabulary, ret = _list_vocabulary(
+        vocabulary_id, limit=limit, cursor=cursor, **params
     )
 
-    label_param = list(set(params) & {"label_it", "label_en"})[0:1]
-    if label_param:
-        label_param = label_param[0]
-        query = (
-            f"""SELECT * FROM "{table_name}"
-        WHERE key >= ?
-        AND {label_param} LIKE ?
-        LIMIT {limit}""",
-            (cursor, params[label_param]),
-        )
-
-    entries = sql_execute(*query)
-    # Format entries as dictionaries.
-    entries.cursor.row_factory = sqlite3.Row
-    ret = entries.cursor.fetchall()
-    ret = [dict(x) for x in ret] if ret else []
-
+    # ret is an iterable. In this case we need to consolidate it.
+    ret = list(ret)
     last_cursor = next(iter(ret[-1].values())) if ret else ""
 
     url_next = update_url(request.url, {"cursor": last_cursor})
@@ -159,8 +136,38 @@ def list_entries(vocabulary_id, limit=100, cursor="", **params):
     return ret, 200, headers
 
 
-def schema_list_entries_oneof(vocabulary_id, **params):
+def schema_list_entries_oneof(vocabulary_id, lang="it", schema_type="oneOf", **params):
     limit, cursor = 1000, ""
+    if schema_type not in ("oneOf", "anyOf", "enum"):
+        raise ValueError("Bad value for schema")
+    if lang not in ("it", "en"):
+        raise ValueError("Bad language")
+    vocabulary, ret = _list_vocabulary(vocabulary_id, limit, cursor, **params)
+    label_column = f"label_{lang}"
+    if schema_type == "enum":
+        ret = [x["key"] for x in ret]
+        schema = {"type": "string", "enum": ret}
+    else:
+        ret = [{"const": x["key"], "title": x[label_column]} for x in ret]
+        schema = {schema_type: ret}
+    ret = {
+        "SchemaVocabulary": {
+            "x-count": len(ret),
+            "x-version": vocabulary["version"],
+            **schema,
+        }
+    }
+
+    headers = {"Content-Type": "application/json", "cache-control": "max-age=36000"}
+    if request.headers.get("Accept") == "application/ld+json":
+        ret["@context"] = yaml.load(vocabulary["context"])
+        headers.update({"Content-Type": "application/ld+json"})
+
+    return ret, 200, headers
+
+
+def _list_vocabulary(vocabulary_id, limit, cursor, **params) -> Tuple[Dict, Iterable]:
+    current_app.logger.info(f"Params: {params}")
     vocabulary = last_version(vocabulary_id)
     if not vocabulary:
         raise NotFound(f"Vocabulary: {vocabulary_id}")
@@ -189,28 +196,7 @@ def schema_list_entries_oneof(vocabulary_id, **params):
     entries.cursor.row_factory = sqlite3.Row
     ret = entries.cursor.fetchall()
     ret = (dict(x) for x in ret) if ret else []
-    ret = [{"const": x["key"], "title": x["label_it"]} for x in ret]
-
-    last_cursor = next(iter(ret[-1].values())) if ret else ""
-
-    url_next = update_url(request.url, {"cursor": last_cursor})
-    vocabulary_schema_name = vocabulary_id.replace("-", "_")
-    ret = {
-        f"SchemaVocabulary_{vocabulary_schema_name}": {
-            "x-count": len(ret),
-            "x-last": last_cursor,
-            "x-url": url_next,
-            "oneOf": ret,
-            "x-version": vocabulary["version"],
-        }
-    }
-
-    headers = {"Content-Type": "application/json", "cache-control": "max-age=36000"}
-    if request.headers.get("Accept") == "application/ld+json":
-        ret["@context"] = yaml.load(vocabulary["context"])
-        headers.update({"Content-Type": "application/ld+json"})
-
-    return ret, 200, headers
+    return vocabulary, ret
 
 
 def test_list_entries():

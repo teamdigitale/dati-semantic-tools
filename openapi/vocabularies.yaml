@@ -241,6 +241,23 @@ paths:
         - public
       parameters:
         - $ref: "#/components/parameters/vocabulary_id"
+        - $ref: "#/components/parameters/label_it"
+        - name: lang
+          required: false
+          in: query
+          schema:
+            type: string
+            enum: [en, it]
+            example: en
+        - name: schema_type
+          in: query
+          required: false
+          schema:
+            type: string
+            enum:
+            - anyOf
+            - oneOf
+            - enum
 
       operationId: api.schema_list_entries_oneof
       description: |-
@@ -322,6 +339,19 @@ components:
         maxLength: 64
         pattern: >-
           [a-zA-Z0-9-_]+
+    label_it:
+      name: label_it
+      description: |-
+        A string to be matched in the label_it of the vocabulary.
+      allowReserved: false
+      schema:
+        type: string
+        maxLength: 64
+        pattern: >-
+          %?[a-zA-Z0-9]{,62}%?
+      in: query
+      required: false
+
   headers:
     X-RateLimit-Limit:
       $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/X-RateLimit-Limit'
