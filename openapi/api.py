@@ -139,8 +139,6 @@ def list_entries(vocabulary_id, limit=100, cursor="", **params):
 
 def schema_list_entries_oneof(vocabulary_id, lang="it", schema_type="oneOf", **params):
     limit, cursor = 1000, ""
-    if schema_type not in ("oneOf", "anyOf", "enum"):
-        raise ValueError("Bad value for schema")
     if lang not in ("it", "en"):
         raise ValueError("Bad language")
     vocabulary, ret = _list_vocabulary(vocabulary_id, limit, cursor, **params)
@@ -148,6 +146,20 @@ def schema_list_entries_oneof(vocabulary_id, lang="it", schema_type="oneOf", **p
     if schema_type == "enum":
         ret = [x["key"] for x in ret]
         schema = {"type": "string", "enum": ret}
+    elif schema_type == "enumUrl":
+        ret = [x["url"] for x in ret]
+        schema = {"type": "string", "enum": ret}
+    elif schema_type in ("oneOfenum", "anyOfenum"):
+        ret = [
+            {
+                "type": "string",
+                "enum": [x["key"]],
+                "title": x[label_column],
+                "externalDocs": {"url": x["url"]},
+            }
+            for x in ret
+        ]
+        schema = {schema_type[:-4]: ret}
     else:
         ret = [{"const": x["key"], "title": x[label_column]} for x in ret]
         schema = {schema_type: ret}

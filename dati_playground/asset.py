@@ -101,17 +101,30 @@ class Asset:
         log.info(f"Validating {self.path} with {validate}")
         return validate(self.g)
 
-    def _build_graph(self, dest_dir: Path = Path(".")):
-        for fmt, ext in [
-            ("xml", ".rdf"),
-            (MIME_JSONLD, ".jsonld"),
-            ("ntriples", ".nt"),
-        ]:
-            dpath = (dest_dir / self.path).with_suffix(ext)
+    def _build_graph(self, dest_dir: Path = Path("."), preserve_tree=True):
+        log.warning(f"Building {self.path} in {dest_dir}")
+
+        built_files = []
+
+        for args, ext in (
+            ({"format": "pretty-xml", "max_depth": 1}, ".rdf"),
+            (
+                {"format": MIME_JSONLD, "auto_compact": True, "context_data": True},
+                ".jsonld",
+            ),
+        ):
+            if preserve_tree:
+                dname = self.path
+            else:
+                dname = self.path.name
+            dpath = (dest_dir / dname).with_suffix(ext)
+
             dpath.parent.mkdir(exist_ok=True, parents=True)
             if not is_recent_than(self.path, dpath):
                 continue
-            self.g.serialize(format=fmt, destination=dpath.as_posix())
+            self.g.serialize(**args, destination=dpath.as_posix())
+            built_files.append(dpath)
+        return built_files
 
     def _build_schema(self, dest_dir: Path = Path(".")):
         log.info(f"Building yaml asset for: {self.path}")
