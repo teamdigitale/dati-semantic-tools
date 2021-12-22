@@ -151,7 +151,12 @@ def schema_list_entries_oneof(vocabulary_id, lang="it", schema_type="oneOf", **p
         schema = {"type": "string", "enum": ret}
     elif schema_type in ("oneOfenum", "anyOfenum"):
         ret = [
-            {"type": "string", "enum": [x["key"]], "title": x[label_column]}
+            {
+                "type": "string",
+                "enum": [x["key"]],
+                "title": x[label_column],
+                "externalDocs": {"url": x["url"]},
+            }
             for x in ret
         ]
         schema = {schema_type[:-4]: ret}
