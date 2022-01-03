@@ -36,7 +36,7 @@ components:
       x-jsonld-context:
         "@vocab": "https://w3id.org/italia/onto/CPV/"
         parent_id: taxCode
-      type: string
+      type: object
       x-refersTo: https://w3id.org/italia/onto/CPV/Person
       description: |-
         Uno schema semplificato per associare una sola chiave
