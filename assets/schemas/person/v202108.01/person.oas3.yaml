@@ -60,9 +60,9 @@ components:
         given_name: givenName
         family_name: familyName
         children:
-          "@id": hasChildren
+          "@id": isParentOf
         parents:
-          "@id": hasParents
+          "@id": isChildOf
       additionalProperties: false
       description: |-
           Questo schema rappresenta una persona fisica.
@@ -86,14 +86,14 @@ components:
           maxLength: 255
           type: string
         children:
-          x-refersTo: https://w3id.org/italia/onto/CPV/hasChildren
+          x-refersTo: https://w3id.org/italia/onto/CPV/isParentOf
           type: array
           items:
             $ref: "#/components/schemas/Person"
           minItems: 0
           maxItems: 50
         parents:
-          x-refersTo: https://w3id.org/italia/onto/CPV/hasParents
+          x-refersTo: https://w3id.org/italia/onto/CPV/isChildOf
           type: array
           items:
             $ref: "#/components/schemas/Parent"
