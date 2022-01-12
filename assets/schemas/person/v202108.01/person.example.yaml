@@ -6,14 +6,38 @@
   '@vocab': https://w3id.org/italia/onto/CPV/
   '@type': Person
   href: "@id"
-  tax_code: taxCode
+  date_of_birth: dateOfBirth
   given_name: givenName
   family_name: familyName
+  education_level:
+    "@id": hasEducationLevel
+    "@type": "@id"
+    "@context":
+      "@base": "https://w3id.org/italia/controlled-vocabulary/classifications-for-people/education-level/"
   children:
+    '@id': isParentOf
+    '@type': Person
     '@context':
       href: '@id'
-    '@id': hasChildren
-    '@type': Person
+  birth_place: 
+    "@id": "hasBirthPlace"
+    "@context": 
+      "@vocab": "https://w3id.org/italia/onto/CLV/"
+      city: hasCity
+      country:
+        "@id": "hasCountry"
+        "@type": "@id"
+        "@context":
+          "@base": "http://publications.europa.eu/resource/authority/country/"
+      province: 
+        "@id": "hasProvince"
+        "@type": "@id"
+        "@context": 
+          "@base": "https://w3id.org/italia/data/identifiers/provinces-identifiers/vehicle-code/"
+      interno: null
+  parents:
+    "@id": isChildOf
+
 #
 # The actual Person data.
 #

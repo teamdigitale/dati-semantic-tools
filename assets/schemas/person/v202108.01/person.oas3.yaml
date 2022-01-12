@@ -47,6 +47,53 @@ components:
       properties:
         parent_id:
           $ref: "#/components/schemas/TaxCode"
+    BirthPlace:
+      type: object
+      additionalProperties: false
+      required:
+        - city
+        - province
+        - country
+      x-jsonld-context: &BirthPlaceContext
+        "@vocab": "https://w3id.org/italia/onto/CLV/"
+        city: hasCity
+        country:
+          "@id": "hasCountry"
+          "@type": "@id"
+          "@context":
+            "@base": "http://publications.europa.eu/resource/authority/country/"
+        province: 
+          "@id": "hasProvince"
+          "@type": "@id"
+          "@context": 
+            "@base": "https://w3id.org/italia/data/identifiers/provinces-identifiers/vehicle-code/"
+        interno: null
+      properties:
+        city:
+          type: string
+          description: The city where the person was born.
+          example: Roma
+        province:
+          type: string
+          description: The province where the person was born.
+          example: RM
+        country:
+          type: string
+          description: The iso alpha-3 code of the country where the person was born.
+          example: ITA
+        postCode:
+          type: string
+          description: The post code (zip code)
+          example: "00100"
+        interno:
+          type: string
+          maxLength: 32
+      example:
+        city: Roma
+        province: RM
+        country: ITA  
+        postCode: "00100"
+        interno: "Interno 8"
     Person:
       type: object
       x-refersTo: https://w3id.org/italia/onto/CPV/Person
@@ -59,6 +106,15 @@ components:
         date_of_birth: dateOfBirth
         given_name: givenName
         family_name: familyName
+        education_level:
+          "@id": hasEducationLevel
+          "@type": "@id"
+          "@context":
+            "@base": "https://w3id.org/italia/controlled-vocabulary/classifications-for-people/education-level/"
+        birth_place: 
+          "@id": "hasBirthPlace"
+          "@context": 
+            <<: *BirthPlaceContext
         children:
           "@id": isParentOf
         parents:
@@ -73,29 +129,49 @@ components:
       properties:
         tax_code:
           $ref: "#/components/schemas/TaxCode"
-        date_of_birth:
-          x-refersTo: https://w3id.org/italia/onto/CPV/dateOfBirth
-          format: date
-          type: string
         family_name:
-          x-refersTo: https://w3id.org/italia/onto/CPV/familyName
           maxLength: 255
           type: string
         given_name:
-          x-refersTo: https://w3id.org/italia/onto/CPV/givenName
           maxLength: 255
           type: string
+        date_of_birth:
+          format: date
+          type: string
+        education_level:
+          type: string
+          maxLength: 3
+          description: |-
+            Il livello di istruzione della persona.
+            I valori ammessi sono indicati nel [vocabolario](https://w3id.org/italia/controlled-vocabulary/classifications-for-people/education-level)
+        birth_place:
+          $ref: "#/components/schemas/BirthPlace"
         children:
-          x-refersTo: https://w3id.org/italia/onto/CPV/isParentOf
           type: array
           items:
             $ref: "#/components/schemas/Person"
           minItems: 0
           maxItems: 50
         parents:
-          x-refersTo: https://w3id.org/italia/onto/CPV/isChildOf
           type: array
           items:
             $ref: "#/components/schemas/Parent"
           maxItems: 2
           minItems: 0
+      example:
+        tax_code: RSSMRA75L01H501A
+        family_name: Rossi
+        given_name: Mario
+        date_of_birth: "1961-01-01"
+        education_level: "NED"
+        birth_place:
+          city: Roma
+          province: RM
+          country: ITA
+        children:
+        - tax_code: RSSMRA75L01H501A
+        - tax_code: RSSMRA76L01H501A
+        - tax_code: RSSMRA77L01H501A
+    ExportedSchemas:
+      anyOf:
+        - $ref: "#/components/schemas/Person"
