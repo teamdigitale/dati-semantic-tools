@@ -7,9 +7,34 @@
   "@version": 1.1  # Use json-ld 1.1
   "@vocab": "https://w3id.org/italia/onto/CPV/"
   tax_code: taxCode
+  date_of_birth: dateOfBirth
   given_name: givenName
   family_name: familyName
-  date_of_birth: dateOfBirth
+  education_level:
+    "@id": hasEducationLevel
+    "@type": "@id"
+    "@context":
+      "@base": "https://w3id.org/italia/controlled-vocabulary/classifications-for-people/education-level/"
+  birth_place: 
+    "@id": "hasBirthPlace"
+    "@context": 
+      "@vocab": "https://w3id.org/italia/onto/CLV/"
+      city: hasCity
+      country:
+        "@id": "hasCountry"
+        "@type": "@id"
+        "@context":
+          "@base": "http://publications.europa.eu/resource/authority/country/"
+      province: 
+        "@id": "hasProvince"
+        "@type": "@id"
+        "@context": 
+          "@base": "https://w3id.org/italia/data/identifiers/provinces-identifiers/vehicle-code/"
+      interno: null
+  children:
+    "@id": isParentOf
+  parents:
+    "@id": isChildOf
 # The version of this file associated to the
 #  overall ontology.
 "http://www.w3.org/2002/07/owl#versionIRI":
