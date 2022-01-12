@@ -118,7 +118,6 @@ def get_semantic_references_from_oas3(schema: Dict):
     :return: The Turtle string.
     :rtype: str
     """
-    jp_context = jsonpath_ng.parse("$..x-jsonld-context")
     fields = {
         "$.info.title": DCTERMS.title,
         "$.info.description": DCTERMS.description,
@@ -139,12 +138,24 @@ def get_semantic_references_from_oas3(schema: Dict):
     ret[DCAT.theme] = URIRef(
         "http://publications.europa.eu/resource/authority/data-theme/TECHNOLOGY"
     )
-    domains = set()
-    ontologies = set()
     rightsholder = {
         "@id": ret.pop(DCTERMS.rightsHolder, "MISSING"),
         NS_FOAF.name: ret.pop(NS_FOAF.name, "MISSING"),
     }
+    domains, ontologies = get_context_references(schema)
+    return {
+        "domains": list(domains),
+        "ontologies": list(ontologies),
+        "rightsholder": rightsholder,
+        **ret,
+    }
+
+
+def get_context_references(schema: Dict):
+    """Return a list of semantic references from an OAS3 specification."""
+    jp_context = jsonpath_ng.parse("$..x-jsonld-context")
+    domains = set()
+    ontologies = set()
     for ctx in jp_context.find(schema):
         # Find all predicates related to NS_ITALIA.
         semantic_assets = get_schema_assets(ctx.value)
@@ -158,12 +169,8 @@ def get_semantic_references_from_oas3(schema: Dict):
                 for _, _, uri in semantic_assets.triples((None, RDFS.isDefinedBy, None))
             }
         )
-    return {
-        "domains": list(domains),
-        "ontologies": list(ontologies),
-        "rightsholder": rightsholder,
-        **ret,
-    }
+
+    return domains, ontologies
 
 
 def get_schema_assets(context: Dict) -> Graph:
