@@ -1,7 +1,7 @@
 import json
 import logging
+import shutil
 from pathlib import Path
-from shutil import copy
 from typing import Dict
 
 import jsonschema
@@ -88,4 +88,4 @@ def build_yaml_asset(fpath: Path, buildpath: Path = Path(".")):
 
     dfile = buildpath / fpath.parent / fpath.name
     if not (dfile.exists() and fpath.samefile(dfile)):
-        copy(fpath, dfile)
+        shutil.copy(fpath, dfile)

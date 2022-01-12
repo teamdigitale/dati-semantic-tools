@@ -4,7 +4,6 @@ from typing import Dict
 
 import jsonschema
 import yaml
-from openapi_spec_validator import validate_spec
 from rdflib import Graph
 
 from .utils import MIME_JSONLD, MIME_TURTLE, yaml_to_json
@@ -21,6 +20,8 @@ def is_jsonschema(content: str):
 
 
 def is_openapi(content: str):
+    from openapi_spec_validator import validate_spec
+
     spec_dict = yaml.safe_load(content)
 
     # If no exception is raised by validate_spec(), the spec is valid.
