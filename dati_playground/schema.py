@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Dict
 
 import jsonpath_ng
+import jsonschema
 import requests_cache
 from pyld import jsonld
 from rdflib import DCAT, DCTERMS, OWL, RDF, RDFS, Graph, Literal, URIRef
@@ -151,6 +152,19 @@ def get_semantic_references_from_oas3(schema: Dict):
     }
 
 
+def get_semantic_summary(context: Dict):
+    semantic_assets = get_schema_assets(context)
+
+    return {
+        "domains": {
+            uri for _, _, uri in semantic_assets.triples((None, RDFS.domain, None))
+        },
+        "ontologies": {
+            uri for _, _, uri in semantic_assets.triples((None, RDFS.isDefinedBy, None))
+        },
+    }
+
+
 def get_context_references(schema: Dict):
     """Return a list of semantic references from an OAS3 specification."""
     jp_context = jsonpath_ng.parse("$..x-jsonld-context")
@@ -158,22 +172,15 @@ def get_context_references(schema: Dict):
     ontologies = set()
     for ctx in jp_context.find(schema):
         # Find all predicates related to NS_ITALIA.
-        semantic_assets = get_schema_assets(ctx.value)
+        semantic_assets = get_semantic_summary(ctx.value)
 
-        domains = domains.union(
-            {uri for _, _, uri in semantic_assets.triples((None, RDFS.domain, None))}
-        )
-        ontologies = ontologies.union(
-            {
-                uri
-                for _, _, uri in semantic_assets.triples((None, RDFS.isDefinedBy, None))
-            }
-        )
+        domains = domains.union(semantic_assets["domains"])
+        ontologies = ontologies.union(semantic_assets["ontologies"])
 
     return domains, ontologies
 
 
-def get_schema_assets(context: Dict) -> Graph:
+def get_schema_assets(context: Dict, allowed_ns=(NS_ITALIA,)) -> Graph:
 
     g = Graph()
     log.debug("Normalizing %r", context)
@@ -186,7 +193,6 @@ def get_schema_assets(context: Dict) -> Graph:
         log.exception("Error processing jsonld context: %r" % (context,))
         raise
     g.parse(data=data_normalized)
-    allowed_ns = (NS_ITALIA,)
     semantic_assets = {p for p in g.predicates() if p.startswith(*allowed_ns)}
 
     # Download all dependencies via IRI.
@@ -194,8 +200,23 @@ def get_schema_assets(context: Dict) -> Graph:
     for p in semantic_assets:
         data = get_asset(str(p))
         semantic_dependencies += data
-
+    #
     # TODO: retrieve all dependencies from the current git repo.
+    #
+    expected_assets = set(semantic_assets)
+    actual_assets = set(semantic_dependencies.subjects())
+    missing_assets = expected_assets - actual_assets
+    for missing in missing_assets:
+        if not any(missing in y for y in actual_assets):
+            log.warning(f"Missing asset: {missing}")
+            raise ValueError(
+                "Missing dependencies for %r in %r"
+                % (
+                    expected_assets - actual_assets,
+                    allowed_ns,
+                )
+            )
+
     return semantic_dependencies
 
 
@@ -297,3 +318,100 @@ def build_schema(fpath: Path, buildpath: Path = Path(".")):
 
 def build_schema_vocabulary(fpath: Path, buildpath: Path = Path(".")):
     raise NotImplementedError
+
+
+def get_context_info(spec: Dict):
+    jp_context = jsonpath_ng.parse("$..x-jsonld-context")
+    for ctx in jp_context.find(spec):
+        context = ctx.value
+        schema_fragment = get_context_jsonpointer(ctx)
+        schema_content = ctx.context.value
+
+        # Validate the schema. It throws in case of exceptions.
+        jsonschema.Draft7Validator.check_schema(schema_content)
+
+        yield schema_fragment, schema_content, context
+
+
+def get_context_jsonpointer(ctx):
+    return "#/" + "/".join(_dump(ctx.full_path.left))
+
+
+def _dump(full_path):
+    if hasattr(full_path, "left"):
+        yield from _dump(full_path.left)
+    if hasattr(full_path, "right"):
+        yield from _dump(full_path.right)
+    else:
+        yield full_path.fields[0]
+
+
+def validate_context(context, allowed_ns=(NS_ITALIA,)):
+    assets = get_schema_assets(context, allowed_ns=allowed_ns)
+    subjects = set(s for s in assets.subjects() if s.startswith(*allowed_ns))
+    ret = {}
+    # import pdb; pdb.set_trace()
+    for s in subjects:
+        ((_, _, onto), *_) = assets.triples((s, RDFS.isDefinedBy, None))
+        ((_, _, version_info), *_) = assets.triples((s, OWL.versionInfo, None))
+        try:
+            ((_, _, domain), *_) = assets.triples((s, RDFS.domain, None))
+        except (ValueError,):
+            domain = s
+
+        data = get_asset(str(onto))
+        ((_, _, last_modified), *_) = data.triples((None, DCTERMS.modified, None))
+        ret[str(s)] = {
+            "last_modified": str(last_modified),
+            "domain": str(domain),
+            "version_info": str(version_info),
+            "onto": str(onto),
+            "subject": str(s),
+        }
+    return ret
+
+
+def ndc_semantic_bundle(spec: Dict):
+    ret = {
+        "title": spec["info"]["title"],
+        "schema_total": len(spec.get("components", {}).get("schemas", {})),
+        "schema_covered": 0,
+        "assets": {},
+    }
+    for schema_fragment, schema_content, context in get_context_info(spec):
+        ret["schema_covered"] += 1
+        properties_total, properties_semantic = [], []
+        if schema_content.get("type") != "object":
+            # const, oneOf, anyOf, allOf are not supported.
+            # string, number, integer, boolean, null, array, object are supported.
+            raise NotImplementedError
+
+        properties = schema_content.get("properties", {})
+        for property_name, property_schema in properties.items():
+            if property_schema.get("type") in ("object", "array"):
+                # only basic types are supported.
+                pass  # raise NotImplementedError
+            properties_total.append(property_name)
+            if context.get(property_name):
+                properties_semantic.append(property_name)
+
+        assets = get_semantic_summary(context)
+        ret.update(
+            {
+                schema_fragment: {
+                    "properties_score": (
+                        len(properties_semantic),
+                        len(properties_total),
+                    ),
+                    "assets": {k: [str(x) for x in v] for k, v in assets.items()},
+                }
+            }
+        )
+
+        for asset_name, asset_value in validate_context(context).items():
+            if asset_name not in ret["assets"]:
+                ret["assets"][asset_name] = {"referrer": []}
+            ret["assets"][asset_name].update(asset_value)
+            ret["assets"][asset_name]["referrer"].append(schema_fragment)
+
+    return ret

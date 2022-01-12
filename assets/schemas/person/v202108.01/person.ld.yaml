@@ -15,9 +15,9 @@
     "@type": "@id"
     "@context":
       "@base": "https://w3id.org/italia/controlled-vocabulary/classifications-for-people/education-level/"
-  birth_place: 
+  birth_place:
     "@id": "hasBirthPlace"
-    "@context": 
+    "@context":
       "@vocab": "https://w3id.org/italia/onto/CLV/"
       city: hasCity
       country:
@@ -25,10 +25,10 @@
         "@type": "@id"
         "@context":
           "@base": "http://publications.europa.eu/resource/authority/country/"
-      province: 
+      province:
         "@id": "hasProvince"
         "@type": "@id"
-        "@context": 
+        "@context":
           "@base": "https://w3id.org/italia/data/identifiers/provinces-identifiers/vehicle-code/"
       interno: null
   children:
