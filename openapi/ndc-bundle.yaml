@@ -1,0 +1,460 @@
+# National Data Catalog APIs.
+x-commons:
+  ratelimit-headers: &ratelimit-headers
+    X-RateLimit-Limit:
+      $ref: '#/components/headers/X-RateLimit-Limit'
+    X-RateLimit-Remaining:
+      $ref: '#/components/headers/X-RateLimit-Remaining'
+    X-RateLimit-Reset:
+      $ref: '#/components/headers/X-RateLimit-Reset'
+  common-responses: &common-responses
+    '400':
+      $ref: '#/components/responses/400BadRequest'
+    '429':
+      $ref: '#/components/responses/429TooManyRequests'
+    '503':
+      $ref: '#/components/responses/503ServiceUnavailable'
+    default:
+      $ref: '#/components/responses/default'
+security:
+  - {}
+
+openapi: 3.0.0
+info:
+  version: "0.0.1"
+  title: |-
+    Ontopia validation APIs.
+  x-summary: >-
+    Validate OAS3.x and json-schema files.
+  description: |
+    #### Documentazione
+    Validate an OAS or json-schema files.
+
+    Returns validation information, json-ld context or
+    full bundles eventually signed.
+  termsOfService: 'http://swagger.io/terms/'
+  # Chi posso contattare per informazioni sul servizio e sul suo stato?
+  contact:
+    email: robipolli@gmail.com
+    name: Roberto Polli
+    url: https://twitter.com/ioggstream
+  x-audience:
+    - public
+  x-api-id: 00000000-0000-0000-0000-000000000000
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+
+  # Per dare indicazioni sul ciclo di vita dell'API
+  # si puo' usare un parametro come:
+  x-lifecycle:
+    published: 1970-01-01
+    deprecated: 2050-01-01
+    retired: 2050-06-01
+    maturity: published
+
+tags:
+  - name: public
+    description: Retrieve informations
+    externalDocs:
+      url: http://docs.my-api.com/pet-operations.htm
+servers:
+  - description: Development server
+    url: /validation/v0
+    x-sandbox: true
+  - description: Test server
+    url: https://api.ndc.example/validation/v0
+    # Questo parametro permette di indicare l'URL come uno
+    # di sandbox, disabilitando il controllo sull'https.
+    x-sandbox: true
+    # Questo parametro indica come testare il servizio.
+    x-healthCheck:
+      url: https://api.ndc.example/validation/v0
+      interval: 300
+      timeout: 15
+paths:
+  /schemas:
+    get:
+      security:
+        - {}
+      summary: >-
+        Retrieves all schemas registered on the catalog.
+      description: |-
+        A REST wrapper for the data indexed by the SparQL Endpoint.
+      operationId: ndc.list_schemas
+      tags:
+      - public
+      responses:
+        <<: *common-responses
+        "200":
+          description: |-
+            a list of schemas
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: "#/components/schemas/PagedResponse"
+                - type: object
+                  properties:
+                    items:
+                      type: array
+                      items:
+                        $ref: "#/components/schemas/DataSchema"
+
+  /semantic-bundle:
+    post:
+      security:
+        - {}
+
+      summary: >-
+        Returns a bundle of semantic files related
+        to a give OAS or json-schema file.
+      description: |-
+        Retrieves all json-ld references used by an OAS or json-schema
+        document.
+
+        Important: `$ref`s are not resolved, so the client
+        should resolve all the intended references before
+        issuing the request.
+
+      requestBody:
+        $ref: "#/components/requestBodies/OpenAPI30"
+      operationId: ndc.post_semantic_bundle
+      tags:
+        - public
+      responses:
+        <<: *common-responses
+        '200':
+          description: |
+            The server successfully identified a set of ontologies.
+          headers:
+            <<: *ratelimit-headers
+          content:
+            multipart/related:
+              encoding:
+                attachment: &signed-content
+                  contentType: application/binary, application/yaml, application/json
+                  headers:
+                    Digest:
+                      description: The digest of the entry
+                      schema:
+                        maxLength: 1024
+                        type: string
+                        example: SHA-256=cFfTOCesrWTLVzxn8fmHl4AcrUs40Lv5D275FmAZ96E=
+                    Agid-JWT-Signature:
+                      description: The signature of a given entry
+                      schema:
+                        type: string
+                        format: jwt
+                        example: aaa.bbb.ccc
+                        maxLength: 4096
+                api_specification:
+                  <<: *signed-content
+              schema:
+                description: |-
+                  A multipart schema is described according to OAS
+                  spec. See https://swagger.io/docs/specification/describing-request-body/multipart-requests/
+                type: object
+                additionalProperties: false
+                properties:
+                  api_specification:
+                    type: string
+                    format: binary
+                    description: |-
+                      The API specification file.
+                      As an alternative, an hash of the spec.
+                  attachment:
+                    type: string
+                    format: binary
+                    maxLength: 1000000
+
+
+
+  /semantic-context:
+    post:
+      security:
+        - {}
+      summary: Returns the json-ld context associated with an OAS3.x file.
+      description: |-
+        Retrieves all json-ld references used by an OAS document
+
+        Important: `$ref`s are not resolved, so the client
+        should resolve all the intended references before
+        issuing the request.
+      requestBody:
+        $ref: "#/components/requestBodies/OpenAPI30"
+      operationId: ndc.post_semantic_context
+      tags:
+        - public
+      responses:
+        <<: *common-responses
+        '200':
+          description: |
+            The server successfully identified a set of ontologies.
+          headers:
+            <<: *ratelimit-headers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/JsonLDContext'
+
+  /semantic-coverage:
+    post:
+      security:
+        - {}
+
+      summary: Returns the coverage of ontologies of an OAS3.x file.
+      description: |
+        Retrieves all ontological references from an OAS3.x or json-schema
+        file and returns a score and a list of references.
+      operationId: ndc.post_semantic_coverage
+      requestBody:
+        $ref: "#/components/requestBodies/OpenAPI30"
+      tags:
+        - public
+      responses:
+        <<: *common-responses
+        '200':
+          description: |
+            The server successfully identified a set of ontologies.
+          headers:
+            <<: *ratelimit-headers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CoverageResult'
+
+  /status:
+    get:
+      security:
+        - {}
+      summary: Ritorna lo stato dell'applicazione.
+      description: |
+        Ritorna lo stato dell'applicazione. A scopo
+        di test, su base randomica puo' ritornare
+        un errore.
+      operationId: api.get_status
+      tags:
+        - public
+      responses:
+        <<: *common-responses
+        '200':
+          description: |
+            Il server ha ritornato lo status. In caso di problemi
+            ritorna sempre un problem+json.
+          # Questi header di throttling sono obbligatori e definiti
+          #   nel Nuovo modello di interoperabilità.
+          headers:
+            <<: *ratelimit-headers
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+
+components:
+  requestBodies:
+    OpenAPI30:
+      description: |
+        An Openapi3.0 file.
+      required: true
+      content:
+        application/openapi+yaml:
+          schema: {}
+
+  headers:
+    X-RateLimit-Limit:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/X-RateLimit-Limit'
+    X-RateLimit-Remaining:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/X-RateLimit-Remaining'
+    X-RateLimit-Reset:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/X-RateLimit-Reset'
+    Retry-After:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/Retry-After'
+
+  responses:
+    # Predefined error codes for this API
+    400BadRequest:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/responses/400BadRequest'
+    404NotFound:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/responses/404NotFound'
+    429TooManyRequests:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/responses/429TooManyRequests'
+    503ServiceUnavailable:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/responses/503ServiceUnavailable'
+    default:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/responses/default'
+
+  schemas:
+    DataSchema:
+      type: object
+      properties:
+        title:
+          type: string
+          description: |-
+            The title of the schema.
+        url:
+          type: string
+          format: url
+        labels:
+          type: array
+          items:
+            type: string
+        attributes:
+          description: |-
+            Further attributes taken from SparQL.
+            Their number is limited.
+            Their value is a string.
+          type: object
+          additionalProperties:
+            type: string
+          maxProperties: 20
+
+    PagedResponse:
+      type: object
+      properties:
+        count:
+          type: integer
+          maximum: 1000
+          minimum: 0
+        cursor:
+          type: string
+        cursor_next:
+          type: string
+        total:
+          type: integer
+          maximum: 1000000
+
+    Problem:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/schemas/Problem'
+    JsonLDContext:
+      type: object
+      description: |-
+        TBD somethin like https://schema.org/docs/jsonldcontext.jsonld
+        where for each referenced schema you have linked stuff.
+
+        Bundles could be produced in yaml only using
+        the multi-document feature. This could simplify the issue
+        of validating contents.
+      properties:
+        context:
+          type: object
+          description: the context
+        _meta:
+          type: object
+          description: |-
+            meta-information such as signatures & co.
+
+    SemanticAssetInfo:
+      type: object
+      additionalProperties: false
+      required:
+      - domain
+      - last_modified
+      - subject
+      - ontology_version
+      - subject_type
+      properties:
+        domain:
+          type: string
+          format: uri
+        last_modified:
+          type: string
+          format: date
+        last_version:
+          type: string
+          format: uri
+        referrer:
+          type: string
+          pattern: >-
+            [a-zA-Z0-9_]{2,64}
+        subject:
+          type: string
+          format: uri
+        subject_type:
+          type: string
+          format: uri
+        ontology_version:
+          type: string
+          maxLength: 256
+          minLength: 3
+          pattern: '[a-zA-Z0-9 .]{3,256}'
+    CoverageResult:
+      type: object
+      additionalProperties: false
+      required:
+        - coverage
+        - assets
+      properties:
+        schema_covered:
+          type: integer
+          minimum: 0
+          maximum: 1000
+          format: int32
+          description: |-
+            The number of covered schemas.
+        schema_total:
+          type: integer
+          minimum: 0
+          maximum: 1000
+          format: int32
+          description: |-
+            The number of schemas declared in the spec.
+        coverage:
+          type: integer
+          minimum: 0
+          maximum: 100
+          format: int32
+          description: |-
+            The percentage of referenced semantic assets
+            identified into NDC
+        assets:
+          type: object
+          additionalProperties:
+            $ref: '#/components/schemas/SemanticAssetInfo'
+          maxProperties: 100
+
+      example:
+        coverage: 100
+        schema_total: 5
+        schema_covered: 5
+        assets:
+          'https://w3id.org/italia/onto/CPV/Person':
+            'domain': 'https://w3id.org/italia/onto/CPV'
+            'last_modified': '2019-07-17'
+            'last_version': 'https://w3id.org/italia/onto/CPV/0.6'
+            'ontology_version': 'stabile'
+            'referrer': 'CertificatoDiCodiceFiscale'
+            'subject': 'https://w3id.org/italia/onto/CPV/Person'
+            'subject_type': 'http://www.w3.org/2002/07/owl#Class'
+          https://w3id.org/italia/onto/CPV/dateOfBirth:
+            domain: https://w3id.org/italia/onto/CPV
+            last_modified: '2019-07-17'
+            last_version: https://w3id.org/italia/onto/CPV/0.6
+            ontology_version: stabile
+            referrer: date_of_birth
+            subject: https://w3id.org/italia/onto/CPV/dateOfBirth
+            subject_type: http://www.w3.org/2002/07/owl#FunctionalProperty
+          https://w3id.org/italia/onto/CPV/familyName:
+            domain: https://w3id.org/italia/onto/CPV
+            last_modified: '2019-07-17'
+            last_version: https://w3id.org/italia/onto/CPV/0.6
+            ontology_version: stabile
+            referrer: family_name
+            subject: https://w3id.org/italia/onto/CPV/familyName
+            subject_type: http://www.w3.org/2002/07/owl#DatatypeProperty
+          https://w3id.org/italia/onto/CPV/givenName:
+            domain: https://w3id.org/italia/onto/CPV
+            last_modified: '2019-07-17'
+            last_version: https://w3id.org/italia/onto/CPV/0.6
+            ontology_version: stabile
+            referrer: given_name
+            subject: https://w3id.org/italia/onto/CPV/givenName
+            subject_type: http://www.w3.org/2002/07/owl#DatatypeProperty
+          https://w3id.org/italia/onto/CPV/taxCode:
+            domain: https://w3id.org/italia/onto/CPV
+            last_modified: '2019-07-17'
+            last_version: https://w3id.org/italia/onto/CPV/0.6
+            ontology_version: stabile
+            referrer: tax_code
+            subject: https://w3id.org/italia/onto/CPV/taxCode
+            subject_type: http://www.w3.org/2002/07/owl#DatatypeProperty

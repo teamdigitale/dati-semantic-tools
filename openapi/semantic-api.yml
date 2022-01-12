@@ -1,0 +1,264 @@
+#
+# Questo e' un progetto d'esempio in formato OpenAPI 3.0 API Starter Kit.
+#
+# Stai per sviluppare un API? Segui attentamente questo template e
+#   potrai integrarla facilmente in Developers Italia.
+#
+# Se usi componenti in modo ricorrente, yaml
+#   permette di definirle e riusarle.
+#   Puoi metterle nell'oggetto x-commons e rimuoverlo
+#   prima di pubblicarle.
+x-commons:
+  ratelimit-headers: &ratelimit-headers
+    X-RateLimit-Limit:
+      $ref: '#/components/headers/X-RateLimit-Limit'
+    X-RateLimit-Remaining:
+      $ref: '#/components/headers/X-RateLimit-Remaining'
+    X-RateLimit-Reset:
+      $ref: '#/components/headers/X-RateLimit-Reset'
+  common-responses: &common-responses
+    '400':
+      $ref: '#/components/responses/400BadRequest'
+    '429':
+      $ref: '#/components/responses/429TooManyRequests'
+    '503':
+      $ref: '#/components/responses/503ServiceUnavailable'
+    default:
+      $ref: '#/components/responses/default'
+
+openapi: 3.0.0
+info:
+  version: "1.0.0"
+  title: |-
+    Semantic API.
+  x-summary: >-
+    A semantic API referencing custom concepts as json-ld.
+  description: |
+    #### Documentazione
+    This API returns data conformant to CPV_AP Ontologies.
+    External references are resolved by the same API and are returned as json-ld
+    using specific paths.
+
+    Questa sezione e' informativa. Ricordati di inserire:
+
+      * cosa fanno queste API?
+      * chi puo' beneficiarne?
+      * perche' sono utili?
+  termsOfService: 'http://swagger.io/terms/'
+  # Chi posso contattare per informazioni sul servizio e sul suo stato?
+  contact:
+    email: robipolli@gmail.com
+    name: Roberto Polli
+    url: https://twitter.com/ioggstream
+  # L'audience delle API. Attualmente e' definito solamente
+  #   la tipologia `public`.
+  x-audience:
+    - public
+  # Ogni API deve avere un UUID, invariante nel tempo e
+  #   rispetto al `title`.
+  x-api-id: 00000000-0000-0000-0000-000000000000
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+
+  # Per dare indicazioni sul ciclo di vita dell'API
+  # si puo' usare un parametro come:
+  x-lifecycle:
+    published: 1970-01-01
+    deprecated: 2050-01-01
+    retired: 2050-06-01
+    maturity: published
+
+# Una lista di `tag` utili a raggruppare le varie operazioni
+#   eseguite dalle API. Ogni `tag` puo' referenziare un link
+#   alla sua descrizione.
+tags:
+  - name: public
+    description: Retrieve informations
+    externalDocs:
+      url: http://docs.my-api.com/pet-operations.htm
+# Uno o piu' server di erogazione.
+#   Puo' essere utile indicare gli indirizzi di collaudo,
+#   sviluppo e test.
+#   Di seguito mostriamo come indicare se il server
+#   e' una sandbox o meno con dei tag custom.
+servers:
+  - description: Development server
+    url: https://localhost:8443/semantic/v1
+  - description: Test server
+    url: https://api.example.com/semantic/v1
+    x-sandbox: true
+    # Questo parametro indica come testare il servizio.
+    x-healthCheck:
+      url: https://api.example.com/semantic/v1/status
+      interval: 300
+      timeout: 15
+
+#
+# Qui vanno tutti i path.
+#
+paths:
+  /onto/{id}:
+    get:
+      summary: Get a specific entity
+      description: >-
+        Get a specific entity.
+        The entity is returned as json-ld.
+      operationId: get_onto
+      tags:
+        - public
+      parameters:
+      - name: id
+        in: path
+        description: The id of the entity
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: The entity
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Onto'
+        default:
+          $ref: '#/components/responses/default'
+  /echo:
+    get:
+      summary: Returns data from a person.
+      description: |
+        Returns data from a person
+      operationId: get_echo
+      tags:
+        - public
+      responses:
+        <<: *common-responses
+        '200':
+          description: |
+            Il server ha ritornato il timestamp.
+          # Questi header di throttling sono obbligatori e definiti
+          #   nel Nuovo modello di interoperabilità.
+          headers:
+            <<: *ratelimit-headers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Person'
+  /status:
+    get:
+      summary: Ritorna lo stato dell'applicazione.
+      description: |
+        Ritorna lo stato dell'applicazione. A scopo
+        di test, su base randomica puo' ritornare
+        un errore.
+      operationId: get_status
+      tags:
+        - public
+      responses:
+        <<: *common-responses
+        '200':
+          description: |
+            Il server ha ritornato lo status. In caso di problemi
+            ritorna sempre un problem+json.
+          # Questi header di throttling sono obbligatori e definiti
+          #   nel Nuovo modello di interoperabilità.
+          headers:
+            <<: *ratelimit-headers
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+
+components:
+
+  headers:
+    X-RateLimit-Limit:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/X-RateLimit-Limit'
+    X-RateLimit-Remaining:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/X-RateLimit-Remaining'
+    X-RateLimit-Reset:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/X-RateLimit-Reset'
+    Retry-After:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/Retry-After'
+
+  responses:
+    # Predefined error codes for this API
+    400BadRequest:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/responses/400BadRequest'
+    404NotFound:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/responses/404NotFound'
+    429TooManyRequests:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/responses/429TooManyRequests'
+    503ServiceUnavailable:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/responses/503ServiceUnavailable'
+    default:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/responses/default'
+
+  schemas:
+    Problem:
+      $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/schemas/Problem'
+    Onto:
+      type: object
+      description: a jsonld entity in RDF/JSON-LD format
+      required:
+      - "@context"
+      maxProperties: 10
+      properties:
+        "@context":
+          type: object
+          description: the context of the entity
+      example:
+        "@context":
+          "@base": "/semantic/v1/onto/"
+          "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+        "@graph":
+        - "@id": "hasBook"
+          "rdfs:comment":
+            "@value" : "The property of possessing a book."
+            "@language": "en"
+          "rdfs:range": "https://schema.org/Book"
+    Book:
+      type: string
+      description: ISBN of the book
+      example: "9780495011606"
+    Person:
+      type: object
+      description: A person
+      additionalProperties: false
+      x-jsonld-context: &context
+        "@vocab": "https://localhost/semantic/v1/onto/"
+        cpv: "https://w3id.org/italia/onto/CPV/"
+        given_name: cpv:givenName
+        family_name: cpv:familyName
+        citizenship:
+          "@id": cpv:hasCitizenship
+          "@type": "@id"
+          "@context":
+            "@base": "http://publications.europa.eu/resource/authority/country/"
+        books:
+          "@id": hasBook
+          "@type": "@id"
+          "@context":
+            "@base": "https://isbnsearch.org/isbn/"
+      properties:
+        "@context": {}
+        given_name:
+          type: string
+          example: 'Mario'
+        family_name:
+          type: string
+          example: 'Rossi'
+        books:
+          type: array
+          minItems: 0
+          maxItems: 1000
+          items:
+            $ref: '#/components/schemas/Book'
+      example:
+        "@context":
+          <<: *context
+        given_name: 'Mario'
+        family_name: 'Rossi'
+        books:
+          - '9780495011606'
+          - '9780495011607'

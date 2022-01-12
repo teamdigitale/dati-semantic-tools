@@ -1,0 +1,19 @@
+#
+# Semantic context for Person schema.
+#   This can be passed via the Link header according to
+#   https://w3c.github.io/json-ld-syntax/#interpreting-json-as-json-ld
+#
+"@context":
+  "@version": 1.1  # Use json-ld 1.1
+  amount:
+    "@id": https://w3id.org/italia/onto/POT/hasCurrencyValue
+  currency:
+    "@id": https://w3id.org/italia/onto/POT/hasCurrency
+    "@type": "@id"
+    "@context":
+      "@base": "https://publications.europa.eu/resource/authority/currency"
+
+# The version of this file associated to the
+#  overall ontology.
+"http://www.w3.org/2002/07/owl#versionIRI":
+  "@id": "https://w3id.org/italia/schemas/money/202201.00"

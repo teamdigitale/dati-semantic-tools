@@ -1,0 +1,34 @@
+@prefix admsapt: <https://www.w3.org/italia/onto/ADMS/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix licences: <https://w3id.org/italia/controlled-vocabulary/licences/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://w3id.org/italia/schema/money/v202201.00/money.oas3.yaml> a dcatapit:Dataset ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:conformsTo <https://w3id.org/italia/onto/POT> ;
+    dct:description """This Money schema is associated to the  [POT](https://ontopia-lodview.agid.gov.it/onto/POT) ontology
+of prices, offers and tickets.
+
+This description field can be rendered in markdown or in text-only in catalogues
+and other interfaces.""" ;
+    dct:modified "2022-01-12" ;
+    dct:rightsHolder <http://spcdata.digitpa.gov.it/Amministrazione/agid> ;
+    dct:title "The Money schema" ;
+    owl:versionInfo "202201.00.00" ;
+    dcat:distribution <https://raw.githubusercontent.com/ioggstream/json-semantic-playground/master/assets/schemas/money/v202201.00/money.oas3.yaml> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TECHNOLOGY> ;
+    admsapt:hasKeyClass <https://w3id.org/italia/onto/POT/PriceSpecification> .
+
+<http://spcdata.digitpa.gov.it/Amministrazione/agid> a dcatapit:Agent,
+        foaf:Agent ;
+    dct:identifier "agid" ;
+    foaf:name "Roberto Polli" .
+
+<https://raw.githubusercontent.com/ioggstream/json-semantic-playground/master/assets/schemas/money/v202201.00/money.oas3.yaml> a dcatapit:Distribution ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dct:license licences:A21_CCBY40 ;
+    dcat:accessURL <https://github.com/ioggstream/json-semantic-playground/tree/master/assets/schemas/money/v202201.00> ;
+    dcat:mediaType "application/json" .
