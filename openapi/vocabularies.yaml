@@ -233,7 +233,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Entries'
-  /vocabularies-schema/{vocabulary_id}:
+  /schemas/{vocabulary_id}:
     get:
       security: []
       summary: Return a vocabulary in the format of a schema.

@@ -32,6 +32,14 @@ info:
 
     Returns validation information, json-ld context or
     full bundles eventually signed.
+
+    As an example, to create a semantic validation output you can return
+
+    ````
+    curl http://localhost:5000/validation/v0/semantic-coverage -XPOST        \
+      --data-binary @../assets/schemas/covid-umbria/latest/schema.oas3.yaml  \
+      -Hcontent-type:application/yaml
+    ````
   termsOfService: 'http://swagger.io/terms/'
   # Chi posso contattare per informazioni sul servizio e sul suo stato?
   contact:

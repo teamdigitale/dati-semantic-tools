@@ -111,7 +111,7 @@ def update_url(start_url, query: Dict = None):
 
 
 # @lru_cache(maxsize=128)
-def list_entries(vocabulary_id, limit=100, cursor="", **params):
+def list_entries(vocabulary_id, limit=100, cursor="", format="json", **params):
     vocabulary, ret = _list_vocabulary(
         vocabulary_id, limit=limit, cursor=cursor, **params
     )
@@ -130,8 +130,9 @@ def list_entries(vocabulary_id, limit=100, cursor="", **params):
     }
 
     headers = {"Content-Type": "application/json", "cache-control": "max-age=36000"}
-    if request.headers.get("Accept") == "application/ld+json":
-        ret["@context"] = yaml.load(vocabulary["context"])
+    if request.headers.get("Accept") == "application/ld+json" or format == "jsonld":
+        ctx = vocabulary.get("context", "{}")
+        ret["@context"] = yaml.safe_load(ctx)
         headers.update({"Content-Type": "application/ld+json"})
 
     return ret, 200, headers
@@ -145,7 +146,11 @@ def schema_list_entries_oneof(vocabulary_id, lang="it", schema_type="oneOf", **p
     label_column = f"label_{lang}"
     if schema_type == "enum":
         ret = [x["key"] for x in ret]
-        schema = {"type": "string", "enum": ret}
+        schema = {
+            "type": "string",
+            "enum": ret,
+            "externalDocs": {"url": vocabulary["url"]},
+        }
     elif schema_type == "enumUrl":
         ret = [x["url"] for x in ret]
         schema = {"type": "string", "enum": ret}
@@ -173,7 +178,8 @@ def schema_list_entries_oneof(vocabulary_id, lang="it", schema_type="oneOf", **p
 
     headers = {"Content-Type": "application/json", "cache-control": "max-age=36000"}
     if request.headers.get("Accept") == "application/ld+json":
-        ret["@context"] = yaml.load(vocabulary["context"])
+        ctx = vocabulary.get("context", "{}")
+        ret["SchemaVocabulary"]["x-jsonld-context"] = yaml.safe_load(ctx)
         headers.update({"Content-Type": "application/ld+json"})
 
     return ret, 200, headers
