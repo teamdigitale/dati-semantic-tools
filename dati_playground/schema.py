@@ -167,13 +167,18 @@ def get_semantic_references_from_oas3(schema: Dict):
 
 
 def get_schema_assets(context: Dict) -> Graph:
+
     g = Graph()
-    g.parse(
-        data=jsonld.normalize(
+    log.debug("Normalizing %r", context)
+    try:
+        data_normalized = jsonld.normalize(
             {"@context": context, **context},
             {"algorithm": "URDNA2015", "format": "application/nquads"},
         )
-    )
+    except jsonld.JsonLdError:
+        log.exception("Error processing jsonld context: %r" % (context,))
+        raise
+    g.parse(data=data_normalized)
     allowed_ns = (NS_ITALIA,)
     semantic_assets = {p for p in g.predicates() if p.startswith(*allowed_ns)}
 
@@ -184,7 +189,6 @@ def get_schema_assets(context: Dict) -> Graph:
         semantic_dependencies += data
 
     # TODO: retrieve all dependencies from the current git repo.
-
     return semantic_dependencies
 
 
@@ -230,6 +234,7 @@ def oas3_to_turtle(
     g.add((dataset_uri, DCAT.distribution, distribution_url))
 
     # Generate distribution properties
+    log.debug("Generate distribution properties")
     [
         g.add(triple)
         for triple in [
