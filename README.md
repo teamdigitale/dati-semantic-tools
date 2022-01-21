@@ -59,3 +59,12 @@ Generate assets in different formats
 - ttl -> ntriple, rdf+xml, jsonld
 
 Generate RDF from json-schema
+
+## pre-commit hooks
+
+To test pre-commit hooks developed in this repo,
+just run
+
+```bash
+pre-commit try-repo . -a
+```
