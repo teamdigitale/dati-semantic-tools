@@ -5,7 +5,6 @@ from typing import Dict
 
 import pandas as pd
 import yaml
-from pandas.core.frame import DataFrame
 from pyld import jsonld
 
 from .utils import MIME_JSONLD, MIME_TURTLE, is_recent_than, parse_graph, yaml_load
@@ -23,8 +22,7 @@ def frame_vocabulary(vpath_ttl: Path, context: Dict) -> Dict:
     @param: context - a json-ld framing context
     @returns: a json-ld graph with its own context.
     """
-    # g = Graph()
-    # vocab = g.parse(vpath_ttl.as_posix(), format=MIME_TURTLE)
+
     g = parse_graph(vpath_ttl.as_posix(), format=MIME_TURTLE)
     vocab_jsonld = g.serialize(format=MIME_JSONLD)
     log.warning(f"Serialized to json: {vpath_ttl}")
@@ -78,7 +76,6 @@ def frame_vocabulary_to_csv(
     This function extracts information from a given resource
     using a context file.
     """
-
     context_prefix = "." + frame_context.stem[8:]
     context = yaml_load(frame_context)
 
@@ -148,7 +145,7 @@ def frame_vocabulary_to_csv(
     return framed_data, framed_metadata
 
 
-def df_to_schema(df: DataFrame) -> Dict:
+def df_to_schema(df) -> Dict:
     """
     Converts a DataFrame to a schema.
     """
@@ -186,7 +183,7 @@ def df_to_schema(df: DataFrame) -> Dict:
 
 
 def df_to_sqlite(
-    df: DataFrame,
+    df,
     dpath: Path,
     name: str,
     version: str,
@@ -195,6 +192,7 @@ def df_to_sqlite(
     context: Dict = None,
     url: str = None,
 ):
+    from pandas.core.frame import DataFrame
     from sqlalchemy import create_engine
 
     table_name = f"{name}#{version}"

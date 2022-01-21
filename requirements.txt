@@ -1,3 +1,4 @@
+frictionless
 rdflib
 jsonpath_ng
 requests

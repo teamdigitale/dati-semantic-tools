@@ -52,3 +52,21 @@
     language: python
     types:
     - file
+
+-   id: validate-csv
+    name: Validate csv layout
+    description: |-
+      Check that CSV files are coherent.
+
+      By default, only `.csv` files in `assets/` are processed,
+      but this can be tweaked using the `files` property.
+
+      Files containing the following strings are excluded by default:
+      example.
+
+    entry: python -m dati_playground validate --validate-csv=true
+    files: >-
+      ^assets/vocabularies/.*\.csv
+    language: python
+    types:
+    - file

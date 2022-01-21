@@ -8,6 +8,7 @@ import yaml
 from openapi_spec_validator import validate_spec
 from pyshacl.validate import validate
 
+from dati_playground.csv import is_csv
 from dati_playground.precommit_validators import MAX_DEPTH, get_shacl_graph
 from dati_playground.utils import MIME_JSONLD, is_recent_than, parse_graph
 
@@ -15,14 +16,16 @@ log = logging.getLogger(__name__)
 
 
 class Asset:
-    def __init__(self, path: str, type: str = None):
+    def __init__(self, path: str, type: str = None, validate_repo=True):
 
-        if type not in ["jsonschema", "graph", "oas3", None]:
+        if type not in ["jsonschema", "graph", "oas3", "csv", None]:
             raise ValueError(f"Unsupported asset type: {type}")
 
-        repo = git.Repo()
+        self.path = Path(path)
 
-        self.path = Path(path).absolute().relative_to(repo.working_tree_dir)
+        if validate_repo:
+            repo = git.Repo()
+            self.path = self.path.absolute().relative_to(repo.working_tree_dir)
         self.ndc_config = {
             "schemas": {"path": "./assets/schemas"},
             "ndc_uri": "https://w3id.org/italia/schema/",
@@ -48,6 +51,8 @@ class Asset:
             self.type = "schema"
         elif self.path.name.endswith((".ttl", ".jsonld")):
             self.type = "graph"
+        elif self.path.name.endswith((".csv",)):
+            self.type = "csv"
         else:
             raise NotImplementedError(f"Unsupported file suffix: {self.path.name}")
 
@@ -63,6 +68,10 @@ class Asset:
         if self.type == "graph":
             self.g = parse_graph(self.path)
             return
+        if self.type == "csv":
+            self.g = self.path
+            return
+
         raise NotImplementedError(f"Unsupported file suffix: {self.path.name}")
 
     def _validate_shacl(self, g):
@@ -94,6 +103,7 @@ class Asset:
             "schema": jsonschema.Draft7Validator.check_schema,
             "oas3": validate_spec,
             "graph": self._validate_shacl,
+            "csv": is_csv,
         }
         if self.type not in v_map:
             raise NotImplementedError(f"Unsupported file suffix: {self.type}")

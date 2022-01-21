@@ -5,7 +5,13 @@ import logging
 from multiprocessing import Pool
 from pathlib import Path
 
+import click
+
+logging.basicConfig(level=logging.INFO)
+log = logging.getLogger(__name__)
+
 from dati_playground import precommit_validators
+from dati_playground.csv import is_csv
 from dati_playground.schema import build_schema
 from dati_playground.tools import (
     build_semantic_asset,
@@ -19,10 +25,6 @@ from dati_playground.validators import (
     list_files,
     validate_file,
 )
-
-logging.basicConfig(level=(logging.DEBUG))
-log = logging.getLogger(__name__)
-import click
 
 
 @click.command()
@@ -38,8 +40,10 @@ import click
 @click.option("--validate-jsonschema", default=False)
 @click.option("--validate-versioned-directory", default=False)
 @click.option("--validate-turtle", default=False)
+@click.option("--validate-csv", default=False)
 @click.option("--pattern", default="")
 @click.option("--exclude", default=["NoneString"], type=str, multiple=True)
+@click.option("--debug", default=False, type=bool)
 def main(
     command,
     files,
@@ -52,12 +56,15 @@ def main(
     validate_jsonschema,
     validate_versioned_directory,
     validate_turtle,
+    validate_csv,
     pattern,
     exclude,
     build_schema_index,
+    debug,
 ):
+    if debug:
+        logging.basicConfig(level=logging.DEBUG)
     if command == "build":
-
         basepath = Path("assets") if not files else Path(files[0])
         buildpath = Path("_build") if len(files) < 2 else Path(files[1])
         buildpath.mkdir(exist_ok=True, parents=True)
@@ -97,6 +104,7 @@ def main(
                 build_schema,
                 ((f, Path(".")) for f in file_list if f.name.endswith((".oas3.yaml",))),
             )
+
         workers.close()
         exit(0)
     else:
@@ -114,6 +122,14 @@ def main(
                     precommit_validators.validate_directory(f, errors)
                 if validate_turtle:
                     is_turtle(f.read_text())
+                if validate_csv:
+                    print(f"validating {f}")
+                    try:
+                        ret = is_csv(f)
+                        if ret.valid is False:
+                            errors.append(f"{f} is not valid: {ret.errors}")
+                    except ValueError as e:
+                        errors.append(f"{f} is not valid: {e}")
             if errors:
                 raise ValueError("Errors found: " + "\n".join(errors))
 
@@ -124,4 +140,3 @@ def main(
 
 if __name__ == "__main__":
     main()
-# okay decompiling __main__.cpython-38.pyc
