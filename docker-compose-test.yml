@@ -1,3 +1,10 @@
+#
+# This compose file shows how to implement a simple
+#   pipeline execution based on different docker containers
+#   via the depends_on keyword.
+#   The checkout service clones a repository
+#   The zero service runs pre-commit
+#   The one service runs tests and so on.
 version: '3.9'
 services:
   checkout: &baseline
@@ -7,7 +14,7 @@ services:
     working_dir: /code
     entrypoint: ["git"]
     command: >-
-      clone https://github.com/ioggstream/json-semantic-playground.git .
+      clone https://github.com/teamdigitale/json-semantic-playground.git .
   zero:
     build:
       context: ./
@@ -22,18 +29,21 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile.tox
-    command: ['tox', '-e', 'jsonld']
+    entrypoint: ["tox"]
+    command: ["-e", "py3"]
     depends_on:
     - zero
   two:
     <<: *baseline
     image: busybox
+    entrypoint: ["busybox"]
     command: ['sh', '-c', 'exit 0']
     depends_on:
     - one
   three:
     <<: *baseline
     image: busybox
+    entrypoint: ["busybox"]
     command: ['sh', '-c', 'exit 0']
     depends_on:
     - two
