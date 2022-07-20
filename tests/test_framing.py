@@ -86,7 +86,7 @@ def test_context_ns():
 log = logging.getLogger(__name__)
 
 
-@pytest.mark.skip(msg="To be done")
+@pytest.mark.skip(reason="To be done")
 def test_frame_big():
     fpath = (
         BASEPATH / "tests" / "data" / "class-sum-leg" / "latest" / "class-sum-leg.ttl"

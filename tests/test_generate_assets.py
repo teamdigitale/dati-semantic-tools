@@ -83,7 +83,7 @@ def test_context_to_rdf():
             g.serialize(format=fmt, destination=dpath)
 
 
-@pytest.mark.skip(msg="deprecated")
+@pytest.mark.skip(reason="deprecated")
 def test_create_schemas_json():
     schemas_path = Path("schemas/")
 

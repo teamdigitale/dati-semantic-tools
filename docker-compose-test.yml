@@ -24,6 +24,8 @@ services:
     working_dir: /code
     entrypoint: ['pre-commit']
     command: ['run', '-a']
+    depends_on:
+    - checkout
   one:
     <<: *baseline
     build:
