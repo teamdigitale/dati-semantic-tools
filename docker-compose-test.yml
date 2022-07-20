@@ -10,11 +10,16 @@ services:
   checkout: &baseline
     image: alpine/git
     volumes:
-    - ./deleteme:/code
+    - ./deleteme:/code:z
     working_dir: /code
-    entrypoint: ["git"]
-    command: >-
-      clone https://github.com/teamdigitale/json-semantic-playground.git .
+    entrypoint: ["sh"]
+    command: |-
+      -c '
+      (test -d /code/.git
+      # && git -C /code pull --rebase
+      ) ||
+      git clone https://github.com/teamdigitale/jsonld-semantic-playground /code
+      '
   zero:
     build:
       context: ./
@@ -25,7 +30,8 @@ services:
     entrypoint: ['pre-commit']
     command: ['run', '-a']
     depends_on:
-    - checkout
+      checkout:
+        condition: service_completed_successfully
   one:
     <<: *baseline
     build:

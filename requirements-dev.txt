@@ -1,6 +1,6 @@
-connexion[swagger-ui]
-connexion
-requests
-openapi_resolver
-pyyaml
-pytest
+connexion[swagger-ui]==2.13.1
+connexion==2.13.1
+requests==2.27.1
+openapi-resolver==0.0.6
+PyYAML==5.4.1
+pytest==6.0.2
