@@ -9,8 +9,19 @@ import re
 log = logging.getLogger(__name__)
 
 RE_FIELD = re.compile("^[a-zA-Z0-9_]{2,64}$")
-from frictionless import validate_resource
+from frictionless import Package, Resource
 from frictionless.report import Report
+
+
+def _get_resource(fpath):
+    datapackage = fpath.parent / "datapackage.json"
+    if datapackage.exists():
+        package = Package(datapackage)
+        for r in package.resources:
+            if r.path == fpath.name:
+                return r
+
+    return Resource(fpath)
 
 
 @Report.from_validate
@@ -18,8 +29,7 @@ def is_csv(fpath):
     """Expose validation results from frictionless."""
 
     errors = []
-
-    report = validate_resource(fpath)
+    report = _get_resource(fpath).validate()
     current_errors = {}
     if not report.valid:
         current_errors = report.flatten(["rowPosition", "fieldPosition", "code"])
