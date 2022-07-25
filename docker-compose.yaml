@@ -22,9 +22,10 @@ services:
     - 9891:8080/tcp
 
   virtuoso:
-    #build:
-    #  context: ./
-    #  dockerfile: Dockerfile
+    build:
+      context: ./dati-ontopia-virtuoso/
+      dockerfile: Dockerfile
+    container_name: pdnd-ontopia-virtuoso
     image: teamdigitale/pdnd-ontopia-virtuoso
     volumes:
     - .:/code
