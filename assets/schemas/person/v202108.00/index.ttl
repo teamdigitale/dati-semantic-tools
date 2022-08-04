@@ -11,7 +11,7 @@
 
 This description field can be rendered in markdown or in text-only in catalogues
 and other interfaces.""" ;
-    dct:modified "2021-12-20" ;
+    dct:modified "2022-06-29" ;
     dct:rightsHolder <http://spcdata.digitpa.gov.it/Amministrazione/agid> ;
     dct:title "The Person schema" ;
     owl:versionInfo "202108.01.00" ;
@@ -28,3 +28,4 @@ and other interfaces.""" ;
     dct:license licences:A21_CCBY40 ;
     dcat:accessURL <https://github.com/ioggstream/json-semantic-playground/tree/master/assets/schemas/person/v202108.00> ;
     dcat:mediaType "application/json" .
+

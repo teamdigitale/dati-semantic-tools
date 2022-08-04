@@ -14,7 +14,7 @@
  Per maggiori informazioni visitare la pagina
  https://github.com/Regione-Umbria/coronavirus.
  **versione beta.**""" ;
-    dct:modified "2021-12-20" ;
+    dct:modified "2022-06-29" ;
     dct:rightsHolder <https://apistore.regione.umbria.it/home> ;
     dct:title "COVID-19 Schema" ;
     owl:versionInfo "1.0.0" ;
@@ -34,3 +34,4 @@
     dct:license licences:A21_CCBY40 ;
     dcat:accessURL <https://github.com/ioggstream/json-semantic-playground/tree/master/assets/schemas/covid-umbria/latest> ;
     dcat:mediaType "application/json" .
+

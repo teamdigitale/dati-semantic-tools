@@ -139,6 +139,8 @@ def list_entries(vocabulary_id, limit=100, cursor="", **params):
 
 def schema_list_entries_oneof(vocabulary_id, lang="it", schema_type="oneOf", **params):
     limit, cursor = 1000, ""
+    # Eventually override lang with Accept.
+    lang = request.headers.get("Accept-Language", lang)
     if lang not in ("it", "en"):
         raise ValueError("Bad language")
     vocabulary, ret = _list_vocabulary(vocabulary_id, limit, cursor, **params)
