@@ -9,24 +9,35 @@ import re
 log = logging.getLogger(__name__)
 
 RE_FIELD = re.compile("^[a-zA-Z0-9_]{2,64}$")
-from frictionless import validate_resource
-from frictionless.report import Report
+from frictionless import Package, Resource
 
 
-@Report.from_validate
+def _get_resource(fpath):
+    datapackage = fpath.parent / "datapackage.json"
+    if datapackage.exists():
+        package = Package(datapackage)
+        log.warning("Loading metadata from datapackage.")
+        for r in package.resources:
+            if r.path == fpath.name:
+                return r
+
+    return Resource(fpath)
+
+
 def is_csv(fpath):
-    """Expose validation results from frictionless."""
+    """Expose validation results from frictionless.
 
+    If you need to use the validation results, you can
+    decorate this function with `@Report.from_validate`
+    """
     errors = []
-
-    report = validate_resource(fpath)
+    report = _get_resource(fpath).validate()
     current_errors = {}
     if not report.valid:
         current_errors = report.flatten(["rowPosition", "fieldPosition", "code"])
         log.error(f"Invalid file: {fpath}.")
         log.debug(json.dumps(current_errors, indent=2))
         errors.append({fpath.as_posix(): current_errors})
-        raise ValueError(errors)
 
     for field_name in [
         field.name for tasks in report.tasks for field in tasks.resource.schema.fields
