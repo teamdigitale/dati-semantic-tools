@@ -242,6 +242,7 @@ paths:
       parameters:
         - $ref: "#/components/parameters/vocabulary_id"
         - $ref: "#/components/parameters/label_it"
+        - $ref: "#/components/parameters/Accept-Language"
         - name: lang
           required: false
           in: query
@@ -257,7 +258,7 @@ paths:
               See https://github.com/zalando/connexion/issues/691#issuecomment-455774634
             type: string
             maxLength: 10
-            oneOf:
+            anyOf:
             - type: string
               title: Return an oneOf jsonschema
               enum:
@@ -361,6 +362,21 @@ paths:
 
 components:
   parameters:
+    Accept-Language:
+      in: header
+      name: Accept-Language
+      description: |-
+        The header advertises which languages the client is able to understand, and which locale
+         variant is preferred. (By languages, we mean natural languages, such as English, 
+         and not programming languages.) 
+      schema:
+        type: string
+        example: "it"
+        enum:
+        - it
+        - en
+        - fr
+        default: it
     vocabulary_id:
       in: path
       required: true
@@ -392,6 +408,7 @@ components:
       $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/X-RateLimit-Reset'
     Retry-After:
       $ref: 'https://teamdigitale.github.io/openapi/0.0.7/definitions.yaml#/headers/Retry-After'
+           
 
   responses:
     # Predefined error codes for this API
