@@ -1,0 +1,126 @@
+{
+    "profile": "tabular-data-package",
+    "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "doubleQuote": false
+    },
+    "resources": [
+        {
+            "name": "education-level",
+            "path": "education-level.csv",
+            "profile": "tabular-data-resource",
+            "description": "The Education Level Vocabulary generated\nfrom RDF data.",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "x-jsonld-context": {
+                    "@vocab": "https://w3id.org/italia/controlled-vocabulary/classifications-for-people/education-level/",
+                    "@base": "https://w3id.org/italia/controlled-vocabulary/classifications-for-people/education-level/",
+                    "skos": "http://www.w3.org/2004/02/skos/core#",
+                    "codice_1_livello": {
+                        "@id": "@id",
+                        "@type": "@id"
+                    },
+                    "label_ITA_1_livello": {
+                        "@id": "skos:prefLabel",
+                        "@language": "en"
+                    },
+                    "label_ENG_1_livello": {
+                        "@id": "skos:prefLabel",
+                        "@language": "it"
+                    },
+                    "definizione": {
+                        "@id": "skos:definition",
+                        "@language": "it"
+                    }
+                },
+                "fields": [
+                    {
+                        "name": "codice_1_livello",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "label_ITA_1_livello",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "label_ENG_1_livello",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "definizione",
+                        "type": "string",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            }
+        },
+
+                {
+            "name": "ko-education-level",
+            "path": "ko-education-level.csv",
+            "profile": "tabular-data-resource",
+            "description": "The Education Level Vocabulary generated\nfrom RDF data.",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "x-jsonld-context": {
+                    "@vocab": "https://w3id.org/italia/controlled-vocabulary/classifications-for-people/education-level/",
+                    "@base": "https://w3id.org/italia/controlled-vocabulary/classifications-for-people/education-level/",
+                    "skos": "http://www.w3.org/2004/02/skos/core#",
+                    "codice_1_livello": {
+                        "@id": "@id",
+                        "@type": "@id"
+                    },
+                    "label_ITA_1_livello": {
+                        "@id": "skos:prefLabel",
+                        "@language": "en"
+                    },
+                    "label_ENG_1_livello": {
+                        "@id": "skos:prefLabel",
+                        "@language": "it"
+                    },
+                    "definizione": {
+                        "@id": "skos:definition",
+                        "@language": "it"
+                    }
+                },
+                "fields": [
+                    {
+                        "name": "codice_1_livello",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "label_ITA_1_livello",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "label_ENG_1_livello",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "definizione",
+                        "type": "string",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            }
+        }
+
+    ]
+}

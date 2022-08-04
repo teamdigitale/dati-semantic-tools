@@ -1,6 +1,7 @@
 # Insert here the files/folders/extensions you would like to exclude from git tracking
 *.py[co]
-.*
+.tox
+.vscode
 __pycache__
 *.log
 *.egg*
@@ -17,6 +18,9 @@ __pycache__
 *.db
 *.nt
 *.short.ld.yaml
+*.tmp
+.local
+build/
 
 # RDF files
 *.rdf
