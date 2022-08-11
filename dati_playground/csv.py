@@ -13,12 +13,15 @@ from frictionless import Package, Resource
 
 
 def _get_resource(fpath):
-    datapackage = fpath.parent / "datapackage.json"
-    if datapackage.exists():
+    datapackage_candidates = (
+        fpath.parent / f"datapackage.{ext}" for ext in ["json", "yaml", "yml"]
+    )
+    for datapackage in (d for d in datapackage_candidates if d.exists()):
         package = Package(datapackage)
-        log.warning("Loading metadata from datapackage.")
+        log.debug(f"Found {datapackage} in {fpath.parent}")
         for r in package.resources:
             if r.path == fpath.name:
+                log.warning(f"Loading metadata for {r.path} from {datapackage.name}.")
                 return r
 
     return Resource(fpath)
