@@ -8,7 +8,7 @@ import re
 
 log = logging.getLogger(__name__)
 
-RE_FIELD = re.compile("^[a-zA-Z0-9_]{2,64}$")
+RE_FIELD = re.compile("^[a-zA-Z0-9 _]{2,64}$")
 from frictionless import Package, Resource
 
 
@@ -34,7 +34,8 @@ def is_csv(fpath):
     decorate this function with `@Report.from_validate`
     """
     errors = []
-    report = _get_resource(fpath).validate()
+    resource = _get_resource(fpath)
+    report = resource.validate()
     current_errors = {}
     if not report.valid:
         current_errors = report.flatten(["rowPosition", "fieldPosition", "code"])
@@ -42,16 +43,23 @@ def is_csv(fpath):
         log.debug(json.dumps(current_errors, indent=2))
         errors.append({fpath.as_posix(): current_errors})
 
+    #
+    # Check further requirements.
+    #
     for field_name in [
         field.name for tasks in report.tasks for field in tasks.resource.schema.fields
     ]:
         if not RE_FIELD.match(str(field_name)):
-            log.error(f"Invalid field name: {field_name} in {fpath.name}")
-            current_errors = {field_name: f"Invalid field name: {field_name}"}
+            log.error(
+                f"Invalid field name for publication: {field_name} in {fpath.name}"
+            )
+            current_errors = {
+                field_name: f"Invalid field name for publication: {field_name}"
+            }
 
     if current_errors:
         errors.append({fpath.as_posix(): current_errors})
         raise ValueError(errors)
 
-    log.info(f"File {fpath} is valid")
+    log.info(f"File is valid: {fpath}")
     return report

@@ -56,3 +56,14 @@ def test_asset_datapackage_csv_ko(fpath):
     with pytest.raises(ValueError) as excinfo:
         asset.validate()
     assert "type-error" in str(excinfo.value)
+
+
+@pytest.mark.parametrize("fpath", Path(".").glob("tests/**/ateco-2007.csv"))
+def test_ateco_datapackage_csv(fpath):
+    log.error(f"Validating {fpath}")
+    asset = Asset(fpath)
+    assert asset.type == "csv"
+    asset.parse()
+
+    ret = asset.validate()
+    assert ret
