@@ -5,6 +5,7 @@
 import json
 import logging
 import re
+from typing import Tuple
 
 log = logging.getLogger(__name__)
 
@@ -12,7 +13,7 @@ RE_FIELD = re.compile("^[a-zA-Z0-9_]{2,64}$")
 from frictionless import Package, Resource
 
 
-def _get_resource(fpath):
+def _get_resource(fpath) -> Tuple[Package, Resource]:
     datapackage_candidates = (
         fpath.parent / f"datapackage.{ext}" for ext in ["json", "yaml", "yml"]
     )
@@ -22,9 +23,9 @@ def _get_resource(fpath):
         for r in package.resources:
             if r.path == fpath.name:
                 log.warning(f"Loading metadata for {r.path} from {datapackage.name}.")
-                return r
+                return package, r
 
-    return Resource(fpath)
+    return None, Resource(fpath)
 
 
 def is_csv(fpath):
@@ -34,7 +35,8 @@ def is_csv(fpath):
     decorate this function with `@Report.from_validate`
     """
     errors = []
-    report = _get_resource(fpath).validate()
+    package, resource = _get_resource(fpath)
+    report = resource.validate()
     current_errors = {}
     if not report.valid:
         current_errors = report.flatten(["rowPosition", "fieldPosition", "code"])
@@ -42,16 +44,26 @@ def is_csv(fpath):
         log.debug(json.dumps(current_errors, indent=2))
         errors.append({fpath.as_posix(): current_errors})
 
-    for field_name in [
-        field.name for tasks in report.tasks for field in tasks.resource.schema.fields
-    ]:
-        if not RE_FIELD.match(str(field_name)):
-            log.error(f"Invalid field name: {field_name} in {fpath.name}")
-            current_errors = {field_name: f"Invalid field name: {field_name}"}
+    #
+    # Test field names if a datapackage is not defined.
+    #
+    if not package:
+        for field_name in [
+            field.name
+            for tasks in report.tasks
+            for field in tasks.resource.schema.fields
+            if not RE_FIELD.match(str(field.name))
+        ]:
+            log.error(
+                f"Invalid field name for publication: {field_name} in {fpath.name}"
+            )
+            current_errors = {
+                field_name: f"Invalid field name for publication: {field_name}"
+            }
 
     if current_errors:
         errors.append({fpath.as_posix(): current_errors})
         raise ValueError(errors)
 
-    log.info(f"File {fpath} is valid")
+    log.info(f"File is valid: {fpath}")
     return report
