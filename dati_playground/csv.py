@@ -8,7 +8,7 @@ import re
 
 log = logging.getLogger(__name__)
 
-RE_FIELD = re.compile("^[a-zA-Z0-9 _]{2,64}$")
+RE_FIELD = re.compile("^[a-zA-Z0-9_]{2,64}$")
 from frictionless import Package, Resource
 
 
