@@ -5,6 +5,8 @@ from typing import Dict
 
 import pandas as pd
 import yaml
+from rdflib.plugins.serializers.jsonld import from_rdf
+from rdflib.term import URIRef
 from pyld import jsonld
 
 from .utils import MIME_JSONLD, MIME_TURTLE, is_recent_than, parse_graph, yaml_load
@@ -12,6 +14,16 @@ from .validators import is_framing_context
 
 log = logging.getLogger(__name__)
 
+class RDFDumper(yaml.SafeDumper):
+    """YAML dumper with URIRef support"""
+
+    def represent_uri(self, data):
+        return self.represent_str(str(data))
+RDFDumper.add_representer(URIRef, RDFDumper.represent_uri)
+
+
+def yaml_safe_dump(*args, **kwargs):
+    return yaml.dump(*args, Dumper=RDFDumper, **kwargs)
 
 def frame_vocabulary(vpath_ttl: Path, context: Dict) -> Dict:
     """
@@ -24,10 +36,7 @@ def frame_vocabulary(vpath_ttl: Path, context: Dict) -> Dict:
     """
 
     g = parse_graph(vpath_ttl.as_posix(), format=MIME_TURTLE)
-    vocab_jsonld = g.serialize(format=MIME_JSONLD)
-    log.warning(f"Serialized to json: {vpath_ttl}")
-    vocab = json.loads(vocab_jsonld)
-    log.warning(f"Loaded from json: {vpath_ttl}")
+    vocab = from_rdf(g)
     data_projection = jsonld.frame(vocab, frame=context)
     log.warning(f"Projected: {vpath_ttl}.")
 
@@ -79,7 +88,7 @@ def frame_vocabulary_to_csv(
     context_prefix = "." + frame_context.stem[8:]
     context = yaml_load(frame_context)
 
-    if not is_framing_context(yaml.safe_dump(context)):
+    if not is_framing_context(yaml_safe_dump(context,)):
         raise ValueError(
             f"Missing required field `key` in framing context: {frame_context}"
         )
@@ -109,7 +118,7 @@ def frame_vocabulary_to_csv(
     # Save json-ld version.
     dpath = (dest_dir / vpath).with_suffix(context_prefix + ".yaml")
     if is_recent_than(vpath, dpath):
-        dpath.write_text(yaml.safe_dump(framed_data))
+        dpath.write_text(yaml_safe_dump(framed_data))
 
     # Generate CSV.
     df = pd.DataFrame(framed_data["@graph"])
@@ -140,7 +149,7 @@ def frame_vocabulary_to_csv(
         )
     # Save json-schema version
     dpath = (dest_dir / vpath).with_suffix(context_prefix + ".oas3.yaml")
-    dpath.write_text(yaml.safe_dump(df_to_schema(df), indent=2))
+    dpath.write_text(yaml_safe_dump(df_to_schema(df), indent=2))
 
     return framed_data, framed_metadata
 

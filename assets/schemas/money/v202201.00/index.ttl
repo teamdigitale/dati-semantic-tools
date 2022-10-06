@@ -14,7 +14,7 @@ of prices, offers and tickets.
 
 This description field can be rendered in markdown or in text-only in catalogues
 and other interfaces.""" ;
-    dct:modified "2022-01-12" ;
+    dct:modified "2022-10-06" ;
     dct:rightsHolder <http://spcdata.digitpa.gov.it/Amministrazione/agid> ;
     dct:title "The Money schema" ;
     owl:versionInfo "202201.00.00" ;
@@ -32,3 +32,4 @@ and other interfaces.""" ;
     dct:license licences:A21_CCBY40 ;
     dcat:accessURL <https://github.com/ioggstream/json-semantic-playground/tree/master/assets/schemas/money/v202201.00> ;
     dcat:mediaType "application/json" .
+

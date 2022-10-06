@@ -11,7 +11,7 @@ CertificatoDiCodiceFiscale:
   "$schema": "https://json-schema.org/draft/2019-09/schema"
   type: object
   x-jsonld-type: https://w3id.org/italia/onto/CPV/Person
-  "x-@context": "https://w3id.org/italia/age/sdgr/jsonld/CertificatoDiCodiceFiscale.v1.jsonld"
+  x-jsonld-context: "https://w3id.org/italia/age/sdgr/jsonld/CertificatoDiCodiceFiscale.v1.jsonld"
   additionalProperties: false
   description: |-
       Questo schema rappresenta un certificato di Codice Fiscale.
