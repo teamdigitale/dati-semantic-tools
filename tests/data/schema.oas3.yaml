@@ -28,8 +28,8 @@ components:
   schemas:
     TaxCode:
       type: string
-      x-refersTo: https://w3id.org/italia/onto/CPV/taxCode
       description: Il codice fiscale.
+        Associato a https://w3id.org/italia/onto/CPV/taxCode.
       example: RSSMRA75L01H501A
       maxLength: 16
       minLength: 11
@@ -38,10 +38,10 @@ components:
         "@vocab": "https://w3id.org/italia/onto/CPV/"
         parent_id: taxCode
       type: string
-      x-refersTo: https://w3id.org/italia/onto/CPV/Person
       description: |-
         Uno schema semplificato per associare una sola chiave
         che identifica un genitore.
+        Associato a https://w3id.org/italia/onto/CPV/Person.
       additionalProperties: false
       required:
         - parent_id
@@ -50,7 +50,7 @@ components:
           $ref: "#/components/schemas/TaxCode"
     Person:
       type: object
-      x-refersTo: https://w3id.org/italia/onto/CPV/Person
+      x-jsonld-type: https://w3id.org/italia/onto/CPV/Person
       # This custom property defines the associated json-ld
       #   context that can be used to semantically describe
       #   the instances.
@@ -75,26 +75,21 @@ components:
         tax_code:
           $ref: "#/components/schemas/TaxCode"
         date_of_birth:
-          x-refersTo: https://w3id.org/italia/onto/CPV/dateOfBirth
           format: date
           type: string
         family_name:
-          x-refersTo: https://w3id.org/italia/onto/CPV/familyName
           maxLength: 255
           type: string
         given_name:
-          x-refersTo: https://w3id.org/italia/onto/CPV/givenName
           maxLength: 255
           type: string
         children:
-          x-refersTo: https://w3id.org/italia/onto/CPV/hasChildren
           type: array
           items:
             $ref: "#/components/schemas/Person"
           minItems: 0
           maxItems: 50
         parents:
-          x-refersTo: https://w3id.org/italia/onto/CPV/hasParents
           type: array
           items:
             $ref: "#/components/schemas/Parent"

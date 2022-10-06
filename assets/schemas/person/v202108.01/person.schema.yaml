@@ -7,18 +7,18 @@
   TaxCode:
     $id: "#/$defs/TaxCode"
     type: string
-    x-refersTo: https://w3id.org/italia/onto/CPV/taxCode
     description: Il codice fiscale.
+      Associato a https://w3id.org/italia/onto/CPV/taxCode.
     example: RSSMRA75L01H501A
     maxLength: 16
     minLength: 11
   Parent:
     $id: "#/$defs/Parent"
     type: string
-    x-refersTo: https://w3id.org/italia/onto/CPV/Person
     description: |-
       Uno schema semplificato per associare il solo URL
       che identifica un genitore.
+      Associato a https://w3id.org/italia/onto/CPV/Person.
     additionalProperties: false
     required:
       - href
@@ -29,7 +29,7 @@
         format: uri
   Person:
     type: object
-    x-refersTo: https://w3id.org/italia/onto/CPV/Person
+    x-jsonld-type: https://w3id.org/italia/onto/CPV/Person
     additionalProperties: false
     description: |-
         Questo schema rappresenta una persona fisica.
@@ -41,26 +41,21 @@
       tax_code:
         $ref: "#/$defs/TaxCode"
       date_of_birth:
-        x-refersTo: https://w3id.org/italia/onto/CPV/dateOfBirth
         format: date
         type: string
       family_name:
-        x-refersTo: https://w3id.org/italia/onto/CPV/familyName
         maxLength: 255
         type: string
       given_name:
-        x-refersTo: https://w3id.org/italia/onto/CPV/givenName
         maxLength: 255
         type: string
       children:
-        x-refersTo: https://w3id.org/italia/onto/CPV/hasChildren
         type: array
         items:
           $ref: "#/$defs/Person"
         maxItems: 50
         minItems: 0
       parents:
-        x-refersTo: https://w3id.org/italia/onto/CPV/hasParents
         type: array
         items:
           $ref: "#/$defs/Parent"
