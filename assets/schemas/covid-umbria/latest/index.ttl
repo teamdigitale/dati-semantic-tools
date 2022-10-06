@@ -34,4 +34,3 @@
     dct:license licences:A21_CCBY40 ;
     dcat:accessURL <https://github.com/ioggstream/json-semantic-playground/tree/master/assets/schemas/covid-umbria/latest> ;
     dcat:mediaType "application/json" .
-

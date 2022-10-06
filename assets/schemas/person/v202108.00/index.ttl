@@ -28,4 +28,3 @@ and other interfaces.""" ;
     dct:license licences:A21_CCBY40 ;
     dcat:accessURL <https://github.com/ioggstream/json-semantic-playground/tree/master/assets/schemas/person/v202108.00> ;
     dcat:mediaType "application/json" .
-

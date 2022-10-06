@@ -4,26 +4,14 @@ from pathlib import Path
 from typing import Dict
 
 import pandas as pd
-import yaml
-from rdflib.plugins.serializers.jsonld import from_rdf
-from rdflib.term import URIRef
 from pyld import jsonld
+from rdflib.plugins.serializers.jsonld import from_rdf
 
-from .utils import MIME_JSONLD, MIME_TURTLE, is_recent_than, parse_graph, yaml_load
+from .utils import MIME_TURTLE, is_recent_than, parse_graph, yaml_load, yaml_safe_dump
 from .validators import is_framing_context
 
 log = logging.getLogger(__name__)
 
-class RDFDumper(yaml.SafeDumper):
-    """YAML dumper with URIRef support"""
-
-    def represent_uri(self, data):
-        return self.represent_str(str(data))
-RDFDumper.add_representer(URIRef, RDFDumper.represent_uri)
-
-
-def yaml_safe_dump(*args, **kwargs):
-    return yaml.dump(*args, Dumper=RDFDumper, **kwargs)
 
 def frame_vocabulary(vpath_ttl: Path, context: Dict) -> Dict:
     """
@@ -88,7 +76,11 @@ def frame_vocabulary_to_csv(
     context_prefix = "." + frame_context.stem[8:]
     context = yaml_load(frame_context)
 
-    if not is_framing_context(yaml_safe_dump(context,)):
+    if not is_framing_context(
+        yaml_safe_dump(
+            context,
+        )
+    ):
         raise ValueError(
             f"Missing required field `key` in framing context: {frame_context}"
         )

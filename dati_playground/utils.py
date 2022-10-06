@@ -5,6 +5,7 @@ from pathlib import Path
 
 import yaml
 from rdflib import Graph
+from rdflib.term import URIRef
 
 log = logging.getLogger(__name__)
 
@@ -51,3 +52,17 @@ def yaml_load(fpath):
 @lru_cache(maxsize=128)
 def yaml_to_json(s: str):
     return json.dumps(yaml.safe_load(s), indent=2)
+
+
+class RDFDumper(yaml.SafeDumper):
+    """YAML dumper with URIRef support"""
+
+    def represent_uri(self, data):
+        return self.represent_str(str(data))
+
+
+RDFDumper.add_representer(URIRef, RDFDumper.represent_uri)
+
+
+def yaml_safe_dump(*args, **kwargs):
+    return yaml.dump(*args, Dumper=RDFDumper, **kwargs)
