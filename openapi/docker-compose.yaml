@@ -7,4 +7,4 @@ services:
   api:
     build: .
     environment:
-      NDC_RESTAPI_DATASTORE_URL: "https://ioggstream.github.io/json-semantic-playground/datastore.db"
+      NDC_RESTAPI_DATASTORE_URL: "https://teamdigitale.github.io/json-semantic-playground/datastore.db"
