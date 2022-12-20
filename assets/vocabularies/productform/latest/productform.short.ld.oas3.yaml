@@ -1,0 +1,49 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/product-form/BOOKMARK
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/product-form/CDROM
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/product-form/DVDROM
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/product-form/FOLDER
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/product-form/LEAFLET
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/product-form/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/product-form/POSTCARD
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/product-form/POSTER
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/product-form/POSTER_PROM
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/product-form/PRINT
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/product-form/PRINT_HRDCV
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/product-form/PRINT_LOSL
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/product-form/PRINT_RGBD
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/product-form/PRINT_SFTCV
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/product-form/PRINT_STPL
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/product-form/SHEET_MAP
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/product-form/USB_FD
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/product-form/VIDEO_VHS
+        title: .nan
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

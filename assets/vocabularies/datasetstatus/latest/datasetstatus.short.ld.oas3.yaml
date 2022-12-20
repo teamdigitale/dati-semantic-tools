@@ -1,0 +1,25 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/dataset-status/COMPLETED
+        title: completato
+      - const: http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED
+        title: sconsigliato
+      - const: http://publications.europa.eu/resource/authority/dataset-status/DEVELOP
+        title: in corso di sviluppo
+      - const: http://publications.europa.eu/resource/authority/dataset-status/DISCONT
+        title: interrotta
+      - const: http://publications.europa.eu/resource/authority/dataset-status/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/dataset-status/WITHDRAWN
+        title: ritirato
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

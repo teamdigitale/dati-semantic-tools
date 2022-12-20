@@ -1,0 +1,25 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/procedure-nature/INT
+        title: interno
+      - const: http://publications.europa.eu/resource/authority/procedure-nature/INTERINST
+        title: interistituzionale
+      - const: http://publications.europa.eu/resource/authority/procedure-nature/JURISD
+        title: giurisdizionale
+      - const: http://publications.europa.eu/resource/authority/procedure-nature/LEG
+        title: legislativo
+      - const: http://publications.europa.eu/resource/authority/procedure-nature/NON_LEG
+        title: non legislativo
+      - const: http://publications.europa.eu/resource/authority/procedure-nature/OP_DATPRO
+        title: Dati provvisori
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

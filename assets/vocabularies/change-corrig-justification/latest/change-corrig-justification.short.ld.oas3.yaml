@@ -1,0 +1,29 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/change-corrig-justification/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/change-corrig-justification/cancel
+        title: Annullamento
+      - const: http://publications.europa.eu/resource/authority/change-corrig-justification/cancel-intent
+        title: Previsto annullamento
+      - const: http://publications.europa.eu/resource/authority/change-corrig-justification/cor-buy
+        title: Rettifica errore committente
+      - const: http://publications.europa.eu/resource/authority/change-corrig-justification/cor-esen
+        title: Rettifica errore eSender
+      - const: http://publications.europa.eu/resource/authority/change-corrig-justification/cor-pub
+        title: Rettifica errore editore
+      - const: http://publications.europa.eu/resource/authority/change-corrig-justification/info-release
+        title: "Disponibilit\xE0 di informazioni"
+      - const: http://publications.europa.eu/resource/authority/change-corrig-justification/update-add
+        title: Aggiornamento informazioni
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

@@ -1,0 +1,824 @@
+{
+  "@context": {
+    "at": "http://publications.europa.eu/ontology/authority/",
+    "atold": "http://publications.europa.eu/resource/authority/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://publications.europa.eu/resource/authority/form-type/bri",
+      "@type": "skos:Concept",
+      "at:authority-code": "bri",
+      "at:deprecated": "false",
+      "at:op-code": "bri",
+      "at:start.use": "2021-09-29",
+      "atold:op-code": "bri",
+      "dc:identifier": "bri",
+      "skos:inScheme": {
+        "@id": "atold:form-type"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Business registration information"
+      }
+    },
+    {
+      "@id": "atold:form-type",
+      "@type": "skos:ConceptScheme",
+      "at:prefLabel": {
+        "@language": "en",
+        "@value": "Form type"
+      },
+      "at:table.id": "form-type",
+      "at:table.version.number": "20210929-0",
+      "owl:versionInfo": "20210929-0",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Form type"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Form type"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/form-type/change",
+      "@type": "skos:Concept",
+      "at:authority-code": "change",
+      "at:deprecated": "false",
+      "at:op-code": "change",
+      "at:start.use": "2019-09-18",
+      "atold:op-code": "change",
+      "dc:identifier": "change",
+      "skos:inScheme": {
+        "@id": "atold:form-type"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "Промяна"
+        },
+        {
+          "@language": "cs",
+          "@value": "Oprava"
+        },
+        {
+          "@language": "da",
+          "@value": "Meddelelse om ændring"
+        },
+        {
+          "@language": "de",
+          "@value": "Änderung"
+        },
+        {
+          "@language": "el",
+          "@value": "Αλλαγή"
+        },
+        {
+          "@language": "en",
+          "@value": "Change"
+        },
+        {
+          "@language": "es",
+          "@value": "Cambio"
+        },
+        {
+          "@language": "et",
+          "@value": "Parandus"
+        },
+        {
+          "@language": "fi",
+          "@value": "Ilmoituksen muutos"
+        },
+        {
+          "@language": "fr",
+          "@value": "Changement"
+        },
+        {
+          "@language": "ga",
+          "@value": "Athrú"
+        },
+        {
+          "@language": "hr",
+          "@value": "Promjena"
+        },
+        {
+          "@language": "hu",
+          "@value": "Változtatás"
+        },
+        {
+          "@language": "it",
+          "@value": "Rettifica"
+        },
+        {
+          "@language": "lt",
+          "@value": "Pakeitimas"
+        },
+        {
+          "@language": "lv",
+          "@value": "Izmaiņas"
+        },
+        {
+          "@language": "mt",
+          "@value": "Bidla"
+        },
+        {
+          "@language": "nl",
+          "@value": "Wijziging van een aankondiging"
+        },
+        {
+          "@language": "pl",
+          "@value": "Zmiana"
+        },
+        {
+          "@language": "pt",
+          "@value": "Alteração"
+        },
+        {
+          "@language": "ro",
+          "@value": "Schimbare"
+        },
+        {
+          "@language": "sk",
+          "@value": "Zmena"
+        },
+        {
+          "@language": "sl",
+          "@value": "Sprememba obvestila"
+        },
+        {
+          "@language": "sv",
+          "@value": "Ändring"
+        }
+      ]
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/form-type/cont-modif",
+      "@type": "skos:Concept",
+      "at:authority-code": "cont-modif",
+      "at:deprecated": "false",
+      "at:op-code": "cont-modif",
+      "at:start.use": "2019-09-18",
+      "atold:op-code": "cont-modif",
+      "dc:identifier": "cont-modif",
+      "skos:inScheme": {
+        "@id": "atold:form-type"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "Изменение на договор"
+        },
+        {
+          "@language": "cs",
+          "@value": "Změna smlouvy"
+        },
+        {
+          "@language": "da",
+          "@value": "Kontraktændring"
+        },
+        {
+          "@language": "de",
+          "@value": "Auftragsänderung"
+        },
+        {
+          "@language": "el",
+          "@value": "Τροποποίηση σύμβασης"
+        },
+        {
+          "@language": "en",
+          "@value": "Contract modification"
+        },
+        {
+          "@language": "es",
+          "@value": "Modificación de contrato"
+        },
+        {
+          "@language": "et",
+          "@value": "Lepingu muutmine"
+        },
+        {
+          "@language": "fi",
+          "@value": "Sopimusmuutokset"
+        },
+        {
+          "@language": "fr",
+          "@value": "Modification du marché"
+        },
+        {
+          "@language": "ga",
+          "@value": "Mionathrú conartha"
+        },
+        {
+          "@language": "hr",
+          "@value": "Izmjena ugovora"
+        },
+        {
+          "@language": "hu",
+          "@value": "Szerződésmódosítás"
+        },
+        {
+          "@language": "it",
+          "@value": "Modifica dell'appalto"
+        },
+        {
+          "@language": "lt",
+          "@value": "Sutarties keitimas"
+        },
+        {
+          "@language": "lv",
+          "@value": "Līguma grozījumi"
+        },
+        {
+          "@language": "mt",
+          "@value": "Modifika fil-kuntratt"
+        },
+        {
+          "@language": "nl",
+          "@value": "Wijziging van een opdracht"
+        },
+        {
+          "@language": "pl",
+          "@value": "Modyfikacja umowy"
+        },
+        {
+          "@language": "pt",
+          "@value": "Modificação do contrato"
+        },
+        {
+          "@language": "ro",
+          "@value": "Modificări aduse contractului"
+        },
+        {
+          "@language": "sk",
+          "@value": "Úprava zmluvy"
+        },
+        {
+          "@language": "sl",
+          "@value": "Sprememba naročila"
+        },
+        {
+          "@language": "sv",
+          "@value": "Kontraktsändring"
+        }
+      ]
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/form-type/competition",
+      "@type": "skos:Concept",
+      "at:authority-code": "competition",
+      "at:deprecated": "false",
+      "at:op-code": "competition",
+      "at:start.use": "2019-09-18",
+      "atold:op-code": "competition",
+      "dc:identifier": "competition",
+      "skos:inScheme": {
+        "@id": "atold:form-type"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "Състезателна процедура"
+        },
+        {
+          "@language": "cs",
+          "@value": "Zadávání"
+        },
+        {
+          "@language": "da",
+          "@value": "Konkurrencevilkår"
+        },
+        {
+          "@language": "de",
+          "@value": "Wettbewerb"
+        },
+        {
+          "@language": "el",
+          "@value": "Aνταγωνισμός"
+        },
+        {
+          "@language": "en",
+          "@value": "Competition"
+        },
+        {
+          "@language": "es",
+          "@value": "Licitación"
+        },
+        {
+          "@language": "et",
+          "@value": "Hange"
+        },
+        {
+          "@language": "fi",
+          "@value": "Kilpailu"
+        },
+        {
+          "@language": "fr",
+          "@value": "Mise en concurrence"
+        },
+        {
+          "@language": "ga",
+          "@value": "Iomaíocht"
+        },
+        {
+          "@language": "hr",
+          "@value": "Nadmetanje"
+        },
+        {
+          "@language": "hu",
+          "@value": "Verseny"
+        },
+        {
+          "@language": "it",
+          "@value": "Gara"
+        },
+        {
+          "@language": "lt",
+          "@value": "Konkursas"
+        },
+        {
+          "@language": "lv",
+          "@value": "Konkurss"
+        },
+        {
+          "@language": "mt",
+          "@value": "Kompetizzjoni"
+        },
+        {
+          "@language": "nl",
+          "@value": "Mededinging"
+        },
+        {
+          "@language": "pl",
+          "@value": "Procedura konkurencyjna"
+        },
+        {
+          "@language": "pt",
+          "@value": "Concurso"
+        },
+        {
+          "@language": "ro",
+          "@value": "Procedură concurențială"
+        },
+        {
+          "@language": "sk",
+          "@value": "Súťaž"
+        },
+        {
+          "@language": "sl",
+          "@value": "Javni razpis"
+        },
+        {
+          "@language": "sv",
+          "@value": "Konkurrensvillkor"
+        }
+      ]
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/form-type/result",
+      "@type": "skos:Concept",
+      "at:authority-code": "result",
+      "at:deprecated": "false",
+      "at:op-code": "result",
+      "at:start.use": "2019-09-18",
+      "atold:op-code": "result",
+      "dc:identifier": "result",
+      "skos:inScheme": {
+        "@id": "atold:form-type"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "Резултат"
+        },
+        {
+          "@language": "cs",
+          "@value": "Výsledek"
+        },
+        {
+          "@language": "da",
+          "@value": "Resultater"
+        },
+        {
+          "@language": "de",
+          "@value": "Ergebnis"
+        },
+        {
+          "@language": "el",
+          "@value": "Αποτέλεσμα"
+        },
+        {
+          "@language": "en",
+          "@value": "Result"
+        },
+        {
+          "@language": "es",
+          "@value": "Resultados"
+        },
+        {
+          "@language": "et",
+          "@value": "Tulemus"
+        },
+        {
+          "@language": "fi",
+          "@value": "Tulokset"
+        },
+        {
+          "@language": "fr",
+          "@value": "Résultats"
+        },
+        {
+          "@language": "ga",
+          "@value": "Toradh"
+        },
+        {
+          "@language": "hr",
+          "@value": "Rezultati"
+        },
+        {
+          "@language": "hu",
+          "@value": "Eredmény"
+        },
+        {
+          "@language": "it",
+          "@value": "Risultati"
+        },
+        {
+          "@language": "lt",
+          "@value": "Rezultatai"
+        },
+        {
+          "@language": "lv",
+          "@value": "Rezultāts"
+        },
+        {
+          "@language": "mt",
+          "@value": "Riżultat"
+        },
+        {
+          "@language": "nl",
+          "@value": "Resultaat"
+        },
+        {
+          "@language": "pl",
+          "@value": "Wyniki"
+        },
+        {
+          "@language": "pt",
+          "@value": "Resultados"
+        },
+        {
+          "@language": "ro",
+          "@value": "Rezultat"
+        },
+        {
+          "@language": "sk",
+          "@value": "Výsledok"
+        },
+        {
+          "@language": "sl",
+          "@value": "Rezultati"
+        },
+        {
+          "@language": "sv",
+          "@value": "Resultat"
+        }
+      ]
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/form-type/planning",
+      "@type": "skos:Concept",
+      "at:authority-code": "planning",
+      "at:deprecated": "false",
+      "at:op-code": "planning",
+      "at:start.use": "2019-09-18",
+      "atold:op-code": "planning",
+      "dc:identifier": "planning",
+      "skos:inScheme": {
+        "@id": "atold:form-type"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "Планиране"
+        },
+        {
+          "@language": "cs",
+          "@value": "Plánování"
+        },
+        {
+          "@language": "da",
+          "@value": "Planlægning"
+        },
+        {
+          "@language": "de",
+          "@value": "Planung"
+        },
+        {
+          "@language": "el",
+          "@value": "Σχεδιασμός"
+        },
+        {
+          "@language": "en",
+          "@value": "Planning"
+        },
+        {
+          "@language": "es",
+          "@value": "Planificación"
+        },
+        {
+          "@language": "et",
+          "@value": "Kavandamine"
+        },
+        {
+          "@language": "fi",
+          "@value": "Suunnittelu"
+        },
+        {
+          "@language": "fr",
+          "@value": "Planification"
+        },
+        {
+          "@language": "ga",
+          "@value": "Pleanáil"
+        },
+        {
+          "@language": "hr",
+          "@value": "Planiranje"
+        },
+        {
+          "@language": "hu",
+          "@value": "Tervezés"
+        },
+        {
+          "@language": "it",
+          "@value": "Programmazione"
+        },
+        {
+          "@language": "lt",
+          "@value": "Planuojamas pirkimas"
+        },
+        {
+          "@language": "lv",
+          "@value": "Plānošana"
+        },
+        {
+          "@language": "mt",
+          "@value": "Ippjanar"
+        },
+        {
+          "@language": "nl",
+          "@value": "Geplande opdracht"
+        },
+        {
+          "@language": "pl",
+          "@value": "Plan zakupu"
+        },
+        {
+          "@language": "pt",
+          "@value": "Planeamento"
+        },
+        {
+          "@language": "ro",
+          "@value": "Planificare"
+        },
+        {
+          "@language": "sk",
+          "@value": "Plánovanie obstarávania"
+        },
+        {
+          "@language": "sl",
+          "@value": "Načrtovanje"
+        },
+        {
+          "@language": "sv",
+          "@value": "Planering"
+        }
+      ]
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/form-type/OP_DATPRO",
+      "@type": "skos:Concept",
+      "at:op-code": "OP_DATPRO",
+      "atold:op-code": "OP_DATPRO",
+      "dc:identifier": "OP_DATPRO",
+      "skos:inScheme": {
+        "@id": "atold:form-type"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "НЕОКОНЧАТЕЛНИ ДАННИ"
+        },
+        {
+          "@language": "cs",
+          "@value": "Předběžné údaje"
+        },
+        {
+          "@language": "da",
+          "@value": "Midlertidige data"
+        },
+        {
+          "@language": "de",
+          "@value": "Vorläufige Daten"
+        },
+        {
+          "@language": "el",
+          "@value": "Προσωρινά δεδομένα"
+        },
+        {
+          "@language": "en",
+          "@value": "Provisional data"
+        },
+        {
+          "@language": "es",
+          "@value": "Datos provisionales"
+        },
+        {
+          "@language": "et",
+          "@value": "Esialgsed andmed"
+        },
+        {
+          "@language": "fi",
+          "@value": "Alustavat tiedot"
+        },
+        {
+          "@language": "fr",
+          "@value": "Données provisoires"
+        },
+        {
+          "@language": "ga",
+          "@value": "Sonraí sealadacha"
+        },
+        {
+          "@language": "hr",
+          "@value": "Privremeni podaci"
+        },
+        {
+          "@language": "hu",
+          "@value": "Ideiglenes adatok"
+        },
+        {
+          "@language": "it",
+          "@value": "Dati provvisori"
+        },
+        {
+          "@language": "lt",
+          "@value": "Laikinieji duomenys"
+        },
+        {
+          "@language": "lv",
+          "@value": "Provizoriski dati"
+        },
+        {
+          "@language": "mt",
+          "@value": "Dejta provviżorja"
+        },
+        {
+          "@language": "nl",
+          "@value": "Voorlopige gegevens"
+        },
+        {
+          "@language": "pl",
+          "@value": "Dane tymczasowe"
+        },
+        {
+          "@language": "pt",
+          "@value": "Dados provisórios"
+        },
+        {
+          "@language": "ro",
+          "@value": "Date provizorii"
+        },
+        {
+          "@language": "sk",
+          "@value": "Predbežné údaje"
+        },
+        {
+          "@language": "sl",
+          "@value": "Začasni podatki"
+        },
+        {
+          "@language": "sv",
+          "@value": "Tillfälliga uppgifter"
+        }
+      ]
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/form-type/dir-awa-pre",
+      "@type": "skos:Concept",
+      "at:authority-code": "dir-awa-pre",
+      "at:deprecated": "false",
+      "at:op-code": "dir-awa-pre",
+      "at:start.use": "2019-09-18",
+      "atold:op-code": "dir-awa-pre",
+      "dc:identifier": "dir-awa-pre",
+      "skos:inScheme": {
+        "@id": "atold:form-type"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "Предварителна обява за пряко възлагане"
+        },
+        {
+          "@language": "cs",
+          "@value": "Oznámení o záměru uzavřít smlouvu"
+        },
+        {
+          "@language": "da",
+          "@value": "Forudgående underretning om direkte tildeling"
+        },
+        {
+          "@language": "de",
+          "@value": "Vorankündigung – Direktvergabe"
+        },
+        {
+          "@language": "el",
+          "@value": "Προκοινοποίηση απευθείας ανάθεσης"
+        },
+        {
+          "@language": "en",
+          "@value": "Direct award preannouncement"
+        },
+        {
+          "@language": "es",
+          "@value": "Notificación previa de adjudicación directa"
+        },
+        {
+          "@language": "et",
+          "@value": "Teavitamine kavandatavast otselepingust"
+        },
+        {
+          "@language": "fi",
+          "@value": "Ennakkoilmoitus suorahankinnasta"
+        },
+        {
+          "@language": "fr",
+          "@value": "Notification préalable d’attribution directe"
+        },
+        {
+          "@language": "ga",
+          "@value": "Réamhfhógra maidir le dámhachtain dhíreach"
+        },
+        {
+          "@language": "hr",
+          "@value": "Prethodna obavijest o izravnoj dodjeli"
+        },
+        {
+          "@language": "hu",
+          "@value": "Közvetlen odaítélés előzetes bejelentése"
+        },
+        {
+          "@language": "it",
+          "@value": "Preavviso di aggiudicazione diretta"
+        },
+        {
+          "@language": "lt",
+          "@value": "Išankstinis skelbimas apie tiesioginį sutarties skyrimą"
+        },
+        {
+          "@language": "lv",
+          "@value": "Tiešas piešķiršanas priekšpaziņojums"
+        },
+        {
+          "@language": "mt",
+          "@value": "Notifika minn qabel tal-għoti dirett"
+        },
+        {
+          "@language": "nl",
+          "@value": "Vooraankondiging onderhandse gunning"
+        },
+        {
+          "@language": "pl",
+          "@value": "Uprzednie zawiadomienie o bezpośrednim udzieleniu zamówienia"
+        },
+        {
+          "@language": "pt",
+          "@value": "Pré-anúncio de adjudicação direta"
+        },
+        {
+          "@language": "ro",
+          "@value": "Notificare prealabilă a atribuirii directe"
+        },
+        {
+          "@language": "sk",
+          "@value": "Predbežné oznámenie o zámere uzavrieť zmluvu"
+        },
+        {
+          "@language": "sl",
+          "@value": "Predhodno obvestilo o neposredni dodelitvi"
+        },
+        {
+          "@language": "sv",
+          "@value": "Förhandsmeddelande om direkttilldelning"
+        }
+      ]
+    }
+  ]
+}

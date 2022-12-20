@@ -1,0 +1,27 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/correction-status/CORR
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/correction-status/CORR_ISG
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/correction-status/NOT_APPL
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/correction-status/NOT_CHNG
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/correction-status/NOT_CORR
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/correction-status/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/correction-status/UNDER
+        title: .nan
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

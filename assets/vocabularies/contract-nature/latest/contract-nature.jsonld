@@ -1,0 +1,612 @@
+{
+  "@context": {
+    "at": "http://publications.europa.eu/ontology/authority/",
+    "atold": "http://publications.europa.eu/resource/authority/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://publications.europa.eu/resource/authority/contract-nature/services",
+      "@type": "skos:Concept",
+      "at:authority-code": "services",
+      "at:deprecated": "false",
+      "at:op-code": "services",
+      "at:op-mapped-code": {
+        "@id": "_:n353dc78975e84dfda6976bc558b9dc45b1"
+      },
+      "at:start.use": "2019-09-18",
+      "atold:op-code": "services",
+      "dc:identifier": "services",
+      "skos:inScheme": {
+        "@id": "atold:contract-nature"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "Услуги"
+        },
+        {
+          "@language": "cs",
+          "@value": "Služby"
+        },
+        {
+          "@language": "da",
+          "@value": "Tjenesteydelser"
+        },
+        {
+          "@language": "de",
+          "@value": "Dienstleistungen"
+        },
+        {
+          "@language": "el",
+          "@value": "Υπηρεσίες"
+        },
+        {
+          "@language": "en",
+          "@value": "Services"
+        },
+        {
+          "@language": "es",
+          "@value": "Servicios"
+        },
+        {
+          "@language": "et",
+          "@value": "Teenused"
+        },
+        {
+          "@language": "fi",
+          "@value": "Palvelut"
+        },
+        {
+          "@language": "fr",
+          "@value": "Services"
+        },
+        {
+          "@language": "ga",
+          "@value": "Seirbhísí"
+        },
+        {
+          "@language": "hr",
+          "@value": "Usluge"
+        },
+        {
+          "@language": "hu",
+          "@value": "Szolgáltatások"
+        },
+        {
+          "@language": "it",
+          "@value": "Servizi"
+        },
+        {
+          "@language": "lt",
+          "@value": "Paslaugos"
+        },
+        {
+          "@language": "lv",
+          "@value": "Pakalpojumi"
+        },
+        {
+          "@language": "mt",
+          "@value": "Servizzi"
+        },
+        {
+          "@language": "nl",
+          "@value": "Diensten"
+        },
+        {
+          "@language": "pl",
+          "@value": "Usługi"
+        },
+        {
+          "@language": "pt",
+          "@value": "Serviços"
+        },
+        {
+          "@language": "ro",
+          "@value": "Servicii"
+        },
+        {
+          "@language": "sk",
+          "@value": "Služby"
+        },
+        {
+          "@language": "sl",
+          "@value": "Storitve"
+        },
+        {
+          "@language": "sv",
+          "@value": "Tjänster"
+        }
+      ]
+    },
+    {
+      "@id": "_:n353dc78975e84dfda6976bc558b9dc45b1",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "4",
+      "dc:source": "CODIF_DATA"
+    },
+    {
+      "@id": "atold:contract-nature",
+      "@type": "skos:ConceptScheme",
+      "at:prefLabel": {
+        "@language": "en",
+        "@value": "Contract nature"
+      },
+      "at:table.id": "contract-nature",
+      "at:table.version.number": "20210317-0",
+      "owl:versionInfo": "20210317-0",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Contract nature"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Contract nature"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/contract-nature/OP_DATPRO",
+      "@type": "skos:Concept",
+      "at:op-code": "OP_DATPRO",
+      "atold:op-code": "OP_DATPRO",
+      "dc:identifier": "OP_DATPRO",
+      "skos:inScheme": {
+        "@id": "atold:contract-nature"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "НЕОКОНЧАТЕЛНИ ДАННИ"
+        },
+        {
+          "@language": "cs",
+          "@value": "Předběžné údaje"
+        },
+        {
+          "@language": "da",
+          "@value": "Midlertidige data"
+        },
+        {
+          "@language": "de",
+          "@value": "Vorläufige Daten"
+        },
+        {
+          "@language": "el",
+          "@value": "Προσωρινά δεδομένα"
+        },
+        {
+          "@language": "en",
+          "@value": "Provisional data"
+        },
+        {
+          "@language": "es",
+          "@value": "Datos provisionales"
+        },
+        {
+          "@language": "et",
+          "@value": "Esialgsed andmed"
+        },
+        {
+          "@language": "fi",
+          "@value": "Alustavat tiedot"
+        },
+        {
+          "@language": "fr",
+          "@value": "Données provisoires"
+        },
+        {
+          "@language": "ga",
+          "@value": "Sonraí sealadacha"
+        },
+        {
+          "@language": "hr",
+          "@value": "Privremeni podaci"
+        },
+        {
+          "@language": "hu",
+          "@value": "Ideiglenes adatok"
+        },
+        {
+          "@language": "it",
+          "@value": "Dati provvisori"
+        },
+        {
+          "@language": "lt",
+          "@value": "Laikinieji duomenys"
+        },
+        {
+          "@language": "lv",
+          "@value": "Provizoriski dati"
+        },
+        {
+          "@language": "mt",
+          "@value": "Dejta provviżorja"
+        },
+        {
+          "@language": "nl",
+          "@value": "Voorlopige gegevens"
+        },
+        {
+          "@language": "pl",
+          "@value": "Dane tymczasowe"
+        },
+        {
+          "@language": "pt",
+          "@value": "Dados provisórios"
+        },
+        {
+          "@language": "ro",
+          "@value": "Date provizorii"
+        },
+        {
+          "@language": "sk",
+          "@value": "Predbežné údaje"
+        },
+        {
+          "@language": "sl",
+          "@value": "Začasni podatki"
+        },
+        {
+          "@language": "sv",
+          "@value": "Tillfälliga uppgifter"
+        }
+      ]
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/contract-nature/works",
+      "@type": "skos:Concept",
+      "at:authority-code": "works",
+      "at:deprecated": "false",
+      "at:op-code": "works",
+      "at:op-mapped-code": {
+        "@id": "_:n353dc78975e84dfda6976bc558b9dc45b3"
+      },
+      "at:start.use": "2019-09-18",
+      "atold:op-code": "works",
+      "dc:identifier": "works",
+      "skos:inScheme": {
+        "@id": "atold:contract-nature"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "Строителство"
+        },
+        {
+          "@language": "cs",
+          "@value": "Stavební práce"
+        },
+        {
+          "@language": "da",
+          "@value": "Bygge og anlæg"
+        },
+        {
+          "@language": "de",
+          "@value": "Bauleistung"
+        },
+        {
+          "@language": "el",
+          "@value": "Έργα"
+        },
+        {
+          "@language": "en",
+          "@value": "Works"
+        },
+        {
+          "@language": "es",
+          "@value": "Obras"
+        },
+        {
+          "@language": "et",
+          "@value": "Ehitustööde hankelepingud"
+        },
+        {
+          "@language": "fi",
+          "@value": "Urakat"
+        },
+        {
+          "@language": "fr",
+          "@value": "Marché de travaux"
+        },
+        {
+          "@language": "ga",
+          "@value": "Oibreacha"
+        },
+        {
+          "@language": "hr",
+          "@value": "Radovi"
+        },
+        {
+          "@language": "hu",
+          "@value": "Építési beruházás"
+        },
+        {
+          "@language": "it",
+          "@value": "Lavori"
+        },
+        {
+          "@language": "lt",
+          "@value": "darbai"
+        },
+        {
+          "@language": "lv",
+          "@value": "Būvdarbi"
+        },
+        {
+          "@language": "mt",
+          "@value": "Xogħlijiet"
+        },
+        {
+          "@language": "nl",
+          "@value": "Werken"
+        },
+        {
+          "@language": "pl",
+          "@value": "Roboty budowlane"
+        },
+        {
+          "@language": "pt",
+          "@value": "Obras"
+        },
+        {
+          "@language": "ro",
+          "@value": "Lucrări"
+        },
+        {
+          "@language": "sk",
+          "@value": "Práce"
+        },
+        {
+          "@language": "sl",
+          "@value": "Gradnje"
+        },
+        {
+          "@language": "sv",
+          "@value": "Byggentreprenader"
+        }
+      ]
+    },
+    {
+      "@id": "_:n353dc78975e84dfda6976bc558b9dc45b3",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "1",
+      "dc:source": "CODIF_DATA"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/contract-nature/supplies",
+      "@type": "skos:Concept",
+      "at:authority-code": "supplies",
+      "at:deprecated": "false",
+      "at:op-code": "supplies",
+      "at:op-mapped-code": {
+        "@id": "_:n353dc78975e84dfda6976bc558b9dc45b2"
+      },
+      "at:start.use": "2019-09-18",
+      "atold:op-code": "supplies",
+      "dc:identifier": "supplies",
+      "skos:inScheme": {
+        "@id": "atold:contract-nature"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "Доставки"
+        },
+        {
+          "@language": "cs",
+          "@value": "Dodávky"
+        },
+        {
+          "@language": "da",
+          "@value": "Varer"
+        },
+        {
+          "@language": "de",
+          "@value": "Lieferungen"
+        },
+        {
+          "@language": "el",
+          "@value": "Προμήθειες"
+        },
+        {
+          "@language": "en",
+          "@value": "Supplies"
+        },
+        {
+          "@language": "es",
+          "@value": "Suministros"
+        },
+        {
+          "@language": "et",
+          "@value": "Tarned"
+        },
+        {
+          "@language": "fi",
+          "@value": "Tavarat"
+        },
+        {
+          "@language": "fr",
+          "@value": "Fournitures"
+        },
+        {
+          "@language": "ga",
+          "@value": "Soláthairtí"
+        },
+        {
+          "@language": "hr",
+          "@value": "Roba"
+        },
+        {
+          "@language": "hu",
+          "@value": "Árubeszerzések"
+        },
+        {
+          "@language": "it",
+          "@value": "Forniture"
+        },
+        {
+          "@language": "lt",
+          "@value": "Prekės"
+        },
+        {
+          "@language": "lv",
+          "@value": "Piegādes"
+        },
+        {
+          "@language": "mt",
+          "@value": "Fornituri"
+        },
+        {
+          "@language": "nl",
+          "@value": "Leveringen"
+        },
+        {
+          "@language": "pl",
+          "@value": "Dostawy"
+        },
+        {
+          "@language": "pt",
+          "@value": "Fornecimentos"
+        },
+        {
+          "@language": "ro",
+          "@value": "Bunuri"
+        },
+        {
+          "@language": "sk",
+          "@value": "Dodávky"
+        },
+        {
+          "@language": "sl",
+          "@value": "Blago"
+        },
+        {
+          "@language": "sv",
+          "@value": "Varor"
+        }
+      ]
+    },
+    {
+      "@id": "_:n353dc78975e84dfda6976bc558b9dc45b2",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "2",
+      "dc:source": "CODIF_DATA"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/contract-nature/combined",
+      "@type": "skos:Concept",
+      "at:authority-code": "combined",
+      "at:deprecated": "false",
+      "at:op-code": "combined",
+      "at:start.use": "2021-03-17",
+      "atold:op-code": "combined",
+      "dc:identifier": "combined",
+      "skos:inScheme": {
+        "@id": "atold:contract-nature"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "Комбинирани договори"
+        },
+        {
+          "@language": "cs",
+          "@value": "Kombinované smlouvy"
+        },
+        {
+          "@language": "da",
+          "@value": "Kombinerede kontrakter"
+        },
+        {
+          "@language": "de",
+          "@value": "Kombiniert Verträge"
+        },
+        {
+          "@language": "el",
+          "@value": "Σε συνδυασμό συμβάσεις"
+        },
+        {
+          "@language": "en",
+          "@value": "Combined"
+        },
+        {
+          "@language": "es",
+          "@value": "Contratos combinados"
+        },
+        {
+          "@language": "et",
+          "@value": "Kombineeritud lepingud"
+        },
+        {
+          "@language": "fi",
+          "@value": "Yhdistetyt sopimukset"
+        },
+        {
+          "@language": "fr",
+          "@value": "Contrats combinés"
+        },
+        {
+          "@language": "ga",
+          "@value": "Conarthaí Chomhcheangailte"
+        },
+        {
+          "@language": "hr",
+          "@value": "Kombinirani ugovori"
+        },
+        {
+          "@language": "hu",
+          "@value": "Kombinált szerződések"
+        },
+        {
+          "@language": "it",
+          "@value": "Appalti misti"
+        },
+        {
+          "@language": "lt",
+          "@value": "Kombinuoti sutartys"
+        },
+        {
+          "@language": "lv",
+          "@value": "Kombinētie līgumi"
+        },
+        {
+          "@language": "mt",
+          "@value": "Kuntratti magħquda"
+        },
+        {
+          "@language": "nl",
+          "@value": "Gecombineerd contracten"
+        },
+        {
+          "@language": "pl",
+          "@value": "Połączone kontrakty"
+        },
+        {
+          "@language": "pt",
+          "@value": "Contratos combinados"
+        },
+        {
+          "@language": "ro",
+          "@value": "Contracte combinate"
+        },
+        {
+          "@language": "sk",
+          "@value": "Kombinované zmluvy"
+        },
+        {
+          "@language": "sl",
+          "@value": "Kombinirane pogodbe"
+        },
+        {
+          "@language": "sv",
+          "@value": "Kombinerade kontrakt"
+        }
+      ]
+    }
+  ]
+}

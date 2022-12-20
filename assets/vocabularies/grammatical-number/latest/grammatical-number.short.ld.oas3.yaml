@@ -1,0 +1,23 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/grammatical-number/D
+        title: Duale
+      - const: http://publications.europa.eu/resource/authority/grammatical-number/G
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/grammatical-number/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/grammatical-number/P
+        title: Plurale
+      - const: http://publications.europa.eu/resource/authority/grammatical-number/S
+        title: Singolare
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

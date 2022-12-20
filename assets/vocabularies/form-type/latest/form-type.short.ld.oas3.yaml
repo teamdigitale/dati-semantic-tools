@@ -1,0 +1,29 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/form-type/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/form-type/bri
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/form-type/change
+        title: Rettifica
+      - const: http://publications.europa.eu/resource/authority/form-type/competition
+        title: Gara
+      - const: http://publications.europa.eu/resource/authority/form-type/cont-modif
+        title: Modifica dell'appalto
+      - const: http://publications.europa.eu/resource/authority/form-type/dir-awa-pre
+        title: Preavviso di aggiudicazione diretta
+      - const: http://publications.europa.eu/resource/authority/form-type/planning
+        title: Programmazione
+      - const: http://publications.europa.eu/resource/authority/form-type/result
+        title: Risultati
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

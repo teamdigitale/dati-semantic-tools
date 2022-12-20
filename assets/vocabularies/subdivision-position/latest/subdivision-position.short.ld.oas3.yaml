@@ -1,0 +1,23 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/subdivision-position/AFTER
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/subdivision-position/BEFORE
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/subdivision-position/BEGIN
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/subdivision-position/END
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/subdivision-position/OP_DATPRO
+        title: Dati provvisori
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

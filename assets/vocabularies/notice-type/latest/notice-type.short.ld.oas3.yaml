@@ -1,0 +1,62 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/notice-type/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/notice-type/brin-ecs
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notice-type/brin-eeig
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notice-type/can-desg
+        title: Comunicazione dei risultati di un concorso di progettazione
+      - const: http://publications.europa.eu/resource/authority/notice-type/can-modif
+        title: Avviso di modifica di un appalto
+      - const: http://publications.europa.eu/resource/authority/notice-type/can-social
+        title: "Avviso di aggiudicazione di un appalto o di una concessione \u2013\
+          \ regime alleggerito"
+      - const: http://publications.europa.eu/resource/authority/notice-type/can-standard
+        title: "Avviso di aggiudicazione di un appalto o di una concessione \u2013\
+          \ regime ordinario"
+      - const: http://publications.europa.eu/resource/authority/notice-type/can-tran
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notice-type/cn-desg
+        title: Avviso o bando di concorso di progettazione
+      - const: http://publications.europa.eu/resource/authority/notice-type/cn-social
+        title: "Bando di gara \u2013 regime alleggerito"
+      - const: http://publications.europa.eu/resource/authority/notice-type/cn-standard
+        title: "Bando di gara o di concessione \u2013 regime ordinario"
+      - const: http://publications.europa.eu/resource/authority/notice-type/corr
+        title: Avviso di rettifica
+      - const: http://publications.europa.eu/resource/authority/notice-type/pin-buyer
+        title: Avviso di pubblicazione di un avviso di preinformazione o di un avviso
+          periodico indicativo relativo al profilo di committente
+      - const: http://publications.europa.eu/resource/authority/notice-type/pin-cfc-social
+        title: "Avviso di preinformazione o avviso periodico indicativo utilizzato\
+          \ come avviso di indizione di gara \u2013 regime alleggerito"
+      - const: http://publications.europa.eu/resource/authority/notice-type/pin-cfc-standard
+        title: "Avviso di preinformazione o avviso periodico indicativo utilizzato\
+          \ come avviso di indizione di gara \u2013 regime ordinario"
+      - const: http://publications.europa.eu/resource/authority/notice-type/pin-only
+        title: Avviso di preinformazione o avviso periodico indicativo a fini unicamente
+          informativi
+      - const: http://publications.europa.eu/resource/authority/notice-type/pin-rtl
+        title: Avviso di preinformazione o avviso periodico indicativo utilizzato
+          per abbreviare i termini per la ricezione delle offerte
+      - const: http://publications.europa.eu/resource/authority/notice-type/pin-tran
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notice-type/qu-sy
+        title: Avviso sull'esistenza di un sistema di qualificazione
+      - const: http://publications.europa.eu/resource/authority/notice-type/subco
+        title: Avviso di subappalto
+      - const: http://publications.europa.eu/resource/authority/notice-type/veat
+        title: Avviso volontario per la trasparenza ex ante
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

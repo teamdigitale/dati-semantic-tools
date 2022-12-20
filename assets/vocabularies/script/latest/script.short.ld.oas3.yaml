@@ -1,0 +1,77 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/script/ARABIC
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/ARMENIAN
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/BENGALI
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/BRAILLE
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/CYRILLIC
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/DEVANAGARI
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/ETHIOPIC
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/GEORGIAN
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/GREEK
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/GUJARATI
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/GURMUKHI
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/HAN
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/HANGUL
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/HEBREW
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/HIRAGANA
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/KANNADA
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/KATAKANA
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/KHMER
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/LAO
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/LATIN
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/MALAYALAM
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/MONGOLIAN
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/MYANMAR
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/script/SINHALA
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/TAGALOG
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/TAMIL
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/TELUGU
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/THAANA
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/THAI
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/TIBETAN
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/script/TIFINAGH
+        title: .nan
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

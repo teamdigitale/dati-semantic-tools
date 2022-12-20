@@ -1,0 +1,21 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/document-identifier-format/COM_NUMBER
+        title: Numero COM
+      - const: http://publications.europa.eu/resource/authority/document-identifier-format/CSL_NUMBER
+        title: Numero CSL
+      - const: http://publications.europa.eu/resource/authority/document-identifier-format/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/document-identifier-format/SESSION_NUMBER
+        title: Numero sessione
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

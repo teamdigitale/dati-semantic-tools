@@ -1,0 +1,39 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/procresult/ADJ
+        title: Aggiornato
+      - const: http://publications.europa.eu/resource/authority/procresult/APPL_GRANT
+        title: Accoglimento
+      - const: http://publications.europa.eu/resource/authority/procresult/CONFORM_NON_TREATY
+        title: "Non conformit\xE0 con il Trattato (pareri o deliberazioni)"
+      - const: http://publications.europa.eu/resource/authority/procresult/CONFORM_TREATY
+        title: "Conformit\xE0 con il Trattato (pareri o deliberazioni)"
+      - const: http://publications.europa.eu/resource/authority/procresult/DISM_GROUNDS_INADM
+        title: "Rigetto per irricevibilit\xE0"
+      - const: http://publications.europa.eu/resource/authority/procresult/DISM_SUBST_GROUNDS
+        title: Rigetto nel merito
+      - const: http://publications.europa.eu/resource/authority/procresult/JUDG_INTLC
+        title: Sentenza interlocutoria
+      - const: http://publications.europa.eu/resource/authority/procresult/JUDG_NOT_PROCEED
+        title: Non luogo a provvedere
+      - const: http://publications.europa.eu/resource/authority/procresult/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/procresult/RAD
+        title: Cancellazione dal ruolo
+      - const: http://publications.europa.eu/resource/authority/procresult/STL_AMI_HEAR
+        title: Composizione amichevole raggiunta nel corso di un'udienza
+      - const: http://publications.europa.eu/resource/authority/procresult/STL_AMI_INFHEAR
+        title: Composizione amichevole raggiunta nel corso di una riunione informale
+      - const: http://publications.europa.eu/resource/authority/procresult/STL_AMI_PARTIES
+        title: Composizione amichevole raggiunta tra le parti
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

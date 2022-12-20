@@ -1,0 +1,574 @@
+{
+  "@context": {
+    "at": "http://publications.europa.eu/ontology/authority/",
+    "atold": "http://publications.europa.eu/resource/authority/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://publications.europa.eu/resource/authority/product-form/POSTCARD",
+      "@type": "skos:Concept",
+      "at:authority-code": "POSTCARD",
+      "at:deprecated": "false",
+      "at:op-code": "POSTCARD",
+      "at:op-mapped-code": {
+        "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb5"
+      },
+      "at:start.use": "1951-01-01",
+      "atold:op-code": "POSTCARD",
+      "dc:identifier": "POSTCARD",
+      "skos:inScheme": {
+        "@id": "atold:product-form"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Postcard"
+      }
+    },
+    {
+      "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb5",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "PJ",
+      "dc:source": "ONIX"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/product-form/PRINT",
+      "@type": "skos:Concept",
+      "at:authority-code": "PRINT",
+      "at:deprecated": "false",
+      "at:op-code": "PRINT",
+      "at:op-mapped-code": {
+        "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb8"
+      },
+      "at:start.use": "1951-01-01",
+      "atold:op-code": "PRINT",
+      "dc:identifier": "PRINT",
+      "skos:inScheme": {
+        "@id": "atold:product-form"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Print"
+      }
+    },
+    {
+      "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb8",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "BA",
+      "dc:source": "ONIX"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/product-form/POSTER",
+      "@type": "skos:Concept",
+      "at:authority-code": "POSTER",
+      "at:deprecated": "false",
+      "at:op-code": "POSTER",
+      "at:op-mapped-code": {
+        "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb6"
+      },
+      "at:start.use": "1951-01-01",
+      "atold:op-code": "POSTER",
+      "dc:identifier": "POSTER",
+      "skos:inScheme": {
+        "@id": "atold:product-form"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Poster"
+      }
+    },
+    {
+      "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb6",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "PK",
+      "dc:source": "ONIX"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/product-form/POSTER_PROM",
+      "@type": "skos:Concept",
+      "at:authority-code": "POSTER_PROM",
+      "at:deprecated": "false",
+      "at:op-code": "POSTER_PROM",
+      "at:op-mapped-code": {
+        "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb7"
+      },
+      "at:start.use": "1951-01-01",
+      "atold:op-code": "POSTER_PROM",
+      "dc:identifier": "POSTER_PROM",
+      "skos:inScheme": {
+        "@id": "atold:product-form"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Poster, promotional"
+      }
+    },
+    {
+      "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb7",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "XF",
+      "dc:source": "ONIX"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/product-form/PRINT_LOSL",
+      "@type": "skos:Concept",
+      "at:authority-code": "PRINT_LOSL",
+      "at:deprecated": "false",
+      "at:op-code": "PRINT_LOSL",
+      "at:op-mapped-code": {
+        "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb10"
+      },
+      "at:start.use": "1951-01-01",
+      "atold:op-code": "PRINT_LOSL",
+      "dc:identifier": "PRINT_LOSL",
+      "skos:inScheme": {
+        "@id": "atold:product-form"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Print (looseleaf)"
+      }
+    },
+    {
+      "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb10",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "BD",
+      "dc:source": "ONIX"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/product-form/SHEET_MAP",
+      "@type": "skos:Concept",
+      "at:authority-code": "SHEET_MAP",
+      "at:deprecated": "false",
+      "at:op-code": "SHEET_MAP",
+      "at:op-mapped-code": {
+        "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb14"
+      },
+      "at:start.use": "1951-01-01",
+      "atold:op-code": "SHEET_MAP",
+      "dc:identifier": "SHEET_MAP",
+      "skos:inScheme": {
+        "@id": "atold:product-form"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Sheet map"
+      }
+    },
+    {
+      "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb14",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "CA",
+      "dc:source": "ONIX"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/product-form/VIDEO_VHS",
+      "@type": "skos:Concept",
+      "at:authority-code": "VIDEO_VHS",
+      "at:deprecated": "false",
+      "at:op-code": "VIDEO_VHS",
+      "at:op-mapped-code": {
+        "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb16"
+      },
+      "at:start.use": "1951-01-01",
+      "atold:op-code": "VIDEO_VHS",
+      "dc:identifier": "VIDEO_VHS",
+      "skos:inScheme": {
+        "@id": "atold:product-form"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "VHS Video"
+      }
+    },
+    {
+      "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb16",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "VJ",
+      "dc:source": "ONIX"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/product-form/DVDROM",
+      "@type": "skos:Concept",
+      "at:authority-code": "DVDROM",
+      "at:deprecated": "false",
+      "at:op-code": "DVDROM",
+      "at:op-mapped-code": {
+        "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb3"
+      },
+      "at:start.use": "1951-01-01",
+      "atold:op-code": "DVDROM",
+      "dc:identifier": "DVDROM",
+      "skos:inScheme": {
+        "@id": "atold:product-form"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "DVD-ROM"
+      }
+    },
+    {
+      "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb3",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "DI",
+      "dc:source": "ONIX"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/product-form/BOOKMARK",
+      "@type": "skos:Concept",
+      "at:authority-code": "BOOKMARK",
+      "at:deprecated": "false",
+      "at:op-code": "BOOKMARK",
+      "at:op-mapped-code": {
+        "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb1"
+      },
+      "at:start.use": "1951-01-01",
+      "atold:op-code": "BOOKMARK",
+      "dc:identifier": "BOOKMARK",
+      "skos:inScheme": {
+        "@id": "atold:product-form"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Bookmark"
+      }
+    },
+    {
+      "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb1",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "PT",
+      "dc:source": "ONIX"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/product-form/PRINT_RGBD",
+      "@type": "skos:Concept",
+      "at:authority-code": "PRINT_RGBD",
+      "at:deprecated": "false",
+      "at:op-code": "PRINT_RGBD",
+      "at:op-mapped-code": {
+        "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb11"
+      },
+      "at:start.use": "1951-01-01",
+      "atold:op-code": "PRINT_RGBD",
+      "dc:identifier": "PRINT_RGBD",
+      "skos:inScheme": {
+        "@id": "atold:product-form"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Print (ringbinder)"
+      }
+    },
+    {
+      "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb11",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "BE",
+      "dc:source": "ONIX"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/product-form/OP_DATPRO",
+      "@type": "skos:Concept",
+      "at:op-code": "OP_DATPRO",
+      "atold:op-code": "OP_DATPRO",
+      "dc:identifier": "OP_DATPRO",
+      "skos:inScheme": {
+        "@id": "atold:product-form"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "НЕОКОНЧАТЕЛНИ ДАННИ"
+        },
+        {
+          "@language": "cs",
+          "@value": "Předběžné údaje"
+        },
+        {
+          "@language": "da",
+          "@value": "Midlertidige data"
+        },
+        {
+          "@language": "de",
+          "@value": "Vorläufige Daten"
+        },
+        {
+          "@language": "el",
+          "@value": "Προσωρινά δεδομένα"
+        },
+        {
+          "@language": "en",
+          "@value": "Provisional data"
+        },
+        {
+          "@language": "es",
+          "@value": "Datos provisionales"
+        },
+        {
+          "@language": "et",
+          "@value": "Esialgsed andmed"
+        },
+        {
+          "@language": "fi",
+          "@value": "Alustavat tiedot"
+        },
+        {
+          "@language": "fr",
+          "@value": "Données provisoires"
+        },
+        {
+          "@language": "ga",
+          "@value": "Sonraí sealadacha"
+        },
+        {
+          "@language": "hr",
+          "@value": "Privremeni podaci"
+        },
+        {
+          "@language": "hu",
+          "@value": "Ideiglenes adatok"
+        },
+        {
+          "@language": "it",
+          "@value": "Dati provvisori"
+        },
+        {
+          "@language": "lt",
+          "@value": "Laikinieji duomenys"
+        },
+        {
+          "@language": "lv",
+          "@value": "Provizoriski dati"
+        },
+        {
+          "@language": "mt",
+          "@value": "Dejta provviżorja"
+        },
+        {
+          "@language": "nl",
+          "@value": "Voorlopige gegevens"
+        },
+        {
+          "@language": "pl",
+          "@value": "Dane tymczasowe"
+        },
+        {
+          "@language": "pt",
+          "@value": "Dados provisórios"
+        },
+        {
+          "@language": "ro",
+          "@value": "Date provizorii"
+        },
+        {
+          "@language": "sk",
+          "@value": "Predbežné údaje"
+        },
+        {
+          "@language": "sl",
+          "@value": "Začasni podatki"
+        },
+        {
+          "@language": "sv",
+          "@value": "Tillfälliga uppgifter"
+        }
+      ]
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/product-form/PRINT_HRDCV",
+      "@type": "skos:Concept",
+      "at:authority-code": "PRINT_HRDCV",
+      "at:deprecated": "false",
+      "at:op-code": "PRINT_HRDCV",
+      "at:op-mapped-code": {
+        "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb9"
+      },
+      "at:start.use": "1951-01-01",
+      "atold:op-code": "PRINT_HRDCV",
+      "dc:identifier": "PRINT_HRDCV",
+      "skos:inScheme": {
+        "@id": "atold:product-form"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Print (hardcover)"
+      }
+    },
+    {
+      "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb9",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "BB",
+      "dc:source": "ONIX"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/product-form/USB_FD",
+      "@type": "skos:Concept",
+      "at:authority-code": "USB_FD",
+      "at:deprecated": "false",
+      "at:op-code": "USB_FD",
+      "at:op-mapped-code": {
+        "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb15"
+      },
+      "at:start.use": "1951-01-01",
+      "atold:op-code": "USB_FD",
+      "dc:identifier": "USB_FD",
+      "skos:inScheme": {
+        "@id": "atold:product-form"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "USB flash drive"
+      }
+    },
+    {
+      "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb15",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "DM",
+      "dc:source": "ONIX"
+    },
+    {
+      "@id": "atold:product-form",
+      "@type": "skos:ConceptScheme",
+      "at:prefLabel": {
+        "@language": "en",
+        "@value": "Product form"
+      },
+      "at:table.id": "product-form",
+      "at:table.version.number": "20160921-0",
+      "owl:versionInfo": "20160921-0",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Product form"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Product form"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/product-form/CDROM",
+      "@type": "skos:Concept",
+      "at:authority-code": "CDROM",
+      "at:deprecated": "false",
+      "at:op-code": "CDROM",
+      "at:op-mapped-code": {
+        "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb2"
+      },
+      "at:start.use": "1951-01-01",
+      "atold:op-code": "CDROM",
+      "dc:identifier": "CDROM",
+      "skos:inScheme": {
+        "@id": "atold:product-form"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "CD-ROM"
+      }
+    },
+    {
+      "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb2",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "DB",
+      "dc:source": "ONIX"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/product-form/LEAFLET",
+      "@type": "skos:Concept",
+      "at:authority-code": "LEAFLET",
+      "at:deprecated": "false",
+      "at:op-code": "LEAFLET",
+      "at:start.use": "1951-01-01",
+      "atold:op-code": "LEAFLET",
+      "dc:identifier": "LEAFLET",
+      "skos:inScheme": {
+        "@id": "atold:product-form"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Leaflet"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/product-form/PRINT_SFTCV",
+      "@type": "skos:Concept",
+      "at:authority-code": "PRINT_SFTCV",
+      "at:deprecated": "false",
+      "at:op-code": "PRINT_SFTCV",
+      "at:op-mapped-code": {
+        "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb12"
+      },
+      "at:start.use": "1951-01-01",
+      "atold:op-code": "PRINT_SFTCV",
+      "dc:identifier": "PRINT_SFTCV",
+      "skos:inScheme": {
+        "@id": "atold:product-form"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Print (softcover)"
+      }
+    },
+    {
+      "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb12",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "BC",
+      "dc:source": "ONIX"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/product-form/FOLDER",
+      "@type": "skos:Concept",
+      "at:authority-code": "FOLDER",
+      "at:deprecated": "false",
+      "at:op-code": "FOLDER",
+      "at:op-mapped-code": {
+        "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb4"
+      },
+      "at:start.use": "1951-01-01",
+      "atold:op-code": "FOLDER",
+      "dc:identifier": "FOLDER",
+      "skos:inScheme": {
+        "@id": "atold:product-form"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Folder"
+      }
+    },
+    {
+      "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb4",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "PM",
+      "dc:source": "ONIX"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/product-form/PRINT_STPL",
+      "@type": "skos:Concept",
+      "at:authority-code": "PRINT_STPL",
+      "at:deprecated": "false",
+      "at:op-code": "PRINT_STPL",
+      "at:op-mapped-code": {
+        "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb13"
+      },
+      "at:start.use": "1951-01-01",
+      "atold:op-code": "PRINT_STPL",
+      "dc:identifier": "PRINT_STPL",
+      "skos:inScheme": {
+        "@id": "atold:product-form"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Print (stapled)"
+      }
+    },
+    {
+      "@id": "_:nf96681e0125a4675b5c4b9acd164b81fb13",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "BF",
+      "dc:source": "ONIX"
+    }
+  ]
+}

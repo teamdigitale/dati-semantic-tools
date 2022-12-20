@@ -1,0 +1,25 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/procedure-phase/CONCILIA
+        title: Conciliazione
+      - const: http://publications.europa.eu/resource/authority/procedure-phase/INI_LEGIS
+        title: Iniziativa legislativa
+      - const: http://publications.europa.eu/resource/authority/procedure-phase/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/procedure-phase/RDG1
+        title: Prima lettura
+      - const: http://publications.europa.eu/resource/authority/procedure-phase/RDG2
+        title: Seconda lettura
+      - const: http://publications.europa.eu/resource/authority/procedure-phase/RDG3
+        title: Terza lettura
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

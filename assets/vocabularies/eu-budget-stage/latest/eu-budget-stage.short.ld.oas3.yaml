@@ -1,0 +1,29 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/eu-budget-stage/CPA
+        title: "Completamento dell\u2019azione preparatoria"
+      - const: http://publications.europa.eu/resource/authority/eu-budget-stage/CPP
+        title: Completamento del progetto pilota
+      - const: http://publications.europa.eu/resource/authority/eu-budget-stage/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/eu-budget-stage/PA1
+        title: Azione preparatoria, primo anno
+      - const: http://publications.europa.eu/resource/authority/eu-budget-stage/PA2
+        title: Azione preparatoria, secondo anno
+      - const: http://publications.europa.eu/resource/authority/eu-budget-stage/PA3
+        title: Azione preparatoria, terzo anno
+      - const: http://publications.europa.eu/resource/authority/eu-budget-stage/PP1
+        title: Progetto pilota, primo anno
+      - const: http://publications.europa.eu/resource/authority/eu-budget-stage/PP2
+        title: Progetto pilota, secondo anno
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

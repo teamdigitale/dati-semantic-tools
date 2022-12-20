@@ -1,0 +1,3081 @@
+{
+  "@context": {
+    "at": "http://publications.europa.eu/ontology/authority/",
+    "atold": "http://publications.europa.eu/resource/authority/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://publications.europa.eu/resource/authority/procresult/CONFORM_NON_TREATY",
+      "@type": "skos:Concept",
+      "at:authority-code": "CONFORM_NON_TREATY",
+      "at:deprecated": "false",
+      "at:op-code": "CONFORM_NON_TREATY",
+      "at:op-mapped-code": [
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b43"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b44"
+        }
+      ],
+      "at:start.use": "1952-07-24",
+      "atold:op-code": "CONFORM_NON_TREATY",
+      "dc:identifier": "CONFORM_NON_TREATY",
+      "skos:inScheme": {
+        "@id": "atold:procresult"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "Несъотвествие с Договора (становища или решения)"
+        },
+        {
+          "@language": "cs",
+          "@value": "Nesoulad se smlouvou (posudek nebo usnesení)"
+        },
+        {
+          "@language": "da",
+          "@value": "Manglende overensstemmelse med traktaten (udtalelse eller afgørelse)"
+        },
+        {
+          "@language": "de",
+          "@value": "Unvereinbarkeit mit dem Vertrag (Gutachten oder Beschlüsse)"
+        },
+        {
+          "@language": "el",
+          "@value": "Μη συμφωνία προς τη Συνθήκη (γνωμοδοτήσεις ή αποφάσεις-délibérations)"
+        },
+        {
+          "@language": "en",
+          "@value": "Non-conformity with the Treaty (opinions or rulings)"
+        },
+        {
+          "@language": "es",
+          "@value": "No conformidad con el Tratado (dictámenes o acuerdos)"
+        },
+        {
+          "@language": "et",
+          "@value": "Asutamislepingule mittevastavus (arvamused või otsused)"
+        },
+        {
+          "@language": "fi",
+          "@value": "Perustamissopimuksen vastaisuus (lausunnot tai päätökset)"
+        },
+        {
+          "@language": "fr",
+          "@value": "Non-conformité avec le Traité (avis ou délibérations)"
+        },
+        {
+          "@language": "ga",
+          "@value": "Neamhchomhréireacht leis an gConradh (tuairimí nó pléití)"
+        },
+        {
+          "@language": "hr",
+          "@value": "Nije u skladu s Ugovorom (mišljenja ili odluke)"
+        },
+        {
+          "@language": "hu",
+          "@value": "A Szerződésnek való megfelelés hiánya (vélemények vagy határozatok)"
+        },
+        {
+          "@language": "it",
+          "@value": "Non conformità con il Trattato (pareri o deliberazioni)"
+        },
+        {
+          "@language": "lt",
+          "@value": "Neatitiktis Sutarčiai (nuomonės ar nutarimai)"
+        },
+        {
+          "@language": "lv",
+          "@value": "Neatbilstība Līgumam (atzinumi vai nolēmumi)"
+        },
+        {
+          "@language": "mt",
+          "@value": "Nuqqas ta’ konformità mat-Trattat (opinjoni jew deliberazzjonijiet)"
+        },
+        {
+          "@language": "nl",
+          "@value": "Niet in overeenstemming met het Verdrag (adviezen of beraadslagingen)"
+        },
+        {
+          "@language": "pl",
+          "@value": "Brak zgodności z traktatem (opinie lub obrady)"
+        },
+        {
+          "@language": "pt",
+          "@value": "Não conformidade com o Tratado (pareceres ou deliberações)"
+        },
+        {
+          "@language": "ro",
+          "@value": "Neconformitate cu tratatul (avize sau hotărâri)"
+        },
+        {
+          "@language": "sk",
+          "@value": "Nesúlad so Zmluvou (stanovisko alebo porady)"
+        },
+        {
+          "@language": "sl",
+          "@value": "Neskladnost s Pogodbo (mnenje ali posvetovanja)"
+        },
+        {
+          "@language": "sv",
+          "@value": "Oförenlighet med fördraget (yttranden eller avgöranden)"
+        }
+      ]
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b43",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "AVIS=NC",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b44",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "DELI=NC",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/procresult/STL_AMI_INFHEAR",
+      "@type": "skos:Concept",
+      "at:authority-code": "STL_AMI_INFHEAR",
+      "at:deprecated": "false",
+      "at:op-code": "STL_AMI_INFHEAR",
+      "at:start.use": "1952-07-24",
+      "atold:op-code": "STL_AMI_INFHEAR",
+      "dc:identifier": "STL_AMI_INFHEAR",
+      "skos:inScheme": {
+        "@id": "atold:procresult"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "Уреждане на спора по взаимно съгласие на неформална среща"
+        },
+        {
+          "@language": "cs",
+          "@value": "Smírné urovnání, k němuž došlo na neformální schůzce"
+        },
+        {
+          "@language": "da",
+          "@value": "Forlig i et uformelt møde"
+        },
+        {
+          "@language": "de",
+          "@value": "Gütliche Beilegung in einer informellen Sitzung"
+        },
+        {
+          "@language": "el",
+          "@value": "Συμβιβασμός που επήλθε στο πλαίσιο ανεπίσημης συνάντησης"
+        },
+        {
+          "@language": "en",
+          "@value": "Amicable settlement made at an informal meeting"
+        },
+        {
+          "@language": "es",
+          "@value": "Solución amistosa acordada en una reunión informal"
+        },
+        {
+          "@language": "et",
+          "@value": "Kompromiss, milleni jõuti mitteametlikul koosolekul"
+        },
+        {
+          "@language": "fi",
+          "@value": "Sovintoratkaisu, johon on päästy epävirallisessa kokouksessa"
+        },
+        {
+          "@language": "fr",
+          "@value": "Règlement à l'amiable intervenu lors d'une réunion informelle"
+        },
+        {
+          "@language": "ga",
+          "@value": "Réiteach cairdiúil a bhaint amach ag cruinniú neamhfhoirmiúil"
+        },
+        {
+          "@language": "hr",
+          "@value": "Sklapanje nagodbe na neformalnom sastanku"
+        },
+        {
+          "@language": "hu",
+          "@value": "Informális találkozón létrejött egyezség"
+        },
+        {
+          "@language": "it",
+          "@value": "Composizione amichevole raggiunta nel corso di una riunione informale"
+        },
+        {
+          "@language": "lt",
+          "@value": "Neformaliame susitikime pasiektas draugiškas ginčo sprendimas"
+        },
+        {
+          "@language": "lv",
+          "@value": "Neformālā sanāksmē panākts izlīgums"
+        },
+        {
+          "@language": "mt",
+          "@value": "Ftehim bonarju milħuq matul laqgħa informali"
+        },
+        {
+          "@language": "nl",
+          "@value": "Minnelijke regeling totstandgekomen tijdens een informele vergadering"
+        },
+        {
+          "@language": "pl",
+          "@value": "Zawarcie ugody podczas nieformalnego spotkania"
+        },
+        {
+          "@language": "pt",
+          "@value": "Resolução amigável acordada numa reunião informal"
+        },
+        {
+          "@language": "ro",
+          "@value": "Soluționare amiabilă intervenită cu ocazia unei întâlniri neoficiale"
+        },
+        {
+          "@language": "sk",
+          "@value": "Zmier uzavretý na neformálnom stretnutí"
+        },
+        {
+          "@language": "sl",
+          "@value": "Mirna rešitev spora na neuradnem sestanku"
+        },
+        {
+          "@language": "sv",
+          "@value": "Förlikning som träffats vid ett informellt möte"
+        }
+      ]
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/procresult/APPL_GRANT",
+      "@type": "skos:Concept",
+      "at:authority-code": "APPL_GRANT",
+      "at:deprecated": "false",
+      "at:op-code": "APPL_GRANT",
+      "at:op-mapped-code": [
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b23"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b24"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b25"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b26"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b27"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b28"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b29"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b30"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b31"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b32"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b33"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b34"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b35"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b36"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b37"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b38"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b39"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b40"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b41"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b42"
+        }
+      ],
+      "at:start.use": "1952-07-24",
+      "atold:op-code": "APPL_GRANT",
+      "dc:identifier": "APPL_GRANT",
+      "skos:inScheme": {
+        "@id": "atold:procresult"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "Уважаване"
+        },
+        {
+          "@language": "cs",
+          "@value": "Pořízení"
+        },
+        {
+          "@language": "da",
+          "@value": "Opnåelse/indhentelse"
+        },
+        {
+          "@language": "de",
+          "@value": "Stattgabe"
+        },
+        {
+          "@language": "el",
+          "@value": "Αποδοχή του αιτήματος"
+        },
+        {
+          "@language": "en",
+          "@value": "Application granted"
+        },
+        {
+          "@language": "es",
+          "@value": "Obtención"
+        },
+        {
+          "@language": "et",
+          "@value": "Rahuldamine"
+        },
+        {
+          "@language": "fi",
+          "@value": "Myöntäminen"
+        },
+        {
+          "@language": "fr",
+          "@value": "Obtention"
+        },
+        {
+          "@language": "ga",
+          "@value": "Iarratas deonaithe"
+        },
+        {
+          "@language": "hr",
+          "@value": "Zahtjev usvojen"
+        },
+        {
+          "@language": "hu",
+          "@value": "Helyt adás"
+        },
+        {
+          "@language": "it",
+          "@value": "Accoglimento"
+        },
+        {
+          "@language": "lt",
+          "@value": "Reikalavimų patenkinimas"
+        },
+        {
+          "@language": "lv",
+          "@value": "Iegūšana"
+        },
+        {
+          "@language": "mt",
+          "@value": "Ilqugħ"
+        },
+        {
+          "@language": "nl",
+          "@value": "Toewijzing"
+        },
+        {
+          "@language": "pl",
+          "@value": "Uzyskanie"
+        },
+        {
+          "@language": "pt",
+          "@value": "Obtenção"
+        },
+        {
+          "@language": "ro",
+          "@value": "Admitere"
+        },
+        {
+          "@language": "sk",
+          "@value": "Získanie"
+        },
+        {
+          "@language": "sl",
+          "@value": "Pridobitev"
+        },
+        {
+          "@language": "sv",
+          "@value": "Bifall"
+        }
+      ]
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b23",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "IMMU=OB",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b24",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "INTV=OB",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b25",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "RESP=OB",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b26",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "REEX=OB",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b27",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "DPEN=OB",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b28",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "EXEC=OB",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b29",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "ASSI=OB",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b30",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "CARE=OB",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b31",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "INTE=OB",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b32",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "OPPO=OB",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b33",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "INST=OB",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b34",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "ANNU=OB",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b35",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "SANC=OB",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b36",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "PVOI=OB",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b37",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "CONS=OB",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b38",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "TIER=OB",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b39",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "FONC=OB",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b40",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "RECT=OB",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b41",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "REVI=OB",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b42",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "REFE=OB",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/procresult/STL_AMI_PARTIES",
+      "@type": "skos:Concept",
+      "at:authority-code": "STL_AMI_PARTIES",
+      "at:deprecated": "false",
+      "at:op-code": "STL_AMI_PARTIES",
+      "at:start.use": "1952-07-24",
+      "atold:op-code": "STL_AMI_PARTIES",
+      "dc:identifier": "STL_AMI_PARTIES",
+      "skos:inScheme": {
+        "@id": "atold:procresult"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "Уреждане на спора по взаимно съгласие на страните"
+        },
+        {
+          "@language": "cs",
+          "@value": "Smírné urovnání mezi účastníky řízení"
+        },
+        {
+          "@language": "da",
+          "@value": "Forlig mellem parterne"
+        },
+        {
+          "@language": "de",
+          "@value": "Gütliche Beilegung durch die Parteien"
+        },
+        {
+          "@language": "el",
+          "@value": "Συμβιβασμός που συμφωνήθηκε μεταξύ των διαδίκων"
+        },
+        {
+          "@language": "en",
+          "@value": "Amicable settlement made between the parties"
+        },
+        {
+          "@language": "es",
+          "@value": "Solución amistosa acordada por las partes"
+        },
+        {
+          "@language": "et",
+          "@value": "Pooltevaheline kompromiss"
+        },
+        {
+          "@language": "fi",
+          "@value": "Sovintoratkaisu, johon on päästy asianosaisten välillä"
+        },
+        {
+          "@language": "fr",
+          "@value": "Règlement à l'amiable intervenu entre les parties"
+        },
+        {
+          "@language": "ga",
+          "@value": "Reiteach cairdiúil a bhaint amach idir na páirtithe"
+        },
+        {
+          "@language": "hr",
+          "@value": "Sklapanje nagodbe među strankama"
+        },
+        {
+          "@language": "hu",
+          "@value": "A felek között létrejött egyezség"
+        },
+        {
+          "@language": "it",
+          "@value": "Composizione amichevole raggiunta tra le parti"
+        },
+        {
+          "@language": "lt",
+          "@value": "Draugiškas ginčo sprendimas tarp šalių"
+        },
+        {
+          "@language": "lv",
+          "@value": "Lietas dalībnieku panākts izlīgums"
+        },
+        {
+          "@language": "mt",
+          "@value": "Ftehim bonarju milħuq bejn il-partijiet"
+        },
+        {
+          "@language": "nl",
+          "@value": "Minnelijke regeling totstandgekomen tussen de partijen"
+        },
+        {
+          "@language": "pl",
+          "@value": "Zawarcie ugody przez strony"
+        },
+        {
+          "@language": "pt",
+          "@value": "Resolução amigável obtida entre as partes"
+        },
+        {
+          "@language": "ro",
+          "@value": "Soluționare amiabilă intervenită între părți"
+        },
+        {
+          "@language": "sk",
+          "@value": "Zmier uzavretý medzi účastníkmi konania"
+        },
+        {
+          "@language": "sl",
+          "@value": "Mirna rešitev spora med strankama/i"
+        },
+        {
+          "@language": "sv",
+          "@value": "Förlikning som träffats mellan parterna"
+        }
+      ]
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/procresult/STL_AMI_HEAR",
+      "@type": "skos:Concept",
+      "at:authority-code": "STL_AMI_HEAR",
+      "at:deprecated": "false",
+      "at:op-code": "STL_AMI_HEAR",
+      "at:start.use": "1952-07-24",
+      "atold:op-code": "STL_AMI_HEAR",
+      "dc:identifier": "STL_AMI_HEAR",
+      "skos:inScheme": {
+        "@id": "atold:procresult"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "Уреждане на спора по взаимно съгласие в хода на съдебното заседание"
+        },
+        {
+          "@language": "cs",
+          "@value": "Smírné urovnání, k němuž došlo na jednání"
+        },
+        {
+          "@language": "da",
+          "@value": "Forlig i et retsmøde"
+        },
+        {
+          "@language": "de",
+          "@value": "Gütliche Beilegung in einer Sitzung"
+        },
+        {
+          "@language": "el",
+          "@value": "Συμβιβασμός που επήλθε σε συνεδρίαση"
+        },
+        {
+          "@language": "en",
+          "@value": "Amicable settlement made at a hearing"
+        },
+        {
+          "@language": "es",
+          "@value": "Solución amistosa acordada en una vista"
+        },
+        {
+          "@language": "et",
+          "@value": "Kompromiss, milleni jõuti kohtuistungil"
+        },
+        {
+          "@language": "fi",
+          "@value": "Sovintoratkaisu, johon on päästy istunnossa"
+        },
+        {
+          "@language": "fr",
+          "@value": "Règlement à l'amiable intervenu lors d'une audience"
+        },
+        {
+          "@language": "ga",
+          "@value": "Réiteach cairdiúil a bhaint amach ag éisteacht"
+        },
+        {
+          "@language": "hr",
+          "@value": "Sklapanje nagodbe na raspravi"
+        },
+        {
+          "@language": "hu",
+          "@value": "Tárgyaláson létrejött egyezség"
+        },
+        {
+          "@language": "it",
+          "@value": "Composizione amichevole raggiunta nel corso di un'udienza"
+        },
+        {
+          "@language": "lt",
+          "@value": "Posėdyje pasiektas draugiškas ginčo sprendimas"
+        },
+        {
+          "@language": "lv",
+          "@value": "Tiesas sēdē panākts izlīgums"
+        },
+        {
+          "@language": "mt",
+          "@value": "Ftehim bonarju milħuq matul seduta"
+        },
+        {
+          "@language": "nl",
+          "@value": "Minnelijke regeling totstandgekomen tijdens een terechtzitting"
+        },
+        {
+          "@language": "pl",
+          "@value": "Zawarcie ugody podczas rozprawy"
+        },
+        {
+          "@language": "pt",
+          "@value": "Resolução amigável obtida numa audiência"
+        },
+        {
+          "@language": "ro",
+          "@value": "Soluționare amiabilă intervenită cu ocazia unei ședințe"
+        },
+        {
+          "@language": "sk",
+          "@value": "Zmier uzavretý na pojednávaní"
+        },
+        {
+          "@language": "sl",
+          "@value": "Mirna rešitev spora na obravnavi"
+        },
+        {
+          "@language": "sv",
+          "@value": "Förlikning som träffats vid en förhandling"
+        }
+      ]
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/procresult/DISM_SUBST_GROUNDS",
+      "@type": "skos:Concept",
+      "at:authority-code": "DISM_SUBST_GROUNDS",
+      "at:deprecated": "false",
+      "at:op-code": "DISM_SUBST_GROUNDS",
+      "at:op-mapped-code": [
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b70"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b71"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b72"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b73"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b74"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b75"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b76"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b77"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b78"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b79"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b80"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b81"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b82"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b83"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b84"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b85"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b86"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b87"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b88"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b89"
+        }
+      ],
+      "at:start.use": "1952-07-24",
+      "atold:op-code": "DISM_SUBST_GROUNDS",
+      "dc:identifier": "DISM_SUBST_GROUNDS",
+      "skos:inScheme": {
+        "@id": "atold:procresult"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "Отхвърляне на иска/жалбата по същество"
+        },
+        {
+          "@language": "cs",
+          "@value": "Zamítnutí ve věci samé"
+        },
+        {
+          "@language": "da",
+          "@value": "Frifindelse"
+        },
+        {
+          "@language": "de",
+          "@value": "Zurückweisung als unbegründet"
+        },
+        {
+          "@language": "el",
+          "@value": "Απόρριψη επί της ουσίας"
+        },
+        {
+          "@language": "en",
+          "@value": "Dismissal on substantive grounds"
+        },
+        {
+          "@language": "es",
+          "@value": "Desestimación"
+        },
+        {
+          "@language": "et",
+          "@value": "Sisuline rahuldamata jätmine"
+        },
+        {
+          "@language": "fi",
+          "@value": "Hylkääminen"
+        },
+        {
+          "@language": "fr",
+          "@value": "Rejet sur le fond"
+        },
+        {
+          "@language": "ga",
+          "@value": "Forais shubstainteacha"
+        },
+        {
+          "@language": "hr",
+          "@value": "Odbijanje zbog neosnovanosti"
+        },
+        {
+          "@language": "hu",
+          "@value": "Érdemben történő elutasítás"
+        },
+        {
+          "@language": "it",
+          "@value": "Rigetto nel merito"
+        },
+        {
+          "@language": "lt",
+          "@value": "Atmetimas dėl esmės"
+        },
+        {
+          "@language": "lv",
+          "@value": "Noraidījums pēc būtības"
+        },
+        {
+          "@language": "mt",
+          "@value": "Ċaħda fuq il-mertu"
+        },
+        {
+          "@language": "nl",
+          "@value": "Verwerping ten gronde"
+        },
+        {
+          "@language": "pl",
+          "@value": "Oddalenie co do istoty"
+        },
+        {
+          "@language": "pt",
+          "@value": "Improcedência"
+        },
+        {
+          "@language": "ro",
+          "@value": "Respingere pe fond"
+        },
+        {
+          "@language": "sk",
+          "@value": "Zamietnutie vo veci samej"
+        },
+        {
+          "@language": "sl",
+          "@value": "Zavrnitev po temelju"
+        },
+        {
+          "@language": "sv",
+          "@value": "Ogillande i sak"
+        }
+      ]
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b70",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "TIER=RF",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b71",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "ASSI=RF",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b72",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "SANC=RF",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b73",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "EXEC=RF",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b74",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "CONS=RF",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b75",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "ANNU=RF",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b76",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "REVI=RF",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b77",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "PVOI=RF",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b78",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "RECT=RF",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b79",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "CARE=RF",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b80",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "INTV=RF",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b81",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "INTE=RF",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b82",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "COMP=RF",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b83",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "IMMU=RF",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b84",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "INST=RF",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b85",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "REFE=RF",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b86",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "FONC=RF",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b87",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "RESP=RF",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b88",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "DPEN=RF",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b89",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "OPPO=RF",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/procresult/OP_DATPRO",
+      "@type": "skos:Concept",
+      "at:op-code": "OP_DATPRO",
+      "atold:op-code": "OP_DATPRO",
+      "dc:identifier": "OP_DATPRO",
+      "skos:inScheme": {
+        "@id": "atold:procresult"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "НЕОКОНЧАТЕЛНИ ДАННИ"
+        },
+        {
+          "@language": "cs",
+          "@value": "Předběžné údaje"
+        },
+        {
+          "@language": "da",
+          "@value": "Midlertidige data"
+        },
+        {
+          "@language": "de",
+          "@value": "Vorläufige Daten"
+        },
+        {
+          "@language": "el",
+          "@value": "Προσωρινά δεδομένα"
+        },
+        {
+          "@language": "en",
+          "@value": "Provisional data"
+        },
+        {
+          "@language": "es",
+          "@value": "Datos provisionales"
+        },
+        {
+          "@language": "et",
+          "@value": "Esialgsed andmed"
+        },
+        {
+          "@language": "fi",
+          "@value": "Alustavat tiedot"
+        },
+        {
+          "@language": "fr",
+          "@value": "Données provisoires"
+        },
+        {
+          "@language": "ga",
+          "@value": "Sonraí sealadacha"
+        },
+        {
+          "@language": "hr",
+          "@value": "Privremeni podaci"
+        },
+        {
+          "@language": "hu",
+          "@value": "Ideiglenes adatok"
+        },
+        {
+          "@language": "it",
+          "@value": "Dati provvisori"
+        },
+        {
+          "@language": "lt",
+          "@value": "Laikinieji duomenys"
+        },
+        {
+          "@language": "lv",
+          "@value": "Provizoriski dati"
+        },
+        {
+          "@language": "mt",
+          "@value": "Dejta provviżorja"
+        },
+        {
+          "@language": "nl",
+          "@value": "Voorlopige gegevens"
+        },
+        {
+          "@language": "pl",
+          "@value": "Dane tymczasowe"
+        },
+        {
+          "@language": "pt",
+          "@value": "Dados provisórios"
+        },
+        {
+          "@language": "ro",
+          "@value": "Date provizorii"
+        },
+        {
+          "@language": "sk",
+          "@value": "Predbežné údaje"
+        },
+        {
+          "@language": "sl",
+          "@value": "Začasni podatki"
+        },
+        {
+          "@language": "sv",
+          "@value": "Tillfälliga uppgifter"
+        }
+      ]
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/procresult/CONFORM_TREATY",
+      "@type": "skos:Concept",
+      "at:authority-code": "CONFORM_TREATY",
+      "at:deprecated": "false",
+      "at:op-code": "CONFORM_TREATY",
+      "at:op-mapped-code": [
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b45"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b46"
+        }
+      ],
+      "at:start.use": "1952-07-24",
+      "atold:op-code": "CONFORM_TREATY",
+      "dc:identifier": "CONFORM_TREATY",
+      "skos:inScheme": {
+        "@id": "atold:procresult"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "Съответствие с Договора (становища или решения)"
+        },
+        {
+          "@language": "cs",
+          "@value": "Soulad se Smlouvou (posudek nebo usnesení)"
+        },
+        {
+          "@language": "da",
+          "@value": "Forenelighed med traktaten (udtalelse eller afgørelse)"
+        },
+        {
+          "@language": "de",
+          "@value": "Vereinbarkeit mit dem Vertrag (Gutachten oder Beschlüsse)"
+        },
+        {
+          "@language": "el",
+          "@value": "Συμφωνία προς τη Συνθήκης (γνωμοδοτήσεις ή αποφάσεις-délibérations)"
+        },
+        {
+          "@language": "en",
+          "@value": "Conformity with the Treaty (opinions or rulings)"
+        },
+        {
+          "@language": "es",
+          "@value": "Conformidad con el Tratado (dictámenes o acuerdos)"
+        },
+        {
+          "@language": "et",
+          "@value": "Asutamislepingule vastavus (arvamused või otsused)"
+        },
+        {
+          "@language": "fi",
+          "@value": "Perustamissopimuksen mukaisuus (lausunnot tai päätökset)"
+        },
+        {
+          "@language": "fr",
+          "@value": "Conformité avec le Traité (avis ou délibérations)"
+        },
+        {
+          "@language": "ga",
+          "@value": "Comhréireacht leis an gConradh (tuairimí nó pléití)"
+        },
+        {
+          "@language": "hr",
+          "@value": "U skladu s Ugovorom (mišljenja ili odluke)"
+        },
+        {
+          "@language": "hu",
+          "@value": "A Szerződésnek való megfelelés (vélemények vagy határozatok)"
+        },
+        {
+          "@language": "it",
+          "@value": "Conformità con il Trattato (pareri o deliberazioni)"
+        },
+        {
+          "@language": "lt",
+          "@value": "Atitiktis Sutarčiai (nuomonės arba nutarimai)"
+        },
+        {
+          "@language": "lv",
+          "@value": "Atbilstība Līgumam (atzinumi vai nolēmumi)"
+        },
+        {
+          "@language": "mt",
+          "@value": "Konformità mat-Trattat (opinjoni jew deliberazzjonijiet)"
+        },
+        {
+          "@language": "nl",
+          "@value": "In overeenstemming met het Verdrag (adviezen of beraadslagingen)"
+        },
+        {
+          "@language": "pl",
+          "@value": "Zgodność z traktatem (opinie lub obrady)"
+        },
+        {
+          "@language": "pt",
+          "@value": "Conformidade com o Tratado (pareceres ou deliberações)"
+        },
+        {
+          "@language": "ro",
+          "@value": "Conformitate cu tratatul (avize sau hotărâri)"
+        },
+        {
+          "@language": "sk",
+          "@value": "Súlad so Zmluvou (stanovisko alebo porady)"
+        },
+        {
+          "@language": "sl",
+          "@value": "Skladnost s Pogodbo (mnenje ali posvetovanja)"
+        },
+        {
+          "@language": "sv",
+          "@value": "Förenlighet med fördraget (yttranden eller avgöranden)"
+        }
+      ]
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b45",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "AVIS=DC",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b46",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "DELI=DC",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/procresult/DISM_GROUNDS_INADM",
+      "@type": "skos:Concept",
+      "at:authority-code": "DISM_GROUNDS_INADM",
+      "at:deprecated": "false",
+      "at:op-code": "DISM_GROUNDS_INADM",
+      "at:op-mapped-code": [
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b47"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b48"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b49"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b50"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b51"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b52"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b53"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b54"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b55"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b56"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b57"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b58"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b59"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b60"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b61"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b62"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b63"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b64"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b65"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b66"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b67"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b68"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b69"
+        }
+      ],
+      "at:start.use": "1952-07-24",
+      "atold:op-code": "DISM_GROUNDS_INADM",
+      "dc:identifier": "DISM_GROUNDS_INADM",
+      "skos:inScheme": {
+        "@id": "atold:procresult"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "Отхвърляне поради недопустимост"
+        },
+        {
+          "@language": "cs",
+          "@value": "Odmítnutí pro nepřípustnost"
+        },
+        {
+          "@language": "da",
+          "@value": "Afvisning"
+        },
+        {
+          "@language": "de",
+          "@value": "Zurückweisung wegen Unzulässigkeit"
+        },
+        {
+          "@language": "el",
+          "@value": "Απόρριψη λόγω απαραδέκτου"
+        },
+        {
+          "@language": "en",
+          "@value": "Dismissal on grounds of inadmissibility"
+        },
+        {
+          "@language": "es",
+          "@value": "Declaración de inadmisibilidad"
+        },
+        {
+          "@language": "et",
+          "@value": "Vastuvõetamatuse tõttu läbivaatamata jätmine"
+        },
+        {
+          "@language": "fi",
+          "@value": "Tutkimatta jättäminen"
+        },
+        {
+          "@language": "fr",
+          "@value": "Rejet pour irrecevabilité"
+        },
+        {
+          "@language": "ga",
+          "@value": "Díbhe ar fhorais shubstainteacha"
+        },
+        {
+          "@language": "hr",
+          "@value": "Odbacivanje zbog nedopuštenosti"
+        },
+        {
+          "@language": "hu",
+          "@value": "Elfogadhatatlanság miatti elutasítás"
+        },
+        {
+          "@language": "it",
+          "@value": "Rigetto per irricevibilità"
+        },
+        {
+          "@language": "lt",
+          "@value": "Atmetimas dėl nepriimtinumo"
+        },
+        {
+          "@language": "lv",
+          "@value": "Noraidījums nepieņemamības dēļ"
+        },
+        {
+          "@language": "mt",
+          "@value": "Ċaħda minħabba f'inammissibbiltà"
+        },
+        {
+          "@language": "nl",
+          "@value": "Verwerping wegens niet-ontvankelijkheid"
+        },
+        {
+          "@language": "pl",
+          "@value": "Oddalenie z powodu niedopuszczalności"
+        },
+        {
+          "@language": "pt",
+          "@value": "Declaração de inadmissibilidade"
+        },
+        {
+          "@language": "ro",
+          "@value": "Respingere pentru motive de inadmisibilitate"
+        },
+        {
+          "@language": "sk",
+          "@value": "Zamietnutie pre neprípustnosť"
+        },
+        {
+          "@language": "sl",
+          "@value": "Zavrnitev zaradi nedopustnosti"
+        },
+        {
+          "@language": "sv",
+          "@value": "Avvisning"
+        }
+      ]
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b47",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "INTV=RI",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b48",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "FONC=RI",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b49",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "COMP=RI",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b50",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "CARE=RI",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b51",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "INST=RI",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b52",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "REVI=RI",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b53",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "IMMU=RI",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b54",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "INTE=RI",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b55",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "SANC=RI",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b56",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "CONS=RI",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b57",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "RESP=RI",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b58",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "ANNU=RI",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b59",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "REFE=RI",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b60",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "ASSI=RI",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b61",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "DELI=RI",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b62",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "DPEN=RI",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b63",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "PREJ=RI",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b64",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "RECT=RI",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b65",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "EXEC=RI",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b66",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "PVOI=RI",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b67",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "AVIS=RI",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b68",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "OPPO=RI",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b69",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "TIER=RI",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/procresult/JUDG_NOT_PROCEED",
+      "@type": "skos:Concept",
+      "at:authority-code": "JUDG_NOT_PROCEED",
+      "at:deprecated": "false",
+      "at:op-code": "JUDG_NOT_PROCEED",
+      "at:op-mapped-code": [
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b112"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b113"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b114"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b115"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b116"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b117"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b118"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b119"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b120"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b121"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b122"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b123"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b124"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b125"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b126"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b127"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b128"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b129"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b130"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b131"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b132"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b133"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b134"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b135"
+        }
+      ],
+      "at:start.use": "1952-07-24",
+      "atold:op-code": "JUDG_NOT_PROCEED",
+      "dc:identifier": "JUDG_NOT_PROCEED",
+      "skos:inScheme": {
+        "@id": "atold:procresult"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "Липса на основание за произнасяне"
+        },
+        {
+          "@language": "cs",
+          "@value": "Nevydání rozhodnutí ve věci samé"
+        },
+        {
+          "@language": "da",
+          "@value": "Ufornødent at træffe afgørelse"
+        },
+        {
+          "@language": "de",
+          "@value": "Erledigung der Hauptsache"
+        },
+        {
+          "@language": "el",
+          "@value": "Κατάργηση δίκης"
+        },
+        {
+          "@language": "en",
+          "@value": "Case not proceeding to judgment"
+        },
+        {
+          "@language": "es",
+          "@value": "Sobreseimiento"
+        },
+        {
+          "@language": "et",
+          "@value": "Otsuse tegemise vajaduse äralangemine"
+        },
+        {
+          "@language": "fi",
+          "@value": "Lausunnon antaminen asiassa raukeaa"
+        },
+        {
+          "@language": "fr",
+          "@value": "Non-lieu à statuer"
+        },
+        {
+          "@language": "ga",
+          "@value": "Cás nach dtéann ar aghaidh chun breithiúnais"
+        },
+        {
+          "@language": "hr",
+          "@value": "Obustava postupka"
+        },
+        {
+          "@language": "hu",
+          "@value": "Okafogyottság"
+        },
+        {
+          "@language": "it",
+          "@value": "Non luogo a provvedere"
+        },
+        {
+          "@language": "lt",
+          "@value": "Nereikalingumas priimti sprendimą"
+        },
+        {
+          "@language": "lv",
+          "@value": "Tiesvedības izbeigšana pirms sprieduma taisīšanas"
+        },
+        {
+          "@language": "mt",
+          "@value": "Ma hemmx lok li tingħata deċiżjoni"
+        },
+        {
+          "@language": "nl",
+          "@value": "Afdoening zonder beslissing"
+        },
+        {
+          "@language": "pl",
+          "@value": "Umorzenie postępowania"
+        },
+        {
+          "@language": "pt",
+          "@value": "Não conhecimento do mérito"
+        },
+        {
+          "@language": "ro",
+          "@value": "Nepronunțare asupra fondului"
+        },
+        {
+          "@language": "sk",
+          "@value": "Zastavenie konania"
+        },
+        {
+          "@language": "sl",
+          "@value": "Ustavitev postopka"
+        },
+        {
+          "@language": "sv",
+          "@value": "Anledning saknas att döma i saken"
+        }
+      ]
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b112",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "ASSI=NL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b113",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "INST=NL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b114",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "IMMU=NL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b115",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "RECT=NL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b116",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "REVI=NL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b117",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "FONC=NL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b118",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "INTE=NL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b119",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "DELI=NL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b120",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "ANNU=NL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b121",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "TIER=NL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b122",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "AVIS=NL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b123",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "RESP=NL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b124",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "COMP=NL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b125",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "REEX=NL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b126",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "DPEN=NL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b127",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "CONS=NL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b128",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "CARE=NL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b129",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "INTV=NL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b130",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "PREJ=NL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b131",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "PVOI=NL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b132",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "EXEC=NL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b133",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "REFE=NL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b134",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "SANC=NL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b135",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "OPPO=NL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/procresult/RAD",
+      "@type": "skos:Concept",
+      "at:authority-code": "RAD",
+      "at:deprecated": "false",
+      "at:op-code": "RAD",
+      "at:op-mapped-code": [
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b136"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b137"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b138"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b139"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b140"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b141"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b142"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b143"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b144"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b145"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b146"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b147"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b148"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b149"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b150"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b151"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b152"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b153"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b154"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b155"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b156"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b157"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b158"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b159"
+        }
+      ],
+      "at:start.use": "1952-07-24",
+      "atold:op-code": "RAD",
+      "dc:identifier": "RAD",
+      "skos:inScheme": {
+        "@id": "atold:procresult"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "Заличаване"
+        },
+        {
+          "@language": "cs",
+          "@value": "Vyškrtnutí věci z rejstříku"
+        },
+        {
+          "@language": "da",
+          "@value": "Slettelse"
+        },
+        {
+          "@language": "de",
+          "@value": "Streichung"
+        },
+        {
+          "@language": "el",
+          "@value": "Διαγραφή"
+        },
+        {
+          "@language": "en",
+          "@value": "Removal from the register"
+        },
+        {
+          "@language": "es",
+          "@value": "Archivo"
+        },
+        {
+          "@language": "et",
+          "@value": "Registrist kustutamine"
+        },
+        {
+          "@language": "fi",
+          "@value": "Asian poistaminen rekisteristä"
+        },
+        {
+          "@language": "fr",
+          "@value": "Radiation"
+        },
+        {
+          "@language": "ga",
+          "@value": "Cás a bhaint den chlár"
+        },
+        {
+          "@language": "hr",
+          "@value": "Brisanje iz upisnika"
+        },
+        {
+          "@language": "hu",
+          "@value": "Törlés"
+        },
+        {
+          "@language": "it",
+          "@value": "Cancellazione dal ruolo"
+        },
+        {
+          "@language": "lt",
+          "@value": "Išbraukimas"
+        },
+        {
+          "@language": "lv",
+          "@value": "Lietas izslēgšana no reģistra"
+        },
+        {
+          "@language": "mt",
+          "@value": "Tħassir tal-kawża"
+        },
+        {
+          "@language": "nl",
+          "@value": "Doorhaling"
+        },
+        {
+          "@language": "pl",
+          "@value": "Wykreślenie"
+        },
+        {
+          "@language": "pt",
+          "@value": "Cancelamento"
+        },
+        {
+          "@language": "ro",
+          "@value": "Radiere"
+        },
+        {
+          "@language": "sk",
+          "@value": "Výmaz"
+        },
+        {
+          "@language": "sl",
+          "@value": "Izbris"
+        },
+        {
+          "@language": "sv",
+          "@value": "Avskrivning"
+        }
+      ]
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b136",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "IMMU=RD",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b137",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "DPEN=RD",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b138",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "PVOI=RD",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b139",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "SANC=RD",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b140",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "CONS=RD",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b141",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "INTV=RD",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b142",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "REFE=RD",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b143",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "INTE=RD",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b144",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "AVIS=RD",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b145",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "ANNU=RD",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b146",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "RECT=RD",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b147",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "REVI=RD",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b148",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "CARE=RD",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b149",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "PREF=RD",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b150",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "PREJ=RD",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b151",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "FONC=RD",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b152",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "DELI=RD",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b153",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "INST=RD",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b154",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "EXEC=RD",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b155",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "TIER=RD",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b156",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "RESP=RD",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b157",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "ASSI=RD",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b158",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "COMP=RD",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b159",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "OPPO=RD",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/procresult/JUDG_INTLC",
+      "@type": "skos:Concept",
+      "at:authority-code": "JUDG_INTLC",
+      "at:deprecated": "false",
+      "at:op-code": "JUDG_INTLC",
+      "at:op-mapped-code": [
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b90"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b91"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b92"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b93"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b94"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b95"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b96"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b97"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b98"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b99"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b100"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b101"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b102"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b103"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b104"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b105"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b106"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b107"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b108"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b109"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b110"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b111"
+        }
+      ],
+      "at:start.use": "1952-07-24",
+      "atold:op-code": "JUDG_INTLC",
+      "dc:identifier": "JUDG_INTLC",
+      "skos:inScheme": {
+        "@id": "atold:procresult"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "Междинно решение"
+        },
+        {
+          "@language": "cs",
+          "@value": "Mezitímní rozsudek"
+        },
+        {
+          "@language": "da",
+          "@value": "Mellemdom"
+        },
+        {
+          "@language": "de",
+          "@value": "Zwischenurteil"
+        },
+        {
+          "@language": "el",
+          "@value": "Παρεμπίπτουσα απόφαση"
+        },
+        {
+          "@language": "en",
+          "@value": "Interlocutory judgment"
+        },
+        {
+          "@language": "es",
+          "@value": "Sentencia interlocutoria"
+        },
+        {
+          "@language": "et",
+          "@value": "Esialgne otsus"
+        },
+        {
+          "@language": "fi",
+          "@value": "Välituomio"
+        },
+        {
+          "@language": "fr",
+          "@value": "Arrêt interlocutoire"
+        },
+        {
+          "@language": "ga",
+          "@value": "Breithiúnas idirbhreitheach"
+        },
+        {
+          "@language": "hr",
+          "@value": "Privremena presuda"
+        },
+        {
+          "@language": "hu",
+          "@value": "Közbenső ítélet"
+        },
+        {
+          "@language": "it",
+          "@value": "Sentenza interlocutoria"
+        },
+        {
+          "@language": "lt",
+          "@value": "Tarpinis sprendimas"
+        },
+        {
+          "@language": "lv",
+          "@value": "Starpspriedums"
+        },
+        {
+          "@language": "mt",
+          "@value": "Sentenza interlokutorja"
+        },
+        {
+          "@language": "nl",
+          "@value": "Interlocutoir arrest"
+        },
+        {
+          "@language": "pl",
+          "@value": "Wyrok wstępny"
+        },
+        {
+          "@language": "pt",
+          "@value": "Acórdão interlocutório"
+        },
+        {
+          "@language": "ro",
+          "@value": "Încheiere interlocutorie"
+        },
+        {
+          "@language": "sk",
+          "@value": "Medzitýmny rozsudok"
+        },
+        {
+          "@language": "sl",
+          "@value": "Vmesna sodba"
+        },
+        {
+          "@language": "sv",
+          "@value": "Mellandom"
+        }
+      ]
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b90",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "INTV=IL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b91",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "CONS=IL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b92",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "DPEN=IL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b93",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "INST=IL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b94",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "PREJ=IL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b95",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "SANC=IL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b96",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "ASSI=IL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b97",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "INTE=IL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b98",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "ANNU=IL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b99",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "TIER=IL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b100",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "REVI=IL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b101",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "OPPO=IL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b102",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "PVOI=IL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b103",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "IMMU=IL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b104",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "AVIS=IL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b105",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "COMP=IL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b106",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "RECT=IL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b107",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "REFE=IL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b108",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "CARE=IL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b109",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "FONC=IL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b110",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "RESP=IL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b111",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "DELI=IL",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/procresult/ADJ",
+      "@type": "skos:Concept",
+      "at:authority-code": "ADJ",
+      "at:deprecated": "false",
+      "at:op-code": "ADJ",
+      "at:op-mapped-code": [
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b1"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b2"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b3"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b4"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b5"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b6"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b7"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b8"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b9"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b10"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b11"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b12"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b13"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b14"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b15"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b16"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b17"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b18"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b19"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b20"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b21"
+        },
+        {
+          "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b22"
+        }
+      ],
+      "at:start.use": "1952-07-24",
+      "atold:op-code": "ADJ",
+      "dc:identifier": "ADJ",
+      "skos:inScheme": {
+        "@id": "atold:procresult"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "Отлагане"
+        },
+        {
+          "@language": "cs",
+          "@value": "Odročený"
+        },
+        {
+          "@language": "da",
+          "@value": "Udsat"
+        },
+        {
+          "@language": "de",
+          "@value": "Vertagung"
+        },
+        {
+          "@language": "el",
+          "@value": "Αναβολή"
+        },
+        {
+          "@language": "en",
+          "@value": "Adjourned"
+        },
+        {
+          "@language": "es",
+          "@value": "Aplazado"
+        },
+        {
+          "@language": "et",
+          "@value": "Istung on edasi lükatud"
+        },
+        {
+          "@language": "fi",
+          "@value": "Istuntoa on siirretty"
+        },
+        {
+          "@language": "fr",
+          "@value": "Ajourné"
+        },
+        {
+          "@language": "ga",
+          "@value": "Ar atráth"
+        },
+        {
+          "@language": "hr",
+          "@value": "Odgoda"
+        },
+        {
+          "@language": "hu",
+          "@value": "Elnapolt"
+        },
+        {
+          "@language": "it",
+          "@value": "Aggiornato"
+        },
+        {
+          "@language": "lt",
+          "@value": "Atidėjimas"
+        },
+        {
+          "@language": "lv",
+          "@value": "Atlikts"
+        },
+        {
+          "@language": "mt",
+          "@value": "Differit"
+        },
+        {
+          "@language": "nl",
+          "@value": "Verdaagd"
+        },
+        {
+          "@language": "pl",
+          "@value": "Odroczony"
+        },
+        {
+          "@language": "pt",
+          "@value": "Adiado"
+        },
+        {
+          "@language": "ro",
+          "@value": "Amânare"
+        },
+        {
+          "@language": "sk",
+          "@value": "Odročený"
+        },
+        {
+          "@language": "sl",
+          "@value": "Preložen(a)"
+        },
+        {
+          "@language": "sv",
+          "@value": "Senareläggning"
+        }
+      ]
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b1",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "IMMU=AJ",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b2",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "PVOI=AJ",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b3",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "FONC=AJ",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b4",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "INTE=AJ",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b5",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "ANNU=AJ",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b6",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "DPEN=AJ",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b7",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "ASSI=AJ",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b8",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "CARE=AJ",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b9",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "RECT=AJ",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b10",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "OPPO=AJ",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b11",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "AVIS=AJ",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b12",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "RESP=AJ",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b13",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "TIER=AJ",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b14",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "REFE=AJ",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b15",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "DELI=AJ",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b16",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "INTV=AJ",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b17",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "PREJ=AJ",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b18",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "REVI=AJ",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b19",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "INST=AJ",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b20",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "CONS=AJ",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b21",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "COMP=AJ",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "_:n6245a8d38c79458c89e76c0e3bf167d3b22",
+      "@type": "at:MappedCode",
+      "at:affected-table": "FD_100",
+      "at:legacy-code": "SANC=AJ",
+      "dc:source": "EurLex"
+    },
+    {
+      "@id": "atold:procresult",
+      "@type": "skos:ConceptScheme",
+      "at:prefLabel": {
+        "@language": "en",
+        "@value": "Legal proceeding result"
+      },
+      "at:table.id": "procresult",
+      "at:table.version.number": "20160921-0",
+      "owl:versionInfo": "20160921-0",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Legal proceeding result"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Legal proceeding result"
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/eo-role-type/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/eo-role-type/group-lead
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/eo-role-type/group-mem
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/eo-role-type/oeron
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/eo-role-type/sole-tenderer
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/eo-role-type/subcont
+        title: .nan
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

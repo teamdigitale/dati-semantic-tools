@@ -1,0 +1,33 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/transport-service/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/transport-service/bus-s
+        title: Servizi di trasporto mediante autobus (urbano/regionale)
+      - const: http://publications.europa.eu/resource/authority/transport-service/coach-s
+        title: Servizi di trasporto mediante autobus (lunga distanza)
+      - const: http://publications.europa.eu/resource/authority/transport-service/lrail-s
+        title: Servizi di trasporto mediante metropolitana leggera
+      - const: http://publications.europa.eu/resource/authority/transport-service/metro-s
+        title: Servizi di trasporto mediante metropolitana
+      - const: http://publications.europa.eu/resource/authority/transport-service/other
+        title: Altri
+      - const: http://publications.europa.eu/resource/authority/transport-service/port-s
+        title: Servizi di trasporto marittimo e per via navigabile
+      - const: http://publications.europa.eu/resource/authority/transport-service/rail-s
+        title: Servizi di trasporto per ferrovia
+      - const: http://publications.europa.eu/resource/authority/transport-service/tram-s
+        title: Servizi di trasporto mediante tram
+      - const: http://publications.europa.eu/resource/authority/transport-service/trolley-s
+        title: Servizi di trasporto mediante filobus
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

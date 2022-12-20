@@ -1,0 +1,27 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/membership-classification/EEA
+        title: Spazio economico europeo
+      - const: http://publications.europa.eu/resource/authority/membership-classification/EFTA
+        title: Associazione europea di libero scambio
+      - const: http://publications.europa.eu/resource/authority/membership-classification/EU
+        title: Unione europea
+      - const: http://publications.europa.eu/resource/authority/membership-classification/EURO
+        title: Zona euro
+      - const: http://publications.europa.eu/resource/authority/membership-classification/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/membership-classification/OTHER
+        title: Altro
+      - const: http://publications.europa.eu/resource/authority/membership-classification/SCHENGEN
+        title: Spazio Schengen
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

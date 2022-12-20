@@ -1,0 +1,75 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/frequency/ANNUAL
+        title: annuale
+      - const: http://publications.europa.eu/resource/authority/frequency/ANNUAL_2
+        title: semestrale
+      - const: http://publications.europa.eu/resource/authority/frequency/ANNUAL_3
+        title: tre volte all'anno
+      - const: http://publications.europa.eu/resource/authority/frequency/BIDECENNIAL
+        title: bidecennale
+      - const: http://publications.europa.eu/resource/authority/frequency/BIENNIAL
+        title: biennale
+      - const: http://publications.europa.eu/resource/authority/frequency/BIHOURLY
+        title: ogni due ore
+      - const: http://publications.europa.eu/resource/authority/frequency/BIMONTHLY
+        title: bimestrale
+      - const: http://publications.europa.eu/resource/authority/frequency/BIWEEKLY
+        title: quindicinale
+      - const: http://publications.europa.eu/resource/authority/frequency/CONT
+        title: continuo
+      - const: http://publications.europa.eu/resource/authority/frequency/DAILY
+        title: quotidiano
+      - const: http://publications.europa.eu/resource/authority/frequency/DAILY_2
+        title: due volte al giorno
+      - const: http://publications.europa.eu/resource/authority/frequency/DECENNIAL
+        title: decennale
+      - const: http://publications.europa.eu/resource/authority/frequency/HOURLY
+        title: ogni ora
+      - const: http://publications.europa.eu/resource/authority/frequency/IRREG
+        title: irregolare
+      - const: http://publications.europa.eu/resource/authority/frequency/MONTHLY
+        title: mensile
+      - const: http://publications.europa.eu/resource/authority/frequency/MONTHLY_2
+        title: bimensile
+      - const: http://publications.europa.eu/resource/authority/frequency/MONTHLY_3
+        title: tre volte al mese
+      - const: http://publications.europa.eu/resource/authority/frequency/NEVER
+        title: mai
+      - const: http://publications.europa.eu/resource/authority/frequency/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/frequency/OTHER
+        title: altro
+      - const: http://publications.europa.eu/resource/authority/frequency/QUADRENNIAL
+        title: ogni quattro anni
+      - const: http://publications.europa.eu/resource/authority/frequency/QUARTERLY
+        title: trimestrale
+      - const: http://publications.europa.eu/resource/authority/frequency/QUINQUENNIAL
+        title: ogni cinque anni
+      - const: http://publications.europa.eu/resource/authority/frequency/TRIDECENNIAL
+        title: tridecennale
+      - const: http://publications.europa.eu/resource/authority/frequency/TRIENNIAL
+        title: triennale
+      - const: http://publications.europa.eu/resource/authority/frequency/TRIHOURLY
+        title: ogni tre ore
+      - const: http://publications.europa.eu/resource/authority/frequency/UNKNOWN
+        title: sconosciuto
+      - const: http://publications.europa.eu/resource/authority/frequency/UPDATE_CONT
+        title: in continuo aggiornamento
+      - const: http://publications.europa.eu/resource/authority/frequency/WEEKLY
+        title: settimanale
+      - const: http://publications.europa.eu/resource/authority/frequency/WEEKLY_2
+        title: bisettimanale
+      - const: http://publications.europa.eu/resource/authority/frequency/WEEKLY_3
+        title: tre volte a settimana
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

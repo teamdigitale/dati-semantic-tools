@@ -1,0 +1,65 @@
+{
+  "@context": {
+    "cpavit": "https://w3id.org/italia/onto/CPV/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "cpavit:givenName",
+      "owl:equivalentProperty": {
+        "@id": "http://xmlns.com/foaf/0.1/givenName"
+      }
+    },
+    {
+      "@id": "https://w3id.org/italia/onto/CPV-aligns",
+      "@type": "owl:Ontology",
+      "owl:imports": [
+        {
+          "@id": "https://w3id.org/italia/onto/CPV"
+        },
+        {
+          "@id": "http://www.w3.org/2004/02/skos/core#"
+        },
+        {
+          "@id": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "owl:versionIRI": {
+        "@id": "https://w3id.org/italia/onto/CPV-aligns/0.1"
+      }
+    },
+    {
+      "@id": "cpavit:familyName",
+      "owl:equivalentProperty": {
+        "@id": "http://xmlns.com/foaf/0.1/familyName"
+      }
+    },
+    {
+      "@id": "cpavit:knows",
+      "owl:equivalentProperty": {
+        "@id": "http://xmlns.com/foaf/0.1/knows"
+      }
+    },
+    {
+      "@id": "cpavit:name",
+      "owl:equivalentProperty": {
+        "@id": "http://xmlns.com/foaf/0.1/name"
+      }
+    },
+    {
+      "@id": "cpavit:Person",
+      "owl:equivalentClass": {
+        "@id": "http://xmlns.com/foaf/0.1/Person"
+      }
+    },
+    {
+      "@id": "cpavit:ParentalRelationshipType",
+      "owl:subClassOf": {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    }
+  ]
+}

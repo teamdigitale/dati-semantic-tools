@@ -1,0 +1,25 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/access-right/CONFIDENTIAL
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/access-right/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/access-right/PUBLIC
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/access-right/RESTRICTED
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/access-right/SENSITIVE
+        title: .nan
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

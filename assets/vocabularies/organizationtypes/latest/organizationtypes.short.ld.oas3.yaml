@@ -1,0 +1,69 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/organization-type/AGENCY
+        title: Agenzia
+      - const: http://publications.europa.eu/resource/authority/organization-type/AGENCY_CFSP
+        title: Agenzia per la politica estera e di sicurezza comune
+      - const: http://publications.europa.eu/resource/authority/organization-type/AGENCY_DEC
+        title: Agenzia decentrata
+      - const: http://publications.europa.eu/resource/authority/organization-type/AGENCY_EURATOM
+        title: Agenzia o organo Euratom
+      - const: http://publications.europa.eu/resource/authority/organization-type/AGENCY_EXE
+        title: Agenzia esecutiva
+      - const: http://publications.europa.eu/resource/authority/organization-type/CAB
+        title: Gabinetto
+      - const: http://publications.europa.eu/resource/authority/organization-type/COMPANY
+        title: "Societ\xE0"
+      - const: http://publications.europa.eu/resource/authority/organization-type/DEL
+        title: Delegazione
+      - const: http://publications.europa.eu/resource/authority/organization-type/DEP
+        title: Dipartimento
+      - const: http://publications.europa.eu/resource/authority/organization-type/DIR
+        title: Direzione
+      - const: http://publications.europa.eu/resource/authority/organization-type/DIR_ATT
+        title: Che dipende da una direzione
+      - const: http://publications.europa.eu/resource/authority/organization-type/DIR_GEN
+        title: Direzione generale
+      - const: http://publications.europa.eu/resource/authority/organization-type/DIR_GEN_ATT
+        title: Che dipende da una direzione generale
+      - const: http://publications.europa.eu/resource/authority/organization-type/DIR_GEN_DPT
+        title: Servizio del direttore generale aggiunto
+      - const: http://publications.europa.eu/resource/authority/organization-type/DIR_MAN
+        title: Direzione gestionale
+      - const: http://publications.europa.eu/resource/authority/organization-type/DIVISION
+        title: Divisione
+      - const: http://publications.europa.eu/resource/authority/organization-type/INSTIT
+        title: Istituzione
+      - const: http://publications.europa.eu/resource/authority/organization-type/INSTIT_ATT
+        title: Che dipende dall'istituzione
+      - const: http://publications.europa.eu/resource/authority/organization-type/OFFICE
+        title: Ufficio
+      - const: http://publications.europa.eu/resource/authority/organization-type/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/organization-type/REPRES
+        title: Rappresentanza
+      - const: http://publications.europa.eu/resource/authority/organization-type/SECTOR
+        title: Settore
+      - const: http://publications.europa.eu/resource/authority/organization-type/SEC_GEN
+        title: Segretariato generale
+      - const: http://publications.europa.eu/resource/authority/organization-type/SEC_GEN_DPT
+        title: Servizio del Segretario generale aggiunto
+      - const: http://publications.europa.eu/resource/authority/organization-type/SERV
+        title: Servizio
+      - const: http://publications.europa.eu/resource/authority/organization-type/TEAM
+        title: Equipe
+      - const: http://publications.europa.eu/resource/authority/organization-type/TSK_FRC
+        title: Task force
+      - const: http://publications.europa.eu/resource/authority/organization-type/UNIT
+        title: "Unit\xE0"
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

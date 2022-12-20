@@ -1,0 +1,503 @@
+{
+  "@context": {
+    "at": "http://publications.europa.eu/ontology/authority/",
+    "atold": "http://publications.europa.eu/resource/authority/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://publications.europa.eu/resource/authority/number-type/CARDINAL",
+      "@type": "skos:Concept",
+      "at:authority-code": "CARDINAL",
+      "at:deprecated": "false",
+      "at:op-code": "CARDINAL",
+      "at:start.use": "2014-11-26",
+      "atold:op-code": "CARDINAL",
+      "dc:identifier": "CARDINAL",
+      "skos:altLabel": [
+        {
+          "@language": "bg",
+          "@value": "кардинално число"
+        },
+        {
+          "@language": "cs",
+          "@value": "základní číslovka"
+        },
+        {
+          "@language": "da",
+          "@value": "kardinaltal"
+        },
+        {
+          "@language": "el",
+          "@value": "απόλυτος αριθμός"
+        },
+        {
+          "@language": "en",
+          "@value": "cardinal number"
+        },
+        {
+          "@language": "es",
+          "@value": "número cardinal"
+        },
+        {
+          "@language": "et",
+          "@value": "kardinaalarv"
+        },
+        {
+          "@language": "fr",
+          "@value": "nombre cardinal"
+        },
+        {
+          "@language": "hu",
+          "@value": "tőszámnév"
+        },
+        {
+          "@language": "it",
+          "@value": "numero cardinale"
+        },
+        {
+          "@language": "lt",
+          "@value": "kiekinis skaitvardis"
+        },
+        {
+          "@language": "mt",
+          "@value": "numru kardinali"
+        },
+        {
+          "@language": "pt",
+          "@value": "numeral cardinal"
+        },
+        {
+          "@language": "ro",
+          "@value": "numeral cardinal"
+        },
+        {
+          "@language": "sk",
+          "@value": "základná číslovka"
+        },
+        {
+          "@language": "sl",
+          "@value": "glavni števnik"
+        },
+        {
+          "@language": "sv",
+          "@value": "kardinaltal"
+        }
+      ],
+      "skos:inScheme": {
+        "@id": "atold:number-type"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "кардинал"
+        },
+        {
+          "@language": "cs",
+          "@value": "základní"
+        },
+        {
+          "@language": "da",
+          "@value": "kardinal"
+        },
+        {
+          "@language": "de",
+          "@value": "Kardinalzahl"
+        },
+        {
+          "@language": "el",
+          "@value": "απόλυτο"
+        },
+        {
+          "@language": "en",
+          "@value": "cardinal"
+        },
+        {
+          "@language": "es",
+          "@value": "cardinal"
+        },
+        {
+          "@language": "et",
+          "@value": "kardinaal"
+        },
+        {
+          "@language": "fi",
+          "@value": "perusluku"
+        },
+        {
+          "@language": "fr",
+          "@value": "cardinal"
+        },
+        {
+          "@language": "ga",
+          "@value": "bunuimhir"
+        },
+        {
+          "@language": "hr",
+          "@value": "glavni broj"
+        },
+        {
+          "@language": "hu",
+          "@value": "tőszám"
+        },
+        {
+          "@language": "it",
+          "@value": "cardinale"
+        },
+        {
+          "@language": "lt",
+          "@value": "kiekinis"
+        },
+        {
+          "@language": "lv",
+          "@value": "skaitlis"
+        },
+        {
+          "@language": "mt",
+          "@value": "kardinali"
+        },
+        {
+          "@language": "nl",
+          "@value": "hoofdtelwoord"
+        },
+        {
+          "@language": "pl",
+          "@value": "liczebnik główny"
+        },
+        {
+          "@language": "pt",
+          "@value": "cardinal"
+        },
+        {
+          "@language": "ro",
+          "@value": "cardinal"
+        },
+        {
+          "@language": "sk",
+          "@value": "základná"
+        },
+        {
+          "@language": "sl",
+          "@value": "glavni"
+        },
+        {
+          "@language": "sv",
+          "@value": "grundtal"
+        }
+      ]
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/number-type/OP_DATPRO",
+      "@type": "skos:Concept",
+      "at:op-code": "OP_DATPRO",
+      "atold:op-code": "OP_DATPRO",
+      "dc:identifier": "OP_DATPRO",
+      "skos:inScheme": {
+        "@id": "atold:number-type"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "НЕОКОНЧАТЕЛНИ ДАННИ"
+        },
+        {
+          "@language": "cs",
+          "@value": "Předběžné údaje"
+        },
+        {
+          "@language": "da",
+          "@value": "Midlertidige data"
+        },
+        {
+          "@language": "de",
+          "@value": "Vorläufige Daten"
+        },
+        {
+          "@language": "el",
+          "@value": "Προσωρινά δεδομένα"
+        },
+        {
+          "@language": "en",
+          "@value": "Provisional data"
+        },
+        {
+          "@language": "es",
+          "@value": "Datos provisionales"
+        },
+        {
+          "@language": "et",
+          "@value": "Esialgsed andmed"
+        },
+        {
+          "@language": "fi",
+          "@value": "Alustavat tiedot"
+        },
+        {
+          "@language": "fr",
+          "@value": "Données provisoires"
+        },
+        {
+          "@language": "ga",
+          "@value": "Sonraí sealadacha"
+        },
+        {
+          "@language": "hr",
+          "@value": "Privremeni podaci"
+        },
+        {
+          "@language": "hu",
+          "@value": "Ideiglenes adatok"
+        },
+        {
+          "@language": "it",
+          "@value": "Dati provvisori"
+        },
+        {
+          "@language": "lt",
+          "@value": "Laikinieji duomenys"
+        },
+        {
+          "@language": "lv",
+          "@value": "Provizoriski dati"
+        },
+        {
+          "@language": "mt",
+          "@value": "Dejta provviżorja"
+        },
+        {
+          "@language": "nl",
+          "@value": "Voorlopige gegevens"
+        },
+        {
+          "@language": "pl",
+          "@value": "Dane tymczasowe"
+        },
+        {
+          "@language": "pt",
+          "@value": "Dados provisórios"
+        },
+        {
+          "@language": "ro",
+          "@value": "Date provizorii"
+        },
+        {
+          "@language": "sk",
+          "@value": "Predbežné údaje"
+        },
+        {
+          "@language": "sl",
+          "@value": "Začasni podatki"
+        },
+        {
+          "@language": "sv",
+          "@value": "Tillfälliga uppgifter"
+        }
+      ]
+    },
+    {
+      "@id": "atold:number-type",
+      "@type": "skos:ConceptScheme",
+      "at:prefLabel": {
+        "@language": "en",
+        "@value": "Number type"
+      },
+      "at:table.id": "number-type",
+      "at:table.version.number": "20200923-0",
+      "owl:versionInfo": "20200923-0",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Number type"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Number type"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/number-type/ORDINAL",
+      "@type": "skos:Concept",
+      "at:authority-code": "ORDINAL",
+      "at:deprecated": "false",
+      "at:op-code": "ORDINAL",
+      "at:start.use": "2014-11-26",
+      "atold:op-code": "ORDINAL",
+      "dc:identifier": "ORDINAL",
+      "skos:altLabel": [
+        {
+          "@language": "bg",
+          "@value": "ординално число"
+        },
+        {
+          "@language": "cs",
+          "@value": "řadová číslovka"
+        },
+        {
+          "@language": "da",
+          "@value": "ordenstal"
+        },
+        {
+          "@language": "el",
+          "@value": "αύξων αριθμός"
+        },
+        {
+          "@language": "en",
+          "@value": "ordinal number"
+        },
+        {
+          "@language": "es",
+          "@value": "número ordinal"
+        },
+        {
+          "@language": "et",
+          "@value": "ordinaalarv"
+        },
+        {
+          "@language": "fr",
+          "@value": "nombre ordinal"
+        },
+        {
+          "@language": "hu",
+          "@value": "sorszámnév"
+        },
+        {
+          "@language": "it",
+          "@value": "numero ordinale"
+        },
+        {
+          "@language": "lt",
+          "@value": "kelintinis skaitvardis"
+        },
+        {
+          "@language": "mt",
+          "@value": "numru ordinali"
+        },
+        {
+          "@language": "pt",
+          "@value": "numeral ordinal"
+        },
+        {
+          "@language": "ro",
+          "@value": "numeral ordinal"
+        },
+        {
+          "@language": "sk",
+          "@value": "radová číslovka"
+        },
+        {
+          "@language": "sl",
+          "@value": "vrstilni števnik"
+        },
+        {
+          "@language": "sv",
+          "@value": "räkneord som betecknar ordningsföljd"
+        }
+      ],
+      "skos:inScheme": {
+        "@id": "atold:number-type"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "ординал"
+        },
+        {
+          "@language": "cs",
+          "@value": "řadové"
+        },
+        {
+          "@language": "da",
+          "@value": "ordinal"
+        },
+        {
+          "@language": "de",
+          "@value": "Ordinalzahl"
+        },
+        {
+          "@language": "el",
+          "@value": "αύξων"
+        },
+        {
+          "@language": "en",
+          "@value": "ordinal"
+        },
+        {
+          "@language": "es",
+          "@value": "ordinal"
+        },
+        {
+          "@language": "et",
+          "@value": "ordinaal"
+        },
+        {
+          "@language": "fi",
+          "@value": "järjestysluku"
+        },
+        {
+          "@language": "fr",
+          "@value": "ordinal"
+        },
+        {
+          "@language": "ga",
+          "@value": "orduimhir"
+        },
+        {
+          "@language": "hr",
+          "@value": "redni broj"
+        },
+        {
+          "@language": "hu",
+          "@value": "sorszám"
+        },
+        {
+          "@language": "it",
+          "@value": "ordinale"
+        },
+        {
+          "@language": "lt",
+          "@value": "kelintinis"
+        },
+        {
+          "@language": "lv",
+          "@value": "kārtas skaitlis"
+        },
+        {
+          "@language": "mt",
+          "@value": "ordinali"
+        },
+        {
+          "@language": "nl",
+          "@value": "rangtelwoord"
+        },
+        {
+          "@language": "pl",
+          "@value": "liczebnik porządkowy"
+        },
+        {
+          "@language": "pt",
+          "@value": "ordinal"
+        },
+        {
+          "@language": "ro",
+          "@value": "ordinal"
+        },
+        {
+          "@language": "sk",
+          "@value": "radová"
+        },
+        {
+          "@language": "sl",
+          "@value": "vrstilni"
+        },
+        {
+          "@language": "sv",
+          "@value": "ordningstal"
+        }
+      ]
+    }
+  ]
+}

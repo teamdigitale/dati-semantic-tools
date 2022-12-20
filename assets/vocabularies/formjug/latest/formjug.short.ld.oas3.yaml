@@ -1,0 +1,113 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_01_C
+        title: Prima Sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_01_F
+        title: Prima Sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_01_T
+        title: Prima Sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_02_C
+        title: Seconda Sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_02_F
+        title: Seconda Sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_02_T
+        title: Seconda Sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_03_C
+        title: Terza Sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_03_F
+        title: Terza Sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_03_T
+        title: Terza Sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_04_C
+        title: Quarta Sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_04_T
+        title: Quarta Sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_05_C
+        title: Quinta Sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_05_T
+        title: Quinta Sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_06_C
+        title: Sesta Sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_06_T
+        title: Sesta Sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_07_C
+        title: Settima Sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_07_T
+        title: Settima Sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_08_C
+        title: Ottava Sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_08_T
+        title: Ottava Sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_09_C
+        title: Nona Sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_10_C
+        title: Decima Sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_APPEAL_T
+        title: Sezione delle impugnazioni
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_EXTD_01_T
+        title: Prima Sezione ampliata
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_EXTD_02_T
+        title: Seconda Sezione ampliata
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_EXTD_03_T
+        title: Terza Sezione ampliata
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_EXTD_04_T
+        title: Quarta Sezione ampliata
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_EXTD_05_T
+        title: Quinta Sezione ampliata
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_EXTD_06_T
+        title: Sesta Sezione ampliata
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_EXTD_07_T
+        title: Settima Sezione ampliata
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_EXTD_08_T
+        title: Ottava Sezione ampliata
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_EXTD_09_T
+        title: Nona Sezione ampliata
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_GD_C
+        title: Grande Sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_GD_T
+        title: Grande Sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/CHAMB_REVIEW_C
+        title: Sezione speciale (riesame)
+      - const: http://publications.europa.eu/resource/authority/formjug/FULL_COURT_C
+        title: Plenum
+      - const: http://publications.europa.eu/resource/authority/formjug/FULL_COURT_F
+        title: Seduta plenaria
+      - const: http://publications.europa.eu/resource/authority/formjug/FULL_COURT_T
+        title: Plenum
+      - const: http://publications.europa.eu/resource/authority/formjug/JUDGE_HEAR
+        title: Giudice dei procedimenti sommari
+      - const: http://publications.europa.eu/resource/authority/formjug/JUDGE_SINGL
+        title: Giudice unico
+      - const: http://publications.europa.eu/resource/authority/formjug/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/formjug/PLEN_SMALL_05_02_C
+        title: Piccolo plenum V+II
+      - const: http://publications.europa.eu/resource/authority/formjug/PLEN_SMALL_05_04_C
+        title: Piccolo plenum V+IV
+      - const: http://publications.europa.eu/resource/authority/formjug/PLEN_SMALL_06_01_C
+        title: Piccolo plenum VI+I
+      - const: http://publications.europa.eu/resource/authority/formjug/PLEN_SMALL_06_03_C
+        title: Piccolo plenum VI+III
+      - const: http://publications.europa.eu/resource/authority/formjug/PLEN_SMALL_C
+        title: Piccolo plenum
+      - const: http://publications.europa.eu/resource/authority/formjug/PRESID_C
+        title: Presidente di sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/PRESID_F
+        title: Presidente di sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/PRESID_T
+        title: Presidente di sezione
+      - const: http://publications.europa.eu/resource/authority/formjug/PRESID_VICE_C
+        title: Vicepresidente
+      - const: http://publications.europa.eu/resource/authority/formjug/PRESID_VICE_T
+        title: Vicepresidente
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

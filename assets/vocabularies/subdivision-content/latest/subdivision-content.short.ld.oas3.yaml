@@ -1,0 +1,29 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/subdivision-content/ART_AMEND
+        title: Articolo con disposizioni modificative
+      - const: http://publications.europa.eu/resource/authority/subdivision-content/ART_DEF
+        title: Articolo di definizioni
+      - const: http://publications.europa.eu/resource/authority/subdivision-content/BACKGROUND
+        title: Contesto
+      - const: http://publications.europa.eu/resource/authority/subdivision-content/BLOCK_SFR
+        title: Blocco di formula scientifica
+      - const: http://publications.europa.eu/resource/authority/subdivision-content/BLOCK_TAB
+        title: Blocco di tabella
+      - const: http://publications.europa.eu/resource/authority/subdivision-content/CITATION_DASH
+        title: Citazione con trattino
+      - const: http://publications.europa.eu/resource/authority/subdivision-content/FTN_CONTENT
+        title: "Contenuto delle note a pi\xE8 di pagina"
+      - const: http://publications.europa.eu/resource/authority/subdivision-content/OP_DATPRO
+        title: Dati provvisori
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

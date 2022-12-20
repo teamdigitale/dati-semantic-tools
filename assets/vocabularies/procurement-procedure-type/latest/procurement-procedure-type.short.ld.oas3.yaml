@@ -1,0 +1,33 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/procurement-procedure-type/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/procurement-procedure-type/comp-dial
+        title: Dialogo competitivo
+      - const: http://publications.europa.eu/resource/authority/procurement-procedure-type/comp-tend
+        title: Procedura di gara
+      - const: http://publications.europa.eu/resource/authority/procurement-procedure-type/innovation
+        title: Partenariato per l'innovazione
+      - const: http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-w-call
+        title: Negoziata con previa indizione di gara / competitiva con negoziazione
+      - const: http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-wo-call
+        title: Negoziata senza previa indizione di gara
+      - const: http://publications.europa.eu/resource/authority/procurement-procedure-type/open
+        title: Aperta
+      - const: http://publications.europa.eu/resource/authority/procurement-procedure-type/oth-mult
+        title: "Altra procedura a pi\xF9 fasi"
+      - const: http://publications.europa.eu/resource/authority/procurement-procedure-type/oth-single
+        title: Altra procedura a fase unica
+      - const: http://publications.europa.eu/resource/authority/procurement-procedure-type/restricted
+        title: Ristretta
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

@@ -1,0 +1,60 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "The Person schema",
+    "version": "202108.01.00",
+    "x-summary": "A minimal Person schema compliant with CPV ontology.",
+    "license": {
+      "name": "BSD3",
+      "url": "https://opensource.org/licenses/BSD-3-Clause"
+    },
+    "termsOfService": "https://opensource.org/licenses/BSD-3-Clause",
+    "contact": {
+      "name": "Roberto Polli",
+      "email": "robipolli@gmail.com",
+      "url": "http://spcdata.digitpa.gov.it/Amministrazione/agid"
+    },
+    "description": "This Person schema is derived from the [CPV/Person](https://w3id.org/italia/onto/CPV/Person) ontology.\n\nThis description field can be rendered in markdown or in text-only in catalogues\nand other interfaces."
+  },
+  "paths": {},
+  "components": {
+    "schemas": {
+      "TaxCode": {
+        "type": "string",
+        "description": "Il codice fiscale. Associato a https://w3id.org/italia/onto/CPV/taxCode.",
+        "example": "RSSMRA75L01H501A",
+        "maxLength": 16,
+        "minLength": 11
+      },
+      "Person": {
+        "type": "object",
+        "x-jsonld-type": "https://w3id.org/italia/onto/CPV/Person",
+        "additionalProperties": false,
+        "description": "Questo schema rappresenta una persona fisica.",
+        "required": [
+          "given_name",
+          "family_name",
+          "date_of_birth",
+          "tax_code"
+        ],
+        "properties": {
+          "tax_code": {
+            "$ref": "#/components/schemas/TaxCode"
+          },
+          "date_of_birth": {
+            "format": "date",
+            "type": "string"
+          },
+          "family_name": {
+            "maxLength": 255,
+            "type": "string"
+          },
+          "given_name": {
+            "maxLength": 255,
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/dataset-type/APROF
+        title: Profilo applicazione
+      - const: http://publications.europa.eu/resource/authority/dataset-type/ATTO_LEX
+        title: "Tabella ATTO \u2013 dominio EUR-Lex"
+      - const: http://publications.europa.eu/resource/authority/dataset-type/ATTO_PUB
+        title: "Tabella ATTO \u2013 dominio Pubblicazioni"
+      - const: http://publications.europa.eu/resource/authority/dataset-type/CODE_LIST
+        title: Elenco dei codici
+      - const: http://publications.europa.eu/resource/authority/dataset-type/CORE_COMP
+        title: Componente centrale
+      - const: http://publications.europa.eu/resource/authority/dataset-type/DOMAIN_MODEL
+        title: Modello di dominio
+      - const: http://publications.europa.eu/resource/authority/dataset-type/DSCRP_SERV
+        title: Descrizione del servizio
+      - const: http://publications.europa.eu/resource/authority/dataset-type/GEOSPATIAL
+        title: Dati geospaziali
+      - const: http://publications.europa.eu/resource/authority/dataset-type/GLOSSARY
+        title: Glossario
+      - const: http://publications.europa.eu/resource/authority/dataset-type/IEPD
+        title: "Descrizione del pacchetto \xABscambio di informazioni\xBB"
+      - const: http://publications.europa.eu/resource/authority/dataset-type/MAPPING
+        title: Mappatura
+      - const: http://publications.europa.eu/resource/authority/dataset-type/NAL
+        title: Elenco dei nomi autorizzati
+      - const: http://publications.europa.eu/resource/authority/dataset-type/ONTOLOGY
+        title: Ontologia
+      - const: http://publications.europa.eu/resource/authority/dataset-type/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/dataset-type/SCHEMA
+        title: Schema
+      - const: http://publications.europa.eu/resource/authority/dataset-type/STATISTICAL
+        title: Dati statistici
+      - const: http://publications.europa.eu/resource/authority/dataset-type/STYLES
+        title: Fogli di stile
+      - const: http://publications.europa.eu/resource/authority/dataset-type/SYNTAX_ECD_SCHEME
+        title: Sistema di codifica basato sulla sintassi
+      - const: http://publications.europa.eu/resource/authority/dataset-type/SYNTHETIC_DATA
+        title: Dati sintetici
+      - const: http://publications.europa.eu/resource/authority/dataset-type/TAXONOMY
+        title: Tassonomia
+      - const: http://publications.europa.eu/resource/authority/dataset-type/TEST_DATA
+        title: Dati di prova
+      - const: http://publications.europa.eu/resource/authority/dataset-type/THESAURUS
+        title: Tesauro
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

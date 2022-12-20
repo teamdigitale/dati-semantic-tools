@@ -1,0 +1,37 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/concept-status/CANDIDATE
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/concept-status/CANDIDATE_DEPRECATED
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/concept-status/CURRENT
+        title: attuale
+      - const: http://publications.europa.eu/resource/authority/concept-status/DEPRECATED
+        title: sconsigliato
+      - const: http://publications.europa.eu/resource/authority/concept-status/DRAFT
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/concept-status/DRAFT_DEPRECATED
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/concept-status/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/concept-status/RETIRED
+        title: ritirato
+      - const: http://publications.europa.eu/resource/authority/concept-status/REVISED
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/concept-status/REVISED_DEPRECATED
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/concept-status/WAITING
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/concept-status/WAITING_DEPRECATED
+        title: .nan
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

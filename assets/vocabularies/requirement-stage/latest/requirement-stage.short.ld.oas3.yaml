@@ -1,0 +1,23 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/requirement-stage/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/requirement-stage/not-requ
+        title: Indicazione non necessaria
+      - const: http://publications.europa.eu/resource/authority/requirement-stage/nyk
+        title: Dato non ancora noto
+      - const: http://publications.europa.eu/resource/authority/requirement-stage/par-requ
+        title: Indicazione obbligatoria nella domanda di partecipazione
+      - const: http://publications.europa.eu/resource/authority/requirement-stage/t-requ
+        title: Indicazione obbligatoria nell'offerta
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

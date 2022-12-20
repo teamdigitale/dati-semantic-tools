@@ -1,0 +1,243 @@
+{
+  "@context": {
+    "at": "http://publications.europa.eu/ontology/authority/",
+    "atold": "http://publications.europa.eu/resource/authority/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://publications.europa.eu/resource/authority/correction-status/CORR_ISG",
+      "@type": "skos:Concept",
+      "at:authority-code": "CORR_ISG",
+      "at:deprecated": "false",
+      "at:op-code": "CORR_ISG",
+      "at:start.use": "2014-07-28",
+      "atold:op-code": "CORR_ISG",
+      "dc:identifier": "CORR_ISG",
+      "skos:inScheme": {
+        "@id": "atold:correction-status"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "corrected for ISG"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/correction-status/OP_DATPRO",
+      "@type": "skos:Concept",
+      "at:op-code": "OP_DATPRO",
+      "atold:op-code": "OP_DATPRO",
+      "dc:identifier": "OP_DATPRO",
+      "skos:inScheme": {
+        "@id": "atold:correction-status"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "НЕОКОНЧАТЕЛНИ ДАННИ"
+        },
+        {
+          "@language": "cs",
+          "@value": "Předběžné údaje"
+        },
+        {
+          "@language": "da",
+          "@value": "Midlertidige data"
+        },
+        {
+          "@language": "de",
+          "@value": "Vorläufige Daten"
+        },
+        {
+          "@language": "el",
+          "@value": "Προσωρινά δεδομένα"
+        },
+        {
+          "@language": "en",
+          "@value": "Provisional data"
+        },
+        {
+          "@language": "es",
+          "@value": "Datos provisionales"
+        },
+        {
+          "@language": "et",
+          "@value": "Esialgsed andmed"
+        },
+        {
+          "@language": "fi",
+          "@value": "Alustavat tiedot"
+        },
+        {
+          "@language": "fr",
+          "@value": "Données provisoires"
+        },
+        {
+          "@language": "ga",
+          "@value": "Sonraí sealadacha"
+        },
+        {
+          "@language": "hr",
+          "@value": "Privremeni podaci"
+        },
+        {
+          "@language": "hu",
+          "@value": "Ideiglenes adatok"
+        },
+        {
+          "@language": "it",
+          "@value": "Dati provvisori"
+        },
+        {
+          "@language": "lt",
+          "@value": "Laikinieji duomenys"
+        },
+        {
+          "@language": "lv",
+          "@value": "Provizoriski dati"
+        },
+        {
+          "@language": "mt",
+          "@value": "Dejta provviżorja"
+        },
+        {
+          "@language": "nl",
+          "@value": "Voorlopige gegevens"
+        },
+        {
+          "@language": "pl",
+          "@value": "Dane tymczasowe"
+        },
+        {
+          "@language": "pt",
+          "@value": "Dados provisórios"
+        },
+        {
+          "@language": "ro",
+          "@value": "Date provizorii"
+        },
+        {
+          "@language": "sk",
+          "@value": "Predbežné údaje"
+        },
+        {
+          "@language": "sl",
+          "@value": "Začasni podatki"
+        },
+        {
+          "@language": "sv",
+          "@value": "Tillfälliga uppgifter"
+        }
+      ]
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/correction-status/CORR",
+      "@type": "skos:Concept",
+      "at:authority-code": "CORR",
+      "at:deprecated": "false",
+      "at:op-code": "CORR",
+      "at:start.use": "2014-07-28",
+      "atold:op-code": "CORR",
+      "dc:identifier": "CORR",
+      "skos:inScheme": {
+        "@id": "atold:correction-status"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "corrected"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/correction-status/NOT_CORR",
+      "@type": "skos:Concept",
+      "at:authority-code": "NOT_CORR",
+      "at:deprecated": "false",
+      "at:op-code": "NOT_CORR",
+      "at:start.use": "2014-07-28",
+      "atold:op-code": "NOT_CORR",
+      "dc:identifier": "NOT_CORR",
+      "skos:inScheme": {
+        "@id": "atold:correction-status"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "not corrected"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/correction-status/NOT_APPL",
+      "@type": "skos:Concept",
+      "at:authority-code": "NOT_APPL",
+      "at:deprecated": "false",
+      "at:op-code": "NOT_APPL",
+      "at:start.use": "2014-07-28",
+      "atold:op-code": "NOT_APPL",
+      "dc:identifier": "NOT_APPL",
+      "skos:inScheme": {
+        "@id": "atold:correction-status"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "not applicable"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/correction-status/UNDER",
+      "@type": "skos:Concept",
+      "at:authority-code": "UNDER",
+      "at:deprecated": "false",
+      "at:op-code": "UNDER",
+      "at:start.use": "2014-07-28",
+      "atold:op-code": "UNDER",
+      "dc:identifier": "UNDER",
+      "skos:inScheme": {
+        "@id": "atold:correction-status"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "under check"
+      }
+    },
+    {
+      "@id": "atold:correction-status",
+      "@type": "skos:ConceptScheme",
+      "at:prefLabel": {
+        "@language": "en",
+        "@value": "Correction status"
+      },
+      "at:table.id": "correction-status",
+      "at:table.version.number": "20160831-0",
+      "owl:versionInfo": "20160831-0",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Correction status"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Correction status"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/correction-status/NOT_CHNG",
+      "@type": "skos:Concept",
+      "at:authority-code": "NOT_CHNG",
+      "at:deprecated": "false",
+      "at:op-code": "NOT_CHNG",
+      "at:start.use": "2014-07-28",
+      "atold:op-code": "NOT_CHNG",
+      "dc:identifier": "NOT_CHNG",
+      "skos:inScheme": {
+        "@id": "atold:correction-status"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "do not change"
+      }
+    }
+  ]
+}

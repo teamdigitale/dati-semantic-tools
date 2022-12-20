@@ -1,0 +1,139 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/criterion/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/criterion/autorisation
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/aver-year-to
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/bankr-nat
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/bankruptcy
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/chain-manage
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/corruption
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/cred-arran
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/crime-org
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/distorsion
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/envir-certif-indep
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/envir-law
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/envir-measure
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/eo-group
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/finan-laund
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/finan-rat
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/finan-requ
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/fraud
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/gen-year-to
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/human-traffic
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/indem-insu
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/insolvency
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/labour-law
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/liq-admin
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/manage-staff
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/membership
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/misinterpr
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/nati-ground
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/partic-confl
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/prep-confl
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/prof-misconduct
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/prof-regist
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/qa-certif-inst
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/qu-certif-indep
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/qual-cont-tech
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/qual-facil
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/qualification
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/registered
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/relied
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/research-fac
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/sanction
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/service-perform
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/shelt-worksh
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/sme
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/socsec-law
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/socsec-pay
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/spec-aver-to
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/spec-req-check
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/spec-year-to
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/staff-red
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/subco-ent
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/suncont-port
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/supply-perform
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/susp-act
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/tax-pay
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/tech-equip
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/terr-offence
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/trade-regist
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/w-autent
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/wo-autent
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/work-perform
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/work-tech
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/criterion/year-manpower
+        title: .nan
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

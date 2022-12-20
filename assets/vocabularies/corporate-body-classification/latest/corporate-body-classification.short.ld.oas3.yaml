@@ -1,0 +1,99 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/AGENCY_CFSP
+        title: Agenzia per la politica estera e di sicurezza comune
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/AGENCY_DEC
+        title: Agenzia decentrata
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/AGENCY_EURATOM
+        title: "Agenzia dell\u2019Euratom"
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/AGENCY_EXEC
+        title: Agenzia esecutiva
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/AGENCY_OTHER
+        title: Altra agenzia
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/CB
+        title: Persona giuridica
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/CB_EU
+        title: "Persona giuridica dell\u2019Unione europea"
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/CB_INT
+        title: Organizzazione internazionale
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/CB_OTHER
+        title: Altra organizzazione
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/CMT_MIX
+        title: Comitato misto
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/COR_COM
+        title: Commissione CdR
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/COR_DIR
+        title: Direzione CdR
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/COR_GROUP
+        title: Gruppo CdR
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/COUN_ASS
+        title: Consiglio di associazione
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/COUN_COOP
+        title: Consiglio di cooperazione
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/COUN_STAB_ASS
+        title: Consiglio di stabilizzazione e di associazione
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/DEL
+        title: Delegazione
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/DIR
+        title: Direzione
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/DIR_GEN
+        title: Direzione generale
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/EP_AP
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/EP_CE
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/EP_CJ
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/EP_CMT
+        title: Commissione parlamentare PE
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/EP_CT
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/EP_DE
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/EP_DEL
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/EP_DIR_GEN
+        title: Direzione generale PE
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/EP_DM
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/EP_GROUP
+        title: Gruppo politico PE
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/EP_IG
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/EP_POLBODY
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/EP_SC
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/EU_AGENCY
+        title: "Agenzia dell\u2019UE"
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/EU_BODY
+        title: "Organo dell\u2019UE"
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/EU_INST
+        title: "Istituzione dell\u2019UE"
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/EU_INTERINSTSERV
+        title: "Servizio interistituzionale dell\u2019UE"
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/EU_JU
+        title: "Impresa comune dell\u2019UE"
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/INF_OFF
+        title: "Ufficio d\u2019informazione"
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/LIA_OFF
+        title: Ufficio di collegamento
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/NP
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/REPRES
+        title: Rappresentanza
+      - const: http://publications.europa.eu/resource/authority/corporate-body-classification/SERV_DEP
+        title: Servizio
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

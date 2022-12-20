@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:at="http://publications.europa.eu/ontology/authority/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:atold="http://publications.europa.eu/resource/authority/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/product-form/OP_DATPRO">
+    <at:op-code>OP_DATPRO</at:op-code>
+    <atold:op-code>OP_DATPRO</atold:op-code>
+    <dc:identifier>OP_DATPRO</dc:identifier>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/product-form"/>
+    <skos:prefLabel xml:lang="bg">НЕОКОНЧАТЕЛНИ ДАННИ</skos:prefLabel>
+    <skos:prefLabel xml:lang="cs">Předběžné údaje</skos:prefLabel>
+    <skos:prefLabel xml:lang="da">Midlertidige data</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Vorläufige Daten</skos:prefLabel>
+    <skos:prefLabel xml:lang="el">Προσωρινά δεδομένα</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Provisional data</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Datos provisionales</skos:prefLabel>
+    <skos:prefLabel xml:lang="et">Esialgsed andmed</skos:prefLabel>
+    <skos:prefLabel xml:lang="fi">Alustavat tiedot</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Données provisoires</skos:prefLabel>
+    <skos:prefLabel xml:lang="ga">Sonraí sealadacha</skos:prefLabel>
+    <skos:prefLabel xml:lang="hr">Privremeni podaci</skos:prefLabel>
+    <skos:prefLabel xml:lang="hu">Ideiglenes adatok</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Dati provvisori</skos:prefLabel>
+    <skos:prefLabel xml:lang="lt">Laikinieji duomenys</skos:prefLabel>
+    <skos:prefLabel xml:lang="lv">Provizoriski dati</skos:prefLabel>
+    <skos:prefLabel xml:lang="mt">Dejta provviżorja</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Voorlopige gegevens</skos:prefLabel>
+    <skos:prefLabel xml:lang="pl">Dane tymczasowe</skos:prefLabel>
+    <skos:prefLabel xml:lang="pt">Dados provisórios</skos:prefLabel>
+    <skos:prefLabel xml:lang="ro">Date provizorii</skos:prefLabel>
+    <skos:prefLabel xml:lang="sk">Predbežné údaje</skos:prefLabel>
+    <skos:prefLabel xml:lang="sl">Začasni podatki</skos:prefLabel>
+    <skos:prefLabel xml:lang="sv">Tillfälliga uppgifter</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/product-form/PRINT_HRDCV">
+    <at:authority-code>PRINT_HRDCV</at:authority-code>
+    <at:deprecated>false</at:deprecated>
+    <at:op-code>PRINT_HRDCV</at:op-code>
+    <at:op-mapped-code>
+      <at:MappedCode rdf:nodeID="nf96681e0125a4675b5c4b9acd164b81fb9">
+        <at:legacy-code>BB</at:legacy-code>
+        <dc:source>ONIX</dc:source>
+      </at:MappedCode>
+    </at:op-mapped-code>
+    <at:start.use>1951-01-01</at:start.use>
+    <atold:op-code>PRINT_HRDCV</atold:op-code>
+    <dc:identifier>PRINT_HRDCV</dc:identifier>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/product-form"/>
+    <skos:prefLabel xml:lang="en">Print (hardcover)</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/product-form/PRINT_RGBD">
+    <at:authority-code>PRINT_RGBD</at:authority-code>
+    <at:deprecated>false</at:deprecated>
+    <at:op-code>PRINT_RGBD</at:op-code>
+    <at:op-mapped-code>
+      <at:MappedCode rdf:nodeID="nf96681e0125a4675b5c4b9acd164b81fb11">
+        <at:legacy-code>BE</at:legacy-code>
+        <dc:source>ONIX</dc:source>
+      </at:MappedCode>
+    </at:op-mapped-code>
+    <at:start.use>1951-01-01</at:start.use>
+    <atold:op-code>PRINT_RGBD</atold:op-code>
+    <dc:identifier>PRINT_RGBD</dc:identifier>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/product-form"/>
+    <skos:prefLabel xml:lang="en">Print (ringbinder)</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/product-form/POSTER_PROM">
+    <at:authority-code>POSTER_PROM</at:authority-code>
+    <at:deprecated>false</at:deprecated>
+    <at:op-code>POSTER_PROM</at:op-code>
+    <at:op-mapped-code>
+      <at:MappedCode rdf:nodeID="nf96681e0125a4675b5c4b9acd164b81fb7">
+        <at:legacy-code>XF</at:legacy-code>
+        <dc:source>ONIX</dc:source>
+      </at:MappedCode>
+    </at:op-mapped-code>
+    <at:start.use>1951-01-01</at:start.use>
+    <atold:op-code>POSTER_PROM</atold:op-code>
+    <dc:identifier>POSTER_PROM</dc:identifier>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/product-form"/>
+    <skos:prefLabel xml:lang="en">Poster, promotional</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/product-form/DVDROM">
+    <at:authority-code>DVDROM</at:authority-code>
+    <at:deprecated>false</at:deprecated>
+    <at:op-code>DVDROM</at:op-code>
+    <at:op-mapped-code>
+      <at:MappedCode rdf:nodeID="nf96681e0125a4675b5c4b9acd164b81fb3">
+        <at:legacy-code>DI</at:legacy-code>
+        <dc:source>ONIX</dc:source>
+      </at:MappedCode>
+    </at:op-mapped-code>
+    <at:start.use>1951-01-01</at:start.use>
+    <atold:op-code>DVDROM</atold:op-code>
+    <dc:identifier>DVDROM</dc:identifier>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/product-form"/>
+    <skos:prefLabel xml:lang="en">DVD-ROM</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/product-form/LEAFLET">
+    <at:authority-code>LEAFLET</at:authority-code>
+    <at:deprecated>false</at:deprecated>
+    <at:op-code>LEAFLET</at:op-code>
+    <at:start.use>1951-01-01</at:start.use>
+    <atold:op-code>LEAFLET</atold:op-code>
+    <dc:identifier>LEAFLET</dc:identifier>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/product-form"/>
+    <skos:prefLabel xml:lang="en">Leaflet</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/product-form/PRINT">
+    <at:authority-code>PRINT</at:authority-code>
+    <at:deprecated>false</at:deprecated>
+    <at:op-code>PRINT</at:op-code>
+    <at:op-mapped-code>
+      <at:MappedCode rdf:nodeID="nf96681e0125a4675b5c4b9acd164b81fb8">
+        <at:legacy-code>BA</at:legacy-code>
+        <dc:source>ONIX</dc:source>
+      </at:MappedCode>
+    </at:op-mapped-code>
+    <at:start.use>1951-01-01</at:start.use>
+    <atold:op-code>PRINT</atold:op-code>
+    <dc:identifier>PRINT</dc:identifier>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/product-form"/>
+    <skos:prefLabel xml:lang="en">Print</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/product-form/PRINT_SFTCV">
+    <at:authority-code>PRINT_SFTCV</at:authority-code>
+    <at:deprecated>false</at:deprecated>
+    <at:op-code>PRINT_SFTCV</at:op-code>
+    <at:op-mapped-code>
+      <at:MappedCode rdf:nodeID="nf96681e0125a4675b5c4b9acd164b81fb12">
+        <at:legacy-code>BC</at:legacy-code>
+        <dc:source>ONIX</dc:source>
+      </at:MappedCode>
+    </at:op-mapped-code>
+    <at:start.use>1951-01-01</at:start.use>
+    <atold:op-code>PRINT_SFTCV</atold:op-code>
+    <dc:identifier>PRINT_SFTCV</dc:identifier>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/product-form"/>
+    <skos:prefLabel xml:lang="en">Print (softcover)</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/product-form/PRINT_LOSL">
+    <at:authority-code>PRINT_LOSL</at:authority-code>
+    <at:deprecated>false</at:deprecated>
+    <at:op-code>PRINT_LOSL</at:op-code>
+    <at:op-mapped-code>
+      <at:MappedCode rdf:nodeID="nf96681e0125a4675b5c4b9acd164b81fb10">
+        <at:legacy-code>BD</at:legacy-code>
+        <dc:source>ONIX</dc:source>
+      </at:MappedCode>
+    </at:op-mapped-code>
+    <at:start.use>1951-01-01</at:start.use>
+    <atold:op-code>PRINT_LOSL</atold:op-code>
+    <dc:identifier>PRINT_LOSL</dc:identifier>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/product-form"/>
+    <skos:prefLabel xml:lang="en">Print (looseleaf)</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/product-form/POSTCARD">
+    <at:authority-code>POSTCARD</at:authority-code>
+    <at:deprecated>false</at:deprecated>
+    <at:op-code>POSTCARD</at:op-code>
+    <at:op-mapped-code>
+      <at:MappedCode rdf:nodeID="nf96681e0125a4675b5c4b9acd164b81fb5">
+        <at:legacy-code>PJ</at:legacy-code>
+        <dc:source>ONIX</dc:source>
+      </at:MappedCode>
+    </at:op-mapped-code>
+    <at:start.use>1951-01-01</at:start.use>
+    <atold:op-code>POSTCARD</atold:op-code>
+    <dc:identifier>POSTCARD</dc:identifier>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/product-form"/>
+    <skos:prefLabel xml:lang="en">Postcard</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/product-form/SHEET_MAP">
+    <at:authority-code>SHEET_MAP</at:authority-code>
+    <at:deprecated>false</at:deprecated>
+    <at:op-code>SHEET_MAP</at:op-code>
+    <at:op-mapped-code>
+      <at:MappedCode rdf:nodeID="nf96681e0125a4675b5c4b9acd164b81fb14">
+        <at:legacy-code>CA</at:legacy-code>
+        <dc:source>ONIX</dc:source>
+      </at:MappedCode>
+    </at:op-mapped-code>
+    <at:start.use>1951-01-01</at:start.use>
+    <atold:op-code>SHEET_MAP</atold:op-code>
+    <dc:identifier>SHEET_MAP</dc:identifier>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/product-form"/>
+    <skos:prefLabel xml:lang="en">Sheet map</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/product-form/PRINT_STPL">
+    <at:authority-code>PRINT_STPL</at:authority-code>
+    <at:deprecated>false</at:deprecated>
+    <at:op-code>PRINT_STPL</at:op-code>
+    <at:op-mapped-code>
+      <at:MappedCode rdf:nodeID="nf96681e0125a4675b5c4b9acd164b81fb13">
+        <at:legacy-code>BF</at:legacy-code>
+        <dc:source>ONIX</dc:source>
+      </at:MappedCode>
+    </at:op-mapped-code>
+    <at:start.use>1951-01-01</at:start.use>
+    <atold:op-code>PRINT_STPL</atold:op-code>
+    <dc:identifier>PRINT_STPL</dc:identifier>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/product-form"/>
+    <skos:prefLabel xml:lang="en">Print (stapled)</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/product-form/VIDEO_VHS">
+    <at:authority-code>VIDEO_VHS</at:authority-code>
+    <at:deprecated>false</at:deprecated>
+    <at:op-code>VIDEO_VHS</at:op-code>
+    <at:op-mapped-code>
+      <at:MappedCode rdf:nodeID="nf96681e0125a4675b5c4b9acd164b81fb16">
+        <at:legacy-code>VJ</at:legacy-code>
+        <dc:source>ONIX</dc:source>
+      </at:MappedCode>
+    </at:op-mapped-code>
+    <at:start.use>1951-01-01</at:start.use>
+    <atold:op-code>VIDEO_VHS</atold:op-code>
+    <dc:identifier>VIDEO_VHS</dc:identifier>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/product-form"/>
+    <skos:prefLabel xml:lang="en">VHS Video</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/product-form/FOLDER">
+    <at:authority-code>FOLDER</at:authority-code>
+    <at:deprecated>false</at:deprecated>
+    <at:op-code>FOLDER</at:op-code>
+    <at:op-mapped-code>
+      <at:MappedCode rdf:nodeID="nf96681e0125a4675b5c4b9acd164b81fb4">
+        <at:legacy-code>PM</at:legacy-code>
+        <dc:source>ONIX</dc:source>
+      </at:MappedCode>
+    </at:op-mapped-code>
+    <at:start.use>1951-01-01</at:start.use>
+    <atold:op-code>FOLDER</atold:op-code>
+    <dc:identifier>FOLDER</dc:identifier>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/product-form"/>
+    <skos:prefLabel xml:lang="en">Folder</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/product-form/BOOKMARK">
+    <at:authority-code>BOOKMARK</at:authority-code>
+    <at:deprecated>false</at:deprecated>
+    <at:op-code>BOOKMARK</at:op-code>
+    <at:op-mapped-code>
+      <at:MappedCode rdf:nodeID="nf96681e0125a4675b5c4b9acd164b81fb1">
+        <at:legacy-code>PT</at:legacy-code>
+        <dc:source>ONIX</dc:source>
+      </at:MappedCode>
+    </at:op-mapped-code>
+    <at:start.use>1951-01-01</at:start.use>
+    <atold:op-code>BOOKMARK</atold:op-code>
+    <dc:identifier>BOOKMARK</dc:identifier>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/product-form"/>
+    <skos:prefLabel xml:lang="en">Bookmark</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/product-form/POSTER">
+    <at:authority-code>POSTER</at:authority-code>
+    <at:deprecated>false</at:deprecated>
+    <at:op-code>POSTER</at:op-code>
+    <at:op-mapped-code>
+      <at:MappedCode rdf:nodeID="nf96681e0125a4675b5c4b9acd164b81fb6">
+        <at:legacy-code>PK</at:legacy-code>
+        <dc:source>ONIX</dc:source>
+      </at:MappedCode>
+    </at:op-mapped-code>
+    <at:start.use>1951-01-01</at:start.use>
+    <atold:op-code>POSTER</atold:op-code>
+    <dc:identifier>POSTER</dc:identifier>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/product-form"/>
+    <skos:prefLabel xml:lang="en">Poster</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/product-form/CDROM">
+    <at:authority-code>CDROM</at:authority-code>
+    <at:deprecated>false</at:deprecated>
+    <at:op-code>CDROM</at:op-code>
+    <at:op-mapped-code>
+      <at:MappedCode rdf:nodeID="nf96681e0125a4675b5c4b9acd164b81fb2">
+        <at:legacy-code>DB</at:legacy-code>
+        <dc:source>ONIX</dc:source>
+      </at:MappedCode>
+    </at:op-mapped-code>
+    <at:start.use>1951-01-01</at:start.use>
+    <atold:op-code>CDROM</atold:op-code>
+    <dc:identifier>CDROM</dc:identifier>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/product-form"/>
+    <skos:prefLabel xml:lang="en">CD-ROM</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/product-form/USB_FD">
+    <at:authority-code>USB_FD</at:authority-code>
+    <at:deprecated>false</at:deprecated>
+    <at:op-code>USB_FD</at:op-code>
+    <at:op-mapped-code>
+      <at:MappedCode rdf:nodeID="nf96681e0125a4675b5c4b9acd164b81fb15">
+        <at:legacy-code>DM</at:legacy-code>
+        <dc:source>ONIX</dc:source>
+      </at:MappedCode>
+    </at:op-mapped-code>
+    <at:start.use>1951-01-01</at:start.use>
+    <atold:op-code>USB_FD</atold:op-code>
+    <dc:identifier>USB_FD</dc:identifier>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/product-form"/>
+    <skos:prefLabel xml:lang="en">USB flash drive</skos:prefLabel>
+  </skos:Concept>
+  <skos:ConceptScheme rdf:about="http://publications.europa.eu/resource/authority/product-form">
+    <rdfs:label xml:lang="en">Product form</rdfs:label>
+    <at:prefLabel xml:lang="en">Product form</at:prefLabel>
+    <at:table.id>product-form</at:table.id>
+    <at:table.version.number>20160921-0</at:table.version.number>
+    <owl:versionInfo>20160921-0</owl:versionInfo>
+    <skos:prefLabel xml:lang="en">Product form</skos:prefLabel>
+  </skos:ConceptScheme>
+</rdf:RDF>

@@ -1,0 +1,31 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/public-event-type/CAMP_LAUNCH
+        title: Lancio di una campagna
+      - const: http://publications.europa.eu/resource/authority/public-event-type/COMPETITION_AWARD_CEREMONY
+        title: Concorsi e cerimonie di premiazione
+      - const: http://publications.europa.eu/resource/authority/public-event-type/CONFERENCE_SUMMIT
+        title: Conferenze e vertici
+      - const: http://publications.europa.eu/resource/authority/public-event-type/EXHIBITION
+        title: Esposizioni
+      - const: http://publications.europa.eu/resource/authority/public-event-type/INFO_DAY
+        title: Giornate d'informazione
+      - const: http://publications.europa.eu/resource/authority/public-event-type/PARTNER_MEETING
+        title: Riunioni dei partner
+      - const: http://publications.europa.eu/resource/authority/public-event-type/POLITICAL_MEETING
+        title: Riunioni politiche
+      - const: http://publications.europa.eu/resource/authority/public-event-type/PUBLIC_DEBATE
+        title: Dibattiti pubblici
+      - const: http://publications.europa.eu/resource/authority/public-event-type/TRAINING_WORKSHOP
+        title: Formazione e seminari
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

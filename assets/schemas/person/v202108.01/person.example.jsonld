@@ -1,0 +1,34 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://anpr/PLLCLL",
+      "https://w3id.org/italia/onto/CPV/familyName": "Polli",
+      "https://w3id.org/italia/onto/CPV/givenName": "Camilla"
+    },
+    {
+      "@id": "http://anpr/PLLRCR",
+      "https://w3id.org/italia/onto/CPV/givenName": "Riccardo",
+      "https://w3id.org/italia/onto/CPV/surname": "Polli"
+    },
+    {
+      "@id": "http://anpr/PLLRRT",
+      "https://w3id.org/italia/onto/CPV/givenName": "Roberto",
+      "https://w3id.org/italia/onto/CPV/hasChildren": [
+        {
+          "@id": "http://anpr/PLLCLL"
+        },
+        {
+          "@id": "http://anpr/PLLRCR"
+        }
+      ],
+      "https://w3id.org/italia/onto/CPV/surname": "Polli",
+      "https://w3id.org/italia/onto/CPV/taxCode": "PLLRRT"
+    }
+  ]
+}

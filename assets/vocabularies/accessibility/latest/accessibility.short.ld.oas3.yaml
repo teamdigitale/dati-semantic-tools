@@ -1,0 +1,24 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/accessibility/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/accessibility/inc
+        title: "Sono compresi criteri di accessibilit\xE0 per le persone con disabilit\xE0"
+      - const: http://publications.europa.eu/resource/authority/accessibility/n-inc
+        title: "Non sono compresi criteri di accessibilit\xE0 per le persone con disabilit\xE0\
+          \ perch\xE9 l'oggetto dell'appalto non \xE8 destinato all'uso da parte di\
+          \ persone fisiche"
+      - const: http://publications.europa.eu/resource/authority/accessibility/n-inc-just
+        title: "Non sono compresi criteri di accessibilit\xE0 per le persone con disabilit\xE0\
+          \ con la giustificazione seguente"
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

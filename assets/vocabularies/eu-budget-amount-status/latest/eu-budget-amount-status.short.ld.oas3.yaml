@@ -1,0 +1,21 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/eu-budget-amount-status/ADOPTED
+        title: Adottato
+      - const: http://publications.europa.eu/resource/authority/eu-budget-amount-status/AMENDED
+        title: Modificato
+      - const: http://publications.europa.eu/resource/authority/eu-budget-amount-status/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/eu-budget-amount-status/OUTTURN
+        title: Esecuzione
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

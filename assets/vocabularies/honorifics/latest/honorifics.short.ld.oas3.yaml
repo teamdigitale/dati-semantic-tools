@@ -1,0 +1,37 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/honorific/ADMIR_VICE
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/honorific/CAPT_FLT
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/honorific/CDRE
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/honorific/COL
+        title: Col.
+      - const: http://publications.europa.eu/resource/authority/honorific/DR
+        title: Dott.
+      - const: http://publications.europa.eu/resource/authority/honorific/HEMR
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/honorific/HEMS
+        title: S.E.
+      - const: http://publications.europa.eu/resource/authority/honorific/LTCOL
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/honorific/LTGEN
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/honorific/MR
+        title: Sig.
+      - const: http://publications.europa.eu/resource/authority/honorific/MS
+        title: Sig.ra
+      - const: http://publications.europa.eu/resource/authority/honorific/OP_DATPRO
+        title: Dati provvisori
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

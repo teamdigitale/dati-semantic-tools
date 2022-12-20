@@ -1,0 +1,260 @@
+{
+  "@context": {
+    "at": "http://publications.europa.eu/ontology/authority/",
+    "atold": "http://publications.europa.eu/resource/authority/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://publications.europa.eu/resource/authority/access-right/RESTRICTED",
+      "@type": "skos:Concept",
+      "at:authority-code": "RESTRICTED",
+      "at:deprecated": "false",
+      "at:op-code": "RESTRICTED",
+      "at:start.use": "2013-01-01",
+      "atold:op-code": "RESTRICTED",
+      "dc:identifier": "RESTRICTED",
+      "skos:inScheme": {
+        "@id": "atold:access-right"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "restricted"
+        },
+        {
+          "@language": "et",
+          "@value": "Piiratud"
+        }
+      ]
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/access-right/OP_DATPRO",
+      "@type": "skos:Concept",
+      "at:op-code": "OP_DATPRO",
+      "atold:op-code": "OP_DATPRO",
+      "dc:identifier": "OP_DATPRO",
+      "skos:inScheme": {
+        "@id": "atold:access-right"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "НЕОКОНЧАТЕЛНИ ДАННИ"
+        },
+        {
+          "@language": "cs",
+          "@value": "Předběžné údaje"
+        },
+        {
+          "@language": "da",
+          "@value": "Midlertidige data"
+        },
+        {
+          "@language": "de",
+          "@value": "Vorläufige Daten"
+        },
+        {
+          "@language": "el",
+          "@value": "Προσωρινά δεδομένα"
+        },
+        {
+          "@language": "en",
+          "@value": "Provisional data"
+        },
+        {
+          "@language": "es",
+          "@value": "Datos provisionales"
+        },
+        {
+          "@language": "et",
+          "@value": "Esialgsed andmed"
+        },
+        {
+          "@language": "fi",
+          "@value": "Alustavat tiedot"
+        },
+        {
+          "@language": "fr",
+          "@value": "Données provisoires"
+        },
+        {
+          "@language": "ga",
+          "@value": "Sonraí sealadacha"
+        },
+        {
+          "@language": "hr",
+          "@value": "Privremeni podaci"
+        },
+        {
+          "@language": "hu",
+          "@value": "Ideiglenes adatok"
+        },
+        {
+          "@language": "it",
+          "@value": "Dati provvisori"
+        },
+        {
+          "@language": "lt",
+          "@value": "Laikinieji duomenys"
+        },
+        {
+          "@language": "lv",
+          "@value": "Provizoriski dati"
+        },
+        {
+          "@language": "mt",
+          "@value": "Dejta provviżorja"
+        },
+        {
+          "@language": "nl",
+          "@value": "Voorlopige gegevens"
+        },
+        {
+          "@language": "pl",
+          "@value": "Dane tymczasowe"
+        },
+        {
+          "@language": "pt",
+          "@value": "Dados provisórios"
+        },
+        {
+          "@language": "ro",
+          "@value": "Date provizorii"
+        },
+        {
+          "@language": "sk",
+          "@value": "Predbežné údaje"
+        },
+        {
+          "@language": "sl",
+          "@value": "Začasni podatki"
+        },
+        {
+          "@language": "sv",
+          "@value": "Tillfälliga uppgifter"
+        }
+      ]
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/access-right/SENSITIVE",
+      "@type": "skos:Concept",
+      "at:authority-code": "SENSITIVE",
+      "at:deprecated": "false",
+      "at:op-code": "SENSITIVE",
+      "at:start.use": "2020-03-18",
+      "atold:op-code": "SENSITIVE",
+      "dc:identifier": "SENSITIVE",
+      "skos:inScheme": {
+        "@id": "atold:access-right"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "sensitive"
+        },
+        {
+          "@language": "et",
+          "@value": "Tundlik"
+        },
+        {
+          "@language": "fr",
+          "@value": "sensible"
+        }
+      ]
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC",
+      "@type": "skos:Concept",
+      "at:authority-code": "NON_PUBLIC",
+      "at:deprecated": "false",
+      "at:op-code": "NON_PUBLIC",
+      "at:start.use": "2013-01-01",
+      "atold:op-code": "NON_PUBLIC",
+      "dc:identifier": "NON_PUBLIC",
+      "skos:inScheme": {
+        "@id": "atold:access-right"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "non-public"
+        },
+        {
+          "@language": "et",
+          "@value": "Mitteavalik"
+        }
+      ]
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
+      "@type": "skos:Concept",
+      "at:authority-code": "PUBLIC",
+      "at:deprecated": "false",
+      "at:op-code": "PUBLIC",
+      "at:start.use": "2013-01-01",
+      "atold:op-code": "PUBLIC",
+      "dc:identifier": "PUBLIC",
+      "skos:inScheme": {
+        "@id": "atold:access-right"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "public"
+        },
+        {
+          "@language": "et",
+          "@value": "Avalik"
+        }
+      ]
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/access-right/CONFIDENTIAL",
+      "@type": "skos:Concept",
+      "at:authority-code": "CONFIDENTIAL",
+      "at:deprecated": "false",
+      "at:op-code": "CONFIDENTIAL",
+      "at:start.use": "2021-03-17",
+      "atold:op-code": "CONFIDENTIAL",
+      "dc:identifier": "CONFIDENTIAL",
+      "skos:inScheme": {
+        "@id": "atold:access-right"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "confidential"
+        },
+        {
+          "@language": "et",
+          "@value": "Konfidentsiaalne"
+        }
+      ]
+    },
+    {
+      "@id": "atold:access-right",
+      "@type": "skos:ConceptScheme",
+      "at:prefLabel": {
+        "@language": "en",
+        "@value": "Access right"
+      },
+      "at:table.id": "access-right",
+      "at:table.version.number": "20210317-0",
+      "owl:versionInfo": "20210317-0",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Access right"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Access right"
+      }
+    }
+  ]
+}

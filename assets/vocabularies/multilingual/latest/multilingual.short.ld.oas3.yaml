@@ -1,0 +1,813 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/multilingual/010
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/020
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/030
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/040
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/050
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/060
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/070
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/080
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/090
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/100
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/110
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/120
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/130
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/140
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/150
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/160
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/170
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/180
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/190
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/1A0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/1B0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/1C0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/1D0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/1E0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/1F0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/1G0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/1H0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/1J0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/1K0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/1L0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/1M0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/1N0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/1P0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/1Q0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/1R0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/1S0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/1T0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/1U0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/1V0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/1W0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/1X0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/1Y0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/1Z0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/200
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/210
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/220
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/230
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/240
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/250
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/260
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/270
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/280
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/290
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/2A0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/2B0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/2C0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/2D0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/2E0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/2F0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/2G0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/2H0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/2I0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/2J0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/2K0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/2L0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/2M0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/2N0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/2P0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/2Q0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/2R0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/2S0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/2T0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/2U0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/2V0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/2W0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/2X0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/2Y0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/2Z0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/300
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/310
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/320
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/330
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/340
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/350
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/360
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/370
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/380
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/390
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/3A0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/3B0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/3C0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/3D0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/3E0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/3F0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/3G0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/3H0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/3I0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/3J0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/3K0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/3L0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/3M0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/3N0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/3P0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/3Q0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/3R0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/3S0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/3T0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/3U0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/3V0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/3W0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/3X0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/3Y0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/3Z0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/400
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/410
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/420
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/430
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/440
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/450
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/460
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/470
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/480
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/490
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/4A0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/4B0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/4C0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/4D0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/4E0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/4F0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/4G0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/4H0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/4I0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/4J0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/4K0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/4L0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/4M0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/4N0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/4P0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/4Q0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/4R0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/4S0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/4T0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/4U0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/4V0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/4W0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/4X0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/4Y0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/4Z0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/500
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/510
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/520
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/530
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/540
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/550
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/560
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/570
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/580
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/590
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/5A0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/5B0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/5C0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/5D0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/5E0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/5F0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/5G0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/5H0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/5I0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/5J0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/5K0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/5L0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/5M0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/5N0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/5P0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/5Q0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/5R0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/5S0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/5T0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/5U0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/5V0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/5W0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/5X0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/5Y0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/5Z0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/600
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/610
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/620
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/630
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/640
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/650
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/660
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/670
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/680
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/690
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/6A0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/6B0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/6C0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/6D0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/6E0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/6F0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/6G0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/6H0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/6I0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/6J0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/6K0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/6L0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/6M0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/6N0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/6P0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/6Q0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/6R0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/6S0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/6T0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/6U0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/6V0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/6W0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/6X0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/6Y0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/6Z0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/700
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/710
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/720
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/730
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/740
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/750
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/760
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/770
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/780
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/790
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/7A0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/7B0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/7C0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/7D0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/7E0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/7F0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/7G0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/7H0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/7I0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/7J0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/7K0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/7L0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/7M0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/7N0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/7P0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/7Q0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/7R0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/7S0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/7T0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/7U0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/7V0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/7W0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/7X0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/7Y0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/7Z0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/800
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/810
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/820
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/830
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/840
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/850
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/860
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/870
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/880
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/890
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/8A0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/8B0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/8C0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/8D0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/8E0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/8F0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/8G0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/8H0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/8I0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/8J0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/8K0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/8L0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/8M0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/8N0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/8P0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/8Q0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/8R0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/8S0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/8T0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/8U0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/8V0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/8W0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/8X0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/8Y0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/8Z0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/900
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/910
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/920
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/930
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/940
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/950
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/960
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/970
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/980
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/990
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/9A0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/9B0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/9C0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/9D0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/9E0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/9F0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/9G0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/9H0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/9I0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/9J0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/9K0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/9L0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/9M0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/9N0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/9P0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/9Q0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/9R0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/9S0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/9T0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/9U0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/9V0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/9W0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/9X0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/9Y0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/9Z0
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/A00
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/A10
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/A20
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/A30
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/A40
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/A50
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/A60
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/A70
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/A80
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/A90
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/B00
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/B10
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/B20
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/B30
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/B40
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/B50
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/B60
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/B70
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/B80
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/B90
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/C00
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/C10
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/C20
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/C30
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/C40
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/C50
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/C60
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/C70
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/C80
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/C90
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/D00
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/D10
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/D20
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/D30
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/D40
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/D50
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/D60
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/D70
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/D80
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/D90
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/E00
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/E10
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/E20
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/E30
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/E40
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/E50
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/E60
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/E70
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/E80
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/E90
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/F00
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/F10
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/F20
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/F30
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/F40
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/F50
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/F60
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/F70
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/F80
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/F90
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/G00
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/G10
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/G20
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/G30
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/G40
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/G50
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/G60
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/G70
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/G80
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/G90
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/H00
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/H10
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/H20
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/H30
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/H40
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/H50
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/multilingual/OP_DATPRO
+        title: Dati provvisori
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

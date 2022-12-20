@@ -1,0 +1,23 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/licence-domain/CODE
+        title: Code
+      - const: http://publications.europa.eu/resource/authority/licence-domain/DATA
+        title: Dati
+      - const: http://publications.europa.eu/resource/authority/licence-domain/METADATA
+        title: Metadati
+      - const: http://publications.europa.eu/resource/authority/licence-domain/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/licence-domain/W_LIT_ART
+        title: Opere letterarie e/o artistiche
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

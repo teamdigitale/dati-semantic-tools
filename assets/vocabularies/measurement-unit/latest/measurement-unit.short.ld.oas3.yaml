@@ -1,0 +1,113 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/2N
+        title: decibel
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/3C
+        title: uomo-mese
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/AD
+        title: byte
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/AMP
+        title: "amp\xE8re"
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/BAR
+        title: bar
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/BIT
+        title: bit
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/BQL
+        title: becquerel
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/C34
+        title: mole
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/C45
+        title: nanometro
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/CDL
+        title: candela
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/CEL
+        title: grado centigrado
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/CMK
+        title: centimetro quadrato
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/CMQ
+        title: centimetro cubo
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/CMT
+        title: centimetro
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/D30
+        title: terajoule
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/E34
+        title: gigabyte
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/GRM
+        title: grammo
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/GTE
+        title: stazza lorda
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/GWH
+        title: gigawattora
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/HAR
+        title: ettaro
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/HLT
+        title: ettolitro
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/HTZ
+        title: hertz
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/HUR
+        title: ora
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/JOU
+        title: joule
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/KEL
+        title: kelvin
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/KGM
+        title: chilogrammo
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/KMH
+        title: chilometro orario
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/KMK
+        title: chilometro quadrato
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/KTM
+        title: chilometro
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/KWH
+        title: chilowattora
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/KWT
+        title: chilowatt
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/LH
+        title: ora lavorativa
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/LTR
+        title: litro
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/MAW
+        title: megawatt
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/MGM
+        title: milligrammo
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/MIN
+        title: minuto
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/MLT
+        title: millilitro
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/MMT
+        title: millimetro
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/MTK
+        title: metro quadrato
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/MTR
+        title: metro
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/MTS
+        title: metro al secondo
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/NEW
+        title: newton
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/PAL
+        title: pascal
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/SEC
+        title: secondo
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/TKM
+        title: tonnellata-chilometro
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/TNE
+        title: tonnellata
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/TOE
+        title: tonnellata equivalente petrolio
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/VLT
+        title: volt
+      - const: http://publications.europa.eu/resource/authority/measurement-unit/WTT
+        title: watt
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

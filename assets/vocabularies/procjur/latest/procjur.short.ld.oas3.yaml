@@ -1,0 +1,115 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/procjur/ACTION_ANNU
+        title: Ricorso di annullamento
+      - const: http://publications.europa.eu/resource/authority/procjur/ACTION_DAM
+        title: Ricorso per risarcimento dei danni
+      - const: http://publications.europa.eu/resource/authority/procjur/ACTION_DIR
+        title: Ricorso diretto
+      - const: http://publications.europa.eu/resource/authority/procjur/ACTION_FAIL_ACT
+        title: Ricorso per carenza
+      - const: http://publications.europa.eu/resource/authority/procjur/ACTION_FAIL_OBLIG
+        title: Ricorso per inadempimento
+      - const: http://publications.europa.eu/resource/authority/procjur/ACTION_SANC
+        title: Ricorso contro una sanzione
+      - const: http://publications.europa.eu/resource/authority/procjur/ACTION_STAFF
+        title: Ricorsi di dipendenti
+      - const: http://publications.europa.eu/resource/authority/procjur/APPEAL
+        title: Impugnazione
+      - const: http://publications.europa.eu/resource/authority/procjur/APPEAL_INTV
+        title: Impugnazione emessa in sede di intervento
+      - const: http://publications.europa.eu/resource/authority/procjur/APPEAL_INT_MEAS
+        title: Impugnazione di pronuncia emessa in sede di procedimento sommario
+      - const: http://publications.europa.eu/resource/authority/procjur/APPL_AID
+        title: Domanda di gratuito patrocinio
+      - const: http://publications.europa.eu/resource/authority/procjur/APPL_COST
+        title: Domanda relativa alle spese
+      - const: http://publications.europa.eu/resource/authority/procjur/APPL_IMMUN
+        title: "Domanda relativa alle immunit\xE0"
+      - const: http://publications.europa.eu/resource/authority/procjur/APPL_IMPL_IMM
+        title: Domanda di esecuzione immediata (Trattato EURATOM)
+      - const: http://publications.europa.eu/resource/authority/procjur/APPL_INTERP
+        title: Domanda di interpretazione di una sentenza
+      - const: http://publications.europa.eu/resource/authority/procjur/APPL_INTV
+        title: Istanza d'intervento
+      - const: http://publications.europa.eu/resource/authority/procjur/APPL_MEAS_INQ
+        title: Domanda di misure istruttorie
+      - const: http://publications.europa.eu/resource/authority/procjur/APPL_RECT
+        title: Domanda di rettifica di una sentenza
+      - const: http://publications.europa.eu/resource/authority/procjur/APPL_REV
+        title: Domanda di revocazione di una sentenza
+      - const: http://publications.europa.eu/resource/authority/procjur/APPL_SUSP_ADP
+        title: Domanda di sospensione dell'esecuzione o domanda di provvedimenti provvisori
+      - const: http://publications.europa.eu/resource/authority/procjur/APPL_SUSP_ENF
+        title: Domanda di sospensione d'esecuzione forzata
+      - const: http://publications.europa.eu/resource/authority/procjur/CLAUSE_ARB
+        title: Clausola compromissoria
+      - const: http://publications.europa.eu/resource/authority/procjur/COST_ENF
+        title: Esecuzione delle spese
+      - const: http://publications.europa.eu/resource/authority/procjur/COST_TAX
+        title: Liquidazione delle spese
+      - const: http://publications.europa.eu/resource/authority/procjur/DISS
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/procjur/GARNISHEE_ORDER
+        title: Pignoramento
+      - const: http://publications.europa.eu/resource/authority/procjur/INTERP
+        title: Interpretazione
+      - const: http://publications.europa.eu/resource/authority/procjur/JUDG_REF_BACK
+        title: Sentenza pronunciata a seguito di annullamento e rinvio
+      - const: http://publications.europa.eu/resource/authority/procjur/JUDG_REV
+        title: Revocazione di una sentenza
+      - const: http://publications.europa.eu/resource/authority/procjur/OMST
+        title: Omessa pronuncia
+      - const: http://publications.europa.eu/resource/authority/procjur/OPPO
+        title: Opposizione
+      - const: http://publications.europa.eu/resource/authority/procjur/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/procjur/PPAR
+        title: Procedimento particolare
+      - const: http://publications.europa.eu/resource/authority/procjur/PROC_OPI
+        title: Procedura di parere
+      - const: http://publications.europa.eu/resource/authority/procjur/PROC_PART
+        title: Procedimento particolare
+      - const: http://publications.europa.eu/resource/authority/procjur/PROPERTY_INTEL
+        title: "Proprit\xE0 intellettuale"
+      - const: http://publications.europa.eu/resource/authority/procjur/RECT
+        title: Rettifica
+      - const: http://publications.europa.eu/resource/authority/procjur/REFER_PREL
+        title: Rinvio pregiudiziale
+      - const: http://publications.europa.eu/resource/authority/procjur/REFER_PREL_URG
+        title: Rinvio pregiudiziale - Procedimento d'urgenza
+      - const: http://publications.europa.eu/resource/authority/procjur/REF_BACK_ASIDE
+        title: Rinvio dopo annullamento
+      - const: http://publications.europa.eu/resource/authority/procjur/REF_BACK_DECLIN
+        title: Rinvio dopo riattribuzione di cause
+      - const: http://publications.europa.eu/resource/authority/procjur/REF_BACK_LACK
+        title: Rinvio per incompetenza
+      - const: http://publications.europa.eu/resource/authority/procjur/REF_BACK_REVIEW
+        title: Rinvio dopo riesame
+      - const: http://publications.europa.eu/resource/authority/procjur/REF_P_BACK_ASIDE
+        title: Rinvio parziale dopo annullamento
+      - const: http://publications.europa.eu/resource/authority/procjur/REF_P_BACK_DECLIN
+        title: Rinvio parziale dopo riattribuzione di cause
+      - const: http://publications.europa.eu/resource/authority/procjur/REF_P_BACK_LACK
+        title: Rinvio parziale per incompetenza
+      - const: http://publications.europa.eu/resource/authority/procjur/RESP_MEMB
+        title: "Responsabilit\xE0 di un membro delle istituzioni"
+      - const: http://publications.europa.eu/resource/authority/procjur/REVIEW
+        title: Riesame
+      - const: http://publications.europa.eu/resource/authority/procjur/RULING
+        title: Deliberazione (Trattato EURATOM)
+      - const: http://publications.europa.eu/resource/authority/procjur/STAFF
+        title: Funzione pubblica
+      - const: http://publications.europa.eu/resource/authority/procjur/THIRDPARTY_PROCEED
+        title: Opposizione di terzo
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

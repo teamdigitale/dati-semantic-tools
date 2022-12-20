@@ -1,0 +1,189 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/number/CAR_00
+        title: zero
+      - const: http://publications.europa.eu/resource/authority/number/CAR_01
+        title: uno
+      - const: http://publications.europa.eu/resource/authority/number/CAR_02
+        title: due
+      - const: http://publications.europa.eu/resource/authority/number/CAR_03
+        title: tre
+      - const: http://publications.europa.eu/resource/authority/number/CAR_04
+        title: quattro
+      - const: http://publications.europa.eu/resource/authority/number/CAR_05
+        title: cinque
+      - const: http://publications.europa.eu/resource/authority/number/CAR_06
+        title: sei
+      - const: http://publications.europa.eu/resource/authority/number/CAR_07
+        title: sette
+      - const: http://publications.europa.eu/resource/authority/number/CAR_08
+        title: otto
+      - const: http://publications.europa.eu/resource/authority/number/CAR_09
+        title: nove
+      - const: http://publications.europa.eu/resource/authority/number/CAR_10
+        title: dieci
+      - const: http://publications.europa.eu/resource/authority/number/CAR_100
+        title: cento
+      - const: http://publications.europa.eu/resource/authority/number/CAR_1000
+        title: mille
+      - const: http://publications.europa.eu/resource/authority/number/CAR_10000
+        title: diecimila
+      - const: http://publications.europa.eu/resource/authority/number/CAR_100000
+        title: centomila
+      - const: http://publications.europa.eu/resource/authority/number/CAR_11
+        title: undici
+      - const: http://publications.europa.eu/resource/authority/number/CAR_12
+        title: dodici
+      - const: http://publications.europa.eu/resource/authority/number/CAR_13
+        title: tredici
+      - const: http://publications.europa.eu/resource/authority/number/CAR_14
+        title: quattordici
+      - const: http://publications.europa.eu/resource/authority/number/CAR_15
+        title: quindici
+      - const: http://publications.europa.eu/resource/authority/number/CAR_16
+        title: sedici
+      - const: http://publications.europa.eu/resource/authority/number/CAR_17
+        title: diciassette
+      - const: http://publications.europa.eu/resource/authority/number/CAR_18
+        title: diciotto
+      - const: http://publications.europa.eu/resource/authority/number/CAR_19
+        title: diciannove
+      - const: http://publications.europa.eu/resource/authority/number/CAR_20
+        title: venti
+      - const: http://publications.europa.eu/resource/authority/number/CAR_21
+        title: ventuno
+      - const: http://publications.europa.eu/resource/authority/number/CAR_22
+        title: ventidue
+      - const: http://publications.europa.eu/resource/authority/number/CAR_23
+        title: "ventitr\xE9"
+      - const: http://publications.europa.eu/resource/authority/number/CAR_24
+        title: ventiquattro
+      - const: http://publications.europa.eu/resource/authority/number/CAR_25
+        title: venticinque
+      - const: http://publications.europa.eu/resource/authority/number/CAR_26
+        title: ventisei
+      - const: http://publications.europa.eu/resource/authority/number/CAR_27
+        title: ventisette
+      - const: http://publications.europa.eu/resource/authority/number/CAR_28
+        title: ventotto
+      - const: http://publications.europa.eu/resource/authority/number/CAR_29
+        title: ventinove
+      - const: http://publications.europa.eu/resource/authority/number/CAR_30
+        title: trenta
+      - const: http://publications.europa.eu/resource/authority/number/CAR_31
+        title: trentuno
+      - const: http://publications.europa.eu/resource/authority/number/CAR_40
+        title: quaranta
+      - const: http://publications.europa.eu/resource/authority/number/CAR_50
+        title: cinquanta
+      - const: http://publications.europa.eu/resource/authority/number/CAR_60
+        title: sessanta
+      - const: http://publications.europa.eu/resource/authority/number/CAR_70
+        title: settanta
+      - const: http://publications.europa.eu/resource/authority/number/CAR_80
+        title: ottanta
+      - const: http://publications.europa.eu/resource/authority/number/CAR_90
+        title: novanta
+      - const: http://publications.europa.eu/resource/authority/number/CAR_BILLION
+        title: miliardo
+      - const: http://publications.europa.eu/resource/authority/number/CAR_MILLION
+        title: milione
+      - const: http://publications.europa.eu/resource/authority/number/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/number/ORD_01
+        title: primo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_02
+        title: secondo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_03
+        title: terzo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_04
+        title: quarto
+      - const: http://publications.europa.eu/resource/authority/number/ORD_05
+        title: quinto
+      - const: http://publications.europa.eu/resource/authority/number/ORD_06
+        title: sesto
+      - const: http://publications.europa.eu/resource/authority/number/ORD_07
+        title: settimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_08
+        title: ottavo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_09
+        title: nono
+      - const: http://publications.europa.eu/resource/authority/number/ORD_10
+        title: decimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_100
+        title: centesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_1000
+        title: millesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_10000
+        title: diecimillesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_100000
+        title: centomillesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_11
+        title: undicesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_12
+        title: dodicesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_13
+        title: tredicesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_14
+        title: quattrodicesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_15
+        title: quindicesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_16
+        title: sedicesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_17
+        title: diciassettesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_18
+        title: diciottesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_19
+        title: diciannovesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_20
+        title: ventesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_21
+        title: ventunesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_22
+        title: ventiduesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_23
+        title: ventitreesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_24
+        title: ventiquattresimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_25
+        title: venticinquesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_26
+        title: ventiseiesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_27
+        title: ventisettesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_28
+        title: ventottesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_29
+        title: ventinovesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_30
+        title: trentesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_31
+        title: trentunesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_40
+        title: quarantesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_50
+        title: cinquantesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_60
+        title: sessantesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_70
+        title: settantesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_80
+        title: ottantesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_90
+        title: novantesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_BILLION
+        title: miliardesimo
+      - const: http://publications.europa.eu/resource/authority/number/ORD_MILLION
+        title: milionesimo
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

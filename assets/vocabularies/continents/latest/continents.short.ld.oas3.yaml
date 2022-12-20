@@ -1,0 +1,27 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/continent/AFRICA
+        title: Africa
+      - const: http://publications.europa.eu/resource/authority/continent/AMERICA
+        title: America
+      - const: http://publications.europa.eu/resource/authority/continent/ANTARCTICA
+        title: Antartide
+      - const: http://publications.europa.eu/resource/authority/continent/ASIA
+        title: Asia
+      - const: http://publications.europa.eu/resource/authority/continent/EUROPE
+        title: Europa
+      - const: http://publications.europa.eu/resource/authority/continent/OCEANIA
+        title: Oceania
+      - const: http://publications.europa.eu/resource/authority/continent/OP_DATPRO
+        title: Dati provvisori
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

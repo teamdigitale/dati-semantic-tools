@@ -1,0 +1,74 @@
+{
+  "$id": "https://w3id.org/italia/schemas/person/v202101.01/person.json",
+  "$schema": "https://json-schema.org/draft/202-12/schema",
+  "$defs": {
+    "TaxCode": {
+      "$id": "#/$defs/TaxCode",
+      "type": "string",
+      "description": "Il codice fiscale. Associato a https://w3id.org/italia/onto/CPV/taxCode.",
+      "example": "RSSMRA75L01H501A",
+      "maxLength": 16,
+      "minLength": 11
+    },
+    "Parent": {
+      "$id": "#/$defs/Parent",
+      "type": "string",
+      "description": "Uno schema semplificato per associare il solo URL\nche identifica un genitore.\nAssociato a https://w3id.org/italia/onto/CPV/Person.",
+      "additionalProperties": false,
+      "required": [
+        "href"
+      ],
+      "properties": {
+        "href": {
+          "type": "string",
+          "description": "Il codice fiscale del genitore.",
+          "format": "uri"
+        }
+      }
+    },
+    "Person": {
+      "type": "object",
+      "x-jsonld-type": "https://w3id.org/italia/onto/CPV/Person",
+      "additionalProperties": false,
+      "description": "Questo schema rappresenta una persona fisica.",
+      "required": [
+        "given_name",
+        "family_name",
+        "tax_code"
+      ],
+      "properties": {
+        "tax_code": {
+          "$ref": "#/$defs/TaxCode"
+        },
+        "date_of_birth": {
+          "format": "date",
+          "type": "string"
+        },
+        "family_name": {
+          "maxLength": 255,
+          "type": "string"
+        },
+        "given_name": {
+          "maxLength": 255,
+          "type": "string"
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Person"
+          },
+          "maxItems": 50,
+          "minItems": 0
+        },
+        "parents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Parent"
+          },
+          "maxItems": 2,
+          "minItems": 0
+        }
+      }
+    }
+  }
+}

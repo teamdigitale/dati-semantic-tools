@@ -1,0 +1,815 @@
+{
+  "@context": {
+    "at": "http://publications.europa.eu/ontology/authority/",
+    "atold": "http://publications.europa.eu/resource/authority/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://publications.europa.eu/resource/authority/human-sex/MALE",
+      "@type": "skos:Concept",
+      "at:authority-code": "MALE",
+      "at:deprecated": "false",
+      "at:op-code": "MALE",
+      "at:op-mapped-code": {
+        "@id": "_:n106a63cab1b24095aab1be399ec9a7b1b2"
+      },
+      "at:start.use": "2015-05-06",
+      "atold:op-code": "MALE",
+      "dc:identifier": "MALE",
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "The concept MALE is used for representing the human sexes in the context of interchange of information in the social sciences domain."
+        },
+        {
+          "@language": "fr",
+          "@value": "Le concept MASCULIN est utilisé pour représenter les sexes humains dans le contexte d'échange d'information appliqué au domaine des sciences sociales."
+        }
+      ],
+      "skos:inScheme": {
+        "@id": "atold:human-sex"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "мъжки"
+        },
+        {
+          "@language": "cs",
+          "@value": "mužské"
+        },
+        {
+          "@language": "da",
+          "@value": "mand"
+        },
+        {
+          "@language": "de",
+          "@value": "männlich"
+        },
+        {
+          "@language": "el",
+          "@value": "άνδρας"
+        },
+        {
+          "@language": "en",
+          "@value": "male"
+        },
+        {
+          "@language": "es",
+          "@value": "masculino"
+        },
+        {
+          "@language": "et",
+          "@value": "meessoost"
+        },
+        {
+          "@language": "fi",
+          "@value": "miehet"
+        },
+        {
+          "@language": "fr",
+          "@value": "masculin"
+        },
+        {
+          "@language": "ga",
+          "@value": "fireann"
+        },
+        {
+          "@language": "hr",
+          "@value": "muški"
+        },
+        {
+          "@language": "hu",
+          "@value": "férfi"
+        },
+        {
+          "@language": "it",
+          "@value": "maschile"
+        },
+        {
+          "@language": "lt",
+          "@value": "vyras"
+        },
+        {
+          "@language": "lv",
+          "@value": "vīrieši"
+        },
+        {
+          "@language": "mt",
+          "@value": "maskili"
+        },
+        {
+          "@language": "nl",
+          "@value": "mannelijk"
+        },
+        {
+          "@language": "pl",
+          "@value": "męska"
+        },
+        {
+          "@language": "pt",
+          "@value": "masculino"
+        },
+        {
+          "@language": "ro",
+          "@value": "masculin"
+        },
+        {
+          "@language": "sk",
+          "@value": "mužské"
+        },
+        {
+          "@language": "sl",
+          "@value": "moški"
+        },
+        {
+          "@language": "sv",
+          "@value": "man"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "atold:human-sex"
+      }
+    },
+    {
+      "@id": "_:n106a63cab1b24095aab1be399ec9a7b1b2",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "1",
+      "dc:source": "ISO_5218_2"
+    },
+    {
+      "@id": "atold:human-sex",
+      "@type": "skos:ConceptScheme",
+      "at:prefLabel": {
+        "@language": "en",
+        "@value": "Human sex"
+      },
+      "at:table.id": "human-sex",
+      "at:table.version.number": "20210929-0",
+      "owl:versionInfo": "20210929-0",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Human sex"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Human sex"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/human-sex/FEMALE",
+      "@type": "skos:Concept",
+      "at:authority-code": "FEMALE",
+      "at:deprecated": "false",
+      "at:op-code": "FEMALE",
+      "at:op-mapped-code": {
+        "@id": "_:n106a63cab1b24095aab1be399ec9a7b1b1"
+      },
+      "at:start.use": "2015-05-06",
+      "atold:op-code": "FEMALE",
+      "dc:identifier": "FEMALE",
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "The concept FEMALE is used for representing the human sexes in the context of interchange of information in the social sciences domain."
+        },
+        {
+          "@language": "fr",
+          "@value": "Le concept FÉMININ est utilisé pour représenter les sexes humains dans le contexte d'échange d'information appliqué au domaine des sciences sociales."
+        }
+      ],
+      "skos:inScheme": {
+        "@id": "atold:human-sex"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "женски"
+        },
+        {
+          "@language": "cs",
+          "@value": "ženské"
+        },
+        {
+          "@language": "da",
+          "@value": "kvinde"
+        },
+        {
+          "@language": "de",
+          "@value": "weiblich"
+        },
+        {
+          "@language": "el",
+          "@value": "γυναίκα"
+        },
+        {
+          "@language": "en",
+          "@value": "female"
+        },
+        {
+          "@language": "es",
+          "@value": "femenino"
+        },
+        {
+          "@language": "et",
+          "@value": "naissoost"
+        },
+        {
+          "@language": "fi",
+          "@value": "naiset"
+        },
+        {
+          "@language": "fr",
+          "@value": "féminin"
+        },
+        {
+          "@language": "ga",
+          "@value": "baineann"
+        },
+        {
+          "@language": "hr",
+          "@value": "ženski"
+        },
+        {
+          "@language": "hu",
+          "@value": "nő"
+        },
+        {
+          "@language": "it",
+          "@value": "femminile"
+        },
+        {
+          "@language": "lt",
+          "@value": "moteris"
+        },
+        {
+          "@language": "lv",
+          "@value": "sievietes"
+        },
+        {
+          "@language": "mt",
+          "@value": "femminili"
+        },
+        {
+          "@language": "nl",
+          "@value": "vrouwelijk"
+        },
+        {
+          "@language": "pl",
+          "@value": "żeńska"
+        },
+        {
+          "@language": "pt",
+          "@value": "feminino"
+        },
+        {
+          "@language": "ro",
+          "@value": "feminin"
+        },
+        {
+          "@language": "sk",
+          "@value": "ženské"
+        },
+        {
+          "@language": "sl",
+          "@value": "ženski"
+        },
+        {
+          "@language": "sv",
+          "@value": "kvinna"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "atold:human-sex"
+      }
+    },
+    {
+      "@id": "_:n106a63cab1b24095aab1be399ec9a7b1b1",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "2",
+      "dc:source": "ISO_5218_2"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/human-sex/NKN",
+      "@type": "skos:Concept",
+      "at:authority-code": "NKN",
+      "at:deprecated": "false",
+      "at:op-code": "NKN",
+      "at:op-mapped-code": {
+        "@id": "_:n106a63cab1b24095aab1be399ec9a7b1b4"
+      },
+      "at:start.use": "2015-05-06",
+      "atold:op-code": "NKN",
+      "dc:identifier": "NKN",
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "The concept NOT KNOWN is used in the context of interchange of information in the social sciences domain when the human sex is unkown."
+        },
+        {
+          "@language": "fr",
+          "@value": "Le concept INCONNU est utilisé dans le contexte d'échange d'information appliqué au domaine des sciences sociales lorsque le sexe humain est inconnu."
+        }
+      ],
+      "skos:inScheme": {
+        "@id": "atold:human-sex"
+      },
+      "skos:narrower": {
+        "@id": "http://publications.europa.eu/resource/authority/human-sex/NST"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "не е известен"
+        },
+        {
+          "@language": "cs",
+          "@value": "není známo"
+        },
+        {
+          "@language": "da",
+          "@value": "ikke kendt"
+        },
+        {
+          "@language": "de",
+          "@value": "nicht bekannt"
+        },
+        {
+          "@language": "el",
+          "@value": "άγνωστο"
+        },
+        {
+          "@language": "en",
+          "@value": "not known"
+        },
+        {
+          "@language": "es",
+          "@value": "se desconoce"
+        },
+        {
+          "@language": "et",
+          "@value": "ei ole teada"
+        },
+        {
+          "@language": "fi",
+          "@value": "ei tiedossa"
+        },
+        {
+          "@language": "fr",
+          "@value": "inconnu"
+        },
+        {
+          "@language": "ga",
+          "@value": "ní fios"
+        },
+        {
+          "@language": "hr",
+          "@value": "nije poznato"
+        },
+        {
+          "@language": "hu",
+          "@value": "nem ismert"
+        },
+        {
+          "@language": "it",
+          "@value": "ignoto"
+        },
+        {
+          "@language": "lt",
+          "@value": "nežinoma"
+        },
+        {
+          "@language": "lv",
+          "@value": "nav zināms"
+        },
+        {
+          "@language": "mt",
+          "@value": "mhux magħruf"
+        },
+        {
+          "@language": "nl",
+          "@value": "onbekend"
+        },
+        {
+          "@language": "pl",
+          "@value": "nieznana"
+        },
+        {
+          "@language": "pt",
+          "@value": "desconhecido"
+        },
+        {
+          "@language": "ro",
+          "@value": "nu se cunoaște"
+        },
+        {
+          "@language": "sk",
+          "@value": "neznáme"
+        },
+        {
+          "@language": "sl",
+          "@value": "ni znano"
+        },
+        {
+          "@language": "sv",
+          "@value": "ej känt"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "atold:human-sex"
+      }
+    },
+    {
+      "@id": "_:n106a63cab1b24095aab1be399ec9a7b1b4",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "0",
+      "dc:source": "ISO_5218_2"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/humansexes/OP_DATPRO",
+      "@type": "skos:Concept",
+      "at:authority-code": "OP_DATPRO",
+      "at:deprecated": "false",
+      "at:op-code": "OP_DATPRO",
+      "at:start.use": "1952-07-23",
+      "atold:op-code": "OP_DATPRO",
+      "dc:identifier": "OP_DATPRO",
+      "skos:inScheme": {
+        "@id": "atold:human-sex"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "НЕОКОНЧАТЕЛНИ ДАННИ"
+        },
+        {
+          "@language": "cs",
+          "@value": "Předběžné údaje"
+        },
+        {
+          "@language": "da",
+          "@value": "Midlertidige data"
+        },
+        {
+          "@language": "de",
+          "@value": "Vorläufige Daten"
+        },
+        {
+          "@language": "el",
+          "@value": "Προσωρινά δεδομένα"
+        },
+        {
+          "@language": "en",
+          "@value": "Provisional data"
+        },
+        {
+          "@language": "es",
+          "@value": "Datos provisionales"
+        },
+        {
+          "@language": "et",
+          "@value": "Esialgsed andmed"
+        },
+        {
+          "@language": "fi",
+          "@value": "Alustavat tiedot"
+        },
+        {
+          "@language": "fr",
+          "@value": "Données provisoires"
+        },
+        {
+          "@language": "ga",
+          "@value": "Sonraí sealadacha"
+        },
+        {
+          "@language": "hr",
+          "@value": "Privremeni podaci"
+        },
+        {
+          "@language": "hu",
+          "@value": "Ideiglenes adatok"
+        },
+        {
+          "@language": "it",
+          "@value": "Dati provvisori"
+        },
+        {
+          "@language": "lt",
+          "@value": "Laikinieji duomenys"
+        },
+        {
+          "@language": "lv",
+          "@value": "Provizoriski dati"
+        },
+        {
+          "@language": "mt",
+          "@value": "Dejta provviżorja"
+        },
+        {
+          "@language": "nl",
+          "@value": "Voorlopige gegevens"
+        },
+        {
+          "@language": "pl",
+          "@value": "Dane tymczasowe"
+        },
+        {
+          "@language": "pt",
+          "@value": "Dados provisórios"
+        },
+        {
+          "@language": "ro",
+          "@value": "Date provizorii"
+        },
+        {
+          "@language": "sk",
+          "@value": "Predbežné údaje"
+        },
+        {
+          "@language": "sl",
+          "@value": "Začasni podatki"
+        },
+        {
+          "@language": "sv",
+          "@value": "Tillfälliga uppgifter"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "atold:human-sex"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/human-sex/NAP",
+      "@type": "skos:Concept",
+      "at:authority-code": "NAP",
+      "at:deprecated": "false",
+      "at:op-code": "NAP",
+      "at:op-mapped-code": {
+        "@id": "_:n106a63cab1b24095aab1be399ec9a7b1b3"
+      },
+      "at:start.use": "2015-05-06",
+      "atold:op-code": "NAP",
+      "dc:identifier": "NAP",
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "The concept NOT APPLICABLE is used in the context of interchange of information in the social sciences domain when none of the sexes can be represented."
+        },
+        {
+          "@language": "fr",
+          "@value": "Le concept SANS OBJET est utilisé dans le contexte d'échange d'information appliqué au domaine des sciences sociales lorsqu'aucun des sexes ne peut être représenté."
+        }
+      ],
+      "skos:inScheme": {
+        "@id": "atold:human-sex"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "не е приложимо"
+        },
+        {
+          "@language": "cs",
+          "@value": "není"
+        },
+        {
+          "@language": "da",
+          "@value": "ikke relevant"
+        },
+        {
+          "@language": "de",
+          "@value": "nicht zutreffend"
+        },
+        {
+          "@language": "el",
+          "@value": "δεν ισχύει"
+        },
+        {
+          "@language": "en",
+          "@value": "not applicable"
+        },
+        {
+          "@language": "es",
+          "@value": "no procede"
+        },
+        {
+          "@language": "et",
+          "@value": "ei kohaldata"
+        },
+        {
+          "@language": "fi",
+          "@value": "ei sovellettavissa"
+        },
+        {
+          "@language": "fr",
+          "@value": "sans objet"
+        },
+        {
+          "@language": "ga",
+          "@value": "ní bhaineann le hábhar"
+        },
+        {
+          "@language": "hr",
+          "@value": "ne primjenjuje se"
+        },
+        {
+          "@language": "hu",
+          "@value": "nem alkalmazandó"
+        },
+        {
+          "@language": "it",
+          "@value": "non pertinente"
+        },
+        {
+          "@language": "lt",
+          "@value": "netaikoma"
+        },
+        {
+          "@language": "lv",
+          "@value": "neattiecas"
+        },
+        {
+          "@language": "mt",
+          "@value": "mhux applikabbli"
+        },
+        {
+          "@language": "nl",
+          "@value": "niet van toepassing"
+        },
+        {
+          "@language": "pl",
+          "@value": "nie ma zastosowania"
+        },
+        {
+          "@language": "pt",
+          "@value": "não aplicável"
+        },
+        {
+          "@language": "ro",
+          "@value": "nu se aplică"
+        },
+        {
+          "@language": "sk",
+          "@value": "neuplatňuje sa"
+        },
+        {
+          "@language": "sl",
+          "@value": "ni relevantno"
+        },
+        {
+          "@language": "sv",
+          "@value": "ej tillämpligt"
+        }
+      ],
+      "skos:topConceptOf": {
+        "@id": "atold:human-sex"
+      }
+    },
+    {
+      "@id": "_:n106a63cab1b24095aab1be399ec9a7b1b3",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "9",
+      "dc:source": "ISO_5218_2"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/human-sex/NST",
+      "@type": "skos:Concept",
+      "at:authority-code": "NST",
+      "at:deprecated": "false",
+      "at:op-code": "NST",
+      "at:op-mapped-code": {
+        "@id": "_:n106a63cab1b24095aab1be399ec9a7b1b5"
+      },
+      "at:start.use": "2020-11-26",
+      "atold:op-code": "NST",
+      "dc:identifier": "NST",
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/human-sex/NKN"
+      },
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "The concept NOT STATED is used in the context of interchange of information in the social sciences domain when the human sex is not stated."
+        },
+        {
+          "@language": "fr",
+          "@value": "Le concept NON INDIQUÉ est utilisé dans le contexte d'échange d'information appliqué au domaine des sciences sociales lorsque le sexe humain est non indiqué."
+        }
+      ],
+      "skos:inScheme": {
+        "@id": "atold:human-sex"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "не е посочен"
+        },
+        {
+          "@language": "cs",
+          "@value": "neuvedeno"
+        },
+        {
+          "@language": "da",
+          "@value": "ikke oplyst"
+        },
+        {
+          "@language": "de",
+          "@value": "nicht angegeben"
+        },
+        {
+          "@language": "el",
+          "@value": "δεν αναφέρεται"
+        },
+        {
+          "@language": "en",
+          "@value": "not stated"
+        },
+        {
+          "@language": "es",
+          "@value": "no consta"
+        },
+        {
+          "@language": "et",
+          "@value": "täpsustamata"
+        },
+        {
+          "@language": "fi",
+          "@value": "ei mainittu"
+        },
+        {
+          "@language": "fr",
+          "@value": "non précisé"
+        },
+        {
+          "@language": "ga",
+          "@value": "ní luaitear"
+        },
+        {
+          "@language": "hr",
+          "@value": "nije navedeno"
+        },
+        {
+          "@language": "hu",
+          "@value": "nincs adat"
+        },
+        {
+          "@language": "it",
+          "@value": "non dichiarato"
+        },
+        {
+          "@language": "lt",
+          "@value": "nenurodyta"
+        },
+        {
+          "@language": "lv",
+          "@value": "nav norādīts"
+        },
+        {
+          "@language": "mt",
+          "@value": "mhux iddikjarat"
+        },
+        {
+          "@language": "nl",
+          "@value": "niet vermeld"
+        },
+        {
+          "@language": "pl",
+          "@value": "nie określono"
+        },
+        {
+          "@language": "pt",
+          "@value": "não indicado"
+        },
+        {
+          "@language": "ro",
+          "@value": "nedeclarat"
+        },
+        {
+          "@language": "sk",
+          "@value": "neuvedené"
+        },
+        {
+          "@language": "sl",
+          "@value": "ni navedeno"
+        },
+        {
+          "@language": "sv",
+          "@value": "ej uppgivet"
+        }
+      ]
+    },
+    {
+      "@id": "_:n106a63cab1b24095aab1be399ec9a7b1b5",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "0",
+      "dc:source": "ISO_5218_2"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/treaty-classification/ACCESS
+        title: Trattato di adesione
+      - const: http://publications.europa.eu/resource/authority/treaty-classification/AMEND
+        title: Trattato modificato
+      - const: http://publications.europa.eu/resource/authority/treaty-classification/CONS
+        title: Versione consolidata
+      - const: http://publications.europa.eu/resource/authority/treaty-classification/FOUND
+        title: Trattato costitutivo
+      - const: http://publications.europa.eu/resource/authority/treaty-classification/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/treaty-classification/OTHER
+        title: Altro
+      - const: http://publications.europa.eu/resource/authority/treaty-classification/SUBPART
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/treaty-classification/WITHDRAWAL
+        title: Accordo di recesso
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

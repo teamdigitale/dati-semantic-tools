@@ -1,0 +1,112 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/ab-low
+        title: Rigetto ingiustificato di offerte anormalmente basse
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/ar-split
+        title: Frazionamento artificioso degli appalti
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/bid-rigging
+        title: "Turbativa d'asta (accertata da un'autorit\xE0 anticartello o garante\
+          \ della concorrenza, da un organo giurisdizionale o da un altro organismo\
+          \ competente)"
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/change-eval
+        title: Negoziazione nel corso della procedura di aggiudicazione, comprese
+          modifiche dell'offerta vincitrice durante la valutazione
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/conf-int
+        title: Conflitto di interessi con incidenza sul risultato della procedura
+          di appalto
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/cp-mod-cond
+        title: Procedura competitiva con negoziazione, con modifica sostanziale delle
+          condizioni fissate nel bando di gara o nel capitolato d'oneri
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/elem-mod
+        title: Modifica degli elementi dell'appalto stabiliti nel bando di gara o
+          nel capitolato d'oneri in maniera non conforme alle norme pertinenti
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/eva-add-crit
+        title: Valutazione secondo ulteriori criteri di aggiudicazione che non sono
+          stati pubblicati
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/eva-diff-crit
+        title: Valutazione delle offerte in base a criteri di aggiudicazione differenti
+          da quelli pubblicati nel bando di gara o nel capitolato d'oneri
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/formal
+        title: Formale
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/ins-audit
+        title: Pista di controllo insufficiente in relazione all'aggiudicazione dell'appalto
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/insuf-timl
+        title: "Tempo insufficiente affinch\xE9 i potenziali offerenti o candidati\
+          \ ottengano la documentazione di gara"
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/irr-involv
+        title: Precedenti relazioni irregolari di candidati o offerenti con il committente
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/mod-inco
+        title: Criteri di selezione o specifiche tecniche sottoposti a modifica dopo
+          l'apertura delle offerte oppure applicati in modo scorretto
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/nc-proc-eap
+        title: Inosservanza della procedura stabilita nella direttiva per gli appalti
+          elettronici e aggregati
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/nc-timl
+        title: Inosservanza dei termini per la ricezione delle offerte o dei termini
+          per la ricezione delle domande di partecipazione
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/ncompl-awcrit
+        title: Descrizione non sufficientemente dettagliata dei criteri di aggiudicazione
+          e della relativa ponderazione
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/ncompl-cn
+        title: Mancata pubblicazione nel bando di gara delle specifiche tecniche,
+          dei criteri di selezione, dei criteri di aggiudicazione (e della relativa
+          ponderazione) o delle condizioni di esecuzione dell'appalto
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/ncompl-com
+        title: Mancata comunicazione e/o pubblicazione di chiarimenti e/o informazioni
+          supplementari
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/ncompl-sub
+        title: Definizione insufficiente o imprecisa dell'oggetto dell'appalto
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/no-notice
+        title: Mancata pubblicazione del bando di gara o assegnazione diretta ingiustificata
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/noex-addinfo
+        title: "Mancata proroga dei termini per la ricezione delle offerte o delle\
+          \ domande di partecipazione nel caso in cui le informazioni supplementari,\
+          \ seppur richieste in tempo utile dall'operatore economico, non sono fornite\
+          \ al pi\xF9 tardi sei giorni prima del termine stabilito"
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/noex-timl
+        title: Mancata proroga dei termini per la ricezione delle offerte o delle
+          domande di partecipazione qualora siano state apportate modifiche significative
+          alla documentazione di gara
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/nojust-nolots
+        title: Mancanza di giustificazione dell'omessa suddivisione di un appalto
+          in lotti
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/npub-limit
+        title: Mancata pubblicazione della proroga dei termini per la ricezione delle
+          offerte o delle domande di partecipazione
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/other
+        title: Altra
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/restr-not-tlim
+        title: Restrizioni all'accesso alla documentazione di gara diverse dal tempo
+          insufficiente
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/unj-comp-pro
+        title: Ricorso senza giustificazione a una procedura competitiva con negoziazione,
+          a un dialogo competitivo o a un partenariato per l'innovazione
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/unj-excl
+        title: Esclusione ingiustificata di offerenti o candidati
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/unj-lim-subc
+        title: Limitazione ingiustificata dei subappalti
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/unj-na-ppr
+        title: Mancato rispetto ingiustificato delle norme in materia di appalti pubblici
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/unj-nrl
+        title: Applicazione di specifiche tecniche, criterio di selezione, criterio
+          di aggiudicazione, criterio di esclusione o condizione di esecuzione dell'appalto
+          che sono discriminatori in ragione di ingiustificate preferenze nazionali,
+          regionali o locali
+      - const: http://publications.europa.eu/resource/authority/irregularity-type/unj-nrl-other
+        title: Applicazione di specifiche tecniche, criteri di selezione, criteri
+          di aggiudicazione, criteri di esclusione o condizioni di esecuzione dell'appalto
+          che sono discriminatori (vale a dire limitano l'accesso di operatori economici)
+          per motivi diversi da ingiustificate preferenze nazionali, regionali o locali
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

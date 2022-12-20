@@ -1,0 +1,27 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/contract-detail/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/contract-detail/all-rev-tic
+        title: Ripartizione dei ricavi dalla vendita di biglietti
+      - const: http://publications.europa.eu/resource/authority/contract-detail/cost-comp
+        title: Parametri di costo per le compensazioni
+      - const: http://publications.europa.eu/resource/authority/contract-detail/exc-right
+        title: Sono concessi diritti di esclusiva
+      - const: http://publications.europa.eu/resource/authority/contract-detail/other
+        title: Altre
+      - const: http://publications.europa.eu/resource/authority/contract-detail/publ-ser-obl
+        title: Obblighi di servizio pubblico
+      - const: http://publications.europa.eu/resource/authority/contract-detail/soc-stand
+        title: Standard sociali
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

@@ -1,0 +1,294 @@
+{
+  "@context": {
+    "at": "http://publications.europa.eu/ontology/authority/",
+    "atold": "http://publications.europa.eu/resource/authority/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://publications.europa.eu/resource/authority/customer-service/cancel",
+      "@type": "skos:Concept",
+      "at:authority-code": "cancel",
+      "at:deprecated": "false",
+      "at:op-code": "cancel",
+      "at:start.use": "2021-06-16",
+      "atold:op-code": "cancel",
+      "dc:identifier": "cancel",
+      "skos:inScheme": {
+        "@id": "atold:customer-service"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Cancellations"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/customer-service/reliability",
+      "@type": "skos:Concept",
+      "at:authority-code": "reliability",
+      "at:deprecated": "false",
+      "at:op-code": "reliability",
+      "at:start.use": "2021-06-16",
+      "atold:op-code": "reliability",
+      "dc:identifier": "reliability",
+      "skos:inScheme": {
+        "@id": "atold:customer-service"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Punctuality and reliability"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/customer-service/clean",
+      "@type": "skos:Concept",
+      "at:authority-code": "clean",
+      "at:deprecated": "false",
+      "at:op-code": "clean",
+      "at:start.use": "2021-06-16",
+      "atold:op-code": "clean",
+      "dc:identifier": "clean",
+      "skos:inScheme": {
+        "@id": "atold:customer-service"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Cleanliness of rolling stock and station facilities"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/customer-service/sat-surv",
+      "@type": "skos:Concept",
+      "at:authority-code": "sat-surv",
+      "at:deprecated": "false",
+      "at:op-code": "sat-surv",
+      "at:start.use": "2021-06-16",
+      "atold:op-code": "sat-surv",
+      "dc:identifier": "sat-surv",
+      "skos:inScheme": {
+        "@id": "atold:customer-service"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Customer satisfaction survey"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/customer-service/info",
+      "@type": "skos:Concept",
+      "at:authority-code": "info",
+      "at:deprecated": "false",
+      "at:op-code": "info",
+      "at:start.use": "2021-06-16",
+      "atold:op-code": "info",
+      "dc:identifier": "info",
+      "skos:inScheme": {
+        "@id": "atold:customer-service"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Information"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/customer-service/ticket",
+      "@type": "skos:Concept",
+      "at:authority-code": "ticket",
+      "at:deprecated": "false",
+      "at:op-code": "ticket",
+      "at:start.use": "2021-06-16",
+      "atold:op-code": "ticket",
+      "dc:identifier": "ticket",
+      "skos:inScheme": {
+        "@id": "atold:customer-service"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Ticketing"
+      }
+    },
+    {
+      "@id": "atold:customer-service",
+      "@type": "skos:ConceptScheme",
+      "at:prefLabel": {
+        "@language": "en",
+        "@value": "Customer service"
+      },
+      "at:table.id": "customer-service",
+      "at:table.version.number": "20210616-0",
+      "owl:versionInfo": "20210616-0",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Customer service"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Customer service"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/customer-service/other",
+      "@type": "skos:Concept",
+      "at:authority-code": "other",
+      "at:deprecated": "false",
+      "at:op-code": "other",
+      "at:start.use": "2021-06-16",
+      "atold:op-code": "other",
+      "dc:identifier": "other",
+      "skos:inScheme": {
+        "@id": "atold:customer-service"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Other"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/customer-service/complaint",
+      "@type": "skos:Concept",
+      "at:authority-code": "complaint",
+      "at:deprecated": "false",
+      "at:op-code": "complaint",
+      "at:start.use": "2021-06-16",
+      "atold:op-code": "complaint",
+      "dc:identifier": "complaint",
+      "skos:inScheme": {
+        "@id": "atold:customer-service"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Complaint handling"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/customer-service/assistance",
+      "@type": "skos:Concept",
+      "at:authority-code": "assistance",
+      "at:deprecated": "false",
+      "at:op-code": "assistance",
+      "at:start.use": "2021-06-16",
+      "atold:op-code": "assistance",
+      "dc:identifier": "assistance",
+      "skos:inScheme": {
+        "@id": "atold:customer-service"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Assistance for persons with reduced mobility"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/customer-service/OP_DATPRO",
+      "@type": "skos:Concept",
+      "at:op-code": "OP_DATPRO",
+      "atold:op-code": "OP_DATPRO",
+      "dc:identifier": "OP_DATPRO",
+      "skos:inScheme": {
+        "@id": "atold:customer-service"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "НЕОКОНЧАТЕЛНИ ДАННИ"
+        },
+        {
+          "@language": "cs",
+          "@value": "Předběžné údaje"
+        },
+        {
+          "@language": "da",
+          "@value": "Midlertidige data"
+        },
+        {
+          "@language": "de",
+          "@value": "Vorläufige Daten"
+        },
+        {
+          "@language": "el",
+          "@value": "Προσωρινά δεδομένα"
+        },
+        {
+          "@language": "en",
+          "@value": "Provisional data"
+        },
+        {
+          "@language": "es",
+          "@value": "Datos provisionales"
+        },
+        {
+          "@language": "et",
+          "@value": "Esialgsed andmed"
+        },
+        {
+          "@language": "fi",
+          "@value": "Alustavat tiedot"
+        },
+        {
+          "@language": "fr",
+          "@value": "Données provisoires"
+        },
+        {
+          "@language": "ga",
+          "@value": "Sonraí sealadacha"
+        },
+        {
+          "@language": "hr",
+          "@value": "Privremeni podaci"
+        },
+        {
+          "@language": "hu",
+          "@value": "Ideiglenes adatok"
+        },
+        {
+          "@language": "it",
+          "@value": "Dati provvisori"
+        },
+        {
+          "@language": "lt",
+          "@value": "Laikinieji duomenys"
+        },
+        {
+          "@language": "lv",
+          "@value": "Provizoriski dati"
+        },
+        {
+          "@language": "mt",
+          "@value": "Dejta provviżorja"
+        },
+        {
+          "@language": "nl",
+          "@value": "Voorlopige gegevens"
+        },
+        {
+          "@language": "pl",
+          "@value": "Dane tymczasowe"
+        },
+        {
+          "@language": "pt",
+          "@value": "Dados provisórios"
+        },
+        {
+          "@language": "ro",
+          "@value": "Date provizorii"
+        },
+        {
+          "@language": "sk",
+          "@value": "Predbežné údaje"
+        },
+        {
+          "@language": "sl",
+          "@value": "Začasni podatki"
+        },
+        {
+          "@language": "sv",
+          "@value": "Tillfälliga uppgifter"
+        }
+      ]
+    }
+  ]
+}

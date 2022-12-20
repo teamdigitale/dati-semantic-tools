@@ -1,0 +1,41 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/data-theme/AGRI
+        title: Agricoltura, pesca, silvicoltura e prodotti alimentari
+      - const: http://publications.europa.eu/resource/authority/data-theme/ECON
+        title: Economia e finanze
+      - const: http://publications.europa.eu/resource/authority/data-theme/EDUC
+        title: Istruzione, cultura e sport
+      - const: http://publications.europa.eu/resource/authority/data-theme/ENER
+        title: Energia
+      - const: http://publications.europa.eu/resource/authority/data-theme/ENVI
+        title: Ambiente
+      - const: http://publications.europa.eu/resource/authority/data-theme/GOVE
+        title: Governo e settore pubblico
+      - const: http://publications.europa.eu/resource/authority/data-theme/HEAL
+        title: Salute
+      - const: http://publications.europa.eu/resource/authority/data-theme/INTR
+        title: Tematiche internazionali
+      - const: http://publications.europa.eu/resource/authority/data-theme/JUST
+        title: Giustizia, sistema giuridico e sicurezza pubblica
+      - const: http://publications.europa.eu/resource/authority/data-theme/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/data-theme/REGI
+        title: "Regioni e citt\xE0"
+      - const: http://publications.europa.eu/resource/authority/data-theme/SOCI
+        title: "Popolazione e societ\xE0"
+      - const: http://publications.europa.eu/resource/authority/data-theme/TECH
+        title: Scienza e tecnologia
+      - const: http://publications.europa.eu/resource/authority/data-theme/TRAN
+        title: Trasporti
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

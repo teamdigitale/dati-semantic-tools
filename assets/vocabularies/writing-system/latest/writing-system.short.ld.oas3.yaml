@@ -1,0 +1,27 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/writing-system/ABJAD
+        title: Abjad
+      - const: http://publications.europa.eu/resource/authority/writing-system/ABUGIDA
+        title: Abugida
+      - const: http://publications.europa.eu/resource/authority/writing-system/ALPHABETIC
+        title: Alfabetico
+      - const: http://publications.europa.eu/resource/authority/writing-system/FEATURAL
+        title: Distintivo
+      - const: http://publications.europa.eu/resource/authority/writing-system/LOGOGRAPHIC
+        title: Logografico
+      - const: http://publications.europa.eu/resource/authority/writing-system/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/writing-system/SYLLABIC
+        title: Sillabico
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

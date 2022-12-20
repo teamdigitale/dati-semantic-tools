@@ -1,0 +1,33 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/target-audience/CHL
+        title: Bambini
+      - const: http://publications.europa.eu/resource/authority/target-audience/CON
+        title: Consumatori
+      - const: http://publications.europa.eu/resource/authority/target-audience/EDU
+        title: Istruzione
+      - const: http://publications.europa.eu/resource/authority/target-audience/GEN
+        title: Grande pubblico
+      - const: http://publications.europa.eu/resource/authority/target-audience/LEG
+        title: Legislativi
+      - const: http://publications.europa.eu/resource/authority/target-audience/MIN
+        title: Minoranze
+      - const: http://publications.europa.eu/resource/authority/target-audience/SCI
+        title: Scientifici
+      - const: http://publications.europa.eu/resource/authority/target-audience/SPE
+        title: Specialistici
+      - const: http://publications.europa.eu/resource/authority/target-audience/YOP
+        title: Giovani
+      - const: http://publications.europa.eu/resource/authority/targetaudiences/OP_DATPRO
+        title: Dati provvisori
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

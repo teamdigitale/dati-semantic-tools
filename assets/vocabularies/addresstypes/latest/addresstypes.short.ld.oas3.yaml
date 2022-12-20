@@ -1,0 +1,33 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/address-type/ADR_OFFICE
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/address-type/ADR_POSTAL
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/address-type/EMAIL
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/address-type/FAX
+        title: Fax
+      - const: http://publications.europa.eu/resource/authority/address-type/MAIN
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/address-type/OFFICE_NO
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/address-type/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/address-type/TEL
+        title: Telefono
+      - const: http://publications.europa.eu/resource/authority/address-type/TEL_EXT
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/address-type/TEL_SWI
+        title: Standard
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

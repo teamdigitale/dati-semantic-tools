@@ -1,0 +1,33 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/customer-service/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/customer-service/assistance
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/customer-service/cancel
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/customer-service/clean
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/customer-service/complaint
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/customer-service/info
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/customer-service/other
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/customer-service/reliability
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/customer-service/sat-surv
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/customer-service/ticket
+        title: .nan
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

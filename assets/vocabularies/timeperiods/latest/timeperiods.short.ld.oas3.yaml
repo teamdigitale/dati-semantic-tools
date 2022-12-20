@@ -1,0 +1,87 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/timeperiod/APR
+        title: Aprile
+      - const: http://publications.europa.eu/resource/authority/timeperiod/AUG
+        title: Agosto
+      - const: http://publications.europa.eu/resource/authority/timeperiod/AUTUMN
+        title: Autunno
+      - const: http://publications.europa.eu/resource/authority/timeperiod/CALENDAR_DAY
+        title: Giorno del calendario
+      - const: http://publications.europa.eu/resource/authority/timeperiod/DAY
+        title: Giorno
+      - const: http://publications.europa.eu/resource/authority/timeperiod/DEC
+        title: Dicembre
+      - const: http://publications.europa.eu/resource/authority/timeperiod/FEB
+        title: Febbraio
+      - const: http://publications.europa.eu/resource/authority/timeperiod/FRI
+        title: "Venerd\xEC"
+      - const: http://publications.europa.eu/resource/authority/timeperiod/HOUR
+        title: Ora
+      - const: http://publications.europa.eu/resource/authority/timeperiod/JAN
+        title: Gennaio
+      - const: http://publications.europa.eu/resource/authority/timeperiod/JUL
+        title: Luglio
+      - const: http://publications.europa.eu/resource/authority/timeperiod/JUN
+        title: Giugno
+      - const: http://publications.europa.eu/resource/authority/timeperiod/MAR
+        title: Marzo
+      - const: http://publications.europa.eu/resource/authority/timeperiod/MAY
+        title: Maggio
+      - const: http://publications.europa.eu/resource/authority/timeperiod/MIN
+        title: Minuto
+      - const: http://publications.europa.eu/resource/authority/timeperiod/MON
+        title: "Luned\xEC"
+      - const: http://publications.europa.eu/resource/authority/timeperiod/MONTH
+        title: Mese
+      - const: http://publications.europa.eu/resource/authority/timeperiod/NOV
+        title: Novembre
+      - const: http://publications.europa.eu/resource/authority/timeperiod/OCT
+        title: Ottobre
+      - const: http://publications.europa.eu/resource/authority/timeperiod/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/timeperiod/QUARTER
+        title: Trimestre
+      - const: http://publications.europa.eu/resource/authority/timeperiod/SAT
+        title: Sabato
+      - const: http://publications.europa.eu/resource/authority/timeperiod/SEC
+        title: Secondo
+      - const: http://publications.europa.eu/resource/authority/timeperiod/SEP
+        title: Settembre
+      - const: http://publications.europa.eu/resource/authority/timeperiod/SPRING
+        title: Primavera
+      - const: http://publications.europa.eu/resource/authority/timeperiod/SUMMER
+        title: Estate
+      - const: http://publications.europa.eu/resource/authority/timeperiod/SUN
+        title: Domenica
+      - const: http://publications.europa.eu/resource/authority/timeperiod/THU
+        title: "Gioved\xEC"
+      - const: http://publications.europa.eu/resource/authority/timeperiod/TUE
+        title: "Marted\xEC"
+      - const: http://publications.europa.eu/resource/authority/timeperiod/UNKNOWN
+        title: Sconosciuto
+      - const: http://publications.europa.eu/resource/authority/timeperiod/UNLIMITED
+        title: Illimitato
+      - const: http://publications.europa.eu/resource/authority/timeperiod/WED
+        title: "Mercoled\xEC"
+      - const: http://publications.europa.eu/resource/authority/timeperiod/WEEK
+        title: Settimana
+      - const: http://publications.europa.eu/resource/authority/timeperiod/WINTER
+        title: Inverno
+      - const: http://publications.europa.eu/resource/authority/timeperiod/WORKING_DAY
+        title: Giorno lavorativo
+      - const: http://publications.europa.eu/resource/authority/timeperiod/YEAR
+        title: Anno
+      - const: http://publications.europa.eu/resource/authority/timeperiod/YEAR_HALF
+        title: Semestre
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

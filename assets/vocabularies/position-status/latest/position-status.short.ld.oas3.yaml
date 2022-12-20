@@ -1,0 +1,35 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/position-status/ACTING
+        title: Facente funzioni
+      - const: http://publications.europa.eu/resource/authority/position-status/AFF
+        title: Assegnazione
+      - const: http://publications.europa.eu/resource/authority/position-status/AI
+        title: Facente funzioni
+      - const: http://publications.europa.eu/resource/authority/position-status/DIS
+        title: Messo a disposizione
+      - const: http://publications.europa.eu/resource/authority/position-status/DISDL
+        title: Messo a disposizione di una delegazione
+      - const: http://publications.europa.eu/resource/authority/position-status/HDR
+        title: Passaggio delle consegne
+      - const: http://publications.europa.eu/resource/authority/position-status/OCUP_NO
+        title: Non occupato
+      - const: http://publications.europa.eu/resource/authority/position-status/OCUP_SECOM
+        title: "Occupazione durante un distaccamento presso l\u2019istituzione"
+      - const: http://publications.europa.eu/resource/authority/position-status/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/position-status/REPL_TEMP
+        title: Sostituzione temporanea
+      - const: http://publications.europa.eu/resource/authority/position-status/RESV
+        title: Riservato
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

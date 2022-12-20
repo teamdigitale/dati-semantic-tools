@@ -1,0 +1,649 @@
+{
+  "@context": {
+    "at": "http://publications.europa.eu/ontology/authority/",
+    "atold": "http://publications.europa.eu/resource/authority/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "atold:address-type",
+      "@type": "skos:ConceptScheme",
+      "at:prefLabel": {
+        "@language": "en",
+        "@value": "Address type"
+      },
+      "at:table.id": "address-type",
+      "at:table.version.number": "20180620-0",
+      "owl:versionInfo": "20180620-0",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Address type"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Address type"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/address-type/OP_DATPRO",
+      "@type": "skos:Concept",
+      "at:op-code": "OP_DATPRO",
+      "atold:op-code": "OP_DATPRO",
+      "dc:identifier": "OP_DATPRO",
+      "skos:inScheme": {
+        "@id": "atold:address-type"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "НЕОКОНЧАТЕЛНИ ДАННИ"
+        },
+        {
+          "@language": "cs",
+          "@value": "Předběžné údaje"
+        },
+        {
+          "@language": "da",
+          "@value": "Midlertidige data"
+        },
+        {
+          "@language": "de",
+          "@value": "Vorläufige Daten"
+        },
+        {
+          "@language": "el",
+          "@value": "Προσωρινά δεδομένα"
+        },
+        {
+          "@language": "en",
+          "@value": "Provisional data"
+        },
+        {
+          "@language": "es",
+          "@value": "Datos provisionales"
+        },
+        {
+          "@language": "et",
+          "@value": "Esialgsed andmed"
+        },
+        {
+          "@language": "fi",
+          "@value": "Alustavat tiedot"
+        },
+        {
+          "@language": "fr",
+          "@value": "Données provisoires"
+        },
+        {
+          "@language": "ga",
+          "@value": "Sonraí sealadacha"
+        },
+        {
+          "@language": "hr",
+          "@value": "Privremeni podaci"
+        },
+        {
+          "@language": "hu",
+          "@value": "Ideiglenes adatok"
+        },
+        {
+          "@language": "it",
+          "@value": "Dati provvisori"
+        },
+        {
+          "@language": "lt",
+          "@value": "Laikinieji duomenys"
+        },
+        {
+          "@language": "lv",
+          "@value": "Provizoriski dati"
+        },
+        {
+          "@language": "mt",
+          "@value": "Dejta provviżorja"
+        },
+        {
+          "@language": "nl",
+          "@value": "Voorlopige gegevens"
+        },
+        {
+          "@language": "pl",
+          "@value": "Dane tymczasowe"
+        },
+        {
+          "@language": "pt",
+          "@value": "Dados provisórios"
+        },
+        {
+          "@language": "ro",
+          "@value": "Date provizorii"
+        },
+        {
+          "@language": "sk",
+          "@value": "Predbežné údaje"
+        },
+        {
+          "@language": "sl",
+          "@value": "Začasni podatki"
+        },
+        {
+          "@language": "sv",
+          "@value": "Tillfälliga uppgifter"
+        }
+      ]
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/address-type/TEL",
+      "@type": "skos:Concept",
+      "at:authority-code": "TEL",
+      "at:deprecated": "false",
+      "at:op-code": "TEL",
+      "at:op-mapped-code": {
+        "@id": "_:n0814e845bfae406c81a986f19eadbab7b5"
+      },
+      "at:start.use": "2009-12-01",
+      "atold:op-code": "TEL",
+      "dc:identifier": "TEL",
+      "skos:inScheme": {
+        "@id": "atold:address-type"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "телефон"
+        },
+        {
+          "@language": "cs",
+          "@value": "Telefon"
+        },
+        {
+          "@language": "da",
+          "@value": "Telefon"
+        },
+        {
+          "@language": "de",
+          "@value": "Telefon"
+        },
+        {
+          "@language": "el",
+          "@value": "τηλεφώνου"
+        },
+        {
+          "@language": "en",
+          "@value": "Telephone"
+        },
+        {
+          "@language": "es",
+          "@value": "Teléfono"
+        },
+        {
+          "@language": "et",
+          "@value": "Telefon"
+        },
+        {
+          "@language": "fi",
+          "@value": "Puhelin"
+        },
+        {
+          "@language": "fr",
+          "@value": "Téléphone"
+        },
+        {
+          "@language": "ga",
+          "@value": "Guthán"
+        },
+        {
+          "@language": "hr",
+          "@value": "Telefon"
+        },
+        {
+          "@language": "hu",
+          "@value": "Telefon"
+        },
+        {
+          "@language": "it",
+          "@value": "Telefono"
+        },
+        {
+          "@language": "lt",
+          "@value": "Telefono"
+        },
+        {
+          "@language": "lv",
+          "@value": "Tālrunis"
+        },
+        {
+          "@language": "mt",
+          "@value": "Telefon"
+        },
+        {
+          "@language": "nl",
+          "@value": "Telefoon"
+        },
+        {
+          "@language": "pl",
+          "@value": "Telefon"
+        },
+        {
+          "@language": "pt",
+          "@value": "Telefone"
+        },
+        {
+          "@language": "ro",
+          "@value": "Telefon"
+        },
+        {
+          "@language": "sk",
+          "@value": "Telefón"
+        },
+        {
+          "@language": "sl",
+          "@value": "Telefon"
+        },
+        {
+          "@language": "sv",
+          "@value": "Telefon"
+        }
+      ]
+    },
+    {
+      "@id": "_:n0814e845bfae406c81a986f19eadbab7b5",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "TEL",
+      "dc:source": "WHOISWHO"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/address-type/ADR_POSTAL",
+      "@type": "skos:Concept",
+      "at:authority-code": "ADR_POSTAL",
+      "at:deprecated": "false",
+      "at:op-code": "ADR_POSTAL",
+      "at:op-mapped-code": {
+        "@id": "_:n0814e845bfae406c81a986f19eadbab7b2"
+      },
+      "at:start.use": "2009-12-01",
+      "atold:op-code": "ADR_POSTAL",
+      "dc:identifier": "ADR_POSTAL",
+      "skos:inScheme": {
+        "@id": "atold:address-type"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "de",
+          "@value": "Anschrift"
+        },
+        {
+          "@language": "en",
+          "@value": "Postal address"
+        },
+        {
+          "@language": "fr",
+          "@value": "Adresse postale"
+        },
+        {
+          "@language": "lv",
+          "@value": "Pasta adrese"
+        }
+      ]
+    },
+    {
+      "@id": "_:n0814e845bfae406c81a986f19eadbab7b2",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "POSTALADDRESS",
+      "dc:source": "WHOISWHO"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/address-type/ADR_OFFICE",
+      "@type": "skos:Concept",
+      "at:authority-code": "ADR_OFFICE",
+      "at:deprecated": "false",
+      "at:op-code": "ADR_OFFICE",
+      "at:op-mapped-code": {
+        "@id": "_:n0814e845bfae406c81a986f19eadbab7b1"
+      },
+      "at:start.use": "2009-12-01",
+      "atold:op-code": "ADR_OFFICE",
+      "dc:identifier": "ADR_OFFICE",
+      "skos:inScheme": {
+        "@id": "atold:address-type"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "de",
+          "@value": "Büroanschrift"
+        },
+        {
+          "@language": "en",
+          "@value": "Office address"
+        },
+        {
+          "@language": "fr",
+          "@value": "Adresse"
+        },
+        {
+          "@language": "lv",
+          "@value": "Biroja adrese"
+        }
+      ]
+    },
+    {
+      "@id": "_:n0814e845bfae406c81a986f19eadbab7b1",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "OFFICEADDRESS",
+      "dc:source": "WHOISWHO"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/address-type/OFFICE_NO",
+      "@type": "skos:Concept",
+      "at:authority-code": "OFFICE_NO",
+      "at:deprecated": "false",
+      "at:op-code": "OFFICE_NO",
+      "at:op-mapped-code": {
+        "@id": "_:n0814e845bfae406c81a986f19eadbab7b4"
+      },
+      "at:start.use": "2009-12-01",
+      "atold:op-code": "OFFICE_NO",
+      "dc:identifier": "OFFICE_NO",
+      "skos:inScheme": {
+        "@id": "atold:address-type"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "de",
+          "@value": "Büro"
+        },
+        {
+          "@language": "en",
+          "@value": "Office"
+        },
+        {
+          "@language": "fr",
+          "@value": "Bureau"
+        },
+        {
+          "@language": "lv",
+          "@value": "Birojs"
+        }
+      ]
+    },
+    {
+      "@id": "_:n0814e845bfae406c81a986f19eadbab7b4",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "OFFICE",
+      "dc:source": "WHOISWHO"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/address-type/TEL_SWI",
+      "@type": "skos:Concept",
+      "at:authority-code": "TEL_SWI",
+      "at:deprecated": "false",
+      "at:op-code": "TEL_SWI",
+      "at:op-mapped-code": {
+        "@id": "_:n0814e845bfae406c81a986f19eadbab7b7"
+      },
+      "at:start.use": "2009-12-01",
+      "atold:op-code": "TEL_SWI",
+      "dc:identifier": "TEL_SWI",
+      "skos:inScheme": {
+        "@id": "atold:address-type"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "da",
+          "@value": "Omstillingsbord"
+        },
+        {
+          "@language": "de",
+          "@value": "Zentrale"
+        },
+        {
+          "@language": "en",
+          "@value": "Switchboard"
+        },
+        {
+          "@language": "es",
+          "@value": "Centralita"
+        },
+        {
+          "@language": "fr",
+          "@value": "Standard"
+        },
+        {
+          "@language": "it",
+          "@value": "Standard"
+        },
+        {
+          "@language": "lv",
+          "@value": "Centrālais tālrunis"
+        },
+        {
+          "@language": "nl",
+          "@value": "Schakelbord"
+        }
+      ]
+    },
+    {
+      "@id": "_:n0814e845bfae406c81a986f19eadbab7b7",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "CENTRAL",
+      "dc:source": "WHOISWHO"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/address-type/EMAIL",
+      "@type": "skos:Concept",
+      "at:authority-code": "EMAIL",
+      "at:deprecated": "false",
+      "at:op-code": "EMAIL",
+      "at:start.use": "2009-12-01",
+      "atold:op-code": "EMAIL",
+      "dc:identifier": "EMAIL",
+      "skos:inScheme": {
+        "@id": "atold:address-type"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "E-mail"
+        },
+        {
+          "@language": "es",
+          "@value": "Correo electrónico"
+        },
+        {
+          "@language": "fr",
+          "@value": "Courrier électronique"
+        },
+        {
+          "@language": "pt",
+          "@value": "Correio eletrónico"
+        }
+      ]
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/address-type/TEL_EXT",
+      "@type": "skos:Concept",
+      "at:authority-code": "TEL_EXT",
+      "at:deprecated": "false",
+      "at:op-code": "TEL_EXT",
+      "at:op-mapped-code": {
+        "@id": "_:n0814e845bfae406c81a986f19eadbab7b6"
+      },
+      "at:start.use": "2009-12-01",
+      "atold:op-code": "TEL_EXT",
+      "dc:identifier": "TEL_EXT",
+      "skos:inScheme": {
+        "@id": "atold:address-type"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "de",
+          "@value": "Durchwahl"
+        },
+        {
+          "@language": "en",
+          "@value": "Extension"
+        },
+        {
+          "@language": "fr",
+          "@value": "Numéro de poste"
+        },
+        {
+          "@language": "lv",
+          "@value": "Iekšējais numurs"
+        },
+        {
+          "@language": "nl",
+          "@value": "Doorverbinding"
+        }
+      ]
+    },
+    {
+      "@id": "_:n0814e845bfae406c81a986f19eadbab7b6",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "POSTE",
+      "dc:source": "WHOISWHO"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/address-type/FAX",
+      "@type": "skos:Concept",
+      "at:authority-code": "FAX",
+      "at:deprecated": "false",
+      "at:op-code": "FAX",
+      "at:op-mapped-code": {
+        "@id": "_:n0814e845bfae406c81a986f19eadbab7b3"
+      },
+      "at:start.use": "2009-12-01",
+      "atold:op-code": "FAX",
+      "dc:identifier": "FAX",
+      "skos:inScheme": {
+        "@id": "atold:address-type"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "Факс"
+        },
+        {
+          "@language": "cs",
+          "@value": "Fax"
+        },
+        {
+          "@language": "da",
+          "@value": "Fax"
+        },
+        {
+          "@language": "de",
+          "@value": "Fax"
+        },
+        {
+          "@language": "el",
+          "@value": "φαξ"
+        },
+        {
+          "@language": "en",
+          "@value": "Fax"
+        },
+        {
+          "@language": "es",
+          "@value": "Fax"
+        },
+        {
+          "@language": "et",
+          "@value": "Faks"
+        },
+        {
+          "@language": "fi",
+          "@value": "Faksi"
+        },
+        {
+          "@language": "fr",
+          "@value": "Fax"
+        },
+        {
+          "@language": "ga",
+          "@value": "Fax"
+        },
+        {
+          "@language": "hr",
+          "@value": "Faks"
+        },
+        {
+          "@language": "hu",
+          "@value": "Fax"
+        },
+        {
+          "@language": "it",
+          "@value": "Fax"
+        },
+        {
+          "@language": "lt",
+          "@value": "Fakso"
+        },
+        {
+          "@language": "lv",
+          "@value": "Fakss"
+        },
+        {
+          "@language": "mt",
+          "@value": "Faks"
+        },
+        {
+          "@language": "nl",
+          "@value": "Fax"
+        },
+        {
+          "@language": "pl",
+          "@value": "Faks"
+        },
+        {
+          "@language": "pt",
+          "@value": "Fax"
+        },
+        {
+          "@language": "ro",
+          "@value": "Fax"
+        },
+        {
+          "@language": "sk",
+          "@value": "Fax"
+        },
+        {
+          "@language": "sl",
+          "@value": "Fax"
+        },
+        {
+          "@language": "sv",
+          "@value": "Fax"
+        }
+      ]
+    },
+    {
+      "@id": "_:n0814e845bfae406c81a986f19eadbab7b3",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "FAX",
+      "dc:source": "WHOISWHO"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/address-type/MAIN",
+      "@type": "skos:Concept",
+      "at:authority-code": "MAIN",
+      "at:deprecated": "false",
+      "at:op-code": "MAIN",
+      "at:start.use": "2018-05-30",
+      "atold:op-code": "MAIN",
+      "dc:identifier": "MAIN",
+      "skos:inScheme": {
+        "@id": "atold:address-type"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Main address"
+      }
+    }
+  ]
+}

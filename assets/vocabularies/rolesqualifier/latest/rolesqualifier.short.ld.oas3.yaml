@@ -1,0 +1,323 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/ADMN
+        title: Amministratore
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/ADVIS
+        title: Consigliere
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/ADVIS_CHIEF
+        title: Consigliere principale
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/ADVIS_COMMU
+        title: Consigliere per la comunicazione
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/ADVIS_COMMU_WRITER_SPEECH_PRESID
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/ADVIS_HORS_CLASS
+        title: Consigliere fuori classe
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/ADVIS_PRIN
+        title: Consulente principale
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/ADVIS_SENIOR
+        title: Consigliere principale
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/AG_LOG
+        title: Agente logistico
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/AG_LOG_SUPP
+        title: Agente di supporto logistico
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/AMB
+        title: Ambasciatore
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/AMB_FIRST_SECR
+        title: "Primo segretario d\u2019ambasciata"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/ASSIST
+        title: Assistente
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/AST_ADMIN
+        title: Assistente amministrativo
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/AST_ADMIN_CHIEF_SPOKESPRS
+        title: Assistente amministrativo del portavoce principale
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/AST_INF_COMMU
+        title: "Assistente all\u2019informazione e alla comunicazione"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/AST_INF_COMMU_HOR_SUPP_EDIT
+        title: "Assistente all\u2019informazione e alla comunicazione \u2013 Sostegno\
+          \ trasversale e servizi editoriali"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/AST_INF_COMMU_MIDDAY
+        title: "Assistente all\u2019informazione e alla comunicazione \u2013 Programmazione\
+          \ e coordinamento di mezzogiorno"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/AST_INF_COMMU_PHOTO
+        title: "Assistente all\u2019informazione e alla comunicazione \u2013 Fotografo"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/AST_INF_COMMU_PRESS
+        title: "Assistente all\u2019informazione e alla comunicazione \u2013 Contatti\
+          \ per la stampa"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/AST_INF_COMMU_PRESS_ACCR
+        title: "Assistente all\u2019informazione e alla comunicazione \u2013 Stampa\
+          \ e accreditamento"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/AST_INF_COMMU_PRESS_ROOM
+        title: "Assistente all\u2019informazione e alla comunicazione \u2013 Gestione\
+          \ e programmazione della sala stampa"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/AST_INF_COMMU_TRANSCR
+        title: "Assistente all\u2019informazione e alla comunicazione \u2013 Coordinatore\
+          \ dei verbali"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/AST_INF_COMMU_WEB_EDIT
+        title: "Assistente all\u2019informazione e alla comunicazione \u2013 Web e\
+          \ servizi editoriali"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/AST_POLICY
+        title: Assistente alle politiche
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/AST_POLICY_SPOKESPRS_CHIEF
+        title: Assistente del portavoce principale della Commissione europea
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/AST_PRESID_ACT
+        title: "Assistente \u2013 Attivit\xE0 del presidente"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/AST_SPOKESPRS_CHIEF
+        title: Assistente del portavoce principale della Commissione europea
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/AST_TRANSIT
+        title: Assistente del gruppo di transizione
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/AUDT
+        title: Revisore
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/AUDT_GEN
+        title: Revisore generale
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/AUDT_INT
+        title: Revisore interno
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/CHAIR
+        title: Presidente
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/CHAIR_REG_SCR_BOARD
+        title: Presidente del comitato per il controllo normativo
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/CLERK_MAIL
+        title: Commesso
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/COMMISS_DESIG
+        title: Commissario designato
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/COMMIS_INTERIM
+        title: Commissario ad interim
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/COM_MEMB
+        title: Membro della Commissione
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/CONSULT
+        title: Consulente
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/COORD
+        title: Coordinatore
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/COORD_POLICY
+        title: Coordinatore delle politiche
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/COO_LOG_SUPP_CABINET
+        title: Coordinatore del supporto logistico del gabinetto
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/COO_LOG_SUPP_TRANSIT
+        title: Coordinatore del supporto logistico del gruppo di transizione
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/COR_MEMB
+        title: Membro del Comitato delle regioni
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/COUNS
+        title: Consigliere
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/CURIA_JUDG_ADV
+        title: Giudice o avvocato della Corte
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/DIPL
+        title: Diplomatico
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/DIR
+        title: Direttore
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/DIR_COORD_ADM
+        title: "Direttore del coordinamento e dell\u2019amministrazione"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/DIR_DEP
+        title: Vicedirettore
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/DIR_GEN
+        title: Direttore generale
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/DIR_GEN_CHIEF_STAT
+        title: "Direttore generale e responsabile delle statistiche dell\u2019Unione\
+          \ europea"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/DIR_GEN_DEP
+        title: Direttore generale aggiunto
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/ECA_MEMB
+        title: Membro della Corte dei conti
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/ECB_PRESID
+        title: Presidente della Banca centrale europea
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/EDIT_CHIEF
+        title: Caporedattore
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/EESC_ADVIS
+        title: Consigliere del CESE
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/EESC_PRESID
+        title: Presidente del Comitato economico e sociale europeo
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/EP_MEMB
+        title: Membro del Parlamento europeo
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/EP_MP_SUBST
+        title: Membro supplente del Parlamento
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/EP_SPEAKER
+        title: Presidente del Parlamento
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/EUINST
+        title: "Istituzioni e gli organismi dell\u2019UE"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/EUMS
+        title: "Stati membri dell\u2019UE"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/EUMS_GOVREP
+        title: Rappresentante del governo di uno Stato membro
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/EUROGRO_PRESID
+        title: "Presidente dell\u2019Eurogruppo"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/EU_LIOF
+        title: "Ufficiale di collegamento dell\u2019UE"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/EU_REPR_HEAD
+        title: "Capo della rappresentanza dell\u2019UE"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/EXEC_CHIEF
+        title: Direttore generale
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/EXPERT
+        title: Esperto
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/EXPERT_NAT
+        title: Esperto nazionale
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/GROUP_LEADER
+        title: Responsabile di un gruppo politico
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/HEAD
+        title: Capo
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/HEAD_ADMN
+        title: "Capo dell\u2019amministrazione"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/HEAD_CAB
+        title: Capo di gabinetto
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/HEAD_CAB_DEP
+        title: Vice capo di gabinetto del presidente
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/HEAD_COMMU_MEDIA
+        title: Capo delle comunicazioni e dei media
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/HEAD_DEL
+        title: Capo delegazione
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/HEAD_DIV
+        title: Capo divisione
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/HEAD_SECTOR
+        title: Capo settore
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/HEAD_SERV
+        title: Caposervizio
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/HEAD_SERV_DEP
+        title: Vice caposervizio
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/HEAD_TASK_FORCE
+        title: Capo della task force
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/HEAD_TASK_FORCE_DEP
+        title: Vicecapo della task force
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/HEAD_TRANSIT
+        title: Capo del gruppo di transizione
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/HEAD_UNIT
+        title: "Capo unit\xE0"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/HRUFASP
+        title: "Alto rappresentante dell\u2019Unione"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/INDIV
+        title: Persona privata
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/INTERNAT_BODIES
+        title: Organizzazioni internazionali
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/JOURNALIST
+        title: Giornalista
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/MEMBER_TRANSIT
+        title: Membro del gruppo di transizione
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/MODERATOR
+        title: Moderatore
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/NEGO_CHIEF
+        title: Capo negoziatore
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/NEGO_DEP_CHIEF
+        title: Vicecapo negoziatore
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/OFF_DATA_PROT
+        title: Responsabile della protezione dei dati
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/OFF_DOC_MAN
+        title: Responsabile della gestione dei documenti
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/OFF_DOC_MAN_ARCH
+        title: "Responsabile della gestione dei documenti \u2013 Archivi"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/OFF_INF_COMMU
+        title: "Responsabile dell\u2019informazione e della comunicazione"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/OFF_INF_COMMU_MULTI
+        title: "Responsabile dell\u2019informazione e della comunicazione \u2013 Redattore\
+          \ multimediale"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/OFF_INF_COMMU_MULTI_REPR
+        title: "Responsabile dell\u2019informazione e della comunicazione \u2013 Redattore\
+          \ multimediale e collegamento con le rappresentanze"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/OFF_INF_COMMU_PLAN_COORD_LIAISON
+        title: "Assistente all\u2019informazione e alla comunicazione \u2013 Programmazione/coordinamento\
+          \ e collegamento con le rappresentanze"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/OFF_INF_COMMU_PRESID_MEDIA
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/OFF_INF_COMMU_SOCIAL_MEDIA
+        title: "Responsabile dell\u2019informazione e della comunicazione \u2013 Social\
+          \ media"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/OFF_INF_COMMU_VIS
+        title: "Responsabile dell\u2019informazione e della comunicazione \u2013 Comunicazione\
+          \ visiva"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/OFF_POLICY
+        title: Responsabile delle politiche
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/OFF_PRESS_EEAS
+        title: Addetto stampa e media per gli affari esteri e la politica di sicurezza
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/PANELLIST
+        title: Membro del collegio
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/PHOTO
+        title: "Assistente all\u2019informazione e alla comunicazione \u2013 Comunicazione\
+          \ visiva"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/PRESID_EC
+        title: Presidente della Commissione
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/PRESID_REPUBL
+        title: Presidente della Repubblica
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/PRESID_SUPAUDT
+        title: "Presidente dell\u2019Istituzione superiore di controllo"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/PRESID_VICE
+        title: Vicepresidente della Commissione
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/PRESID_VICE_EXEC
+        title: Vicepresidente esecutivo
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/PRESID_VICE_FIRST
+        title: Primo vicepresidente
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/PRESS_OFFICER
+        title: Addetto stampa
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/SECR
+        title: Segretario
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/SECR_GEN
+        title: Segretario generale
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/SECR_GEN_DEP
+        title: Vicesegretario generale
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/SECR_HEAD_TRANSIT
+        title: Segretario del capo del gruppo di transizione
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/SECR_PRESID
+        title: Segretario del presidente
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/SECR_PRESID_ELEC
+        title: Segretario del presidente eletto
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/SPEAKER
+        title: Oratore
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/SPEAKER_KEYNOTE
+        title: Oratore principale
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/SPOKESPRS
+        title: Portavoce
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/SPOKESPRS_CHIEF_COM
+        title: Portavoce principale della Commissione europea
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/SPOKESPRS_CHIEF_DEP_COM
+        title: Vice portavoce capo della Commissione europea
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/SPOKESPRS_COORD
+        title: Portavoce di coordinamento
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/SPOKESPRS_EEAS
+        title: Portavoce principale per gli affari esteri e la politica di sicurezza
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/SPOKESPRS_LEAD_EEAS
+        title: "Portavoce principale dell\u2019AR/VP \u2013 Principale portavoce del\
+          \ SEAE"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/STAFF
+        title: Funzionario dell'Unione europea
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/STAFF_LEADNO_ORG
+        title: "Funzionario (non capo dell\u2019entit\xE0) (facente parte dell\u2019\
+          organigramma ufficiale)"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/STAFF_LEADNO_ORGNO
+        title: "Funzionario (non capo dell\u2019entit\xE0) (non facente parte dell\u2019\
+          organigramma ufficiale)"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/STAFF_LEAD_ORG
+        title: "Funzionario (capo dell\u2019entit\xE0) (facente parte dell\u2019organigramma\
+          \ ufficiale)"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/STAFF_LEAD_ORGNO
+        title: "Funzionario (capo dell\u2019entit\xE0) (non facente parte dell\u2019\
+          organigramma ufficiale)"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/SUPP_AG_ADMIN
+        title: Agente di supporto amministrativo
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/SUPP_AG_ADMIN_PRESID_ELECT
+        title: Agente di supporto amministrativo del presidente eletto
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/SUPP_AG_ADMIN_PRESS
+        title: "Agente di supporto amministrativo \u2013 Assistente stampa"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/SUPP_AG_ADMIN_SPOKESPRS
+        title: Agente di supporto amministrativo del portavoce
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/SUPP_AG_ADMIN_TRANSCR
+        title: "Agente di supporto amministrativo \u2013 Assistente alla comunicazione\
+          \ e ai verbali"
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/TEAM_LEADER
+        title: Team leader
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/THIRD_COUNTRY
+        title: Paesi terzi
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/TRAINEE
+        title: Tirocinante
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/WEB_EDIT
+        title: Webmaster-Redattore
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/WRITER_SPEECH
+        title: Redattore di discorsi
+      - const: http://publications.europa.eu/resource/authority/role-qualifier/WRITER_SPEECH_PRESID
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/rolesqualifier/OP_DATPRO
+        title: Dati provvisori
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

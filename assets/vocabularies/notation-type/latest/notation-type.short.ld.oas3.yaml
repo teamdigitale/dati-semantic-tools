@@ -1,0 +1,259 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/notation-type/AKN4EU
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ARK
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ARXIV
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/BIBCODE
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/CELEX
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/CELEX_RT
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/CELEX_SECT
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/CELLAR_MANIFT
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/CELLAR_MT
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/CJ
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/COMREF
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/CONSIL
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/DEMED
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/DOI
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/DOI_P
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/EAN13
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ECLI
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/EP
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ESPD
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/EUBOOKSHOP
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/EUDOR_LNG
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/EUDOR_MIME
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/EUROVOC
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/E_ISSN
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_010
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_020
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_030
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_040
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_050
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_060
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_070
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_100
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_110
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_140
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_160
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_290
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_325
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_361
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_375
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_380
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_400
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_499
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_557
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_601
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_607
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_608
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_609
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_610
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_612
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FD_613
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FILE_EXT
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FORMEX
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/FUNDREF
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/HANDLE
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/IANA_DOMAIN
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/IANA_MT
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/IATE
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/INFOURI
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ISBN
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ISBN_RG
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ISG_COU
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ISNI
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ISO_15924_ALPHA_4
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ISO_15924_NUM
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ISO_3166_1_ALPHA_2
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ISO_3166_1_ALPHA_3
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ISO_3166_1_NUM
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ISO_3166_2
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ISO_3166_3
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ISO_4217
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ISO_5218_2
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ISO_639_1
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ISO_639_2B
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ISO_639_2T
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ISO_639_3
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ISSN
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ISSN_L
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ISTC
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/LAC
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/LITIGE
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/LRIS
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/LSID
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/MINIDOC
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/MNE
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/NIHMSID
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/OCI
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ODP
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/OJ
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/OJ_SECTION
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/ONIX
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/OP_CAT
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/notation-type/ORCID
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/PEGASE
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/PII
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/PLANJO
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/PMCID
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/PMID
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/PUB_CORP
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/PUB_DIV
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/PUB_FREQ
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/PUB_LANG
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/PUB_LNGISO
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/PUB_LOC
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/PUB_NOT
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/PUB_ORDIN
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/PUB_QUAL
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/PUB_TARGET
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/PUB_THEM14
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/PURL
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/SICI
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/TED
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/TED_SCHEMA
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/TIR
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/UNSD_GEOSCHEME
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/UNSD_M49
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/UN_LOCODE
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/UPC
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/URI
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/URL
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/URN
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/WHOISWHO
+        title: .nan
+      - const: http://publications.europa.eu/resource/authority/notation-type/XML_LNG
+        title: .nan
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

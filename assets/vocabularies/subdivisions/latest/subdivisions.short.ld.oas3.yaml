@@ -1,0 +1,131 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/subdivision/ACT
+        title: atto
+      - const: http://publications.europa.eu/resource/authority/subdivision/AGR
+        title: accordo
+      - const: http://publications.europa.eu/resource/authority/subdivision/ALN
+        title: comma
+      - const: http://publications.europa.eu/resource/authority/subdivision/ANX
+        title: allegato
+      - const: http://publications.europa.eu/resource/authority/subdivision/APP
+        title: appendice
+      - const: http://publications.europa.eu/resource/authority/subdivision/ART
+        title: articolo
+      - const: http://publications.europa.eu/resource/authority/subdivision/CGR
+        title: gruppo di correzioni
+      - const: http://publications.europa.eu/resource/authority/subdivision/CIT
+        title: visto
+      - const: http://publications.europa.eu/resource/authority/subdivision/CLS
+        title: clausola
+      - const: http://publications.europa.eu/resource/authority/subdivision/CNV
+        title: convenzione
+      - const: http://publications.europa.eu/resource/authority/subdivision/COL
+        title: colonna della tabella
+      - const: http://publications.europa.eu/resource/authority/subdivision/COR
+        title: correzione
+      - const: http://publications.europa.eu/resource/authority/subdivision/CPT
+        title: capo
+      - const: http://publications.europa.eu/resource/authority/subdivision/DCL
+        title: dichiarazione
+      - const: http://publications.europa.eu/resource/authority/subdivision/DES
+        title: descrizione
+      - const: http://publications.europa.eu/resource/authority/subdivision/ENC
+        title: articolato
+      - const: http://publications.europa.eu/resource/authority/subdivision/END
+        title: nota
+      - const: http://publications.europa.eu/resource/authority/subdivision/EXL
+        title: scambio di lettere
+      - const: http://publications.europa.eu/resource/authority/subdivision/FGR
+        title: illustrazione
+      - const: http://publications.europa.eu/resource/authority/subdivision/FNA
+        title: atto finale
+      - const: http://publications.europa.eu/resource/authority/subdivision/FNP
+        title: parte finale
+      - const: http://publications.europa.eu/resource/authority/subdivision/FTN
+        title: "nota a pi\xE8 di pagina"
+      - const: http://publications.europa.eu/resource/authority/subdivision/IDT
+        title: trattino
+      - const: http://publications.europa.eu/resource/authority/subdivision/IMG
+        title: immagine
+      - const: http://publications.europa.eu/resource/authority/subdivision/INP
+        title: parte introduttiva
+      - const: http://publications.europa.eu/resource/authority/subdivision/LGD
+        title: legenda
+      - const: http://publications.europa.eu/resource/authority/subdivision/LLG
+        title: riga di legenda
+      - const: http://publications.europa.eu/resource/authority/subdivision/LST
+        title: elenco
+      - const: http://publications.europa.eu/resource/authority/subdivision/LTR
+        title: lettera
+      - const: http://publications.europa.eu/resource/authority/subdivision/MNT
+        title: processo verbale
+      - const: http://publications.europa.eu/resource/authority/subdivision/NOT
+        title: nota
+      - const: http://publications.europa.eu/resource/authority/subdivision/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/subdivision/OTH
+        title: altro
+      - const: http://publications.europa.eu/resource/authority/subdivision/PAG
+        title: pagina
+      - const: http://publications.europa.eu/resource/authority/subdivision/PAR
+        title: paragrafo
+      - const: http://publications.europa.eu/resource/authority/subdivision/PBL
+        title: preambolo
+      - const: http://publications.europa.eu/resource/authority/subdivision/PCD
+        title: procedura
+      - const: http://publications.europa.eu/resource/authority/subdivision/PNT
+        title: punto
+      - const: http://publications.europa.eu/resource/authority/subdivision/PRO
+        title: protocollo
+      - const: http://publications.europa.eu/resource/authority/subdivision/PRT
+        title: parte
+      - const: http://publications.europa.eu/resource/authority/subdivision/PTA
+        title: lettera
+      - const: http://publications.europa.eu/resource/authority/subdivision/PTI
+        title: punto
+      - const: http://publications.europa.eu/resource/authority/subdivision/RCT
+        title: considerando
+      - const: http://publications.europa.eu/resource/authority/subdivision/ROW
+        title: riga della tabella
+      - const: http://publications.europa.eu/resource/authority/subdivision/RUL
+        title: regola
+      - const: http://publications.europa.eu/resource/authority/subdivision/SBS
+        title: sottosezione
+      - const: http://publications.europa.eu/resource/authority/subdivision/SCT
+        title: sezione
+      - const: http://publications.europa.eu/resource/authority/subdivision/SFR
+        title: formula scientifica
+      - const: http://publications.europa.eu/resource/authority/subdivision/SNT
+        title: frase
+      - const: http://publications.europa.eu/resource/authority/subdivision/SUB
+        title: comma
+      - const: http://publications.europa.eu/resource/authority/subdivision/TAB
+        title: tabella
+      - const: http://publications.europa.eu/resource/authority/subdivision/TBG
+        title: gruppo di tabelle
+      - const: http://publications.europa.eu/resource/authority/subdivision/TIS
+        title: titolo (suddivisione)
+      - const: http://publications.europa.eu/resource/authority/subdivision/TIT
+        title: titolo
+      - const: http://publications.europa.eu/resource/authority/subdivision/TOC
+        title: indice
+      - const: http://publications.europa.eu/resource/authority/subdivision/TXN
+        title: nuovo testo
+      - const: http://publications.europa.eu/resource/authority/subdivision/TXO
+        title: testo precedente
+      - const: http://publications.europa.eu/resource/authority/subdivision/UNP
+        title: comma
+      - const: http://publications.europa.eu/resource/authority/subdivision/WRP
+        title: parte conclusiva
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

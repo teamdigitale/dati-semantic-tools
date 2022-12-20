@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "amount": {
+      "@id": "https://w3id.org/italia/onto/POT/hasCurrencyValue"
+    },
+    "currency": {
+      "@id": "https://w3id.org/italia/onto/POT/hasCurrency",
+      "@type": "@id",
+      "@context": {
+        "@base": "https://publications.europa.eu/resource/authority/currency"
+      }
+    }
+  },
+  "http://www.w3.org/2002/07/owl#versionIRI": {
+    "@id": "https://w3id.org/italia/schemas/money/202201.00"
+  }
+}

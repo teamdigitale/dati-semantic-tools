@@ -1,0 +1,245 @@
+{
+  "@context": {
+    "at": "http://publications.europa.eu/ontology/authority/",
+    "atold": "http://publications.europa.eu/resource/authority/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://publications.europa.eu/resource/authority/subdivision-position/END",
+      "@type": "skos:Concept",
+      "at:authority-code": "END",
+      "at:deprecated": "false",
+      "at:op-code": "END",
+      "at:op-mapped-code": {
+        "@id": "_:ne744b87a999e4df9b5551b146c6faaf7b4"
+      },
+      "at:start.use": "2004-05-01",
+      "atold:op-code": "END",
+      "dc:identifier": "END",
+      "skos:inScheme": {
+        "@id": "atold:subdivision-position"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "at the end"
+      }
+    },
+    {
+      "@id": "_:ne744b87a999e4df9b5551b146c6faaf7b4",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "{(EN)}",
+      "dc:source": "FORMEX"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/subdivision-position/OP_DATPRO",
+      "@type": "skos:Concept",
+      "at:op-code": "OP_DATPRO",
+      "atold:op-code": "OP_DATPRO",
+      "dc:identifier": "OP_DATPRO",
+      "skos:inScheme": {
+        "@id": "atold:subdivision-position"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "НЕОКОНЧАТЕЛНИ ДАННИ"
+        },
+        {
+          "@language": "cs",
+          "@value": "Předběžné údaje"
+        },
+        {
+          "@language": "da",
+          "@value": "Midlertidige data"
+        },
+        {
+          "@language": "de",
+          "@value": "Vorläufige Daten"
+        },
+        {
+          "@language": "el",
+          "@value": "Προσωρινά δεδομένα"
+        },
+        {
+          "@language": "en",
+          "@value": "Provisional data"
+        },
+        {
+          "@language": "es",
+          "@value": "Datos provisionales"
+        },
+        {
+          "@language": "et",
+          "@value": "Esialgsed andmed"
+        },
+        {
+          "@language": "fi",
+          "@value": "Alustavat tiedot"
+        },
+        {
+          "@language": "fr",
+          "@value": "Données provisoires"
+        },
+        {
+          "@language": "ga",
+          "@value": "Sonraí sealadacha"
+        },
+        {
+          "@language": "hr",
+          "@value": "Privremeni podaci"
+        },
+        {
+          "@language": "hu",
+          "@value": "Ideiglenes adatok"
+        },
+        {
+          "@language": "it",
+          "@value": "Dati provvisori"
+        },
+        {
+          "@language": "lt",
+          "@value": "Laikinieji duomenys"
+        },
+        {
+          "@language": "lv",
+          "@value": "Provizoriski dati"
+        },
+        {
+          "@language": "mt",
+          "@value": "Dejta provviżorja"
+        },
+        {
+          "@language": "nl",
+          "@value": "Voorlopige gegevens"
+        },
+        {
+          "@language": "pl",
+          "@value": "Dane tymczasowe"
+        },
+        {
+          "@language": "pt",
+          "@value": "Dados provisórios"
+        },
+        {
+          "@language": "ro",
+          "@value": "Date provizorii"
+        },
+        {
+          "@language": "sk",
+          "@value": "Predbežné údaje"
+        },
+        {
+          "@language": "sl",
+          "@value": "Začasni podatki"
+        },
+        {
+          "@language": "sv",
+          "@value": "Tillfälliga uppgifter"
+        }
+      ]
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/subdivision-position/BEGIN",
+      "@type": "skos:Concept",
+      "at:authority-code": "BEGIN",
+      "at:deprecated": "false",
+      "at:op-code": "BEGIN",
+      "at:op-mapped-code": {
+        "@id": "_:ne744b87a999e4df9b5551b146c6faaf7b3"
+      },
+      "at:start.use": "2004-05-01",
+      "atold:op-code": "BEGIN",
+      "dc:identifier": "BEGIN",
+      "skos:inScheme": {
+        "@id": "atold:subdivision-position"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "at the beginning"
+      }
+    },
+    {
+      "@id": "_:ne744b87a999e4df9b5551b146c6faaf7b3",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "{(AB)}",
+      "dc:source": "FORMEX"
+    },
+    {
+      "@id": "atold:subdivision-position",
+      "@type": "skos:ConceptScheme",
+      "at:prefLabel": {
+        "@language": "en",
+        "@value": "Subdivision position"
+      },
+      "at:table.id": "subdivision-position",
+      "at:table.version.number": "20190918-0",
+      "owl:versionInfo": "20190918-0",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Subdivision position"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Subdivision position"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/subdivision-position/AFTER",
+      "@type": "skos:Concept",
+      "at:authority-code": "AFTER",
+      "at:deprecated": "false",
+      "at:op-code": "AFTER",
+      "at:op-mapped-code": {
+        "@id": "_:ne744b87a999e4df9b5551b146c6faaf7b1"
+      },
+      "at:start.use": "2004-05-01",
+      "atold:op-code": "AFTER",
+      "dc:identifier": "AFTER",
+      "skos:inScheme": {
+        "@id": "atold:subdivision-position"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "after"
+      }
+    },
+    {
+      "@id": "_:ne744b87a999e4df9b5551b146c6faaf7b1",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "{(AF)}",
+      "dc:source": "FORMEX"
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/subdivision-position/BEFORE",
+      "@type": "skos:Concept",
+      "at:authority-code": "BEFORE",
+      "at:deprecated": "false",
+      "at:op-code": "BEFORE",
+      "at:op-mapped-code": {
+        "@id": "_:ne744b87a999e4df9b5551b146c6faaf7b2"
+      },
+      "at:start.use": "2004-05-01",
+      "atold:op-code": "BEFORE",
+      "dc:identifier": "BEFORE",
+      "skos:inScheme": {
+        "@id": "atold:subdivision-position"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "before"
+      }
+    },
+    {
+      "@id": "_:ne744b87a999e4df9b5551b146c6faaf7b2",
+      "@type": "at:MappedCode",
+      "at:legacy-code": "{(BE)}",
+      "dc:source": "FORMEX"
+    }
+  ]
+}

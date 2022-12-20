@@ -1,0 +1,658 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ACCD
+        title: Accesso ai documenti
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ACCE
+        title: Adesione, accordo
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ACCI
+        title: Diritti di accisa
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ACIE
+        title: Acciaio
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ACIN
+        title: Accordi internazionali
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ACP
+        title: Stati africani, dei Caraibi e del Pacifico (ACP)
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ACSP
+        title: Acciai speciali
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ACTE
+        title: Atti delle istituzioni
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ADAP
+        title: Adattamento
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ADH
+        title: Adesione
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ADMI
+        title: 'Tariffa doganale comune: ammissione temporanea'
+      - const: http://publications.europa.eu/resource/authority/subject-matter/AELE
+        title: Associazione europea di libero scambio (EFTA)
+      - const: http://publications.europa.eu/resource/authority/subject-matter/AGRI
+        title: Agricoltura e Pesca
+      - const: http://publications.europa.eu/resource/authority/subject-matter/AIDE
+        title: Aiuti degli Stati
+      - const: http://publications.europa.eu/resource/authority/subject-matter/AL-A
+        title: Alimenti per animali
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ALCO
+        title: Alcole
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ALIM
+        title: Aiuti alimentari
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ANCO
+        title: Accordi non commerciali
+      - const: http://publications.europa.eu/resource/authority/subject-matter/APPR
+        title: Agenzia di approvvigionamento
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ASIL
+        title: Politica in materia di asilo
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ASSI
+        title: Assistenza
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ASSO
+        title: Accordo di associazione
+      - const: http://publications.europa.eu/resource/authority/subject-matter/AUTH
+        title: Autenticazione
+      - const: http://publications.europa.eu/resource/authority/subject-matter/BANA
+        title: Banane
+      - const: http://publications.europa.eu/resource/authority/subject-matter/BCE
+        title: Banca centrale europea (BCE)
+      - const: http://publications.europa.eu/resource/authority/subject-matter/BEI
+        title: Banca europea per gli investimenti (BEI)
+      - const: http://publications.europa.eu/resource/authority/subject-matter/BOV
+        title: Carni bovine
+      - const: http://publications.europa.eu/resource/authority/subject-matter/BPAI
+        title: Bilancia dei pagamenti
+      - const: http://publications.europa.eu/resource/authority/subject-matter/BREV
+        title: Brevetti
+      - const: http://publications.europa.eu/resource/authority/subject-matter/BT
+        title: Legno tropicale
+      - const: http://publications.europa.eu/resource/authority/subject-matter/BUDG
+        title: Bilancio
+      - const: http://publications.europa.eu/resource/authority/subject-matter/CAC
+        title: Cacao
+      - const: http://publications.europa.eu/resource/authority/subject-matter/CAFE
+        title: "Caff\xE8"
+      - const: http://publications.europa.eu/resource/authority/subject-matter/CAO
+        title: Gomma naturale
+      - const: http://publications.europa.eu/resource/authority/subject-matter/CDEV
+        title: Cooperazione allo sviluppo
+      - const: http://publications.europa.eu/resource/authority/subject-matter/CECA
+        title: Materie CECA
+      - const: http://publications.europa.eu/resource/authority/subject-matter/CECC
+        title: Convenzione di Bruxelles del 27 settembre 1968
+      - const: http://publications.europa.eu/resource/authority/subject-matter/CEDH
+        title: Convenzione europea dei diritti dell'uomo
+      - const: http://publications.europa.eu/resource/authority/subject-matter/CEEA
+        title: Materie Euratom
+      - const: http://publications.europa.eu/resource/authority/subject-matter/CERE
+        title: Cereali
+      - const: http://publications.europa.eu/resource/authority/subject-matter/CHAR
+        title: Carbone
+      - const: http://publications.europa.eu/resource/authority/subject-matter/CHDF
+        title: Carta dei diritti fondamentali
+      - const: http://publications.europa.eu/resource/authority/subject-matter/CIT
+        title: Cittadinanza dell'Unione
+      - const: http://publications.europa.eu/resource/authority/subject-matter/CLUG
+        title: Convenzione di Lugano
+      - const: http://publications.europa.eu/resource/authority/subject-matter/COAD
+        title: Cooperazione amministrativa
+      - const: http://publications.europa.eu/resource/authority/subject-matter/COES
+        title: Coesione economica, sociale e territoriale
+      - const: http://publications.europa.eu/resource/authority/subject-matter/COHE
+        title: Fondo di coesione
+      - const: http://publications.europa.eu/resource/authority/subject-matter/COJC
+        title: Cooperazione giudiziaria in materia civile
+      - const: http://publications.europa.eu/resource/authority/subject-matter/COJP
+        title: Cooperazione giudiziaria in materia penale
+      - const: http://publications.europa.eu/resource/authority/subject-matter/COKE
+        title: Coke
+      - const: http://publications.europa.eu/resource/authority/subject-matter/COMB
+        title: Combustibili
+      - const: http://publications.europa.eu/resource/authority/subject-matter/COMP
+        title: Importi compensativi adesione
+      - const: http://publications.europa.eu/resource/authority/subject-matter/COMT
+        title: Convenzione di Bruxelles del 27 settembre 1968 - Competenza
+      - const: http://publications.europa.eu/resource/authority/subject-matter/CONC
+        title: Concorrenza
+      - const: http://publications.europa.eu/resource/authority/subject-matter/CONJ
+        title: Politica di congiuntura
+      - const: http://publications.europa.eu/resource/authority/subject-matter/CONT
+        title: Contingenti (paesi terzi)
+      - const: http://publications.europa.eu/resource/authority/subject-matter/COOP
+        title: Cooperazione
+      - const: http://publications.europa.eu/resource/authority/subject-matter/COOR
+        title: Coordinamento degli strumenti strutturali
+      - const: http://publications.europa.eu/resource/authority/subject-matter/COPE
+        title: Cooperazione politica europea
+      - const: http://publications.europa.eu/resource/authority/subject-matter/COPO
+        title: Cooperazione di polizia
+      - const: http://publications.europa.eu/resource/authority/subject-matter/COPT
+        title: Cooperazione economica, finanziaria e tecnica con i paesi terzi
+      - const: http://publications.europa.eu/resource/authority/subject-matter/CORE
+        title: Cooperazione rafforzata
+      - const: http://publications.europa.eu/resource/authority/subject-matter/COTO
+        title: Cotone
+      - const: http://publications.europa.eu/resource/authority/subject-matter/CRBM
+        title: Conservazione delle risorse biologiche del mare
+      - const: http://publications.europa.eu/resource/authority/subject-matter/CROM
+        title: Convenzione di Roma del 18 giugno 1980
+      - const: http://publications.europa.eu/resource/authority/subject-matter/CTEM
+        title: Contingenti tra Stati membri
+      - const: http://publications.europa.eu/resource/authority/subject-matter/CULT
+        title: Cultura
+      - const: http://publications.europa.eu/resource/authority/subject-matter/D-AL
+        title: Alimentari
+      - const: http://publications.europa.eu/resource/authority/subject-matter/DADV
+        title: Diritto d'autore e diritti vicini
+      - const: http://publications.europa.eu/resource/authority/subject-matter/DDES
+        title: Diritto d'ingresso e di soggiorno
+      - const: http://publications.europa.eu/resource/authority/subject-matter/DDLH
+        title: Diritti dell'uomo
+      - const: http://publications.europa.eu/resource/authority/subject-matter/DECH
+        title: Rifiuti
+      - const: http://publications.europa.eu/resource/authority/subject-matter/DEMO
+        title: Disegni e modelli
+      - const: http://publications.europa.eu/resource/authority/subject-matter/DFON
+        title: Diritti fondamentali
+      - const: http://publications.europa.eu/resource/authority/subject-matter/DGEN
+        title: Disposizioni generali
+      - const: http://publications.europa.eu/resource/authority/subject-matter/DIFF
+        title: Diffusione delle conoscenze
+      - const: http://publications.europa.eu/resource/authority/subject-matter/DIPL
+        title: Azione esterna dell'Unione
+      - const: http://publications.europa.eu/resource/authority/subject-matter/DISC
+        title: Non discriminazione
+      - const: http://publications.europa.eu/resource/authority/subject-matter/DOM
+        title: Dipartimenti francesi d'oltremare
+      - const: http://publications.europa.eu/resource/authority/subject-matter/DOUA
+        title: Cooperazione doganale
+      - const: http://publications.europa.eu/resource/authority/subject-matter/DROIT
+        title: Principi generali di diritto comunitario
+      - const: http://publications.europa.eu/resource/authority/subject-matter/DUMP
+        title: Dumping
+      - const: http://publications.europa.eu/resource/authority/subject-matter/EAMA
+        title: Stati africani e malgasci associati
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ECU
+        title: Corso dei cambi dell'ECU
+      - const: http://publications.europa.eu/resource/authority/subject-matter/EFPJ
+        title: "Istruzione, formazione professionale e giovent\xF9"
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ELSJ
+        title: "Spazio di libert\xE0, sicurezza e giustizia"
+      - const: http://publications.europa.eu/resource/authority/subject-matter/EMPL
+        title: Occupazione
+      - const: http://publications.europa.eu/resource/authority/subject-matter/EMPR
+        title: Prestiti
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ENCO
+        title: Intese e concentrazioni
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ENER
+        title: Energia
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ENTC
+        title: Imprese comuni
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ENTR
+        title: Intese
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ENV
+        title: Ambiente
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ESPA
+        title: Spazio
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ETAB
+        title: Diritto di stabilimento
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ETEC
+        title: Ostacoli tecnici
+      - const: http://publications.europa.eu/resource/authority/subject-matter/EURO
+        title: Euro
+      - const: http://publications.europa.eu/resource/authority/subject-matter/EXCL
+        title: Contratti di esclusiva
+      - const: http://publications.europa.eu/resource/authority/subject-matter/EXEC
+        title: Convenzione di Bruxelles del 27 settembre 1968 - Esecuzione
+      - const: http://publications.europa.eu/resource/authority/subject-matter/EXT
+        title: Relazioni esterne
+      - const: http://publications.europa.eu/resource/authority/subject-matter/F-L
+        title: Ortofrutticoli
+      - const: http://publications.europa.eu/resource/authority/subject-matter/FD
+        title: Fibre dure
+      - const: http://publications.europa.eu/resource/authority/subject-matter/FDES
+        title: Foraggi essiccati
+      - const: http://publications.europa.eu/resource/authority/subject-matter/FEADER
+        title: Fondi strutturali per l'agricoltura
+      - const: http://publications.europa.eu/resource/authority/subject-matter/FEAGA
+        title: Fondo europeo agricolo di garanzia
+      - const: http://publications.europa.eu/resource/authority/subject-matter/FED
+        title: Fondo europeo di sviluppo (FES)
+      - const: http://publications.europa.eu/resource/authority/subject-matter/FEDE
+        title: Fondo europeo di sviluppo regionale (FESR)
+      - const: http://publications.europa.eu/resource/authority/subject-matter/FEOG
+        title: Fondo europeo agricolo di orientamento e di garanzia (FEAOG)
+      - const: http://publications.europa.eu/resource/authority/subject-matter/FER
+        title: Ferro
+      - const: http://publications.europa.eu/resource/authority/subject-matter/FERR
+        title: Rottame
+      - const: http://publications.europa.eu/resource/authority/subject-matter/FEVT
+        title: Fondazione europea miglioramento condizioni vita e lavoro
+      - const: http://publications.europa.eu/resource/authority/subject-matter/FIN
+        title: Disposizioni finanziarie
+      - const: http://publications.europa.eu/resource/authority/subject-matter/FINC
+        title: Disposizioni finanziarie CECA
+      - const: http://publications.europa.eu/resource/authority/subject-matter/FISC
+        title: Affari fiscali
+      - const: http://publications.europa.eu/resource/authority/subject-matter/FLT
+        title: Ortofrutticoli trasformati
+      - const: http://publications.europa.eu/resource/authority/subject-matter/FONT
+        title: Ghisa
+      - const: http://publications.europa.eu/resource/authority/subject-matter/FRON
+        title: Controlli alle frontiere
+      - const: http://publications.europa.eu/resource/authority/subject-matter/FSE
+        title: Fondo sociale europeo (FSE)
+      - const: http://publications.europa.eu/resource/authority/subject-matter/GATT
+        title: Accordo generale sulle tariffe e il commercio (GATT)
+      - const: http://publications.europa.eu/resource/authority/subject-matter/HARD
+        title: 'Armonizzazione del diritto doganale: territorio doganale'
+      - const: http://publications.europa.eu/resource/authority/subject-matter/HARE
+        title: 'Armonizzazione del diritto doganale: depositi zone franche'
+      - const: http://publications.europa.eu/resource/authority/subject-matter/HARM
+        title: Armonizzazione delle legislazioni
+      - const: http://publications.europa.eu/resource/authority/subject-matter/HARO
+        title: 'Armonizzazione del diritto doganale: origine delle merci'
+      - const: http://publications.europa.eu/resource/authority/subject-matter/HARP
+        title: 'Armonizzazione del diritto doganale: perfezionamento attivo'
+      - const: http://publications.europa.eu/resource/authority/subject-matter/HART
+        title: 'Armonizzazione del diritto doganale: transito comunitario'
+      - const: http://publications.europa.eu/resource/authority/subject-matter/HARV
+        title: 'Armonizzazione del diritto doganale: valore in dogana'
+      - const: http://publications.europa.eu/resource/authority/subject-matter/HARX
+        title: 'Armonizzazione del diritto doganale: diversi'
+      - const: http://publications.europa.eu/resource/authority/subject-matter/HORS
+        title: Prodotti non compresi nell'allegato II del trattato CEE
+      - const: http://publications.europa.eu/resource/authority/subject-matter/HOUB
+        title: Luppolo
+      - const: http://publications.europa.eu/resource/authority/subject-matter/HOUI
+        title: Antracite
+      - const: http://publications.europa.eu/resource/authority/subject-matter/HUMA
+        title: Aiuto umanitario
+      - const: http://publications.europa.eu/resource/authority/subject-matter/IDST
+        title: Informazione e documentazione scientifiche e tecniche
+      - const: http://publications.europa.eu/resource/authority/subject-matter/IME
+        title: Istituto monetario europeo
+      - const: http://publications.europa.eu/resource/authority/subject-matter/IMMI
+        title: Politica di migrazione e asilo
+      - const: http://publications.europa.eu/resource/authority/subject-matter/IMPK
+        title: Disposizioni a norma dell'art. 95 CECA
+      - const: http://publications.europa.eu/resource/authority/subject-matter/IMPL
+        title: Disposizioni in applicazione dell'articolo 235 CEE
+      - const: http://publications.europa.eu/resource/authority/subject-matter/INDR
+        title: Imposte indirette
+      - const: http://publications.europa.eu/resource/authority/subject-matter/INDU
+        title: Industria
+      - const: http://publications.europa.eu/resource/authority/subject-matter/INFO
+        title: Informazione e verifiche
+      - const: http://publications.europa.eu/resource/authority/subject-matter/INFQ
+        title: Informatica
+      - const: http://publications.europa.eu/resource/authority/subject-matter/INST
+        title: Disposizioni istituzionali
+      - const: http://publications.europa.eu/resource/authority/subject-matter/INTE
+        title: Imposizioni interne
+      - const: http://publications.europa.eu/resource/authority/subject-matter/INV
+        title: Investimenti
+      - const: http://publications.europa.eu/resource/authority/subject-matter/IRDA
+        title: Integrazione della Repubblica democratica tedesca (RDT)
+      - const: http://publications.europa.eu/resource/authority/subject-matter/J-AI
+        title: Giustizia e affari interni
+      - const: http://publications.europa.eu/resource/authority/subject-matter/L-CH
+        title: Lino e canapa
+      - const: http://publications.europa.eu/resource/authority/subject-matter/LAIT
+        title: Prodotti lattiero-caseari
+      - const: http://publications.europa.eu/resource/authority/subject-matter/LCC
+        title: Libera circolazione dei capitali
+      - const: http://publications.europa.eu/resource/authority/subject-matter/LCM
+        title: Libera circolazione delle merci
+      - const: http://publications.europa.eu/resource/authority/subject-matter/LCP
+        title: Libera circolazione delle persone
+      - const: http://publications.europa.eu/resource/authority/subject-matter/LCT
+        title: Libera circolazione dei lavoratori
+      - const: http://publications.europa.eu/resource/authority/subject-matter/LES
+        title: "Libert\xE0 di stabilimento"
+      - const: http://publications.europa.eu/resource/authority/subject-matter/LIEG
+        title: Sughero
+      - const: http://publications.europa.eu/resource/authority/subject-matter/LPRA
+        title: Libera pratica
+      - const: http://publications.europa.eu/resource/authority/subject-matter/MARC
+        title: Appalti pubblici dell'Unione europea
+      - const: http://publications.europa.eu/resource/authority/subject-matter/MARI
+        title: Mercato interno - Principi
+      - const: http://publications.europa.eu/resource/authority/subject-matter/MARQ
+        title: Marchi
+      - const: http://publications.europa.eu/resource/authority/subject-matter/MECA
+        title: Medie imprese commercio e artigianato
+      - const: http://publications.europa.eu/resource/authority/subject-matter/MEEQ
+        title: Misure di effetto equivalente
+      - const: http://publications.europa.eu/resource/authority/subject-matter/MERG
+        title: Concentrazioni tra imprese
+      - const: http://publications.europa.eu/resource/authority/subject-matter/MEXT
+        title: Prodotti provenienti da paesi terzi
+      - const: http://publications.europa.eu/resource/authority/subject-matter/MGRA
+        title: Grassi
+      - const: http://publications.europa.eu/resource/authority/subject-matter/MIN
+        title: Minerale
+      - const: http://publications.europa.eu/resource/authority/subject-matter/MNOP
+        title: Monopoli nazionali a carattere commerciale
+      - const: http://publications.europa.eu/resource/authority/subject-matter/MONA
+        title: Misure monetarie in agricoltura
+      - const: http://publications.europa.eu/resource/authority/subject-matter/NAT
+        title: Divieto di discriminazione fondata sulla cittadinanza
+      - const: http://publications.europa.eu/resource/authority/subject-matter/NUCL
+        title: Nucleare
+      - const: http://publications.europa.eu/resource/authority/subject-matter/O-V
+        title: Uova e pollame
+      - const: http://publications.europa.eu/resource/authority/subject-matter/OBT
+        title: Ritrovati vegetali
+      - const: http://publications.europa.eu/resource/authority/subject-matter/OCM
+        title: Organizzazione comune dei mercati agricoli
+      - const: http://publications.europa.eu/resource/authority/subject-matter/OMC
+        title: Organizzazione mondiale del commercio
+      - const: http://publications.europa.eu/resource/authority/subject-matter/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/subject-matter/ORIG
+        title: Norme sull'origine
+      - const: http://publications.europa.eu/resource/authority/subject-matter/OVIN
+        title: Carni ovine e caprine
+      - const: http://publications.europa.eu/resource/authority/subject-matter/P-F
+        title: Piante e floricoltura
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PCIV
+        title: Protezione civile
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PCOM
+        title: Politica commerciale
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PDET
+        title: Patate
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PDON
+        title: Protezione dei dati
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PECH
+        title: Politica della pesca
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PECO
+        title: Politica economica
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PEM
+        title: Politica economica e monetaria
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PENU
+        title: Stato di penuria
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PERE
+        title: Perequazione del rottame
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PESC
+        title: Politica estera e di sicurezza comune
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PHYT
+        title: Legislazione fitosanitaria
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PIM
+        title: Programmi integrati mediterranei (PIM)
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PIND
+        title: Politica industriale
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PME
+        title: Piccole e medie imprese
+      - const: http://publications.europa.eu/resource/authority/subject-matter/POIS
+        title: Piselli, fave e favette
+      - const: http://publications.europa.eu/resource/authority/subject-matter/POLL
+        title: Inquinamento
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PORC
+        title: Carne suina
+      - const: http://publications.europa.eu/resource/authority/subject-matter/POSI
+        title: Posizione dominante
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PRAT
+        title: Pratiche concordate
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PREG
+        title: Politica regionale
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PREL
+        title: Prelievi e prestiti
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PRET
+        title: Prestiti e sovvenzioni
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PRIN
+        title: Principi obiettivi e missione dei trattati
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PRIV
+        title: "Privilegi e immunit\xE0"
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PRIX
+        title: Prezzi
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PROC
+        title: Disposizioni procedurali
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PROP
+        title: "Propriet\xE0 intellettuale, industriale e commerciale"
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PROT
+        title: Tutela dei consumatori
+      - const: http://publications.europa.eu/resource/authority/subject-matter/PTOM
+        title: Paesi e territori d'oltremare
+      - const: http://publications.europa.eu/resource/authority/subject-matter/QUOT
+        title: Quote di produzione
+      - const: http://publications.europa.eu/resource/authority/subject-matter/RAPL
+        title: Ravvicinamento delle legislazioni
+      - const: http://publications.europa.eu/resource/authority/subject-matter/RDOU
+        title: Regimi doganali
+      - const: http://publications.europa.eu/resource/authority/subject-matter/RDT
+        title: Ricerca e sviluppo tecnologico
+      - const: http://publications.europa.eu/resource/authority/subject-matter/REACH
+        title: REACH
+      - const: http://publications.europa.eu/resource/authority/subject-matter/RECH
+        title: Ricerca e insegnamento
+      - const: http://publications.europa.eu/resource/authority/subject-matter/RECO
+        title: Procedura giudiziaria
+      - const: http://publications.europa.eu/resource/authority/subject-matter/RESP
+        title: "Responsabilit\xE0 extracontrattuale"
+      - const: http://publications.europa.eu/resource/authority/subject-matter/RIZ
+        title: Riso
+      - const: http://publications.europa.eu/resource/authority/subject-matter/RPRE
+        title: Regimi preferenziali
+      - const: http://publications.europa.eu/resource/authority/subject-matter/RPRO
+        title: Risorse proprie
+      - const: http://publications.europa.eu/resource/authority/subject-matter/RQME
+        title: Restrizioni quantitative e misure di effetto equivalente
+      - const: http://publications.europa.eu/resource/authority/subject-matter/RSTR
+        title: Restrizioni quantitative
+      - const: http://publications.europa.eu/resource/authority/subject-matter/RTR
+        title: Reti transeuropee
+      - const: http://publications.europa.eu/resource/authority/subject-matter/RTRA
+        title: Regimi di transito comunitario
+      - const: http://publications.europa.eu/resource/authority/subject-matter/RULESPRO
+        title: Regolamento interno
+      - const: http://publications.europa.eu/resource/authority/subject-matter/SANI
+        title: Protezione sanitaria
+      - const: http://publications.europa.eu/resource/authority/subject-matter/SANT
+        title: "Sanit\xE0 pubblica"
+      - const: http://publications.europa.eu/resource/authority/subject-matter/SAUV
+        title: Misure di salvaguardia
+      - const: http://publications.europa.eu/resource/authority/subject-matter/SEBC
+        title: Sistema europeo di banche centrali
+      - const: http://publications.europa.eu/resource/authority/subject-matter/SECR
+        title: Regime di segreto
+      - const: http://publications.europa.eu/resource/authority/subject-matter/SECU
+        title: Sicurezza dei lavoratori e della popolazione
+      - const: http://publications.europa.eu/resource/authority/subject-matter/SEME
+        title: Sementi e piante
+      - const: http://publications.europa.eu/resource/authority/subject-matter/SERV
+        title: Libera prestazione dei servizi
+      - const: http://publications.europa.eu/resource/authority/subject-matter/SESO
+        title: Sicurezza sociale dei lavoratori migranti
+      - const: http://publications.europa.eu/resource/authority/subject-matter/SIDE
+        title: "Siderurgia \u2013 acciaio in senso lato"
+      - const: http://publications.europa.eu/resource/authority/subject-matter/SILV
+        title: Silvicoltura
+      - const: http://publications.europa.eu/resource/authority/subject-matter/SOCI
+        title: Disposizioni sociali
+      - const: http://publications.europa.eu/resource/authority/subject-matter/SOLD
+        title: Prodotti allegato II trattato CEE e regolamento (CEE) n. 827/68
+      - const: http://publications.europa.eu/resource/authority/subject-matter/SOLI
+        title: "Clausola di solidariet\xE0"
+      - const: http://publications.europa.eu/resource/authority/subject-matter/SOPO
+        title: Politica sociale
+      - const: http://publications.europa.eu/resource/authority/subject-matter/SPOR
+        title: Sport
+      - const: http://publications.europa.eu/resource/authority/subject-matter/STAT
+        title: Statuto dei funzionari e regime altri agenti
+      - const: http://publications.europa.eu/resource/authority/subject-matter/STRA
+        title: Strutture agrarie
+      - const: http://publications.europa.eu/resource/authority/subject-matter/SUBV
+        title: "Sovvenzioni e aiuti dell'alta autorit\xE0"
+      - const: http://publications.europa.eu/resource/authority/subject-matter/SUCR
+        title: Zucchero
+      - const: http://publications.europa.eu/resource/authority/subject-matter/TABA
+        title: Tabacco
+      - const: http://publications.europa.eu/resource/authority/subject-matter/TDC
+        title: Tariffa doganale comune
+      - const: http://publications.europa.eu/resource/authority/subject-matter/TDCA
+        title: 'Dazi doganali: decisioni sull''acceleramento'
+      - const: http://publications.europa.eu/resource/authority/subject-matter/TDCC
+        title: 'Dazi doganali: contingenti tariffari comunitari'
+      - const: http://publications.europa.eu/resource/authority/subject-matter/TDCD
+        title: 'Dazi doganali: autorizzazione differire applicazione tdc'
+      - const: http://publications.europa.eu/resource/authority/subject-matter/TDCF
+        title: 'Tariffa doganale comune: franchigia'
+      - const: http://publications.europa.eu/resource/authority/subject-matter/TDCM
+        title: 'Tariffa doganale comune: misure derogatorie'
+      - const: http://publications.europa.eu/resource/authority/subject-matter/TDCN
+        title: 'Dazi doganali: contingenti tariffari nazionali'
+      - const: http://publications.europa.eu/resource/authority/subject-matter/TDCS
+        title: 'Dazi doganali: sospensioni'
+      - const: http://publications.europa.eu/resource/authority/subject-matter/TECN
+        title: Tecnologie
+      - const: http://publications.europa.eu/resource/authority/subject-matter/TEEQ
+        title: Imposte di effetto equivalente
+      - const: http://publications.europa.eu/resource/authority/subject-matter/TELE
+        title: Telecomunicazioni
+      - const: http://publications.europa.eu/resource/authority/subject-matter/TIN
+        title: Stagno
+      - const: http://publications.europa.eu/resource/authority/subject-matter/TOUR
+        title: Turismo
+      - const: http://publications.europa.eu/resource/authority/subject-matter/TRAN
+        title: Trasporti
+      - const: http://publications.europa.eu/resource/authority/subject-matter/TUC
+        title: Tariffa unificata comune CECA
+      - const: http://publications.europa.eu/resource/authority/subject-matter/TVA
+        title: Imposta sul valore aggiunto
+      - const: http://publications.europa.eu/resource/authority/subject-matter/TXTL
+        title: Tessili
+      - const: http://publications.europa.eu/resource/authority/subject-matter/UD
+        title: Unione doganale
+      - const: http://publications.europa.eu/resource/authority/subject-matter/UEM
+        title: Unione economica e monetaria
+      - const: http://publications.europa.eu/resource/authority/subject-matter/V-LG
+        title: Carni di coniglio e di selvaggina d'allevamento
+      - const: http://publications.europa.eu/resource/authority/subject-matter/VA
+        title: Valore in dogana
+      - const: http://publications.europa.eu/resource/authority/subject-matter/VETE
+        title: Legislazione veterinaria
+      - const: http://publications.europa.eu/resource/authority/subject-matter/VIN
+        title: Vino
+      - const: http://publications.europa.eu/resource/authority/subject-matter/VSOI
+        title: Bachi da seta
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_02507fc0
+        title: Statistiche monetarie, degli enti creditizi e dei mercati
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_04b171e5
+        title: Conti finanziari
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_05d7dbed
+        title: Poteri e compiti di vigilanza
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_06daf249
+        title: Principi organizzativi
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_0e6e516f
+        title: Cambi e riserve in valuta
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_12480e7d
+        title: Strumenti di politica monetaria
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_18755e4d
+        title: Meccanismo di cambio (AEC II)
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_206cfcfa
+        title: Cooperazione in materia di vigilanza bancaria
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_23d62986
+        title: Segnalazione
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_29b3ace8
+        title: Regolamento interno e altre disposizioni interne
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_38e22180
+        title: Reddito monetario
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_3ad55b09
+        title: Riserve obbligatorie
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_3e1e305a
+        title: Sostegno finanziario
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_40b2d24f
+        title: "Gare d\u2019appalto"
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_491cdcaa
+        title: Sorveglianza
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_4e12d83d
+        title: Scambio di informazioni e accesso del pubblico ai documenti
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_594e5232
+        title: Disciplina temporanea
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_5cd67341
+        title: Emissione di banconote in euro
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_625f1587
+        title: "Statistiche sulle disponibilit\xE0 in titoli"
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_6365150f
+        title: Statistiche generali
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_64a25727
+        title: Rilevazione e rendicontazione contabili
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_64b94fae
+        title: Sostituzione del contante
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_68aa4a7e
+        title: Produzione di banconote in euro
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_69c82520
+        title: Questioni relative alla protezione dei dati
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_6c9bbb79
+        title: Capitale della BCE
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_6f402b92
+        title: Questioni relative alle relazioni esterne
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_714f9151
+        title: Cambio
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_726ab1b3
+        title: Disciplina generale
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_76b44336
+        title: Vigilanza bancaria
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_7b45b05f
+        title: Revisione dei conti
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_7ca072c7
+        title: Conio di monete metalliche
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_8a588fbc
+        title: "Valutazioni di significativit\xE0"
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_8c4a6e26
+        title: Divieto di finanziamento monetario
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_8e12de2a
+        title: Statistiche
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_962003de
+        title: Regime giuridico del SEBC
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_964d98cc
+        title: Struttura istituzionale e governance
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_9e589776
+        title: Sistema di trasferimento espresso transeuropeo automatizzato di regolamento
+          lordo in tempo reale (TARGET2)
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_abd72d0f
+        title: Operazioni e posizioni esterne
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_ac4906db
+        title: "Contributi per le attivit\xE0 di vigilanza"
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_adb3ab0f
+        title: Requisiti patrimoniali
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_af796aa3
+        title: "Servizi dell\u2019Eurosistema di gestione delle riserve"
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_b1a922fd
+        title: "Stabilit\xE0 dei mercati finanziari"
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_b21ec68a
+        title: Trasparenza
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_c3e5c068
+        title: Politica monetaria e operazioni
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_c47bf652
+        title: TARGET2-Securities (T2S)
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_c55af8ef
+        title: Banconote e monete metalliche, mezzi di pagamento e questioni valutarie
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_cc640542
+        title: Riservatezza
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_cd441130
+        title: Sistemi di pagamento e di regolamento
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_cd594a3b
+        title: Prevenzione delle frodi
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_d7a89aa3
+        title: Compiti microprudenziali
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_d82c4c81
+        title: Disposizioni istituzionali della BCE
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_db8034fd
+        title: Cooperazione stretta
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_eb901451
+        title: Riserve in valuta
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_eef03101
+        title: Sanzioni
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_f3f2224d
+        title: Condizioni di impiego
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_f6ee40b4
+        title: Protezione dell'euro
+      - const: http://publications.europa.eu/resource/authority/subject-matter/c_f7fa4b33
+        title: Euro short-term rate
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

@@ -1,0 +1,55 @@
+components:
+  schemas:
+    MyVocabulary:
+      description: A schema containing all the vocabulary terms.
+      oneOf:
+      - const: http://publications.europa.eu/resource/authority/organisation-role/OP_DATPRO
+        title: Dati provvisori
+      - const: http://publications.europa.eu/resource/authority/organisation-role/ben-own
+        title: Titolare effettivo
+      - const: http://publications.europa.eu/resource/authority/organisation-role/buyer
+        title: Committente
+      - const: http://publications.europa.eu/resource/authority/organisation-role/cpb-acq
+        title: Centrale di committenza per l'acquisizione di forniture e/o servizi
+          destinati ad altri committenti
+      - const: http://publications.europa.eu/resource/authority/organisation-role/cpb-awa
+        title: Centrale di committenza per l'aggiudicazione di appalti o la conclusione
+          di accordi quadro per lavori, forniture o servizi destinati ad altri committenti
+      - const: http://publications.europa.eu/resource/authority/organisation-role/info-emp
+        title: Organizzazione presso la quale possono essere richieste informazioni
+          sul quadro normativo generale vigente in materia di tutela dei lavoratori
+          e condizioni di lavoro nel luogo in cui l'appalto deve essere eseguito
+      - const: http://publications.europa.eu/resource/authority/organisation-role/info-envir
+        title: Organizzazione presso la quale possono essere richieste informazioni
+          sul quadro normativo generale vigente in materia di protezione dell'ambiente
+          nel luogo in cui l'appalto deve essere eseguito
+      - const: http://publications.europa.eu/resource/authority/organisation-role/info-tax
+        title: "Organizzazione presso la quale possono essere richieste informazioni\
+          \ sul quadro normativo generale vigente in materia di fiscalit\xE0 nel luogo\
+          \ in cui l'appalto deve essere eseguito"
+      - const: http://publications.europa.eu/resource/authority/organisation-role/mediator
+        title: Organizzazione di mediazione
+      - const: http://publications.europa.eu/resource/authority/organisation-role/rev-req
+        title: Organizzazione (o persona) che presenta ricorso, che abbia o abbia
+          avuto interesse a ottenere l'aggiudicazione di un appalto e sia stata o
+          rischi di essere lesa a causa di una presunta violazione
+      - const: http://publications.europa.eu/resource/authority/organisation-role/reviewer
+        title: Organizzazione competente per i ricorsi
+      - const: http://publications.europa.eu/resource/authority/organisation-role/serv-prov
+        title: Prestatore di servizi in materia di appalti
+      - const: http://publications.europa.eu/resource/authority/organisation-role/subcont
+        title: Subappaltatore
+      - const: http://publications.europa.eu/resource/authority/organisation-role/ted-esen
+        title: TED eSender
+      - const: http://publications.europa.eu/resource/authority/organisation-role/tenderer
+        title: Offerente
+      - const: http://publications.europa.eu/resource/authority/organisation-role/winner
+        title: Vincitore
+info:
+  contact:
+    name: Vocabulary
+    url: https://foo.bar
+  title: Vocabulary
+  version: 1.0.0
+  x-summary: Vocabulary
+openapi: 3.0.0

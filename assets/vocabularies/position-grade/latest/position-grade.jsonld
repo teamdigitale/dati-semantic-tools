@@ -1,0 +1,1434 @@
+{
+  "@context": {
+    "at": "http://publications.europa.eu/ontology/authority/",
+    "atold": "http://publications.europa.eu/resource/authority/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/CONTR3_10",
+      "@type": "skos:Concept",
+      "at:authority-code": "CONTR3_10",
+      "at:deprecated": "false",
+      "at:op-code": "CONTR3_10",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "CONTR3_10",
+      "dc:identifier": "CONTR3_10",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Contractual agent III/10"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG032"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Contractual III-10"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/AST4",
+      "@type": "skos:Concept",
+      "at:authority-code": "AST4",
+      "at:deprecated": "false",
+      "at:op-code": "AST4",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "AST4",
+      "dc:identifier": "AST4",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Assistant 4"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG036"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AST 4"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/AD12",
+      "@type": "skos:Concept",
+      "at:authority-code": "AD12",
+      "at:deprecated": "false",
+      "at:op-code": "AD12",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "AD12",
+      "dc:identifier": "AD12",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Administrator 12"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG035"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AD 12"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/CONTR2_7",
+      "@type": "skos:Concept",
+      "at:authority-code": "CONTR2_7",
+      "at:deprecated": "false",
+      "at:op-code": "CONTR2_7",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "CONTR2_7",
+      "dc:identifier": "CONTR2_7",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Contractual agent II/7"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG031"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Contractual II-7"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/AD",
+      "@type": "skos:Concept",
+      "at:authority-code": "AD",
+      "at:deprecated": "false",
+      "at:op-code": "AD",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "AD",
+      "dc:identifier": "AD",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Administrator"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AD"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/SC5",
+      "@type": "skos:Concept",
+      "at:authority-code": "SC5",
+      "at:deprecated": "false",
+      "at:op-code": "SC5",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "SC5",
+      "dc:identifier": "SC5",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Assistant secretary 5"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG037"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AST/SC 5"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/SC2",
+      "@type": "skos:Concept",
+      "at:authority-code": "SC2",
+      "at:deprecated": "false",
+      "at:op-code": "SC2",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "SC2",
+      "dc:identifier": "SC2",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Assistant secretary 2"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG037"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AST/SC 2"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/NAT_EXP",
+      "@type": "skos:Concept",
+      "at:authority-code": "NAT_EXP",
+      "at:deprecated": "true",
+      "at:end.use": "1958-01-01",
+      "at:op-code": "NAT_EXP",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "NAT_EXP",
+      "dc:identifier": "NAT_EXP",
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Seconded national expert"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/AST6",
+      "@type": "skos:Concept",
+      "at:authority-code": "AST6",
+      "at:deprecated": "false",
+      "at:op-code": "AST6",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "AST6",
+      "dc:identifier": "AST6",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Assistant 6"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG036"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AST 6"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/AD11",
+      "@type": "skos:Concept",
+      "at:authority-code": "AD11",
+      "at:deprecated": "false",
+      "at:op-code": "AD11",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "AD11",
+      "dc:identifier": "AD11",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Administrator 11"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG035"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AD 11"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/CONTR1_1",
+      "@type": "skos:Concept",
+      "at:authority-code": "CONTR1_1",
+      "at:deprecated": "false",
+      "at:op-code": "CONTR1_1",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "CONTR1_1",
+      "dc:identifier": "CONTR1_1",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Contractual agent I/1"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG030"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Contractual I-1"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/AST2",
+      "@type": "skos:Concept",
+      "at:authority-code": "AST2",
+      "at:deprecated": "false",
+      "at:op-code": "AST2",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "AST2",
+      "dc:identifier": "AST2",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Assistant 2"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG036"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AST 2"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/CONTR4_18",
+      "@type": "skos:Concept",
+      "at:authority-code": "CONTR4_18",
+      "at:deprecated": "false",
+      "at:op-code": "CONTR4_18",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "CONTR4_18",
+      "dc:identifier": "CONTR4_18",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Contractual agent IV/18"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG033"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Contractual IV-18"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/AD6",
+      "@type": "skos:Concept",
+      "at:authority-code": "AD6",
+      "at:deprecated": "false",
+      "at:op-code": "AD6",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "AD6",
+      "dc:identifier": "AD6",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Administrator 6"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG035"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AD 6"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/OP_DATPRO",
+      "@type": "skos:Concept",
+      "at:op-code": "OP_DATPRO",
+      "atold:op-code": "OP_DATPRO",
+      "dc:identifier": "OP_DATPRO",
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "bg",
+          "@value": "НЕОКОНЧАТЕЛНИ ДАННИ"
+        },
+        {
+          "@language": "cs",
+          "@value": "Předběžné údaje"
+        },
+        {
+          "@language": "da",
+          "@value": "Midlertidige data"
+        },
+        {
+          "@language": "de",
+          "@value": "Vorläufige Daten"
+        },
+        {
+          "@language": "el",
+          "@value": "Προσωρινά δεδομένα"
+        },
+        {
+          "@language": "en",
+          "@value": "Provisional data"
+        },
+        {
+          "@language": "es",
+          "@value": "Datos provisionales"
+        },
+        {
+          "@language": "et",
+          "@value": "Esialgsed andmed"
+        },
+        {
+          "@language": "fi",
+          "@value": "Alustavat tiedot"
+        },
+        {
+          "@language": "fr",
+          "@value": "Données provisoires"
+        },
+        {
+          "@language": "ga",
+          "@value": "Sonraí sealadacha"
+        },
+        {
+          "@language": "hr",
+          "@value": "Privremeni podaci"
+        },
+        {
+          "@language": "hu",
+          "@value": "Ideiglenes adatok"
+        },
+        {
+          "@language": "it",
+          "@value": "Dati provvisori"
+        },
+        {
+          "@language": "lt",
+          "@value": "Laikinieji duomenys"
+        },
+        {
+          "@language": "lv",
+          "@value": "Provizoriski dati"
+        },
+        {
+          "@language": "mt",
+          "@value": "Dejta provviżorja"
+        },
+        {
+          "@language": "nl",
+          "@value": "Voorlopige gegevens"
+        },
+        {
+          "@language": "pl",
+          "@value": "Dane tymczasowe"
+        },
+        {
+          "@language": "pt",
+          "@value": "Dados provisórios"
+        },
+        {
+          "@language": "ro",
+          "@value": "Date provizorii"
+        },
+        {
+          "@language": "sk",
+          "@value": "Predbežné údaje"
+        },
+        {
+          "@language": "sl",
+          "@value": "Začasni podatki"
+        },
+        {
+          "@language": "sv",
+          "@value": "Tillfälliga uppgifter"
+        }
+      ]
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/AST9",
+      "@type": "skos:Concept",
+      "at:authority-code": "AST9",
+      "at:deprecated": "false",
+      "at:op-code": "AST9",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "AST9",
+      "dc:identifier": "AST9",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Assistant 9"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG036"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AST 9"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/AST8",
+      "@type": "skos:Concept",
+      "at:authority-code": "AST8",
+      "at:deprecated": "false",
+      "at:op-code": "AST8",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "AST8",
+      "dc:identifier": "AST8",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Assistant 8"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG036"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AST 8"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/CONTR4_15",
+      "@type": "skos:Concept",
+      "at:authority-code": "CONTR4_15",
+      "at:deprecated": "false",
+      "at:op-code": "CONTR4_15",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "CONTR4_15",
+      "dc:identifier": "CONTR4_15",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Contractual agent IV/15"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG033"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Contractual IV-15"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/AST7",
+      "@type": "skos:Concept",
+      "at:authority-code": "AST7",
+      "at:deprecated": "false",
+      "at:op-code": "AST7",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "AST7",
+      "dc:identifier": "AST7",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Assistant 7"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG036"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AST 7"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/CONTR3_8",
+      "@type": "skos:Concept",
+      "at:authority-code": "CONTR3_8",
+      "at:deprecated": "false",
+      "at:op-code": "CONTR3_8",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "CONTR3_8",
+      "dc:identifier": "CONTR3_8",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Contractual agent III/8"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG032"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Contractual III-8"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/CONTR1_3",
+      "@type": "skos:Concept",
+      "at:authority-code": "CONTR1_3",
+      "at:deprecated": "false",
+      "at:op-code": "CONTR1_3",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "CONTR1_3",
+      "dc:identifier": "CONTR1_3",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Contractual agent I/3"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG030"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Contractual I-3"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/AST11",
+      "@type": "skos:Concept",
+      "at:authority-code": "AST11",
+      "at:deprecated": "false",
+      "at:op-code": "AST11",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "AST11",
+      "dc:identifier": "AST11",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Assistant 11"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG036"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AST 11"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/CONTR4",
+      "@type": "skos:Concept",
+      "at:authority-code": "CONTR4",
+      "at:deprecated": "false",
+      "at:op-code": "CONTR4",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "CONTR4",
+      "dc:identifier": "CONTR4",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Contractual agent IV"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Contractual IV"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/CONTR4_13",
+      "@type": "skos:Concept",
+      "at:authority-code": "CONTR4_13",
+      "at:deprecated": "false",
+      "at:op-code": "CONTR4_13",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "CONTR4_13",
+      "dc:identifier": "CONTR4_13",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Contractual agent IV/13"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG033"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Contractual IV-13"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/CONTR4_16",
+      "@type": "skos:Concept",
+      "at:authority-code": "CONTR4_16",
+      "at:deprecated": "false",
+      "at:op-code": "CONTR4_16",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "CONTR4_16",
+      "dc:identifier": "CONTR4_16",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Contractual agent IV/16"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG033"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Contractual IV-16"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/AST3",
+      "@type": "skos:Concept",
+      "at:authority-code": "AST3",
+      "at:deprecated": "false",
+      "at:op-code": "AST3",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "AST3",
+      "dc:identifier": "AST3",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Assistant 3"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG036"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AST 3"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/CONTR2_6",
+      "@type": "skos:Concept",
+      "at:authority-code": "CONTR2_6",
+      "at:deprecated": "false",
+      "at:op-code": "CONTR2_6",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "CONTR2_6",
+      "dc:identifier": "CONTR2_6",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Contractual agent II/6"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG031"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Contractual II-6"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/AST5",
+      "@type": "skos:Concept",
+      "at:authority-code": "AST5",
+      "at:deprecated": "false",
+      "at:op-code": "AST5",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "AST5",
+      "dc:identifier": "AST5",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Assistant 5"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG036"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AST 5"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/AST10",
+      "@type": "skos:Concept",
+      "at:authority-code": "AST10",
+      "at:deprecated": "false",
+      "at:op-code": "AST10",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "AST10",
+      "dc:identifier": "AST10",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Assistant 10"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG036"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AST 10"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/AD14",
+      "@type": "skos:Concept",
+      "at:authority-code": "AD14",
+      "at:deprecated": "false",
+      "at:op-code": "AD14",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "AD14",
+      "dc:identifier": "AD14",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Administrator 14"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG035"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AD 14"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/CONTR2_4",
+      "@type": "skos:Concept",
+      "at:authority-code": "CONTR2_4",
+      "at:deprecated": "false",
+      "at:op-code": "CONTR2_4",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "CONTR2_4",
+      "dc:identifier": "CONTR2_4",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Contractual agent II/4"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG031"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Contractual II-4"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/CONTR2_5",
+      "@type": "skos:Concept",
+      "at:authority-code": "CONTR2_5",
+      "at:deprecated": "false",
+      "at:op-code": "CONTR2_5",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "CONTR2_5",
+      "dc:identifier": "CONTR2_5",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Contractual agent II/5"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG031"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Contractual II-5"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/CONTR3_12",
+      "@type": "skos:Concept",
+      "at:authority-code": "CONTR3_12",
+      "at:deprecated": "false",
+      "at:op-code": "CONTR3_12",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "CONTR3_12",
+      "dc:identifier": "CONTR3_12",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Contractual agent III/12"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG032"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Contractual III-12"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/CONTR3",
+      "@type": "skos:Concept",
+      "at:authority-code": "CONTR3",
+      "at:deprecated": "false",
+      "at:op-code": "CONTR3",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "CONTR3",
+      "dc:identifier": "CONTR3",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Contractual agent III"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Contractual III"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/SC",
+      "@type": "skos:Concept",
+      "at:authority-code": "SC",
+      "at:deprecated": "false",
+      "at:op-code": "SC",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "SC",
+      "dc:identifier": "SC",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Assistant secretary"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AST/SC"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/CONTR2",
+      "@type": "skos:Concept",
+      "at:authority-code": "CONTR2",
+      "at:deprecated": "false",
+      "at:op-code": "CONTR2",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "CONTR2",
+      "dc:identifier": "CONTR2",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Contractual agent II"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Contractual II"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/CONTR3_11",
+      "@type": "skos:Concept",
+      "at:authority-code": "CONTR3_11",
+      "at:deprecated": "false",
+      "at:op-code": "CONTR3_11",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "CONTR3_11",
+      "dc:identifier": "CONTR3_11",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Contractual agent III/11"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG032"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Contractual III-11"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/SC3",
+      "@type": "skos:Concept",
+      "at:authority-code": "SC3",
+      "at:deprecated": "false",
+      "at:op-code": "SC3",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "SC3",
+      "dc:identifier": "SC3",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Assistant secretary 3"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG037"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AST/SC 3"
+      }
+    },
+    {
+      "@id": "atold:position-grade",
+      "@type": "skos:ConceptScheme",
+      "at:prefLabel": {
+        "@language": "en",
+        "@value": "Position grade"
+      },
+      "at:table.id": "position-grade",
+      "at:table.version.number": "20210929-0",
+      "owl:versionInfo": "20210929-0",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Position grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Position grade"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/CONTR3_9",
+      "@type": "skos:Concept",
+      "at:authority-code": "CONTR3_9",
+      "at:deprecated": "false",
+      "at:op-code": "CONTR3_9",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "CONTR3_9",
+      "dc:identifier": "CONTR3_9",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Contractual agent III/9"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG032"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Contractual III-9"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/AD10",
+      "@type": "skos:Concept",
+      "at:authority-code": "AD10",
+      "at:deprecated": "false",
+      "at:op-code": "AD10",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "AD10",
+      "dc:identifier": "AD10",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Administrator 10"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG035"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AD 10"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/AD16",
+      "@type": "skos:Concept",
+      "at:authority-code": "AD16",
+      "at:deprecated": "false",
+      "at:op-code": "AD16",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "AD16",
+      "dc:identifier": "AD16",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Administrator 16"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG035"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AD 16"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/AD15",
+      "@type": "skos:Concept",
+      "at:authority-code": "AD15",
+      "at:deprecated": "false",
+      "at:op-code": "AD15",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "AD15",
+      "dc:identifier": "AD15",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Administrator 15"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG035"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AD 15"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/AST",
+      "@type": "skos:Concept",
+      "at:authority-code": "AST",
+      "at:deprecated": "false",
+      "at:op-code": "AST",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "AST",
+      "dc:identifier": "AST",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Assistant"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AST"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/AD13",
+      "@type": "skos:Concept",
+      "at:authority-code": "AD13",
+      "at:deprecated": "false",
+      "at:op-code": "AD13",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "AD13",
+      "dc:identifier": "AD13",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Administrator 13"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG035"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AD 13"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/CONTR1_2",
+      "@type": "skos:Concept",
+      "at:authority-code": "CONTR1_2",
+      "at:deprecated": "false",
+      "at:op-code": "CONTR1_2",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "CONTR1_2",
+      "dc:identifier": "CONTR1_2",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Contractual agent I/2"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG030"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Contractual I-2"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/CONTR4_14",
+      "@type": "skos:Concept",
+      "at:authority-code": "CONTR4_14",
+      "at:deprecated": "false",
+      "at:op-code": "CONTR4_14",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "CONTR4_14",
+      "dc:identifier": "CONTR4_14",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Contractual agent IV/14"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG033"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Contractual IV-14"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/SC6",
+      "@type": "skos:Concept",
+      "at:authority-code": "SC6",
+      "at:deprecated": "false",
+      "at:op-code": "SC6",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "SC6",
+      "dc:identifier": "SC6",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Assistant secretary 6"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG037"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AST/SC 6"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/SC4",
+      "@type": "skos:Concept",
+      "at:authority-code": "SC4",
+      "at:deprecated": "false",
+      "at:op-code": "SC4",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "SC4",
+      "dc:identifier": "SC4",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Assistant secretary 4"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG037"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AST/SC 4"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/SC1",
+      "@type": "skos:Concept",
+      "at:authority-code": "SC1",
+      "at:deprecated": "false",
+      "at:op-code": "SC1",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "SC1",
+      "dc:identifier": "SC1",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Assistant secretary 1"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG037"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AST/SC 1"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/AD5",
+      "@type": "skos:Concept",
+      "at:authority-code": "AD5",
+      "at:deprecated": "false",
+      "at:op-code": "AD5",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "AD5",
+      "dc:identifier": "AD5",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Administrator 5"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG035"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AD 5"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/AD8",
+      "@type": "skos:Concept",
+      "at:authority-code": "AD8",
+      "at:deprecated": "false",
+      "at:op-code": "AD8",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "AD8",
+      "dc:identifier": "AD8",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Administrator 8"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG035"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AD 8"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/CONTR4_17",
+      "@type": "skos:Concept",
+      "at:authority-code": "CONTR4_17",
+      "at:deprecated": "false",
+      "at:op-code": "CONTR4_17",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "CONTR4_17",
+      "dc:identifier": "CONTR4_17",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Contractual agent IV/17"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG033"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Contractual IV-17"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/AD9",
+      "@type": "skos:Concept",
+      "at:authority-code": "AD9",
+      "at:deprecated": "false",
+      "at:op-code": "AD9",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "AD9",
+      "dc:identifier": "AD9",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Administrator 9"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG035"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AD 9"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/CONTR1",
+      "@type": "skos:Concept",
+      "at:authority-code": "CONTR1",
+      "at:deprecated": "false",
+      "at:op-code": "CONTR1",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "CONTR1",
+      "dc:identifier": "CONTR1",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Contractual agent I"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Contractual I"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/AST1",
+      "@type": "skos:Concept",
+      "at:authority-code": "AST1",
+      "at:deprecated": "false",
+      "at:op-code": "AST1",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "AST1",
+      "dc:identifier": "AST1",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Assistant 1"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG036"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AST 1"
+      }
+    },
+    {
+      "@id": "http://publications.europa.eu/resource/authority/position-grade/AD7",
+      "@type": "skos:Concept",
+      "at:authority-code": "AD7",
+      "at:deprecated": "false",
+      "at:op-code": "AD7",
+      "at:start.use": "1958-01-01",
+      "atold:op-code": "AD7",
+      "dc:identifier": "AD7",
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Administrator 7"
+      },
+      "skos:broader": {
+        "@id": "http://publications.europa.eu/resource/authority/position-grade/PSTG035"
+      },
+      "skos:inScheme": {
+        "@id": "atold:position-grade"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AD 7"
+      }
+    }
+  ]
+}
