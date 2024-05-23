@@ -8,7 +8,7 @@
 # See https://pre-commit.com/hooks.html for more hooks
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.0.1
+    rev: v4.6.0
     hooks:
     -   id: trailing-whitespace
     -   id: end-of-file-fixer
@@ -18,7 +18,7 @@ repos:
         args:
         - "--maxkb=4000"
 - repo: https://github.com/myint/autoflake
-  rev: v1.4
+  rev: v2.3.1
   hooks:
     - id: autoflake
       args:
@@ -26,11 +26,11 @@ repos:
         - --remove-unused-variables
         - --remove-all-unused-imports
 -   repo: https://github.com/psf/black
-    rev: 22.3.0
+    rev: 24.4.2
     hooks:
     -   id: black
 - repo: https://github.com/pycqa/isort
-  rev: 5.10.1
+  rev: 5.12.0
   hooks:
     - id: isort
       name: isort (python)
@@ -43,12 +43,12 @@ repos:
     - id: isort
       name: isort (pyi)
       types: [pyi]
-- repo: https://gitlab.com/pycqa/flake8
-  rev: 3.9.2
+- repo: https://github.com/PyCQA/flake8
+  rev: 7.0.0
   hooks:
   - id: flake8
 - repo: https://github.com/PyCQA/bandit
-  rev: 1.7.1
+  rev: 1.7.8
   hooks:
     - id: bandit
       name: bandit
@@ -59,49 +59,150 @@ repos:
       language_version: python3
       types: [python]
 - repo: https://github.com/Lucas-C/pre-commit-hooks-safety
-  rev: v1.3.0
+  rev: v1.3.3
   hooks:
     - id: python-safety-dependencies-check
 - repo: local
   hooks:
-  - id: jsonschema
-    name: jsonschema
-    entry: python -m dati_playground validate --validate-jsonschema=true
-    files: '.*\.schema.yaml'
-    language: python
-    types:
-    - file
-    additional_dependencies:
-    - git+https://github.com/ioggstream/json-semantic-playground
-  - id: onto-pyshacl
-    name: pyshacl ontologies
-    entry: python -m dati_playground validate --validate-shacl=true
-    files: >-
-      ^assets\/ontologies\/.*\.ttl
-    exclude: >-
-      ^.*(-align|-DBGT|example).*\.ttl$
-    types:
-    - file
-    language: python
-    additional_dependencies:
-    - git+https://github.com/ioggstream/json-semantic-playground
-  - id: onto-latest
-    name: Ontologies latest validator
-    entry: python -m dati_playground validate --validate-versioned-directory=true
-    files: '^assets\/ontologies\/.*\.ttl'
-    exclude: >-
-      ^.*(-align|-DBGT|example).*\.ttl$
-    language: python
-    types:
-    - file
-    additional_dependencies:
-    - git+https://github.com/ioggstream/json-semantic-playground
-  - id: vocab-pyshacl
-    name: pyshacl vocabularies
-    entry: python -m dati_playground validate --validate-shacl=true
-    files: '^assets/vocabularies/.*\.ttl'
-    language: python
-    types:
-    - file
-    additional_dependencies:
-    - git+https://github.com/ioggstream/json-semantic-playground
+    - id: validate-turtle
+      name: Validate a turtle file
+      entry: python -m dati_playground validate --validate-shacl=true
+      language: python
+      files: >-
+        ^assets/.*\.ttl$
+      exclude: >-
+        .*(-aligns|-DBGT|example).*
+      types:
+        - file
+      additional_dependencies:
+        - git+https://github.com/FrankMaverick/json-semantic-playground
+
+    - id: validate-oas-schema
+      name: Validate yaml schema
+      description: This hook validates a schema provided in yaml format
+      entry: python -m dati_playground validate --validate-jsonschema=true
+      language: python
+      files: ^assets/.*\.schema.yaml
+      exclude: >-
+        .*example.*
+      types:
+        - file
+      additional_dependencies:
+        - git+https://github.com/FrankMaverick/json-semantic-playground
+
+    - id: validate-openapi-schema
+      name: Validate oas3 schema
+      description: This hook validates an openapi schema provided in yaml format
+      entry: python -m dati_playground validate --validate-oas3=true
+      language: python
+      files: ^assets/.*\.oas3.yaml
+      exclude: >-
+        .*example.*
+      types:
+        - file
+      additional_dependencies:
+        - git+https://github.com/FrankMaverick/json-semantic-playground
+
+    - id: validate-directory-versioning
+      name: Validate directory layout
+      entry: python -m dati_playground validate --validate-versioned-directory=true
+      exclude: >-
+        .*(-aligns|-DBGT|example).*
+      files: >-
+        ^assets/.*\.ttl
+      language: python
+      types:
+        - file
+      additional_dependencies:
+        - git+https://github.com/FrankMaverick/json-semantic-playground
+
+    - id: validate-csv
+      name: Validate csv layout
+      entry: python -m dati_playground validate --validate-csv=true
+      files: >-
+        ^assets/vocabularies/.*\.csv
+      language: python
+      types:
+        - file
+      additional_dependencies:
+        - git+https://github.com/FrankMaverick/json-semantic-playground
+
+    - id: validate-repo-structure
+      name: Validate repository structure
+      entry: python -m dati_playground validate --validate-repo-structure=true
+      files: >-
+        ^assets\/.*\.ttl
+      language: python
+      fail_fast: true
+      types:
+        - file
+      additional_dependencies:
+        - git+https://github.com/FrankMaverick/json-semantic-playground
+
+    - id: validate-filename-format
+      name: Validate filename e directory name formats
+      entry: python -m dati_playground validate --validate-filename-format=true
+      files: >-
+        ^assets\/.*
+      language: python
+      types:
+        - file
+      additional_dependencies:
+        - git+https://github.com/FrankMaverick/json-semantic-playground
+
+    - id: validate-filename-match-uri
+      name: Validate filename match uri
+      entry: python -m dati_playground validate --validate-filename-match-uri=true
+      files: >-
+        ^assets\/.*\.ttl
+      language: python
+      types:
+        - file
+      additional_dependencies:
+        - git+https://github.com/FrankMaverick/json-semantic-playground
+
+    - id: validate-filename-match-directory
+      name: Validate filename match directory name
+      entry: python -m dati_playground validate --validate-filename-match-directory=true
+      files: >-
+        ^assets\/.*
+      language: python
+      exclude: >-
+        .*example.*
+      types:
+        - file
+      additional_dependencies:
+        - git+https://github.com/FrankMaverick/json-semantic-playground
+
+    - id: validate-directory-versioning-pattern
+      name: Validate versioning pattern of directory
+      entry: python -m dati_playground validate --validate-directory-versioning-pattern=true
+      files: >-
+        ^assets\/.*\.ttl
+      language: python
+      types:
+        - file
+      additional_dependencies:
+        - git+https://github.com/FrankMaverick/json-semantic-playground
+
+    - id: validate-mandatory-files-presence
+      name: Validate mandatory files presence
+      entry: python -m dati_playground validate --validate-mandatory-files-presence=true
+      files: >-
+        ^assets\/.*
+      language: python
+      types:
+        - file
+      additional_dependencies:
+        - git+https://github.com/FrankMaverick/json-semantic-playground
+
+    - id: validate-utf8-file-encoding
+      name: Validate utf8 file encoding
+      entry: python -m dati_playground validate --validate-utf8-file-encoding=true
+      files: >-
+        ^assets\/.*
+      language: python
+      types:
+        - file
+      additional_dependencies:
+        - git+https://github.com/FrankMaverick/json-semantic-playground

@@ -104,7 +104,7 @@ def get_asset(uri):
     netloc = uri.replace(
         "https://w3id.org/italia/", "https://ontopia-lodview.agid.gov.it/"
     )
-    asset = get(netloc, headers={"Accept": "text/turtle"})
+    asset = get(netloc, headers={"Accept": "text/turtle"}, timeout=10)
     g.parse(data=asset.text, format="text/turtle")
     return g
 

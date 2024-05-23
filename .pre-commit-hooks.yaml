@@ -22,11 +22,22 @@
     - file
 
 -   id: validate-oas-schema
-    name: Validate schema
+    name: Validate yaml schema
     description: This hook validates a schema provided in yaml format
     entry: python -m dati_playground validate --validate-jsonschema=true
     language: python
-    files: '.*\.schema.yaml'
+    files: ^assets/.*\.schema.yaml
+    exclude: >-
+      .*example.*
+    types:
+    - file
+
+-   id: validate-openapi-schema
+    name: Validate oas3 schema
+    description: This hook validates an openapi schema provided in yaml format
+    entry: python -m dati_playground validate --validate-oas3=true
+    language: python
+    files: ^assets/.*\.oas3.yaml
     exclude: >-
       .*example.*
     types:
@@ -67,6 +78,124 @@
     entry: python -m dati_playground validate --validate-csv=true
     files: >-
       ^assets/vocabularies/.*\.csv
+    language: python
+    types:
+    - file
+
+-   id: validate-repo-structure
+    name: Validate repository structure
+    description: |-
+      Check that the structure of the assets directories
+      complies with the specified requirements.
+
+      The required directories are as follows:
+      "assets/controlled-vocabularies", "assets/ontologies", "assets/schemas".
+
+      If there are any other directories within "assets", the check will fail.
+      If the present directories match the required ones and their names are compliant,
+      the check will pass, even if there are fewer directories
+
+    entry: python -m dati_playground validate --validate-repo-structure=true
+    files: >-
+      ^assets\/.*\.ttl
+    language: python
+    fail_fast: true
+    types:
+    - file
+
+-   id: validate-filename-format
+    name: Validate filename e directory name formats
+    description: |-
+      This check ensures that file and directory name adhere to a predefined naming pattern.
+      It verifies file extensions and the names of files and their parent directories
+      against a specified regular expression pattern.
+      The check will fail if any deviations are found.
+
+    entry: python -m dati_playground validate --validate-filename-format=true
+    files: >-
+      ^assets\/.*
+    language: python
+    types:
+    - file
+
+
+-   id: validate-filename-match-uri
+    name: Validate filename match uri
+    description: |-
+      It checks if a file's name matches its corresponding URI extracted from a TTL file.
+      It extracts the main URI relative to the TTL file,
+      then compares it with the filename to ensure consistency.
+      In the case of schemas, it verifies the filename with the .oas3.yaml extension
+      instead of the .ttl file as in other cases.
+      If a discrepancy is found, the check fails.
+
+    entry: python -m dati_playground validate --validate-filename-match-uri=true
+    files: >-
+      ^assets\/.*\.ttl
+    language: python
+    types:
+    - file
+
+-   id: validate-filename-match-directory
+    name: Validate filename match directory name
+    description: |-
+      It checks that each file's name matches the name of the directory containing it
+      (excluding versioning directories).
+      It excludes specific filenames and file extensions from the validation process.
+      If a file's name or its containing directory name does not match
+      the expected pattern, an error is logged, and the validation fails.
+
+    entry: python -m dati_playground validate --validate-filename-match-directory=true
+    files: >-
+      ^assets\/.*
+    language: python
+    exclude: >-
+      .*example.*
+    types:
+    - file
+
+-   id: validate-directory-versioning-pattern
+    name: Validate versioning pattern of directory
+    description: |-
+      Checks the directory structure for versioned directories.
+      It ensures that the directory is a leaf, is versioned,
+      and has consistent versioning patterns with its sibling directories.
+      If the directory name does not match the expected versioning pattern,
+      an error is logged, and the validation fails.
+
+    entry: python -m dati_playground validate --validate-directory-versioning-pattern=true
+    files: >-
+      ^assets\/.*\.ttl
+    language: python
+    types:
+    - file
+
+-   id: validate-mandatory-files-presence
+    name: Validate mandatory files presence
+    description: |-
+      Checks if the directory containing the given file is a leaf directory
+      and contains at least one turtle (.ttl) file.
+      If the directory path contains 'schemas',
+      it also verifies the presence of .oas3.yaml and index.ttl files.
+      if it does not find the required files
+      an error is logged, and the validation fails.
+
+    entry: python -m dati_playground validate --validate-mandatory-files-presence=true
+    files: >-
+      ^assets\/.*
+    language: python
+    types:
+    - file
+
+-   id: validate-utf8-file-encoding
+    name: Validate utf8 file encoding
+    description: |-
+      Checks if the file is encoded in UTF-8.
+      if it's not encoded in UTF-8
+      an error is logged, and the validation fails
+    entry: python -m dati_playground validate --validate-utf8-file-encoding=true
+    files: >-
+      ^assets\/.*
     language: python
     types:
     - file

@@ -1,6 +1,7 @@
 """
 Tests for adding semantic contexts to json-schema.
 """
+
 import logging
 from pathlib import Path
 

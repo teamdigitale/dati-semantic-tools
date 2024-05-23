@@ -8,9 +8,9 @@ import yaml
 from openapi_spec_validator import validate_spec
 from pyshacl.validate import validate
 
-from dati_playground.csv import is_csv
-from dati_playground.precommit_validators import MAX_DEPTH, get_shacl_graph
 from dati_playground.utils import MIME_JSONLD, is_recent_than, parse_graph
+from dati_playground.validators import MAX_DEPTH, get_shacl_graph
+from dati_playground.validators.csv import is_csv
 
 log = logging.getLogger(__name__)
 
