@@ -17,10 +17,6 @@ log = logging.getLogger(__name__)
 from dati_playground.utils import MIME_JSONLD, yaml_to_json
 
 
-def true(*a, **kw):
-    return True
-
-
 def is_jsonld(content: str):
     content = yaml_to_json(content)
     g = Graph()

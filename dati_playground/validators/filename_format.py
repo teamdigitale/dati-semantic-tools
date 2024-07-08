@@ -4,14 +4,14 @@ from pathlib import Path
 
 log = logging.getLogger(__name__)
 
-pattern = r"^[\\.a-z0-9_-]{2,64}$"
+pattern = r"^[a-zA-Z][\\.a-zA-Z0-9_-]{1,63}$"
 extensions_to_check = [".ttl", ".rdf", ".csv", ".yaml"]
 
 
 def validate(fpath: Path, errors: list):
 
     # Check if the file has a extension to check
-    if fpath.suffix not in extensions_to_check:
+    if fpath.suffix.lower() not in extensions_to_check:
         log.debug(f"The file '{fpath}' does not have a extension to check")
         return True
 

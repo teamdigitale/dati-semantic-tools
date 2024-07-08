@@ -11,8 +11,6 @@ import click
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger(__name__)
 
-
-# from dati_playground.validators.csv import is_csv
 from dati_playground.schema import build_schema
 from dati_playground.tools import (
     build_semantic_asset,

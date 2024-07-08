@@ -36,8 +36,8 @@ def validate(fpath: Path, errors):
         return True
 
     suffixes = fpath.suffixes
-    extension = "".join(suffixes)
-    filename = re.sub(extension, "", fpath.name)
+    extension = "".join(suffixes).lower()
+    filename = re.sub(extension, "", fpath.name, flags=re.IGNORECASE)
 
     if (
         fpath.name in EXCLUDED_FILENAMES

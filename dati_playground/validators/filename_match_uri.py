@@ -38,9 +38,6 @@ def extract_main_uri(ttl_fpath: Path):
         elif p == RDF.type and o == dcatapit.Dataset:
             main_uri = s
             break
-        # elif (s, RDF.type, RDFS.Class) in g:
-        #     main_uri = s
-        #     break
         elif (s, RDF.type, SKOS.ConceptScheme) in g:
             main_uri = s
             break

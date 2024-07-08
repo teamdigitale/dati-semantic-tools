@@ -41,7 +41,7 @@ def validate(fpath: Path, errors: list):
     if package:
         report = resource.validate()
     else:
-        report = frictionless_validate(fpath, skip_errors=["type-error"])
+        report = frictionless_validate(fpath)
 
     # report = resource.f_validate()
     current_errors = []
