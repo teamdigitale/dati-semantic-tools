@@ -75,7 +75,7 @@ repos:
       types:
         - file
       additional_dependencies:
-        - git+https://github.com/FrankMaverick/json-semantic-playground
+        - git+https://github.com/teamdigitale/dati-semantic-tools
 
     - id: validate-oas-schema
       name: Validate yaml schema
@@ -88,7 +88,7 @@ repos:
       types:
         - file
       additional_dependencies:
-        - git+https://github.com/FrankMaverick/json-semantic-playground
+        - git+https://github.com/teamdigitale/dati-semantic-tools
 
     - id: validate-openapi-schema
       name: Validate oas3 schema
@@ -101,7 +101,7 @@ repos:
       types:
         - file
       additional_dependencies:
-        - git+https://github.com/FrankMaverick/json-semantic-playground
+        - git+https://github.com/teamdigitale/dati-semantic-tools
 
     - id: validate-directory-versioning
       name: Validate directory layout
@@ -114,7 +114,7 @@ repos:
       types:
         - file
       additional_dependencies:
-        - git+https://github.com/FrankMaverick/json-semantic-playground
+        - git+https://github.com/teamdigitale/dati-semantic-tools
 
     - id: validate-csv
       name: Validate csv layout
@@ -125,7 +125,7 @@ repos:
       types:
         - file
       additional_dependencies:
-        - git+https://github.com/FrankMaverick/json-semantic-playground
+        - git+https://github.com/teamdigitale/dati-semantic-tools
 
     - id: validate-repo-structure
       name: Validate repository structure
@@ -137,7 +137,7 @@ repos:
       types:
         - file
       additional_dependencies:
-        - git+https://github.com/FrankMaverick/json-semantic-playground
+        - git+https://github.com/teamdigitale/dati-semantic-tools
 
     - id: validate-filename-format
       name: Validate filename e directory name formats
@@ -148,7 +148,7 @@ repos:
       types:
         - file
       additional_dependencies:
-        - git+https://github.com/FrankMaverick/json-semantic-playground
+        - git+https://github.com/teamdigitale/dati-semantic-tools
 
     - id: validate-filename-match-uri
       name: Validate filename match uri
@@ -159,7 +159,7 @@ repos:
       types:
         - file
       additional_dependencies:
-        - git+https://github.com/FrankMaverick/json-semantic-playground
+        - git+https://github.com/teamdigitale/dati-semantic-tools
 
     - id: validate-filename-match-directory
       name: Validate filename match directory name
@@ -172,7 +172,7 @@ repos:
       types:
         - file
       additional_dependencies:
-        - git+https://github.com/FrankMaverick/json-semantic-playground
+        - git+https://github.com/teamdigitale/dati-semantic-tools
 
     - id: validate-directory-versioning-pattern
       name: Validate versioning pattern of directory
@@ -183,7 +183,7 @@ repos:
       types:
         - file
       additional_dependencies:
-        - git+https://github.com/FrankMaverick/json-semantic-playground
+        - git+https://github.com/teamdigitale/dati-semantic-tools
 
     - id: validate-mandatory-files-presence
       name: Validate mandatory files presence
@@ -194,7 +194,7 @@ repos:
       types:
         - file
       additional_dependencies:
-        - git+https://github.com/FrankMaverick/json-semantic-playground
+        - git+https://github.com/teamdigitale/dati-semantic-tools
 
     - id: validate-utf8-file-encoding
       name: Validate utf8 file encoding
@@ -205,4 +205,4 @@ repos:
       types:
         - file
       additional_dependencies:
-        - git+https://github.com/FrankMaverick/json-semantic-playground
+        - git+https://github.com/teamdigitale/dati-semantic-tools
