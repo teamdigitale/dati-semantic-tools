@@ -97,7 +97,7 @@
 
     entry: python -m dati_playground validate --validate-repo-structure=true
     files: >-
-      ^assets\/.*\.ttl
+      ^assets\/.*
     language: python
     fail_fast: true
     types:

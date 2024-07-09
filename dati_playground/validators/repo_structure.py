@@ -29,16 +29,17 @@ def validate(fpath: Path, errors: list):
 
     subdirs = []
     for subdir in root_dir.iterdir():
-
         if subdir.is_dir():
-            subdirs.append(str("/".join(subdir.parts)))
+            subdirs.append(str("/".join(subdir.parts)).lower())
 
     # Check if all direct subdirectories are present in required_subdirs
-    if set(subdirs) <= set(required_subdirs):
+    required_subdirs_lower = [d.lower() for d in required_subdirs]
+
+    if set(subdirs) <= set(required_subdirs_lower):
         return True
     else:
         # Find missing subdirectories
-        missing_dirs = set(subdirs) - set(required_subdirs)
+        missing_dirs = set(subdirs) - set(required_subdirs_lower)
 
         if missing_dirs:
             log.debug(
