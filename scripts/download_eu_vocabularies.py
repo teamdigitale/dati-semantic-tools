@@ -38,7 +38,7 @@ def sparql_get(sparql_endpoint, query):
     }
 
     ep = urlencode(qp, doseq=True)
-    data = requests.get(f"{sparql_endpoint}?" + ep)
+    data = requests.get(f"{sparql_endpoint}?" + ep, timeout=10)
     return data.json()
 
 
@@ -60,7 +60,7 @@ def get_vocabularies(url):
 def download_file(url, dest_file):
     print(url, dest_file)
     g = Graph()
-    data = requests.get(url)
+    data = requests.get(url, timeout=10)
     if data.status_code != 200:
         log.error(f"Erro retrieving {url}: {data.status_code}")
         return

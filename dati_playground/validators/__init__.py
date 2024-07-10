@@ -1,3 +1,4 @@
+import logging
 import os
 from pathlib import Path
 from typing import Dict
@@ -6,40 +7,20 @@ import jsonschema
 import yaml
 from rdflib import Graph
 
-from .utils import MIME_JSONLD, MIME_TURTLE, yaml_to_json
+import dati_playground.validators.json_schema as json_schema
+import dati_playground.validators.openapi as openapi
+import dati_playground.validators.turtle as turtle
 
+logging.basicConfig(level=logging.INFO)
+log = logging.getLogger(__name__)
 
-def true(*a, **kw):
-    return True
-
-
-def is_jsonschema(content: str):
-    jsonschema.Draft7Validator.check_schema(yaml.safe_load(content))
-
-    return True
-
-
-def is_openapi(content: str):
-    from openapi_spec_validator import validate_spec
-
-    spec_dict = yaml.safe_load(content)
-
-    # If no exception is raised by validate_spec(), the spec is valid.
-    validate_spec(spec_dict)
-
-    return True
+from dati_playground.utils import MIME_JSONLD, yaml_to_json
 
 
 def is_jsonld(content: str):
     content = yaml_to_json(content)
     g = Graph()
     g.parse(data=content, format=MIME_JSONLD)
-    return True
-
-
-def is_turtle(content: str):
-    g = Graph()
-    g.parse(data=content, format=MIME_TURTLE)
     return True
 
 
@@ -76,11 +57,11 @@ def is_valid_sqlite(datafile: Path, schema: Dict) -> bool:
 
 
 VALID_SUFFIXES = {
-    "*.ttl": is_turtle,
-    "*.shacl": is_turtle,
+    "*.ttl": turtle.validate,
+    "*.shacl": turtle.validate,
     "*.ld.yaml": is_jsonld,
-    "*.oas3.yaml": is_openapi,
-    "*.schema.yaml": is_jsonschema,
+    "*.oas3.yaml": openapi.validate,
+    "*.schema.yaml": json_schema.validate,
     "context-*.ld.yaml": is_framing_context,
 }
 

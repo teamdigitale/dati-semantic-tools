@@ -1,7 +1,7 @@
-connexion[swagger-ui]==2.13.1
-connexion==2.13.1
-openapi-spec-validator==0.4.0
-click==8.1.1
-SQLAlchemy==1.4.39
-tornado==6.1
+connexion[swagger-ui]==3.0.0
+connexion==3.0.0
+openapi-spec-validator==0.5.7
+click==8.1.7
+SQLAlchemy==2.0.29
+tornado==6.3.3
 Flask-Cors==3.0.10

@@ -1,6 +1,7 @@
 """
 Validation script for semantic assets.
 """
+
 import logging
 from multiprocessing import Pool
 from pathlib import Path
@@ -10,8 +11,6 @@ import click
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger(__name__)
 
-from dati_playground import precommit_validators
-from dati_playground.csv import is_csv
 from dati_playground.schema import build_schema
 from dati_playground.tools import (
     build_semantic_asset,
@@ -19,11 +18,21 @@ from dati_playground.tools import (
     build_yaml_asset,
 )
 from dati_playground.validators import (
-    is_jsonschema,
-    is_openapi,
-    is_turtle,
+    csv,
+    directory_versioning_pattern,
+    filename_format,
+    filename_match_directory,
+    filename_match_uri,
+    json_schema,
     list_files,
+    mandatory_files_presence,
+    openapi,
+    repo_structure,
+    shacl,
+    turtle,
+    utf8_file_encoding,
     validate_file,
+    versioned_directory,
 )
 
 
@@ -41,6 +50,13 @@ from dati_playground.validators import (
 @click.option("--validate-versioned-directory", default=False)
 @click.option("--validate-turtle", default=False)
 @click.option("--validate-csv", default=False)
+@click.option("--validate-repo-structure", default=False)
+@click.option("--validate-filename-format", default=False)
+@click.option("--validate-filename-match-uri", default=False)
+@click.option("--validate-filename-match-directory", default=False)
+@click.option("--validate-directory-versioning-pattern", default=False)
+@click.option("--validate-mandatory-files-presence", default=False)
+@click.option("--validate-utf8-file-encoding", default=False)
 @click.option("--pattern", default="")
 @click.option("--exclude", default=["NoneString"], type=str, multiple=True)
 @click.option("--debug", default=False, type=bool)
@@ -57,6 +73,13 @@ def main(
     validate_versioned_directory,
     validate_turtle,
     validate_csv,
+    validate_repo_structure,
+    validate_filename_format,
+    validate_filename_match_uri,
+    validate_filename_match_directory,
+    validate_directory_versioning_pattern,
+    validate_mandatory_files_presence,
+    validate_utf8_file_encoding,
     pattern,
     exclude,
     build_schema_index,
@@ -108,34 +131,45 @@ def main(
         workers.close()
         exit(0)
     else:
+        log.debug(files)
         errors = []
         if command == "validate":
             for f in files:
                 f = Path(f)
                 if validate_shacl:
-                    precommit_validators.validate_shacl(f)
+                    shacl.validate(f, errors)
                 if validate_oas3:
-                    is_openapi(f.read_text())
+                    openapi.validate(f, errors)
                 if validate_jsonschema:
-                    is_jsonschema(f.read_text())
+                    json_schema.validate(f, errors)
                 if validate_versioned_directory:
-                    precommit_validators.validate_directory(f, errors)
+                    versioned_directory.validate(f, errors)
                 if validate_turtle:
-                    is_turtle(f.read_text())
+                    turtle.validate(f, errors)
                 if validate_csv:
-                    print(f"validating {f}")
-                    try:
-                        ret = is_csv(f)
-                        if ret.valid is False:
-                            errors.append(f"{f} is not valid: {ret.errors}")
-                    except ValueError as e:
-                        errors.append(f"{f} is not valid: {e}")
-            if errors:
-                raise ValueError("Errors found: " + "\n".join(errors))
+                    csv.validate(f, errors)
+                if validate_repo_structure:
+                    repo_structure.validate(f, errors)
+                if validate_filename_format:
+                    filename_format.validate(f, errors)
+                if validate_filename_match_uri:
+                    filename_match_uri.validate(f, errors)
+                if validate_filename_match_directory:
+                    filename_match_directory.validate(f, errors)
+                if validate_directory_versioning_pattern:
+                    directory_versioning_pattern.validate(f, errors)
+                if validate_mandatory_files_presence:
+                    mandatory_files_presence.validate(f, errors)
+                if validate_utf8_file_encoding:
+                    utf8_file_encoding.validate(f, errors)
 
-        else:
-            pass
-        print("No errors found")
+            if errors:
+                errors = list(set(errors))
+                for error in errors:
+                    print("ERROR: ", error)
+                exit(1)
+            else:
+                pass
 
 
 if __name__ == "__main__":
