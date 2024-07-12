@@ -11,6 +11,7 @@ EXCLUDED_FILENAMES = [
     "context-short.ld.yaml",
     "rules.shacl",
     "latest",
+    "schema.oas3.yaml",
 ]
 
 # List of extensions to be excluded
@@ -35,14 +36,14 @@ def validate(fpath: Path, errors):
         log.debug(f"The dir '{fpath.name}' in path '{fpath}' is not checked")
         return True
 
-    suffixes = fpath.suffixes
+    suffixes = fpath.suffixes[-2:]
     extension = "".join(suffixes).lower()
     filename = re.sub(extension, "", fpath.name, flags=re.IGNORECASE)
 
     if (
-        fpath.name in EXCLUDED_FILENAMES
+        fpath.name.lower() in EXCLUDED_FILENAMES
         or extension in EXCLUDED_EXTENSIONS
-        or fpath.name
+        or (suffixes and suffixes[-1] in EXCLUDED_EXTENSIONS)
     ):
         log.debug(f"The file '{fpath.name}' in path '{fpath}' is not checked")
         return True
