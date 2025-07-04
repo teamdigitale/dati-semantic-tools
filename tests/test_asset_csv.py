@@ -21,7 +21,7 @@ def test_asset_csv(fpath):
 
 
 ontopia = Path(
-    "/home/rpolli/workspace-data/daf-ontologie-vocabolari-controllati/VocabolariControllati"
+    "/home/rpolli/workspace-data/dati-semantic-assets/VocabolariControllati"
 )
 
 
